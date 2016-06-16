@@ -22,8 +22,8 @@ This is the list of panels that can be found in this directory:
 * about.json: provides some widgets detailing this information and how to interact with the panels.
 * overview-'filters'.json: provides a generic view of the dataset with some widgets that help to drill down the information from the whole list of data sources.
 
-Naming
-------
+Files Naming
+------------
 
 Each panel may contain specific information in the name related to the available
 filters. This is intended to help when automatically deploying those.
@@ -38,6 +38,40 @@ about projects and organizations.
 * git.json: this is a panel of Git containing basic filters about authors and
 repositories
 * git-organizations.json: this is a panel of Git containing organizations filters
+
+
+Widgets Naming
+--------------
+
+```
+ <data_source>_<metric_used>
+
+ Example: git_top_authors
+ Example: git_authors
+```
+
+Where data source could be git, gerrit, mbox, etc.
+
+Searches Naming
+---------------
+
+```
+Search:_<field>:<search>
+
+Example: Search:_pull_request:true
+```
+
+
+Indexes Naming
+--------------
+
+```
+<data_source>_enrich
+
+Example: git_enrich
+Example: gerrit_enrich
+```
+
 
 
 How this info was retrieved
