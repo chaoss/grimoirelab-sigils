@@ -83,12 +83,25 @@
 			"order": 5
 		}]
 	}, {
+        "name": "jira",
+        "panels": [{
+            "id": "Jira",
+            "name": "Jira",
+            "files": "jira-*.json",
+            "order": 6
+        }, {
+            "id": "Jira-Backlog",
+            "name": "Jira Backlog",
+            "files": "jira_backlog-*.json",
+            "order": 7
+       }]
+    }, {
 		"name": "jenkins",
 		"panels": [{
 			"id": "Jenkins",
 			"name": "Jenkins",
 			"files": "jenkins*.json",
-			"order": 9
+			"order": 12
 		}]
 	}, {
 		"name": "mediawiki",
@@ -96,7 +109,7 @@
 			"id": "Mediawiki",
 			"name": "Mediawiki",
 			"files": "mediawiki.json",
-			"order": 8
+			"order": 11
 		}]
 	}, {
         "name": "irc",
@@ -104,7 +117,7 @@
             "id": "IRC",
             "name": "IRC",
             "files": "irc.json",
-            "order": 7
+            "order": 10
         }]
     }]
 }
