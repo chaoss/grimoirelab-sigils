@@ -28,7 +28,7 @@
 			"id": "Git-Demographics",
 			"name": "Demographics",
 			"files": "git_demographics-*.json",
-			"order": 7
+			"order": 10
 		}]
 	}, {
 		"name": "gerrit",
@@ -98,5 +98,13 @@
 			"files": "mediawiki.json",
 			"order": 8
 		}]
-	}]
+	}, {
+        "name": "irc",
+        "panels": [{
+            "id": "IRC",
+            "name": "IRC",
+            "files": "irc.json",
+            "order": 7
+        }]
+    }]
 }
