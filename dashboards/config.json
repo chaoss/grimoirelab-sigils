@@ -119,5 +119,14 @@
             "files": "irc.json",
             "order": 10
         }]
+    }, {
+        "name": "reps",
+        "panels": [{
+            "id": "Reps",
+            "name": "Reps",
+            "files": "reps.json",
+            "order": 8
+        }]
+    
     }]
 }
