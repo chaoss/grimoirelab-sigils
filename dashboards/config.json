@@ -95,6 +95,20 @@
             "files": "jira_backlog-*.json",
             "order": 7
        }]
+      
+	}, {
+        "name": "bugzilla",
+        "panels": [{
+            "id": "Issues",
+            "name": "Issues",
+            "files": "bugzilla-*.json",
+            "order": 6
+        }, {
+            "id": "Issues-Backlog",
+            "name": "Issues Backlog",
+            "files": "bugzilla_backlog-*.json",
+            "order": 7
+       }]
     }, {
 		"name": "jenkins",
 		"panels": [{
