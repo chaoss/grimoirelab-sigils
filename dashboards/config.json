@@ -142,5 +142,13 @@
             "order": 8
         }]
     
+    }, {
+        "name": "stackoverflow",
+        "panels": [{
+            "id": "Stackoverflow",
+            "name": "Stackoverflow",
+            "files": "stackoverflow.json",
+            "order": 9
+        }]
     }]
 }
