@@ -150,5 +150,13 @@
             "files": "stackoverflow.json",
             "order": 9
         }]
+    }, {
+        "name": "kitsune",
+        "panels": [{
+            "id": "Kitsune", 
+            "name": "Kitsune",
+            "files":"kitsune.json",
+            "order": 9
+        }]
     }]
 }
