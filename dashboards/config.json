@@ -1,88 +1,88 @@
 {
-	"data-source": [{
-		"name": "any",
-		"panels": [{
-			"id": "Overview",
-			"name": "Overview",
-			"files": "overview-*.json",
-			"order": 0
-		}, {
-			"id": "Data-Status",
-			"name": "Data Status",
-			"files": "data-status.json",
-			"order": 20
-		}, {
-			"id": "About",
-			"name": "About",
-			"files": "about.json",
-			"order": 21
-		}]
-	}, {
-		"name": "git",
-		"panels": [{
-			"id": "Git",
-			"name": "Git",
-			"files": "git-*.json",
-			"order": 1
-		}, {
-			"id": "Git-Demographics",
-			"name": "Demographics",
-			"files": "git_demographics-*.json",
-			"order": 10
-		}]
-	}, {
-		"name": "gerrit",
-		"panels": [{
-			"id": "Gerrit",
-			"name": "Gerrit",
-			"files": "gerrit-*.json",
-			"order": 2
-		}, {
-			"id": "Gerrit-Backlog",
-			"name": "Backlog",
-			"files": "gerrit-backlog-*.json",
-			"order": 3
-		}, {
-			"id": "Gerrit-Delays",
-			"name": "Gerrit Delays",
-			"files": "gerrit_delays-*.json",
-			"order": 4
-		}]
-	}, {
-		"name": "github_pull_requests",
-		"panels": [{
-			"id": "Github-Pull-Requests",
-			"name": "Pull Requests",
-			"files": "github_pullrequests-*.json",
-			"order": 2
-		}, {
-			"id": "Github-Backlog",
-			"name": "Github Backlog",
-			"files": "github_backlog*.json",
-			"order": 3
-		}, {
-			"id": "GitHub-Pull-Requests-Delays",
-			"name": "PR Delays",
-			"files": "github_pullrequests_delays-*.json",
-			"order": 4
-		}]
-	}, {
-		"name": "github_issues",
-		"panels": [{
-			"id": "GitHub-Issues",
-			"name": "Issues",
-			"files": "github_issues-*.json",
-			"order": 2
-		}]
-	}, {
-		"name": "mbox",
-		"panels": [{
-			"id": "MailingLists",
-			"name": "Mailing Lists",
-			"files": "mailinglists-*.json",
-			"order": 5
-		}]
-	}, {
+    "data-source": [{
+        "name": "any",
+        "panels": [{
+            "id": "Overview",
+            "name": "Overview",
+            "files": "overview-*.json",
+            "order": 0
+        }, {
+            "id": "Data-Status",
+            "name": "Data Status",
+            "files": "data-status.json",
+            "order": 20
+        }, {
+            "id": "About",
+            "name": "About",
+            "files": "about.json",
+            "order": 21
+        }]
+    }, {
+        "name": "git",
+        "panels": [{
+            "id": "Git",
+            "name": "Git",
+            "files": "git-*.json",
+            "order": 1
+        }, {
+            "id": "Git-Demographics",
+            "name": "Demographics",
+            "files": "git_demographics-*.json",
+            "order": 10
+        }]
+    }, {
+        "name": "gerrit",
+        "panels": [{
+            "id": "Gerrit",
+            "name": "Gerrit",
+            "files": "gerrit-*.json",
+            "order": 2
+        }, {
+            "id": "Gerrit-Backlog",
+            "name": "Backlog",
+            "files": "gerrit-backlog-*.json",
+            "order": 3
+        }, {
+            "id": "Gerrit-Delays",
+            "name": "Gerrit Delays",
+            "files": "gerrit_delays-*.json",
+            "order": 4
+        }]
+    }, {
+        "name": "github_pull_requests",
+        "panels": [{
+            "id": "Github-Pull-Requests",
+            "name": "Pull Requests",
+            "files": "github_pullrequests-*.json",
+            "order": 2
+        }, {
+            "id": "Github-Backlog",
+            "name": "Github Backlog",
+            "files": "github_backlog*.json",
+            "order": 3
+        }, {
+            "id": "GitHub-Pull-Requests-Delays",
+            "name": "PR Delays",
+            "files": "github_pullrequests_delays-*.json",
+            "order": 4
+        }]
+    }, {
+        "name": "github_issues",
+        "panels": [{
+            "id": "GitHub-Issues",
+            "name": "Issues",
+            "files": "github_issues-*.json",
+            "order": 2
+        }]
+    }, {
+        "name": "mbox",
+        "panels": [{
+            "id": "MailingLists",
+            "name": "Mailing Lists",
+            "files": "mailinglists-*.json",
+            "order": 5
+        }]
+    }, {
         "name": "jira",
         "panels": [{
             "id": "Jira",
@@ -94,9 +94,8 @@
             "name": "Jira Backlog",
             "files": "jira_backlog-*.json",
             "order": 7
-       }]
-      
-	}, {
+        }]
+    }, {
         "name": "bugzilla",
         "panels": [{
             "id": "Issues",
@@ -108,24 +107,24 @@
             "name": "Issues Backlog",
             "files": "bugzilla_backlog-*.json",
             "order": 7
-       }]
+        }]
     }, {
-		"name": "jenkins",
-		"panels": [{
-			"id": "Jenkins",
-			"name": "Jenkins",
-			"files": "jenkins*.json",
-			"order": 12
-		}]
-	}, {
-		"name": "mediawiki",
-		"panels": [{
-			"id": "Mediawiki",
-			"name": "Mediawiki",
-			"files": "mediawiki.json",
-			"order": 11
-		}]
-	}, {
+        "name": "jenkins",
+        "panels": [{
+            "id": "Jenkins",
+            "name": "Jenkins",
+            "files": "jenkins*.json",
+            "order": 12
+        }]
+    }, {
+        "name": "mediawiki",
+        "panels": [{
+            "id": "Mediawiki",
+            "name": "Mediawiki",
+            "files": "mediawiki.json",
+            "order": 11
+        }]
+    }, {
         "name": "irc",
         "panels": [{
             "id": "IRC",
@@ -141,7 +140,6 @@
             "files": "reps.json",
             "order": 8
         }]
-    
     }, {
         "name": "stackoverflow",
         "panels": [{
@@ -153,10 +151,26 @@
     }, {
         "name": "kitsune",
         "panels": [{
-            "id": "Kitsune", 
+            "id": "Kitsune",
             "name": "Kitsune",
             "files":"kitsune.json",
             "order": 9
+        }]
+    }, {
+        "name": "twiter",
+        "panels": [{
+            "id": "Twitter",
+            "name": "Twitter",
+            "files": "twitter.json",
+            "order": 18
+        }]
+    }, {
+        "name": "telegram",
+        "panels": [{
+            "id": "Telegram",
+            "name": "Telegram",
+            "files": "telegram.json",
+            "order": 19
         }]
     }]
 }
