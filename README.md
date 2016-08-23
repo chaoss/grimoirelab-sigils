@@ -66,10 +66,13 @@ Indexes Naming
 --------------
 
 ```
-<data_source>_enrich
+<data_source>
 
-Example: git_enrich
-Example: gerrit_enrich
+Example: git
+Example: gerrit
+Example: stackoverflow
+Example: jira
+Example: bugzilla
 ```
 
 
