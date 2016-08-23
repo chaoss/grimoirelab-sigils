@@ -125,6 +125,14 @@
             "order": 11
         }]
     }, {
+        "name": "confluence",
+        "panels":[{
+            "id": "Confluence",
+            "name": "Confluence",
+            "files": "confluence.json",
+            "order": 11
+        }]
+    }, {
         "name": "irc",
         "panels": [{
             "id": "IRC",
