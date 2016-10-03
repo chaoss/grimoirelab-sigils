@@ -96,6 +96,24 @@
             "order": 7
         }]
     }, {
+        "name": "maniphest",
+        "panels": [{
+            "id": "Maniphest",
+            "name": "Maniphest",
+            "files": "maniphest-*.json",
+            "order": 6
+        }, {
+            "id": "Maniphest-Backlog",
+            "name": "Maniphest Backlog",
+            "files": "maniphest_backlog-*.json",
+            "order": 7
+        }, {
+            "id": "Maniphest-Timing",
+            "name": "Maniphest Timing",
+            "files": "maniphest_timing-*.json",
+            "order": 8
+        }]
+    }, {
         "name": "bugzilla",
         "panels": [{
             "id": "Issues",
