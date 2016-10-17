@@ -94,6 +94,11 @@
             "name": "Jira Backlog",
             "files": "jira_backlog-*.json",
             "order": 7
+        },  {
+            "id": "Jira-Timing",
+            "name": "Jira Timing",
+            "files": "jira_timing-*.json",
+            "order": 8
         }]
     }, {
         "name": "maniphest",
