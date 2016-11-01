@@ -4,7 +4,7 @@
         "panels": [{
             "id": "Overview",
             "name": "Overview",
-            "files": "overview-*.json",
+            "files": "overview.json",
             "order": 0
         }, {
             "id": "Data-Status",
