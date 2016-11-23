@@ -40,12 +40,12 @@
         }, {
             "id": "Gerrit-Backlog",
             "name": "Backlog",
-            "files": "gerrit-backlog-*.json",
+            "files": "gerrit_backlog-*.json",
             "order": 3
         }, {
-            "id": "Gerrit-Delays",
-            "name": "Gerrit Delays",
-            "files": "gerrit_delays-*.json",
+            "id": "Gerrit-Timing",
+            "name": "Gerrit Timing",
+            "files": "gerrit_timing-*.json",
             "order": 4
         }]
     }, {
