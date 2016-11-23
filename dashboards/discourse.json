@@ -1,1 +1,166 @@
-{"index_patterns": [{"value": {"title": "discourse_enrich", "fields": "[{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"ocean-unique-id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"id\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"topic_id\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"reads\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"reply_count\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"metadata__updated_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"post_number\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"topic_slug\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"username\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"avg_time\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"display_username\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"cooked\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true}]", "fieldFormatMap": "{\"cooked\":{\"id\":\"truncate\",\"params\":{\"transform\":null,\"fieldLength\":\"50\"}}}", "timeFieldName": "metadata__updated_on"}, "id": "discourse_enrich"}], "searches": [{"value": {"title": "Discourse Questions Search:_post_number:1", "hits": 0, "sort": ["metadata__updated_on", "desc"], "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"index\":\"discourse_enrich\",\"query\":{\"query_string\":{\"query\":\"post_number:1\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"}, "version": 1, "columns": ["_source"]}, "id": "Discourse-Questions-Search:_post_number:1"}, {"value": {"title": "Discourse Answers Search:_post_number:>1", "hits": 0, "sort": ["metadata__updated_on", "desc"], "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"index\":\"discourse_enrich\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"post_number:>1\",\"analyze_wildcard\":true}}}"}, "version": 1, "columns": ["_source"]}, "id": "Discourse-Answers-Search:_post_number:>1"}], "dashboard": {"value": {"title": "Discourse", "hits": 0, "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"}, "timeFrom": "now-2y", "timeRestore": true, "panelsJSON": "[{\"col\":1,\"id\":\"discourse_main_metrics\",\"panelIndex\":1,\"row\":1,\"size_x\":1,\"size_y\":4,\"title\":\"Intro\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"discourse_questions_evolutionary\",\"panelIndex\":2,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Questions\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"discourse_questions_evolutionary_users\",\"panelIndex\":3,\"row\":3,\"size_x\":4,\"size_y\":2,\"title\":\"Users asking Questions\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"discourse_last_updated_questions\",\"panelIndex\":4,\"row\":1,\"size_x\":7,\"size_y\":4,\"title\":\"Last Updated Questions\",\"type\":\"visualization\"},{\"id\":\"discourse_last_updated_answers\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":7,\"size_y\":4,\"col\":6,\"row\":5,\"title\":\"Last Updated Answers\"},{\"id\":\"discourse_main_people_questioning\",\"type\":\"visualization\",\"panelIndex\":6,\"size_x\":3,\"size_y\":4,\"col\":1,\"row\":5,\"title\":\"Main People Asking\"},{\"id\":\"discourse_main_people_answering\",\"type\":\"visualization\",\"panelIndex\":7,\"size_x\":2,\"size_y\":4,\"col\":4,\"row\":5,\"title\":\"Main people Answering\"}]", "version": 1, "timeTo": "now", "uiStateJSON": "{\"P-1\":{\"title\":\"Intro\"},\"P-2\":{\"title\":\"Questions\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Users asking Questions\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Last Updated Questions\"},\"P-5\":{\"title\":\"Last Updated Answers\"},\"P-6\":{\"title\":\"Main People Asking\"},\"P-7\":{\"title\":\"Main people Answering\"}}", "optionsJSON": "{\"darkTheme\":false}"}, "id": "Discourse"}, "visualizations": [{"value": {"title": "discourse_main_metrics", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Questions-Search:_post_number:1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"username\",\"customLabel\":\"People asking Questions\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"reads\",\"customLabel\":\"Avg. reads per Question\"}}],\"listeners\":{}}"}, "id": "discourse_main_metrics"}, {"value": {"title": "discourse_questions_evolutionary", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Questions-Search:_post_number:1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"metadata__updated_on\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"}, "id": "discourse_questions_evolutionary"}, {"value": {"title": "discourse_questions_evolutionary_users", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Questions-Search:_post_number:1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"discourse_questions_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"username\",\"customLabel\":\"Users\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"metadata__updated_on\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"}, "id": "discourse_questions_evolutionary_users"}, {"value": {"title": "discourse_last_updated_questions", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Questions-Search:_post_number:1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"discourse_last_updated_questions\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Updated Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_slug\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_id\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic ID\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"reads\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Reads\"}}],\"listeners\":{}}"}, "id": "discourse_last_updated_questions"}, {"value": {"title": "discourse_last_updated_answers", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Answers-Search:_post_number:>1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"discourse_last_updated_answers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Updated On\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"cooked\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Text\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"post_number\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Answer Position\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_slug\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}],\"listeners\":{}}"}, "id": "discourse_last_updated_answers"}, {"value": {"title": "discourse_main_people_questioning", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Questions-Search:_post_number:1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"reads\",\"customLabel\":\"Avg. reads per Question\"}}],\"listeners\":{}}"}, "id": "discourse_main_people_questioning"}, {"value": {"title": "discourse_main_people_answering", "description": "", "kibanaSavedObjectMeta": {"searchSourceJSON": "{\"filter\":[]}"}, "savedSearchId": "Discourse-Answers-Search:_post_number:>1", "version": 1, "uiStateJSON": "{}", "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Answers\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}],\"listeners\":{}}"}, "id": "discourse_main_people_answering"}]}
+{
+    "dashboard": {
+        "id": "Discourse",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false}",
+            "panelsJSON": "[{\"col\":1,\"id\":\"Discourse-Summary\",\"panelIndex\":8,\"row\":1,\"size_x\":2,\"size_y\":5,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":3,\"id\":\"Discourse-Topics\",\"panelIndex\":9,\"row\":1,\"size_x\":5,\"size_y\":3,\"title\":\"Topics\",\"type\":\"visualization\"},{\"col\":3,\"id\":\"Discourse-Creators\",\"panelIndex\":10,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Topic Creators\",\"type\":\"visualization\"},{\"col\":8,\"id\":\"Discourse-Creators-Table\",\"panelIndex\":11,\"row\":1,\"size_x\":5,\"size_y\":5,\"type\":\"visualization\",\"title\":\"Topic Creators\"},{\"id\":\"Discourse-Topics-Table\",\"type\":\"visualization\",\"panelIndex\":12,\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":6,\"title\":\"Latest Topics\"},{\"id\":\"Discourse-Topics-Table-Earliest\",\"type\":\"visualization\",\"panelIndex\":13,\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":9,\"title\":\"Earliest Topics\"},{\"id\":\"Discourse-Topics-Table-Updated\",\"type\":\"visualization\",\"panelIndex\":14,\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":12,\"title\":\"Last Updated Topics\"}]",
+            "timeFrom": "now-2y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Discourse",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Intro\"},\"P-10\":{\"title\":\"Topic Creators\"},\"P-2\":{\"title\":\"Questions\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Users asking Questions\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Last Updated Questions\"},\"P-5\":{\"title\":\"Last Updated Answers\"},\"P-6\":{\"title\":\"Main People Asking\"},\"P-7\":{\"title\":\"Main people Answering\"},\"P-8\":{\"title\":\"Summary\"},\"P-9\":{\"title\":\"Topics\"},\"P-11\":{\"title\":\"Topic Creators\"},\"P-12\":{\"title\":\"Latest Topics\"},\"P-13\":{\"title\":\"Earliest Topics\"},\"P-14\":{\"title\":\"Last Updated Topics\"}}",
+            "version": 1
+        }
+    },
+    "index_patterns": [
+        {
+            "id": "discourse",
+            "value": {
+                "fieldFormatMap": "{\"topic_url\":{\"id\":\"url\",\"params\":{\"urlTemplate\":\"{{rawValue}}\",\"labelTemplate\":\"+Info\"}}}",
+                "fields": "[{\"name\":\"pinned\",\"type\":\"boolean\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"ocean-unique-id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"created_at\",\"type\":\"date\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"description\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"title\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"word_count\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"grimoire_creation_date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"id\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"views\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"last_posted_at\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"is_discourse_topic\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"like_count\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"reply_count\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"first_reply_time\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"participant_count\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"topic_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"metadata__updated_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"topic_slug\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"username\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"posts_count\",\"type\":\"number\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false}]",
+                "timeFieldName": "created_at",
+                "title": "discourse"
+            }
+        }
+    ],
+    "searches": [
+        {
+            "id": "Discourse",
+            "value": {
+                "columns": [
+                    "created_at",
+                    "description",
+                    "first_reply_time",
+                    "is_discourse_topic",
+                    "last_posted_at",
+                    "like_count",
+                    "participant_count",
+                    "pinned",
+                    "posts_count",
+                    "reply_count",
+                    "title",
+                    "topic_url",
+                    "username",
+                    "views",
+                    "word_count"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "created_at",
+                    "desc"
+                ],
+                "title": "Discourse",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "Discourse-Summary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Summary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Summary\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Topics\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"username\",\"customLabel\":\"# Creators\"}},{\"id\":\"5\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"participant_count\",\"percents\":[50],\"customLabel\":\"Participants/topic (median)\"}},{\"id\":\"3\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"posts_count\",\"percents\":[50],\"customLabel\":\"Posts/topic (median)\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"first_reply_time\",\"percents\":[50],\"customLabel\":\"Time to reply (median, days)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Topics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Topics",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Topics\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Topics\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"created_at\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Creators",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Creators",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Topics\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"username\",\"customLabel\":\"# Topic Creators\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"created_at\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Creators-Table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Creators Table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic creator\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"participant_count\",\"percents\":[50],\"customLabel\":\"Participants/topic (median)\"}},{\"id\":\"5\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"like_count\",\"percents\":[50],\"customLabel\":\"Likes/topic (median)\"}},{\"id\":\"6\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"views\",\"percents\":[50],\"customLabel\":\"Views/topic (median)\"}},{\"id\":\"7\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"first_reply_time\",\"percents\":[50],\"customLabel\":\"Time to first reply (median, days)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Topics-Table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Topics Table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Topics Table Earliest\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"created_at\",\"customLabel\":\"Created\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Title\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"participant_count\",\"customLabel\":\"# Participants\"}},{\"id\":\"9\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"posts_count\",\"customLabel\":\"# Posts\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"like_count\",\"customLabel\":\"# Likes\"}},{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"views\",\"customLabel\":\"# views\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"first_reply_time\",\"customLabel\":\"Time to reply\"}},{\"id\":\"8\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Creator\"}},{\"id\":\"10\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Link\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Topics-Table-Earliest",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Topics Table Earliest",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Topics Table Earliest\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"created_at\",\"customLabel\":\"Created\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Title\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"participant_count\",\"customLabel\":\"# Participants\"}},{\"id\":\"9\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"posts_count\",\"customLabel\":\"# Posts\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"like_count\",\"customLabel\":\"# Likes\"}},{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"views\",\"customLabel\":\"# views\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"first_reply_time\",\"customLabel\":\"Time to reply\"}},{\"id\":\"8\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Creator\"}},{\"id\":\"10\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Link\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Discourse-Topics-Table-Updated",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Discourse",
+                "title": "Discourse Topics Table Updated",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Discourse Topics Table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last_posted_at\",\"customLabel\":\"Last update\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Title\"}},{\"id\":\"11\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"created_at\",\"customLabel\":\"Created\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"participant_count\",\"customLabel\":\"# Participants\"}},{\"id\":\"9\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"posts_count\",\"customLabel\":\"# Posts\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"like_count\",\"customLabel\":\"# Likes\"}},{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"views\",\"customLabel\":\"# views\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"first_reply_time\",\"customLabel\":\"Time to reply\"}},{\"id\":\"8\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Creator\"}},{\"id\":\"10\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"topic_url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Link\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
