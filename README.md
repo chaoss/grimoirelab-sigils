@@ -93,7 +93,7 @@ Example: jira
 Example: bugzilla
 ```
 
-Aliases Naming <a id="Aliases-Naming"></a>
+Aliases Naming
 --------------
 
 For each index there should be as many aliases as date fields stored in that index. Each alias is intended to be used for building panels or visualizations based on different time series. The name of an alias should follow the following pattern:
