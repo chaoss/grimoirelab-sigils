@@ -52,6 +52,24 @@ Widgets Naming
 
 Where data source could be git, gerrit, mbox, etc.
 
+Widgets Title Naming
+--------------------
+
+In general, titles should follow the same naming scheme as the widget itself, substituting underscore characters by single spaces and adding capital letters:
+
+```
+ <data_source> <metric_used>
+ 
+ Example: Git Top Authors
+ Example: Git Authors
+```
+
+Nevertheless, **widgets title depends on the name of the panel** in which the widgets are located.
+
+**If the panel shows information for several data sources, then the name of the data source must be included**. For example, it's the case of Data Status Panel, because it contains the same information per data source, so using data source name in title is mandatory.  
+
+**If the name of the data source is included in the title of the panel, then the name of the data source shouldn't be included in widgets' title**, except in cases where it could help understand what the widget contains.  
+
 Searches Naming
 ---------------
 
@@ -75,7 +93,22 @@ Example: jira
 Example: bugzilla
 ```
 
+Aliases Naming
+--------------
+For each index there should be as many aliases as date fields stored in that index. Each alias is intended to be used for building panels or visualizations based on different time series. The name of an alias should follow the following pattern:
 
+```
+<data_source_name>_<field_name>
+
+Example for git index and metadata__timestamp:
+git_metadata__timestamp
+
+Example for git index and metadata__updated_on:
+git_metadata__updated_on
+
+Example for jenkins and created_at field:
+jenkins_created_at
+```
 
 How this info was retrieved
 ---------------------------
