@@ -93,8 +93,9 @@ Example: jira
 Example: bugzilla
 ```
 
-Aliases Naming
+Aliases Naming <a id="Aliases-Naming"></a>
 --------------
+
 For each index there should be as many aliases as date fields stored in that index. Each alias is intended to be used for building panels or visualizations based on different time series. The name of an alias should follow the following pattern:
 
 ```
@@ -109,6 +110,12 @@ git_metadata__updated_on
 Example for jenkins and created_at field:
 jenkins_created_at
 ```
+
+Index Pattern Naming
+--------------------
+
+Index patterns in Kibana should follow the same naming scheme as aliases in ES (see [Aliases Naming](#Aliases-Naming) section). This way, is easy to know what alias is being used by a given index pattern. Besides, it makes easier to select index patterns from kibana, because their names include the field configured for time series in that index pattern. 
+
 
 How this info was retrieved
 ---------------------------
