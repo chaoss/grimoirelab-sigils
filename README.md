@@ -55,20 +55,22 @@ Where data source could be git, gerrit, mbox, etc.
 Widgets Title Naming
 --------------------
 
-In general, titles should follow the same naming scheme as the widget itself, substituting underscore characters by single spaces and adding capital letters:
+In general, titles should follow the same naming scheme as the widget itself, substituting underscore characters by single spaces and adding capital letters. Nevertheless, **widgets title depends on the name of the panel** in which the widgets are located: 
+
+- **If the panel shows information for several data sources, then the name of the data source must be included**. For example, it's the case of Data Status Panel, because it contains the same information per data source, so using data source name in title is mandatory.  
+
+- **If the name of the data source is included in the title of the panel, then the name of the data source shouldn't be included in widgets' title**, except in cases where it could help understand what the widget contains.
+
 
 ```
  <data_source> <metric_used>
  
- Example: Git Top Authors
- Example: Git Authors
+ Example: 
+   Same visualization for top authors would be named: 
+ 
+   - 'Top Authors' in 'Git' panel, as the panel is giving us context.
+   - 'Git Top Authors' in 'Overview' panel where we could have similar visualizations for other data sources.
 ```
-
-Nevertheless, **widgets title depends on the name of the panel** in which the widgets are located.
-
-**If the panel shows information for several data sources, then the name of the data source must be included**. For example, it's the case of Data Status Panel, because it contains the same information per data source, so using data source name in title is mandatory.  
-
-**If the name of the data source is included in the title of the panel, then the name of the data source shouldn't be included in widgets' title**, except in cases where it could help understand what the widget contains.  
 
 Searches Naming
 ---------------
