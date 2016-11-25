@@ -114,7 +114,7 @@ jenkins_created_at
 Index Pattern Naming
 --------------------
 
-Index patterns in Kibana should follow the same naming scheme as aliases in ES (see [Aliases Naming](#Aliases-Naming) section). This way, is easy to know what alias is being used by a given index pattern. Besides, it makes easier to select index patterns from kibana, because their names include the field configured for time series in that index pattern. 
+Index patterns in Kibana should follow the same naming scheme as aliases in ES (see [Aliases Naming](#aliases-naming) section). This way, is easy to know what alias is being used by a given index pattern. Besides, it makes easier to select index patterns from kibana, because their names include the field configured for time series in that index pattern. 
 
 
 How this info was retrieved
