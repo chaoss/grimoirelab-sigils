@@ -1,263 +1,263 @@
 {
-    "dashboard": {
-        "id": "Data-Status",
-        "value": {
-            "hits": 0,
-            "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Bugzilla\"},\"P-10\":{\"title\":\"Mbox\"},\"P-11\":{\"title\":\"ReMo\"},\"P-12\":{\"title\":\"StackOverflow\"},\"P-13\":{\"title\":\"Telegram\"},\"P-14\":{\"title\":\"Twitter\"},\"P-15\":{\"title\":\"Google Hits\"},\"P-16\":{\"title\":\"Discourse\"},\"P-17\":{\"title\":\"Jenkins\"},\"P-18\":{\"title\":\"ReMo Events\"},\"P-19\":{\"title\":\"Mediawiki\"},\"P-2\":{\"title\":\"Confluence\"},\"P-20\":{\"title\":\"Mozillaclub\"},\"P-3\":{\"title\":\"Gerrit\"},\"P-4\":{\"title\":\"Git\"},\"P-5\":{\"title\":\"Github\"},\"P-6\":{\"title\":\"IRC\"},\"P-7\":{\"title\":\"Jira\"},\"P-8\":{\"title\":\"Kitsune\"},\"P-9\":{\"title\":\"Maniphest\"}}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"bugzilla_data_status_numbers\",\"panelIndex\":1,\"row\":7,\"size_x\":12,\"size_y\":1,\"title\":\"Bugzilla\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_data_status_numbers\",\"panelIndex\":2,\"row\":12,\"size_x\":12,\"size_y\":1,\"title\":\"Confluence\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"gerrit_data_status_numbers\",\"panelIndex\":3,\"row\":2,\"size_x\":12,\"size_y\":1,\"title\":\"Gerrit\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"git_data_status_numbers\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"title\":\"Git\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_data_status_numbers\",\"panelIndex\":5,\"row\":3,\"size_x\":12,\"size_y\":1,\"title\":\"Github\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"irc_data_status_numbers\",\"panelIndex\":6,\"row\":10,\"size_x\":12,\"size_y\":1,\"title\":\"IRC\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jira_data_status_numbers\",\"panelIndex\":7,\"row\":5,\"size_x\":12,\"size_y\":1,\"title\":\"Jira\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"kitsune_data_status_numbers\",\"panelIndex\":8,\"row\":9,\"size_x\":12,\"size_y\":1,\"title\":\"Kitsune\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"maniphest_data_status_numbers\",\"panelIndex\":9,\"row\":6,\"size_x\":12,\"size_y\":1,\"title\":\"Maniphest\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mbox_data_status_numbers\",\"panelIndex\":10,\"row\":4,\"size_x\":12,\"size_y\":1,\"title\":\"Mbox\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"remo_data_status_numbers\",\"panelIndex\":11,\"row\":19,\"size_x\":12,\"size_y\":1,\"title\":\"ReMo\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"stackoverflow_data_status_numbers\",\"panelIndex\":12,\"row\":8,\"size_x\":12,\"size_y\":1,\"title\":\"StackOverflow\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"telegram_data_status_numbers\",\"panelIndex\":13,\"row\":15,\"size_x\":12,\"size_y\":1,\"title\":\"Telegram\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"twitter_data_status_numbers\",\"panelIndex\":14,\"row\":14,\"size_x\":12,\"size_y\":1,\"title\":\"Twitter\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"google_hits_data_status_numbers\",\"panelIndex\":15,\"row\":20,\"size_x\":12,\"size_y\":1,\"title\":\"Google Hits\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"discourse_data_status_numbers\",\"panelIndex\":16,\"row\":17,\"size_x\":12,\"size_y\":1,\"title\":\"Discourse\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jenkins_data_status_numbers\",\"panelIndex\":17,\"row\":13,\"size_x\":12,\"size_y\":1,\"title\":\"Jenkins\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"remo2-events_data_status_numbers\",\"panelIndex\":18,\"row\":18,\"size_x\":12,\"size_y\":1,\"title\":\"ReMo Events\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mediawiki_data_status_numbers\",\"panelIndex\":19,\"row\":11,\"size_x\":12,\"size_y\":1,\"title\":\"Mediawiki\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mozillaclub_data_status_numbers\",\"panelIndex\":20,\"row\":16,\"size_x\":12,\"size_y\":1,\"title\":\"Mozillaclub\",\"type\":\"visualization\"}]",
-            "description": "",
-            "version": 1,
-            "timeRestore": true,
-            "optionsJSON": "{\"darkTheme\":false}",
-            "timeTo": "now",
-            "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
-            },
-            "title": "Data Status",
-            "timeFrom": "now-2y"
-        }
-    },
-    "searches": [],
-    "index_patterns": [],
     "visualizations": [{
-        "id": "bugzilla_data_status_numbers",
         "value": {
-            "visState": "{\"title\":\"bugzilla_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
-            "version": 1,
             "title": "bugzilla_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "confluence_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"confluence_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"bugzilla_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "bugzilla_data_status_numbers"
+    }, {
+        "value": {
             "title": "confluence_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "gerrit_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"gerrit_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"confluence_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "confluence_data_status_numbers"
+    }, {
+        "value": {
             "title": "gerrit_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "git_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"git_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"3\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"6\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"2\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"gerrit_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "gerrit_data_status_numbers"
+    }, {
+        "value": {
             "title": "git_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "github_issues_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"github_issues_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"git_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"3\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"6\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"2\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}"
+        },
+        "id": "git_data_status_numbers"
+    }, {
+        "value": {
             "title": "github_issues_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "irc_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"irc_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"github_issues_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "github_issues_data_status_numbers"
+    }, {
+        "value": {
             "title": "irc_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "jira_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"jira_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Enriched\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"irc_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "irc_data_status_numbers"
+    }, {
+        "value": {
             "title": "jira_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "kitsune_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"kitsune_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"jira_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Enriched\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "jira_data_status_numbers"
+    }, {
+        "value": {
             "title": "kitsune_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"kitsune\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "maniphest_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"maniphest_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"kitsune_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "kitsune_data_status_numbers"
+    }, {
+        "value": {
             "title": "maniphest_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "mbox_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"mbox_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"maniphest_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "maniphest_data_status_numbers"
+    }, {
+        "value": {
             "title": "mbox_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"mbox\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "remo_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"remo_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"mbox_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "mbox_data_status_numbers"
+    }, {
+        "value": {
             "title": "remo_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"remo\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "stackoverflow_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"stackoverflow_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"remo_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "remo_data_status_numbers"
+    }, {
+        "value": {
             "title": "stackoverflow_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"stackoverflow\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "telegram_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"telegram_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"stackoverflow_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "stackoverflow_data_status_numbers"
+    }, {
+        "value": {
             "title": "telegram_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "twitter_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"twitter_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"Last Item\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"telegram_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "telegram_data_status_numbers"
+    }, {
+        "value": {
             "title": "twitter_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "google_hits_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"google_hits_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"twitter_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"Last Item\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "twitter_data_status_numbers"
+    }, {
+        "value": {
             "title": "google_hits_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "discourse_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"google_hits_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"@timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "google_hits_data_status_numbers"
+    }, {
+        "value": {
             "title": "discourse_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "jenkins_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"discourse_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "discourse_data_status_numbers"
+    }, {
+        "value": {
             "title": "jenkins_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "remo2-events_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "jenkins_data_status_numbers"
+    }, {
+        "value": {
             "title": "remo2-events_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"remo2-events\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "mediawiki_data_status_numbers",
-        "value": {
-            "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"customLabel\":\"Total Item Count\"},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customLabel\":\"First Item\",\"field\":\"metadata__updated_on\"},\"schema\":\"metric\",\"type\":\"min\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Last Item\",\"field\":\"metadata__updated_on\"},\"schema\":\"metric\",\"type\":\"max\"},{\"id\":\"4\",\"params\":{\"customLabel\":\"First Retrieval\",\"field\":\"metadata__timestamp\"},\"schema\":\"metric\",\"type\":\"min\"},{\"id\":\"5\",\"params\":{\"customLabel\":\"Last Retrieval\",\"field\":\"metadata__timestamp\"},\"schema\":\"metric\",\"type\":\"max\"}],\"listeners\":{},\"params\":{\"fontSize\":\"12\"},\"title\":\"mediawiki_data_status_numbers\",\"type\":\"metric\"}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "remo2-events_data_status_numbers"
+    }, {
+        "value": {
             "title": "mediawiki_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"mediawiki\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-            }
-        }
-    }, {
-        "id": "mozillaclub_data_status_numbers",
-        "value": {
-            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
-            "uiStateJSON": "{}",
-            "description": "",
+            },
             "version": 1,
+            "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{\"customLabel\":\"Total Item Count\"},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customLabel\":\"First Item\",\"field\":\"metadata__updated_on\"},\"schema\":\"metric\",\"type\":\"min\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Last Item\",\"field\":\"metadata__updated_on\"},\"schema\":\"metric\",\"type\":\"max\"},{\"id\":\"4\",\"params\":{\"customLabel\":\"First Retrieval\",\"field\":\"metadata__timestamp\"},\"schema\":\"metric\",\"type\":\"min\"},{\"id\":\"5\",\"params\":{\"customLabel\":\"Last Retrieval\",\"field\":\"metadata__timestamp\"},\"schema\":\"metric\",\"type\":\"max\"}],\"listeners\":{},\"params\":{\"fontSize\":\"12\"},\"title\":\"mediawiki_data_status_numbers\",\"type\":\"metric\"}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "mediawiki_data_status_numbers"
+    }, {
+        "value": {
             "title": "mozillaclub_data_status_numbers",
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"index\":\"mozillaclub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-            }
-        }
-    }]
+            },
+            "version": 1,
+            "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}",
+            "description": "",
+            "uiStateJSON": "{}"
+        },
+        "id": "mozillaclub_data_status_numbers"
+    }],
+    "dashboard": {
+        "value": {
+            "timeTo": "now",
+            "title": "Data Status",
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+            },
+            "version": 1,
+            "timeRestore": true,
+            "panelsJSON": "[{\"col\":1,\"id\":\"bugzilla_data_status_numbers\",\"panelIndex\":1,\"row\":7,\"size_x\":12,\"size_y\":1,\"title\":\"Bugzilla\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_data_status_numbers\",\"panelIndex\":2,\"row\":12,\"size_x\":12,\"size_y\":1,\"title\":\"Confluence\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"gerrit_data_status_numbers\",\"panelIndex\":3,\"row\":2,\"size_x\":12,\"size_y\":1,\"title\":\"Gerrit\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"git_data_status_numbers\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"title\":\"Git\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_data_status_numbers\",\"panelIndex\":5,\"row\":3,\"size_x\":12,\"size_y\":1,\"title\":\"Github\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"irc_data_status_numbers\",\"panelIndex\":6,\"row\":10,\"size_x\":12,\"size_y\":1,\"title\":\"IRC\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jira_data_status_numbers\",\"panelIndex\":7,\"row\":5,\"size_x\":12,\"size_y\":1,\"title\":\"Jira\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"kitsune_data_status_numbers\",\"panelIndex\":8,\"row\":9,\"size_x\":12,\"size_y\":1,\"title\":\"Kitsune\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"maniphest_data_status_numbers\",\"panelIndex\":9,\"row\":6,\"size_x\":12,\"size_y\":1,\"title\":\"Maniphest\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mbox_data_status_numbers\",\"panelIndex\":10,\"row\":4,\"size_x\":12,\"size_y\":1,\"title\":\"Mbox\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"remo_data_status_numbers\",\"panelIndex\":11,\"row\":19,\"size_x\":12,\"size_y\":1,\"title\":\"ReMo\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"stackoverflow_data_status_numbers\",\"panelIndex\":12,\"row\":8,\"size_x\":12,\"size_y\":1,\"title\":\"StackOverflow\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"telegram_data_status_numbers\",\"panelIndex\":13,\"row\":15,\"size_x\":12,\"size_y\":1,\"title\":\"Telegram\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"twitter_data_status_numbers\",\"panelIndex\":14,\"row\":14,\"size_x\":12,\"size_y\":1,\"title\":\"Twitter\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"google_hits_data_status_numbers\",\"panelIndex\":15,\"row\":20,\"size_x\":12,\"size_y\":1,\"title\":\"Google Hits\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"discourse_data_status_numbers\",\"panelIndex\":16,\"row\":17,\"size_x\":12,\"size_y\":1,\"title\":\"Discourse\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jenkins_data_status_numbers\",\"panelIndex\":17,\"row\":13,\"size_x\":12,\"size_y\":1,\"title\":\"Jenkins\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"remo2-events_data_status_numbers\",\"panelIndex\":18,\"row\":18,\"size_x\":12,\"size_y\":1,\"title\":\"ReMo Events\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mediawiki_data_status_numbers\",\"panelIndex\":19,\"row\":11,\"size_x\":12,\"size_y\":1,\"title\":\"Mediawiki\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mozillaclub_data_status_numbers\",\"panelIndex\":20,\"row\":16,\"size_x\":12,\"size_y\":1,\"title\":\"Mozillaclub\",\"type\":\"visualization\"}]",
+            "optionsJSON": "{\"darkTheme\":false}",
+            "hits": 0,
+            "description": "",
+            "timeFrom": "now-2y",
+            "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Bugzilla\"},\"P-10\":{\"title\":\"Mbox\"},\"P-11\":{\"title\":\"ReMo\"},\"P-12\":{\"title\":\"StackOverflow\"},\"P-13\":{\"title\":\"Telegram\"},\"P-14\":{\"title\":\"Twitter\"},\"P-15\":{\"title\":\"Google Hits\"},\"P-16\":{\"title\":\"Discourse\"},\"P-17\":{\"title\":\"Jenkins\"},\"P-18\":{\"title\":\"ReMo Events\"},\"P-19\":{\"title\":\"Mediawiki\"},\"P-2\":{\"title\":\"Confluence\"},\"P-20\":{\"title\":\"Mozillaclub\"},\"P-3\":{\"title\":\"Gerrit\"},\"P-4\":{\"title\":\"Git\"},\"P-5\":{\"title\":\"Github\"},\"P-6\":{\"title\":\"IRC\"},\"P-7\":{\"title\":\"Jira\"},\"P-8\":{\"title\":\"Kitsune\"},\"P-9\":{\"title\":\"Maniphest\"}}"
+        },
+        "id": "Data-Status"
+    },
+    "index_patterns": [],
+    "searches": []
 }
