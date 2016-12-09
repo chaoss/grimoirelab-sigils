@@ -203,5 +203,23 @@
             "files": "telegram.json",
             "order": 19
         }]
+    }, {
+        "name": "redmine",
+        "panels": [{
+            "id": "Redmine",
+            "name": "Redmine",
+            "files": "redmine-*.json",
+            "order": 6
+        }, {
+            "id": "Redmine-Backlog",
+            "name": "Redmine Backlog",
+            "files": "redmine_backlog-*.json",
+            "order": 7
+        },  {
+            "id": "Redmine-Timing",
+            "name": "Redmine Timing",
+            "files": "redmine_timing-*.json",
+            "order": 8
+        }]
     }]
 }
