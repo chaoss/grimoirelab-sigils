@@ -73,6 +73,11 @@
             "name": "Issues",
             "files": "github_issues-*.json",
             "order": 2
+        }, {
+            "id": "GitHub-Issues-Timing",
+            "name": "GitHub Issues Timing",
+            "files": "github_issues_timing -*.json",
+            "order": 4
         }]
     }, {
         "name": "mbox",
