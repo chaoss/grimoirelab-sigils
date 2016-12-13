@@ -73,6 +73,11 @@
             "name": "Issues",
             "files": "github_issues-*.json",
             "order": 2
+        }, {
+            "id": "GitHub-Issues-Delays",
+            "name": "Issues Delays",
+            "files": "github_issues_delays-*.json",
+            "order": 4
         }]
     }, {
         "name": "mbox",
