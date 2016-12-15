@@ -1,0 +1,114 @@
+{
+    "index_patterns": [
+        {
+            "id": "rss",
+            "value": {
+                "fieldFormatMap": "{\"link\":{\"id\":\"url\",\"params\":{\"labelTemplate\":\"+ Info\"}},\"grimoire_creation_date\":{\"id\":\"date\",\"params\":{\"pattern\":\"MMM Do YYYY\"}}}",
+                "timeFieldName": "grimoire_creation_date",
+                "title": "rss",
+                "fields": "[{\"name\":\"author_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"metadata__gelk_backend_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"origin\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"ocean-unique-id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"title\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_user_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__enriched_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_bot\",\"type\":\"boolean\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_org_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"summary\",\"type\":\"string\",\"count\":2,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"published\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"summary_analyzed\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"avatar\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_uuid\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"is_rss_entry\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"metadata__gelk_version\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__updated_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"publish_date\",\"type\":\"date\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"link\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"grimoire_creation_date\",\"type\":\"date\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true}]"
+            }
+        }
+    ],
+    "dashboard": {
+        "id": "RSS",
+        "value": {
+            "panelsJSON": "[{\"col\":1,\"id\":\"rss_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":1,\"size_y\":4,\"title\":\"RSS\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"rss_posts_evolutionary\",\"panelIndex\":2,\"row\":1,\"size_x\":5,\"size_y\":2,\"title\":\"Posts\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"rss_authors_evolutionary\",\"panelIndex\":3,\"row\":3,\"size_x\":5,\"size_y\":2,\"title\":\"Authors\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"rss_posts_word_count\",\"panelIndex\":5,\"row\":5,\"size_x\":2,\"size_y\":4,\"title\":\"Word Count\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"rss_authors\",\"panelIndex\":6,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Authors\",\"type\":\"visualization\"},{\"col\":3,\"columns\":[\"author\",\"title\",\"link\",\"summary\"],\"id\":\"RSS-Search:_title_author_link_summary\",\"panelIndex\":7,\"row\":5,\"size_x\":10,\"size_y\":4,\"sort\":[\"grimoire_creation_date\",\"desc\"],\"title\":\"Last Posts\",\"type\":\"search\"},{\"col\":7,\"id\":\"rss_authors_posts\",\"panelIndex\":8,\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\",\"title\":\"Authors\"}]",
+            "timeFrom": "now-2y",
+            "timeTo": "now",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"RSS\"},\"P-2\":{\"title\":\"Posts\"},\"P-3\":{\"title\":\"Authors\"},\"P-5\":{\"title\":\"Word Count\"},\"P-6\":{\"title\":\"Authors\"},\"P-7\":{\"title\":\"Last Posts\"},\"P-8\":{\"title\":\"Authors\"}}",
+            "hits": 0,
+            "description": "",
+            "optionsJSON": "{\"darkTheme\":false}",
+            "title": "RSS",
+            "timeRestore": true,
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+            }
+        }
+    },
+    "searches": [
+
+    ],
+    "visualizations": [
+        {
+            "id": "rss_main_numbers",
+            "value": {
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Entries\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "description": "",
+                "title": "rss_main_numbers",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        },
+        {
+            "id": "rss_posts_evolutionary",
+            "value": {
+                "visState": "{\"title\":\"rss_posts_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Blog Posts\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "description": "",
+                "title": "rss_posts_evolutionary",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        },
+        {
+            "id": "rss_authors_evolutionary",
+            "value": {
+                "visState": "{\"title\":\"rss_posts_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "description": "",
+                "title": "rss_authors_evolutionary",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        },
+        {
+            "id": "rss_posts_word_count",
+            "value": {
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Word Count\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"summary_analyzed\",\"exclude\":{\"pattern\":\".{1,4}\"},\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Word\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "description": "",
+                "title": "rss_posts_word_count",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        },
+        {
+            "id": "rss_authors",
+            "value": {
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Posts\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"publish_date\",\"customLabel\":\"First Post\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"publish_date\",\"customLabel\":\"Last Post\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "description": "",
+                "title": "rss_authors",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        },
+        {
+            "id": "rss_authors_posts",
+            "value": {
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Posts\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "description": "",
+                "title": "rss_authors_posts",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                }
+            }
+        }
+    ]
+}
