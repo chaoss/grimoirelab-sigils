@@ -227,6 +227,14 @@
             "order": 8
         }]
     }, {
+        "name": "rss",
+        "panels": [{
+            "id": "RSS",
+            "name": "RSS",
+            "files": "rss.json",
+            "order": 13
+        }]
+    }, {
         "name": "askbot",
         "panels": [{
             "id": "Askbot",
@@ -246,6 +254,6 @@
             "name": "Meetup Locations",
             "files": "meetup_locations.json",
             "order": 12
-        }] 
+        }]
    }]
 }
