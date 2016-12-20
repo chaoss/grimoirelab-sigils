@@ -246,6 +246,14 @@
             "name": "Meetup Locations",
             "files": "meetup_locations.json",
             "order": 12
-        }] 
+        }]
+   }, {
+       "name": "discourse",
+       "panels": [{
+           "id": "Discourse",
+           "name": "Discourse",
+           "files": "discourse.json",
+           "order": 9
+       }]
    }]
 }
