@@ -142,7 +142,7 @@
             "id": "Jenkins",
             "name": "Jenkins",
             "files": "jenkins*.json",
-            "order": 12
+            "order": 15
         }]
     }, {
         "name": "mediawiki",
@@ -150,7 +150,7 @@
             "id": "Mediawiki",
             "name": "Mediawiki",
             "files": "mediawiki.json",
-            "order": 11
+            "order": 14
         }]
     }, {
         "name": "confluence",
@@ -158,7 +158,7 @@
             "id": "Confluence",
             "name": "Confluence",
             "files": "confluence.json",
-            "order": 11
+            "order": 14
         }]
     }, {
         "name": "irc",
@@ -166,7 +166,7 @@
             "id": "IRC",
             "name": "IRC",
             "files": "irc.json",
-            "order": 10
+            "order": 13
         }]
     }, {
         "name": "reps",
@@ -234,5 +234,18 @@
             "files": "askbot.json",
             "order": 9
         }]
-    }]
+    }, {
+        "name": "meetup",
+        "panels": [{
+            "id": "Meetup",
+            "name": "Meetup",
+            "files": "meetup.json",
+            "order": 11
+        }, {
+            "id": "Meetup-Locations",
+            "name": "Meetup Locations",
+            "files": "meetup_locations.json",
+            "order": 12
+        }] 
+   }]
 }
