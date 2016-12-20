@@ -226,5 +226,13 @@
             "files": "redmine_timing-*.json",
             "order": 8
         }]
+    }, {
+        "name": "askbot",
+        "panels": [{
+            "id": "Askbot",
+            "name": "Askbot",
+            "files": "askbot.json",
+            "order": 9
+        }]
     }]
 }
