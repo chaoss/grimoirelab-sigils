@@ -7,15 +7,20 @@
             "files": "overview.json",
             "order": 0
         }, {
+            "id": "Last-Month-Contributors",
+            "name": "Last Month Contributors",
+            "files": "last_month_contributors.json",
+            "order": 20
+        }, {
             "id": "Data-Status",
             "name": "Data Status",
             "files": "data-status.json",
-            "order": 20
+            "order": 30
         }, {
             "id": "About",
             "name": "About",
             "files": "about.json",
-            "order": 21
+            "order": 31
         }]
     }, {
         "name": "git",
