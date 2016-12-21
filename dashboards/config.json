@@ -246,6 +246,14 @@
             "name": "Meetup Locations",
             "files": "meetup_locations.json",
             "order": 12
-        }] 
+        }]
+   }, {
+       "name": "apache",
+       "panels": [{
+           "id": "Apache",
+           "name": "Apache",
+           "files": "apache.json",
+           "order": 15
+       }]
    }]
 }
