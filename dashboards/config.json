@@ -248,6 +248,14 @@
             "order": 12
         }]
    }, {
+       "name": "apache",
+       "panels": [{
+           "id": "Apache",
+           "name": "Apache",
+           "files": "apache.json",
+           "order": 15
+       }]
+   }, {
        "name": "discourse",
        "panels": [{
            "id": "Discourse",
