@@ -119,6 +119,25 @@ Index Pattern Naming
 Index patterns in Kibana should follow the same naming scheme as aliases in ES (see [Aliases Naming](#aliases-naming) section). This way, is easy to know what alias is being used by a given index pattern. Besides, it makes easier to select index patterns from kibana, because their names include the field configured for time series in that index pattern. 
 
 
+Common Index Fields
+-------------------
+
+Following fields that should be included in any index pattern:
+
+* id
+* url
+* metadata__timestamp
+* metadata__updated_on
+* author_bot
+* author_name
+* author_org_name
+* author_uuid
+* author_domain
+* author_user_name
+* origin
+* grimoire_creation_date
+
+
 How this info was retrieved
 ---------------------------
 
