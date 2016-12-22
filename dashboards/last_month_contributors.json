@@ -1,0 +1,215 @@
+{
+    "visualizations": [
+        {
+            "value": {
+                "title": "git_top_authors",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project\",\"customLabel\":\"Projects\"}},{\"id\":\"4\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"lines_added\",\"customLabel\":\"Added Lines\"}},{\"id\":\"5\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"lines_removed\",\"customLabel\":\"Removed Lines\"}},{\"id\":\"6\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"files\",\"customLabel\":\"Avg. Files\"}}],\"listeners\":{}}"
+            },
+            "id": "git_top_authors"
+        },
+        {
+            "value": {
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_top_developers",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_top_developers\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project\",\"customLabel\":\"# Projects\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"patchsets\",\"customLabel\":\"Avg Patchsets\"}}],\"listeners\":{}}"
+            },
+            "id": "gerrit_top_developers"
+        },
+        {
+            "value": {
+                "title": "bugzilla_issues_submitters",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project_name\",\"customLabel\":\"Projects\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            },
+            "id": "bugzilla_issues_submitters"
+        },
+        {
+            "value": {
+                "savedSearchId": "Search:_pull_request:false",
+                "title": "github_issues_submitters",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_issues_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            },
+            "id": "github_issues_submitters"
+        },
+        {
+            "value": {
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "github_pullrequests_submitters",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pullrequests_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"github_repo\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            },
+            "id": "github_pullrequests_submitters"
+        },
+        {
+            "value": {
+                "title": "irc_main_participants",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 10,\n    \"showPartialRows\": false,\n    \"showMeticsAtAllLevels\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Messages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_name\",\n        \"size\": 50,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"customLabel\": \"Participants\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"channel\",\n        \"customLabel\": \"Channels\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            },
+            "id": "irc_main_participants"
+        },
+        {
+            "value": {
+                "title": "confluence_top_editors",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_new_page\",\"customLabel\":\"New Pages\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Participant\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_page\",\"customLabel\":\"Page Edits\"}},{\"id\":\"4\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_comment\",\"customLabel\":\"Comments\"}},{\"id\":\"5\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_blogpost\",\"customLabel\":\"Blog Posts\"}},{\"id\":\"6\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_attachment\",\"customLabel\":\"Attachments\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"date\",\"customLabel\":\"Last Action Date\"}}],\"listeners\":{}}"
+            },
+            "id": "confluence_top_editors"
+        },
+        {
+            "value": {
+                "title": "jira_issues_submitters",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"creator_name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project_name\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            },
+            "id": "jira_issues_submitters"
+        },
+        {
+            "value": {
+                "title": "maniphest_issues_submitters",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"tags_analyzed\",\"customLabel\":\"Projects\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            },
+            "id": "maniphest_issues_submitters"
+        }
+    ],
+    "dashboard": {
+        "value": {
+            "timeFrom": "now-30d",
+            "timeRestore": true,
+            "title": "Last Month Contributors",
+            "description": "",
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+            },
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Git Authors\"},\"P-2\":{\"title\":\"Gerrit Submitters\"},\"P-3\":{\"title\":\"Bugzilla Submitters\"},\"P-4\":{\"title\":\"GitHub Issues Submitters\"},\"P-5\":{\"title\":\"GitHub Pull Request Submitters\"},\"P-6\":{\"title\":\"IRC Participants\"},\"P-7\":{\"title\":\"Confluence Editors\"},\"P-8\":{\"title\":\"Jira Submitters\"},\"P-9\":{\"title\":\"Maniphest Submitters\"}}",
+            "optionsJSON": "{\"darkTheme\":false}",
+            "version": 1,
+            "hits": 0,
+            "timeTo": "now",
+            "panelsJSON": "[{\"id\":\"git_top_authors\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":3,\"size_y\":4,\"col\":1,\"row\":1,\"title\":\"Git Authors\"},{\"id\":\"gerrit_top_developers\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":3,\"size_y\":4,\"col\":4,\"row\":1,\"title\":\"Gerrit Submitters\"},{\"id\":\"bugzilla_issues_submitters\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":3,\"size_y\":4,\"col\":1,\"row\":9,\"title\":\"Bugzilla Submitters\"},{\"id\":\"github_issues_submitters\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":3,\"size_y\":4,\"col\":4,\"row\":5,\"title\":\"GitHub Issues Submitters\"},{\"id\":\"github_pullrequests_submitters\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":3,\"size_y\":4,\"col\":7,\"row\":5,\"title\":\"GitHub Pull Request Submitters\"},{\"id\":\"irc_main_participants\",\"type\":\"visualization\",\"panelIndex\":6,\"size_x\":3,\"size_y\":4,\"col\":7,\"row\":1,\"title\":\"IRC Participants\"},{\"id\":\"confluence_top_editors\",\"type\":\"visualization\",\"panelIndex\":7,\"size_x\":3,\"size_y\":4,\"col\":10,\"row\":1,\"title\":\"Confluence Editors\"},{\"id\":\"jira_issues_submitters\",\"type\":\"visualization\",\"panelIndex\":8,\"size_x\":3,\"size_y\":4,\"col\":10,\"row\":5,\"title\":\"Jira Submitters\"},{\"id\":\"maniphest_issues_submitters\",\"type\":\"visualization\",\"panelIndex\":9,\"size_x\":3,\"size_y\":4,\"col\":1,\"row\":5,\"title\":\"Maniphest Submitters\"}]"
+        },
+        "id": "Last-Month-Contributors"
+    },
+    "index_patterns": [],
+    "searches": [
+        {
+            "value": {
+                "sort": [
+                    "_score",
+                    "desc"
+                ],
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"gerrit\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"filter\": [], \"highlight\": {\"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "version": 1,
+                "hits": 0,
+                "title": "SCR Reviews scr gerrit_enrich",
+                "columns": [
+                    "bot",
+                    "branch",
+                    "closed",
+                    "dashboard",
+                    "githash",
+                    "name",
+                    "opened",
+                    "patchsets",
+                    "project",
+                    "review",
+                    "status",
+                    "summary",
+                    "timeopen",
+                    "url"
+                ]
+            },
+            "id": "SCR-Reviews__gerrit_enrich"
+        },
+        {
+            "value": {
+                "title": "Search:_pull_request:false",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"pull_request:false\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "version": 1,
+                "hits": 0,
+                "sort": [
+                    "metadata__updated_on",
+                    "desc"
+                ],
+                "columns": [
+                    "_source"
+                ]
+            },
+            "id": "Search:_pull_request:false"
+        },
+        {
+            "value": {
+                "title": "Search:_pull_request:true",
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"pull_request:true\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "version": 1,
+                "hits": 0,
+                "sort": [
+                    "metadata__updated_on",
+                    "desc"
+                ],
+                "columns": [
+                    "_source"
+                ]
+            },
+            "id": "Search:_pull_request:true"
+        }
+    ]
+}

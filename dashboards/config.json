@@ -7,15 +7,20 @@
             "files": "overview.json",
             "order": 0
         }, {
+            "id": "Last-Month-Contributors",
+            "name": "Last Month Contributors",
+            "files": "last_month_contributors.json",
+            "order": 20
+        }, {
             "id": "Data-Status",
             "name": "Data Status",
             "files": "data-status.json",
-            "order": 20
+            "order": 30
         }, {
             "id": "About",
             "name": "About",
             "files": "about.json",
-            "order": 21
+            "order": 31
         }]
     }, {
         "name": "git",
@@ -73,6 +78,11 @@
             "name": "Issues",
             "files": "github_issues-*.json",
             "order": 2
+        }, {
+            "id": "GitHub-Issues-Timing",
+            "name": "GitHub Issues Timing",
+            "files": "github_issues_timing -*.json",
+            "order": 4
         }]
     }, {
         "name": "mbox",
@@ -137,7 +147,7 @@
             "id": "Jenkins",
             "name": "Jenkins",
             "files": "jenkins*.json",
-            "order": 12
+            "order": 15
         }]
     }, {
         "name": "mediawiki",
@@ -145,7 +155,7 @@
             "id": "Mediawiki",
             "name": "Mediawiki",
             "files": "mediawiki.json",
-            "order": 11
+            "order": 14
         }]
     }, {
         "name": "confluence",
@@ -153,7 +163,7 @@
             "id": "Confluence",
             "name": "Confluence",
             "files": "confluence.json",
-            "order": 11
+            "order": 14
         }]
     }, {
         "name": "irc",
@@ -161,7 +171,7 @@
             "id": "IRC",
             "name": "IRC",
             "files": "irc.json",
-            "order": 10
+            "order": 13
         }]
     }, {
         "name": "reps",
@@ -221,5 +231,50 @@
             "files": "redmine_timing-*.json",
             "order": 8
         }]
-    }]
+    }, {
+        "name": "rss",
+        "panels": [{
+            "id": "RSS",
+            "name": "RSS",
+            "files": "rss.json",
+            "order": 13
+        }]
+    }, {
+        "name": "askbot",
+        "panels": [{
+            "id": "Askbot",
+            "name": "Askbot",
+            "files": "askbot.json",
+            "order": 9
+        }]
+    }, {
+        "name": "meetup",
+        "panels": [{
+            "id": "Meetup",
+            "name": "Meetup",
+            "files": "meetup.json",
+            "order": 11
+        }, {
+            "id": "Meetup-Locations",
+            "name": "Meetup Locations",
+            "files": "meetup_locations.json",
+            "order": 12
+        }]
+   }, {
+       "name": "apache",
+       "panels": [{
+           "id": "Apache",
+           "name": "Apache",
+           "files": "apache.json",
+           "order": 15
+       }]
+   }, {
+       "name": "discourse",
+       "panels": [{
+           "id": "Discourse",
+           "name": "Discourse",
+           "files": "discourse.json",
+           "order": 9
+       }]
+   }]
 }
