@@ -14,7 +14,26 @@ Panels
 A panel is composed by the several widgets this contains.
 So far the panels proposed as generic are a mix of the several data sources available in a project. Those could be only focused on Git, but there are others such as review systems like Gerrit, IRC channels, mailing lists, etc.
 
-This is the list of panels that can be found in this directory:
+The structure for naming files should be:
+* For data sources: 
+```
+<data_source>[-<panel_name>][-<filters>].json
+
+Examples:
+git-<filters>.json
+gerrit-<filters>.json
+```
+* For other panels not focused on particular data sources we just use the name of the panel:
+```
+<panel_name>[-<filters>].json
+
+Examples:
+about.json
+overview-<filters>.json
+```
+Note: `<filters>` part is described in next section ([Filters Naming](#filters-naming))
+
+To give some examples, below there is a list of some panels that can be found in this directory:
 * git-'filters'.json: provides aggregated information about all of the gits in the analysis. Project/, repository, domains or organizations can be provided for filtering purposes.
 * gerrit-'filters'.json: provides aggregated information from all of the gerrit projects. Project/, repository, domains or organizations can be provided for filtering purposes.
 * gerrit-backlog-'filters'.json: provides specific widgets to track the backlog of the project with the addition of several filters per project or repository.
@@ -22,8 +41,8 @@ This is the list of panels that can be found in this directory:
 * about.json: provides some widgets detailing this information and how to interact with the panels.
 * overview-'filters'.json: provides a generic view of the dataset with some widgets that help to drill down the information from the whole list of data sources.
 
-Files Naming
-------------
+Filters Naming
+--------------
 
 Each panel may contain specific information in the name related to the available
 filters. This is intended to help when automatically deploying those.
