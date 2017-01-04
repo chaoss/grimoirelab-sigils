@@ -103,7 +103,17 @@ Example: Search:_pull_request:true
 
 Indexes Naming
 --------------
+Raw indexes should use suffix `-raw`:
+```
+<data_source>-raw
 
+Example: git-raw
+Example: gerrit-raw
+Example: stackoverflow-raw
+Example: jira-raw
+Example: bugzilla-raw
+```
+Enriched indexes should use just the name of the data source:
 ```
 <data_source>
 
