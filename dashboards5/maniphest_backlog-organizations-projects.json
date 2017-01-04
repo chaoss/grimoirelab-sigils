@@ -1,0 +1,151 @@
+{
+    "dashboard": {
+        "id": "Maniphest-Backlog",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false}",
+            "panelsJSON": "[{\"id\":\"maniphest_openissues_statistics\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":2,\"size_y\":2,\"col\":1,\"row\":1,\"title\":\"Open Issues Statistics\"},{\"id\":\"maniphest_openissues_per_project\",\"type\":\"visualization\",\"panelIndex\":2,\"size_x\":4,\"size_y\":2,\"col\":3,\"row\":1,\"title\":\"Projects\"},{\"id\":\"maniphest_openissues_backlog\",\"type\":\"visualization\",\"panelIndex\":3,\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":1,\"title\":\"Issues waiting to be closed\"},{\"id\":\"maniphest_backlog\",\"type\":\"visualization\",\"panelIndex\":4,\"size_x\":6,\"size_y\":6,\"col\":1,\"row\":3,\"title\":\"Backlog\"},{\"id\":\"maniphest_openissues_backlog_accumulated_time\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":3,\"title\":\"Accumulated Time (days): Issues waiting to be closed\"},{\"id\":\"maniphest_openissues_submitters\",\"type\":\"visualization\",\"panelIndex\":6,\"size_x\":3,\"size_y\":4,\"col\":7,\"row\":5,\"title\":\"Backlog Submitters\"},{\"id\":\"maniphest_openissues_assignee_orgs\",\"type\":\"visualization\",\"panelIndex\":7,\"size_x\":3,\"size_y\":4,\"col\":10,\"row\":5,\"title\":\"Assigned Organization\"}]",
+            "timeFrom": "now-2y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Maniphest Backlog",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Open Issues Statistics\"},\"P-2\":{\"title\":\"Projects\"},\"P-3\":{\"vis\":{\"legendOpen\":false},\"title\":\"Issues waiting to be closed\"},\"P-4\":{\"title\":\"Backlog\"},\"P-5\":{\"vis\":{\"legendOpen\":false},\"title\":\"Accumulated Time (days): Issues waiting to be closed\"},\"P-6\":{\"title\":\"Backlog Submitters\"},\"P-7\":{\"title\":\"Assigned Organization\"}}",
+            "version": 1
+        }
+    },
+    "index_patterns": [
+        {
+            "id": "maniphest",
+            "value": {
+                "fields": "[{\"name\":\"assigned_to_org_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"ocean-unique-id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assigned_to_user_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"modification_date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"num_changes\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"id\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_bot\",\"type\":\"boolean\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"bug_id\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_org_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_roles\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assgined_to_roles_analyzed\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assigned_to_bot\",\"type\":\"boolean\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"phid\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"creation_date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"priority\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"update_date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assigned_to_roles_analyzed\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"assigned_to_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"status\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"priority_value\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"timeopen_days\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"origin\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"changes\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"main_description\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"author_user_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"grimoire_creation_date\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"comments\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assigned_to_uuid\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_uuid\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"assigned_to_roles\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_roles_analyzed\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"tags_analyzed\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__updated_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"is_phabricator_task\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false}]",
+                "timeFieldName": "creation_date",
+                "title": "maniphest"
+            }
+        }
+    ],
+    "searches": [
+        {
+            "id": "Maniphest-Search:_status:Open",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"status:Open\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "creation_date",
+                    "desc"
+                ],
+                "title": "Maniphest Search:_status:Open",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "maniphest_openissues_statistics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_statistics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Accumulated Open Days\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days per Issue\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_openissues_per_project",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_per_project",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags_analyzed\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_openissues_backlog",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_backlog",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_backlog",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_backlog",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Days Open\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"main_description\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Title\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"tags_analyzed\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"5\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"changes\",\"customLabel\":\"Updates\"}},{\"id\":\"6\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"comments\",\"customLabel\":\"Comments\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_openissues_backlog_accumulated_time",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_backlog_accumulated_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Acc. Days Open\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_openissues_submitters",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_submitters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"tags_analyzed\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_openissues_assignee_orgs",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Maniphest-Search:_status:Open",
+                "title": "maniphest_openissues_assignee_orgs",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}

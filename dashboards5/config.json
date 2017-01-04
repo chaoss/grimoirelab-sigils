@@ -1,0 +1,370 @@
+{
+    "data-source": [
+        {
+            "name": "any",
+            "panels": [
+                {
+                    "files": "overview.json",
+                    "id": "Overview",
+                    "name": "Overview",
+                    "order": 0
+                },
+                {
+                    "files": "last_month_contributors.json",
+                    "id": "Last-Month-Contributors",
+                    "name": "Last Month Contributors",
+                    "order": 20
+                },
+                {
+                    "files": "data-status.json",
+                    "id": "Data-Status",
+                    "name": "Data Status",
+                    "order": 30
+                },
+                {
+                    "files": "about.json",
+                    "id": "About",
+                    "name": "About",
+                    "order": 31
+                }
+            ]
+        },
+        {
+            "name": "git",
+            "panels": [
+                {
+                    "files": "git-*.json",
+                    "id": "Git",
+                    "name": "Git",
+                    "order": 1
+                },
+                {
+                    "files": "git_demographics-*.json",
+                    "id": "Git-Demographics",
+                    "name": "Demographics",
+                    "order": 10
+                }
+            ]
+        },
+        {
+            "name": "gerrit",
+            "panels": [
+                {
+                    "files": "gerrit-*.json",
+                    "id": "Gerrit",
+                    "name": "Gerrit",
+                    "order": 2
+                },
+                {
+                    "files": "gerrit_backlog-*.json",
+                    "id": "Gerrit-Backlog",
+                    "name": "Backlog",
+                    "order": 3
+                },
+                {
+                    "files": "gerrit_timing-*.json",
+                    "id": "Gerrit-Timing",
+                    "name": "Gerrit Timing",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "github_pull_requests",
+            "panels": [
+                {
+                    "files": "github_pullrequests-*.json",
+                    "id": "Github-Pull-Requests",
+                    "name": "Pull Requests",
+                    "order": 2
+                },
+                {
+                    "files": "github_backlog*.json",
+                    "id": "Github-Backlog",
+                    "name": "Github Backlog",
+                    "order": 3
+                },
+                {
+                    "files": "github_pullrequests_delays-*.json",
+                    "id": "GitHub-Pull-Requests-Delays",
+                    "name": "PR Delays",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "github_issues",
+            "panels": [
+                {
+                    "files": "github_issues-*.json",
+                    "id": "GitHub-Issues",
+                    "name": "Issues",
+                    "order": 2
+                },
+                {
+                    "files": "github_issues_timing -*.json",
+                    "id": "GitHub-Issues-Timing",
+                    "name": "GitHub Issues Timing",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "mbox",
+            "panels": [
+                {
+                    "files": "mailinglists-*.json",
+                    "id": "MailingLists",
+                    "name": "Mailing Lists",
+                    "order": 5
+                }
+            ]
+        },
+        {
+            "name": "jira",
+            "panels": [
+                {
+                    "files": "jira-*.json",
+                    "id": "Jira",
+                    "name": "Jira",
+                    "order": 6
+                },
+                {
+                    "files": "jira_backlog-*.json",
+                    "id": "Jira-Backlog",
+                    "name": "Jira Backlog",
+                    "order": 7
+                },
+                {
+                    "files": "jira_timing-*.json",
+                    "id": "Jira-Timing",
+                    "name": "Jira Timing",
+                    "order": 8
+                }
+            ]
+        },
+        {
+            "name": "maniphest",
+            "panels": [
+                {
+                    "files": "maniphest-*.json",
+                    "id": "Maniphest",
+                    "name": "Maniphest",
+                    "order": 6
+                },
+                {
+                    "files": "maniphest_backlog-*.json",
+                    "id": "Maniphest-Backlog",
+                    "name": "Maniphest Backlog",
+                    "order": 7
+                },
+                {
+                    "files": "maniphest_timing-*.json",
+                    "id": "Maniphest-Timing",
+                    "name": "Maniphest Timing",
+                    "order": 8
+                }
+            ]
+        },
+        {
+            "name": "bugzilla",
+            "panels": [
+                {
+                    "files": "bugzilla-*.json",
+                    "id": "Issues",
+                    "name": "Issues",
+                    "order": 6
+                },
+                {
+                    "files": "bugzilla_backlog-*.json",
+                    "id": "Issues-Backlog",
+                    "name": "Issues Backlog",
+                    "order": 7
+                }
+            ]
+        },
+        {
+            "name": "jenkins",
+            "panels": [
+                {
+                    "files": "jenkins*.json",
+                    "id": "Jenkins",
+                    "name": "Jenkins",
+                    "order": 15
+                }
+            ]
+        },
+        {
+            "name": "mediawiki",
+            "panels": [
+                {
+                    "files": "mediawiki.json",
+                    "id": "Mediawiki",
+                    "name": "Mediawiki",
+                    "order": 14
+                }
+            ]
+        },
+        {
+            "name": "confluence",
+            "panels": [
+                {
+                    "files": "confluence.json",
+                    "id": "Confluence",
+                    "name": "Confluence",
+                    "order": 14
+                }
+            ]
+        },
+        {
+            "name": "irc",
+            "panels": [
+                {
+                    "files": "irc.json",
+                    "id": "IRC",
+                    "name": "IRC",
+                    "order": 13
+                }
+            ]
+        },
+        {
+            "name": "reps",
+            "panels": [
+                {
+                    "files": "reps.json",
+                    "id": "Reps",
+                    "name": "Reps",
+                    "order": 8
+                }
+            ]
+        },
+        {
+            "name": "stackoverflow",
+            "panels": [
+                {
+                    "files": "stackoverflow.json",
+                    "id": "Stackoverflow",
+                    "name": "Stackoverflow",
+                    "order": 9
+                }
+            ]
+        },
+        {
+            "name": "kitsune",
+            "panels": [
+                {
+                    "files": "kitsune.json",
+                    "id": "Kitsune",
+                    "name": "Kitsune",
+                    "order": 9
+                }
+            ]
+        },
+        {
+            "name": "twiter",
+            "panels": [
+                {
+                    "files": "twitter.json",
+                    "id": "Twitter",
+                    "name": "Twitter",
+                    "order": 18
+                }
+            ]
+        },
+        {
+            "name": "telegram",
+            "panels": [
+                {
+                    "files": "telegram.json",
+                    "id": "Telegram",
+                    "name": "Telegram",
+                    "order": 19
+                }
+            ]
+        },
+        {
+            "name": "redmine",
+            "panels": [
+                {
+                    "files": "redmine-*.json",
+                    "id": "Redmine",
+                    "name": "Redmine",
+                    "order": 6
+                },
+                {
+                    "files": "redmine_backlog-*.json",
+                    "id": "Redmine-Backlog",
+                    "name": "Redmine Backlog",
+                    "order": 7
+                },
+                {
+                    "files": "redmine_timing-*.json",
+                    "id": "Redmine-Timing",
+                    "name": "Redmine Timing",
+                    "order": 8
+                }
+            ]
+        },
+        {
+            "name": "rss",
+            "panels": [
+                {
+                    "files": "rss.json",
+                    "id": "RSS",
+                    "name": "RSS",
+                    "order": 13
+                }
+            ]
+        },
+        {
+            "name": "askbot",
+            "panels": [
+                {
+                    "files": "askbot.json",
+                    "id": "Askbot",
+                    "name": "Askbot",
+                    "order": 9
+                }
+            ]
+        },
+        {
+            "name": "meetup",
+            "panels": [
+                {
+                    "files": "meetup.json",
+                    "id": "Meetup",
+                    "name": "Meetup",
+                    "order": 11
+                },
+                {
+                    "files": "meetup_locations.json",
+                    "id": "Meetup-Locations",
+                    "name": "Meetup Locations",
+                    "order": 12
+                }
+            ]
+        },
+        {
+            "name": "apache",
+            "panels": [
+                {
+                    "files": "apache.json",
+                    "id": "Apache",
+                    "name": "Apache",
+                    "order": 15
+                }
+            ]
+        },
+        {
+            "name": "discourse",
+            "panels": [
+                {
+                    "files": "discourse.json",
+                    "id": "Discourse",
+                    "name": "Discourse",
+                    "order": 9
+                }
+            ]
+        }
+    ]
+}
