@@ -54,5 +54,5 @@ def replace(pretty, old_str, new_str):
         out_str += new_line
         line_number += 1
 
-    logging.info('Total changes: %s', changes)
+    logging.info('Total changes(%s): %s', old_str, changes)
     return out_str

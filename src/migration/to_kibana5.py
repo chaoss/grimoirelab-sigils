@@ -47,12 +47,14 @@ def main():
 
     src_path = args.src_path
     dest_path = args.dest_path
-    old_str = '\\"size\\":' + args.old_size
+    old_str1 = '\\"size\\":' + args.old_size
+    old_str2 = '\\"size\\": ' + args.old_size
     new_str = '\\"size\\":' + args.new_size
 
     logging.info('Input path: %s', src_path)
     logging.info('Output path: %s', dest_path)
-    logging.info('old str: %s', old_str)
+    logging.info('old str: %s', old_str1)
+    logging.info('old str: %s', old_str2)
     logging.info('new str: %s', new_str)
 
     if os.path.abspath(src_path) == os.path.abspath(dest_path):
@@ -73,7 +75,8 @@ def main():
         pretty = utils.beautify(filename=in_file_path)
 
         # Iterate the beautified json string line by line
-        pretty_replaced = utils.replace(pretty, old_str, new_str)
+        pretty_replaced = utils.replace(pretty, old_str1, new_str)
+        pretty_replaced = utils.replace(pretty_replaced, old_str2, new_str)
 
         with open(out_file_path, 'w') as output_file:
             output_file.write(pretty_replaced)
