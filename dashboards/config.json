@@ -109,6 +109,11 @@
             "name": "Jira Timing",
             "files": "jira_timing-*.json",
             "order": 8
+        },  {
+            "id": "Jira-Effort",
+            "name": "Jira Effort",
+            "files": "jira_effort-*.json",
+            "order": 9
         }]
     }, {
         "name": "maniphest",
