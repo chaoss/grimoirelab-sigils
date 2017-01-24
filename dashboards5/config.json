@@ -74,14 +74,14 @@
             "panels": [
                 {
                     "files": "github_pullrequests-*.json",
-                    "id": "Github-Pull-Requests",
+                    "id": "GitHub-Pull-Requests",
                     "name": "Pull Requests",
                     "order": 2
                 },
                 {
                     "files": "github_backlog*.json",
-                    "id": "Github-Backlog",
-                    "name": "Github Backlog",
+                    "id": "GitHub-Backlog",
+                    "name": "GitHub Backlog",
                     "order": 3
                 },
                 {
@@ -140,6 +140,12 @@
                     "id": "Jira-Timing",
                     "name": "Jira Timing",
                     "order": 8
+                },
+                {
+                    "files": "jira_effort-*.json",
+                    "id": "Jira-Effort",
+                    "name": "Jira Effort",
+                    "order": 9
                 }
             ]
         },

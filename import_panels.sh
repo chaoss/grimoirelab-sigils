@@ -16,7 +16,7 @@ do
     continue
   fi
   echo "Importing ${JSON_FILE}"
-  ${KIDASH} -e ${ES_URL} --import $JSON_FILE
+  python3 ${KIDASH} -e ${ES_URL} --import $JSON_FILE
 done
 
 echo "...[This is the end]..."
