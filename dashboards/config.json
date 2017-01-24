@@ -56,13 +56,13 @@
     }, {
         "name": "github_pull_requests",
         "panels": [{
-            "id": "Github-Pull-Requests",
+            "id": "GitHub-Pull-Requests",
             "name": "Pull Requests",
             "files": "github_pullrequests-*.json",
             "order": 2
         }, {
-            "id": "Github-Backlog",
-            "name": "Github Backlog",
+            "id": "GitHub-Backlog",
+            "name": "GitHub Backlog",
             "files": "github_backlog*.json",
             "order": 3
         }, {
@@ -109,6 +109,11 @@
             "name": "Jira Timing",
             "files": "jira_timing-*.json",
             "order": 8
+        },  {
+            "id": "Jira-Effort",
+            "name": "Jira Effort",
+            "files": "jira_effort-*.json",
+            "order": 9
         }]
     }, {
         "name": "maniphest",
