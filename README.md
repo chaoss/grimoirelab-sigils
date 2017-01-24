@@ -8,6 +8,10 @@ This usually has information about the following artifacts:
 * Widgets either built on top of the original indexes or on top of the searches.
 * Final panels that are an aggregation of several widgets.
 
+There are Dashboards for Kibana 4 and Kibana 5 right now stored in:
+* `dashboards`: kibana 4 versions.
+* `dashboards5`: kibana 5 versions.
+
 Panels
 ------
 
