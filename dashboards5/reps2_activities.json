@@ -1,0 +1,124 @@
+{
+    "dashboard": {
+        "id": "Reps2-Activities",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false}",
+            "panelsJSON": "[{\"col\":1,\"columns\":[\"activity\",\"activity_description\",\"author_name\",\"mentor\",\"report_date\",\"location\",\"remo_url\"],\"id\":\"ReMo2-Search:_author_mentor_activity_date_url_location\",\"panelIndex\":1,\"row\":8,\"size_x\":12,\"size_y\":6,\"sort\":[\"report_date\",\"desc\"],\"title\":\"Last Reports\",\"type\":\"search\"},{\"col\":1,\"id\":\"remo2_map_activities\",\"panelIndex\":2,\"row\":3,\"size_x\":6,\"size_y\":5,\"title\":\"Reports Map\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"remo2_mentors\",\"panelIndex\":3,\"row\":4,\"size_x\":3,\"size_y\":4,\"title\":\"Mentors\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"remo2_activity_authors\",\"panelIndex\":4,\"row\":4,\"size_x\":3,\"size_y\":4,\"title\":\"Report Authors\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"remo2_activities_main_numbers\",\"panelIndex\":6,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"remo2_activities\",\"panelIndex\":7,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Reports\",\"type\":\"visualization\"},{\"id\":\"remo2_initiatives\",\"type\":\"visualization\",\"panelIndex\":8,\"size_x\":3,\"size_y\":3,\"col\":10,\"row\":1,\"title\":\"Initiatives\"},{\"id\":\"remo2_activities_typeof\",\"type\":\"visualization\",\"panelIndex\":9,\"size_x\":3,\"size_y\":3,\"col\":7,\"row\":1,\"title\":\"Activity\"}]",
+            "timeFrom": "now-2y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Reps2 Activities",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Last Reports\"},\"P-2\":{\"title\":\"Reports Map\"},\"P-3\":{\"title\":\"Mentors\"},\"P-4\":{\"title\":\"Report Authors\"},\"P-6\":{\"title\":\"Summary\"},\"P-7\":{\"title\":\"Reports\",\"vis\":{\"legendOpen\":false}},\"P-8\":{\"title\":\"Initiatives\"},\"P-9\":{\"title\":\"Activity\"}}",
+            "version": 1
+        }
+    },
+    "index_patterns": [
+        {
+            "id": "remo2-activities",
+            "value": {
+                "fields": "[{\"name\":\"author_name\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"mentor\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"activity\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"origin\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"latitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"ocean-unique-id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"link\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"metadata__timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"activity_description\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"functional_areas\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"author_user_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"description_analyzed\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":true,\"doc_values\":false},{\"name\":\"author_bot\",\"type\":\"boolean\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"mentor_profile_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_org_name\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"report_date\",\"type\":\"date\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"longitude\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"remo_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"initiative\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"offset\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"author_uuid\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"user_profile_url\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"location\",\"type\":\"string\",\"count\":1,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"metadata__updated_on\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"user\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"geolocation\",\"type\":\"geo_point\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false}]",
+                "timeFieldName": "report_date",
+                "title": "remo2-activities"
+            }
+        }
+    ],
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "remo2_map_activities",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_map_activities",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo2_map_activities\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Scaled Circle Markers\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":16,\"heatMinOpacity\":0.1,\"heatRadius\":25,\"heatBlur\":15,\"heatNormalizeData\":true,\"wms\":{\"enabled\":true,\"url\":\"http://ows-tile.terrestris.de/osm-basemap/service\",\"options\":{\"version\":\"1.1.1\",\"layers\":\"OSM-WMS\",\"format\":\"image/jpeg\",\"transparent\":true,\"attribution\":\"\",\"styles\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"geolocation\",\"autoPrecision\":true,\"mapZoom\":4,\"mapCenter\":[22.958393318086348,40.869140625],\"precision\":2}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_mentors",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_mentors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Mentor\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"customLabel\":\"Mentored People\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiatives\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor_profile_url\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_activity_authors",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_activity_authors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo2_activity_authors\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"Mentors\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiative\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_activities_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_activities_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo2_activities_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"remo_url\",\"customLabel\":\"# Events\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Reports\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"# Mentors\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_activities",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_activities",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"report_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_initiatives",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_initiatives",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"initiative\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Initiatives\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo2_activities_typeof",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo2-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo2_activities_typeof",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo2_initiatives\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"activity\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Reports\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
