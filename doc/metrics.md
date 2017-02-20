@@ -19,6 +19,8 @@ pie or doughnut chart.
 
 For the selected period of time, it's the number of events occurring over time by periods of time (days, weeks, months, years).
 
+![Single item evolution](assets/images/activity-single-evolution.jpg)
+
 If events can have different status, the chart will show the number of events occurring over time by periods of time by status.
 For example: issues openned and issues closed.
 
