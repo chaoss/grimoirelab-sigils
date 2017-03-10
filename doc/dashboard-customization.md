@@ -34,14 +34,14 @@ A customer dashboard (panel) can include customer and standard visualizations. I
 
 ### Good practices
 
-Although customers are free of using each own names, it could be convenient to follow the same easy rule Bitergia's naming convention[1]. Following them, element names should be built in the following way:
-```
-C_<index_pattern_name>_(<metric_name>] | [<panel_name>])
-```
-
 When creating new elements based on standard elements, customers may use the same name of the standard element starting with "C\_".
 
 When creating new elements from scratch, customers may use names completely different from those of standard elements, always prefixed with "C\_".
+
+Although customers are free of using their own names, it could be convenient to follow Bitergia's naming conventions [1]. Following them, element names should be built in the following way:
+```
+C_<index_pattern_name>_(<metric_name>] | [<panel_name>])
+```
 
 Upon saving any customer element, **customers should save their customized elements**. Ask for the corresponding training information about saving elements if you don't know how to do that.
 
