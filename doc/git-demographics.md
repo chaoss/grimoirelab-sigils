@@ -17,14 +17,14 @@ panels (for instance, 2 years). This is done in this way as the information
 pre-calculated and displayed focuses on the first and last commit of each developer.
 
 The rest of the widgets, such as the repositories, organizations or projects
-are mere informative widgets and shouldn't be use to filter information. It is
+are mere informative widgets and shouldn't be used to filter information. It is
 worth mentioning that when clicking on any of them and a filter is enabled,
-the information displayed is not filter as it is usually done in Kibana.
-Let us imagine that the filter by a repository X is enabled. This panels would
+the information displayed is not filtered as it is usually done in Kibana.
+Let us imagine that the filter by a repository X is enabled. This panel would
 show the _attraction/retention/developers leaving_ the community that **at
-some point** participated in such repository. However, this does not display
+some point participated in such repository**. However, **this does not display
 the specific _attraction/retention/developers leaving_ rate for that
-repository.
+repository**.
 
 As the information is pre-calculated per developer and not done on-demand by
 Kibana, this forces to use this approach.
@@ -37,9 +37,9 @@ as inactive is based on our own experience measuring open source communities.
 Each community may have their own peculiarities that may vary this approach, but
 in general this has been a good indicator up to now.
 
-There is a known issue that may affect the readability of the panel. And this is
+**There is a known issue that may affect the readability of the panel**:
 when a developer has been detected as committing her first piece of code in 1970.
-This is a problem of the Git repository analyzed that contain that information,
+This is a problem of the analyzed Git repository that contains that information,
 but also in the cleaning process of the Grimoire infrastructure. This data-issue
 provokes that the information for such developer for her first commit took
 place in 1970, and this is clearly wrong. Those commits should be ignored or
