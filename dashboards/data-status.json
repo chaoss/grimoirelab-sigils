@@ -324,12 +324,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\n  \"index\": \"remo-activities_metadata__timestamp\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
                 },
                 "title": "remo-activities_data_status_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"remo_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item (Scheduled Date)\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item  (Scheduled Date)\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last retrieval\"}}],\"listeners\":{}}"
+                "visState": "{\n  \"title\": \"remo_data_status_numbers\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"fontSize\": \"12\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Total Item Count\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"First Item (Scheduled Date)\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"Last Item  (Scheduled Date)\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"First Retrieval\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"Last retrieval\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
             }
         },
         {
@@ -337,12 +337,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"remo-events\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\n  \"index\": \"remo-events_metadata__timestamp\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
                 },
                 "title": "remo-events_data_status_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"remo2-events_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item (Scheduled Date)\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item  (Scheduled Date)\"}},{\"id\":\"4\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}"
+                "visState": "{\n  \"title\": \"remo2-events_data_status_numbers\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"fontSize\": \"12\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Total Item Count\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"First Item (Scheduled Date)\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"Last Item  (Scheduled Date)\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"First Retrieval\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"Last Retrieval\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
             }
         }
     ]
