@@ -13,7 +13,7 @@
             "timeRestore": true,
             "timeTo": "now",
             "title": "Confluence",
-            "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Activity\"},\"P-3\":{\"title\":\"Editors\"},\"P-4\":{\"title\":\"Top Edited Pages\"},\"P-5\":{\"title\":\"Last Created Pages\"},\"P-6\":{\"title\":\"Top Editors\"},\"P-7\":{\"title\":\"Last Actions\"}}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Activity\"},\"P-3\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Top Edited Pages\"},\"P-5\":{\"title\":\"Last Created Pages\"},\"P-6\":{\"title\":\"Top Editors\"},\"P-7\":{\"title\":\"Last Actions\"}}",
             "version": 1
         }
     },
@@ -103,9 +103,9 @@
                     "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "confluence_participants",
-                "uiStateJSON": "{}",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
                 "version": 1,
-                "visState": "{\"title\":\"confluence_editions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Participants\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"confluence_participants\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
             }
         },
         {
