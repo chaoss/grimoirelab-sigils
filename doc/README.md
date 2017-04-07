@@ -53,3 +53,9 @@ The following is a list with the several panels available in the dashboard. All 
 It is possible to create new panels or visualizations, or customizing the standard ones. Some recommendations to do that without breaking standard panels and visualizations can be read in the document linked below: 
 
 * [Dashboard Customization](dashboard-customization.md)
+
+## Metrics
+
+Each of the described panels contains several widgets and those provide information about some metrics over time, aggregated or filtered. Those are defined in the following document:
+
+* [Basic Metrics Documentation](metrics.md)
