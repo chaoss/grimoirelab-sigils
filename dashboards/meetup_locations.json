@@ -9,9 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"meetups_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"meetup_meetup_map\",\"panelIndex\":2,\"row\":3,\"size_x\":6,\"size_y\":4,\"title\":\"Meetups\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"meetup_groups_map\",\"panelIndex\":3,\"row\":3,\"size_x\":6,\"size_y\":4,\"title\":\"Groups\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"meetup_last_meetups_description\",\"panelIndex\":4,\"row\":7,\"size_x\":12,\"size_y\":4,\"title\":\"Last Meetups\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"meetup_meetups_evolution\",\"panelIndex\":5,\"row\":1,\"size_x\":5,\"size_y\":2,\"title\":\"Meetups\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"meetup_organizers\",\"panelIndex\":6,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Organizers\",\"type\":\"visualization\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "timeRestore": false,
             "title": "Meetup Locations",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Summary\"},\"P-2\":{\"title\":\"Meetups\"},\"P-3\":{\"title\":\"Groups\"},\"P-4\":{\"title\":\"Last Meetups\"},\"P-5\":{\"title\":\"Meetups\",\"vis\":{\"legendOpen\":false}},\"P-6\":{\"title\":\"Organizers\"}}",
             "version": 1

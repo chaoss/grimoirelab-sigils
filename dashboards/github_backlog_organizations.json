@@ -9,9 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"github_issues_openissues_statistics\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Open Issues Statistics\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_pullrequests_openpullrequests_statistics\",\"panelIndex\":2,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Open Pull Requests Statistics\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pr_issues_backlog\",\"panelIndex\":3,\"row\":3,\"size_x\":6,\"size_y\":6,\"title\":\"Backlog (Open PRs and Issues)\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pr_issues_backlog_waiting_to_be_closed\",\"panelIndex\":8,\"row\":1,\"size_x\":6,\"size_y\":2,\"title\":\"Backlog: Issues and Pull Requests\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pr_issues_backlog_waiting_to_be_closed_accumulated_time\",\"panelIndex\":9,\"row\":3,\"size_x\":6,\"size_y\":2,\"title\":\"Backlog: Issues and Pull Requests (Accumulated Time)\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pr_issues_backlog_submitters\",\"panelIndex\":10,\"row\":5,\"size_x\":3,\"size_y\":4,\"title\":\"Backlog Submitters\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_pr_issues_backlog_author_orgs\",\"panelIndex\":12,\"row\":5,\"size_x\":3,\"size_y\":4,\"title\":\"Pull Requests and Issues by Organization\",\"type\":\"visualization\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "timeRestore": false,
             "title": "GitHub Backlog",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Open Issues Statistics\"},\"P-10\":{\"title\":\"Backlog Submitters\"},\"P-12\":{\"title\":\"Pull Requests and Issues by Organization\"},\"P-2\":{\"title\":\"Open Pull Requests Statistics\"},\"P-3\":{\"title\":\"Backlog (Open PRs and Issues)\"},\"P-8\":{\"title\":\"Backlog: Issues and Pull Requests\"},\"P-9\":{\"title\":\"Backlog: Issues and Pull Requests (Accumulated Time)\"}}",
             "version": 1
@@ -127,7 +125,7 @@
                 "title": "github_pr_issues_backlog",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_pr_issues_backlog\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Days Open\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Summary\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"URL\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"item_type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Type\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"created_at\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Open Date\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"github_pr_issues_backlog\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Days Open\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Summary\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"URL\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"item_type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Type\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"created_at\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Open Date\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -169,7 +167,7 @@
                 "title": "github_pr_issues_backlog_submitters",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"Backlog Submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues and PRs\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user_login\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Time Open (Days)\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"github_repo\",\"customLabel\":\"Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"Backlog Submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues and PRs\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user_login\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Time Open (Days)\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"github_repo\",\"customLabel\":\"Repositories\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -183,7 +181,7 @@
                 "title": "github_pr_issues_backlog_author_orgs",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_pr_issues_backlog_assignee_orgs\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"github_pr_issues_backlog_assignee_orgs\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
             }
         }
     ]
