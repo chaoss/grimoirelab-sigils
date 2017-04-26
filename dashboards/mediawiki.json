@@ -9,9 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"mediawiki_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":1,\"size_y\":4,\"title\":\"Wiki\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"mediawiki_editors\",\"panelIndex\":2,\"row\":3,\"size_x\":4,\"size_y\":2,\"title\":\"Editors\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"mediawiki_editions\",\"panelIndex\":3,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Wiki Editions\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"mediawiki_top_edited_pages\",\"panelIndex\":4,\"row\":1,\"size_x\":7,\"size_y\":4,\"title\":\"Top Edited Pages\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mediawiki_last_created_pages\",\"panelIndex\":5,\"row\":5,\"size_x\":4,\"size_y\":4,\"title\":\"Last Created Pages\",\"type\":\"visualization\"},{\"col\":5,\"columns\":[\"page_title\",\"author_name\",\"revision_comment\",\"revision_user\",\"url\"],\"id\":\"Mediawiki-Search:_pagetitle_authorname_revisioncomment_revisionuser_url\",\"panelIndex\":6,\"row\":5,\"size_x\":8,\"size_y\":4,\"sort\":[\"revision_timestamp\",\"desc\"],\"type\":\"search\",\"title\":\"Last Editions\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "timeRestore": false,
             "title": "Mediawiki",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Editors\"},\"P-3\":{\"title\":\"Wiki Editions\"},\"P-4\":{\"title\":\"Top Edited Pages\"},\"P-5\":{\"title\":\"Last Created Pages\"},\"P-6\":{\"title\":\"Last Editions\"}}",
             "version": 1
@@ -102,7 +100,7 @@
                 "title": "mediawiki_top_edited_pages",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"mediawiki_top_edited_pages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"page_title\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top Edited Pages\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Wiki Link\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"mediawiki_top_edited_pages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"page_title\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top Edited Pages\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Wiki Link\"}}],\"listeners\":{}}"
             }
         },
         {

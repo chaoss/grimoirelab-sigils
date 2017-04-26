@@ -9,9 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"confluence_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":1,\"size_y\":4,\"title\":\"Wiki\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"confluence_editions\",\"panelIndex\":2,\"row\":1,\"size_x\":5,\"size_y\":2,\"title\":\"Activity\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"confluence_participants\",\"panelIndex\":3,\"row\":3,\"size_x\":5,\"size_y\":2,\"title\":\"Editors\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"confluence_top_edited_pages\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Top Edited Pages\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"confluence_last_created_pages\",\"panelIndex\":5,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Last Created Pages\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_top_editors\",\"panelIndex\":6,\"row\":5,\"size_x\":6,\"size_y\":4,\"title\":\"Top Editors\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"confluence_last_editions\",\"panelIndex\":7,\"row\":5,\"size_x\":6,\"size_y\":4,\"title\":\"Last Actions\",\"type\":\"visualization\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "timeRestore": false,
             "title": "Confluence",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Activity\"},\"P-3\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Top Edited Pages\"},\"P-5\":{\"title\":\"Last Created Pages\"},\"P-6\":{\"title\":\"Top Editors\"},\"P-7\":{\"title\":\"Last Actions\"}}",
             "version": 1
@@ -119,7 +117,7 @@
                 "title": "confluence_top_edited_pages",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Page\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":0,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Page\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}}],\"listeners\":{}}"
             }
         },
         {

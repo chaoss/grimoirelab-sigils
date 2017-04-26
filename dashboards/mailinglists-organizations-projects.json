@@ -9,9 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":2,\"id\":\"mbox_evolution_emails\",\"panelIndex\":1,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Emails\",\"type\":\"visualization\"},{\"col\":2,\"id\":\"mbox_evolution_participants\",\"panelIndex\":2,\"row\":3,\"size_x\":4,\"size_y\":2,\"title\":\"Email Senders\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mbox_main_numbers\",\"panelIndex\":3,\"row\":1,\"size_x\":1,\"size_y\":4,\"title\":\"mbox\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"mbox_organizations\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"mbox_main_projects\",\"panelIndex\":5,\"row\":1,\"size_x\":4,\"size_y\":4,\"title\":\"Projects\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mbox_main_participants\",\"panelIndex\":6,\"row\":5,\"size_x\":5,\"size_y\":3,\"title\":\"Email Senders\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"mbox_organizations_evolutionary\",\"panelIndex\":7,\"row\":5,\"size_x\":7,\"size_y\":3,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"mbox_emails_timezone\",\"panelIndex\":8,\"row\":8,\"size_x\":5,\"size_y\":3,\"title\":\"Emails by Time Zone\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"mbox_main_malinglists\",\"panelIndex\":9,\"row\":8,\"size_x\":7,\"size_y\":3,\"title\":\"Mailing Lists\",\"type\":\"visualization\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "timeRestore": false,
             "title": "MailingLists",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Emails\",\"vis\":{\"legendOpen\":false}},\"P-2\":{\"title\":\"Email Senders\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"mbox\"},\"P-4\":{\"title\":\"Organizations\"},\"P-5\":{\"title\":\"Projects\"},\"P-6\":{\"title\":\"Email Senders\"},\"P-7\":{\"title\":\"Organizations\"},\"P-8\":{\"title\":\"Emails by Time Zone\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"title\":\"Mailing Lists\"}}",
             "version": 1
