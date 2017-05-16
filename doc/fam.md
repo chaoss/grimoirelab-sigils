@@ -36,7 +36,7 @@ We can see as example that those take place at the beginning of
 ![Attracted developers peaks](assets/images/attracted-developers-circles.jpg)
 
 What happened in this community during those months to have such
-peaks of activity? There are usually different reasons for this, 
+peaks of activity? There are usually different reasons for this,
 although this goes from summits to programms such as the Google
 Summer of Code or Outreachy activities.
 
@@ -55,5 +55,20 @@ TBD
 
 ## The most active repositories
 
-TBD
+[This approach works for almost any panel and for any time selection.
+There is a specific section for the last 7 days as this seems to be
+a useful timeframe to have a look at. Others such as months or quarters
+can be selected in the same way.]
 
+The summary of the activity and community of a project is provided by the Overview panel.
+This panel is usually the entry panel for any dashboard.
+
+![Overview panel](assets/images/overview.jpg)
+
+
+
+There are several ways of accessing the information for the last seven days, but this can
+be reach by updating the timefilter at the top right corner of the dashboard. Once a new
+timeframe of activity is selected, all of the widgets in the panel will be upated.
+
+![Selection of the last 7 days](assets/images/overview-timeframe-seven-days-circles.jpg)
