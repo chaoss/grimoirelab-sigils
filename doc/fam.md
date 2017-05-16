@@ -16,6 +16,7 @@ document:
 * [How can I have a list of the most active developers?](#the-most-active-developers)
 * [How can I have a list of the most active organizations?](#the-most-active-organizations)
 * [How can I have a list of the most active repositories?](#the-most-active-repositories)
+* [How can I have a summary of the last 7 days of activity?](#last-seven-days-of-activity)
 
 ## Attraction of newcomers
 
@@ -54,6 +55,10 @@ TBD
 TBD
 
 ## The most active repositories
+
+TBD
+
+## Last seven days of activity
 
 [This approach works for almost any panel and for any time selection.
 There is a specific section for the last 7 days as this seems to be
