@@ -44,7 +44,48 @@ Summer of Code or Outreachy activities.
 
 ## Lag solving issues
 
-TBD
+This information is available in all of the panels with information
+about the backlog. The widgets here referenced are basically calculated
+in the same way independently of the data source. The total time that
+a bug report or a changeset has been open is measured in days.
+
+This information can be found in any panel with the 'Backlog' keyword
+in its name.
+
+The following image contains the generic information about the data
+source. Then at the right side of the panel there are two charts
+that display information over time.
+
+The lag is calculated as the accumulated number of days that
+each of the tickets, code review processes or any other activity
+related to process has been opened. This is useful for tracking
+old remaining issues still opened that either should be closed
+or should be moved forward.
+
+![Lag open issues](assets/images/lag-closing-new-issues.jpg)
+
+
+In this image there are three circles at the top chart and three
+and the bottom chart. The first chart represents the number of
+open issues over time. Each bar contains the total number of issues
+opened in that period of time.
+
+The second chart represents the accumulated time that those issues
+have been opened and measured in days. The older an issue is, the
+longer that bar is. In other words: the more at the left an issue
+is found, the higher the number of days this has been opened.
+
+Having a look at the three circles in each chart, the chart at the
+top displays three peaks of remaining open issues. As there is a direct
+relation between the activity on the top chart and on the bottom chart,
+the second chart displays the accumulated 'lag' in days for
+the issues still open.
+
+Detecting those peaks of accumulated time at the bottom chart helps
+to understand where part of the development bottlenecks are found.
+
+![Lag open issues](assets/images/lag-closing-new-issues-circles.jpg)
+
 
 ## The most active developers
 
