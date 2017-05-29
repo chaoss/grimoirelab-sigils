@@ -12,16 +12,16 @@ The following is a list of the current FAMs available in this
 document:
 
 
-** Activity metrics and KPIs **
+**Activity metrics and KPIs**
 * [How can I have a list of the most active repositories?](#the-most-active-repositories)
 * [How can I have a summary of the last 7 days of activity?](#last-seven-days-of-activity)
 
-** Community metrics and KPIs **
+**Community metrics and KPIs**
 * [How can I retrieve the attraction of new developers to my community?](#attraction-of-newcomers)
 * [How can I have a list of the most active developers?](#the-most-active-developers)
 * [How can I have a list of the most active organizations?](#the-most-active-organizations)
 
-** Performance metrics and KPIs **
+**Performance metrics and KPIs**
 * [How can I measure my lag solving issues?](#lag-solving-issues)
   * [Open Issues KPI](#open-issues-kpi)
   * [Average Time Open for Issues KPI](#average-time-open-for-issues-kpi)
