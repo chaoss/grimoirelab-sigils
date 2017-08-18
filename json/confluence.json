@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"confluence_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Wiki\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_editions\",\"panelIndex\":2,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Activity\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_participants\",\"panelIndex\":3,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Editors\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"confluence_top_edited_pages\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":5,\"title\":\"Top Edited Pages\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"confluence_last_created_pages\",\"panelIndex\":5,\"row\":1,\"size_x\":4,\"size_y\":5,\"title\":\"Last Created Pages\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"confluence_top_editors\",\"panelIndex\":6,\"row\":6,\"size_x\":6,\"size_y\":5,\"title\":\"Top Editors\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"confluence_last_editions\",\"panelIndex\":7,\"row\":6,\"size_x\":6,\"size_y\":5,\"title\":\"Last Actions\",\"type\":\"visualization\"}]",

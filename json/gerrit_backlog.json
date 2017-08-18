@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":8,\"id\":\"gerrit_top_developers\",\"panelIndex\":2,\"row\":3,\"size_x\":5,\"size_y\":2,\"title\":\"Changeset Submitters\",\"type\":\"visualization\"},{\"col\":8,\"id\":\"Review-projects__gerrit_enrich\",\"panelIndex\":8,\"row\":5,\"size_x\":5,\"size_y\":2,\"title\":\"Projects\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"gerrit_accumulated_open_days\",\"panelIndex\":10,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Backlog: Accumulated Days waiting to be Closed\",\"type\":\"visualization\"},{\"col\":5,\"id\":\"gerrit_evolutionary_changesets_status_new\",\"panelIndex\":11,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Backlog: NEW Changesets waiting to be Closed\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"gerrit_main_numbers_new_changesets_statistics\",\"panelIndex\":12,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"NEW Changesets Statistics\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"gerrit_backlog_table\",\"panelIndex\":13,\"row\":3,\"size_x\":7,\"size_y\":7,\"type\":\"visualization\",\"title\":\"Backlog\"},{\"id\":\"gerrit_organizations_new_changesets\",\"type\":\"visualization\",\"panelIndex\":14,\"size_x\":5,\"size_y\":3,\"col\":8,\"row\":7,\"title\":\"Organizations\"}]",

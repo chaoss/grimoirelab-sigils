@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"discourse_main_metrics\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"discourse_qa_evolutionary\",\"panelIndex\":2,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Questions and Answers\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"discourse_qa_evolutionary_submitters\",\"panelIndex\":3,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"People sending Q&A\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"discourse_last_questions\",\"panelIndex\":4,\"row\":1,\"size_x\":7,\"size_y\":5,\"title\":\"Last 50 Opened Threads\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"discourse_last_answers\",\"panelIndex\":5,\"row\":6,\"size_x\":7,\"size_y\":5,\"title\":\"Last 50 Answered Threads\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"discourse_main_people_answering\",\"panelIndex\":6,\"row\":6,\"size_x\":5,\"size_y\":5,\"title\":\"Top People Answering\",\"type\":\"visualization\"}]",

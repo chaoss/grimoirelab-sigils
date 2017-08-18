@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"e4438140-7085-11e7-8134-6bde1af312a7\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\",\"title\":\"DockerHub\"},{\"col\":1,\"id\":\"5c9581c0-7086-11e7-8134-6bde1af312a7\",\"panelIndex\":2,\"row\":3,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\",\"title\":\"Stars over time (top 5 images)\"},{\"size_x\":6,\"size_y\":5,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"af467b90-7086-11e7-8134-6bde1af312a7\",\"col\":7,\"row\":3,\"title\":\"Pulls over time (top 5)\"},{\"size_x\":6,\"size_y\":2,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"66d80b20-7087-11e7-8134-6bde1af312a7\",\"col\":7,\"row\":1,\"title\":\"Images\"}]",
