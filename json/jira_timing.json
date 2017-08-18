@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"jira_main_numbers_timing\",\"panelIndex\":1,\"row\":1,\"size_x\":2,\"size_y\":2,\"title\":\"Jira Summary\",\"type\":\"visualization\"},{\"col\":3,\"id\":\"jira_issues_status\",\"panelIndex\":2,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Status\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"jira_issues_assigned_organizations\",\"panelIndex\":3,\"row\":1,\"size_x\":3,\"size_y\":2,\"title\":\"Assigned Organizations\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"jira_issues_timing\",\"panelIndex\":4,\"row\":1,\"size_x\":4,\"size_y\":5,\"title\":\"Projects\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jira_all_issues\",\"panelIndex\":5,\"row\":3,\"size_x\":5,\"size_y\":5,\"title\":\"Issues\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"jira_issues_submitters\",\"panelIndex\":6,\"row\":3,\"size_x\":3,\"size_y\":3,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"jira_issues_open_in_median\",\"panelIndex\":7,\"row\":6,\"size_x\":3,\"size_y\":2,\"title\":\"Issues Open in Median\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"jira_issues_open_in_median_80_percentile\",\"panelIndex\":8,\"row\":6,\"size_x\":4,\"size_y\":2,\"title\":\"Issues Open (best 80 percent of them)\",\"type\":\"visualization\"}]",

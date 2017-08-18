@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":1,\"id\":\"rss_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"RSS\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"rss_posts_evolutionary\",\"panelIndex\":2,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Posts\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"rss_authors_evolutionary\",\"panelIndex\":3,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Authors\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"rss_authors\",\"panelIndex\":6,\"row\":1,\"size_x\":4,\"size_y\":5,\"title\":\"Authors\",\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"author\",\"title\",\"link\",\"summary\"],\"id\":\"RSS-Search:_title_author_link_summary\",\"panelIndex\":7,\"row\":6,\"size_x\":12,\"size_y\":4,\"sort\":[\"grimoire_creation_date\",\"desc\"],\"title\":\"Last Posts\",\"type\":\"search\"},{\"col\":6,\"id\":\"rss_authors_posts\",\"panelIndex\":8,\"row\":1,\"size_x\":3,\"size_y\":5,\"type\":\"visualization\",\"title\":\"Authors\"}]",

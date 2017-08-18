@@ -5,7 +5,7 @@
             "description": "",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
             "panelsJSON": "[{\"col\":6,\"id\":\"JenkinsResults\",\"panelIndex\":3,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Results\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"JenkinsSlaves\",\"panelIndex\":4,\"row\":1,\"size_x\":4,\"size_y\":10,\"title\":\"Nodes\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jenkins_evolutionary_jobs\",\"panelIndex\":5,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Builds over time\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jenkins_main_numbers\",\"panelIndex\":8,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"jenkins_evolutionary_projects\",\"panelIndex\":9,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Active nodes over time\",\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"job_build\",\"url\",\"job_url\",\"result\",\"builtOn\",\"duration\"],\"id\":\"Search:_Jenkins_Backlog\",\"panelIndex\":10,\"row\":6,\"size_x\":8,\"size_y\":5,\"sort\":[\"metadata__updated_on\",\"desc\"],\"title\":\"Buids\",\"type\":\"search\"},{\"col\":1,\"id\":\"jenkins_export_builds_link\",\"panelIndex\":11,\"row\":11,\"size_x\":12,\"size_y\":1,\"title\":\"Export Builds\",\"type\":\"visualization\"}]",
