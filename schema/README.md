@@ -13,6 +13,10 @@ standard to define the several types available. If any other
 database engine is required, there should be a migration
 to that type name space.
 
+Others could be added in the future for extra needs. For example
+there is a need to specify if a field is aggregatable (using
+ElasticSearch terminology) or to describe the field.
+
 
 ## Testing
 
