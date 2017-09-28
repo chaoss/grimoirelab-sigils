@@ -171,6 +171,15 @@ Following fields that should be included in any index pattern:
 * grimoire_creation_date
 
 
+Data model
+----------
+
+Each of the indexes are based on a previous definition. This
+is declared in CSV format with two columns: name and type.
+
+More information at the [Schema README](schema/README.md) file.
+
+
 How this info was retrieved
 ---------------------------
 

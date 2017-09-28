@@ -1,0 +1,127 @@
+{
+"properties": {
+    "author_bot": {
+        "type": "boolean"
+    },
+    "author_domain": {
+        "type": "keyword"
+    },
+    "author_id": {
+        "type": "keyword"
+    },
+    "author_name": {
+        "type": "keyword"
+    },
+    "author_org_name": {
+        "type": "keyword"
+    },
+    "author_user_name": {
+        "type": "keyword"
+    },
+    "author_uuid": {
+        "type": "keyword"
+    },
+    "branch": {
+        "type": "keyword"
+    },
+    "closed": {
+        "type": "date"
+    },
+    "domain": {
+        "type": "keyword"
+    },
+    "githash": {
+        "type": "keyword"
+    },
+    "grimoire_creation_date": {
+        "type": "date"
+    },
+    "is_gerrit_review": {
+        "type": "long"
+    },
+    "metadata__enriched_on": {
+        "type": "date"
+    },
+    "metadata__gelk_backend_name": {
+        "type": "keyword"
+    },
+    "metadata__gelk_version": {
+        "type": "keyword"
+    },
+    "metadata__timestamp": {
+        "type": "date"
+    },
+    "metadata__updated_on": {
+        "type": "date"
+    },
+    "name": {
+        "type": "keyword"
+    },
+    "number": {
+        "type": "keyword"
+    },
+    "ocean-unique-id": {
+        "type": "keyword"
+    },
+    "opened": {
+        "type": "date"
+    },
+    "origin": {
+        "type": "keyword"
+    },
+    "owner_bot": {
+        "type": "boolean"
+    },
+    "owner_domain": {
+        "type": "keyword"
+    },
+    "owner_id": {
+        "type": "keyword"
+    },
+    "owner_name": {
+        "type": "keyword"
+    },
+    "owner_org_name": {
+        "type": "keyword"
+    },
+    "owner_user_name": {
+        "type": "keyword"
+    },
+    "owner_uuid": {
+        "type": "keyword"
+    },
+    "patchsets": {
+        "type": "long"
+    },
+    "project": {
+        "type": "keyword"
+    },
+    "project_1": {
+        "type": "keyword"
+    },
+    "repository": {
+        "type": "keyword"
+    },
+    "status": {
+        "type": "keyword"
+    },
+    "summary": {
+        "type": "keyword"
+    },
+    "summary_analyzed": {
+        "type": "text"
+    },
+    "tag": {
+        "type": "keyword"
+    },
+    "timeopen": {
+        "type": "double"
+    },
+    "url": {
+        "type": "keyword"
+    },
+    "uuid": {
+        "type": "keyword"
+    }
+}
+}
