@@ -4,7 +4,7 @@ This directory contains the data model used for each of the
 standard panels and indexes in GrimoireLab.
 
 The goal detailing the CSV and JSON files is to have a
-centralize place where everyone can look at as the enrichment
+centralized place where everyone can look at as the enrichment
 toolchain.
 
 Each of the CSV files contains two main columns: name and type.
