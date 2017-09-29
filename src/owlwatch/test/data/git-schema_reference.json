@@ -1,0 +1,142 @@
+{
+  "utc_author": {
+    "agg": true,
+    "type": "date"
+  },
+  "Author": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "committer_domain": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "author_date": {
+    "agg": true,
+    "type": "date"
+  },
+  "hash_short": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "message": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "author_bot": {
+    "agg": true,
+    "type": "boolean"
+  },
+  "repo_name": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "author_org_name": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "message_analyzed": {
+    "agg": true,
+    "type": "text"
+  },
+  "title": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "ocean-unique-id": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "committer_name": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "lines_removed": {
+    "agg": true,
+    "type": "number"
+  },
+  "author_uuid": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "grimoire_creation_date": {
+    "agg": true,
+    "type": "date"
+  },
+  "project": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "url_id": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "Committer": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "metadata__timestamp": {
+    "agg": true,
+    "type": "date"
+  },
+  "author_domain": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "lines_changed": {
+    "agg": true,
+    "type": "number"
+  },
+  "origin": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "files": {
+    "agg": true,
+    "type": "number"
+  },
+  "author_min_date": {
+    "agg": true,
+    "type": "date"
+  },
+  "author_max_date": {
+    "agg": true,
+    "type": "date"
+  },
+  "utc_commit": {
+    "agg": true,
+    "type": "date"
+  },
+  "author_name": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "commit_date": {
+    "agg": true,
+    "type": "date"
+  },
+  "metadata__updated_on": {
+    "agg": true,
+    "type": "date"
+  },
+  "hash": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "lines_added": {
+    "agg": true,
+    "type": "number"
+  },
+  "github_repo": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "tz": {
+    "agg": true,
+    "type": "number"
+  },
+  "is_git_commit": {
+    "agg": true,
+    "type": "number"
+  }
+}
