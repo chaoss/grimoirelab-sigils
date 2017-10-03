@@ -138,5 +138,17 @@
   "is_git_commit": {
     "agg": true,
     "type": "number"
+  },
+  "channel_purpose.value": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "channel_purpose.creator": {
+    "agg": true,
+    "type": "keyword"
+  },
+  "channel_purpose.last_set": {
+    "agg": true,
+    "type": "number"
   }
 }

@@ -50,7 +50,7 @@ class Schema(object):
 
     # List of types allowed for properties in this Schema
     __supported_types = ['text', 'keyword', 'number', 'date', 'boolean',
-                         '_source']
+                         '_source', 'geo_point']
     __excluded_props = ['_id', '_index', '_score', '_source', '_type']
 
     def __init__(self, schema_name):
@@ -225,12 +225,42 @@ class ESMapping(Schema):
         nested_json = mapping_list[0]
         items = nested_json['mappings']['items']['properties'].items()
         for prop, value in items:
-            analyzed = None
-            agg = None
-            if 'fielddata' in value:
-                agg = value['fielddata']
-            es_mapping.add_property(pname=prop, ptype=value['type'],
-                                    analyzed=analyzed, agg=agg)
+            # Support for nested properties:
+            # "channel_purpose": {
+            #   "properties": {
+            #     "value": {
+            #       "type": "keyword"
+            #     },
+            #     "creator": {
+            #       "type": "keyword"
+            #     },
+            #     "last_set": {
+            #       "type": "long"
+            #     }
+            #   }
+            # },
+            if 'properties' in value:
+                for nested_prop, nested_value in value['properties'].items():
+                    prop_name = prop + '.' + nested_prop
+                    analyzed = None
+                    agg = None
+                    if 'fielddata' in nested_value:
+                        agg = nested_value['fielddata']
+                    es_mapping.add_property(pname=prop_name,
+                                            ptype=nested_value['type'],
+                                            analyzed=analyzed, agg=agg)
+
+            # Support for "regular" properties
+            # "channel_id": {
+            #   "type": "keyword"
+            # },
+            else:
+                analyzed = None
+                agg = None
+                if 'fielddata' in value:
+                    agg = value['fielddata']
+                es_mapping.add_property(pname=prop, ptype=value['type'],
+                                        analyzed=analyzed, agg=agg)
 
         return es_mapping
 

@@ -133,8 +133,20 @@
           },
           "author_min_date": {
             "type": "date"
+          },
+          "channel_purpose": {
+            "properties": {
+              "value": {
+                "type": "keyword"
+              },
+              "creator": {
+                "type": "keyword"
+              },
+              "last_set": {
+                "type": "long"
+              }
+            }
           }
-
         }
       }
     }
