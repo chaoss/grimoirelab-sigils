@@ -81,7 +81,7 @@ optional arguments:
 Mapping and panel are using same properties and types.
 ```
 $> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../json/irc.json  
-[-------
+-------
 * irc *
 -------
 Comparison result: OK
