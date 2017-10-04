@@ -193,7 +193,8 @@ class ESMapping(Schema):
 
     __mapping_types = {'long': 'number',
                        'integer': 'number',
-                       'float': 'number'}
+                       'float': 'number',
+                       'double': 'number'}
     __non_aggregatables = {'text'}
 
     @classmethod
@@ -219,48 +220,49 @@ class ESMapping(Schema):
         #                       "Author": {
         #                           ...
         mapping_list = list(mapping_json.values())
-        if len(mapping_list) != 1:
-            raise AttributeError("There must be only 1 index per mapping.")
+        # if len(mapping_list) != 1:
+        #    raise AttributeError("There must be only 1 index per mapping.")
 
-        nested_json = mapping_list[0]
-        items = nested_json['mappings']['items']['properties'].items()
-        for prop, value in items:
-            # Support for nested properties:
-            # "channel_purpose": {
-            #   "properties": {
-            #     "value": {
-            #       "type": "keyword"
-            #     },
-            #     "creator": {
-            #       "type": "keyword"
-            #     },
-            #     "last_set": {
-            #       "type": "long"
-            #     }
-            #   }
-            # },
-            if 'properties' in value:
-                for nested_prop, nested_value in value['properties'].items():
-                    prop_name = prop + '.' + nested_prop
+        for nested_json in mapping_list:
+            # nested_json = mapping_list[0]
+            items = nested_json['mappings']['items']['properties'].items()
+            for prop, value in items:
+                # Support for nested properties:
+                # "channel_purpose": {
+                #   "properties": {
+                #     "value": {
+                #       "type": "keyword"
+                #     },
+                #     "creator": {
+                #       "type": "keyword"
+                #     },
+                #     "last_set": {
+                #       "type": "long"
+                #     }
+                #   }
+                # },
+                if 'properties' in value:
+                    for nested_prop, nested_value in value['properties'].items():
+                        prop_name = prop + '.' + nested_prop
+                        analyzed = None
+                        agg = None
+                        if 'fielddata' in nested_value:
+                            agg = nested_value['fielddata']
+                        es_mapping.add_property(pname=prop_name,
+                                                ptype=nested_value['type'],
+                                                analyzed=analyzed, agg=agg)
+
+                # Support for "regular" properties
+                # "channel_id": {
+                #   "type": "keyword"
+                # },
+                else:
                     analyzed = None
                     agg = None
-                    if 'fielddata' in nested_value:
-                        agg = nested_value['fielddata']
-                    es_mapping.add_property(pname=prop_name,
-                                            ptype=nested_value['type'],
+                    if 'fielddata' in value:
+                        agg = value['fielddata']
+                    es_mapping.add_property(pname=prop, ptype=value['type'],
                                             analyzed=analyzed, agg=agg)
-
-            # Support for "regular" properties
-            # "channel_id": {
-            #   "type": "keyword"
-            # },
-            else:
-                analyzed = None
-                agg = None
-                if 'fielddata' in value:
-                    agg = value['fielddata']
-                es_mapping.add_property(pname=prop, ptype=value['type'],
-                                        analyzed=analyzed, agg=agg)
 
         return es_mapping
 

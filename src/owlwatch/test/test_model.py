@@ -132,6 +132,11 @@ class TestPanel(unittest.TestCase):
         self.assertEqual(ESMapping.get_schema_type('float'),
                          'number')
 
+    def test_es_mapping_type_double(self):
+        """Test type conversion from double type to number"""
+        self.assertEqual(ESMapping.get_schema_type('double'),
+                         'number')
+
     def test_es_mapping_type_date(self):
         """Test type conversion for date type: remains unchanged"""
         self.assertEqual(ESMapping.get_schema_type('date'),
