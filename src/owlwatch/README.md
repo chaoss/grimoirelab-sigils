@@ -21,7 +21,7 @@ There are two commands depending on what we wish to compare: compare-mapping and
 
 ```
 $> python3 owlwatch.py -h
-usage: owlwatch.py [-h] [-g] {compare-mapping,compare-panel} ...
+usage: owlwatch.py [-h] [-g | -l] {compare-mapping,compare-panel} ...
 
      _____________________________
     ( Who watches the dashboards? )
@@ -42,7 +42,7 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   -g, --debug
-
+  -l, --info
 ```
 
 ### compare-mapping
@@ -81,46 +81,32 @@ optional arguments:
 Mapping and panel are using same properties and types.
 ```
 $> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../json/irc.json  
-[2017-10-03 13:54:46,495 - INFO] - ** The Owl is watching **
-   'author_bot': {'agg': True, 'type': 'boolean'}
-   'author_id': {'agg': True, 'type': 'keyword'}
-   'author_name': {'agg': True, 'type': 'keyword'}
-   'author_org_name': {'agg': True, 'type': 'keyword'}
-   'author_user_name': {'agg': True, 'type': 'keyword'}
-   'author_uuid': {'agg': True, 'type': 'keyword'}
-   'body': {'agg': True, 'type': 'keyword'}
-   'body_analyzed': {'agg': True, 'type': 'text'}
-   'channel': {'agg': True, 'type': 'keyword'}
-   'grimoire_creation_date': {'agg': True, 'type': 'date'}
-   'is_supybot_message': {'agg': True, 'type': 'number'}
-   'metadata__enriched_on': {'agg': True, 'type': 'date'}
-   'metadata__gelk_backend_name': {'agg': True, 'type': 'keyword'}
-   'metadata__gelk_version': {'agg': True, 'type': 'keyword'}
-   'metadata__timestamp': {'agg': True, 'type': 'date'}
-   'metadata__updated_on': {'agg': True, 'type': 'date'}
-   'nick': {'agg': True, 'type': 'keyword'}
-   'nick_bot': {'agg': True, 'type': 'boolean'}
-   'nick_id': {'agg': True, 'type': 'keyword'}
-   'nick_name': {'agg': True, 'type': 'keyword'}
-   'nick_org_name': {'agg': True, 'type': 'keyword'}
-   'nick_user_name': {'agg': True, 'type': 'keyword'}
-   'nick_uuid': {'agg': True, 'type': 'keyword'}
-   'ocean-unique-id': {'agg': True, 'type': 'keyword'}
-   'origin': {'agg': True, 'type': 'keyword'}
-   'sent_date': {'agg': True, 'type': 'date'}
-   'tag': {'agg': True, 'type': 'keyword'}
-   'type': {'agg': True, 'type': 'keyword'}
-   'update_date': {'agg': True, 'type': 'date'}
-   'uuid': {'agg': True, 'type': 'keyword'}
-Result: OK
-[2017-10-03 13:54:46,718 - INFO] - This is the end.
+[-------
+* irc *
+-------
+Comparison result: OK
+ [+] Not found in mapping: 0
+ [-] Not found in panel: 0
+ [?] Possible changes: 0
 ```
 
 Mapping and panel are using different properties or types.
 ```
 $> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../json/slack.json
-[2017-10-03 14:00:56,830 - INFO] - ** The Owl is watching **
-[2017-10-03 14:00:57,088 - ERROR] - {'subscribed': {'agg': True, 'type': 'numbe[3187 chars]er'}} != {'file_is_public': {'agg': True, 'type': 'n[3200 chars]er'}}
+---------
+* slack *
+---------
+Comparison result: ERROR
+ [+] Not found in mapping: 1
+ [-] Not found in panel: 1
+ [?] Possible changes: 1
+```
+
+To get more details, use `-l` for activating `INFO` log level:
+```
+$> python3 owlwatch.py -l compare-mapping -e https://localhost:3600/data -p ../../json/slack.json
+[2017-10-04 12:13:09,616 - INFO] - ** The Owl is watching **
+[2017-10-04 12:13:09,838 - INFO] - {'sub[39 chars]e}, 'author_id': {'type': 'keyword', 'agg': Tr[3140 chars]rue}} != {'sub[39 chars]e}, 'channel_topic.last_set': {'type': 'number[3153 chars]rue}}
   {'author_bot': {'agg': True, 'type': 'number'},
    'author_domain': {'agg': True, 'type': 'keyword'},
    'author_id': {'agg': True, 'type': 'keyword'},
@@ -189,6 +175,12 @@ $> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../j
    'user_data_uuid': {'agg': True, 'type': 'keyword'},
    'uuid': {'agg': True, 'type': 'keyword'}}
 Result: ERROR [+]: 1 [-]: 1
-[2017-10-03 14:00:57,089 - INFO] - This is the end.
-
+---------
+* slack *
+---------
+Comparison result: ERROR
+ [+] Not found in mapping: 1
+ [-] Not found in panel: 1
+ [?] Possible changes: 1
+[2017-10-04 12:13:09,838 - INFO] - This is the end.
 ```
