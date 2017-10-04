@@ -4,6 +4,14 @@ Tool for comparing panels and mappings. A data model is defined in [schema modul
 on a **Schema** abstraction, used as a common definition to compare ES Mappings and Kibana panels as they are exported by 
 [Kidash](https://github.com/grimoirelab/GrimoireELK/tree/master/kidash) tool.
 
+## Supported Versions
+Tested for:
+ * ElasticSearch: 5.4.0
+ * Lucene: 6.5.0
+ * Kibana 5: 5.1.1-SNAPSHOT
+ 
+**Currently it is not compatible with ElasticSeacrh versions older than 5 as ES mapping definition has changed.**
+
 ## Output
 A list of properties and their differences, if any, followed by a status line and a summary of differences if it is the case. 
 See [Examples](#examples) section below.
