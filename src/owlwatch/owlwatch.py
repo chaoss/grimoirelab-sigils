@@ -129,7 +129,9 @@ def parse_args():
     parser = argparse.ArgumentParser(description=DESC_MSG,
                                      formatter_class=RawTextHelpFormatter)
 
-    parser.add_argument('-g', '--debug', dest='debug', action='store_true')
+    group_exc = parser.add_mutually_exclusive_group(required=False)
+    group_exc.add_argument('-g', '--debug', dest='debug', action='store_true')
+    group_exc.add_argument('-l', '--info', dest='info', action='store_true')
 
     subparsers = parser.add_subparsers(dest='subparser_name')
     add_mapping_subparser(subparsers)
@@ -138,33 +140,41 @@ def parse_args():
     return parser.parse_args()
 
 
-def configure_logging(debug=False):
+def configure_logging(info=False, debug=False):
     """Configure logging
     The function configures log messages. By default, log messages
     are sent to stderr. Set the parameter `debug` to activate the
     debug mode.
     :param debug: set the debug mode
     """
-    if not debug:
+    if info:
         logging.basicConfig(level=logging.INFO,
                             format=LOG_FORMAT)
         logging.getLogger('requests').setLevel(logging.WARNING)
         logging.getLogger('urrlib3').setLevel(logging.WARNING)
         logging.getLogger('elasticsearch').setLevel(logging.WARNING)
-    else:
+    elif debug:
         logging.basicConfig(level=logging.DEBUG,
                             format=DEBUG_LOG_FORMAT)
+    else:
+        logging.basicConfig(level=logging.WARNING,
+                            format=LOG_FORMAT)
+        logging.getLogger('requests').setLevel(logging.WARNING)
+        logging.getLogger('urrlib3').setLevel(logging.WARNING)
+        logging.getLogger('elasticsearch').setLevel(logging.WARNING)
 
 
 def main():
     """This is the Owlcave, where everything starts"""
     args = parse_args()
 
-    configure_logging(args.debug)
+    configure_logging(args.info, args.debug)
 
     logging.info("** The Owl is watching **")
 
     result = None
+    first = "mapping"
+    second = "panel"
     if args.subparser_name == CMP_MAPPING:
         host = args.es_host
         panel_path = args.panel_path
@@ -172,28 +182,45 @@ def main():
         if csv_path is None:
             result = cmp_mapping_panel(es_host=host, panel_path=panel_path)
         elif panel_path is None:
+            second = "csv"
             result = cmp_mapping_csv(es_host=host, csv_path=csv_path)
 
     elif args.subparser_name == CMP_PANEL:
+        first = "panel"
         host = args.es_host
         panel_path = args.panel_path
         csv_path = args.csv_path
         if host is None:
+            second = "csv"
             result = cmp_panel_csv(panel_path=panel_path, csv_path=csv_path)
         elif csv_path is None:
+            second = "mapping"
             result = cmp_mapping_panel(es_host=host, panel_path=panel_path)
 
     if result is not None:
         status = result[0]
         msg = result[1]
+        result_format = FORMAT_OK
+        plus = '0'
+        minus = '0'
+        qmark = '0'
         if status == 'OK':
-            logging.info(msg + "\nResult: " + FORMAT_OK + status +
-                         Style.RESET_ALL)
+            logging.info(msg + "\nResult: " + status)
         else:
+            result_format = FORMAT_ERROR
             plus = str(msg.count('+ '))
             minus = str(msg.count('- '))
-            logging.error(msg + "\nResult: " + FORMAT_ERROR + status +
-                          " [+]: " + plus + " [-]: " + minus + Style.RESET_ALL)
+            qmark = str(msg.count('? '))
+            logging.info(msg + "\nResult: " + status +
+                         " [+]: " + plus + " [-]: " + minus)
+
+        print("-----------")
+        print("* Summary *")
+        print("-----------")
+        print("Comparison result: " + result_format + status + Style.RESET_ALL)
+        print(" [+] Not found in " + first + ": " + plus)
+        print(" [-] Not found in " + second + ": " + minus)
+        print(" [?] Possible changes: " + qmark)
 
     logging.info("This is the end.")
 
