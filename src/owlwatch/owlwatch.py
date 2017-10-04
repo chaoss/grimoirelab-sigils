@@ -61,7 +61,8 @@ def cmp_mapping_panel(es_host, panel_path):
     """Compares index patterns from a given panel to the corresponding
     mappings from a given ES host.
 
-    Returns a tuple with status ('OK', 'ERROR') and message.
+    Returns a dictionary containing tuples with status ('OK', 'ERROR')
+    and message. Dictionary keys are index pattern names.
     """
     client = Elasticsearch(es_host, timeout=30)
 
@@ -70,13 +71,14 @@ def cmp_mapping_panel(es_host, panel_path):
 
     panel = Panel.from_json(panel_json)
 
+    result = {}
     for index_pattern in panel.get_index_patterns().values():
         mapping_json = client.indices.get_mapping(index=index_pattern.schema_name)
         es_mapping = ESMapping.from_json(index_name=index_pattern.schema_name,
                                          mapping_json=mapping_json)
-        result = es_mapping.compare_properties(index_pattern)
+        result[index_pattern.schema_name] = es_mapping.compare_properties(index_pattern)
 
-        return result
+    return result
 
 
 def cmp_mapping_csv(es_host, csv_path):
@@ -172,7 +174,7 @@ def main():
 
     logging.info("** The Owl is watching **")
 
-    result = None
+    results = None
     first = "mapping"
     second = "panel"
     if args.subparser_name == CMP_MAPPING:
@@ -180,10 +182,10 @@ def main():
         panel_path = args.panel_path
         csv_path = args.csv_path
         if csv_path is None:
-            result = cmp_mapping_panel(es_host=host, panel_path=panel_path)
+            results = cmp_mapping_panel(es_host=host, panel_path=panel_path)
         elif panel_path is None:
             second = "csv"
-            result = cmp_mapping_csv(es_host=host, csv_path=csv_path)
+            results = cmp_mapping_csv(es_host=host, csv_path=csv_path)
 
     elif args.subparser_name == CMP_PANEL:
         first = "panel"
@@ -192,35 +194,36 @@ def main():
         csv_path = args.csv_path
         if host is None:
             second = "csv"
-            result = cmp_panel_csv(panel_path=panel_path, csv_path=csv_path)
+            results = cmp_panel_csv(panel_path=panel_path, csv_path=csv_path)
         elif csv_path is None:
             second = "mapping"
-            result = cmp_mapping_panel(es_host=host, panel_path=panel_path)
+            results = cmp_mapping_panel(es_host=host, panel_path=panel_path)
 
-    if result is not None:
-        status = result[0]
-        msg = result[1]
-        result_format = FORMAT_OK
-        plus = '0'
-        minus = '0'
-        qmark = '0'
-        if status == 'OK':
-            logging.info(msg + "\nResult: " + status)
-        else:
-            result_format = FORMAT_ERROR
-            plus = str(msg.count('+ '))
-            minus = str(msg.count('- '))
-            qmark = str(msg.count('? '))
-            logging.info(msg + "\nResult: " + status +
-                         " [+]: " + plus + " [-]: " + minus)
+    if results is not None:
+        for index_name, result in results.items():
+            status = result[0]
+            msg = result[1]
+            result_format = FORMAT_OK
+            plus = '0'
+            minus = '0'
+            qmark = '0'
+            if status == 'OK':
+                logging.info(msg + "\nResult: " + status)
+            else:
+                result_format = FORMAT_ERROR
+                plus = str(msg.count('+ '))
+                minus = str(msg.count('- '))
+                qmark = str(msg.count('? '))
+                logging.info(msg + "\nResult: " + status +
+                             " [+]: " + plus + " [-]: " + minus)
 
-        print("-----------")
-        print("* Summary *")
-        print("-----------")
-        print("Comparison result: " + result_format + status + Style.RESET_ALL)
-        print(" [+] Not found in " + first + ": " + plus)
-        print(" [-] Not found in " + second + ": " + minus)
-        print(" [?] Possible changes: " + qmark)
+            print("-" * (len(index_name) + 4))
+            print("* " + index_name + " *")
+            print("-" * (len(index_name) + 4))
+            print("Comparison result: " + result_format + status + Style.RESET_ALL)
+            print(" [+] Not found in " + first + ": " + plus)
+            print(" [-] Not found in " + second + ": " + minus)
+            print(" [?] Possible changes: " + qmark)
 
     logging.info("This is the end.")
 
