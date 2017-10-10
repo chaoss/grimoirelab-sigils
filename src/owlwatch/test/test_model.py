@@ -217,6 +217,33 @@ class TestPanel(unittest.TestCase):
         result = index_pattern.compare_properties(es_mapping_mod)
         self.assertEqual(result[0], 'ERROR')
 
+    def test_schema_compare_last_item(self):
+        """Test comparison between Schema properties using its
+        compare method with the last item different (but the same fields) """
+
+        mapping_json = None
+        panel_json = None
+
+        # Mapping for git enrich loaded from mordred
+        with open('data/git-mapping-utc_commit.json') as fjson:
+            mapping_json = json.load(fjson)
+
+        # JSON Panel for git
+        with open('data/git-utc_commit.json') as fjson:
+            panel_json = json.load(fjson)
+
+        # Check comaprison against the same object slightly modified
+        es_mapping = ESMapping.from_json(index_name='git_test',
+                                         mapping_json=mapping_json)
+        panel = Panel.from_json(panel_json)
+
+        result = es_mapping.compare_properties(panel.get_index_pattern('git'))
+
+        if result[0] != 'OK':
+            print(result[1])
+
+        self.assertEqual(result[0], 'OK')
+
 
 if __name__ == '__main__':
     unittest.main()
