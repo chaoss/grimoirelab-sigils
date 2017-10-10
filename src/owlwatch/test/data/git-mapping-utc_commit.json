@@ -127,7 +127,8 @@
                         "type": "keyword"
                     },
                     "message_analyzed": {
-                        "type": "text"
+                        "type": "text",
+                        "fielddata": true
                     },
                     "metadata__enriched_on": {
                         "type": "date"
