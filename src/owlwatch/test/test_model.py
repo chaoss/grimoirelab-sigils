@@ -205,17 +205,17 @@ class TestPanel(unittest.TestCase):
         es_mapping_mod.get_properties()['fake_prop'] = 0
 
         result = es_mapping.compare_properties(es_mapping_mod)
-        self.assertEqual(result[0], 'ERROR')
+        self.assertEqual(result[0], 'KO')
 
         # Check comparison ESMapping vs IndexPattern
         index_pattern = IndexPattern.from_json(self.__index_pattern_json)
 
         result = es_mapping_mod.compare_properties(index_pattern)
-        self.assertEqual(result[0], 'ERROR')
+        self.assertEqual(result[0], 'KO')
 
         # Check comparison IndexPattern vs ESMapping
         result = index_pattern.compare_properties(es_mapping_mod)
-        self.assertEqual(result[0], 'ERROR')
+        self.assertEqual(result[0], 'KO')
 
     def test_schema_compare_last_item(self):
         """Test comparison between Schema properties using its

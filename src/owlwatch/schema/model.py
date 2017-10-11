@@ -113,7 +113,7 @@ class Schema(object):
         """Comapares two schemas.
 
         Returns -- Tuple [Status, message] being Status
-        'OK' or 'ERROR' and message a string with the list
+        'OK' or 'KO' and message a string with the list
         of properties or the error message containing the
         differences found.
         """
@@ -130,7 +130,7 @@ class Schema(object):
             result = ['OK', props_str]
 
         except AssertionError as e:
-            result = ['ERROR', str(e)]
+            result = ['KO', str(e)]
 
         return result
 
