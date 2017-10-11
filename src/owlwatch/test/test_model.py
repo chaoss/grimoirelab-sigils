@@ -174,25 +174,51 @@ class TestPanel(unittest.TestCase):
         """Test comparison between Schema properties using its
         compare method"""
 
+        expected_status = 'OK'
+
         # Check comparison against the same object
         es_mapping = ESMapping.from_json(index_name='git',
                                          mapping_json=self.__mapping_json)
+
+        # ESMapping vs ESMapping
         result = es_mapping.compare_properties(es_mapping)
-        self.assertEqual(result[0], 'OK')
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['correct'], list(es_mapping.get_properties().keys()))
 
         # Check comparison ESMapping vs IndexPattern
         index_pattern = IndexPattern.from_json(self.__index_pattern_json)
 
         result = es_mapping.compare_properties(index_pattern)
-        self.assertEqual(result[0], 'OK')
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['correct'], list(es_mapping.get_properties().keys()))
 
         # Check comparison IndexPattern vs ESMapping
         result = index_pattern.compare_properties(es_mapping)
-        self.assertEqual(result[0], 'OK')
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['correct'], list(index_pattern.get_properties().keys()))
+
+        #
+        # Second schema could have more properties than
+        # first one (used to COMPARE FROM it)
+        # Add a new property to this second instance
+        #
+
+        es_mapping_mod = ESMapping.from_json(index_name='git',
+                                             mapping_json=self.__mapping_json)
+        es_mapping_mod.get_properties()['fake_prop'] = 0
+
+        # Mapping vs Mapping
+        result = es_mapping.compare_properties(es_mapping_mod)
+        self.assertEqual(result['status'], expected_status)
+
+        # Index pattern vs Mapping
+        result = index_pattern.compare_properties(es_mapping_mod)
+        self.assertEqual(result['status'], expected_status)
 
     def test_schema_compare_distinct(self):
         """Test comparison between Schema properties using its
         compare method"""
+        expected_status = 'KO'
 
         # Check comaprison against the same object slightly modified
         es_mapping = ESMapping.from_json(index_name='git',
@@ -201,21 +227,42 @@ class TestPanel(unittest.TestCase):
         es_mapping_mod = ESMapping.from_json(index_name='git',
                                              mapping_json=self.__mapping_json)
 
-        # Add a new property to this second instance
-        es_mapping_mod.get_properties()['fake_prop'] = 0
+        #
+        # Add fake property to the schema used to COMPARE FROM
+        #
 
-        result = es_mapping.compare_properties(es_mapping_mod)
-        self.assertEqual(result[0], 'ERROR')
+        es_mapping_mod.get_properties()['fake_prop'] = 'text'
+
+        # ESMapping vs ESMapping
+        result = es_mapping_mod.compare_properties(es_mapping)
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['missing'], ['fake_prop'])
 
         # Check comparison ESMapping vs IndexPattern
         index_pattern = IndexPattern.from_json(self.__index_pattern_json)
 
         result = es_mapping_mod.compare_properties(index_pattern)
-        self.assertEqual(result[0], 'ERROR')
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['missing'], ['fake_prop'])
 
-        # Check comparison IndexPattern vs ESMapping
-        result = index_pattern.compare_properties(es_mapping_mod)
-        self.assertEqual(result[0], 'ERROR')
+        #
+        # Add fake property to the target schemas with different value
+        #
+
+        es_mapping.add_property('fake_prop', 'text')
+        index_pattern.add_property('fake_prop', 'text')
+
+        # ESMapping vs ESMapping
+        result = es_mapping_mod.compare_properties(es_mapping)
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['missing'], [])
+        self.assertEqual(result['distinct'], ['fake_prop'])
+
+        # Check comparison ESMapping vs IndexPattern
+        result = es_mapping_mod.compare_properties(index_pattern)
+        self.assertEqual(result['status'], expected_status)
+        self.assertEqual(result['missing'], [])
+        self.assertEqual(result['distinct'], ['fake_prop'])
 
     def test_schema_compare_last_item(self):
         """Test comparison between Schema properties using its

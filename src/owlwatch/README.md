@@ -1,7 +1,7 @@
 # owlwatch
 
-Tool for comparing panels and mappings. A data model is defined in [schema module](schema/model.py). This model is based 
-on a **Schema** abstraction, used as a common definition to compare ES Mappings and Kibana panels as they are exported by 
+Tool for comparing panels and mappings. A data model is defined in [schema module](schema/model.py). This model is based
+on a **Schema** abstraction, used as a common definition to compare ES Mappings and Kibana panels as they are exported by
 [Kidash](https://github.com/grimoirelab/GrimoireELK/tree/master/kidash) tool.
 
 ## Supported Versions
@@ -9,11 +9,23 @@ Tested for:
  * ElasticSearch: 5.4.0
  * Lucene: 6.5.0
  * Kibana 5: 5.1.1-SNAPSHOT
- 
+
 **Currently it is not compatible with ElasticSeacrh versions older than 5 as ES mapping definition has changed.**
 
 ## Output
-A list of properties and their differences, if any, followed by a status line and a summary of differences if it is the case. 
+A summary of the comparison including:
+ * Index name.
+ * status: OK or KO.
+ * Matches: number of properties in both schemas.
+ * Not found in <schema_type>: number of properties not found in the target schema.  
+ * Type mismatches: number of properties having different types.
+
+Order matters, so comparisons have always a source schema and a target one.
+In order to be considered 'compatible', target schema needs to contain, at least,
+all properties in the source schema with same types. Thus, finding properties in
+the target schema that doesn't exist in the source one is not considered an
+error.
+
 See [Examples](#examples) section below.
 
 ## Usage
@@ -80,107 +92,95 @@ optional arguments:
 
 Mapping and panel are using same properties and types.
 ```
-$> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../json/irc.json  
+$> python3 owlwatch.py compare-mapping -e https://localhost:9200/data -p ../../json/irc.json  
 -------
 * irc *
 -------
 Comparison result: OK
- [+] Not found in mapping: 0
- [-] Not found in panel: 0
- [?] Possible changes: 0
+Matches: 30
+Not found in panel:  0
+Type mismatches:  0
 ```
 
-Mapping and panel are using different properties or types.
+Mapping contains more properties than panel:
 ```
-$> python3 owlwatch.py compare-mapping -e https://localhost:3600/data -p ../../json/slack.json
+$> python3 owlwatch.py compare-mapping -e https://localhost:9200/data -p ../../json/slack.json
 ---------
 * slack *
 ---------
-Comparison result: ERROR
- [+] Not found in mapping: 1
- [-] Not found in panel: 1
- [?] Possible changes: 1
+Comparison result: KO
+Matches: 64
+Not found in panel:  2
+Type mismatches:  0
+Details:
+
+Missing property: project
+Missing property: project_1
+
+```
+
+Order matters, so the other way around the result could be different. In the
+next example, mapping has some extra properties, as shown in the example above,
+but at the same time covers all the properties needed by the panel to work:
+```
+$> python3 owlwatch.py compare-panel -e https://localhost:9200/data -p ../../json/slack.json
+---------
+* slack *
+---------
+Comparison result: OK
+Matches: 64
+Not found in mapping:  0
+Type mismatches:  0
+```
+
+Some missing properties in mapping and also types are different for one property:
+```
+$> python3 owlwatch.py compare-panel -e https://localhost:9200/data -p ../../json/git.json
+-------
+* git *
+-------
+Comparison result: KO
+Matches: 32
+Not found in mapping:  2
+Type mismatches:  1
+Details:
+
+* Type mismatch:
+	message_analyzed: {'type': 'text', 'agg': True} != {'type': 'text'}
+	- {'agg': True, 'type': 'text'}
+	+ {'type': 'text'}
+* Missing property: github_repo
+* Missing property: url_id
+
 ```
 
 To get more details, use `-l` for activating `INFO` log level:
 ```
-$> python3 owlwatch.py -l compare-mapping -e https://localhost:3600/data -p ../../json/slack.json
-[2017-10-04 12:13:09,616 - INFO] - ** The Owl is watching **
-[2017-10-04 12:13:09,838 - INFO] - {'sub[39 chars]e}, 'author_id': {'type': 'keyword', 'agg': Tr[3140 chars]rue}} != {'sub[39 chars]e}, 'channel_topic.last_set': {'type': 'number[3153 chars]rue}}
-  {'author_bot': {'agg': True, 'type': 'number'},
-   'author_domain': {'agg': True, 'type': 'keyword'},
-   'author_id': {'agg': True, 'type': 'keyword'},
-   'author_name': {'agg': True, 'type': 'keyword'},
-   'author_org_name': {'agg': True, 'type': 'keyword'},
-   'author_user_name': {'agg': True, 'type': 'keyword'},
-   'author_uuid': {'agg': True, 'type': 'keyword'},
-   'avatar': {'agg': True, 'type': 'keyword'},
-   'channel_created': {'agg': True, 'type': 'number'},
-   'channel_id': {'agg': True, 'type': 'keyword'},
-   'channel_is_archived': {'agg': True, 'type': 'number'},
-   'channel_is_general': {'agg': True, 'type': 'number'},
-   'channel_is_starred': {'agg': True, 'type': 'number'},
-   'channel_member_count': {'agg': True, 'type': 'number'},
-   'channel_name': {'agg': True, 'type': 'keyword'},
-   'channel_purpose.creator': {'agg': True, 'type': 'keyword'},
-   'channel_purpose.last_set': {'agg': True, 'type': 'number'},
-   'channel_purpose.value': {'agg': True, 'type': 'keyword'},
-   'channel_topic.creator': {'agg': True, 'type': 'keyword'},
-   'channel_topic.last_set': {'agg': True, 'type': 'number'},
-   'channel_topic.value': {'agg': True, 'type': 'keyword'},
-   'file_id': {'agg': True, 'type': 'keyword'},
-   'file_is_editable': {'agg': True, 'type': 'number'},
-   'file_is_external': {'agg': True, 'type': 'number'},
-   'file_is_public': {'agg': True, 'type': 'number'},
-   'file_mode': {'agg': True, 'type': 'keyword'},
-   'file_name': {'agg': True, 'type': 'keyword'},
-   'file_size': {'agg': True, 'type': 'number'},
-   'file_title': {'agg': True, 'type': 'keyword'},
-   'file_type': {'agg': True, 'type': 'keyword'},
-   'grimoire_creation_date': {'agg': True, 'type': 'date'},
-   'is_admin': {'agg': True, 'type': 'number'},
-   'is_owner': {'agg': True, 'type': 'number'},
-   'is_primary_owner': {'agg': True, 'type': 'number'},
-   'is_slack_message': {'agg': True, 'type': 'number'},
-   'metadata__enriched_on': {'agg': True, 'type': 'date'},
-   'metadata__gelk_backend_name': {'agg': True, 'type': 'keyword'},
-   'metadata__gelk_version': {'agg': True, 'type': 'keyword'},
-   'metadata__timestamp': {'agg': True, 'type': 'date'},
-   'metadata__updated_on': {'agg': True, 'type': 'date'},
-   'number_attachs': {'agg': True, 'type': 'number'},
-   'origin': {'agg': True, 'type': 'keyword'},
-   'profile_title': {'agg': True, 'type': 'keyword'},
-   'reaction_count': {'agg': True, 'type': 'number'},
-   'reactions': {'agg': True, 'type': 'keyword'},
-   'reply_count': {'agg': True, 'type': 'number'},
-   'subscribed': {'agg': True, 'type': 'number'},
-   'subtype': {'agg': True, 'type': 'keyword'},
-   'tag': {'agg': True, 'type': 'keyword'},
-   'team_id': {'agg': True, 'type': 'keyword'},
-   'text': {'agg': True, 'type': 'keyword'},
--  'text_analyzed': {'type': 'text'},
-+  'text_analyzed': {'agg': True, 'type': 'text'},
-?                    +++++++++++++
+$> python3 owlwatch.py -l compare-panel -e https://localhost:9200/data -p ../../json/git.json
+[2017-10-11 14:13:54,887 - INFO] - ** The Owl is watching **
+[2017-10-11 14:13:55,061 - INFO] -
+* Missing property: url_id
+* Missing property: github_repo
+* Type mismatch:
+	message_analyzed: {'type': 'text', 'agg': True} != {'type': 'text'}
+	- {'agg': True, 'type': 'text'}
+	+ {'type': 'text'}
+Result: KO
+-------
+* git *
+-------
+Comparison result: KO
+Matches: 32
+Not found in mapping:  2
+Type mismatches:  1
+Details:
 
-   'type': {'agg': True, 'type': 'keyword'},
-   'tz': {'agg': True, 'type': 'number'},
-   'unread_count': {'agg': True, 'type': 'number'},
-   'user': {'agg': True, 'type': 'keyword'},
-   'user_data_bot': {'agg': True, 'type': 'number'},
-   'user_data_domain': {'agg': True, 'type': 'keyword'},
-   'user_data_id': {'agg': True, 'type': 'keyword'},
-   'user_data_name': {'agg': True, 'type': 'keyword'},
-   'user_data_org_name': {'agg': True, 'type': 'keyword'},
-   'user_data_user_name': {'agg': True, 'type': 'keyword'},
-   'user_data_uuid': {'agg': True, 'type': 'keyword'},
-   'uuid': {'agg': True, 'type': 'keyword'}}
-Result: ERROR [+]: 1 [-]: 1
----------
-* slack *
----------
-Comparison result: ERROR
- [+] Not found in mapping: 1
- [-] Not found in panel: 1
- [?] Possible changes: 1
-[2017-10-04 12:13:09,838 - INFO] - This is the end.
+* Missing property: url_id
+* Missing property: github_repo
+* Type mismatch:
+	message_analyzed: {'type': 'text', 'agg': True} != {'type': 'text'}
+	- {'agg': True, 'type': 'text'}
+	+ {'type': 'text'}
+
+[2017-10-11 14:13:55,062 - INFO] - This is the end.
 ```

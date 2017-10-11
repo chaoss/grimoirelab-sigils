@@ -110,29 +110,47 @@ class Schema(object):
         return self.__properties
 
     def compare_properties(self, schema):
-        """Comapares two schemas.
+        """Compares two schemas. The schema used to call the method
+        will be the one we compare from, in advance 'source schema'.
+        The schema passed as parameter will be the 'target schema'.
 
-        Returns -- Tuple [Status, message] being Status
-        'OK' or 'ERROR' and message a string with the list
-        of properties or the error message containing the
-        differences found.
+        Returns -- dictionary {status, correct, missing, distinct, message}
+            being:
+                status 'OK' if all properties in source schema exist in target
+                    schema with same values. 'KO' in other case.
+                correct: list of properties that matches.
+                missing: list of properties missing from target schema.
+                distinct: list of properties in both schemas but having
+                    with different values.
+                message: a string with additional information.
         """
         test_case = TestCase('__init__')
         test_case.maxDiff = None
 
-        try:
-            test_case.assertDictEqual(self.get_properties(),
-                                      schema.get_properties())
+        status = 'OK'
+        correct = []
+        missing = []
+        distinct = []
+        msg = ''
+        for pname, pvalue in self.get_properties().items():
+            if pname not in schema.get_properties():
+                missing.append(pname)
+                msg = msg + '\n' + '* Missing property: ' + pname
+                status = 'KO'
+            else:
+                try:
+                    test_case.assertDictEqual(pvalue,
+                                              schema.get_properties()[pname])
+                    correct.append(pname)
 
-            sorted_props = sorted(self.get_properties().items())
-            props_str = "\n".join(["\r   '%s': %s" %
-                                   (k, v) for (k, v) in sorted_props])
-            result = ['OK', props_str]
+                except AssertionError as e:
+                    distinct.append(pname)
+                    msg = "%s\n* Type mismatch: \n\t%s: %s" %\
+                        (msg, pname, str(e).replace('\n', '\n\t'))
+                    status = 'KO'
 
-        except AssertionError as e:
-            result = ['ERROR', str(e)]
-
-        return result
+        return {'status': status, 'correct': correct, 'missing': missing,
+                'distinct': distinct, 'msg': msg}
 
 
 class IndexPattern(Schema):
