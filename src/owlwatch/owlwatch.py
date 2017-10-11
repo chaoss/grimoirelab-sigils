@@ -58,11 +58,23 @@ CMP_PANEL = 'compare-panel'
 
 
 def cmp_mapping_panel(es_host, panel_path):
+    """Compares ES mappings to index patterns from a given panel. Comapares
+    only those mappings appearing as index patterns in JSON panel file.
+    """
+    return cmp_panel_mapping(panel_path, es_host, True)
+
+
+def cmp_panel_mapping(panel_path, es_host, reverse=False):
     """Compares index patterns from a given panel to the corresponding
     mappings from a given ES host.
 
     Returns a dictionary containing tuples with status ('OK', 'ERROR')
     and message. Dictionary keys are index pattern names.
+
+    Keyword arguments:
+    es_host       -- Elastic Search host to retrieve mappings
+    panel_path    -- JSON panel file path
+    reverse       -- use mapping as source schema.
     """
     client = Elasticsearch(es_host, timeout=30)
 
@@ -76,7 +88,10 @@ def cmp_mapping_panel(es_host, panel_path):
         mapping_json = client.indices.get_mapping(index=index_pattern.schema_name)
         es_mapping = ESMapping.from_json(index_name=index_pattern.schema_name,
                                          mapping_json=mapping_json)
-        result[index_pattern.schema_name] = es_mapping.compare_properties(index_pattern)
+        if reverse:
+            result[index_pattern.schema_name] = es_mapping.compare_properties(index_pattern)
+        else:
+            result[index_pattern.schema_name] = index_pattern.compare_properties(es_mapping)
 
     return result
 
@@ -197,33 +212,34 @@ def main():
             results = cmp_panel_csv(panel_path=panel_path, csv_path=csv_path)
         elif csv_path is None:
             second = "mapping"
-            results = cmp_mapping_panel(es_host=host, panel_path=panel_path)
+            results = cmp_panel_mapping(panel_path=panel_path, es_host=host)
 
     if results is not None:
         for index_name, result in results.items():
-            status = result[0]
-            msg = result[1]
+            status = result['status']
+            correct = result['correct']
+            missing = result['missing']
+            distinct = result['distinct']
+            msg = result['msg']
+
             result_format = FORMAT_OK
-            plus = '0'
-            minus = '0'
-            qmark = '0'
             if status == 'OK':
-                logging.info(msg + "\nResult: " + status)
+                logging.info(str(correct) + "\nResult: " + status)
             else:
                 result_format = FORMAT_ERROR
-                plus = str(msg.count('+ '))
-                minus = str(msg.count('- '))
-                qmark = str(msg.count('? '))
-                logging.info(msg + "\nResult: " + status +
-                             " [+]: " + plus + " [-]: " + minus)
+                logging.info(msg + "\nResult: " + status)
 
             print("-" * (len(index_name) + 4))
             print("* " + index_name + " *")
             print("-" * (len(index_name) + 4))
             print("Comparison result: " + result_format + status + Style.RESET_ALL)
-            print(" [+] Not found in " + first + ": " + plus)
-            print(" [-] Not found in " + second + ": " + minus)
-            print(" [?] Possible changes: " + qmark)
+            print("Matches:", len(correct))
+            print("Not found in " + second + ": ", len(missing))
+            print("Type mismatches: ", len(distinct))
+            if msg != "":
+                print("Details: \n" + msg + '\n')
+    else:
+        logging.info("Didn't find anything to do...")
 
     logging.info("This is the end.")
 
