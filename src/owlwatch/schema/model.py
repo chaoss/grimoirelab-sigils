@@ -50,7 +50,7 @@ class Schema(object):
 
     # List of types allowed for properties in this Schema
     __supported_types = ['text', 'keyword', 'number', 'date', 'boolean',
-                         '_source', 'geo_point']
+                         '_source', 'geo_point', 'object']
     __excluded_props = ['_id', '_index', '_score', '_source', '_type']
 
     def __init__(self, schema_name):
@@ -180,10 +180,13 @@ class IndexPattern(Schema):
         # Get index pattern fields
         fields_json = json.loads(ip_json['value']['fields'])
         for json_field in fields_json:
+            agg = True
+            if 'aggregatable' in json_field:
+                agg = json_field['aggregatable']
             index_pattern.add_property(pname=json_field['name'],
                                        ptype=json_field['type'],
                                        analyzed=json_field['analyzed'],
-                                       agg=json_field['aggregatable'])
+                                       agg=agg)
 
         return index_pattern
 
@@ -264,10 +267,16 @@ class ESMapping(Schema):
                         prop_name = prop + '.' + nested_prop
                         analyzed = None
                         agg = None
+
                         if 'fielddata' in nested_value:
                             agg = nested_value['fielddata']
+                        if 'type' in nested_value:
+                            ptype = nested_value['type']
+                        else:
+                            print('Not adding to es_mapping value: %s' % nested_value)
+                            continue
                         es_mapping.add_property(pname=prop_name,
-                                                ptype=nested_value['type'],
+                                                ptype=ptype,
                                                 analyzed=analyzed, agg=agg)
 
                 # Support for "regular" properties
