@@ -183,6 +183,10 @@ class IndexPattern(Schema):
             if 'scripted' in json_field and json_field['scripted']:
                 # Don't check Kibana generated scripted fields
                 continue
+            elif 'is_' in json_field['name']:
+                # Don't check is_ fields because they don't exists always
+                # is_gmane only exists in mbox coming from gmane for example
+                continue
             agg = True
             if 'aggregatable' in json_field:
                 agg = json_field['aggregatable']
