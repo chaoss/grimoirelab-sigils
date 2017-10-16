@@ -180,6 +180,9 @@ class IndexPattern(Schema):
         # Get index pattern fields
         fields_json = json.loads(ip_json['value']['fields'])
         for json_field in fields_json:
+            if 'scripted' in json_field and json_field['scripted']:
+                # Don't check Kibana generated scripted fields
+                continue
             agg = True
             if 'aggregatable' in json_field:
                 agg = json_field['aggregatable']
