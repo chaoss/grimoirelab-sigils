@@ -8,10 +8,10 @@
                 "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Server Activity\",\"disabled\":false,\"index\":\"irc\",\"key\":\"query\",\"negate\":true,\"value\":\"{\\\"bool\\\":{\\\"should\\\":[{\\\"term\\\":{\\\"subtype\\\":\\\"channel_join\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_message\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_add\\\"}}]}}\"},\"query\":{\"bool\":{\"should\":[{\"term\":{\"subtype\":\"channel_join\"}},{\"term\":{\"subtype\":\"bot_message\"}},{\"term\":{\"subtype\":\"bot_add\"}}]}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"slack_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":2,\"size_y\":4,\"title\":\"Slack\",\"type\":\"visualization\"},{\"col\":3,\"id\":\"slack_messages_evolutionary\",\"panelIndex\":2,\"row\":1,\"size_x\":4,\"size_y\":2,\"title\":\"Messages\",\"type\":\"visualization\"},{\"col\":3,\"id\":\"slack_participants_evolutionary\",\"panelIndex\":3,\"row\":3,\"size_x\":4,\"size_y\":2,\"title\":\"Participants\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"slack_main_channels\",\"panelIndex\":4,\"row\":5,\"size_x\":6,\"size_y\":5,\"title\":\"Channels\",\"type\":\"visualization\"},{\"col\":11,\"id\":\"slack_reactions\",\"panelIndex\":5,\"row\":1,\"size_x\":2,\"size_y\":2,\"title\":\"Reactions\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"slack_messages_timezone\",\"panelIndex\":6,\"row\":8,\"size_x\":6,\"size_y\":2,\"title\":\"Messages by Time Zone\",\"type\":\"visualization\"},{\"col\":11,\"id\":\"slack_word_frequency\",\"panelIndex\":7,\"row\":3,\"size_x\":2,\"size_y\":5,\"title\":\"Word Frequency\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"slack_main_participants\",\"panelIndex\":8,\"row\":1,\"size_x\":4,\"size_y\":7,\"title\":\"Top Participants\",\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"text\",\"author_name\",\"channel_name\",\"reactions\",\"reply_count\"],\"id\":\"Slack-Search:_text_authorname_channel_reactions_replies\",\"panelIndex\":9,\"row\":10,\"size_x\":12,\"size_y\":4,\"sort\":[\"grimoire_creation_date\",\"desc\"],\"title\":\"Last Messages\",\"type\":\"search\"}]",
+            "panelsJSON": "[{\"col\":1,\"id\":\"slack_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Slack\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"slack_messages_evolutionary\",\"panelIndex\":2,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Messages\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"slack_participants_evolutionary\",\"panelIndex\":3,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Participants\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"slack_main_channels\",\"panelIndex\":4,\"row\":8,\"size_x\":7,\"size_y\":4,\"title\":\"Channels\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"slack_reactions\",\"panelIndex\":5,\"row\":1,\"size_x\":3,\"size_y\":3,\"title\":\"Reactions\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"slack_messages_timezone\",\"panelIndex\":6,\"row\":12,\"size_x\":7,\"size_y\":2,\"title\":\"Messages by Time Zone\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"slack_main_participants\",\"panelIndex\":8,\"row\":6,\"size_x\":5,\"size_y\":8,\"title\":\"Top Participants\",\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"text\",\"author_name\",\"channel_name\",\"reactions\",\"reply_count\"],\"id\":\"Slack-Search:_text_authorname_channel_reactions_replies\",\"panelIndex\":9,\"row\":14,\"size_x\":12,\"size_y\":4,\"sort\":[\"grimoire_creation_date\",\"desc\"],\"title\":\"Last Messages\",\"type\":\"search\"},{\"col\":6,\"id\":\"slack_author_organizations\",\"panelIndex\":10,\"row\":1,\"size_x\":3,\"size_y\":3,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"slack_organizations\",\"panelIndex\":11,\"row\":4,\"size_x\":3,\"size_y\":4,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"slack_terms_cloud\",\"panelIndex\":12,\"row\":4,\"size_x\":4,\"size_y\":4,\"title\":\"Top 20 terms\",\"type\":\"visualization\"}]",
             "timeRestore": false,
             "title": "Slack",
-            "uiStateJSON": "{\"P-1\":{\"title\":\"Slack\"},\"P-2\":{\"title\":\"Messages\"},\"P-3\":{\"title\":\"Participants\"},\"P-4\":{\"title\":\"Channels\"},\"P-5\":{\"title\":\"Reactions\"},\"P-6\":{\"title\":\"Messages by Time Zone\"},\"P-7\":{\"title\":\"Word Frequency\"},\"P-8\":{\"title\":\"Top Participants\"},\"P-9\":{\"title\":\"Last Messages\"}}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Slack\"},\"P-10\":{\"title\":\"Organizations\"},\"P-11\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"title\":\"Top 20 terms\"},\"P-2\":{\"title\":\"Messages\"},\"P-3\":{\"title\":\"Participants\"},\"P-4\":{\"title\":\"Channels\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Reactions\"},\"P-6\":{\"title\":\"Messages by Time Zone\"},\"P-8\":{\"title\":\"Top Participants\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"title\":\"Last Messages\"}}",
             "version": 1
         }
     },
@@ -99,9 +99,9 @@
                     "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "slack_main_channels",
-                "uiStateJSON": "{}",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"slack_main_channels\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Channel\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Participants\"}},{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_member_count\",\"customLabel\":\"Members\"}},{\"id\":\"10\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"reply_count\",\"customLabel\":\"Replies\"}},{\"id\":\"4\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_general\",\"customLabel\":\"General\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_starred\",\"customLabel\":\"Starred\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_archived\",\"customLabel\":\"Archived\"}},{\"id\":\"8\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_topic.value\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic\"}},{\"id\":\"9\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_purpose.value\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Purpose\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"slack_main_channels\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Channel\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Participants\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_member_count\",\"customLabel\":\"Members\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"reply_count\",\"customLabel\":\"Replies\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_general\",\"customLabel\":\"General\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_starred\",\"customLabel\":\"Starred\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_is_archived\",\"customLabel\":\"Archived\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_topic.value\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_purpose.value\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Purpose\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -131,19 +131,6 @@
             }
         },
         {
-            "id": "slack_word_frequency",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "slack_word_frequency",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"slack_word_frequency\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"text_analyzed\",\"exclude\":{\"pattern\":\".{1,4}|there|should|https|topic|think|slightly_smiling_face\",\"flags\":[]},\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Word\"}}],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "slack_main_participants",
             "value": {
                 "description": "",
@@ -151,9 +138,48 @@
                     "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
                 },
                 "title": "slack_main_participants",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"slack_main_participants\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"avatar\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Avatar\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Participants\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"Channels\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"1st Comment\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Comment\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "slack_author_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "slack_author_organizations",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"slack_main_participants\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"avatar\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Avatar\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Participants\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"Channels\"}},{\"id\":\"6\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"1st Comment\"}},{\"id\":\"5\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Comment\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"slack_author_organizations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "slack_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "slack_organizations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"slack_organizations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"Channels\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Participants\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "slack_terms_cloud",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "slack_terms_cloud",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"slack_terms_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":64},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"text_analyzed\",\"exclude\":{\"pattern\":\".{1,4}|there|should|https|topic|think|slightly_smiling_face|joined|could|don't\"},\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
             }
         }
     ]
