@@ -23,6 +23,7 @@
 """
 
 import json
+import logging
 
 from unittest import TestCase
 
@@ -52,6 +53,12 @@ class Schema(object):
     __supported_types = ['text', 'keyword', 'number', 'date', 'boolean',
                          '_source', 'geo_point', 'object']
     __excluded_props = ['_id', '_index', '_score', '_source', '_type']
+    # In mbox enriched indexes is_mbox is defined
+    __excluded_props += ['is_gmane_message', 'is_mbox_message']
+    # Cache from askbot could not include this field
+    __excluded_props += ['is_askbot_comment']
+    # Cache from confluence could not include this field
+    __excluded_props += ['is_attachment', 'is_comment', 'is_new_page']
 
     def __init__(self, schema_name):
         self.schema_name = schema_name
@@ -183,17 +190,14 @@ class IndexPattern(Schema):
             if 'scripted' in json_field and json_field['scripted']:
                 # Don't check Kibana generated scripted fields
                 continue
-            elif 'is_' in json_field['name']:
-                # Don't check is_ fields because they don't exists always
-                # is_gmane only exists in mbox coming from gmane for example
+            if not 'aggregatable' in json_field:
+                logging.error('%s does not include aggregatable field. ' + \
+                              'Excluded from field checking.', json_field)
                 continue
-            agg = True
-            if 'aggregatable' in json_field:
-                agg = json_field['aggregatable']
             index_pattern.add_property(pname=json_field['name'],
                                        ptype=json_field['type'],
                                        analyzed=json_field['analyzed'],
-                                       agg=agg)
+                                       agg=json_field['aggregatable'])
 
         return index_pattern
 
@@ -280,7 +284,8 @@ class ESMapping(Schema):
                         if 'type' in nested_value:
                             ptype = nested_value['type']
                         else:
-                            print('Not adding to es_mapping value: %s' % nested_value)
+                            logging.warning('Not adding to es_mapping checking ' + \
+                                            'the nested value: %s', nested_value)
                             continue
                         es_mapping.add_property(pname=prop_name,
                                                 ptype=ptype,
