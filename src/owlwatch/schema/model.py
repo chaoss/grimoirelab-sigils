@@ -23,6 +23,7 @@
 """
 
 import json
+import logging
 
 from unittest import TestCase
 
@@ -50,8 +51,14 @@ class Schema(object):
 
     # List of types allowed for properties in this Schema
     __supported_types = ['text', 'keyword', 'number', 'date', 'boolean',
-                         '_source', 'geo_point']
+                         '_source', 'geo_point', 'object']
     __excluded_props = ['_id', '_index', '_score', '_source', '_type']
+    # In mbox enriched indexes is_mbox is defined
+    __excluded_props += ['is_gmane_message', 'is_mbox_message']
+    # Cache from askbot could not include this field
+    __excluded_props += ['is_askbot_comment']
+    # Cache from confluence could not include this field
+    __excluded_props += ['is_attachment', 'is_comment', 'is_new_page']
 
     def __init__(self, schema_name):
         self.schema_name = schema_name
@@ -180,6 +187,13 @@ class IndexPattern(Schema):
         # Get index pattern fields
         fields_json = json.loads(ip_json['value']['fields'])
         for json_field in fields_json:
+            if 'scripted' in json_field and json_field['scripted']:
+                # Don't check Kibana generated scripted fields
+                continue
+            if not 'aggregatable' in json_field:
+                logging.error('%s does not include aggregatable field. ' + \
+                              'Excluded from field checking.', json_field)
+                continue
             index_pattern.add_property(pname=json_field['name'],
                                        ptype=json_field['type'],
                                        analyzed=json_field['analyzed'],
@@ -264,10 +278,17 @@ class ESMapping(Schema):
                         prop_name = prop + '.' + nested_prop
                         analyzed = None
                         agg = None
+
                         if 'fielddata' in nested_value:
                             agg = nested_value['fielddata']
+                        if 'type' in nested_value:
+                            ptype = nested_value['type']
+                        else:
+                            logging.warning('Not adding to es_mapping checking ' + \
+                                            'the nested value: %s', nested_value)
+                            continue
                         es_mapping.add_property(pname=prop_name,
-                                                ptype=nested_value['type'],
+                                                ptype=ptype,
                                                 analyzed=analyzed, agg=agg)
 
                 # Support for "regular" properties
