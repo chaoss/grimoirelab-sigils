@@ -75,26 +75,25 @@ class Schema(object):
 
         return src_type
 
-    def add_property(self, pname, ptype, analyzed=False, agg=False):
+    def add_property(self, pname, ptype, agg=False):
         """Adds a new property to the current schema. If there
         is already a property with same name, that property
         will be updated.
 
+        Each schema property will have 3 fields:
+          - name
+          - type
+          - agg
+
         Keyword arguments:
         pname       -- property names
         ptype       -- property type
-        analyzed    -- is this property analyzed?
         agg         -- is this property aggregatable in Kibana?
         """
         # Exclude ES internal properties
         if pname not in self.__excluded_props:
             schema_type = self.check_type(ptype)
             self.__properties[pname] = {'type': schema_type}
-
-            # Assuming that text is already giving us this information
-            # implicitely
-            # if analyzed:
-            #     self.__properties[pname]['analyzed'] = True
 
             if agg:
                 self.__properties[pname]['agg'] = True
@@ -196,8 +195,8 @@ class IndexPattern(Schema):
                 continue
             index_pattern.add_property(pname=json_field['name'],
                                        ptype=json_field['type'],
-                                       analyzed=json_field['analyzed'],
-                                       agg=json_field['aggregatable'])
+                                       agg=json_field['aggregatable'],
+                                       analyzed=json_field['analyzed'])
 
         return index_pattern
 
@@ -213,11 +212,11 @@ class IndexPattern(Schema):
 
         return out_type
 
-    def add_property(self, pname, ptype, analyzed=False, agg=False):
+    def add_property(self, pname, ptype, agg=False, analyzed=False):
         """Overwrites parent method for type conversion
         """
         schema_type = self.get_schema_type(src_type=ptype, analyzed=analyzed)
-        super().add_property(pname, schema_type, analyzed, agg)
+        super().add_property(pname, schema_type, agg)
 
 
 class ESMapping(Schema):
@@ -289,7 +288,7 @@ class ESMapping(Schema):
                             continue
                         es_mapping.add_property(pname=prop_name,
                                                 ptype=ptype,
-                                                analyzed=analyzed, agg=agg)
+                                                agg=agg)
 
                 # Support for "regular" properties
                 # "channel_id": {
@@ -301,7 +300,7 @@ class ESMapping(Schema):
                     if 'fielddata' in value:
                         agg = value['fielddata']
                     es_mapping.add_property(pname=prop, ptype=value['type'],
-                                            analyzed=analyzed, agg=agg)
+                                            agg=agg)
 
         return es_mapping
 
@@ -315,7 +314,7 @@ class ESMapping(Schema):
 
         return out_type
 
-    def add_property(self, pname, ptype, analyzed=False, agg=None):
+    def add_property(self, pname, ptype, agg=None):
         """Overwrites parent method for type conversion
         """
         schema_type = self.get_schema_type(src_type=ptype)
@@ -328,7 +327,7 @@ class ESMapping(Schema):
                 schema_agg = False
             else:
                 schema_agg = True
-        super().add_property(pname, schema_type, analyzed, schema_agg)
+        super().add_property(pname, schema_type, schema_agg)
 
 
 class Panel(object):
