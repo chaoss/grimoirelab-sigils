@@ -8,12 +8,10 @@
                 "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"maniphest_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":1,\"size_y\":4,\"type\":\"visualization\",\"title\":\"Issues\"},{\"col\":2,\"id\":\"maniphest_submitters\",\"panelIndex\":2,\"row\":3,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\",\"title\":\"Submitters\"},{\"col\":2,\"id\":\"maniphest_issues\",\"panelIndex\":3,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\",\"title\":\"Issues\"},{\"col\":6,\"id\":\"maniphest_issues_organizations_assignee\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\",\"title\":\"Assigned Organizations\"},{\"id\":\"maniphest_openissues_projects\",\"type\":\"visualization\",\"panelIndex\":5,\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1,\"title\":\"Projects\"},{\"id\":\"maniphest_issues_submitters\",\"type\":\"visualization\",\"panelIndex\":6,\"size_x\":5,\"size_y\":4,\"col\":1,\"row\":5,\"title\":\"Submitters\"},{\"id\":\"maniphest_assigned_issues_orgs\",\"type\":\"visualization\",\"panelIndex\":7,\"size_x\":7,\"size_y\":4,\"col\":6,\"row\":5,\"title\":\"Assigned Organizations\"}]",
-            "timeFrom": "now-2y",
-            "timeRestore": true,
-            "timeTo": "now",
+            "panelsJSON": "[{\"col\":1,\"id\":\"maniphest_main_numbers\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Issues\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"maniphest_submitters\",\"panelIndex\":2,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"maniphest_issues\",\"panelIndex\":3,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Issues\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"maniphest_issues_organizations_assignee\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":9,\"id\":\"maniphest_openissues_projects\",\"panelIndex\":5,\"row\":1,\"size_x\":4,\"size_y\":4,\"title\":\"Projects\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"maniphest_issues_submitters\",\"panelIndex\":6,\"row\":6,\"size_x\":5,\"size_y\":6,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"maniphest_assigned_issues_orgs\",\"panelIndex\":7,\"row\":9,\"size_x\":7,\"size_y\":3,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"maniphest_issues_organizations\",\"panelIndex\":8,\"row\":5,\"size_x\":7,\"size_y\":4,\"title\":\"Organzations\",\"type\":\"visualization\"}]",
+            "timeRestore": false,
             "title": "Maniphest",
-            "uiStateJSON": "{\"P-1\":{\"title\":\"Issues\"},\"P-3\":{\"title\":\"Issues\"},\"P-2\":{\"title\":\"Submitters\"},\"P-4\":{\"title\":\"Assigned Organizations\"},\"P-5\":{\"title\":\"Projects\"},\"P-6\":{\"title\":\"Submitters\"},\"P-7\":{\"title\":\"Assigned Organizations\"}}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Issues\"},\"P-2\":{\"title\":\"Submitters\"},\"P-3\":{\"title\":\"Issues\"},\"P-4\":{\"title\":\"Organizations\"},\"P-5\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Organizations\"},\"P-8\":{\"title\":\"Organzations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
             "version": 1
         }
     },
@@ -73,12 +71,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\n  \"index\": \"maniphest\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "maniphest_issues_organizations_assignee",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"pie\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"isDonut\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Issues\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"assigned_to_org_name\",\n        \"size\": 15,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"customLabel\": \"Organizations\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+                "visState": "{\"title\":\"maniphest_issues_organizations_assignee\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organizations\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -91,7 +89,7 @@
                 "title": "maniphest_openissues_projects",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"maniphest_openissues_projects\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Time Open (days)\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"changes\",\"customLabel\":\"Avg. Changes\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"maniphest_openissues_projects\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Time Open (days)\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"changes\",\"customLabel\":\"Avg. Changes\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -118,6 +116,19 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Assigned Organization\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "maniphest_issues_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "maniphest_issues_organizations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"maniphest_issues_organizations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
             }
         }
     ]
