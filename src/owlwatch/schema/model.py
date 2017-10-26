@@ -189,8 +189,8 @@ class IndexPattern(Schema):
             if 'scripted' in json_field and json_field['scripted']:
                 # Don't check Kibana generated scripted fields
                 continue
-            if not 'aggregatable' in json_field:
-                logging.error('%s does not include aggregatable field. ' + \
+            if 'aggregatable' not in json_field:
+                logging.error('%s does not include aggregatable field. ' +
                               'Excluded from field checking.', json_field)
                 continue
             index_pattern.add_property(pname=json_field['name'],
@@ -283,7 +283,7 @@ class ESMapping(Schema):
                         if 'type' in nested_value:
                             ptype = nested_value['type']
                         else:
-                            logging.warning('Not adding to es_mapping checking ' + \
+                            logging.warning('Not adding to es_mapping checking ' +
                                             'the nested value: %s', nested_value)
                             continue
                         es_mapping.add_property(pname=prop_name,
