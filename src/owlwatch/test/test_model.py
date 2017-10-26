@@ -268,6 +268,8 @@ class TestPanel(unittest.TestCase):
         """Test comparison between Schema properties using its
         compare method with the last item different (but the same fields) """
 
+        expected_status = 'OK'
+
         mapping_json = None
         panel_json = None
 
@@ -284,12 +286,12 @@ class TestPanel(unittest.TestCase):
                                          mapping_json=mapping_json)
         panel = Panel.from_json(panel_json)
 
-        result = es_mapping.compare_properties(panel.get_index_pattern('git'))
+        result = panel.get_index_pattern('git').compare_properties(es_mapping)
 
-        if result[0] != 'OK':
-            print(result[1])
+        if result['status'] != expected_status:
+            print(result)
 
-        self.assertEqual(result[0], 'OK')
+        self.assertEqual(result['status'], expected_status)
 
 
 if __name__ == '__main__':
