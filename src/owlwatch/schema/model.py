@@ -233,28 +233,41 @@ class ESMapping(Schema):
     def from_json(cls, index_name, mapping_json):
         """Builds a ESMapping object from an ES JSON mapping
 
-        AttributeError -- when more than one index mapping is found in JSON
+        We don't know the exact name due to the aliases:
+            GET git/_mapping
+
+        Could retrieve:
+            {
+                "git_enriched": {
+                   "mappings": {
+                       "items": {
+                           "dynamic_templates": [
+                               {...}
+                           ],
+                           "properties": {
+                               "Author": {
+                                   ...
+
+        So we need to take name as input parameter.
+
+        We can even find several indices if an alias groups them:
+           GET affiliations/_mapping
+
+           {
+                "git_enriched": {
+                   ...
+                },
+                "gerrit_enriched": {
+                   ...
+
+        We store all properties together in the same Schema.
         """
         es_mapping = cls(schema_name=index_name)
 
-        # Expect just one index mapping in json, but we don't
-        # know the exact name due to the aliases:
-        #    GET git/_mapping
-        # Could retrieve:
-        #    {
-        #        "git_enriched": {
-        #           "mappings": {
-        #               "items": {
-        #                   "dynamic_templates": [
-        #                       {...}
-        #                   ],
-        #                   "properties": {
-        #                       "Author": {
-        #                           ...
+        # Get a list of all index mappings in JSON
         mapping_list = list(mapping_json.values())
-        # if len(mapping_list) != 1:
-        #    raise AttributeError("There must be only 1 index per mapping.")
 
+        # Extract properties from all those grouped indices
         for nested_json in mapping_list:
             # nested_json = mapping_list[0]
             items = nested_json['mappings']['items']['properties'].items()
