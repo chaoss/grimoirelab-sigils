@@ -288,7 +288,6 @@ class ESMapping(Schema):
                 if 'properties' in value:
                     for nested_prop, nested_value in value['properties'].items():
                         prop_name = prop + '.' + nested_prop
-                        analyzed = None
                         agg = None
 
                         if 'fielddata' in nested_value:
@@ -308,7 +307,6 @@ class ESMapping(Schema):
                 #   "type": "keyword"
                 # },
                 else:
-                    analyzed = None
                     agg = None
                     if 'fielddata' in value:
                         agg = value['fielddata']
