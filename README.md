@@ -9,8 +9,8 @@ This usually has information about the following artifacts:
 * Final panels that are an aggregation of several widgets.
 
 There are Dashboards for Kibana 4 and Kibana 5 right now stored in:
-* `dashboards`: kibana 4 versions.
-* `dashboards5`: kibana 5 versions.
+* `json`: current kibana 5 versions.
+* `kibana4-maintenance` branch: old kibana 4 versions.
 
 Panels
 ------
@@ -21,47 +21,33 @@ So far the panels proposed as generic are a mix of the several data sources avai
 The structure for naming files should be:
 * For data sources: 
 ```
-<data_source>[-<panel_name>][-<filters>].json
+<data_source>[_<panel_name>].json
 
 Examples:
-git-<filters>.json
-gerrit-<filters>.json
+git_<panel_name>.json
+gerrit_<panel_name>.json
 ```
 * For other panels not focused on particular data sources we just use the name of the panel:
 ```
-<panel_name>[-<filters>].json
+<panel_name>.json
 
 Examples:
 about.json
-overview-<filters>.json
+overview.json
+git.json
+git_pair_programming.json
+gerrit.json
+gerrit_timing.json
 ```
-Note: `<filters>` part is described in next section ([Filters Naming](#filters-naming))
-
 To give some examples, below there is a list of some panels that can be found in this directory:
-* git-'filters'.json: provides aggregated information about all of the gits in the analysis. Project/, repository, domains or organizations can be provided for filtering purposes.
-* gerrit-'filters'.json: provides aggregated information from all of the gerrit projects. Project/, repository, domains or organizations can be provided for filtering purposes.
-* gerrit-backlog-'filters'.json: provides specific widgets to track the backlog of the project with the addition of several filters per project or repository.
-* mailinglists-'filters'.json: provides information about the discussions that take place in the several mailing lists.
+* git.json: provides aggregated information about all of the gits in the analysis.
+* gerrit.json: provides aggregated information from all of the gerrit projects.
+* gerrit-backlog.json: provides specific widgets to track the backlog of the project.
+* mailinglists.json: provides information about the discussions that take place in the several mailing lists.
 * about.json: provides some widgets detailing this information and how to interact with the panels.
-* overview-'filters'.json: provides a generic view of the dataset with some widgets that help to drill down the information from the whole list of data sources.
+* overview.json: provides a generic view of the dataset with some widgets that help to drill down the information from the whole list of data sources.
 
-Filters Naming
---------------
-
-Each panel may contain specific information in the name related to the available
-filters. This is intended to help when automatically deploying those.
-
-The current set of available filters are:
-* organizations: this is a list or pie chart with information about organizations
-* projects: this is a list or pie chart with information about projects
-
-Some examples of file names:
-* git-organizations-projects.json: this is a panel of Git containing information
-about projects and organizations.
-* git.json: this is a panel of Git containing basic filters about authors and
-repositories
-* git-organizations.json: this is a panel of Git containing organizations filters
-
+All panels will provide widgets for filtering informartion by project, domain, organization, etc. depending on the availability of that information in the corresponding index. 
 
 Widgets Naming
 --------------
@@ -95,6 +81,8 @@ In general, titles should follow the same naming scheme as the widget itself, su
    - 'Git Top Authors' in 'Overview' panel where we could have similar visualizations for other data sources.
 ```
 
+Of course this is a general rule, just have context into account with naming widgets to know if data source is clear or not.
+
 Searches Naming
 ---------------
 
@@ -107,9 +95,11 @@ Example: Search:_pull_request:true
 
 Indexes Naming
 --------------
+Notice that optional date is included to allow keeping several copies of the same data source when needed.
+
 Raw indexes should use suffix `-raw`:
 ```
-<data_source>-raw
+<data_source>-raw[_date]
 
 Example: git-raw
 Example: gerrit-raw
@@ -117,7 +107,21 @@ Example: stackoverflow-raw
 Example: jira-raw
 Example: bugzilla-raw
 ```
-Enriched indexes should use just the name of the data source:
+Enriched indexes:
+```
+<data_source>_enriched[_date]
+
+Example: git_enriched
+Example: gerrit_enriched
+Example: stackoverflow_enriched
+Example: jira_enriched
+Example: bugzilla_enriched
+```
+
+Aliases Naming
+--------------
+
+Finally, an alias should be created pointing to the enriched index. This allows to easily modify the data used under the hood in a transparent way from the point of view of panels. Its name should be just the name of the data source, but sometimes we need different indexes for the same data source. In that case we would add a suffix to indicate the functionality of that alias.
 ```
 <data_source>
 
@@ -128,13 +132,9 @@ Example: jira
 Example: bugzilla
 ```
 
-Aliases Naming
---------------
-
-For each index there should be as many aliases as date fields stored in that index. Each alias is intended to be used for building panels or visualizations based on different time series. The name of an alias should follow the following pattern:
-
+For each index there could be as many aliases as needed. The most usual use case is using aliases for building panels or visualizations based on different time series. E.g.:
 ```
-<data_source_name>_<field_name>
+<data_source>_<field_name>
 
 Example for git index and metadata__timestamp:
 git_metadata__timestamp
