@@ -21,7 +21,7 @@
 #
 """Stuff to deal with index patterns from JSON files genrated by Kidash.
 """
-
+import csv
 import json
 import logging
 
@@ -52,7 +52,10 @@ class Schema(object):
     # List of types allowed for properties in this Schema
     __supported_types = ['text', 'keyword', 'number', 'date', 'boolean',
                          '_source', 'geo_point', 'object']
-    __excluded_props = ['_id', '_index', '_score', '_source', '_type']
+    # ES meta fields are excluded using the following list
+    __excluded_props = ['_all', '_field_names', '_id', '_index', '_meta',
+                        '_parent', '_score', '_routing', '_source', '_type',
+                        '_uid']
     # In mbox enriched indexes is_mbox is defined
     __excluded_props += ['is_gmane_message', 'is_mbox_message']
     # Cache from askbot could not include this field
@@ -227,6 +230,39 @@ class ESMapping(Schema):
                        'float': 'number',
                        'double': 'number'}
     __non_aggregatables = {'text'}
+
+    @classmethod
+    def from_csv(cls, index_name, csv_file):
+        """Builds a ESMapping object from a CSV schema definition
+
+        CSV Format:
+        field_name, es_type
+
+        :param raw_csv: CSV file to parse
+        :returns: ESMapping
+        """
+        es_mapping = cls(schema_name=index_name)
+
+        with open(csv_file) as f:
+            reader = csv.DictReader(f, delimiter=',')
+            for row in reader:
+                # With current CSVs is not possible to know which
+                # fields should be aggregatable. If we rely on
+                # '__non_aggregatables' list, then text fields would
+                # be non-aggregatables by default. Nevertheless, we
+                # want them to be aggregatables in most cases. As a
+                # quick fix while CSV schema specification improves,
+                # we will assume that fields defined as text in CSVs
+                # must be aggregatables in ESMapping.
+                property_type = row['type']
+                if property_type == 'text':
+                    agg = True
+                else:
+                    agg = None
+                es_mapping.add_property(pname=row['name'], ptype=property_type,
+                                        agg=agg)
+
+        return es_mapping
 
     @classmethod
     def from_json(cls, index_name, mapping_json):
