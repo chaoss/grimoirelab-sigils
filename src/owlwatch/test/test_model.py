@@ -156,6 +156,15 @@ class TestPanel(unittest.TestCase):
         self.assertEqual(ESMapping.get_schema_type('geo_point'),
                          'geo_point')
 
+    def test_es_mapping_from_csv(self):
+        """Test ESMapping from_csv class method"""
+        es_mapping = ESMapping.from_csv(index_name='git',
+                                        csv_file=os.path.join(self.__data_dir,
+                                                              'git.csv'))
+
+        self.assertDictEqual(es_mapping.get_properties(),
+                             self.__ref_mapping_props)
+
     def test_es_mapping_from_json(self):
         """Test ESMapping from_json class method"""
         es_mapping = ESMapping.from_json(index_name='git',
