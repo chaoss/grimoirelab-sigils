@@ -21,6 +21,7 @@
 #
 
 import json
+import os
 import sys
 import unittest
 
@@ -36,20 +37,23 @@ class TestPanel(unittest.TestCase):
 
     def setUp(self):
 
+        self.__data_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                       'data')
+
         # Reference properties for Git schema
-        with open('data/git-schema_reference.json') as f:
+        with open(os.path.join(self.__data_dir, 'git-schema_reference.json')) as f:
             self.__ref_mapping_props = json.load(f)
 
         # JSON mapping for git
-        with open('data/git-mapping.json') as f:
+        with open(os.path.join(self.__data_dir, 'git-mapping.json')) as f:
             self.__mapping_json = json.load(f)
 
         # JSON Panel for git
-        with open('data/git.json') as f:
+        with open(os.path.join(self.__data_dir, 'git.json')) as f:
             self.__panel_json = json.load(f)
 
         # JSON index pattern for git
-        with open('data/git-index-pattern.json') as f:
+        with open(os.path.join(self.__data_dir, 'git-index-pattern.json')) as f:
             self.__index_pattern_json = json.load(f)
 
         # Show all diferences when comparing dicts
@@ -266,7 +270,7 @@ class TestPanel(unittest.TestCase):
 
     def test_schema_compare_last_item(self):
         """Test comparison between Schema properties using its
-        compare method with the last item different (but the same fields) """
+        compare method with the last item different (but the same fields)"""
 
         expected_status = 'OK'
 
@@ -274,11 +278,12 @@ class TestPanel(unittest.TestCase):
         panel_json = None
 
         # Mapping for git enrich loaded from mordred
-        with open('data/git-mapping-utc_commit.json') as fjson:
+        with open(os.path.join(self.__data_dir,
+                               'git-mapping-utc_commit.json')) as fjson:
             mapping_json = json.load(fjson)
 
         # JSON Panel for git
-        with open('data/git-utc_commit.json') as fjson:
+        with open(os.path.join(self.__data_dir, 'git-utc_commit.json')) as fjson:
             panel_json = json.load(fjson)
 
         # Check comaprison against the same object slightly modified
