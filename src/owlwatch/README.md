@@ -11,6 +11,7 @@ Tested for:
 **Currently not compatible with ElasticSeacrh versions older than 5 as ES mapping definition has changed.**
 
 ## Output
+### Compare
 A summary of the comparison including:
  * Index name.
  * status: OK or KO.
@@ -20,6 +21,34 @@ A summary of the comparison including:
 
 **Order matters**, so comparisons have always a source schema and a target one. In order to be considered 'compatible', target schema needs to contain, at least, all properties in the source schema with same types. Thus, finding properties in the target schema that don't exist in the source one is not considered an error.
 
+### Check empty panels
+This feature allows you to check whether a certain panel(s) is empty (or not) on a particular ES instance(s).
+ * A project is a particular ES instance (e.g.: project1 could be https://project1.biterg.io). This field accepts:
+  * Shortname: if the ES instance is hosted under the domain ".biterg.io" you can use the name of the project.
+  * Url: if the ES instance is not hosted under the domain ".biterg.io", or it is hosted on localhost, you can use the complete url (e.g.: http://localhost:9200)
+ * Storage_dir arg is mandatory if the option "--check_all" is used. The option "--check_all" will only work for all ES instances inside docker containers and
+   the value of this argument (storage_dir) must be the path where all docker-compose.yml files are stored, otherwise the option "--check_all" won't work.
+   e.g.: the right value of the argument "storage_dir" must be "/tmp/docker_compose_config_example/" for the path below:
+   ```
+   $> tree /tmp/docker_compose_config_example/
+   /tmp/docker_compose_config_example/
+   ├── project1
+   │   └── docker-compose.yml
+   ├── project2
+   │   └── docker-compose.yml
+   └── project3
+       └── docker-compose.yml
+
+   3 directories, 3 files
+   ```
+The output will show if the panel(s) is emtpy or is ok on the ES instance(s).
+```
+$> python3 owlwatch.py check-empty-panels --projects "project1, project2" --panels "Overview, About" -u myuser -p mypassword
+Panel Overview is OK for project1
+Panel Overview is OK for project2
+Panel About is OK for project1
+Panel About is OK for project2
+```
 See [Examples](#examples) section below.
 
 ## Usage
@@ -28,7 +57,8 @@ There are two commands depending on what we wish to compare: compare-mapping and
 ```
 $> python3 owlwatch.py -h
 usage: owlwatch.py [-h] [-g | -l] [-v]
-                   {compare-mapping,compare-panel,compare-csv} ...
+                   {compare-mapping,compare-panel,compare-csv,check-empty-panels}
+                   ...
 
      _____________________________
     ( Who watches the dashboards? )
@@ -40,13 +70,14 @@ usage: owlwatch.py [-h] [-g | -l] [-v]
               __.._..__Bitergia
 
 positional arguments:
-  {compare-mapping,compare-panel,compare-csv}
+  {compare-mapping,compare-panel,compare-csv,check-empty-panels}
     compare-mapping     Compares a mapping against panel JSON file or CSV
                                 index definition
     compare-panel       Compares a panel JSON file against a ES mapping or a
                                 CSV index definition
     compare-csv         Compares a CSV index definition file against a ES mapping or a
                                 JSON panel
+    check-empty-panels  Check whether a certain panel is empty or not
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -55,7 +86,8 @@ optional arguments:
   -v, --version         show program's version number and exit
 ```
 
-### compare-mapping
+### Compare
+#### compare-mapping
 ```
 $> python3 owlwatch.py compare-mapping -h
 usage: owlwatch.py compare-mapping [-h] -e ES_HOST
@@ -71,7 +103,7 @@ optional arguments:
                         Index CSV file path
 ```
 
-### compare-panel
+#### compare-panel
 ```
 $> python3 owlwatch.py compare-panel -h  
 usage: owlwatch.py compare-panel [-h] -p PANEL_PATH (-e ES_HOST | -c CSV_PATH)
@@ -86,7 +118,7 @@ optional arguments:
                         Index CSV file path
 ```
 
-### compare-csv
+#### compare-csv
 ```
 $> python3 owlwatch.py compare-csv -h  
 usage: owlwatch.py compare-csv [-h] -c CSV_PATH_LIST
@@ -103,12 +135,31 @@ optional arguments:
                         Panel JSON file path
 ```
 
-### Examples
+### Check empty panels
+```
+$> python3 /home/dpose/repositories/github/panels/src/owlwatch/owlwatch.py check-empty-panels -h
+usage: owlwatch.py check-empty-panels [-h] (--projects PROJECTS | --check_all)
+                                      [--port PORT] --panels PANELS [-u USER]
+                                      [-p PASSWORD] [-s STORAGE_DIR]
 
+optional arguments:
+  -h, --help           show this help message and exit
+  --projects PROJECTS  e.g.: "project1, project2"
+  --check_all          Check the selected panels for all ES instances on the
+                       current host
+  --port PORT          e.g.: 9200
+  --panels PANELS      e.g.: "panel1, panel2"
+  -u USER              e.g.: myuser
+  -p PASSWORD          e.g.: mypassword
+  -s STORAGE_DIR       e.g.: /path_where_ES_can_be_found_on_the_host
+```
+
+### Examples
 * [Mapping vs Panel](#mapping-vs-panel)
 * [Panel vs Mapping](#panel-vs-mapping)
 * [Panel vs CSV](#panel-vs-csv)
 * [CSV vs Mapping](#csv-vs-mapping)
+* [Check empty panels](#check-empty-panels)
 
 #### Mapping vs Panel
 Mapping and panel are using same properties and types.
@@ -270,4 +321,43 @@ Comparison result: OK
 Matches: 58
 Not found in mapping:  0
 Type mismatches:  0
+```
+
+#### Check empty panels
+##### Check one panel on one ES instance
+```
+$> python3 owlwatch.py check-empty-panels --projects "project1" --panels "Overview" -u myuser -p mypassword
+Panel Overview is OK for project1
+```
+##### Check one panel on more than one ES instance
+```
+$> python3 owlwatch.py check-empty-panels --projects "project1, project2" --panels "Overview" -u myuser -p mypassword
+Panel Overview is OK for project1
+Panel Overview is OK for project2
+```
+##### Check multiple panels on one ES instance
+```
+$> python3 owlwatch.py check-empty-panels --projects "project1" --panels "Overview, About" -u myuser -p mypassword
+Panel Overview is OK for project1
+Panel About is OK for project1
+```
+##### Check multiple panels on multiple ES instances
+```
+$> python3 owlwatch.py check-empty-panels --projects "project1, project2" --panels "Overview, About" -u myuser -p mypassword
+Panel Overview is OK for project1
+Panel Overview is OK for project2
+Panel About is OK for project1
+Panel About is OK for project2
+```
+##### Check multiple panels on all ES instances running on the current server
+```
+$> python3 owlwatch.py check-empty-panels --check_all --panels "Overview, About" -s "/tmp/docker_compose_config_example/"
+Panel Overview is OK for project1
+Panel Overview is OK for project2
+Panel Overview is OK for project3
+Panel Overview is OK for project4
+Panel About is OK for project1
+Panel About is OK for project2
+Panel About is OK for project3
+Panel About is OK for project4
 ```
