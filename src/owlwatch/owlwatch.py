@@ -30,6 +30,7 @@ from argparse import RawTextHelpFormatter
 from colorama import Fore, Style
 from elasticsearch import Elasticsearch
 
+from schema.check_empty_panels import CheckEmptyPanels
 from schema.model import ESMapping
 from schema.model import Panel
 
@@ -56,6 +57,7 @@ FORMAT_ERROR = Fore.RED
 CMP_MAPPING = 'compare-mapping'
 CMP_PANEL = 'compare-panel'
 CMP_CSV = 'compare-csv'
+CHK_PANEL = 'check-empty-panels'
 
 VERSION = '0.2'
 
@@ -344,6 +346,7 @@ def parse_args():
     add_mapping_subparser(subparsers)
     add_panel_subparser(subparsers)
     add_csv_subparser(subparsers)
+    check_empty_panels_subparser(subparsers)
 
     return parser.parse_args()
 
@@ -372,14 +375,8 @@ def configure_logging(info=False, debug=False):
         logging.getLogger('elasticsearch').setLevel(logging.WARNING)
 
 
-def main():
-    """This is the Owlcave, where everything starts"""
-    args = parse_args()
-
-    configure_logging(args.info, args.debug)
-
-    logging.info("** The Owl is watching **")
-
+def compare(args):
+    """Adds logic for compare commands"""
     results = None
     first = "mapping"
     second = "panel"
@@ -431,7 +428,6 @@ def main():
                 index_name, result = cmp_csv_mapping(csv_path=csv_path,
                                                      es_host=host).popitem()
                 results[index_name] = result
-
     if results is not None:
         for index_name, result in results.items():
             status = result['status']
@@ -460,8 +456,65 @@ def main():
                 print("Details: \n" + msg + '\n')
     else:
         logging.info("Didn't find anything to do...")
-
     logging.info("This is the end.")
+
+def check_empty_panels_subparser(subparsers):
+    """Adds a subparser for check_empty_panels command"""
+    help_txt = """Check whether a certain panel is empty or not"""
+    parser_check_empty_panel = subparsers.add_parser(CHK_PANEL,
+                                       help=help_txt)
+
+    parser_exc_group = parser_check_empty_panel.add_mutually_exclusive_group(required=True)
+    parser_exc_group.add_argument('--projects', dest='projects',
+                                  help='e.g.: "project1, project2"')
+    parser_exc_group.add_argument('--check_all', dest='check_all', action='store_true',
+                                  help='Check the selected panels for all ES instances on the current host')
+
+    parser_check_empty_panel.add_argument('--port', dest='port',
+                                          default=9200, type=int,
+                                          help='e.g.: 9200')
+    parser_check_empty_panel.add_argument('--panels', dest='panels',
+                                          required=True,
+                                          help='e.g.: "panel1, panel2"')
+    parser_check_empty_panel.add_argument('-u', dest='user',
+                                          help='e.g.: myuser')
+    parser_check_empty_panel.add_argument('-p', dest='password',
+                                          help='e.g.: mypassword')
+    parser_check_empty_panel.add_argument('-s', dest='storage_dir',
+                                          default='/tmp/',
+                                          help='e.g.: /path_where_ES_can_be_found_on_the_host')
+
+def check_if_panel_is_empty(args):
+    """Function to check whether panels are emtpy or not"""
+    check_empty_panels = CheckEmptyPanels()
+    projects = {}
+    if args.check_all:
+        storage_dir = args.storage_dir
+        projects = check_empty_panels.get_containers(storage_dir)
+    else:
+        for project in args.projects.split(', '):
+            projects[project] = args.port
+
+    for panel in args.panels.split(', '):
+        for project in projects:
+            check = check_empty_panels.check_panel(panel, project, projects[project],
+                                           check_all=args.check_all,
+                                           user=args.user, password=args.password)
+            if check != None:
+                print(check)
+
+def main():
+    """This is the Owlcave, where everything starts"""
+    args = parse_args()
+
+    configure_logging(args.info, args.debug)
+
+    logging.info("** The Owl is watching **")
+
+    if args.subparser_name == CHK_PANEL:
+        check_if_panel_is_empty(args)
+    else:
+        compare(args)
 
 
 if __name__ == '__main__':
