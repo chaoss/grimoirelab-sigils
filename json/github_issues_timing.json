@@ -8,10 +8,10 @@
                 "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"github_issues_main_metrics_timing\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_issues_repositories\",\"panelIndex\":2,\"row\":6,\"size_x\":6,\"size_y\":5,\"title\":\"Repositories\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_issues_status\",\"panelIndex\":3,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Status\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_issues_submitter_organizations\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":4,\"title\":\"Issues by Organization\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_last_issues\",\"panelIndex\":5,\"row\":11,\"size_x\":9,\"size_y\":5,\"title\":\"Last Issues\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_submitters\",\"panelIndex\":6,\"row\":6,\"size_x\":3,\"size_y\":5,\"title\":\"Issues Submitters\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_oldest_issues\",\"panelIndex\":7,\"row\":16,\"size_x\":9,\"size_y\":5,\"title\":\"The Oldest Issues\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_median_open_time\",\"panelIndex\":8,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"Median Open Time (days)\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_issues_80_percent_open_time\",\"panelIndex\":9,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"80 Percent Open Time (days)\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_evolutionary\",\"panelIndex\":10,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Issues\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_issues_evolutionary_submitters\",\"panelIndex\":11,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"3317bb70-6e28-11e7-a3d7-593a556c81b1\",\"panelIndex\":12,\"row\":5,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\",\"title\":\"Organizations\"},{\"size_x\":3,\"size_y\":6,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"8527a530-6e26-11e7-a3d7-593a556c81b1\",\"col\":10,\"row\":11,\"title\":\"Projects\"}]",
+            "panelsJSON": "[{\"col\":1,\"id\":\"github_issues_main_metrics_timing\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_issues_status\",\"panelIndex\":3,\"row\":1,\"size_x\":3,\"size_y\":5,\"title\":\"Status\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_issues_submitter_organizations\",\"panelIndex\":4,\"row\":1,\"size_x\":3,\"size_y\":5,\"title\":\"Issues by Organization\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_last_issues\",\"panelIndex\":5,\"row\":17,\"size_x\":12,\"size_y\":5,\"title\":\"Latest Issues\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_submitters\",\"panelIndex\":6,\"row\":6,\"size_x\":5,\"size_y\":5,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_oldest_issues\",\"panelIndex\":7,\"row\":22,\"size_x\":12,\"size_y\":5,\"title\":\"The Oldest Issues\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_median_open_time\",\"panelIndex\":8,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"Median Open Time (days)\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_issues_80_percent_open_time\",\"panelIndex\":9,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"80 Percent Open Time (days)\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_evolutionary\",\"panelIndex\":10,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Issues\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_issues_evolutionary_submitters\",\"panelIndex\":11,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"github_issues_organizations_timing\",\"panelIndex\":14,\"row\":6,\"size_x\":7,\"size_y\":5,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_issues_repositories_timing\",\"panelIndex\":15,\"row\":11,\"size_x\":5,\"size_y\":6,\"title\":\"Repositories\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"github_issues_projects_timing\",\"panelIndex\":16,\"row\":11,\"size_x\":7,\"size_y\":6,\"type\":\"visualization\"}]",
             "timeRestore": false,
             "title": "GitHub Issues Timing",
-            "uiStateJSON": "{\"P-1\":{\"title\":\"Summary\"},\"P-10\":{\"title\":\"Issues\"},\"P-11\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-2\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Status\"},\"P-4\":{\"title\":\"Issues by Organization\"},\"P-5\":{\"title\":\"Last Issues\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"asc\"}}}},\"P-6\":{\"title\":\"Issues Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"The Oldest Issues\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Median Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"title\":\"80 Percent Open Time (days)\"},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}},\"title\":\"Organizations\"},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}},\"title\":\"Projects\"}}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Summary\"},\"P-10\":{\"title\":\"Issues\"},\"P-11\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-14\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-16\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Status\"},\"P-4\":{\"title\":\"Issues by Organization\"},\"P-5\":{\"title\":\"Latest Issues\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"asc\"}}}},\"P-6\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"The Oldest Issues\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Median Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"title\":\"80 Percent Open Time (days)\"}}",
             "version": 1
         }
     },
@@ -60,20 +60,6 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"# Assignees\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"percents\":[50],\"customLabel\":\"Median Time Open (Days)\"}}],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "github_issues_repositories",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"filter\":[]}"
-                },
-                "savedSearchId": "Search:_pull_request:false",
-                "title": "github_issues_repositories",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues Open\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"# Assignees\"}},{\"id\":\"5\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"labels\",\"customLabel\":\"# Labels\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -127,9 +113,9 @@
                 },
                 "savedSearchId": "Search:_pull_request:false",
                 "title": "github_issues_submitters",
-                "uiStateJSON": "{}",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"github_issues_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"github_issues_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"Repositories\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -203,31 +189,45 @@
             }
         },
         {
-            "id": "3317bb70-6e28-11e7-a3d7-593a556c81b1",
+            "id": "github_issues_organizations_timing",
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
                     "searchSourceJSON": "{\"filter\":[]}"
                 },
                 "savedSearchId": "Search:_pull_request:false",
-                "title": "github_issues_organizations",
+                "title": "github_issues_organizations_timing",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"github_issues_organizations\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues Open\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"labels\",\"customLabel\":\"Labels\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"github_issues_organizations_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues Open\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
             }
         },
         {
-            "id": "8527a530-6e26-11e7-a3d7-593a556c81b1",
+            "id": "github_issues_repositories_timing",
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
                     "searchSourceJSON": "{\"filter\":[]}"
                 },
                 "savedSearchId": "Search:_pull_request:false",
-                "title": "github_issues_projects",
+                "title": "github_issues_repositories_timing",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"github_issues_projects\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues Open\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"github_issues_repositories_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues Open\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "github_issues_projects_timing",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_pull_request:false",
+                "title": "github_issues_projects_timing",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_issues_projects_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues Open\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
             }
         }
     ]
