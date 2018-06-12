@@ -8,10 +8,10 @@
                 "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"github_pullrequests_main_metrics_timing\",\"panelIndex\":31,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_repositories\",\"panelIndex\":32,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Repositories\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_pullrequests_status\",\"panelIndex\":33,\"row\":1,\"size_x\":3,\"size_y\":3,\"title\":\"Status\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_last_pullrequests\",\"panelIndex\":34,\"row\":4,\"size_x\":6,\"size_y\":4,\"title\":\"Last Pull Requests\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pullrequests_submitters\",\"panelIndex\":35,\"row\":4,\"size_x\":6,\"size_y\":4,\"title\":\"Pull Requests Submitters\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_oldest_pullrequests\",\"panelIndex\":36,\"row\":8,\"size_x\":6,\"size_y\":4,\"title\":\"The Oldest Pull Requests\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_pullrequests_80_percent_open_time\",\"panelIndex\":37,\"row\":8,\"size_x\":3,\"size_y\":2,\"title\":\"80 Percent Open Time (days)\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pullrequests_median_open_time\",\"panelIndex\":38,\"row\":8,\"size_x\":3,\"size_y\":2,\"title\":\"Median Open Time (days)\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pullrequests_pullrequests\",\"panelIndex\":39,\"row\":10,\"size_x\":3,\"size_y\":2,\"title\":\"Pull Requests\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_pullrequests_submitters_evolutionary\",\"panelIndex\":40,\"row\":10,\"size_x\":3,\"size_y\":2,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"github_pullrequests_submitter_organizations\",\"panelIndex\":41,\"row\":1,\"size_x\":4,\"size_y\":3,\"title\":\"Pull Requests by Organization\",\"type\":\"visualization\"}]",
+            "panelsJSON": "[{\"col\":1,\"id\":\"github_pullrequests_main_metrics_timing\",\"panelIndex\":31,\"row\":1,\"size_x\":6,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"github_pullrequests_status\",\"panelIndex\":33,\"row\":1,\"size_x\":3,\"size_y\":5,\"title\":\"Status\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_last_pullrequests\",\"panelIndex\":34,\"row\":17,\"size_x\":12,\"size_y\":5,\"title\":\"Latest Pull Requests\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_oldest_pullrequests\",\"panelIndex\":36,\"row\":22,\"size_x\":12,\"size_y\":6,\"title\":\"The Oldest Pull Requests\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_pullrequests_80_percent_open_time\",\"panelIndex\":37,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"80 Percent Open Time (days)\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_median_open_time\",\"panelIndex\":38,\"row\":2,\"size_x\":3,\"size_y\":2,\"title\":\"Median Open Time (days)\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_pullrequests\",\"panelIndex\":39,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Pull Requests\",\"type\":\"visualization\"},{\"col\":4,\"id\":\"github_pullrequests_submitters_evolutionary\",\"panelIndex\":40,\"row\":4,\"size_x\":3,\"size_y\":2,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":10,\"id\":\"github_pullrequests_submitter_organizations\",\"panelIndex\":41,\"row\":1,\"size_x\":3,\"size_y\":5,\"title\":\"Pull Requests by Organization\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"github_pullrequests_projects_timing\",\"panelIndex\":44,\"row\":11,\"size_x\":7,\"size_y\":6,\"title\":\"Projects\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"github_pullrequests_organizations_timing\",\"panelIndex\":45,\"row\":6,\"size_x\":7,\"size_y\":5,\"title\":\"Organizations\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_submitters\",\"panelIndex\":46,\"row\":6,\"size_x\":5,\"size_y\":5,\"title\":\"Submitters\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"github_pullrequests_repositories_timing\",\"panelIndex\":47,\"row\":11,\"size_x\":5,\"size_y\":6,\"title\":\"Repositories\",\"type\":\"visualization\"}]",
             "timeRestore": false,
             "title": "GitHub Pull Requests Timing",
-            "uiStateJSON": "{\"P-21\":{\"title\":\"Repositories\"},\"P-3\":{\"title\":\"Summary\"},\"P-31\":{\"title\":\"Summary\"},\"P-32\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-33\":{\"title\":\"Status\"},\"P-34\":{\"title\":\"Last Pull Requests\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-35\":{\"title\":\"Pull Requests Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-36\":{\"title\":\"The Oldest Pull Requests\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-37\":{\"title\":\"80 Percent Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-38\":{\"title\":\"Median Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-39\":{\"title\":\"Pull Requests\"},\"P-4\":{\"title\":\"Oldest\"},\"P-40\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-41\":{\"title\":\"Pull Requests by Organization\"},\"P-5\":{\"title\":\"Latest\"},\"P-7\":{\"title\":\"Status\"}}",
+            "uiStateJSON": "{\"P-21\":{\"title\":\"Repositories\"},\"P-3\":{\"title\":\"Summary\"},\"P-31\":{\"title\":\"Summary\"},\"P-33\":{\"title\":\"Status\"},\"P-34\":{\"title\":\"Latest Pull Requests\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-36\":{\"title\":\"The Oldest Pull Requests\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-37\":{\"title\":\"80 Percent Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-38\":{\"title\":\"Median Open Time (days)\",\"vis\":{\"legendOpen\":false}},\"P-39\":{\"title\":\"Pull Requests\"},\"P-4\":{\"title\":\"Oldest\"},\"P-40\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-41\":{\"title\":\"Pull Requests by Organization\"},\"P-44\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-45\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-46\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-47\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Latest\"},\"P-7\":{\"title\":\"Status\"}}",
             "version": 1
         }
     },
@@ -63,20 +63,6 @@
             }
         },
         {
-            "id": "github_pullrequests_repositories",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"filter\":[]}"
-                },
-                "savedSearchId": "Search:_pull_request:true",
-                "title": "github_pullrequests_repositories",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"github_pullrequests_repositories\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Authors\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"labels\",\"customLabel\":\"Labels\"}}],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "github_pullrequests_status",
             "value": {
                 "description": "",
@@ -102,20 +88,6 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"github_pullrequests_last_pullrequests\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"created_at\",\"customLabel\":\"Created on\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Title\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user_login\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"id_in_repo\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Id\"}}],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "github_pullrequests_submitters",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"filter\":[]}"
-                },
-                "savedSearchId": "Search:_pull_request:true",
-                "title": "github_pullrequests_submitters",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"github_pullrequests_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"github_repo\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -200,6 +172,62 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"github_pullrequests_submitter_organizations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Pull Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "github_pullrequests_projects_timing",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "github_pullrequests_projects_timing",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pullrequests_projects_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Days Open\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "github_pullrequests_organizations_timing",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "github_pullrequests_organizations_timing",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pullrequests_organizations_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "github_pullrequests_submitters",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "github_pullrequests_submitters",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pullrequests_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"github_repo\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Open Days\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "github_pullrequests_repositories_timing",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "github_pullrequests_repositories_timing",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pullrequests_repositories_timing\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Avg. Days Open\"}}],\"listeners\":{}}"
             }
         }
     ]
