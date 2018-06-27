@@ -14,6 +14,7 @@
                 "pause": false,
                 "value": 0
             },
+            "release_date": "2018-06-27T16:24:08.204448",
             "timeFrom": "now-10y",
             "timeRestore": true,
             "timeTo": "now",
@@ -22,6 +23,7 @@
             "version": 1
         }
     },
+    "index_patterns": [],
     "searches": [],
     "visualizations": [
         {
@@ -164,7 +166,7 @@
                 "title": "twitter_data_status_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"twitter_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timestamp\",\"customLabel\":\"Last Item\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"twitter_data_status_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"listeners\":{}}"
             }
         },
         {
