@@ -1,0 +1,42 @@
+{
+    "dashboard": {
+        "id": "Jenkins-Export-(Slow)",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":9,\"i\":\"1\"},\"id\":\"jenkins_backlog_export\",\"title\":\"Builds\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "refreshInterval": {
+                "display": "Off",
+                "pause": false,
+                "value": 0
+            },
+            "release_date": "2018-07-02T17:40:25.377482",
+            "timeFrom": "now-3M",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Jenkins Export (Slow)",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Builds\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "jenkins_backlog_export",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "jenkins_backlog_export",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_backlog_export\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"11\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_min\",\"customLabel\":\"Duration (min.)\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"build_date\",\"customLabel\":\"Date\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"job_build\",\"size\":100000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Build\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"result\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Result\"}},{\"id\":\"7\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"builtOn\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Node\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
