@@ -1,0 +1,190 @@
+{
+    "dashboard": {
+        "id": "Jira-Effort",
+        "value": {
+            "description": "Jira Effort panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":3,\"x\":9,\"y\":0},\"id\":\"jira_effort_estimated\",\"panelIndex\":\"2\",\"title\":\"Estimated by Project\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":3,\"x\":9,\"y\":3},\"id\":\"jira_effort_spent\",\"panelIndex\":\"3\",\"title\":\"Logged by Project\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":9},\"id\":\"jira_issues_effort_estimated\",\"panelIndex\":\"5\",\"title\":\"Effort by Author and Assignee (hours)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"6\",\"w\":3,\"x\":9,\"y\":6},\"id\":\"jira_effort_remaining\",\"panelIndex\":\"6\",\"title\":\"Remaining by Project\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"7\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"jira_effort_main_numbers\",\"panelIndex\":\"7\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"8\",\"w\":12,\"x\":0,\"y\":19},\"id\":\"jira_effort_repositories\",\"panelIndex\":\"8\",\"title\":\"Effort by Project (hours)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"10\",\"w\":12,\"x\":0,\"y\":15},\"id\":\"jira_effort_organizations\",\"panelIndex\":\"10\",\"title\":\"Effort by Organization (hours)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"13\",\"w\":6,\"x\":0,\"y\":3},\"id\":\"jira_effort_evolutionary\",\"panelIndex\":\"13\",\"title\":\"Effort (hours)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"14\",\"w\":4,\"x\":5,\"y\":5},\"id\":\"jira_effort_avg_median\",\"panelIndex\":\"14\",\"title\":\"Averages and Medians\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"15\",\"w\":5,\"x\":0,\"y\":5},\"id\":\"jira_effort_cusum_evolutionary\",\"panelIndex\":\"15\",\"title\":\"Effort (hours, cumulative sum)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":5,\"i\":\"16\",\"w\":3,\"x\":6,\"y\":0},\"id\":\"jira_issues_organizations_assignee\",\"panelIndex\":\"16\",\"title\":\"Assigned Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-02T16:45:51.949759",
+            "timeRestore": false,
+            "title": "Jira Effort",
+            "uiStateJSON": "{\"P-10\":{\"title\":\"Effort by Organization (hours)\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"title\":\"Effort by Periods\"},\"P-13\":{\"title\":\"Effort (hours)\"},\"P-14\":{\"title\":\"Averages and Medians\"},\"P-15\":{\"title\":\"Effort (hours, cumulative sum)\"},\"P-16\":{\"title\":\"Assigned Organizations\"},\"P-2\":{\"title\":\"Estimated by Project\"},\"P-3\":{\"title\":\"Logged by Project\"},\"P-5\":{\"title\":\"Effort by Author and Assignee (hours)\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Remaining by Project\"},\"P-7\":{\"title\":\"Summary\"},\"P-8\":{\"title\":\"Effort by Project (hours)\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "Jira-Search:_time_estimated_time_spent_time_remaining",
+            "value": {
+                "columns": [
+                    "original_time_estimation_hours",
+                    "time_estimation_hours",
+                    "time_spent_hours"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"time_estimation_hours:* OR time_spent_hours:* OR original_time_estimation_hours:*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "creation_date",
+                    "desc"
+                ],
+                "title": "Jira Search:_time_estimated_time_spent_time_remaining",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "jira_effort_estimated",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_effort_estimated",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_estimated\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Estimated\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project_name\",\"size\":300,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_spent",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_effort_spent",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_spent\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Logged\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project_name\",\"size\":300,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_issues_effort_estimated",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Jira-Search:_time_estimated_time_spent_time_remaining",
+                "title": "jira_issues_effort_estimated",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_issues_effort_estimated\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Estimated\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Remaining\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Logged\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"assignee_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Assignee\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_remaining",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_effort_remaining",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_remaining\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Remaning\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project_name\",\"size\":300,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Jira-Search:_time_estimated_time_spent_time_remaining",
+                "title": "jira_effort_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"jira_effort_main_numbers\", \"aggs\": [{\"id\": \"1\", \"schema\": \"metric\", \"type\": \"count\", \"params\": {\"customLabel\": \"# Items\"}}, {\"id\": \"2\", \"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Authors\"}}, {\"id\": \"3\", \"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"field\": \"assignee_uuid\", \"customLabel\": \"# Assignees\"}}, {\"id\": \"4\", \"schema\": \"metric\", \"type\": \"sum\", \"params\": {\"field\": \"original_time_estimation_hours\", \"customLabel\": \"Total Hours Estimated\"}}, {\"id\": \"5\", \"schema\": \"metric\", \"type\": \"sum\", \"params\": {\"field\": \"time_estimation_hours\", \"customLabel\": \"Total Hours Remaining\"}}, {\"id\": \"6\", \"schema\": \"metric\", \"type\": \"sum\", \"params\": {\"field\": \"time_spent_hours\", \"customLabel\": \"Total Hours Logged\"}}], \"listeners\": {}, \"type\": \"metric\", \"params\": {\"metric\": {\"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"labels\": {\"show\": true}, \"invertColors\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"percentageMode\": false, \"style\": {\"subText\": \"\", \"fontSize\": \"12\", \"labelColor\": false, \"bgColor\": false, \"bgFill\": \"#000\"}, \"metricColorMode\": \"None\"}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "jira_effort_repositories",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_effort_repositories",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_repositories\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project_name\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"6\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"watchers\",\"customLabel\":\"Avg. Num. Watchers\"}},{\"id\":\"5\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Avg. Estimated Time (hours)\"}},{\"id\":\"7\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Avg. Logged Time (hours)\"}},{\"id\":\"8\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Avg. Remaining Time (hours)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_effort_organizations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_organizations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_uuid\",\"customLabel\":\"Assignees\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"watchers\",\"customLabel\":\"Avg. Num. Watchers\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Avg. Estimated Time (hours)\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Avg. Logged Time (hours)\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Avg. Remaining Time (hours)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "title": "jira_effort_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_evolutionary\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"grouped\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"4\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Estimated\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Remaining\"}},{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Logged\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"creation_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time (Months)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jira_effort_avg_median",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Jira-Search:_time_estimated_time_spent_time_remaining",
+                "title": "jira_effort_avg_median",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"jira_effort_main_numbers\", \"aggs\": [{\"id\": \"4\", \"schema\": \"metric\", \"type\": \"avg\", \"params\": {\"field\": \"original_time_estimation_hours\", \"customLabel\": \"Avg. Hours Estimated\"}}, {\"id\": \"5\", \"schema\": \"metric\", \"type\": \"avg\", \"params\": {\"field\": \"time_estimation_hours\", \"customLabel\": \"Avg. Hours Remaining\"}}, {\"id\": \"6\", \"schema\": \"metric\", \"type\": \"avg\", \"params\": {\"field\": \"time_spent_hours\", \"customLabel\": \"Avg. Hours Logged\"}}, {\"id\": \"7\", \"schema\": \"metric\", \"type\": \"median\", \"params\": {\"field\": \"original_time_estimation_hours\", \"percents\": [50], \"customLabel\": \"Median Hours Estimated\"}}, {\"id\": \"8\", \"schema\": \"metric\", \"type\": \"median\", \"params\": {\"field\": \"time_estimation_hours\", \"percents\": [50], \"customLabel\": \"Median Hours Remaining\"}}, {\"id\": \"9\", \"schema\": \"metric\", \"type\": \"median\", \"params\": {\"field\": \"time_spent_hours\", \"percents\": [50], \"customLabel\": \"Median Hours Logged\"}}], \"listeners\": {}, \"type\": \"metric\", \"params\": {\"metric\": {\"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"labels\": {\"show\": true}, \"invertColors\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"percentageMode\": false, \"style\": {\"subText\": \"\", \"fontSize\": \"12\", \"labelColor\": false, \"bgColor\": false, \"bgFill\": \"#000\"}, \"metricColorMode\": \"None\"}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "jira_effort_cusum_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "jira_effort_cusum_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_effort_cusum_evolutionary\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index='jira', q='*', timefield='creation_date', metric='sum:original_time_estimation_hours').cusum().label('Time Estimated'), .es(index='jira', q='*', timefield='creation_date', metric='sum:time_estimation_hours').cusum().label('Time Remaining'), .es(index='jira', q='*', timefield='creation_date', metric='sum:time_spent_hours').cusum().label('Time Logged')\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "jira_issues_organizations_assignee",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_issues_organizations_assignee",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jira_issues_organizations_assignee\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assignee_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Assignees\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
