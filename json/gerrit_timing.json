@@ -1,0 +1,126 @@
+{
+    "dashboard": {
+        "id": "Gerrit-Timing",
+        "value": {
+            "description": "Gerrit Timing panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"1\"},\"id\":\"gerrit_main_numbers\",\"title\":\"Gerrit Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":4,\"w\":6,\"h\":6,\"i\":\"2\"},\"id\":\"gerrit_repositories_table\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":3,\"h\":4,\"i\":\"3\"},\"id\":\"gerrit_changesets_status\",\"title\":\"Status\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":4,\"i\":\"4\"},\"id\":\"gerrit_changesets_organizations\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":10,\"w\":12,\"h\":6,\"i\":\"5\"},\"id\":\"gerrit_all_changesets\",\"title\":\"Changesets\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":4,\"w\":6,\"h\":6,\"i\":\"6\"},\"id\":\"gerrit_authors_changesets\",\"title\":\"Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":2,\"w\":3,\"h\":2,\"i\":\"9\"},\"id\":\"gerrit_changesets_open_median\",\"title\":\"Changesets Open in Median\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":3,\"y\":2,\"w\":3,\"h\":2,\"i\":\"10\"},\"id\":\"gerrit_changesets_open_80_percent\",\"title\":\"Changesets Open (best 80 percentile)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-02T16:04:51.611748",
+            "timeRestore": false,
+            "title": "Gerrit Timing",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Gerrit Summary\"},\"P-10\":{\"title\":\"Changesets Open (best 80 percentile)\",\"vis\":{\"legendOpen\":false}},\"P-2\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}},\"P-3\":{\"title\":\"Status\"},\"P-4\":{\"title\":\"Organizations\"},\"P-5\":{\"title\":\"Changesets\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"title\":\"Changesets Open in Median\",\"vis\":{\"legendOpen\":false}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "gerrit_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"params\": {\"customLabel\": \"# Changesets\"}, \"id\": \"1\"}, {\"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Changeset Submitters\", \"field\": \"author_uuid\"}, \"id\": \"2\"}, {\"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Repositories\", \"field\": \"repository\"}, \"id\": \"3\"}], \"listeners\": {}, \"type\": \"metric\", \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"labels\": {\"show\": true}, \"invertColors\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"style\": {\"fontSize\": \"12\", \"subText\": \"\", \"labelColor\": false, \"bgFill\": \"#000\", \"bgColor\": false}, \"colorSchema\": \"Green to Red\"}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "gerrit_repositories_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "gerrit_repositories_table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_repositories_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets_status",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_changesets_status",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_changesets_status\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"status\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Status\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "gerrit_changesets_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_changesets_organizations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Status\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_all_changesets",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_all_changesets",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_all_changesets\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"6\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"opened\",\"customLabel\":\"Open Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"6\",\"customLabel\":\"URL\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"summary\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"6\",\"customLabel\":\"Summary\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"timeopen\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"6\",\"customLabel\":\"TIme Open (Days)\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"6\",\"customLabel\":\"Submitter\"}},{\"id\":\"7\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"status\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"6\",\"customLabel\":\"Status\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_authors_changesets",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_authors_changesets",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"4\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"patchsets\",\"customLabel\":\"Avg. Patchsets\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"customLabel\":\"Avg. Time Open (Days)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets_open_median",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_changesets_open_median",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_changesets_open_median\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"percentiles\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"percents\":[50],\"customLabel\":\"Days\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"TIme\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets_open_80_percent",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_changesets_open_80_percent",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_changesets_open_80_percent\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"percentiles\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"percents\":[80],\"customLabel\":\"Days\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"TIme\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
