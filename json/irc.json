@@ -1,0 +1,161 @@
+{
+    "dashboard": {
+        "id": "IRC",
+        "value": {
+            "description": "IRC Overview panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Server Activity\",\"disabled\":false,\"index\":\"irc\",\"key\":\"type\",\"negate\":true,\"params\":{\"query\":\"server\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"server\"},\"query\":{\"match\":{\"type\":{\"query\":\"server\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":5,\"h\":2,\"i\":\"1\"},\"id\":\"irc_main_metrics\",\"title\":\"IRC\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":2,\"w\":5,\"h\":2,\"i\":\"2\"},\"id\":\"irc_messages_evolutionary\",\"title\":\"Messages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":4,\"w\":5,\"h\":2,\"i\":\"3\"},\"id\":\"irc_participants_evolutionary\",\"title\":\"Participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":6,\"w\":5,\"h\":6,\"i\":\"4\"},\"id\":\"irc_main_participants\",\"title\":\"Top Participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":9,\"y\":4,\"w\":3,\"h\":4,\"i\":\"5\"},\"id\":\"irc_main_channels\",\"title\":\"Channels\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":5,\"y\":8,\"w\":7,\"h\":4,\"i\":\"8\"},\"columns\":[\"body\",\"author_name\",\"channel\"],\"id\":\"IRC-Search:_body_authorname_channel\",\"sort\":[\"sent_date\",\"desc\"],\"title\":\"Last Messages\",\"type\":\"search\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":12,\"w\":12,\"h\":4,\"i\":\"9\"},\"id\":\"irc_projects\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":4,\"i\":\"10\"},\"id\":\"irc_word_freq_tag_cloud\",\"title\":\"Top 20 Terms\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":5,\"y\":0,\"w\":3,\"h\":4,\"i\":\"11\"},\"id\":\"irc_author_organizations\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":5,\"y\":4,\"w\":4,\"h\":4,\"i\":\"12\"},\"id\":\"irc_organizations\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-02T16:56:34.952628",
+            "timeRestore": false,
+            "title": "IRC",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"IRC\"},\"P-10\":{\"title\":\"Top 20 Terms\"},\"P-11\":{\"title\":\"Organizations\"},\"P-12\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Top Participants\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Channels\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Last Messages\"},\"P-9\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "IRC-Search:_body_authorname_channel",
+            "value": {
+                "columns": [
+                    "body",
+                    "author_name",
+                    "channel"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+                },
+                "sort": [
+                    "sent_date",
+                    "desc"
+                ],
+                "title": "IRC Search:_body_authorname_channel",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "irc_main_metrics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "irc_main_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"id\": \"1\", \"type\": \"count\", \"params\": {\"customLabel\": \"# Messages\"}}, {\"schema\": \"metric\", \"id\": \"2\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Participants\", \"field\": \"author_uuid\"}}, {\"schema\": \"metric\", \"id\": \"3\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Channels\", \"field\": \"channel\"}}], \"listeners\": {}, \"title\": \"irc_main_metrics\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"metricColorMode\": \"None\", \"useRanges\": false, \"style\": {\"bgColor\": false, \"bgFill\": \"#000\", \"fontSize\": \"12\", \"subText\": \"\", \"labelColor\": false}, \"invertColors\": false, \"labels\": {\"show\": true}, \"percentageMode\": false, \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"colorSchema\": \"Green to Red\"}}}"
+            }
+        },
+        {
+            "id": "irc_messages_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "irc_messages_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Messages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"sent_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "irc_participants_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "irc_participants_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"irc_messages_evolutionary\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"Participants\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"sent_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "irc_main_participants",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "irc_main_participants",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 10,\n    \"showPartialRows\": false,\n    \"showMeticsAtAllLevels\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Messages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_name\",\n        \"size\": 50,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"customLabel\": \"Participants\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"channel\",\n        \"customLabel\": \"Channels\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "irc_main_channels",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_main_channels",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"irc_main_channels\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Channels\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"customLabel\":\"Participants\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "irc_projects",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_projects",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"irc_projects\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Participants\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel\",\"customLabel\":\"Channels\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"customLabel\":\"Orgs\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Last message\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "irc_word_freq_tag_cloud",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_word_freq_tag_cloud",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"irc_word_freq_tag_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"body_analyzed\",\"exclude\":{\"pattern\":\".{1,4}|there|should|https|topic|think|joined\"},\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "irc_author_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_author_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"irc_author_organizations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organizations\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "irc_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_organizations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"irc_organizations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"customLabel\":\"Participants\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel\",\"customLabel\":\"Channels\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
