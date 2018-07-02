@@ -1,0 +1,125 @@
+{
+    "dashboard": {
+        "id": "Jenkins",
+        "value": {
+            "description": "Jenkins Overview panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"version\": true, \"filter\": [], \"query\": {\"query\": {\"query_string\": {\"default_field\": \"*\", \"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"highlightAll\": true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\": {\"y\": 0, \"w\": 3, \"x\": 5, \"h\": 4, \"i\": \"3\"}, \"title\": \"Results\", \"panelIndex\": \"3\", \"id\": \"JenkinsResults\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}, {\"gridData\": {\"y\": 0, \"w\": 4, \"x\": 8, \"h\": 4, \"i\": \"4\"}, \"title\": \"Nodes\", \"panelIndex\": \"4\", \"id\": \"JenkinsSlaves\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}, {\"gridData\": {\"y\": 2, \"w\": 5, \"x\": 0, \"h\": 2, \"i\": \"5\"}, \"title\": \"Builds over time\", \"panelIndex\": \"5\", \"id\": \"jenkins_evolutionary_jobs\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}, {\"gridData\": {\"y\": 0, \"w\": 5, \"x\": 0, \"h\": 2, \"i\": \"8\"}, \"title\": \"Summary\", \"panelIndex\": \"8\", \"id\": \"jenkins_main_numbers\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}, {\"gridData\": {\"y\": 4, \"w\": 5, \"x\": 0, \"h\": 2, \"i\": \"9\"}, \"title\": \"Active nodes over time\", \"panelIndex\": \"9\", \"id\": \"jenkins_evolutionary_projects\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}, {\"gridData\": {\"y\": 4, \"w\": 7, \"x\": 5, \"h\": 4, \"i\": \"10\"}, \"sort\": [\"metadata__updated_on\", \"desc\"], \"title\": \"Buids\", \"panelIndex\": \"10\", \"columns\": [\"job_build\", \"url\", \"job_url\", \"result\", \"builtOn\", \"duration\"], \"id\": \"Search:_Jenkins_Backlog\", \"version\": \"6.1.0-3\", \"type\": \"search\"}, {\"gridData\": {\"y\": 6, \"w\": 5, \"x\": 0, \"h\": 2, \"i\": \"11\"}, \"title\": \"Export Builds\", \"panelIndex\": \"11\", \"id\": \"jenkins_export_builds_link\", \"version\": \"6.1.0-3\", \"type\": \"visualization\"}]",
+            "release_date": "2018-07-02T17:39:11.543871",
+            "timeRestore": false,
+            "title": "Jenkins",
+            "uiStateJSON": "{\"P-10\":{\"title\":\"Buids\"},\"P-11\":{\"title\":\"Export Builds\"},\"P-3\":{\"title\":\"Results\"},\"P-4\":{\"title\":\"Nodes\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Builds over time\",\"vis\":{\"legendOpen\":false}},\"P-8\":{\"title\":\"Summary\",\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Active nodes over time\",\"vis\":{\"legendOpen\":false}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "Search:_Jenkins_Backlog",
+            "value": {
+                "columns": [
+                    "job_build",
+                    "url",
+                    "job_url",
+                    "result",
+                    "builtOn",
+                    "duration"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "metadata__updated_on",
+                    "desc"
+                ],
+                "title": "Search:_Jenkins_Backlog",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "JenkinsResults",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "JenkinsResults",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"SUCCESS\":\"#447EBC\",\"FAILURE\":\"#BF1B00\",\"UNSTABLE\":\"#EF843C\",\"ABORTED\":\"#DEDAF7\"},\"legendOpen\":true}}",
+                "version": 1,
+                "visState": "{\"title\":\"JenkinsResults\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"shareYAxis\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"result\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "JenkinsSlaves",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "JenkinsSlaves",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"JenkinsSlaves\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Builds\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"builtOn\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Node\"}},{\"id\":\"5\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_min\",\"percents\":[50],\"customLabel\":\"Builds duration (median, min.)\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_min\",\"customLabel\":\"Builds duration (total, min.)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jenkins_evolutionary_jobs",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "jenkins_evolutionary_jobs",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_evolutionary_jobs\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Builds\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jenkins_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jenkins_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": \"12\", \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"metricColorMode\": \"None\", \"percentageMode\": false, \"invertColors\": false, \"useRanges\": false, \"labels\": {\"show\": true}}}, \"aggs\": [{\"params\": {\"customLabel\": \"# Builds\"}, \"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Jobs\", \"field\": \"job_url\"}, \"type\": \"cardinality\", \"id\": \"4\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Nodes\", \"field\": \"builtOn\"}, \"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"Build duration (avg, min.)\", \"field\": \"duration_min\"}, \"type\": \"avg\", \"id\": \"3\", \"schema\": \"metric\"}], \"type\": \"metric\", \"title\": \"jenkins_main_numbers\", \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "jenkins_evolutionary_projects",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "jenkins_evolutionary_projects",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_evolutionary_projects\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"builtOn\",\"customLabel\":\"# Nodes (active)\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jenkins_export_builds_link",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "jenkins_export_builds_link",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_export_builds_link\",\"type\":\"markdown\",\"params\":{\"markdown\":\"**[Open Jenkins Builds panel for exporting results](/app/kibana#/dashboard/Jenkins-Export-(Slow))**\",\"fontSize\":12},\"aggs\":[]}"
+            }
+        }
+    ]
+}
