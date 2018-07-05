@@ -1,0 +1,152 @@
+{
+    "dashboard": {
+        "id": "Twitter",
+        "value": {
+            "description": "Twitter Overview panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":4,\"x\":0,\"y\":0},\"id\":\"twitter_main_metrics\",\"panelIndex\":\"1\",\"title\":\"Intro\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"2\",\"w\":4,\"x\":0,\"y\":2},\"id\":\"twitter_tweets_evolutionary\",\"panelIndex\":\"2\",\"title\":\"Tweets\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"3\",\"w\":4,\"x\":0,\"y\":4},\"id\":\"twitter_tweets_evolutionary_users\",\"panelIndex\":\"3\",\"title\":\"Users\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":9,\"i\":\"4\",\"w\":4,\"x\":8,\"y\":3},\"id\":\"twitter_main_hashtags\",\"panelIndex\":\"4\",\"title\":\"Main Hash Tags\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":12},\"id\":\"twitter_last_tweets\",\"panelIndex\":\"5\",\"title\":\"Last Tweets\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"6\",\"w\":4,\"x\":0,\"y\":6},\"id\":\"twitter_main_users\",\"panelIndex\":\"6\",\"title\":\"Main Users\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"7\",\"w\":4,\"x\":4,\"y\":0},\"id\":\"twitter_author_orgs\",\"panelIndex\":\"7\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"8\",\"w\":4,\"x\":4,\"y\":8},\"id\":\"twitter_projects\",\"panelIndex\":\"8\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"9\",\"w\":4,\"x\":4,\"y\":4},\"id\":\"twitter_orgs\",\"panelIndex\":\"9\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"10\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"05c69f80-812b-11e8-a4e7-6b1c6a13c58d\",\"panelIndex\":\"10\",\"title\":\"Hashtags\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-09T10:54:29.172367",
+            "timeRestore": false,
+            "title": "Twitter",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Intro\"},\"P-2\":{\"title\":\"Tweets\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Users\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Main Hash Tags\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Last Tweets\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Main Users\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Organizations\"},\"P-8\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "twitter_main_metrics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "twitter_main_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Tweets\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"user_name\", \"customLabel\": \"Users\"}}, {\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"place.country\", \"customLabel\": \"Countries\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "twitter_tweets_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"twitter\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "twitter_tweets_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Tweets\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "twitter_tweets_evolutionary_users",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"twitter\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "twitter_tweets_evolutionary_users",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"twitter_tweets_evolutionary\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"user_name\",\n        \"customLabel\": \"Users\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "twitter_main_hashtags",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "twitter_main_hashtags",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_main_hashtags\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hashtags_analyzed\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Hash Tags\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"user_name\",\"customLabel\":\"Users\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"user_lang\",\"customLabel\":\"Languages\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"place.country\",\"customLabel\":\"Countries\"}}]}"
+            }
+        },
+        {
+            "id": "twitter_last_tweets",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "twitter_last_tweets",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_last_tweets\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"text\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Tweet\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_user_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Tweet URL\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "twitter_main_users",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "twitter_main_users",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_main_users\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_user_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"user_followers_count\",\"customLabel\":\"Followers\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"user_friends_count\",\"customLabel\":\"Friends\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user_url_twitter\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User URL\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "twitter_author_orgs",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "twitter_author_orgs",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_author_orgs\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "twitter_projects",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "twitter_projects",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_projects\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Users\"}}]}"
+            }
+        },
+        {
+            "id": "twitter_orgs",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "twitter_orgs",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_orgs\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Users\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"place.country\",\"customLabel\":\"Countries\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"user_lang\",\"customLabel\":\"Languages\"}}]}"
+            }
+        },
+        {
+            "id": "05c69f80-812b-11e8-a4e7-6b1c6a13c58d",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "twitter_hashtags_cloud",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"twitter_hashtags_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":52},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"hashtags_analyzed\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Hashtags\"}}]}"
+            }
+        }
+    ]
+}
