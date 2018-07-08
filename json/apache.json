@@ -1,0 +1,133 @@
+{
+    "dashboard": {
+        "id": "Apache",
+        "value": {
+            "description": "Apache panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":4,\"x\":0,\"y\":0},\"id\":\"apache_main_metrics\",\"panelIndex\":\"1\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"7\",\"w\":6,\"x\":0,\"y\":4},\"id\":\"apache_main_agents\",\"panelIndex\":\"7\",\"title\":\"Most Common User-Agents\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"8\",\"w\":4,\"x\":4,\"y\":2},\"id\":\"apache_agents_evolutionary\",\"panelIndex\":\"8\",\"title\":\"Unique User-Agents\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"9\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"apache_requests_evolutionary\",\"panelIndex\":\"9\",\"title\":\"Requests by type\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"11\",\"w\":4,\"x\":0,\"y\":2},\"id\":\"apache_packages_evolutionary_all\",\"panelIndex\":\"11\",\"title\":\"Package Downloads\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"12\",\"w\":4,\"x\":4,\"y\":0},\"id\":\"apache_visits_evolutionary_all\",\"panelIndex\":\"12\",\"title\":\"Visits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"13\",\"w\":6,\"x\":6,\"y\":4},\"id\":\"apache_main_packages_all\",\"panelIndex\":\"13\",\"title\":\"Popular Packages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"14\",\"w\":4,\"x\":8,\"y\":2},\"id\":\"apache_response_count\",\"panelIndex\":\"14\",\"title\":\"Server Responses\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "refreshInterval": {
+                "display": "Off",
+                "pause": false,
+                "value": 0
+            },
+            "release_date": "2018-07-08T11:38:14.091459",
+            "timeFrom": "now-5y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Apache",
+            "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Summary\"},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Package Downloads\"},\"P-12\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Visits\"},\"P-13\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Popular Packages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Server Responses\"},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Most Common User-Agents\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Unique User-Agents\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Requests by type\"}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "apache_main_metrics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "apache_main_metrics",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"bgFill\": \"#000\", \"fontSize\": \"12\"}, \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false, \"metricColorMode\": \"None\", \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"invertColors\": false}}, \"aggs\": [{\"params\": {\"customLabel\": \"Visits\"}, \"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"field\": \"request\", \"customLabel\": \"Unique URLs\"}, \"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\"}], \"type\": \"metric\", \"title\": \"apache_main_metrics\", \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "apache_main_agents",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "apache_main_agents",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"apache_main_agents\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Visits\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"agent\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Agent\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"\",\"customLabel\":\"IPs\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "apache_agents_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"apache\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "apache_agents_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"apache_agents_evolutionary\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"agent\",\n        \"json\": \"{\\\"precision_threshold\\\": 3000}\",\n        \"customLabel\": \"# Agents\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "apache_requests_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "apache_requests_evolutionary",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"apache_requests_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"json\":\"\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"verb\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Requests\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "apache_packages_evolutionary_all",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"filter\": [],\n  \"index\": \"apache\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+                },
+                "title": "apache_packages_evolutionary_all",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"legendOpen\": false\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"apache_packages_evolutionary_all\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Packages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "apache_visits_evolutionary_all",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "apache_visits_evolutionary_all",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false},\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"apache_visits_evolutionary_all\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"\",\"customLabel\":\"# IPs\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Time (days)\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "apache_main_packages_all",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"index\":\"apache\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "title": "apache_main_packages_all",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}},\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"apache_main_packages_all\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Downloads\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"request\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Package\"}}]}"
+            }
+        },
+        {
+            "id": "apache_response_count",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "apache_response_count",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"apache_response_count\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"json\":\"\",\"customLabel\":\"Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"response\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Response\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
