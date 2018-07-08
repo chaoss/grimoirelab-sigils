@@ -1,0 +1,113 @@
+{
+    "dashboard": {
+        "id": "Telegram",
+        "value": {
+            "description": "Telegram panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":5,\"h\":2,\"i\":\"1\"},\"id\":\"telegram_main_metrics\",\"title\":\"Intro\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":2,\"w\":5,\"h\":2,\"i\":\"2\"},\"id\":\"telegram_messages_evolutionary\",\"title\":\"Messages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":4,\"w\":5,\"h\":2,\"i\":\"3\"},\"id\":\"telegram_participants_evolutionary\",\"title\":\"Participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":6,\"i\":\"4\"},\"id\":\"telegram_main_channels\",\"title\":\"Channels\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":5,\"y\":6,\"w\":7,\"h\":6,\"i\":\"6\"},\"id\":\"telegram_last_messages\",\"title\":\"Last Messages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":6,\"w\":5,\"h\":6,\"i\":\"7\"},\"id\":\"telegram_main_participants\",\"title\":\"Top Participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":5,\"y\":0,\"w\":4,\"h\":6,\"i\":\"8\"},\"type\":\"visualization\",\"id\":\"telegram_terms_cloud\",\"title\":\"Top 20 terms\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-08T11:48:17.396931",
+            "timeRestore": false,
+            "title": "Telegram",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Intro\"},\"P-2\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Channels\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Last Messages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Top Participants\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Top 20 terms\"}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "telegram_main_metrics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_main_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"labels\": {\"show\": true}, \"metricColorMode\": \"None\", \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"percentageMode\": false, \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"subText\": \"\", \"labelColor\": false, \"fontSize\": \"12\"}}}, \"type\": \"metric\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"# Messages\"}, \"id\": \"1\", \"schema\": \"metric\", \"type\": \"count\"}, {\"params\": {\"field\": \"author\", \"customLabel\": \"# Participants\"}, \"id\": \"2\", \"schema\": \"metric\", \"type\": \"cardinality\"}, {\"params\": {\"field\": \"chat_title\", \"customLabel\": \"# Channels\"}, \"id\": \"3\", \"schema\": \"metric\", \"type\": \"cardinality\"}], \"title\": \"telegram_main_metrics\"}"
+            }
+        },
+        {
+            "id": "telegram_messages_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_messages_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "telegram_participants_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_participants_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"telegram_messages_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author\",\"customLabel\":\"Participants\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "telegram_main_channels",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_main_channels",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"telegram_main_channels\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"chat_title\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Channels\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author\",\"customLabel\":\"Participants\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "telegram_last_messages",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_last_messages",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"telegram_last_messages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Sent Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"message\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Message\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Participant\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"chat_title\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Channel\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "telegram_main_participants",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_main_participants",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"telegram_main_participants\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Participant\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"chat_title\",\"customLabel\":\"Channels\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "telegram_terms_cloud",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "telegram_terms_cloud",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"telegram_terms_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"text_analyzed\",\"exclude\":{\"pattern\":\".{1,4}|there|should|https|topic|think|slightly_smiling_face|joined|could|don't\"},\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top 20 terms\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
