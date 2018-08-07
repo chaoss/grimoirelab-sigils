@@ -1,0 +1,61 @@
+{
+    "dashboard": {
+        "id": "About",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false}",
+            "panelsJSON": "[{\"col\":7,\"id\":\"Help-About\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"title\":\"About\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"Help-Acknowledgments\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":3,\"title\":\"Acknowledgments\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"Help-UI\",\"panelIndex\":4,\"row\":1,\"size_x\":6,\"size_y\":9,\"title\":\"User Interface\",\"type\":\"visualization\"}]",
+            "timeRestore": false,
+            "title": "About",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"About\"},\"P-2\":{\"title\":\"Acknowledgments\"},\"P-4\":{\"title\":\"User Interface\"}}",
+            "version": 1
+        }
+    },
+    "index_patterns": [],
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "Help-About",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "Help About",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Help About\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# About the dashboard\\n\\nThe Bitergia Analytics dashboard  is based on information retrieved from publicly available data sources such as Git repositories or mailing lists archives among others.\\n\\nAll the software used to retrieve, store, analyze and visualize data from repositories is done with free, open source software. The key part of it is [GrimoireLab](https://github.com/grimoirelab), the software development analytics toolset. Although [Bitergia](https://www.bitergia.com/) is the lead developer of GrimoireLab, we intend the project to work as a community, and your contributions are welcome.\\n\\nOther key pieces used to produce dashboards are Python (most of the retrieval and analytics software we use is written in Python), ElasticSearch (for data storage) and Kibana (for visualization we use Kibiter, our own fork of Kibana, which we intend to contribute back upstream).\\n\\nWe take your privacy seriously. All the information provided in the dashboards is based on publicly available data. We have done our best, however, to avoid publishing privacy-related information, such as email addresses, even if publicly available. Please, contact us if you spot some data that could be subject to privacy issues. For more details on the matter, please consult our [Privacy Policy](https://bitergia.com/privacy/).\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Help-Acknowledgments",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "Help Acknowledgments",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Help Acknowledgments\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Acknowledgments\\n\\nThanks to all free, open source software developers, who have produced all the software that can be analyzed by this open analytics platform.\\n\\nIn particular, thanks to all of them (ranking in the tens of thousands) who have contributed to the pieces of software who make possible the platform itself.\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "Help-UI",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "Help UI",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Help UI\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Working with the dashboard\\n\\nThe Dashboard shows information in several panels. Each of these panels include several visualizations. Many elements in the visualizations are actionable. When the user interacts with them, the information in the whole panel (and in some cases in the whole dashboard) is reconfigured, usually by filtering in or out some data.\\n\\n## Date filter\\n\\nOn the top right corner you can find the date filter. It allows you to select the time period which is considered when visualizing the data. Only items in that time period will be shown. So, for example, the total count of commits, or the evolution of issues created over time, correspond only to commits authored (or committed, if specified), or to issues created (or closed, if specified) during that period.\\n\\nDate filters can be defined as well by clicking on bars on time-based charts, or by selecting (clicking and dragging) on a group of them.\\n\\n## Data filters\\n\\nClicking on almost any cell in tables, sector in pies, or bar in bar charts causes a filter to be applied. Filters appear as green boxes on the top left of the dashboard (right below the panels menu). For example, clicking on a developer name causes a filter with that name, which will cause the panel to show only activity of that developer.\\n\\nFilters can be removed (click on the trash icon in the filter itself), negated (click on the minus sign), or disabled (click on the left box within the filter). Filters can also be made \\\"sticky\\\", which means they will be applied all over the dashboard, even if moving to a new panel.\\n\\n## Sharing\\n\\nThe Dashboard, once configured with date filters and data filters, can be shared and bookmarked. Anyone using the shared link or the bookmark will have access to exactly the same view (filters included) that was shown when the link or bookmark was created. For producing the link to share or bookmark, click on the \\\"share\\\" icon, on the top right of the dashboard. Please notice that you an get either \\\"regular\\\" urls (which are long and a bit cumbersome to handle), and \\\"short\\\" urls, which encode the same information but are much easier to deal with.\\n\\n## Kibana and Kibiter\\n\\nThe dashboard is a customized Kibana dashboard named Kibiter. Therefore, some of the information about how to work with Kibana dashboards may be useful. See for example the [Kibana tutorial on dashboards](https://www.elastic.co/guide/en/kibana/4.5/dashboard.html).\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        }
+    ]
+}
