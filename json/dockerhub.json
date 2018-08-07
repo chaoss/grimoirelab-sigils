@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "DockerHub",
+        "value": {
+            "description": "DockerHub panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"bcfa4be0-997a-11e8-8771-a349686d998a\",\"panelIndex\":\"1\",\"title\":\"DockerHub\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"6\",\"w\":6,\"x\":0,\"y\":2},\"id\":\"2bbd6620-997b-11e8-8771-a349686d998a\",\"panelIndex\":\"6\",\"title\":\"Images\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"7\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"f25eb3f0-9a3f-11e8-8771-a349686d998a\",\"panelIndex\":\"7\",\"title\":\"Pulls over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"8\",\"w\":6,\"x\":0,\"y\":8},\"id\":\"021c8c90-9a40-11e8-8771-a349686d998a\",\"panelIndex\":\"8\",\"title\":\"Stars over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"9\",\"w\":6,\"x\":6,\"y\":4},\"id\":\"8396ccd0-9a41-11e8-8771-a349686d998a\",\"panelIndex\":\"9\",\"title\":\"Pulls: Growth Deltas over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"10\",\"w\":6,\"x\":6,\"y\":8},\"id\":\"6803a060-9a41-11e8-8771-a349686d998a\",\"panelIndex\":\"10\",\"title\":\"Stars: Growth Deltas over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-08-07T13:53:48.968778",
+            "timeRestore": false,
+            "title": "DockerHub",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"DockerHub\"},\"P-2\":{\"title\":\"Stars over time (top 5 images)\"},\"P-3\":{\"title\":\"Pulls over time (top 5)\"},\"P-4\":{\"title\":\"Images\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "bcfa4be0-997a-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"query\":\"is_docker_image:1\",\"language\":\"lucene\"}}"
+                },
+                "title": "dockerhub_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_main_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Docker Images\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"star_count\",\"percents\":[50],\"customLabel\":\"Median Stars by Image\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"pull_count\",\"percents\":[50],\"customLabel\":\"Median Pulls by Image\"}}]}"
+            }
+        },
+        {
+            "id": "2bbd6620-997b-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"query\":\"is_docker_image:1\",\"language\":\"lucene\"}}"
+                },
+                "title": "dockerhub_images",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_images\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"origin\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Docker Image\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"star_count\",\"customLabel\":\"Stars\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"pull_count\",\"customLabel\":\"Pulls\"}}]}"
+            }
+        },
+        {
+            "id": "f25eb3f0-9a3f-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "dockerhub_pull_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_pull_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=dockerhub, timefield=grimoire_creation_date, q=\\\"is_event:1\\\", split=origin:10, metric=max:pull_count).label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "021c8c90-9a40-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "dockerhub_star_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_star_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=dockerhub, timefield=grimoire_creation_date, q=\\\"is_event:1\\\", split=origin:10, metric=max:star_count).label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "8396ccd0-9a41-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "dockerhub_pull_evolution_derivative",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_pull_evolution_derivative\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=dockerhub, timefield=grimoire_creation_date, q=\\\"is_event:1\\\", split=origin:10, metric=max:pull_count).derivative().label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "6803a060-9a41-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "dockerhub_star_evolution_derivative",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"dockerhub_star_evolution_derivative\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=dockerhub, timefield=grimoire_creation_date, q=\\\"is_event:1\\\", split=origin:10, metric=max:star_count).label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
