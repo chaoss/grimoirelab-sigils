@@ -2,20 +2,20 @@
     "dashboard": {
         "id": "Overview",
         "value": {
-            "description": "",
+            "description": "Overview Panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": \"Empty Commits\",\n        \"disabled\": false,\n        \"index\": \"git\",\n        \"key\": \"files\",\n        \"negate\": true,\n        \"value\": \"0\"\n      },\n      \"query\": {\n        \"match\": {\n          \"files\": {\n            \"query\": \"0\",\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": \"Bots\",\n        \"disabled\": false,\n        \"index\": \"git\",\n        \"key\": \"author_bot\",\n        \"negate\": true,\n        \"value\": \"true\"\n      },\n      \"query\": {\n        \"match\": {\n          \"author_bot\": {\n            \"query\": 1,\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"query\": {\n        \"query_string\": {\n          \"analyze_wildcard\": true,\n          \"query\": \"*\"\n        }\n      }\n    }\n  ],\n  \"version\": true\n}"
+                "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Empty Commits\",\"disabled\":false,\"index\":\"git\",\"key\":\"files\",\"negate\":true,\"params\":{\"query\":\"0\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"0\"},\"query\":{\"match\":{\"files\":{\"query\":\"0\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"git\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
             },
-            "optionsJSON": "{\n  \"darkTheme\": false\n}",
-            "panelsJSON": "[\n  {\n    \"col\": 1,\n    \"id\": \"git_main_numbers\",\n    \"panelIndex\": 1,\n    \"row\": 6,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Git\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"git_evolution_commits\",\n    \"panelIndex\": 2,\n    \"row\": 7,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Commits\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"git_evolution_authors\",\n    \"panelIndex\": 3,\n    \"row\": 9,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Authors\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"git_commits_organizations\",\n    \"panelIndex\": 5,\n    \"row\": 1,\n    \"size_x\": 4,\n    \"size_y\": 4,\n    \"title\": \"Organizations\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"gerrit_main_numbers\",\n    \"panelIndex\": 6,\n    \"row\": 12,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Gerrit\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"gerrit_evolution_changesets\",\n    \"panelIndex\": 7,\n    \"row\": 13,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Changesets\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"gerrit_evolution_submitters\",\n    \"panelIndex\": 8,\n    \"row\": 15,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Changeset Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mbox_main_numbers\",\n    \"panelIndex\": 9,\n    \"row\": 6,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Mailing Lists\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mbox_evolution_emails\",\n    \"panelIndex\": 10,\n    \"row\": 7,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Emails\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mbox_evolution_participants\",\n    \"panelIndex\": 11,\n    \"row\": 9,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"issues_main_metrics\",\n    \"panelIndex\": 12,\n    \"row\": 12,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"issues_evolutionary\",\n    \"panelIndex\": 13,\n    \"row\": 13,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"issues_evolutionary_submitters\",\n    \"panelIndex\": 14,\n    \"row\": 15,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Issue Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"twitter_main_metrics\",\n    \"panelIndex\": 15,\n    \"row\": 36,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Twitter\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"twitter_tweets_evolutionary\",\n    \"panelIndex\": 16,\n    \"row\": 37,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Tweets\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"twitter_tweets_evolutionary_users\",\n    \"panelIndex\": 17,\n    \"row\": 39,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Users\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"stackoverflow_main_metrics\",\n    \"panelIndex\": 18,\n    \"row\": 30,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Stackoverflow\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"stackoverflow_qa_evolutionary\",\n    \"panelIndex\": 19,\n    \"row\": 31,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Questions and Answers\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"stackoverflow_qa_evolutionary_submitters\",\n    \"panelIndex\": 20,\n    \"row\": 33,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"irc_main_metrics\",\n    \"panelIndex\": 22,\n    \"row\": 18,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"IRC\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"irc_messages_evolutionary\",\n    \"panelIndex\": 23,\n    \"row\": 19,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Messages\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"irc_participants_evolutionary\",\n    \"panelIndex\": 24,\n    \"row\": 21,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"confluence_main_numbers\",\n    \"panelIndex\": 28,\n    \"row\": 30,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Confluence\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"confluence_participants\",\n    \"panelIndex\": 29,\n    \"row\": 33,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"confluence_editions\",\n    \"panelIndex\": 30,\n    \"row\": 31,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Editions\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"github_issues_main_metrics\",\n    \"panelIndex\": 31,\n    \"row\": 18,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Github Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"github_issues_evolutionary\",\n    \"panelIndex\": 32,\n    \"row\": 19,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"GitHub Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"github_issues_evolutionary_submitters\",\n    \"panelIndex\": 33,\n    \"row\": 21,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"GitHub Issues Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"github_pullrequests_main_metrics\",\n    \"panelIndex\": 34,\n    \"row\": 24,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"GitHub Pull Requests\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"github_pullrequests_pullrequests\",\n    \"panelIndex\": 35,\n    \"row\": 25,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Pull Requests\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"github_pullrequests_submitters_evolutionary\",\n    \"panelIndex\": 36,\n    \"row\": 27,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Pull Request Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"jira_main_metrics\",\n    \"panelIndex\": 37,\n    \"row\": 18,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Jira\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"jira_issues\",\n    \"panelIndex\": 38,\n    \"row\": 19,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"jira_submitters\",\n    \"panelIndex\": 39,\n    \"row\": 21,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"maniphest_issues\",\n    \"panelIndex\": 40,\n    \"row\": 25,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"maniphest_main_numbers\",\n    \"panelIndex\": 41,\n    \"row\": 24,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Maniphest\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"maniphest_submitters\",\n    \"panelIndex\": 42,\n    \"row\": 27,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"redmine_issues_main_metrics\",\n    \"panelIndex\": 43,\n    \"row\": 24,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Redmine\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"redmine_issues_evolutionary\",\n    \"panelIndex\": 44,\n    \"row\": 25,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Issues\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"redmine_issues_evolutionary_submitters\",\n    \"panelIndex\": 45,\n    \"row\": 27,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Submitters\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"rss_main_numbers\",\n    \"panelIndex\": 46,\n    \"row\": 36,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"RSS\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"rss_posts_evolutionary\",\n    \"panelIndex\": 47,\n    \"row\": 37,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Posts\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"rss_authors_evolutionary\",\n    \"panelIndex\": 48,\n    \"row\": 39,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Authors\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"meetups_main_numbers\",\n    \"panelIndex\": 49,\n    \"row\": 42,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Meetup\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"meetup_events_evolutionary\",\n    \"panelIndex\": 50,\n    \"row\": 43,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Events\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"meetup_people_evolutionary\",\n    \"panelIndex\": 51,\n    \"row\": 45,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"askbot_main_metrics\",\n    \"panelIndex\": 52,\n    \"row\": 36,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Askbot\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"askbot_qac_evolutionary\",\n    \"panelIndex\": 53,\n    \"row\": 37,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Questions, Answers and Comments\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"askbot_qac_evolutionary_submitters\",\n    \"panelIndex\": 54,\n    \"row\": 39,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"discourse_main_metrics\",\n    \"panelIndex\": 55,\n    \"row\": 42,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Discourse\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"discourse_qa_evolutionary\",\n    \"panelIndex\": 56,\n    \"row\": 43,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Questions and Answers\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"discourse_qa_evolutionary_submitters\",\n    \"panelIndex\": 57,\n    \"row\": 45,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"jenkins_main_numbers\",\n    \"panelIndex\": 58,\n    \"row\": 30,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Jenkins\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"jenkins_evolutionary_jobs\",\n    \"panelIndex\": 59,\n    \"row\": 33,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Jenkins Builds\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"jenkins_evolutionary_projects\",\n    \"panelIndex\": 60,\n    \"row\": 31,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Jenkins Active Nodes\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"slack_main_numbers\",\n    \"panelIndex\": 65,\n    \"row\": 12,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Slack\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"slack_messages_evolutionary\",\n    \"panelIndex\": 66,\n    \"row\": 13,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Slack Messages\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"slack_participants_evolutionary\",\n    \"panelIndex\": 67,\n    \"row\": 15,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Slack Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"git_title\",\n    \"panelIndex\": 68,\n    \"row\": 5,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"gerrit_title\",\n    \"panelIndex\": 69,\n    \"row\": 11,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mbox_title\",\n    \"panelIndex\": 70,\n    \"row\": 5,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"bugzilla_title\",\n    \"panelIndex\": 71,\n    \"row\": 11,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"irc_title\",\n    \"panelIndex\": 72,\n    \"row\": 17,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"slack_title\",\n    \"panelIndex\": 73,\n    \"row\": 11,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"github_issues_title\",\n    \"panelIndex\": 74,\n    \"row\": 17,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"github_prs_title\",\n    \"panelIndex\": 75,\n    \"row\": 23,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"jira_title\",\n    \"panelIndex\": 76,\n    \"row\": 17,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"redmine_title\",\n    \"panelIndex\": 77,\n    \"row\": 23,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"maniphest_title\",\n    \"panelIndex\": 78,\n    \"row\": 23,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"jenkins_title\",\n    \"panelIndex\": 79,\n    \"row\": 29,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"rss_title\",\n    \"panelIndex\": 80,\n    \"row\": 35,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"meetup_title\",\n    \"panelIndex\": 81,\n    \"row\": 41,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"askbot_title\",\n    \"panelIndex\": 82,\n    \"row\": 35,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"discourse_title\",\n    \"panelIndex\": 83,\n    \"row\": 41,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"stackoverflow_title\",\n    \"panelIndex\": 84,\n    \"row\": 29,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"twitter_title\",\n    \"panelIndex\": 85,\n    \"row\": 35,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"confluence_title\",\n    \"panelIndex\": 86,\n    \"row\": 29,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"google_hits_title\",\n    \"panelIndex\": 87,\n    \"row\": 47,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"googlehits_main_numbers\",\n    \"panelIndex\": 88,\n    \"row\": 48,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Google Hits\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"googlehits_total_avg_hits_evolutionary\",\n    \"panelIndex\": 89,\n    \"row\": 49,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Hits\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"googlehits_percentage_by_keyword_evolutionary\",\n    \"panelIndex\": 90,\n    \"row\": 51,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Hits by Keyword\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"apache_logs_title\",\n    \"panelIndex\": 91,\n    \"row\": 41,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"apache_main_metrics\",\n    \"panelIndex\": 92,\n    \"row\": 42,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Apache Logs\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"apache_visits_evolutionary_all\",\n    \"panelIndex\": 93,\n    \"row\": 43,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Apache Visits\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"apache_packages_evolutionary_all\",\n    \"panelIndex\": 94,\n    \"row\": 45,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Apache Packages\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"mediawiki_title\",\n    \"panelIndex\": 95,\n    \"row\": 47,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"mediawiki_editions\",\n    \"panelIndex\": 96,\n    \"row\": 49,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Editions\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"mediawiki_editors\",\n    \"panelIndex\": 97,\n    \"row\": 51,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Editors\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"mediawiki_main_numbers\",\n    \"panelIndex\": 98,\n    \"row\": 48,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Mediawiki\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mozillaclub_main_metrics\",\n    \"panelIndex\": 99,\n    \"row\": 54,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Mozilla Club\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mozillaclub_events_evolutionary\",\n    \"panelIndex\": 100,\n    \"row\": 55,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Meetings\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mozillaclub_representatives_countries\",\n    \"panelIndex\": 101,\n    \"row\": 57,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Representatives/Countries\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"mozillaclub_title\",\n    \"panelIndex\": 102,\n    \"row\": 53,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"telegram_title\",\n    \"panelIndex\": 103,\n    \"row\": 47,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"telegram_main_metrics\",\n    \"panelIndex\": 104,\n    \"row\": 48,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Telegram\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"telegram_messages_evolutionary\",\n    \"panelIndex\": 105,\n    \"row\": 49,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Messages\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"telegram_participants_evolutionary\",\n    \"panelIndex\": 106,\n    \"row\": 51,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Participants\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"git_study_pair_programming_main_numbers\",\n    \"panelIndex\": 107,\n    \"row\": 6,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"Git Pair Programming\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"git_study_pair_programming_title\",\n    \"panelIndex\": 108,\n    \"row\": 5,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"title\": \"-\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"git_study_pair_programming_evolution_commits\",\n    \"panelIndex\": 109,\n    \"row\": 7,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Commits\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 5,\n    \"id\": \"git_study_pair_programming_evolution_authors\",\n    \"panelIndex\": 110,\n    \"row\": 9,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"title\": \"Authors\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"id\": \"git_overview_top_authors\",\n    \"panelIndex\": 111,\n    \"row\": 1,\n    \"size_x\": 4,\n    \"size_y\": 4,\n    \"title\": \"Git Top Authors\",\n    \"type\": \"visualization\"\n  },\n  {\n    \"id\": \"git_overview_top_projects\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 112,\n    \"size_x\": 4,\n    \"size_y\": 4,\n    \"col\": 9,\n    \"row\": 1,\n    \"title\": \"Git Top Projects\"\n  },\n  {\n    \"id\": \"reps_events_title\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 113,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 1,\n    \"row\": 53,\n    \"title\": \"-\"\n  },\n  {\n    \"id\": \"reps_acivities_title\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 114,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 5,\n    \"row\": 53,\n    \"title\": \"-\"\n  },\n  {\n    \"id\": \"remo_activities_main_numbers\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 115,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 5,\n    \"row\": 54,\n    \"title\": \"Reps Activities\"\n  },\n  {\n    \"id\": \"remo_events_main_metrics\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 116,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 1,\n    \"row\": 54,\n    \"title\": \"Reps Events\"\n  },\n  {\n    \"id\": \"remo_activities\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 117,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 5,\n    \"row\": 55,\n    \"title\": \"Reports\"\n  },\n  {\n    \"id\": \"remo_events_evolutionary\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 118,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 1,\n    \"row\": 55,\n    \"title\": \"Events\"\n  },\n  {\n    \"id\": \"remo_events_representatives_countries\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 119,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 1,\n    \"row\": 57,\n    \"title\": \"Representatives/Countries\"\n  },\n  {\n    \"id\": \"remo_activities_authors_evolutionary\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 120,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 5,\n    \"row\": 57,\n    \"title\": \"Authors\"\n  },\n  {\n    \"id\": \"dockerhub_title\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 121,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 1,\n    \"row\": 59,\n    \"title\": \"-\"\n  },\n  {\n    \"id\": \"dockerhub_max_stars_percentage\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 122,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 1,\n    \"row\": 61,\n    \"title\": \"Stars\"\n  },\n  {\n    \"id\": \"dockerhub_max_pulls_percentage\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 123,\n    \"size_x\": 4,\n    \"size_y\": 2,\n    \"col\": 1,\n    \"row\": 63,\n    \"title\": \"Pulls\"\n  },\n  {\n    \"id\": \"e4438140-7085-11e7-8134-6bde1af312a7\",\n    \"type\": \"visualization\",\n    \"panelIndex\": 124,\n    \"size_x\": 4,\n    \"size_y\": 1,\n    \"col\": 1,\n    \"row\": 60,\n    \"title\": \"DockerHub\"\n  }\n]",
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":5,\"w\":4,\"h\":2,\"i\":\"1\"},\"id\":\"git_main_numbers\",\"title\":\"Git\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":7,\"w\":4,\"h\":2,\"i\":\"2\"},\"title\":\"Git Commits\",\"id\":\"git_evolution_commits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":9,\"w\":4,\"h\":2,\"i\":\"3\"},\"title\":\"Git Authors\",\"id\":\"git_evolution_authors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":4,\"y\":0,\"w\":4,\"h\":5,\"i\":\"5\"},\"id\":\"git_commits_organizations\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":4,\"y\":5,\"w\":4,\"h\":2,\"i\":\"6\"},\"id\":\"gerrit_main_numbers\",\"title\":\"Gerrit\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":4,\"y\":7,\"w\":4,\"h\":2,\"i\":\"7\"},\"title\":\"Gerrit Changesets\",\"id\":\"gerrit_evolution_changesets\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":4,\"y\":9,\"w\":4,\"h\":2,\"i\":\"8\"},\"title\":\"Gerrit Changeset Submitters\",\"id\":\"gerrit_evolution_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":8,\"y\":5,\"w\":4,\"h\":2,\"i\":\"9\"},\"id\":\"mbox_main_numbers\",\"title\":\"Mailing Lists\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":8,\"y\":7,\"w\":4,\"h\":2,\"i\":\"10\"},\"title\":\"Mailing List Emails\",\"id\":\"mbox_evolution_emails\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":8,\"y\":9,\"w\":4,\"h\":2,\"i\":\"11\"},\"title\":\"Mailing List Participants\",\"id\":\"mbox_evolution_participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":11,\"w\":4,\"h\":2,\"i\":\"12\"},\"title\":\"Bugzilla Issues\",\"id\":\"issues_main_metrics\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":0,\"y\":13,\"w\":4,\"h\":2,\"i\":\"13\"},\"title\":\"Bugzilla Issues\",\"id\":\"issues_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":15,\"w\":4,\"h\":2,\"i\":\"14\"},\"title\":\"Bugzilla Issue Submitters\",\"id\":\"issues_evolutionary_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":4,\"y\":29,\"w\":4,\"h\":2,\"i\":\"15\"},\"id\":\"twitter_main_metrics\",\"title\":\"Twitter\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":4,\"y\":31,\"w\":4,\"h\":2,\"i\":\"16\"},\"id\":\"twitter_tweets_evolutionary\",\"title\":\"Tweets\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":4,\"y\":33,\"w\":4,\"h\":2,\"i\":\"17\"},\"title\":\"Twitter Users\",\"id\":\"twitter_tweets_evolutionary_users\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"18\",\"gridData\":{\"x\":0,\"y\":29,\"w\":4,\"h\":2,\"i\":\"18\"},\"id\":\"stackoverflow_main_metrics\",\"title\":\"Stackoverflow\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"19\",\"gridData\":{\"x\":0,\"y\":31,\"w\":4,\"h\":2,\"i\":\"19\"},\"title\":\"Stackoverflow Questions and Answers\",\"id\":\"stackoverflow_qa_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"20\",\"gridData\":{\"x\":0,\"y\":33,\"w\":4,\"h\":2,\"i\":\"20\"},\"title\":\"Stackoverflow Participants\",\"id\":\"stackoverflow_qa_evolutionary_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"22\",\"gridData\":{\"x\":4,\"y\":11,\"w\":4,\"h\":2,\"i\":\"22\"},\"id\":\"irc_main_metrics\",\"title\":\"IRC\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"23\",\"gridData\":{\"x\":4,\"y\":13,\"w\":4,\"h\":2,\"i\":\"23\"},\"title\":\"IRC Messages\",\"id\":\"irc_messages_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"24\",\"gridData\":{\"x\":4,\"y\":15,\"w\":4,\"h\":2,\"i\":\"24\"},\"title\":\"IRC Participants\",\"id\":\"irc_participants_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"28\",\"gridData\":{\"x\":8,\"y\":29,\"w\":4,\"h\":2,\"i\":\"28\"},\"id\":\"confluence_main_numbers\",\"title\":\"Confluence\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"29\",\"gridData\":{\"x\":8,\"y\":33,\"w\":4,\"h\":2,\"i\":\"29\"},\"title\":\"Confluence Participants\",\"id\":\"confluence_participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"30\",\"gridData\":{\"x\":8,\"y\":31,\"w\":4,\"h\":2,\"i\":\"30\"},\"title\":\"Confluence Editions\",\"id\":\"confluence_editions\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"31\",\"gridData\":{\"x\":0,\"y\":17,\"w\":4,\"h\":2,\"i\":\"31\"},\"id\":\"github_issues_main_metrics\",\"title\":\"Github Issues\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"32\",\"gridData\":{\"x\":0,\"y\":19,\"w\":4,\"h\":2,\"i\":\"32\"},\"id\":\"github_issues_evolutionary\",\"title\":\"GitHub Issues\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"33\",\"gridData\":{\"x\":0,\"y\":21,\"w\":4,\"h\":2,\"i\":\"33\"},\"id\":\"github_issues_evolutionary_submitters\",\"title\":\"GitHub Issues Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"34\",\"gridData\":{\"x\":4,\"y\":17,\"w\":4,\"h\":2,\"i\":\"34\"},\"id\":\"github_pullrequests_main_metrics\",\"title\":\"GitHub Pull Requests\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"35\",\"gridData\":{\"x\":4,\"y\":19,\"w\":4,\"h\":2,\"i\":\"35\"},\"title\":\"GitHub Pull Requests\",\"id\":\"github_pullrequests_pullrequests\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"36\",\"gridData\":{\"x\":4,\"y\":21,\"w\":4,\"h\":2,\"i\":\"36\"},\"title\":\"GitHub Pull Request Submitters\",\"id\":\"github_pullrequests_submitters_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"37\",\"gridData\":{\"x\":8,\"y\":17,\"w\":4,\"h\":2,\"i\":\"37\"},\"id\":\"jira_main_metrics\",\"title\":\"Jira\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"38\",\"gridData\":{\"x\":8,\"y\":19,\"w\":4,\"h\":2,\"i\":\"38\"},\"title\":\"Jira Issues\",\"id\":\"jira_issues\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"39\",\"gridData\":{\"x\":8,\"y\":21,\"w\":4,\"h\":2,\"i\":\"39\"},\"title\":\"Jira Submitters\",\"id\":\"jira_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"40\",\"gridData\":{\"x\":8,\"y\":25,\"w\":4,\"h\":2,\"i\":\"40\"},\"title\":\"Maniphest Issues\",\"id\":\"maniphest_issues\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"41\",\"gridData\":{\"x\":8,\"y\":23,\"w\":4,\"h\":2,\"i\":\"41\"},\"id\":\"maniphest_main_numbers\",\"title\":\"Maniphest\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"42\",\"gridData\":{\"x\":8,\"y\":27,\"w\":4,\"h\":2,\"i\":\"42\"},\"title\":\"Maniphest Submitters\",\"id\":\"maniphest_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"43\",\"gridData\":{\"x\":0,\"y\":23,\"w\":4,\"h\":2,\"i\":\"43\"},\"id\":\"redmine_issues_main_metrics\",\"title\":\"Redmine\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"44\",\"gridData\":{\"x\":0,\"y\":25,\"w\":4,\"h\":2,\"i\":\"44\"},\"title\":\"Redmine Issues\",\"id\":\"redmine_issues_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"45\",\"gridData\":{\"x\":0,\"y\":27,\"w\":4,\"h\":2,\"i\":\"45\"},\"title\":\"Redmine Submitters\",\"id\":\"redmine_issues_evolutionary_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"46\",\"gridData\":{\"x\":0,\"y\":35,\"w\":4,\"h\":2,\"i\":\"46\"},\"id\":\"rss_main_numbers\",\"title\":\"RSS\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"47\",\"gridData\":{\"x\":0,\"y\":37,\"w\":4,\"h\":2,\"i\":\"47\"},\"title\":\"RSS Posts\",\"id\":\"rss_posts_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"48\",\"gridData\":{\"x\":0,\"y\":39,\"w\":4,\"h\":2,\"i\":\"48\"},\"title\":\"RSS Authors\",\"id\":\"rss_authors_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"49\",\"gridData\":{\"x\":4,\"y\":35,\"w\":4,\"h\":2,\"i\":\"49\"},\"id\":\"meetups_main_numbers\",\"title\":\"Meetup\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"50\",\"gridData\":{\"x\":4,\"y\":37,\"w\":4,\"h\":2,\"i\":\"50\"},\"title\":\"Meetup Events\",\"id\":\"meetup_events_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"51\",\"gridData\":{\"x\":4,\"y\":39,\"w\":4,\"h\":2,\"i\":\"51\"},\"title\":\"Meetup Participants\",\"id\":\"meetup_people_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"52\",\"gridData\":{\"x\":8,\"y\":35,\"w\":4,\"h\":2,\"i\":\"52\"},\"id\":\"askbot_main_metrics\",\"title\":\"Askbot\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"53\",\"gridData\":{\"x\":8,\"y\":37,\"w\":4,\"h\":2,\"i\":\"53\"},\"title\":\"Askbot Questions, Answers and Comments\",\"id\":\"askbot_qac_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"54\",\"gridData\":{\"x\":8,\"y\":39,\"w\":4,\"h\":2,\"i\":\"54\"},\"title\":\"AskbotParticipants\",\"id\":\"askbot_qac_evolutionary_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"55\",\"gridData\":{\"x\":0,\"y\":41,\"w\":4,\"h\":2,\"i\":\"55\"},\"id\":\"discourse_main_metrics\",\"title\":\"Discourse\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"56\",\"gridData\":{\"x\":0,\"y\":43,\"w\":4,\"h\":2,\"i\":\"56\"},\"title\":\"Discourse Questions and Answers\",\"id\":\"discourse_qa_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"57\",\"gridData\":{\"x\":0,\"y\":45,\"w\":4,\"h\":2,\"i\":\"57\"},\"title\":\"Discourse Participants\",\"id\":\"discourse_qa_evolutionary_submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"58\",\"gridData\":{\"x\":4,\"y\":23,\"w\":4,\"h\":2,\"i\":\"58\"},\"id\":\"jenkins_main_numbers\",\"title\":\"Jenkins\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"59\",\"gridData\":{\"x\":4,\"y\":27,\"w\":4,\"h\":2,\"i\":\"59\"},\"id\":\"jenkins_evolutionary_jobs\",\"title\":\"Jenkins Builds\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"60\",\"gridData\":{\"x\":4,\"y\":25,\"w\":4,\"h\":2,\"i\":\"60\"},\"id\":\"jenkins_evolutionary_projects\",\"title\":\"Jenkins Active Nodes\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"65\",\"gridData\":{\"x\":8,\"y\":11,\"w\":4,\"h\":2,\"i\":\"65\"},\"id\":\"slack_main_numbers\",\"title\":\"Slack\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"66\",\"gridData\":{\"x\":8,\"y\":13,\"w\":4,\"h\":2,\"i\":\"66\"},\"id\":\"slack_messages_evolutionary\",\"title\":\"Slack Messages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"67\",\"gridData\":{\"x\":8,\"y\":15,\"w\":4,\"h\":2,\"i\":\"67\"},\"id\":\"slack_participants_evolutionary\",\"title\":\"Slack Participants\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"88\",\"gridData\":{\"x\":4,\"y\":41,\"w\":4,\"h\":2,\"i\":\"88\"},\"id\":\"googlehits_main_numbers\",\"title\":\"Google Hits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"89\",\"gridData\":{\"x\":4,\"y\":43,\"w\":4,\"h\":2,\"i\":\"89\"},\"id\":\"googlehits_total_avg_hits_evolutionary\",\"title\":\"Hits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"90\",\"gridData\":{\"x\":4,\"y\":45,\"w\":4,\"h\":2,\"i\":\"90\"},\"id\":\"googlehits_percentage_by_keyword_evolutionary\",\"title\":\"Hits by Keyword\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"92\",\"gridData\":{\"x\":8,\"y\":41,\"w\":4,\"h\":2,\"i\":\"92\"},\"id\":\"apache_main_metrics\",\"title\":\"Apache Logs\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"93\",\"gridData\":{\"x\":8,\"y\":43,\"w\":4,\"h\":2,\"i\":\"93\"},\"id\":\"apache_visits_evolutionary_all\",\"title\":\"Apache Visits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"94\",\"gridData\":{\"x\":8,\"y\":45,\"w\":4,\"h\":2,\"i\":\"94\"},\"id\":\"apache_packages_evolutionary_all\",\"title\":\"Apache Packages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"96\",\"gridData\":{\"x\":0,\"y\":49,\"w\":4,\"h\":2,\"i\":\"96\"},\"title\":\"Mediawiki Editions\",\"id\":\"mediawiki_editions\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"97\",\"gridData\":{\"x\":0,\"y\":51,\"w\":4,\"h\":2,\"i\":\"97\"},\"title\":\"Mediawiki Editors\",\"id\":\"mediawiki_editors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"98\",\"gridData\":{\"x\":0,\"y\":47,\"w\":4,\"h\":2,\"i\":\"98\"},\"id\":\"mediawiki_main_numbers\",\"title\":\"Mediawiki\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"99\",\"gridData\":{\"x\":8,\"y\":53,\"w\":4,\"h\":2,\"i\":\"99\"},\"id\":\"mozillaclub_main_metrics\",\"title\":\"Mozilla Club\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"100\",\"gridData\":{\"x\":8,\"y\":55,\"w\":4,\"h\":2,\"i\":\"100\"},\"title\":\"Mozilla Club Meetings\",\"id\":\"mozillaclub_events_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"101\",\"gridData\":{\"x\":8,\"y\":57,\"w\":4,\"h\":2,\"i\":\"101\"},\"title\":\"Mozilla Club Representatives/Countries\",\"id\":\"mozillaclub_representatives_countries\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"104\",\"gridData\":{\"x\":8,\"y\":47,\"w\":4,\"h\":2,\"i\":\"104\"},\"id\":\"telegram_main_metrics\",\"title\":\"Telegram\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"105\",\"gridData\":{\"x\":8,\"y\":49,\"w\":4,\"h\":2,\"i\":\"105\"},\"title\":\"Telegram Messages\",\"id\":\"telegram_messages_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"106\",\"gridData\":{\"x\":8,\"y\":51,\"w\":4,\"h\":2,\"i\":\"106\"},\"title\":\"Telegram Participants\",\"id\":\"telegram_participants_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"111\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":5,\"i\":\"111\"},\"id\":\"git_overview_top_authors\",\"title\":\"Git Top Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"112\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":5,\"i\":\"112\"},\"id\":\"git_overview_top_projects\",\"title\":\"Git Top Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"115\",\"gridData\":{\"x\":4,\"y\":47,\"w\":4,\"h\":2,\"i\":\"115\"},\"id\":\"remo_activities_main_numbers\",\"title\":\"Reps Activities\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"116\",\"gridData\":{\"x\":0,\"y\":53,\"w\":4,\"h\":2,\"i\":\"116\"},\"id\":\"remo_events_main_metrics\",\"title\":\"Reps Events\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"117\",\"gridData\":{\"x\":4,\"y\":49,\"w\":4,\"h\":2,\"i\":\"117\"},\"title\":\"Reps Reports\",\"id\":\"remo_activities\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"118\",\"gridData\":{\"x\":0,\"y\":55,\"w\":4,\"h\":2,\"i\":\"118\"},\"title\":\"Reps Events\",\"id\":\"remo_events_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"119\",\"gridData\":{\"x\":0,\"y\":57,\"w\":4,\"h\":2,\"i\":\"119\"},\"title\":\"Reps Representatives/Countries\",\"id\":\"remo_events_representatives_countries\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"120\",\"gridData\":{\"x\":4,\"y\":51,\"w\":4,\"h\":2,\"i\":\"120\"},\"title\":\"Reps Authors\",\"id\":\"remo_activities_authors_evolutionary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"title\":\"DockerHub Stars\",\"panelIndex\":\"122\",\"gridData\":{\"x\":4,\"y\":55,\"w\":4,\"h\":2,\"i\":\"122\"},\"id\":\"dockerhub_max_stars_percentage\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"title\":\"DockerHub Pulls\",\"panelIndex\":\"123\",\"gridData\":{\"x\":4,\"y\":57,\"w\":4,\"h\":2,\"i\":\"123\"},\"id\":\"dockerhub_max_pulls_percentage\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"124\",\"gridData\":{\"x\":4,\"y\":53,\"w\":4,\"h\":2,\"i\":\"124\"},\"id\":\"e4438140-7085-11e7-8134-6bde1af312a7\",\"title\":\"DockerHub\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-02T18:00:30.240661",
             "timeRestore": false,
             "title": "Overview",
-            "uiStateJSON": "{\n  \"P-1\": {\n    \"title\": \"Git\"\n  },\n  \"P-10\": {\n    \"title\": \"Emails\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-100\": {\n    \"title\": \"Meetings\"\n  },\n  \"P-101\": {\n    \"title\": \"Representatives/Countries\"\n  },\n  \"P-102\": {\n    \"title\": \"-\"\n  },\n  \"P-104\": {\n    \"title\": \"Telegram\"\n  },\n  \"P-105\": {\n    \"title\": \"Messages\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-106\": {\n    \"title\": \"Participants\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-107\": {\n    \"title\": \"Git Pair Programming\"\n  },\n  \"P-108\": {\n    \"title\": \"-\"\n  },\n  \"P-109\": {\n    \"title\": \"Commits\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-11\": {\n    \"title\": \"Participants\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-110\": {\n    \"title\": \"Authors\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-111\": {\n    \"title\": \"Git Top Authors\",\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-12\": {\n    \"title\": \"Issues\"\n  },\n  \"P-13\": {\n    \"title\": \"Issues\"\n  },\n  \"P-14\": {\n    \"title\": \"Issue Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-15\": {\n    \"title\": \"Twitter\"\n  },\n  \"P-16\": {\n    \"title\": \"Tweets\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-17\": {\n    \"title\": \"Users\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-18\": {\n    \"title\": \"Stackoverflow\"\n  },\n  \"P-19\": {\n    \"title\": \"Questions and Answers\"\n  },\n  \"P-2\": {\n    \"title\": \"Commits\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-20\": {\n    \"title\": \"Participants\"\n  },\n  \"P-22\": {\n    \"title\": \"IRC\"\n  },\n  \"P-23\": {\n    \"title\": \"Messages\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-24\": {\n    \"title\": \"Participants\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-28\": {\n    \"title\": \"Confluence\"\n  },\n  \"P-29\": {\n    \"title\": \"Participants\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-3\": {\n    \"title\": \"Authors\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-30\": {\n    \"title\": \"Editions\"\n  },\n  \"P-31\": {\n    \"title\": \"Github Issues\"\n  },\n  \"P-32\": {\n    \"title\": \"GitHub Issues\"\n  },\n  \"P-33\": {\n    \"title\": \"GitHub Issues Submitters\"\n  },\n  \"P-34\": {\n    \"title\": \"GitHub Pull Requests\"\n  },\n  \"P-35\": {\n    \"title\": \"Pull Requests\"\n  },\n  \"P-36\": {\n    \"title\": \"Pull Request Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-37\": {\n    \"title\": \"Jira\"\n  },\n  \"P-38\": {\n    \"title\": \"Issues\"\n  },\n  \"P-39\": {\n    \"title\": \"Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-40\": {\n    \"title\": \"Issues\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-41\": {\n    \"title\": \"Maniphest\"\n  },\n  \"P-42\": {\n    \"title\": \"Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-43\": {\n    \"title\": \"Redmine\"\n  },\n  \"P-44\": {\n    \"title\": \"Issues\"\n  },\n  \"P-45\": {\n    \"title\": \"Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-46\": {\n    \"title\": \"RSS\"\n  },\n  \"P-47\": {\n    \"title\": \"Posts\"\n  },\n  \"P-48\": {\n    \"title\": \"Authors\"\n  },\n  \"P-49\": {\n    \"title\": \"Meetup\"\n  },\n  \"P-5\": {\n    \"title\": \"Organizations\"\n  },\n  \"P-50\": {\n    \"title\": \"Events\"\n  },\n  \"P-51\": {\n    \"title\": \"Participants\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-52\": {\n    \"title\": \"Askbot\"\n  },\n  \"P-53\": {\n    \"title\": \"Questions, Answers and Comments\"\n  },\n  \"P-54\": {\n    \"title\": \"Participants\"\n  },\n  \"P-55\": {\n    \"title\": \"Discourse\"\n  },\n  \"P-56\": {\n    \"title\": \"Questions and Answers\"\n  },\n  \"P-57\": {\n    \"title\": \"Participants\"\n  },\n  \"P-58\": {\n    \"title\": \"Jenkins\"\n  },\n  \"P-59\": {\n    \"title\": \"Jenkins Builds\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-6\": {\n    \"title\": \"Gerrit\"\n  },\n  \"P-60\": {\n    \"title\": \"Jenkins Active Nodes\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-62\": {\n    \"title\": \"Hits\"\n  },\n  \"P-65\": {\n    \"title\": \"Slack\"\n  },\n  \"P-66\": {\n    \"title\": \"Slack Messages\"\n  },\n  \"P-67\": {\n    \"title\": \"Slack Participants\"\n  },\n  \"P-68\": {\n    \"title\": \"-\"\n  },\n  \"P-69\": {\n    \"title\": \"-\"\n  },\n  \"P-7\": {\n    \"title\": \"Changesets\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-70\": {\n    \"title\": \"-\"\n  },\n  \"P-71\": {\n    \"title\": \"-\"\n  },\n  \"P-72\": {\n    \"title\": \"-\"\n  },\n  \"P-73\": {\n    \"title\": \"-\"\n  },\n  \"P-74\": {\n    \"title\": \"-\"\n  },\n  \"P-75\": {\n    \"title\": \"-\"\n  },\n  \"P-76\": {\n    \"title\": \"-\"\n  },\n  \"P-77\": {\n    \"title\": \"-\"\n  },\n  \"P-78\": {\n    \"title\": \"-\"\n  },\n  \"P-79\": {\n    \"title\": \"-\"\n  },\n  \"P-8\": {\n    \"title\": \"Changeset Submitters\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-80\": {\n    \"title\": \"-\"\n  },\n  \"P-81\": {\n    \"title\": \"-\"\n  },\n  \"P-82\": {\n    \"title\": \"-\"\n  },\n  \"P-83\": {\n    \"title\": \"-\"\n  },\n  \"P-84\": {\n    \"title\": \"-\"\n  },\n  \"P-85\": {\n    \"title\": \"-\"\n  },\n  \"P-86\": {\n    \"title\": \"-\"\n  },\n  \"P-87\": {\n    \"title\": \"-\"\n  },\n  \"P-88\": {\n    \"title\": \"Google Hits\"\n  },\n  \"P-89\": {\n    \"title\": \"Hits\"\n  },\n  \"P-9\": {\n    \"title\": \"Mailing Lists\"\n  },\n  \"P-90\": {\n    \"title\": \"Hits by Keyword\"\n  },\n  \"P-91\": {\n    \"title\": \"-\"\n  },\n  \"P-92\": {\n    \"spy\": {\n      \"mode\": {\n        \"fill\": false,\n        \"name\": null\n      }\n    },\n    \"title\": \"Apache Logs\"\n  },\n  \"P-93\": {\n    \"spy\": {\n      \"mode\": {\n        \"fill\": false,\n        \"name\": null\n      }\n    },\n    \"title\": \"Apache Visits\"\n  },\n  \"P-94\": {\n    \"title\": \"Apache Packages\"\n  },\n  \"P-95\": {\n    \"title\": \"-\"\n  },\n  \"P-96\": {\n    \"title\": \"Editions\"\n  },\n  \"P-97\": {\n    \"title\": \"Editors\",\n    \"vis\": {\n      \"legendOpen\": false\n    }\n  },\n  \"P-98\": {\n    \"title\": \"Mediawiki\"\n  },\n  \"P-99\": {\n    \"title\": \"Mozilla Club\"\n  },\n  \"P-112\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    },\n    \"title\": \"Git Top Projects\"\n  },\n  \"P-113\": {\n    \"title\": \"-\"\n  },\n  \"P-114\": {\n    \"title\": \"-\"\n  },\n  \"P-116\": {\n    \"title\": \"Reps Events\"\n  },\n  \"P-118\": {\n    \"vis\": {\n      \"legendOpen\": false\n    },\n    \"title\": \"Events\"\n  },\n  \"P-119\": {\n    \"title\": \"Representatives/Countries\"\n  },\n  \"P-115\": {\n    \"title\": \"Reps Activities\"\n  },\n  \"P-117\": {\n    \"vis\": {\n      \"legendOpen\": false\n    },\n    \"title\": \"Reports\"\n  },\n  \"P-120\": {\n    \"title\": \"Authors\"\n  },\n  \"P-121\": {\n    \"title\": \"-\"\n  },\n  \"P-122\": {\n    \"title\": \"Stars\"\n  },\n  \"P-123\": {\n    \"title\": \"Pulls\"\n  },\n  \"P-124\": {\n    \"title\": \"DockerHub\"\n  }\n}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Git\"},\"P-10\":{\"title\":\"Emails\",\"vis\":{\"legendOpen\":false}},\"P-100\":{\"title\":\"Meetings\"},\"P-101\":{\"title\":\"Representatives/Countries\"},\"P-102\":{\"title\":\"-\"},\"P-104\":{\"title\":\"Telegram\"},\"P-105\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":false}},\"P-106\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-107\":{\"title\":\"Git Pair Programming\"},\"P-108\":{\"title\":\"-\"},\"P-109\":{\"title\":\"Commits\",\"vis\":{\"legendOpen\":false}},\"P-11\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-110\":{\"title\":\"Authors\",\"vis\":{\"legendOpen\":false}},\"P-111\":{\"title\":\"Git Top Authors\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-112\":{\"title\":\"Git Top Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-113\":{\"title\":\"-\"},\"P-114\":{\"title\":\"-\"},\"P-115\":{\"title\":\"Reps Activities\"},\"P-116\":{\"title\":\"Reps Events\"},\"P-117\":{\"title\":\"Reports\",\"vis\":{\"legendOpen\":false}},\"P-118\":{\"title\":\"Events\",\"vis\":{\"legendOpen\":false}},\"P-119\":{\"title\":\"Representatives/Countries\"},\"P-12\":{\"title\":\"Issues\"},\"P-120\":{\"title\":\"Authors\"},\"P-121\":{\"title\":\"-\"},\"P-122\":{\"title\":\"Stars\"},\"P-123\":{\"title\":\"Pulls\"},\"P-124\":{\"title\":\"DockerHub\"},\"P-13\":{\"title\":\"Issues\"},\"P-14\":{\"title\":\"Issue Submitters\",\"vis\":{\"legendOpen\":false}},\"P-15\":{\"title\":\"Twitter\"},\"P-16\":{\"title\":\"Tweets\",\"vis\":{\"legendOpen\":false}},\"P-17\":{\"title\":\"Users\",\"vis\":{\"legendOpen\":false}},\"P-18\":{\"title\":\"Stackoverflow\"},\"P-19\":{\"title\":\"Questions and Answers\"},\"P-2\":{\"title\":\"Commits\",\"vis\":{\"legendOpen\":false}},\"P-20\":{\"title\":\"Participants\"},\"P-22\":{\"title\":\"IRC\"},\"P-23\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":false}},\"P-24\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-28\":{\"title\":\"Confluence\"},\"P-29\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Authors\",\"vis\":{\"legendOpen\":false}},\"P-30\":{\"title\":\"Editions\"},\"P-31\":{\"title\":\"Github Issues\"},\"P-32\":{\"title\":\"GitHub Issues\"},\"P-33\":{\"title\":\"GitHub Issues Submitters\"},\"P-34\":{\"title\":\"GitHub Pull Requests\"},\"P-35\":{\"title\":\"Pull Requests\"},\"P-36\":{\"title\":\"Pull Request Submitters\",\"vis\":{\"legendOpen\":false}},\"P-37\":{\"title\":\"Jira\"},\"P-38\":{\"title\":\"Issues\"},\"P-39\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-40\":{\"title\":\"Issues\",\"vis\":{\"legendOpen\":false}},\"P-41\":{\"title\":\"Maniphest\"},\"P-42\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-43\":{\"title\":\"Redmine\"},\"P-44\":{\"title\":\"Issues\"},\"P-45\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-46\":{\"title\":\"RSS\"},\"P-47\":{\"title\":\"Posts\"},\"P-48\":{\"title\":\"Authors\"},\"P-49\":{\"title\":\"Meetup\"},\"P-5\":{\"title\":\"Organizations\"},\"P-50\":{\"title\":\"Events\"},\"P-51\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-52\":{\"title\":\"Askbot\"},\"P-53\":{\"title\":\"Questions, Answers and Comments\"},\"P-54\":{\"title\":\"Participants\"},\"P-55\":{\"title\":\"Discourse\"},\"P-56\":{\"title\":\"Questions and Answers\"},\"P-57\":{\"title\":\"Participants\"},\"P-58\":{\"title\":\"Jenkins\"},\"P-59\":{\"title\":\"Jenkins Builds\",\"vis\":{\"legendOpen\":false}},\"P-6\":{\"title\":\"Gerrit\"},\"P-60\":{\"title\":\"Jenkins Active Nodes\",\"vis\":{\"legendOpen\":false}},\"P-62\":{\"title\":\"Hits\"},\"P-65\":{\"title\":\"Slack\"},\"P-66\":{\"title\":\"Slack Messages\"},\"P-67\":{\"title\":\"Slack Participants\"},\"P-68\":{\"title\":\"-\"},\"P-69\":{\"title\":\"-\"},\"P-7\":{\"title\":\"Changesets\",\"vis\":{\"legendOpen\":false}},\"P-70\":{\"title\":\"-\"},\"P-71\":{\"title\":\"-\"},\"P-72\":{\"title\":\"-\"},\"P-73\":{\"title\":\"-\"},\"P-74\":{\"title\":\"-\"},\"P-75\":{\"title\":\"-\"},\"P-76\":{\"title\":\"-\"},\"P-77\":{\"title\":\"-\"},\"P-78\":{\"title\":\"-\"},\"P-79\":{\"title\":\"-\"},\"P-8\":{\"title\":\"Changeset Submitters\",\"vis\":{\"legendOpen\":false}},\"P-80\":{\"title\":\"-\"},\"P-81\":{\"title\":\"-\"},\"P-82\":{\"title\":\"-\"},\"P-83\":{\"title\":\"-\"},\"P-84\":{\"title\":\"-\"},\"P-85\":{\"title\":\"-\"},\"P-86\":{\"title\":\"-\"},\"P-87\":{\"title\":\"-\"},\"P-88\":{\"title\":\"Google Hits\"},\"P-89\":{\"title\":\"Hits\"},\"P-9\":{\"title\":\"Mailing Lists\"},\"P-90\":{\"title\":\"Hits by Keyword\"},\"P-91\":{\"title\":\"-\"},\"P-92\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Apache Logs\"},\"P-93\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Apache Visits\"},\"P-94\":{\"title\":\"Apache Packages\"},\"P-95\":{\"title\":\"-\"},\"P-96\":{\"title\":\"Editions\"},\"P-97\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-98\":{\"title\":\"Mediawiki\"},\"P-99\":{\"title\":\"Mozilla Club\"}}",
             "version": 1
         }
     },
-    "index_patterns": [],
     "searches": [
         {
             "id": "Search:_pull_request:false",
@@ -67,7 +67,7 @@
                 "title": "git_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"git_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"json\":\"{\\\"precision_threshold\\\": 10000}\",\"customLabel\":\"# Commits\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repo_name\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"cardinality\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 10000}\", \"customLabel\": \"# Commits\", \"field\": \"hash\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 3000}\", \"customLabel\": \"# Authors\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 3000}\", \"customLabel\": \"# Repositories\", \"field\": \"repo_name\"}}], \"title\": \"git_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -119,7 +119,7 @@
                 "title": "gerrit_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Changeset Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Changesets\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Changeset Submitters\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Repositories\", \"field\": \"repository\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -158,7 +158,7 @@
                 "title": "mbox_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"mbox_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Emails\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Email Senders\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"list\",\"customLabel\":\"# Mailing Lists\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Emails\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Email Senders\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Mailing Lists\", \"field\": \"list\"}}], \"title\": \"mbox_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -197,7 +197,7 @@
                 "title": "issues_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"issues_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"product\",\"customLabel\":\"# Products\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Issues\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Submitters\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Products\", \"field\": \"product\"}}], \"title\": \"issues_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -236,7 +236,7 @@
                 "title": "twitter_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Tweets\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"user_name\",\"customLabel\":\"Users\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"place.country\",\"customLabel\":\"Countries\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Tweets\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Users\", \"field\": \"user_name\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Countries\", \"field\": \"place.country\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -275,7 +275,7 @@
                 "title": "stackoverflow_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_stackexchange_question\",\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_stackexchange_answer\",\"customLabel\":\"Answers\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People Involved\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Questions\", \"field\": \"is_stackexchange_question\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Answers\", \"field\": \"is_stackexchange_answer\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"People Involved\", \"field\": \"author_uuid\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -314,7 +314,7 @@
                 "title": "irc_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\n  \"title\": \"irc_main_metrics\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"fontSize\": \"12\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"# Messages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Participants\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"channel\",\n        \"customLabel\": \"# Channels\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Messages\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Participants\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Channels\", \"field\": \"channel\"}}], \"title\": \"irc_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -353,7 +353,7 @@
                 "title": "confluence_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"confluence_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_new_page\",\"customLabel\":\"# Pages\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_comment\",\"customLabel\":\"# Comments\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Editors\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Pages\", \"field\": \"is_new_page\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Comments\", \"field\": \"is_comment\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Editors\", \"field\": \"author_uuid\"}}], \"title\": \"confluence_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -393,7 +393,7 @@
                 "title": "github_issues_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_issues_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"title\": \"github_issues_main_metrics\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Issues\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Submitters\"}}, {\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"repository\", \"customLabel\": \"# Repositories\"}}], \"listeners\": {}}"
             }
         },
         {
@@ -435,7 +435,7 @@
                 "title": "github_pullrequests_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Pull Requests\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}}],\"listeners\":{}}"
+                "visState": "{\"title\": \"New Visualization\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Pull Requests\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Submitters\"}}, {\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"repository\", \"customLabel\": \"# Repositories\"}}], \"listeners\": {}}"
             }
         },
         {
@@ -476,7 +476,7 @@
                 "title": "jira_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"jira_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project_name\",\"customLabel\":\"# Projects\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Issues\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Submitters\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Projects\", \"field\": \"project_name\"}}], \"title\": \"jira_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -510,12 +510,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\n  \"index\": \"maniphest\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
                 },
                 "title": "maniphest_issues",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Issues\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"creation_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+                "visState": "{\"title\":\"maniphest_issues\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Issues\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Issues\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\"}],\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"status\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
             }
         },
         {
@@ -528,7 +528,7 @@
                 "title": "maniphest_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\n  \"title\": \"maniphest_main_numbers\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"fontSize\": \"12\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Issues\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Submitters\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"assigned_to_uuid\",\n        \"customLabel\": \"# Assigned\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+                "visState": "{\"title\": \"maniphest_main_numbers\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Issues\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Submitters\"}}, {\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"assigned_to_uuid\", \"customLabel\": \"# Assigned\"}}], \"listeners\": {}}"
             }
         },
         {
@@ -554,7 +554,7 @@
                 "title": "redmine_issues_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"redmine_issues_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project_name\",\"customLabel\":\"# Products\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Issues\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Submitters\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Products\", \"field\": \"project_name\"}}], \"title\": \"redmine_issues_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -593,7 +593,7 @@
                 "title": "rss_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Entries\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Entries\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Authors\", \"field\": \"author_uuid\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -632,7 +632,7 @@
                 "title": "meetups_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_meetup_meetup\",\"customLabel\":\"# Meetups\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_meetup_rsvp\",\"customLabel\":\"# RSVPS\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_meetup_comment\",\"customLabel\":\"# Comments\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# People Involved\"}}],\"listeners\":{}}"
+                "visState": "{\"title\": \"New Visualization\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"is_meetup_meetup\", \"customLabel\": \"# Meetups\"}}, {\"id\": \"2\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"is_meetup_rsvp\", \"customLabel\": \"# RSVPS\"}}, {\"id\": \"3\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"is_meetup_comment\", \"customLabel\": \"# Comments\"}}, {\"id\": \"4\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# People Involved\"}}], \"listeners\": {}}"
             }
         },
         {
@@ -671,7 +671,7 @@
                 "title": "askbot_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_askbot_question\",\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_askbot_answer\",\"customLabel\":\"Answers\"}},{\"id\":\"4\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_askbot_comment\",\"customLabel\":\"Comments\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People Involved\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Questions\", \"field\": \"is_askbot_question\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Answers\", \"field\": \"is_askbot_answer\"}}, {\"type\": \"sum\", \"id\": \"4\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Comments\", \"field\": \"is_askbot_comment\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"People Involved\", \"field\": \"author_uuid\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -710,7 +710,7 @@
                 "title": "discourse_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"discourse_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_discourse_question\",\"customLabel\":\"Questions\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_discourse_answer\",\"customLabel\":\"Answers\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People Involved\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Questions\", \"field\": \"is_discourse_question\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Answers\", \"field\": \"is_discourse_answer\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"People Involved\", \"field\": \"author_uuid\"}}], \"title\": \"discourse_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -749,7 +749,7 @@
                 "title": "jenkins_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"jenkins_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Builds\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"job_url\",\"customLabel\":\"# Jobs\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"builtOn\",\"customLabel\":\"# Nodes\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_min\",\"customLabel\":\"Build duration (avg, min.)\"}}],\"listeners\":{}}"
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": \"12\", \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"metricColorMode\": \"None\", \"percentageMode\": false, \"invertColors\": false, \"useRanges\": false, \"labels\": {\"show\": true}}}, \"aggs\": [{\"params\": {\"customLabel\": \"# Builds\"}, \"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Jobs\", \"field\": \"job_url\"}, \"type\": \"cardinality\", \"id\": \"4\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Nodes\", \"field\": \"builtOn\"}, \"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"Build duration (avg, min.)\", \"field\": \"duration_min\"}, \"type\": \"avg\", \"id\": \"3\", \"schema\": \"metric\"}], \"type\": \"metric\", \"title\": \"jenkins_main_numbers\", \"listeners\": {}}"
             }
         },
         {
@@ -788,7 +788,7 @@
                 "title": "slack_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"slack_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"# Channels\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Messages\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Participants\"}},{\"id\":\"7\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"reply_count\",\"customLabel\":\"# Replies\"}},{\"id\":\"5\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"reaction_count\",\"customLabel\":\"# Reactions\"}},{\"id\":\"6\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"number_attachs\",\"customLabel\":\"# Attachments\"}}],\"listeners\":{}}"
+                "visState": "{\"title\": \"slack_main_numbers\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"channel_id\", \"customLabel\": \"# Channels\"}}, {\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Messages\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Participants\"}}, {\"id\": \"7\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"reply_count\", \"customLabel\": \"# Replies\"}}, {\"id\": \"5\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"reaction_count\", \"customLabel\": \"# Reactions\"}}, {\"id\": \"6\", \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"number_attachs\", \"customLabel\": \"# Attachments\"}}], \"listeners\": {}}"
             }
         },
         {
@@ -818,266 +818,6 @@
             }
         },
         {
-            "id": "git_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "git_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"git_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Git\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "gerrit_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "gerrit_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"gerrit_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Gerrit\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "mbox_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "mbox_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"mbox_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Mailing Lists\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "bugzilla_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "bugzilla_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"bugzilla_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Bugzilla\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "irc_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "irc_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"irc_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### IRC\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "slack_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "slack_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"slack_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Slack\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "github_issues_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "github_issues_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"github_issues_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### GitHub Issues\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "github_prs_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "github_prs_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"github_prs_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### GitHub Pull Requests\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "jira_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "jira_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"jira_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Jira\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "redmine_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "redmine_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"redmine_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Redmine\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "maniphest_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "maniphest_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"maniphest_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Maniphest\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "jenkins_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "jenkins_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"jenkins_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Jenkins\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "rss_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "rss_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"rss_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### RSS\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "meetup_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "meetup_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"meetup_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Meetup\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "askbot_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "askbot_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"askbot_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Askbot\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "discourse_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "discourse_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"discourse_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Discourse\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "stackoverflow_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "stackoverflow_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"stackoverflow_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### StackOverflow\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "twitter_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "twitter_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"twitter_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Twitter\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "confluence_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "confluence_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"confluence_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Confluence\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "google_hits_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "google_hits_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"google_hits_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Google Hits\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "googlehits_main_numbers",
             "value": {
                 "description": "",
@@ -1087,7 +827,7 @@
                 "title": "googlehits_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"googlehits_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"keywords\",\"customLabel\":\"# Keywords\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"cardinality\", \"id\": \"1\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Keywords\", \"field\": \"keywords\"}}], \"title\": \"googlehits_main_numbers\", \"params\": {\"handleNoResults\": true, \"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1117,19 +857,6 @@
             }
         },
         {
-            "id": "apache_logs_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "apache_logs_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"apache_logs_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Apache Logs\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "apache_main_metrics",
             "value": {
                 "description": "",
@@ -1139,7 +866,7 @@
                 "title": "apache_main_metrics",
                 "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
                 "version": 1,
-                "visState": "{\"title\":\"apache_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"handleNoResults\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Visits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"request\",\"customLabel\":\"Unique URLs\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"Visits\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"Unique URLs\", \"field\": \"request\"}}], \"title\": \"apache_main_metrics\", \"params\": {\"handleNoResults\": true, \"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1166,19 +893,6 @@
                 "uiStateJSON": "{\n  \"vis\": {\n    \"legendOpen\": false\n  }\n}",
                 "version": 1,
                 "visState": "{\n  \"title\": \"apache_packages_evolutionary_all\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Packages\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
-            }
-        },
-        {
-            "id": "mediawiki_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "mediawiki_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"mediawiki_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Mediawiki\"},\"aggs\":[],\"listeners\":{}}"
             }
         },
         {
@@ -1217,7 +931,7 @@
                 "title": "mediawiki_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\n  \"title\": \"New Visualization\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"fontSize\": \"12\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"sum\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"iscreated\",\n        \"customLabel\": \"# Pages\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Editors\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"sum\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"isrevision\",\n        \"customLabel\": \"# Revisions\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Pages\", \"field\": \"iscreated\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Editors\", \"field\": \"author_uuid\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Revisions\", \"field\": \"isrevision\"}}], \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1230,7 +944,7 @@
                 "title": "mozillaclub_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"mozillaclub_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Meetings\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"Country\",\"customLabel\":\"# Countries\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Attendance\",\"customLabel\":\"# Attendees\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"Attendance\",\"percents\":[50],\"customLabel\":\"# People per Meeting in Median\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Meetings\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Countries\", \"field\": \"Country\"}}, {\"type\": \"sum\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Attendees\", \"field\": \"Attendance\"}}, {\"type\": \"median\", \"id\": \"4\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# People per Meeting in Median\", \"field\": \"Attendance\", \"percents\": [50]}}], \"title\": \"mozillaclub_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1260,32 +974,6 @@
             }
         },
         {
-            "id": "mozillaclub_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "mozillaclub_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"mozillaclub_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Mozilla Club\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "telegram_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "telegram_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"telegram_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Telegram\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "telegram_main_metrics",
             "value": {
                 "description": "",
@@ -1295,7 +983,7 @@
                 "title": "telegram_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"telegram_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Messages\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author\",\"customLabel\":\"# Participants\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"chat_title\",\"customLabel\":\"# Channels\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Messages\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Participants\", \"field\": \"author\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Channels\", \"field\": \"chat_title\"}}], \"title\": \"telegram_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1325,58 +1013,6 @@
             }
         },
         {
-            "id": "git_study_pair_programming_main_numbers",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "git_study_pair_programming_main_numbers",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"git_study_pair_programming_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"pair_programming_commit\",\"json\":\"\",\"customLabel\":\"# Commits\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repo_name\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Repositories\"}}],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "git_study_pair_programming_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "git_study_pair_programming_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"git_study_pair_programming_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Git Pair Programming\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "git_study_pair_programming_evolution_commits",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "git_study_pair_programming_evolution_commits",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"git_study_pair_programming_evolution_commits\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"json\":\"{\\\"precision_threshold\\\": 10000}\",\"customLabel\":\"# Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "git_study_pair_programming_evolution_authors",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-                },
-                "title": "git_study_pair_programming_evolution_authors",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"git_study_pair_programming_evolution_authors\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Authors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "git_overview_top_authors",
             "value": {
                 "description": "",
@@ -1403,32 +1039,6 @@
             }
         },
         {
-            "id": "reps_events_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "reps_events_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"reps_events_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Reps Events\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
-            "id": "reps_acivities_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "reps_acivities_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"reps_acivities_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Reps Activities\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "remo_activities_main_numbers",
             "value": {
                 "description": "",
@@ -1438,7 +1048,7 @@
                 "title": "remo_activities_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"remo_activities_main_numbers\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"remo_url\",\"customLabel\":\"# Events\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Reports\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"# Mentors\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"cardinality\", \"id\": \"4\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Events\", \"field\": \"remo_url\"}}, {\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Reports\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Authors\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Mentors\", \"field\": \"mentor\"}}], \"title\": \"remo_activities_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1451,7 +1061,7 @@
                 "title": "remo_events_main_metrics",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"remo_events_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Events\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"owner\",\"customLabel\":\"# Organizers\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"city\",\"customLabel\":\"# Cities\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"country\",\"customLabel\":\"# Countries\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Events\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Organizers\", \"field\": \"owner\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Cities\", \"field\": \"city\"}}, {\"type\": \"cardinality\", \"id\": \"4\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Countries\", \"field\": \"country\"}}], \"title\": \"remo_events_main_metrics\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         },
         {
@@ -1507,19 +1117,6 @@
             }
         },
         {
-            "id": "dockerhub_title",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
-                },
-                "title": "dockerhub_title",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"dockerhub_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### DockerHub\"},\"aggs\":[],\"listeners\":{}}"
-            }
-        },
-        {
             "id": "dockerhub_max_stars_percentage",
             "value": {
                 "description": "",
@@ -1555,7 +1152,7 @@
                 "title": "dockerhub_main_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"dockerhub_main_numbers\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"origin\",\"customLabel\":\"# Docker Images\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"star_count\",\"percents\":[50],\"customLabel\":\"Stars\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"pull_count\",\"percents\":[50],\"customLabel\":\"Pulls\"}}],\"listeners\":{}}"
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"cardinality\", \"id\": \"1\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Docker Images\", \"field\": \"origin\"}}, {\"type\": \"median\", \"id\": \"2\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"Stars\", \"field\": \"star_count\", \"percents\": [50]}}, {\"type\": \"median\", \"id\": \"3\", \"enabled\": true, \"schema\": \"metric\", \"params\": {\"customLabel\": \"Pulls\", \"field\": \"pull_count\", \"percents\": [50]}}], \"title\": \"dockerhub_main_numbers\", \"params\": {\"handleNoResults\": true, \"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
             }
         }
     ]

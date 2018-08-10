@@ -2,19 +2,20 @@
     "dashboard": {
         "id": "Apache",
         "value": {
-            "description": "",
+            "description": "Apache panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
             },
-            "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":1,\"id\":\"apache_main_metrics\",\"panelIndex\":1,\"row\":1,\"size_x\":5,\"size_y\":1,\"title\":\"Summary\",\"type\":\"visualization\"},{\"col\":8,\"id\":\"apache_main_agents\",\"panelIndex\":7,\"row\":1,\"size_x\":5,\"size_y\":5,\"title\":\"Most Common User-Agents\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"apache_agents_evolutionary\",\"panelIndex\":8,\"row\":6,\"size_x\":5,\"size_y\":2,\"title\":\"Unique User-Agents\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"apache_requests_evolutionary\",\"panelIndex\":9,\"row\":8,\"size_x\":5,\"size_y\":2,\"title\":\"Requests by type\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"apache_packages_evolutionary_all\",\"panelIndex\":11,\"row\":4,\"size_x\":5,\"size_y\":2,\"title\":\"Package Downloads\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"apache_visits_evolutionary_all\",\"panelIndex\":12,\"row\":2,\"size_x\":5,\"size_y\":2,\"title\":\"Visits\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"apache_main_packages_all\",\"panelIndex\":13,\"row\":6,\"size_x\":7,\"size_y\":6,\"title\":\"Popular Packages\",\"type\":\"visualization\"},{\"col\":6,\"id\":\"apache_response_count\",\"panelIndex\":14,\"row\":1,\"size_x\":2,\"size_y\":5,\"title\":\"Server Responses\",\"type\":\"visualization\"}]",
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":4,\"x\":0,\"y\":0},\"id\":\"apache_main_metrics\",\"panelIndex\":\"1\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"7\",\"w\":6,\"x\":0,\"y\":4},\"id\":\"apache_main_agents\",\"panelIndex\":\"7\",\"title\":\"Most Common User-Agents\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"8\",\"w\":4,\"x\":4,\"y\":2},\"id\":\"apache_agents_evolutionary\",\"panelIndex\":\"8\",\"title\":\"Unique User-Agents\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"9\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"apache_requests_evolutionary\",\"panelIndex\":\"9\",\"title\":\"Requests by type\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"11\",\"w\":4,\"x\":0,\"y\":2},\"id\":\"apache_packages_evolutionary_all\",\"panelIndex\":\"11\",\"title\":\"Package Downloads\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"12\",\"w\":4,\"x\":4,\"y\":0},\"id\":\"apache_visits_evolutionary_all\",\"panelIndex\":\"12\",\"title\":\"Visits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"13\",\"w\":6,\"x\":6,\"y\":4},\"id\":\"apache_main_packages_all\",\"panelIndex\":\"13\",\"title\":\"Popular Packages\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"14\",\"w\":4,\"x\":8,\"y\":2},\"id\":\"apache_response_count\",\"panelIndex\":\"14\",\"title\":\"Server Responses\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
             "refreshInterval": {
                 "display": "Off",
                 "pause": false,
                 "value": 0
             },
-            "timeFrom": "now-60d",
+            "release_date": "2018-07-08T11:38:14.091459",
+            "timeFrom": "now-5y",
             "timeRestore": true,
             "timeTo": "now",
             "title": "Apache",
@@ -22,16 +23,6 @@
             "version": 1
         }
     },
-    "index_patterns": [
-        {
-            "id": "apache",
-            "value": {
-                "fields": "[{\"name\":\"request\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"agent\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"metadata__timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"path\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"clientip\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"@version\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"verb\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"tags\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":false,\"aggregatable\":false},{\"name\":\"@timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"bytes\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"auxyear\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"response\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"auxmonth\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false,\"searchable\":false,\"aggregatable\":false},{\"name\":\"httpversion\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":true,\"analyzed\":false,\"doc_values\":true,\"searchable\":true,\"aggregatable\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false,\"searchable\":false,\"aggregatable\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false,\"searchable\":true,\"aggregatable\":true},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false,\"searchable\":false,\"aggregatable\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"indexed\":false,\"analyzed\":false,\"doc_values\":false,\"searchable\":false,\"aggregatable\":false}]",
-                "timeFieldName": "@timestamp",
-                "title": "apache"
-            }
-        }
-    ],
     "searches": [],
     "visualizations": [
         {
@@ -44,7 +35,7 @@
                 "title": "apache_main_metrics",
                 "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
                 "version": 1,
-                "visState": "{\"title\":\"apache_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Visits\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"request\",\"customLabel\":\"Unique URLs\"}}],\"listeners\":{}}"
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"bgFill\": \"#000\", \"fontSize\": \"12\"}, \"useRanges\": false, \"labels\": {\"show\": true}, \"percentageMode\": false, \"metricColorMode\": \"None\", \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"invertColors\": false}}, \"aggs\": [{\"params\": {\"customLabel\": \"Visits\"}, \"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"field\": \"request\", \"customLabel\": \"Unique URLs\"}, \"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\"}], \"type\": \"metric\", \"title\": \"apache_main_metrics\", \"listeners\": {}}"
             }
         },
         {
@@ -117,12 +108,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"filter\":[],\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                    "searchSourceJSON": "{\"filter\":[],\"index\":\"apache\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
                 },
                 "title": "apache_main_packages_all",
-                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}},\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"apache_main_packages_all\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Downloads\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"request\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Package\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"apache_main_packages_all\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Downloads\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"request\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Package\"}}]}"
             }
         },
         {
