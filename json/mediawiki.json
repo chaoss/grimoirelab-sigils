@@ -12,7 +12,7 @@
             "release_date": "2018-08-06T14:55:24.784852",
             "timeRestore": false,
             "title": "Mediawiki",
-            "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Wiki Editions\",\"vis\":{\"legendOpen\":true}},\"P-4\":{\"title\":\"Top Edited Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Last Created Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Last Editions\"},\"P-7\":{\"title\":\"Organizations\",\"vis\":{\"legendOpen\":true}},\"P-8\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Wiki Editions\",\"vis\":{\"legendOpen\":true}},\"P-4\":{\"title\":\"Top Edited Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Last Created Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Last Edits\"},\"P-7\":{\"title\":\"Organizations\",\"vis\":{\"legendOpen\":true}},\"P-8\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
             "version": 1
         }
     },
