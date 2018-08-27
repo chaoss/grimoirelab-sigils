@@ -1121,7 +1121,7 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"dockerhub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "dockerhub_max_stars_percentage",
                 "uiStateJSON": "{}",
@@ -1134,7 +1134,7 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"dockerhub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "dockerhub_max_pulls_percentage",
                 "uiStateJSON": "{}",
@@ -1147,7 +1147,7 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"dockerhub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "dockerhub_main_numbers",
                 "uiStateJSON": "{}",
