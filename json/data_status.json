@@ -14,7 +14,7 @@
                 "pause": false,
                 "value": 0
             },
-            "release_date": "2018-08-27T16:22:05.568493",
+            "release_date": "2018-08-27T16:26:31.272456",
             "timeFrom": "now-10y",
             "timeRestore": true,
             "timeTo": "now",
@@ -355,12 +355,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"dockerhub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\n  \"index\": \"8539ada0-9960-11e8-8771-a349686d998a\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
                 },
                 "title": "dockerhub_data_status_numbers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\": \"dockerhub_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"Total Item Count\"}, \"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"enabled\": true}], \"type\": \"metric\", \"params\": {\"handleNoResults\": true, \"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+                "visState": "{\n  \"title\": \"dockerhub_data_status_numbers\",\n  \"listeners\": {},\n  \"aggs\": [\n    {\n      \"params\": {\n        \"customLabel\": \"Total Item Count\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"count\",\n      \"id\": \"1\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"First Item\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"2\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"Last Item\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"3\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"First Retrieval\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"4\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"Last Retrieval\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"5\",\n      \"enabled\": true\n    }\n  ],\n  \"type\": \"metric\",\n  \"params\": {\n    \"handleNoResults\": true,\n    \"metric\": {\n      \"labels\": {\n        \"show\": true\n      },\n      \"invertColors\": false,\n      \"percentageMode\": false,\n      \"metricColorMode\": \"None\",\n      \"useRanges\": false,\n      \"colorSchema\": \"Green to Red\",\n      \"colorsRange\": [\n        {\n          \"to\": 10000,\n          \"from\": 0\n        }\n      ],\n      \"style\": {\n        \"bgFill\": \"#000\",\n        \"bgColor\": false,\n        \"fontSize\": \"12\",\n        \"labelColor\": false,\n        \"subText\": \"\"\n      }\n    },\n    \"fontSize\": \"12\"\n  }\n}"
             }
         },
         {
