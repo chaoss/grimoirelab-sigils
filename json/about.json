@@ -2,20 +2,20 @@
     "dashboard": {
         "id": "About",
         "value": {
-            "description": "",
+            "description": "About panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
             },
-            "optionsJSON": "{\"darkTheme\":false}",
-            "panelsJSON": "[{\"col\":7,\"id\":\"Help-About\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":4,\"title\":\"About\",\"type\":\"visualization\"},{\"col\":7,\"id\":\"Help-Acknowledgments\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":3,\"title\":\"Acknowledgments\",\"type\":\"visualization\"},{\"col\":1,\"id\":\"Help-UI\",\"panelIndex\":4,\"row\":1,\"size_x\":6,\"size_y\":9,\"title\":\"User Interface\",\"type\":\"visualization\"}]",
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":5,\"i\":\"1\"},\"id\":\"Help-About\",\"title\":\"About\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":5,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"Help-Acknowledgments\",\"title\":\"Acknowledgments\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":8,\"i\":\"4\"},\"id\":\"Help-UI\",\"title\":\"User Interface\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-08-28T11:17:53.518762",
             "timeRestore": false,
             "title": "About",
             "uiStateJSON": "{\"P-1\":{\"title\":\"About\"},\"P-2\":{\"title\":\"Acknowledgments\"},\"P-4\":{\"title\":\"User Interface\"}}",
             "version": 1
         }
     },
-    "index_patterns": [],
     "searches": [],
     "visualizations": [
         {
