@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "00862e30-bbf7-11e8-8aac-ef7fd4d8cbad",
+        "value": {
+            "description": "Jenkins Jobs panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"version\":true,\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"3\",\"gridData\":{\"x\":7,\"y\":0,\"w\":5,\"h\":4,\"i\":\"3\"},\"id\":\"JenkinsResults\",\"title\":\"Results\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":0,\"w\":7,\"h\":2,\"i\":\"8\"},\"id\":\"jenkins_main_numbers\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":7,\"w\":12,\"h\":7,\"i\":\"11\"},\"id\":\"a44d0f70-bbf7-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":0,\"y\":2,\"w\":7,\"h\":2,\"i\":\"13\"},\"id\":\"e0236790-bc12-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":7,\"y\":4,\"w\":5,\"h\":3,\"i\":\"15\"},\"id\":\"bedd3e00-bcab-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Success/Failures in percentage\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Duration Trend\",\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":4,\"w\":7,\"h\":3,\"i\":\"16\"},\"id\":\"f5a4cdb0-bcae-11e8-8aac-ef7fd4d8cbad\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-09-20T08:51:43.590924",
+            "timeRestore": false,
+            "title": "Jenkins Jobs",
+            "uiStateJSON": "{\"P-10\":{\"title\":\"Buids\"},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Export Builds\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"legendOpen\":false}},\"P-13\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Results\"},\"P-4\":{\"title\":\"Nodes\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Builds over time\",\"vis\":{\"legendOpen\":false}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Summary\"},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Active nodes over time\",\"vis\":{\"legendOpen\":false}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "JenkinsResults",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "JenkinsResults",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"SUCCESS\":\"#447EBC\",\"FAILURE\":\"#BF1B00\",\"UNSTABLE\":\"#EF843C\",\"ABORTED\":\"#DEDAF7\"},\"legendOpen\":true}}",
+                "version": 1,
+                "visState": "{\"title\":\"JenkinsResults\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"shareYAxis\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"result\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "jenkins_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jenkins_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"params\": {\"fontSize\": \"12\", \"metric\": {\"style\": {\"labelColor\": false, \"bgColor\": false, \"fontSize\": \"12\", \"subText\": \"\", \"bgFill\": \"#000\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"metricColorMode\": \"None\", \"percentageMode\": false, \"invertColors\": false, \"useRanges\": false, \"labels\": {\"show\": true}}}, \"aggs\": [{\"params\": {\"customLabel\": \"# Builds\"}, \"type\": \"count\", \"id\": \"1\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Jobs\", \"field\": \"job_url\"}, \"type\": \"cardinality\", \"id\": \"4\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"# Nodes\", \"field\": \"builtOn\"}, \"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\"}, {\"params\": {\"customLabel\": \"Build duration (avg, min.)\", \"field\": \"duration_min\"}, \"type\": \"avg\", \"id\": \"3\", \"schema\": \"metric\"}], \"type\": \"metric\", \"title\": \"jenkins_main_numbers\", \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "a44d0f70-bbf7-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "jenkins_jobs",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"# Builds\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Job\",\"field\":\"job_name\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Builds duration (median, min.)\",\"field\":\"duration_min\",\"percents\":[50]},\"schema\":\"metric\",\"type\":\"median\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Builds duration (total, min.)\",\"field\":\"duration_min\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"6\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"6-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"result:SUCCESS\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Success\",\"customMetric\":{\"enabled\":true,\"id\":\"6-metric\",\"params\":{\"customLabel\":\"Success\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"7\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"7-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"-result:SUCCESS\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Failures\",\"customMetric\":{\"enabled\":true,\"id\":\"7-metric\",\"params\":{\"customLabel\":\"Failures\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"jenkins_jobs\",\"type\":\"table\"}"
+            }
+        },
+        {
+            "id": "e0236790-bc12-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "jenkins_evolutionary_jobs",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_evolutionary_jobs\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{},\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Jobs\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Jobs\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\"}],\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"job_name\",\"customLabel\":\"Jobs\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}]}"
+            }
+        },
+        {
+            "id": "bedd3e00-bcab-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "jenkins_percentage_success",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"Failures\":\"#DEDAF7\",\"Success\":\"#9AC48A\"},\"legendOpen\":true}}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_percentage_success\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"percentage\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":\"result:SUCCESS\"},\"label\":\"Success\"},{\"input\":{\"query\":\"-result:SUCCESS\"},\"label\":\"Failures\"}]}}]}"
+            }
+        },
+        {
+            "id": "f5a4cdb0-bcae-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "jenkins_duration_trend",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"jenkins_duration_trend\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q=*, index=jenkins, timefield=grimoire_creation_date, metric=avg:duration_min).label(\\\"Duration\\\"), .es(q=*, index=jenkins, timefield=grimoire_creation_date, metric=avg:duration_min).trend().label(\\\"Trend\\\")\",\"interval\":\"auto\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
