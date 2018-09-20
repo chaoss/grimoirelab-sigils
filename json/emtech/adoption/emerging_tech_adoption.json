@@ -1,0 +1,149 @@
+{
+    "dashboard": {
+        "id": "EmTech-Adoption",
+        "value": {
+            "description": "Emerging Tech Adoption Panel developed by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":2,\"i\":\"1\"},\"id\":\"rust_friends_title\",\"title\":\"-\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":2,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"C_rust_emergingtech_friends_table\",\"title\":\"Friends' Logos\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":2,\"w\":2,\"h\":3,\"i\":\"3\"},\"id\":\"C_rust_emergingtech_logos_added\",\"title\":\"Logos Added\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":2,\"y\":2,\"w\":4,\"h\":3,\"i\":\"4\"},\"id\":\"C_rust_emergingtech_logos_evolution\",\"title\":\"Logo Additions\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":5,\"w\":12,\"h\":2,\"i\":\"5\"},\"id\":\"crates_title\",\"title\":\"-\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":7,\"w\":5,\"h\":2,\"i\":\"6\"},\"id\":\"crates_main_numbers\",\"title\":\"Crates\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":9,\"w\":5,\"h\":2,\"i\":\"7\"},\"id\":\"crates_evolutionary\",\"title\":\"Creation of New Crates\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":5,\"y\":7,\"w\":7,\"h\":4,\"i\":\"8\"},\"id\":\"crates_downloads\",\"title\":\"The Most Downloaded Crates\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-09-20T14:52:02.516823",
+            "timeRestore": false,
+            "title": "Emerging Tech Adoption",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"-\"},\"P-2\":{\"title\":\"Friends' Logos\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Logos Added\"},\"P-4\":{\"title\":\"Logo Additions\",\"vis\":{\"legendOpen\":false}},\"P-5\":{\"title\":\"-\"},\"P-6\":{\"title\":\"Crates\"},\"P-7\":{\"title\":\"Creation of New Crates\"},\"P-8\":{\"title\":\"The Most Downloaded Crates\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "C_rust_emergingtech_friends",
+            "value": {
+                "columns": [
+                    "title"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"github_issues\",\"key\":\"github_repo\",\"negate\":false,\"value\":\"rust-lang/rust-www\"},\"query\":{\"match\":{\"github_repo\":{\"query\":\"rust-lang/rust-www\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"github_issues\",\"key\":\"query\",\"negate\":false,\"value\":\"{\\\"wildcard\\\":{\\\"title\\\":\\\"*New Website Logo*\\\"}}\"},\"query\":{\"wildcard\":{\"title\":\"*New Website Logo*\"}}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "C_rust_emergingtech_friends",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "rust_friends_title",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "rust_friends_title",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"rust_friends_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### [Friends of Rust](https://www.rust-lang.org/en-US/friends.html)\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_friends_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_friends_table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Addition Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Friends' Logo\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_logos_added",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_logos_added",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"type\": \"metric\", \"params\": {\"fontSize\": 60, \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": 60}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Logos added\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_logos_evolution",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_logos_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "crates_title",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "crates_title",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"crates_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### [Crates](https://crates.io/)\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "crates_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"crates-emergintech\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "crates_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"crates_main_numbers\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"handleNoResults\": true, \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"1\", \"enabled\": true, \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Created Crates\"}}, {\"id\": \"2\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"downloads\", \"customLabel\": \"# Total Downloads\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "crates_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"crates-emergintech\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "crates_evolutionary",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"crates_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Crates\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "crates_downloads",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"crates-emergintech\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "crates_downloads",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"crates_downloads\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"downloads\",\"customLabel\":\"Downloads\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Crates\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Date Created\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"updated_at\",\"customLabel\":\"Last Version Update\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
