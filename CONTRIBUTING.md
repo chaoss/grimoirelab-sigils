@@ -77,8 +77,16 @@ In order to export the panel you have been working on, once Kidash is installed,
 (kidash-venv)$> kidash --split-index-patterns -e <elasticsearch_endpoint> --dashboard <dashboard_name> --export <file_name>.json
 ```
 Two important details:
-* community panels in JSON format _do not contain index patterns_, this is why the option `--split-index-patterns` is needed
-* `<dashboard_name>` is the name of the panel in Kibiter, substituting spaces by dashes, e.g. a panel
-named `Git Timing` in Kibiter should be written as `Git-Timing` in kidash command line.
+* Index patterns are stored in separate files, this is why the option `--split-index-patterns` is needed.
+* Only add your index pattern(s) to your PR in case you modified something related to that index pattern (fields format, scripted fields) or if you are using a totally new index pattern.
+* `<dashboard_name>` is the identifier of the panel in Kibiter, that is the string you see after last slash of the URL when the panel is loaded in your browser.E.g.:
+```
+https://xxxxx.biterg.io/app/kibana#/dashboard/Gerrit?_g=(refreshInterval...  
+
+identifier --> Gerrit
+
+https://xxxxx.biterg.io/app/kibana#/dashboard/2e968fe0-b1bb-11e8-8aac-ef7fd4d8cbad?_g=(refreshInterval:(display:....
+identifier ---> 2e968fe0-b1bb-11e8-8aac-ef7fd4d8cbad
+```
 
 After the execution of kidash you should get two files, one with the index pattern and one with the panel itself. The second one is the one ready to be shared with the community!
