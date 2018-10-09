@@ -5,21 +5,21 @@
             "description": "Community Structure by Project panel by Bitergia (aka Onion Analysis by Project)",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[{\"query\":{\"match\":{\"data_source\":{\"query\":\"git\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"},\"meta\":{\"value\":\"git\",\"key\":\"data_source\",\"negate\":false,\"disabled\":false,\"alias\":\"Data Source Git Commits\",\"index\":\"all_onion\",\"type\":\"phrase\",\"params\":{\"query\":\"git\",\"type\":\"phrase\"}}},{\"query\":{\"match\":{\"data_source\":{\"query\":\"github-issues\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"},\"meta\":{\"value\":\"github-issues\",\"key\":\"data_source\",\"negate\":false,\"disabled\":true,\"alias\":\"Data Source GitHub Issues\",\"index\":\"all_onion\",\"type\":\"phrase\",\"params\":{\"query\":\"github-issues\",\"type\":\"phrase\"}}},{\"query\":{\"match\":{\"data_source\":{\"query\":\"github-prs\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"},\"meta\":{\"value\":\"github-prs\",\"key\":\"data_source\",\"negate\":false,\"disabled\":true,\"alias\":\"Data Source GitHub PRs\",\"index\":\"all_onion\",\"type\":\"phrase\",\"params\":{\"query\":\"github-prs\",\"type\":\"phrase\"}}}],\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"all_onion\",\"controlledBy\":\"1538041633158\",\"type\":\"phrase\",\"key\":\"data_source\",\"value\":\"git\",\"params\":{\"query\":\"git\",\"type\":\"phrase\"},\"disabled\":false,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"data_source\":{\"query\":\"git\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
-            "panelsJSON": "[{\"panelIndex\":\"9\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"9\"},\"title\":\"Contributions by Project\",\"type\":\"visualization\",\"id\":\"all_onion_projects_by_contributions\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":7,\"w\":12,\"h\":5,\"i\":\"12\"},\"title\":\"Developers by Project\",\"type\":\"visualization\",\"id\":\"all_onion_developers_active_quarters_by_project\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":4,\"i\":\"13\"},\"title\":\"Projects\",\"type\":\"visualization\",\"id\":\"all_onion_projects\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":3,\"i\":\"15\"},\"title\":\"Community Structure\",\"type\":\"visualization\",\"id\":\"all_onion_projects_community_bar_chart\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":3,\"w\":6,\"h\":4,\"i\":\"16\"},\"title\":\"Contributions\",\"type\":\"visualization\",\"id\":\"all_onion_projects_contributions\",\"version\":\"6.1.0-3\"}]",
+            "panelsJSON": "[{\"panelIndex\":\"9\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"9\"},\"title\":\"Contributions by Project\",\"type\":\"visualization\",\"id\":\"all_onion_projects_by_contributions\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":8,\"w\":12,\"h\":6,\"i\":\"12\"},\"title\":\"Developers by Project\",\"type\":\"visualization\",\"id\":\"all_onion_developers_active_quarters_by_project\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":5,\"i\":\"13\"},\"title\":\"Projects\",\"type\":\"visualization\",\"id\":\"all_onion_projects\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":3,\"i\":\"15\"},\"title\":\"Community Structure\",\"type\":\"visualization\",\"id\":\"all_onion_projects_community_bar_chart\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":5,\"w\":6,\"h\":3,\"i\":\"16\"},\"title\":\"Contributions\",\"type\":\"visualization\",\"id\":\"all_onion_projects_contributions\",\"version\":\"6.1.0-3\"},{\"title\":\"Data Source\",\"panelIndex\":\"17\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"17\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"77316e20-c23a-11e8-8aac-ef7fd4d8cbad\"}]",
             "refreshInterval": {
                 "display": "Off",
                 "pause": false,
                 "value": 0
             },
-            "release_date": "2018-07-02T18:11:06.498512",
+            "release_date": "2018-10-08T14:45:24.177871",
             "timeFrom": "now-5y",
             "timeRestore": true,
             "timeTo": "now",
             "title": "Community Structure by Project",
-            "uiStateJSON": "{\"P-12\":{\"title\":\"Developers by Project\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"title\":\"Community Structure\"},\"P-16\":{\"vis\":{\"legendOpen\":false},\"title\":\"Contributions\"},\"P-9\":{\"title\":\"Contributions by Project\",\"vis\":{\"legendOpen\":true}}}",
+            "uiStateJSON": "{\"P-12\":{\"title\":\"Developers by Project\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-13\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-15\":{\"title\":\"Community Structure\"},\"P-16\":{\"vis\":{\"legendOpen\":false},\"title\":\"Contributions\"},\"P-9\":{\"title\":\"Contributions by Project\",\"vis\":{\"legendOpen\":true}}}",
             "version": 1
         }
     },
@@ -88,6 +88,19 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"all_onion_projects_contributions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"contributions\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"quarter\",\"size\":2000,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "77316e20-c23a-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "onion_multi_select",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"onion_multi_select\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1538041633158\",\"indexPattern\":\"all_onion\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
             }
         }
     ]

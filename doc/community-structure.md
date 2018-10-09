@@ -32,17 +32,21 @@ some basic features you will find in all community structure panels.
 ### General Details
 * Wherever you see **`_Global_`** as organization or project name, it means
     results computed for all organizations or projects together. We will
-    see more on this within eachs use case.
+    see more on this within each use case.
 * As data is pre-computed for performance reasons, **it is important to
     follow use cases described here to get meaningful results**. Use cases
     will guide you to the answers you can get from the panels.
-* All panels have **filters on top to select the data source**. By default
- Git is activated while the rest are disabled.
+* All panels have **a filter on top to select the data source**. By default
+    Git is selected. These filters can be modified by using Data Source widget
+    placed on first row. Depending on each panel layout it is at the left or
+    right. 
 
+![Global View](assets/images/onion_filters_on_top_2.png)
+###### Figure 1a. Panel filter on top and Data Source widget at the right 
 ![Global View](assets/images/onion_filters_on_top.png)
-###### Figure 1. Panel filters on top
+###### Figure 1b. Panel filter on top and Data Source widget at the left
 
-* **Only one of these data source filters should be active at the same time**. 
+* **Only one of data source filter should be active at the same time**. 
     In Kibana/Kibiter, filters are combined by means of `AND` operators.
     E.g. if we enable Git and GitHub filters, under the hood we get
     an ElasticSearch query like:
@@ -52,6 +56,11 @@ some basic features you will find in all community structure panels.
     Thus, by selecting more than one data source filter at the same time,
     we won't get any result, because data come from one data source or another,
     but not several at the same time.
+* Data Source widget automatically manages this for you, so you just need to
+    select the desired data source in the drop down list and click on
+    `Apply changes`.
+* Data is meaningful only if **one and only one data source** is selected for
+    filtering. 
     
 ### UC1. Onion model for the whole community.
 This use case is covered by **Overall Community Structure** panel.
