@@ -5,16 +5,16 @@
             "description": "Git Demographics panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+                "searchSourceJSON": "{\"filter\": [], \"version\": true, \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true}"
             },
             "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
-            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":5,\"w\":5,\"h\":3,\"i\":\"1\"},\"id\":\"git_demographics_attracted_developers\",\"title\":\"Attracted Developers\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":2,\"w\":5,\"h\":3,\"i\":\"2\"},\"id\":\"git_demographics_leaving_developers\",\"title\":\"Last Commit Developers\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":5,\"y\":5,\"w\":7,\"h\":3,\"i\":\"3\"},\"id\":\"git_demographics_newcomers\",\"title\":\"Last Attracted Developers\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":5,\"y\":2,\"w\":7,\"h\":3,\"i\":\"4\"},\"id\":\"git_demographics_people_leaving_community\",\"title\":\"Developers getting Inactive\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":5,\"y\":0,\"w\":7,\"h\":2,\"i\":\"5\"},\"id\":\"git_evolution_commits\",\"title\":\"Commits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":0,\"w\":5,\"h\":2,\"i\":\"6\"},\"id\":\"git_main_numbers\",\"title\":\"Git Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":8,\"w\":8,\"h\":6,\"i\":\"7\"},\"id\":\"git_top_repositories\",\"title\":\"Top Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":8,\"y\":8,\"w\":4,\"h\":6,\"i\":\"8\"},\"id\":\"git_top_authors\",\"title\":\"Top Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":8,\"y\":14,\"w\":4,\"h\":4,\"i\":\"10\"},\"id\":\"git_top_projects\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":14,\"w\":8,\"h\":4,\"i\":\"11\"},\"version\":\"6.1.0-3\",\"type\":\"visualization\",\"id\":\"5d1f1a70-6fea-11e8-a4e7-6b1c6a13c58d\"}]",
+            "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 5, \"w\": 5, \"h\": 3, \"i\": \"1\"}, \"id\": \"git_demographics_attracted_developers\", \"title\": \"Attracted Developers\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 5, \"h\": 3, \"i\": \"2\"}, \"id\": \"git_demographics_leaving_developers\", \"title\": \"Last Commit Developers\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 5, \"y\": 5, \"w\": 7, \"h\": 3, \"i\": \"3\"}, \"id\": \"git_demographics_newcomers\", \"title\": \"Last Attracted Developers\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 5, \"y\": 2, \"w\": 7, \"h\": 3, \"i\": \"4\"}, \"id\": \"git_demographics_people_leaving_community\", \"title\": \"Developers getting Inactive\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"5\", \"gridData\": {\"x\": 5, \"y\": 0, \"w\": 7, \"h\": 2, \"i\": \"5\"}, \"id\": \"git_evolution_commits\", \"title\": \"Commits\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"6\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 5, \"h\": 2, \"i\": \"6\"}, \"id\": \"git_main_numbers\", \"title\": \"Git Summary\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"7\", \"gridData\": {\"x\": 0, \"y\": 8, \"w\": 8, \"h\": 6, \"i\": \"7\"}, \"id\": \"git_top_repositories\", \"title\": \"Top Repositories\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"8\", \"gridData\": {\"x\": 8, \"y\": 8, \"w\": 4, \"h\": 6, \"i\": \"8\"}, \"id\": \"git_top_authors\", \"title\": \"Top Authors\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"10\", \"gridData\": {\"x\": 8, \"y\": 14, \"w\": 4, \"h\": 4, \"i\": \"10\"}, \"id\": \"git_top_projects\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"11\", \"gridData\": {\"x\": 0, \"y\": 14, \"w\": 8, \"h\": 4, \"i\": \"11\"}, \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"id\": \"5d1f1a70-6fea-11e8-a4e7-6b1c6a13c58d\"}]",
             "refreshInterval": {
                 "display": "Off",
                 "pause": false,
                 "value": 0
             },
-            "release_date": "2018-07-02T17:57:28.410995",
+            "release_date": "2018-10-29T11:21:15.104425",
             "timeFrom": "now-10y",
             "timeRestore": true,
             "timeTo": "now",
@@ -30,12 +30,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "git_demographics_attracted_developers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Attracted Developers\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"author_min_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Attracted Developers\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"demography_min_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -43,12 +43,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "git_demographics_leaving_developers",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"git_demographics_leaving_developers\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Developers Getting Inactive\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"author_max_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"git_demographics_leaving_developers\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Developers Getting Inactive\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"demography_max_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -56,12 +56,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "git_demographics_newcomers",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"git_demographics_newcomers\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"author_min_date\",\"customLabel\":\"First Commit Date\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"git_demographics_newcomers\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"demography_min_date\",\"customLabel\":\"First Commit Date\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -69,12 +69,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
                 },
                 "title": "git_demographics_people_leaving_community",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"git_demographics_people_leaving_community\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"author_max_date\",\"customLabel\":\"Last Commit Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_max_date\",\"ranges\":[{\"from\":\"now-12M\",\"to\":\"now-6M\"}],\"customLabel\":\"Period of getting inactive (last commit 6 months ago)\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}],\"listeners\":{}}"
+                "visState": "{\"title\":\"git_demographics_people_leaving_community\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"demography_max_date\",\"customLabel\":\"Last Commit Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"bucket\",\"params\":{\"field\":\"demography_max_date\",\"ranges\":[{\"from\":\"now-12M\",\"to\":\"now-6M\"}],\"customLabel\":\"Period of getting inactive (last commit 6 months ago)\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}],\"listeners\":{}}"
             }
         },
         {
@@ -147,7 +147,7 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                    "searchSourceJSON": "{\"index\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
                 },
                 "title": "git_demographics_organizations_table",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
