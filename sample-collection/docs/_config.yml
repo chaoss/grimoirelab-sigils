@@ -1,0 +1,6 @@
+author: Bitergia
+title: My Brand New Panels
+
+collections:
+  panels:
+    output:true
