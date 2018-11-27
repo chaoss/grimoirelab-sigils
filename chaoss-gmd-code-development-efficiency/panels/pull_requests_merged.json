@@ -1,0 +1,109 @@
+{
+    "dashboard": {
+        "id": "a7b3fd70-ef16-11e8-9be6-c962f0cee9ae",
+        "value": {
+            "description": "",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"*\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"author bot\",\"disabled\":false,\"index\":\"git\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":1,\"x\":3,\"y\":0},\"id\":\"9b596310-f242-11e8-b20d-0598f2c48f21\",\"panelIndex\":\"2\",\"title\":\"Big Numbers\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":5,\"x\":4,\"y\":0},\"id\":\"ac92c2b0-f243-11e8-b20d-0598f2c48f21\",\"panelIndex\":\"3\",\"title\":\"Evolution\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":6,\"i\":\"4\",\"w\":3,\"x\":9,\"y\":0},\"id\":\"a202a900-f257-11e8-b20d-0598f2c48f21\",\"panelIndex\":\"4\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":3,\"i\":\"5\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"73e7b910-f258-11e8-b20d-0598f2c48f21\",\"panelIndex\":\"5\",\"title\":\"GitHub Pull Requests Merged\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":3,\"i\":\"6\",\"w\":9,\"x\":0,\"y\":3},\"id\":\"5cbc8530-f259-11e8-b20d-0598f2c48f21\",\"panelIndex\":\"6\",\"title\":\"GitHub Pull Requests Merged\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+            "release_date": "2018-11-27T16:05:19.243829",
+            "timeRestore": false,
+            "title": "Pull Requests Merged",
+            "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "5bf81b30-f242-11e8-b20d-0598f2c48f21",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"title:Merge* OR files:0\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "git_merges_search",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "9b596310-f242-11e8-b20d-0598f2c48f21",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "5bf81b30-f242-11e8-b20d-0598f2c48f21",
+                "title": "chaoss_gmd_git_pull_requests_merged_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_main_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"customLabel\":\"Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Authors\"}}]}"
+            }
+        },
+        {
+            "id": "ac92c2b0-f243-11e8-b20d-0598f2c48f21",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_git_pull_requests_merged_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, q=\\\"title:Merge* OR files:0\\\", timefield=grimoire_creation_date).bars().color(#94c3af).label(\\\"Pull Requests Merged\\\"),\\n\\n.es(index=git, q=\\\"title:Merge* OR files:0\\\", timefield=grimoire_creation_date).trend().color(#ffb745).label(\\\"Trend\\\")\",\"interval\":\"auto\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "a202a900-f257-11e8-b20d-0598f2c48f21",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "savedSearchId": "5bf81b30-f242-11e8-b20d-0598f2c48f21",
+                "title": "chaoss_gmd_git_pull_requests_merged_repositories",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_repositories\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"customLabel\":\"Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":500000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Authors\"}}]}"
+            }
+        },
+        {
+            "id": "73e7b910-f258-11e8-b20d-0598f2c48f21",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_pull_requests_merged_filters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_pull_requests_merged_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1543332151603\",\"indexPattern\":\"git\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1543332192643\",\"indexPattern\":\"git\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "5cbc8530-f259-11e8-b20d-0598f2c48f21",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_git_pull_requests_merged_doc",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on **merged** GitHub Pull Requests.\\n\\n**Commits**: a filter is applied to get only those that we consider as \\\"merges\\\". We consider a commit as a \\\"merge\\\" if satisfies at least one of the following conditions:\\n* Number of files is 0.\\n* Commit message starts with \\\"Merge\\\"\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
