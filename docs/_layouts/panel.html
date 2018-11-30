@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{site.author}}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  </head>
+  <body>
+    <a href="/index.html">Index</a>
+    <h1>{{page.title}}</h1>
+    {{ content }}
+   </body>
+</html>
