@@ -14,14 +14,14 @@
     <h1>{{site.title}} by {{site.author}}</h1>
     <ul>
       {% for panel in site.panels %}
-      <li><a href="{{panel.url}}">{{panel.name}}</a>: {{panel.description}}</li>
+      <li><a href="{{ site.baseurl }}{{panel.url}}">{{panel.name}}</a>: {{panel.description}}</li>
       {% endfor %}
     </ul>
 
     <h1>Another Collection by {{site.author}}</h1>
     <ul>
       {% for panel in site.sample-collection %}
-      <li><a href="{{panel.url}}">{{panel.name}}</a>: {{panel.description}}</li>
+      <li><a href="{{ site.baseurl }}{{panel.url}}">{{panel.name}}</a>: {{panel.description}}</li>
       {% endfor %}
     </ul>
   </body>

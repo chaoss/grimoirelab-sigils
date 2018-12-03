@@ -32,4 +32,4 @@ Brief description of what used fields should contain:
 - `metadata__timestamp`: date in which a given item was indexed in Elastic Search.
 
 Example:
-An item that was created in git on 2014-10-21 and it is recovered and indexed today in our system will have 2014-10-21 stored in `metadata__updated_on` and today's date in `metadata__timestamp`. Here we show simplified dates, as you can see in Data Status Panel we are storing dates with milliseconds precission.
+An item that was created in git on 2014-10-21 and it is recovered and indexed today in our system will have 2014-10-21 stored in `metadata__updated_on` and today's date in `metadata__timestamp`. Here we show simplified dates, as you can see in Data Status Panel we are storing dates with milliseconds precision.

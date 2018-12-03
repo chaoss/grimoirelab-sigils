@@ -7,7 +7,7 @@ layout: panel
 This panel focuses on the attraction of contributors and those leaving the community.
 There are two main bar charts where you can filter the information.
 
-![Demographics](/assets/images/demographics.png)
+![Demographics]({{ site.baseurl }}/assets/images/demographics.png)
 ###### Figure 1. Demographics Panel
 
 By default, Git is selected in `Data Source` widget. That means we are looking

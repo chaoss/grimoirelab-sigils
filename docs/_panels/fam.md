@@ -41,7 +41,7 @@ document:
 
 This information is found in the 'Demographics' panel of the dashboard.
 
-![Demographics panel - Attracted developers](/assets/images/attracted-developers.jpg)
+![Demographics panel - Attracted developers]({{ site.baseurl }}/assets/images/attracted-developers.jpg)
 
 This image is calculated as aggregation of the developers doing their
 first commit in a period of time.
@@ -53,7 +53,7 @@ three peaks of attraction of developers.
 We can see as example that those take place at the beginning of
 2016, fall 2016 and early 2017.
 
-![Attracted developers peaks](/assets/images/attracted-developers-circles.jpg)
+![Attracted developers peaks]({{ site.baseurl }}/assets/images/attracted-developers-circles.jpg)
 
 What happened in this community during those months to have such
 peaks of activity? There are usually different reasons for this,
@@ -83,7 +83,7 @@ can be selected in the same way.]
 The summary of the activity and community of a project is provided by the Overview panel.
 This panel is usually the entry panel for any dashboard.
 
-![Overview panel](/assets/images/overview.jpg)
+![Overview panel]({{ site.baseurl }}/assets/images/overview.jpg)
 
 
 
@@ -91,7 +91,7 @@ There are several ways of accessing the information for the last seven days, but
 be reach by updating the timefilter at the top right corner of the dashboard. Once a new
 timeframe of activity is selected, all of the widgets in the panel will be upated.
 
-![Selection of the last 7 days](/assets/images/overview-timeframe-seven-days-circles.jpg)
+![Selection of the last 7 days]({{ site.baseurl }}/assets/images/overview-timeframe-seven-days-circles.jpg)
 
 
 ## Lag solving issues
@@ -114,7 +114,7 @@ related to process has been opened. This is useful for tracking
 old remaining issues still opened that either should be closed
 or should be moved forward.
 
-![Lag open issues](/assets/images/lag-closing-new-issues.jpg)
+![Lag open issues]({{ site.baseurl }}/assets/images/lag-closing-new-issues.jpg)
 
 
 In this image there are three circles at the top chart and three
@@ -136,7 +136,7 @@ the issues still open.
 Detecting those peaks of accumulated time at the bottom chart helps
 to understand where part of the development bottlenecks are found.
 
-![Lag open issues](/assets/images/lag-closing-new-issues-circles.jpg)
+![Lag open issues]({{ site.baseurl }}/assets/images/lag-closing-new-issues-circles.jpg)
 
 ## Process KPIs
 
@@ -145,7 +145,7 @@ several performance panels related to the software development
 process.
 
 
-![Performance panel](/assets/images/kpi-performance.jpg)
+![Performance panel]({{ site.baseurl }}/assets/images/kpi-performance.jpg)
 
 ### Open issues KPI
 
@@ -155,7 +155,7 @@ in any data source that analyzes process. All of the panels with the
 keyword 'backlog' has this value. The higher this value is, the higher
 the number of remaining issues waiting to be closed.
 
-![Open Issues KPI](/assets/images/lag-closing-tickets-kpis-open-issues.jpg)
+![Open Issues KPI]({{ site.baseurl }}/assets/images/lag-closing-tickets-kpis-open-issues.jpg)
 
 
 ### Average time open for issues KPI
@@ -168,7 +168,7 @@ keyword 'backlog' has this value. The higher this value is, the higher
 the time it is taking to close issues or any other process such as
 code review processes.
 
-![Average Time Open Issues KPI](/assets/images/lag-closing-tickets-kpis-average-time.jpg)
+![Average Time Open Issues KPI]({{ site.baseurl }}/assets/images/lag-closing-tickets-kpis-average-time.jpg)
 
 
 ### Accumulated lag for open issues KPI
@@ -180,4 +180,4 @@ keyword 'backlog' has this value. The higher this value is, the higher
 the accumulated time or lag is and the worse.
 
 
-![Accumulated Time Open Issues KPI](/assets/images/lag-closing-tickets-kpis-accumulated-time.jpg)
+![Accumulated Time Open Issues KPI]({{ site.baseurl }}/assets/images/lag-closing-tickets-kpis-accumulated-time.jpg)

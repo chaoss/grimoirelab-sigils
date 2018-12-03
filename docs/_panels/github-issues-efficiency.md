@@ -11,7 +11,7 @@ This panel offers a view of efficiency closing issues based on two metrics:
   process, in this case, an issue. Shown in average in this panel.
 * **Time to Close**: time from issue creation to the moment in which it's closed.
 
-![GitHub Issues Efficiency](/assets/images/github_issues_efficiency.png)
+![GitHub Issues Efficiency]({{ site.baseurl }}/assets/images/github_issues_efficiency.png)
 ###### Figure 1.GitHub Issues Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
