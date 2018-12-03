@@ -1,5 +1,5 @@
 ---
-name: GitHub Pull Requests Efficiency
+title: GitHub Pull Requests Efficiency
 description: efficiency closing Pull Requests.
 layout: panel
 ---

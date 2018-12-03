@@ -1,5 +1,5 @@
 ---
-name: Git
+title: Git
 description: metrics focused on Git commits.
 layout: panel
 ---

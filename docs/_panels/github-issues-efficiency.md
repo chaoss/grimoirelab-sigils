@@ -1,5 +1,5 @@
 ---
-name: GitHub Issues Efficiency
+title: GitHub Issues Efficiency
 description: efficiency closing issues on GitHub.
 layout: panel
 ---

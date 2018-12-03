@@ -1,5 +1,5 @@
 ---
-name: Data Status
+title: Data Status
 description: data freshness information.
 layout: panel
 ---

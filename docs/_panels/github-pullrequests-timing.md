@@ -1,5 +1,5 @@
 ---
-name: GitHub Pull Requests Timing
+title: GitHub Pull Requests Timing
 description: metrics focused on how long pull requests remain open.
 layout: panel
 ---

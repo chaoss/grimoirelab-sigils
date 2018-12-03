@@ -1,5 +1,5 @@
 ---
-name: GitHub Issues
+title: GitHub Issues
 description: activity and community metrics focused on Issues.
 layout: panel
 ---

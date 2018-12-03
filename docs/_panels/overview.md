@@ -1,5 +1,5 @@
 ---
-name: Overview
+title: Overview
 description: summary of basic metrics on all analyzed sources.
 layout: panel
 ---

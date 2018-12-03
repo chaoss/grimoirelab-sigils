@@ -1,5 +1,5 @@
 ---
-name: Mediawiki
+title: Mediawiki
 description: contains metrics focused on reviews, including editions, revisions and editors.
 layout: panel
 ---

@@ -1,5 +1,5 @@
 ---
-name: README
+title: README
 description: quick start information.
 layout: panel
 ---

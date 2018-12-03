@@ -1,5 +1,5 @@
 ---
-name: GitHub Issues Timing
+title: GitHub Issues Timing
 description: metrics focused on how long issues remain open.
 layout: panel
 ---

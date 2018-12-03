@@ -1,5 +1,5 @@
 ---
-name: Gerrit Review Efficiency
+title: Gerrit Review Efficiency
 description: efficiency closing reviews in Gerrit.
 layout: panel
 ---

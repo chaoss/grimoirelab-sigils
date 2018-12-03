@@ -1,5 +1,5 @@
 ---
-name: Metrics
+title: Metrics
 description: summary of most common metrics across panels.
 layout: panel
 ---
