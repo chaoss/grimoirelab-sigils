@@ -1,5 +1,5 @@
 ---
-name: GitHub Pull Requests
+title: GitHub Pull Requests
 description: activity and community metrics focused on Pull Requests.
 layout: panel
 ---

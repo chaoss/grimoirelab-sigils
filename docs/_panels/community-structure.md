@@ -1,5 +1,5 @@
 ---
-name: Community Structure
+title: Community Structure
 description: find who are your core, regular and casual contributors.
 layout: panel
 ---

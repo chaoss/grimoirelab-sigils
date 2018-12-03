@@ -1,5 +1,5 @@
 ---
-name: Git Demographics
+title: Git Demographics
 description: attraction and retention of developers specifically for Git.
 layout: panel
 ---

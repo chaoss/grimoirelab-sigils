@@ -1,5 +1,5 @@
 ---
-name: Frequently Asked Metrics (FAM)
+title: Frequently Asked Metrics (FAM)
 description: where can I find a given metric I'm interested in?
 layout: panel
 ---

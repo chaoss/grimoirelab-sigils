@@ -1,5 +1,5 @@
 ---
-name: Dashboard Customization
+title: Dashboard Customization
 description: customer access to Kibiter dashboards
 layout: panel
 ---

@@ -1,5 +1,5 @@
 ---
-name: GitHub Backlog
+title: GitHub Backlog
 description: focused on pending (open) tasks.
 layout: panel
 ---

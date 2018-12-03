@@ -1,5 +1,5 @@
 ---
-name: Demographics
+title: Demographics
 description: attraction and retention of contributors.
 layout: panel
 ---
