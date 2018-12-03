@@ -1,4 +1,8 @@
-# Data Status Panel
+---
+title: Data Status
+description: data freshness information.
+layout: panel
+---
 
 This panel shows information about data freshness. Looking at this panel we can check whether retrieval processes are working as expected. Basically, for each data source, you'll find information about how many items we are currently storing in our system, dates of oldest and newest items, when we start indexing them in Elastic Search and when the most recent item was indexed.
 
@@ -7,7 +11,7 @@ To show this information, in this panel we'll find a widget (also called visuali
 - **Total item count**: total number of items retrieved for the data source.
 - **First Item**: oldest item creation date in data source, i.e. oldest creation date retrieved from the corresponding data source that we have stored.
 - **Last Item**: newest item creation date in data source, i.e. most recent creation date retrieved from the corresponding data source that we have stored.
-- **First Retrieval**: oldest item retrieval date, i.e., for the corresponding data source, date in which the first (oldest) item was stored in our system. 
+- **First Retrieval**: oldest item retrieval date, i.e., for the corresponding data source, date in which the first (oldest) item was stored in our system.
 - **Last Retrieval**: newest item retrieval date, i.e., for the corresponding data source, date in which the last (most recent) item was stored in our system.
 
 ## Index Fields Used
@@ -27,5 +31,5 @@ Brief description of what used fields should contain:
 - `metadata__updated_on`: date of creation or last update of an item in its data source (git, gerrit, etc.)
 - `metadata__timestamp`: date in which a given item was indexed in Elastic Search.
 
-Example: 
-An item that was created in git on 2014-10-21 and it is recovered and indexed today in our system will have 2014-10-21 stored in `metadata__updated_on` and today's date in `metadata__timestamp`. Here we show simplified dates, as you can see in Data Status Panel we are storing dates with milliseconds precission.
+Example:
+An item that was created in git on 2014-10-21 and it is recovered and indexed today in our system will have 2014-10-21 stored in `metadata__updated_on` and today's date in `metadata__timestamp`. Here we show simplified dates, as you can see in Data Status Panel we are storing dates with milliseconds precision.

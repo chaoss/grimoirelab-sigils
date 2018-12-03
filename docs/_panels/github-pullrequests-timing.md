@@ -1,4 +1,8 @@
-#### GitHub Pull Requests Timing
+---
+title: GitHub Pull Requests Timing
+description: metrics focused on how long pull requests remain open.
+layout: panel
+---
 
 These panels contain information about evolution of Pull Requests in time.
 Although it shows submitters, repositories and domains as previous GitHub panels,

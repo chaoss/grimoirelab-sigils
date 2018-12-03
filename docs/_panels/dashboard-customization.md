@@ -1,3 +1,9 @@
+---
+title: Dashboard Customization
+description: customer access to Kibiter dashboards
+layout: panel
+---
+
 ## Customer access to Kibiter dashboards
 
 This document details how customers should behave when editing Kibiter-based dashboards maintained by Bitergia, to avoid interfering with the maintenance and upgrading activities that will be performed on them.

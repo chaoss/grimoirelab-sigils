@@ -1,9 +1,13 @@
-# Demographics
+---
+title: Demographics
+description: attraction and retention of contributors.
+layout: panel
+---
 
 This panel focuses on the attraction of contributors and those leaving the community.
 There are two main bar charts where you can filter the information.
 
-![Demographics](assets/images/demographics.png)
+![Demographics]({{ site.baseurl }}/assets/images/demographics.png)
 ###### Figure 1. Demographics Panel
 
 By default, Git is selected in `Data Source` widget. That means we are looking
@@ -12,12 +16,12 @@ from the list of available data sources (it depends on the demography study to
 be activated in grimoirelab-sirmordred). Notice a filter named `data_source:''`
 is added on top. This is the way Kibana manages filtering and you don't need to
 manually modify it, Kibana does it for you when you modify your selection in
-`Data Source` widget. 
+`Data Source` widget.
 
 The first bar chart, on the top, displays the amount of contributors that made
-their first contribution in that period of time. 
+their first contribution in that period of time.
 
-The bar chart below groups developers by their last detected contribution. 
+The bar chart below groups developers by their last detected contribution.
 Thus, the first bar chart provides information about how the community is
 attracting contributors while the second bar chart provides information about
 the evolution of the people leaving the community.
@@ -41,7 +45,7 @@ project**.
 As the information is pre-computed per developer and not done on-demand by
 Kibana, this forces to use this approach.
 
-In addition to this, information about contributors that recently left the 
+In addition to this, information about contributors that recently left the
 community is based on not having any contribution during the last six months
 (so sent their last contribution six months ago). The selection of six months
 as the period to define a contributor as inactive is based on our own experience
@@ -49,7 +53,7 @@ measuring open source communities. Each community may have their own
 peculiarities that may vary this approach, but in general this has been a good
 indicator up to now.
 
-## Known limitations & issues 
+## Known limitations & issues
 
 *  In order to count things we would need a common field that uniquely identifies
 each contribution. E.g. in Git we could use `hash`, but it is not present in other

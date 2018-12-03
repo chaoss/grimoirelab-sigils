@@ -1,8 +1,13 @@
+---
+title: README
+description: quick start information.
+layout: panel
+---
 ## Dashboard Panels
 
 [Please visit our FAM - Frequently Asked Metrics for a list of the usually
 requested metrics. This document provides links and images to how to calculate
-those : [Frenquent Asked Metrics](fam.md)]
+those : [Frequently Asked Metrics](fam.md)]
 
 When you come to Bitergias' dashboard you will find data from several data sources
 organized in several panels. Depending on the amount of information or on
@@ -20,7 +25,6 @@ The following is a list with the several panels available in the dashboard. All 
 * Data Source: **Any**
   * [Overview](overview.md): summary of the available data sources about **activity** and **community**.
   * [Data Status](data-status.md): summary of the data freshness available in the dashboard.
-  * [Last Contributors](last-contributors.md): last contributions available for each data source.
 * Data Source: **Apache**
 * Data Source: **Askbot**
 * Data Source: **Bugzilla**

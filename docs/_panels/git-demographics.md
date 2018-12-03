@@ -1,4 +1,8 @@
-# Git Demographics
+---
+title: Git Demographics
+description: attraction and retention of developers specifically for Git.
+layout: panel
+---
 
 This panel focuses on the attraction of developers and those leaving the community.
 There are two main charts where you can filter the information and these are

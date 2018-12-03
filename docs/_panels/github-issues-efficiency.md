@@ -1,13 +1,17 @@
-# GitHub Issues Efficiency
+---
+title: GitHub Issues Efficiency
+description: efficiency closing issues on GitHub.
+layout: panel
+---
 
 This panel offers a view of efficiency closing issues based on two metrics:
 * **BMI**: Backlog Management Index, defined as the number of closed issues divided
   by the number of open ones in a given period of time. Measures efficiency closing issues.
-* **Lead Time**:  the time between the initiation and completion of a production 
+* **Lead Time**:  the time between the initiation and completion of a production
   process, in this case, an issue. Shown in average in this panel.
 * **Time to Close**: time from issue creation to the moment in which it's closed.
-  
-![GitHub Issues Efficiency](assets/images/github_issues_efficiency.png)
+
+![GitHub Issues Efficiency]({{ site.baseurl }}/assets/images/github_issues_efficiency.png)
 ###### Figure 1.GitHub Issues Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner

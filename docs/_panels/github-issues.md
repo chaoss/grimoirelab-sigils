@@ -1,4 +1,8 @@
-# GitHub Issues
+---
+title: GitHub Issues
+description: activity and community metrics focused on Issues.
+layout: panel
+---
 
 GitHub Issues panels show information related to how community evolves in terms
 of submitters, domains and activity.

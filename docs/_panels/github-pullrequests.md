@@ -1,4 +1,8 @@
-# GitHub Pull Requests
+---
+title: GitHub Pull Requests
+description: activity and community metrics focused on Pull Requests.
+layout: panel
+---
 
 GitHub Pull Requests panels show information related to how community evolves in terms
 of submitters, domains and activity.

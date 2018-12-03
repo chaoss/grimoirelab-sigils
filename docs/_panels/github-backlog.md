@@ -1,4 +1,8 @@
-# GitHub Backlog
+---
+title: GitHub Backlog
+description: focused on pending (open) tasks.
+layout: panel
+---
 
 This panel focuses on pending tasks, that is, those Issues and Pull Requests
 that remain open (note that here we work with data retrieved in the moment of

@@ -1,4 +1,8 @@
-# Community Structure
+---
+title: Community Structure
+description: find who are your core, regular and casual contributors.
+layout: panel
+---
 
 ## Introduction
 In order to analyze community structure we rely on Onion model. All panels
@@ -6,7 +10,7 @@ related to community structure are based on [the onion study included in
 grimoirelab-elk project.](https://github.com/chaoss/grimoirelab-elk/blob/master/doc/studies.md#onion-study)
 
 Thus, structure is provided by dividing contributors into three main groups:
- * **Core**: those contributing **80% of the activity**. These are the most 
+ * **Core**: those contributing **80% of the activity**. These are the most
  committed developers, and those on which the project relies most.
  * **Regular**: those contributing the next **15% of the activity**. These are
   people committed to the project, and most likely to become part of the
@@ -16,11 +20,11 @@ Thus, structure is provided by dividing contributors into three main groups:
   people in the periphery of the project. However, they are important because
   it is very likely that future core and regular contributors will come out
   from this group.
-  
+
 In most models of FOSS development, where there are employees, they usually
 start directly in regular or core, depending on their positions, experience
 and responsibilities in the company. On the other hand, non-employees
-generally start as a part of the casual group. Some of them will become 
+generally start as a part of the casual group. Some of them will become
 regular and maybe core contributors as they gain experience about the project.
 
 ## Use Cases
@@ -39,20 +43,20 @@ some basic features you will find in all community structure panels.
 * All panels have **a filter on top to select the data source**. By default
     Git is selected. These filters can be modified by using Data Source widget
     placed on first row. Depending on each panel layout it is at the left or
-    right. 
+    right.
 
-![Global View](assets/images/onion_filters_on_top_2.png)
-###### Figure 1a. Panel filter on top and Data Source widget at the right 
-![Global View](assets/images/onion_filters_on_top.png)
+![Global View]({{ site.baseurl }}/assets/images/onion_filters_on_top_2.png)
+###### Figure 1a. Panel filter on top and Data Source widget at the right
+![Global View]({{ site.baseurl }}/assets/images/onion_filters_on_top.png)
 ###### Figure 1b. Panel filter on top and Data Source widget at the left
 
-* **Only one of data source filter should be active at the same time**. 
+* **Only one of data source filter should be active at the same time**.
     In Kibana/Kibiter, filters are combined by means of `AND` operators.
     E.g. if we enable Git and GitHub filters, under the hood we get
     an ElasticSearch query like:
     ```
     data_source=git AND data_source=github
-    ``` 
+    ```
     Thus, by selecting more than one data source filter at the same time,
     we won't get any result, because data come from one data source or another,
     but not several at the same time.
@@ -60,12 +64,12 @@ some basic features you will find in all community structure panels.
     select the desired data source in the drop down list and click on
     `Apply changes`.
 * Data is meaningful only if **one and only one data source** is selected for
-    filtering. 
-    
+    filtering.
+
 ### UC1. Onion model for the whole community.
 This use case is covered by **Overall Community Structure** panel.
 
-![Overall Onion Panel](assets/images/onion_overall.png)
+![Overall Onion Panel]({{ site.baseurl }}/assets/images/onion_overall.png)
 ###### Figure 2. Community Structure Panel
 
 This panel shows the results of computing onion for all contributions in
@@ -77,7 +81,7 @@ evolution of contributions in such a way one can compare both to better
 understand how groups evolve.
 
 On the right hand side there is a table showing number of people and
-contributions by role for the selected time frame. 
+contributions by role for the selected time frame.
 
 The bottom of the panel contains a table of authors, showing the total
 number of contributions of eaxh one in the selected time frame together
@@ -87,18 +91,18 @@ with the number of quarters that author has been active in the community.
 ### UC2. Onion model for a given organization.
 This use case is covered by **Community Structure by Organization** panel.
 
-![Onion by Organization Panel](assets/images/onion_orgs.png)
+![Onion by Organization Panel]({{ site.baseurl }}/assets/images/onion_orgs.png)
 ###### Figure 3. Community Structure by Organization Panel
 
 This panel splits data into organizations. **Onion model is computed individually
 for each organization**.
 
 In order to have meaningful data, we need to select the organization we
-are interested in from the donut chart on top right corner or from 
+are interested in from the donut chart on top right corner or from
 organizations table just below. Then, a new filter will appear on top, next
 to the other ones, and we'll get the data we need in the panel.
 
-![Organization Filter](assets/images/onion_filtered_by_org.png)
+![Organization Filter]({{ site.baseurl }}/assets/images/onion_filtered_by_org.png)
 ###### Figure 4. Apllying a filter on Community Structure by Organization Panel
 
 
@@ -117,18 +121,18 @@ organizations together, see
 ### UC3. Onion model for a given project.
 This use case is covered by **Community Structure by Project** panel.
 
-![Onion by Organization Panel](assets/images/onion_projects.png)
+![Onion by Organization Panel]({{ site.baseurl }}/assets/images/onion_projects.png)
 ###### Figure 5. Community Structure by Project Panel
 
 This panel splits data into projects. **Onion model is computed individually
 for each project**.
 
 In order to have meaningful data, we need to select the project we
-are interested in from the donut chart on top right corner or from 
+are interested in from the donut chart on top right corner or from
 projects table just below. Then, a new filter will appear on top, next
 to the other ones, and we'll get the data we need in the panel.
 
-![Organization Filter](assets/images/onion_filtered_by_project.png)
+![Organization Filter]({{ site.baseurl }}/assets/images/onion_filtered_by_project.png)
 ###### Figure 6. Apllying a filter on Community Structure by Project Panel
 
 
@@ -146,13 +150,13 @@ projects together, see
 
 ## Implementation Details
 To better understand how panels are built we need to understand how Onion metric
-is calculated. We use different levels of granularity to compute onion for 
+is calculated. We use different levels of granularity to compute onion for
 different groups of contributors:
 
 * **Globally**: takes all data into account, i.e., computes onion for each and
     every contribution, no matter what organization or project authors
     belongs to. It is denoted as `_Global_` in panels to avoid collisions
-    with existing organization or project names. 
+    with existing organization or project names.
 * **By organization**: splits data by organization and compute onion for each
     one.
 * **By project**: same as above, but splits data by project.
@@ -166,5 +170,3 @@ Each item in our current onion indices contains fields specified at
 
 More details on study configuration can be found at [the onion study documentation included in
 grimoirelab-elk project](https://github.com/chaoss/grimoirelab-elk/blob/master/doc/studies.md#onion-study).
-
-

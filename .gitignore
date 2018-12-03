@@ -8,3 +8,9 @@ build
 .pydevproject
 .settings
 
+# Ruby
+Gemfile*
+
+# Jekyll
+.sass-cache
+_site

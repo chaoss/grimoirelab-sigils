@@ -1,4 +1,8 @@
-# Git
+---
+title: Git
+description: metrics focused on Git commits.
+layout: panel
+---
 
 The Git panel shows information about commits in git repositories. For each
 commit, git stores meta-information about who authored the commit (author),

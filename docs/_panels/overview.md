@@ -1,4 +1,8 @@
-# Overview
+---
+title: Overview
+description: summary of basic metrics on all analyzed sources.
+layout: panel
+---
 
 The Overview panel shows a summary of the repositories analyzed.
 Most of the visualizations found in it can be explored in more detail in

@@ -1,0 +1,24 @@
+author: Bitergia
+title: Sigils Panels
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+baseurl: /grimoirelab-sigils
+
+collections:
+  panels:
+    output: true
+  sample-collection:
+    output: true
+
+# Add relative links for markdown files
+# (they'll work as they did in GitHub MD)
+plugins:
+  - jekyll-relative-links
+
+# Enable relative links for collections
+relative_links:
+  enabled:     true
+  collections: true
