@@ -11,7 +11,7 @@ This panel offers a view of efficiency closing reviews based on two metrics:
   process, in this case, a review. Shown in average in this panel.
 * **Time to Merge**: time from review creation to the moment in which it's merged or abandoned.
 
-![GitHub Review Efficiency](/assets/images/gerrit_review_efficiency.png)
+![GitHub Review Efficiency]({{ site.baseurl }}/assets/images/gerrit_review_efficiency.png)
 ###### Figure 1.Gerrit Review Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner

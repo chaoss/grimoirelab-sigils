@@ -7,6 +7,8 @@ title: Sigils Panels
 markdown: kramdown
 permalink: pretty
 
+baseurl: /grimoirelab-sigils
+
 collections:
   panels:
     output: true

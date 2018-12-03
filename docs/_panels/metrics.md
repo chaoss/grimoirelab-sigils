@@ -19,13 +19,13 @@ If the item can have different status (e.g. open or close) or the people that ge
 in a countable number of categories (organizations, email addresses, etc.), total activity can be shown as a
 pie or doughnut chart.
 
-![Organizations pie chart](/assets/images/organizations-pie.jpg)
+![Organizations pie chart]({{ site.baseurl }}/assets/images/organizations-pie.jpg)
 
 **Evolution over time**
 
 For the selected period of time, it's the number of events occurring over time by periods of time (days, weeks, months, years).
 
-![Single item evolution](/assets/images/activity-single-evolution.jpg)
+![Single item evolution]({{ site.baseurl }}/assets/images/activity-single-evolution.jpg)
 
 If events can have different status, the chart will show the number of events occurring over time by periods of time by status.
 For example: issues openned and issues closed.
@@ -33,7 +33,7 @@ For example: issues openned and issues closed.
 If events can have different origin (organization, repository, etc.), the evolution over time can be represented
 by colored bar chart.
 
-![Issues by status](/assets/images/issues-by-status.jpg)
+![Issues by status]({{ site.baseurl }}/assets/images/issues-by-status.jpg)
 
 **Activity tables**
 

@@ -45,9 +45,9 @@ some basic features you will find in all community structure panels.
     placed on first row. Depending on each panel layout it is at the left or
     right.
 
-![Global View](/assets/images/onion_filters_on_top_2.png)
+![Global View]({{ site.baseurl }}/assets/images/onion_filters_on_top_2.png)
 ###### Figure 1a. Panel filter on top and Data Source widget at the right
-![Global View](/assets/images/onion_filters_on_top.png)
+![Global View]({{ site.baseurl }}/assets/images/onion_filters_on_top.png)
 ###### Figure 1b. Panel filter on top and Data Source widget at the left
 
 * **Only one of data source filter should be active at the same time**.
@@ -69,7 +69,7 @@ some basic features you will find in all community structure panels.
 ### UC1. Onion model for the whole community.
 This use case is covered by **Overall Community Structure** panel.
 
-![Overall Onion Panel](/assets/images/onion_overall.png)
+![Overall Onion Panel]({{ site.baseurl }}/assets/images/onion_overall.png)
 ###### Figure 2. Community Structure Panel
 
 This panel shows the results of computing onion for all contributions in
@@ -91,7 +91,7 @@ with the number of quarters that author has been active in the community.
 ### UC2. Onion model for a given organization.
 This use case is covered by **Community Structure by Organization** panel.
 
-![Onion by Organization Panel](/assets/images/onion_orgs.png)
+![Onion by Organization Panel]({{ site.baseurl }}/assets/images/onion_orgs.png)
 ###### Figure 3. Community Structure by Organization Panel
 
 This panel splits data into organizations. **Onion model is computed individually
@@ -102,7 +102,7 @@ are interested in from the donut chart on top right corner or from
 organizations table just below. Then, a new filter will appear on top, next
 to the other ones, and we'll get the data we need in the panel.
 
-![Organization Filter](/assets/images/onion_filtered_by_org.png)
+![Organization Filter]({{ site.baseurl }}/assets/images/onion_filtered_by_org.png)
 ###### Figure 4. Apllying a filter on Community Structure by Organization Panel
 
 
@@ -121,7 +121,7 @@ organizations together, see
 ### UC3. Onion model for a given project.
 This use case is covered by **Community Structure by Project** panel.
 
-![Onion by Organization Panel](/assets/images/onion_projects.png)
+![Onion by Organization Panel]({{ site.baseurl }}/assets/images/onion_projects.png)
 ###### Figure 5. Community Structure by Project Panel
 
 This panel splits data into projects. **Onion model is computed individually
@@ -132,7 +132,7 @@ are interested in from the donut chart on top right corner or from
 projects table just below. Then, a new filter will appear on top, next
 to the other ones, and we'll get the data we need in the panel.
 
-![Organization Filter](/assets/images/onion_filtered_by_project.png)
+![Organization Filter]({{ site.baseurl }}/assets/images/onion_filtered_by_project.png)
 ###### Figure 6. Apllying a filter on Community Structure by Project Panel
 
 
