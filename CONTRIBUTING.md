@@ -26,10 +26,10 @@ widgets related to organizations in an existing gerrit timing panel we would use
 
 ### Importing panels
 
-If you don't have Kidash tool installed, please see [#installing-kidash](installing Kidash section).
+If you don't have Kidash tool installed, please see [installing Kidash section](#installing-kidash).
 
 As starting point, you will probably want to import some existing panels into your
-Kibana environment. Choose the panel you want to work with, for instance from [panels/json](json)
+Kibana environment. Choose the panel you want to work with, for instance from [json](json)
 folder and import it to your Kibana/Kibiter using a line like the following:
 ```
 (kidash-venv)$> kidash -e <elasticsearch_endpoint> --import <file_name>.json
@@ -48,7 +48,7 @@ For instance, to import Git panel to an empty environment:
 
 * Panel should work in Kibana/Kibiter 6.1.0.
 * Follow naming conventions explained in our [README.md](README.md)
-* Export the panel using Kidash tool. If you don't have Kidash tool installed, please see [#installing-kidash](installing Kidash section).
+* Export the panel using Kidash tool. If you don't have Kidash tool installed, please see [installing Kidash section](#installing-kidash).
 
 In order to **export the panel you have been working on**, once Kidash is installed, you can use a line like the one below:
 ```
