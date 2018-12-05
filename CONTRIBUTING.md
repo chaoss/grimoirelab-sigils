@@ -98,9 +98,17 @@ What you may need to modify is:
 ---
 title: Community Structure
 description: find who are your core, regular and casual contributors.
+author: John Doe
+created_at: 2018-12-05 (YYYY-MM-DD)
+grimoirelab_version: 0.2.1
 layout: panel
 ---
+MD document should contain at least:
+* What does it display (list of metrics)?
+* Why was it built and what is it used for?
+* Screenshot.
 ```
+
 * `assets/images/`: the place to store screenshots, if needed.
 
 For more details on how to build local links, please see the existing files. For instance, this would be a link to an image:
