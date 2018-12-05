@@ -10,6 +10,8 @@ baseurl: /grimoirelab-sigils
 collections:
   panels:
     output: true
+  chaoss-gmd-cde:
+    output: true
   sample-collection:
     output: true
 
