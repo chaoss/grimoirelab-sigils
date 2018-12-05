@@ -18,6 +18,13 @@
       {% endfor %}
     </ul>
 
+    <h1>CHAOSS GMD Code Development Efficiency by {{site.author}}</h1>
+    <ul>
+      {% for panel in site.chaoss-gmd-cde %}
+      <li><a href="{{ site.baseurl }}{{panel.url}}">{{panel.title}}</a>: {{panel.description}}</li>
+      {% endfor %}
+    </ul>
+
     <h1>Another Collection by {{site.author}}</h1>
     <ul>
       {% for panel in site.sample-collection %}
