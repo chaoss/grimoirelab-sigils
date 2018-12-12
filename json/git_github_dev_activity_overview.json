@@ -1,0 +1,152 @@
+{
+    "dashboard": {
+        "id": "3f4bf390-b29a-11e8-bbe5-d99a6d067cbc",
+        "value": {
+            "description": "Quick overview of some basic activity, community and efficiency metrics for Github (commits, issues and pull requests)",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"GitHub Issues\",\"disabled\":true,\"index\":\"github_issues\",\"key\":\"pull_request\",\"negate\":false,\"params\":{\"query\":false,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"false\"},\"query\":{\"match\":{\"pull_request\":{\"query\":false,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"GitHub Pull Req.\",\"disabled\":true,\"index\":\"github_issues\",\"key\":\"pull_request\",\"negate\":false,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"1\"},\"id\":\"12f6e170-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Commits\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":2,\"y\":6,\"w\":5,\"h\":3,\"i\":\"2\"},\"id\":\"87d65070-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Avg. Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":7,\"y\":6,\"w\":5,\"h\":3,\"i\":\"3\"},\"id\":\"5e6f8f30-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Avg. 1st Response_Rate\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":3,\"i\":\"4\"},\"id\":\"4006ad80-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"BMI (closed / opened)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"5\"},\"id\":\"git_main_numbers\",\"title\":\"Git Main Numbers\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":3,\"w\":2,\"h\":3,\"i\":\"6\"},\"id\":\"81a6e020-b4ce-11e8-bbe5-d99a6d067cbc\",\"title\":\"Issues & PR's Main Numbers\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":6,\"w\":2,\"h\":3,\"i\":\"7\"},\"id\":\"7cd03200-bb35-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Avg. Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":2,\"y\":0,\"w\":4,\"h\":3,\"i\":\"8\"},\"id\":\"2c144b30-bc16-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":2,\"y\":3,\"w\":4,\"h\":3,\"i\":\"9\"},\"id\":\"472f1350-bc16-11e8-8aac-ef7fd4d8cbad\",\"title\":\"GitHub Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Github Development Activity Overview\",\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":9,\"w\":12,\"h\":3,\"i\":\"10\"},\"id\":\"fb067e10-fe22-11e8-8aac-ef7fd4d8cbad\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-12-12T15:55:57.363364",
+            "timeRestore": false,
+            "title": "GitHub Development Activity Overview",
+            "uiStateJSON": "{\"P-7\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "12f6e170-b299-11e8-bbe5-d99a6d067cbc",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_git_commits",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_git_commits\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date).label('Commits'), .es(index=git, timefield=grimoire_creation_date).trend().label('Commits trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "87d65070-b299-11e8-bbe5-d99a6d067cbc",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_github_issues_avg_lead_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_issues_avg_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time'), .es(index=github_issues, timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "5e6f8f30-b299-11e8-bbe5-d99a6d067cbc",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_github_issues_avg_response_rate",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_issues_avg_response_rate\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=updated_at, metric=avg:time_to_first_attention).label('Avg. Response Rate'), .es(index=github_issues, timefield=updated_at, metric=avg:time_to_first_attention).trend().label('Avg. Response Rate trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "4006ad80-b299-11e8-bbe5-d99a6d067cbc",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_github_issues_bmi",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_issues_bmi\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=closed_at).divide(.es(index=github_issues, timefield=grimoire_creation_date)).label('BMI'), .es(index=github_issues, timefield=closed_at).divide(.es(index=github_issues, timefield=grimoire_creation_date)).trend().label('BMI trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "git_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "git_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"cardinality\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 10000}\", \"customLabel\": \"# Commits\", \"field\": \"hash\"}}, {\"type\": \"cardinality\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 3000}\", \"customLabel\": \"# Authors\", \"field\": \"author_uuid\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"json\": \"{\\\"precision_threshold\\\": 3000}\", \"customLabel\": \"# Repositories\", \"field\": \"repo_name\"}}], \"title\": \"git_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "81a6e020-b4ce-11e8-bbe5-d99a6d067cbc",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "C_github_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_main_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Items\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Authors\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"Repositories\"}}]}"
+            }
+        },
+        {
+            "id": "7cd03200-bb35-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "C_github_avg_lead_time",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Avg. Lead Time\",\"field\":\"time_to_close_days\"},\"schema\":\"metric\",\"type\":\"avg\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"days\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false},\"isDisplayWarning\":false,\"type\":\"gauge\"},\"title\":\"C_github_avg_lead_time\",\"type\":\"gauge\"}"
+            }
+        },
+        {
+            "id": "2c144b30-bc16-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_git_authors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_git_authors\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).label('Authors'), .es(index=git, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).trend().label('Authors trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "472f1350-bc16-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_github_authors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_authors\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).label('Authors'), .es(index=github_issues, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).trend().label('Authors trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "fb067e10-fe22-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "C_github_development_activity_overview_doc",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"C_github_development_activity_overview_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel provides a quick overview of some Github activity parameters.\\n\\nThere are a set of deactivated filters that can be applied:\\n- Github Issues: to see metrics for just GitHub Issues\\n- Github Pull-Requests: to see metrics for just GitHub Pull-Requests\\n\\nCommits\\n------------\\n**Git Main Numbers**. For the selected period of time:\\n* Number of commits\\n* Number of active commit authors\\n* Number of active repositories\\n\\n**Authors**: active git commits authors by month and trend\\n\\n**Commits**: commits by month and trend\\n\\nIssues & Pull-Requests\\n------------------------------\\n**Issues & Pull-Requests Main Numbers**. For the selected period of time:\\n* Number of issues & pull requests (items)\\n* Number of active submitters\\n* Number of active repositories\\n\\n**Submitters**: active issues & pull requests submitters\\n\\n**BMI (closed / open)**: ratio between closed items and opened items by month and trend\\n\\n**Avg. Lead Time** (gauge): average time (days) to close items. The following thresholds are considered:\\n* 0 - 7 days: green\\n* 7 - 30 days: yellow\\n* 30 - 90 days: red\\n\\n**Avg. Lead Time** (line chart): average time (days) to close items by month and trend\\n\\n**Avg. 1st Response Time**: average time (days) to get the 1st response (comment) to an item from some different than the submitter, by month and trend\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
