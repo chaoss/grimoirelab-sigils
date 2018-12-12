@@ -1,0 +1,74 @@
+{
+    "dashboard": {
+        "id": "999ea330-f7b2-11e8-865a-85ff6467a442",
+        "value": {
+            "description": "Level of activity in git repositories, by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"1\"},\"id\":\"cf0714e0-f7b1-11e8-865a-85ff6467a442\",\"title\":\"Active git repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":5,\"i\":\"2\"},\"id\":\"7e6c62d0-f7af-11e8-865a-85ff6467a442\",\"title\":\"Top 25 repositories by commits\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":7,\"i\":\"3\"},\"id\":\"bb734a80-f7b0-11e8-865a-85ff6467a442\",\"title\":\"Top 25 repositories by authors\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":7,\"w\":12,\"h\":4,\"i\":\"4\"},\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"9ec5a2f0-f898-11e8-865a-85ff6467a442\",\"title\":\"Lifecycle\"}]",
+            "release_date": "2018-12-05T14:26:27.161585",
+            "timeRestore": false,
+            "title": "Lifecycle",
+            "uiStateJSON": "{\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 400\":\"rgb(247,252,245)\",\"400 - 800\":\"rgb(233,247,228)\",\"800 - 1,200\":\"rgb(211,238,205)\",\"1,200 - 1,600\":\"rgb(184,227,177)\",\"1,600 - 2,000\":\"rgb(152,213,148)\",\"2,000 - 2,400\":\"rgb(116,196,118)\",\"2,400 - 2,800\":\"rgb(75,176,98)\",\"2,800 - 3,200\":\"rgb(47,152,79)\",\"3,200 - 3,600\":\"rgb(21,127,59)\",\"3,600 - 4,000\":\"rgb(0,100,40)\"}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 33\":\"rgb(247,252,245)\",\"33 - 65\":\"rgb(199,233,192)\",\"65 - 98\":\"rgb(116,196,118)\",\"98 - 130\":\"rgb(35,139,69)\"}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "cf0714e0-f7b1-11e8-865a-85ff6467a442",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "git_active_repos",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"git_active_repos\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date, metric=cardinality:repo_name).bars(width=10).label('Active repos'), .es(index=git, timefield=grimoire_creation_date, metric=cardinality:repo_name).trend().label('Active repos trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "7e6c62d0-f7af-11e8-865a-85ff6467a442",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "git_top_25_repos_activity_heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 400\":\"rgb(247,252,245)\",\"400 - 800\":\"rgb(233,247,228)\",\"800 - 1,200\":\"rgb(211,238,205)\",\"1,200 - 1,600\":\"rgb(184,227,177)\",\"1,600 - 2,000\":\"rgb(152,213,148)\",\"2,000 - 2,400\":\"rgb(116,196,118)\",\"2,400 - 2,800\":\"rgb(75,176,98)\",\"2,800 - 3,200\":\"rgb(47,152,79)\",\"3,200 - 3,600\":\"rgb(21,127,59)\",\"3,600 - 4,000\":\"rgb(0,100,40)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"git_top_25_repos_activity_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"repo_name\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Date (month)\"}}]}"
+            }
+        },
+        {
+            "id": "bb734a80-f7b0-11e8-865a-85ff6467a442",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "git_top_25_repos_authors_heatmap",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 33\":\"rgb(247,252,245)\",\"33 - 65\":\"rgb(199,233,192)\",\"65 - 98\":\"rgb(116,196,118)\",\"98 - 130\":\"rgb(35,139,69)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"git_top_25_repos_authors_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"repo_name\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Date (month)\"}}]}"
+            }
+        },
+        {
+            "id": "9ec5a2f0-f898-11e8-865a-85ff6467a442",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "git_lifecycle_markdown",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"git_lifecycle_markdown\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel provides a quick view of the lifecycle of the top 25 git repositories by activity and authors for a given period of time.\\n\\n## Definition\\n\\n**Active**: at least 1 commit per month\\n\\n## Charts\\n\\n* Evolution of the number of active repositories during selected period of time, and its trend\\n* Top 25 git repositories by number of commits for selected period of time, showing level of activity by month\\n* Top 25 git repositories by number of *active* authors for selected period of time, showing level of active authors by month\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
