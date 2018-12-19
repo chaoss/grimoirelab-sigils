@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "38fe7980-f6f2-11e8-8aac-ef7fd4d8cbad",
+        "value": {
+            "description": "Efficiency panel for GitLab Issues by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
+            "panelsJSON": "[{\"title\":\"Efficiency Closing GitLab Issues\",\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":3,\"h\":3,\"i\":\"1\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"8d2c9a40-f6ee-11e8-8aac-ef7fd4d8cbad\"},{\"title\":\"Efficiency Closing GitLab Issues\",\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":6,\"w\":12,\"h\":2,\"i\":\"2\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"c9277e40-f6f1-11e8-8aac-ef7fd4d8cbad\"},{\"title\":\"Time to Close\",\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":3,\"w\":3,\"h\":3,\"i\":\"3\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"cb969460-f6ef-11e8-8aac-ef7fd4d8cbad\"},{\"title\":\"Repositories\",\"panelIndex\":\"4\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":6,\"i\":\"4\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"850e2200-f6f0-11e8-8aac-ef7fd4d8cbad\"},{\"title\":\"BMI\",\"panelIndex\":\"5\",\"gridData\":{\"x\":3,\"y\":0,\"w\":5,\"h\":3,\"i\":\"5\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"36b430d0-f6f1-11e8-8aac-ef7fd4d8cbad\"},{\"title\":\"Lead Time\",\"panelIndex\":\"6\",\"gridData\":{\"x\":3,\"y\":3,\"w\":5,\"h\":3,\"i\":\"6\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"91cd4420-f6f1-11e8-8aac-ef7fd4d8cbad\"}]",
+            "release_date": "2018-12-19T10:21:52.031105",
+            "timeRestore": false,
+            "title": "GitLab Issues Efficiency",
+            "uiStateJSON": "{\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "8d2c9a40-f6ee-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gitlab_orgs_projects_options",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab_orgs_projects_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1543836411285\",\"indexPattern\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1543836458831\",\"indexPattern\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "c9277e40-f6f1-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gitlab_issues_efficiency_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab_issues_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitLab issues.\\n\\n**BMI**: Backlog Management Index, defined as the number of closed issues divided by the number of open ones in a given period of time. Measures efficiency closing issues.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, an issue. Shown in average.\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "cb969460-f6ef-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "gitlab_issues_median_time_to_close_gauge",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab_issues_median_time_to_close_gauge\",\"type\":\"gauge\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false},\"isDisplayWarning\":false,\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"percents\":[50],\"customLabel\":\"Median Time to Close (Days)\"}}]}"
+            }
+        },
+        {
+            "id": "850e2200-f6f0-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitlab_issues_median_time_to_close_by_repo",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab_issues_median_time_to_close_by_repo\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"percents\":[50],\"customLabel\":\"Median Time to Close (days)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Repository\"}}]}"
+            }
+        },
+        {
+            "id": "36b430d0-f6f1-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gitlab_issues_bmi",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\":\"timelion\",\"title\":\"gitlab_issues_bmi\",\"params\":{\"expression\":\".es(index=gitlab, timefield=closed_at).divide(.es(index=gitlab, timefield=grimoire_creation_date)).label('BMI').color(#99af5d),\\n .es(index=gitlab, timefield=closed_at).divide(.es(index=gitlab, timefield=grimoire_creation_date)).movingaverage(8w, 'left').label('BMI Moving Avg. (8 weeks)').color(#c83d32),\\n .es(index=gitlab, timefield=closed_at).divide(.es(index=gitlab, timefield=grimoire_creation_date)).trend().label('BMI trend'),\\n.es(index=gitlab, timefield=closed_at).divide(.es(index=gitlab, timefield=grimoire_creation_date)).aggregate(avg).label('Avg. BMI').color(\\t#e6b740)\",\"interval\":\"1w\"}}"
+            }
+        },
+        {
+            "id": "91cd4420-f6f1-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gitlab_issues_lead_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab_issues_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gitlab, q='state:closed', timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=gitlab, q='state:closed', timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
