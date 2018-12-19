@@ -67,11 +67,11 @@ https://xxxxx.biterg.io/app/kibana#/dashboard/2e968fe0-b1bb-11e8-8aac-ef7fd4d8cb
 identifier ---> 2e968fe0-b1bb-11e8-8aac-ef7fd4d8cbad
 ```
 
-After the execution of kidash you should get at least two files, one per each index pattern used in the panel and one with the panel itself. You should put them under `<collection_name>/` directory.
+After the execution of kidash you should get at least two files, one per each index pattern used in the panel and one with the panel itself. You should put them under `<collection_name>/` directory. Please remind index patterns are required only if you modify them is some way (fields format, scripted fields, new fields added) or if they are new.
 
 ### Adding or updating documentation
 
-If you are adding a new panel or updating an existing one, you will be required to document it. Bug fixes usually don't need documentation updates.
+If you are adding a new panel or updating an existing one, you will be required to document it. Bug fixes usually don't need documentation updates. [Jekyll](https://jekyllrb.com/) is used on top of [GitHub Pages](https://pages.github.com/) to build the web page. For more information on how to configure a local Jekyll instance to work with GitHub Pages see [Jekyll and GitHub Pages section](#jekyll-and-github-pages).
 
 Under `docs/` directory you'll find the following structure:
 ```
@@ -145,7 +145,88 @@ usage: usage: kidash [options]
 kidash: error: --export or --import or --list needed
 ```
 
+## Jekyll and GitHub Pages
 
+To install a local version of Jekyll and test your changes you can follow instructions on [GitHub help pages](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/). Following commands should be enough:
+
+``` 
+sudo gem install bundler
+
+ruby --version
+ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
+```
+
+Then create `Gemfile` to make sure we're using same version as GH Pages and whitelisted plugins:
+```
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll-relative-links'
+```
+Last gem is used to keep markdown relative links working properly without need of modifying them.
+
+And execute:
+```
+bundle install
+```
+
+If you had some dependency problems:
+```
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /tmp/bundler20181212-15181-1is4dcfcommonmarker-0.17.13/gems/commonmarker-0.17.13/ext/commonmarker
+/usr/bin/ruby2.5 -r ./siteconf20181212-15181-1rif9my.rb extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /tmp/bundler20181212-15181-1is4dcfcommonmarker-0.17.13/gems/commonmarker-0.17.13 for inspection.
+Results logged to /tmp/bundler20181212-15181-1is4dcfcommonmarker-0.17.13/extensions/x86_64-linux/2.5.0/commonmarker-0.17.13/gem_make.out
+
+An error occurred while installing commonmarker (0.17.13), and Bundler cannot continue.
+Make sure that `gem install commonmarker -v '0.17.13' --source 'https://rubygems.org/'` succeeds before bundling.
+
+In Gemfile:
+  github-pages was resolved to 193, which depends on
+    jekyll-commonmark-ghpages was resolved to 0.1.5, which depends on
+      jekyll-commonmark was resolved to 1.2.0, which depends on
+        commonmarker
+```
+
+Then you need to install some things:
+```
+sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
+
+sudo gem install commonmarker -v '0.17.13' --source 'https://rubygems.org/'
+
+bundle install
+```
+
+Then we can start a local server to test our changes using following command from `docs` folder:
+```
+bundle exec jekyll serve --watch
+```
+
+As we want to build a project web site, URL looks like: `https://chaoss.github.io/grimoirelab-sigils/index.html`
+
+The problem is `project name` is not added to local links, so they will point to `https://chaoss.github.io/` instead of pointing to `https://chaoss.github.io/grimoirelab-sigils/index.html`. To solve this, add `baseurl` to `_config.yml`:
+```
+baseurl: /grimoirelab-sigils
+```
+
+And then update all local links to use that variable. Some examples:
+```
+<a href="{{ site.baseurl }}{{panel.url}}">{{panel.name}}</a>
+
+![Global View]({{ site.baseurl }}/assets/images/onion_filters_on_top_2.png)
+```
+
+To avoid using `project name` in URLs when testing **local changes**, we can overwrite it from command line when launching our local jekyll server:
+```
+bundle exec jekyll serve --baseurl '' --watch
+```
+
+More info on this at:
+https://github.com/jekyll/jekyll/issues/332
 
 
 
