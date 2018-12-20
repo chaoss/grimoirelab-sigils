@@ -2,6 +2,22 @@
 
 Please follow these guidelines before sending your contribution.
 
+## Recommended panel contents
+
+You are free of create whatever panel you may want. Following recommendations are based on
+our experience and aim at creating simple panels that don't overwhelm users at first glance:
+
+* On each panel, it should be possible to filter mainly by project, and repository.
+  For those that are related with several data sources, it might useful to filter by
+  data source, or have a panel for each data source.
+* No more than 5 widgets, to avoid overwhelming the user.
+* A markdown widget below with some basic explanations about what we are looking at 
+  (panel definition) and a link to documentation page (the one described at 
+  [Adding or updating documentation section](#adding-or-updating-documentation)).
+
+For instance, [GitHub Issues Efficiency panel](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-efficiency/)
+was built following these recommendations.
+
 ## Directory structure
 
 There are two important places in Sigils:
@@ -70,6 +86,8 @@ identifier ---> 2e968fe0-b1bb-11e8-8aac-ef7fd4d8cbad
 After the execution of kidash you should get at least two files, one per each index pattern used in the panel and one with the panel itself. You should put them under `<collection_name>/` directory. Please remind index patterns are required only if you modify them is some way (fields format, scripted fields, new fields added) or if they are new.
 
 ### Adding or updating documentation
+
+**Sigils documentation is publicly available at https://chaoss.github.io/grimoirelab-sigils**
 
 If you are adding a new panel or updating an existing one, you will be required to document it. Bug fixes usually don't need documentation updates. [Jekyll](https://jekyllrb.com/) is used on top of [GitHub Pages](https://pages.github.com/) to build the web page. For more information on how to configure a local Jekyll instance to work with GitHub Pages see [Jekyll and GitHub Pages section](#jekyll-and-github-pages).
 
