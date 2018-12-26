@@ -9,7 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
             "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"1\",\"title\":\"Efficiency Closing GitHub Pull Requests\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":5,\"x\":3,\"y\":0},\"id\":\"f3ef79f0-e1b8-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"2\",\"title\":\"REI\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":5,\"x\":3,\"y\":3},\"id\":\"f89fa240-e1bd-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"3\",\"title\":\"Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"4\",\"w\":3,\"x\":0,\"y\":3},\"id\":\"1d333b20-e1bf-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"4\",\"title\":\"Time to Merge\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"5\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"a204e920-e1d3-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"5\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"6\",\"w\":12,\"x\":0,\"y\":6},\"id\":\"1808d6c0-e1db-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"6\",\"title\":\"Efficiency Closing GitHub Pull Requests\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
-            "release_date": "2018-11-07T14:51:09.685894",
+            "release_date": "2018-12-26T11:04:39.856747",
             "timeRestore": false,
             "title": "GitHub Pull Requests Efficiency",
             "uiStateJSON": "{\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}}}",
@@ -54,7 +54,7 @@
                 "title": "github_pull_requests_lead_time",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_pull_requests_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time').color(#99af5d), \\n\\n.es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+                "visState": "{\"title\":\"github_pull_requests_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
             }
         },
         {
@@ -93,7 +93,7 @@
                 "title": "github_pull_requests_efficiency_help",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_pull_requests_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitHub pull requests.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed pull requests divided by the number of open ones in a given period of time. Measures efficiency closing pull requests.\\n\\n**Lead time**: the time between the initiation and completion of a production process, in this case, a pull request. Shown in average.\"},\"aggs\":[]}"
+                "visState": "{\"title\":\"github_pull_requests_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitHub pull requests.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed pull requests divided by the number of open ones in a given period of time. Measures efficiency closing pull requests.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a pull request. Shown in average.\"},\"aggs\":[]}"
             }
         }
     ]
