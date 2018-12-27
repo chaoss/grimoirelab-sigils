@@ -9,7 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
             "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":3},\"id\":\"9634ae20-e1c2-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"1\",\"title\":\"Time to Merge\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":5,\"x\":3,\"y\":3},\"id\":\"01d59a70-e1bb-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"2\",\"title\":\"Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":5,\"x\":3,\"y\":0},\"id\":\"087d0310-e1b9-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"3\",\"title\":\"Review Efficiency Index\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"4\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"c2cc2c30-e1de-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"4\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"5\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"94f0dd50-e1df-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"5\",\"title\":\"Efficiency Closing Gerrit Reviews\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"6\",\"w\":12,\"x\":0,\"y\":6},\"id\":\"fb622920-e277-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"6\",\"title\":\"Efficiency Closing Gerrit Reviews\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
-            "release_date": "2018-11-07T14:41:11.170647",
+            "release_date": "2018-12-27T10:21:25.472545",
             "timeRestore": false,
             "title": "Gerrit Efficiency",
             "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
@@ -41,7 +41,7 @@
                 "title": "gerrit_lead_time",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"gerrit_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gerrit, q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).label('Avg. Lead Time'), \\n\\n.es(index=gerrit , q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).trend().label('Avg. Lead Time trend')\",\"interval\":\"1w\"},\"aggs\":[]}"
+                "visState": "{\"title\":\"gerrit_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gerrit, q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).label('Avg. Lead Time (days)'), \\n\\n.es(index=gerrit , q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).trend().label('Avg. Lead Time trend')\",\"interval\":\"1w\"},\"aggs\":[]}"
             }
         },
         {
@@ -93,7 +93,7 @@
                 "title": "gerrit_efficiency_help",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"gerrit_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** Gerrit reviews.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed reviews divided by the number of open ones in a given period of time. Measures efficiency closing reviews.\\n\\n**Lead time**: the time between the initiation and completion of a production process, in this case, a review. Shown in average.\"},\"aggs\":[]}"
+                "visState": "{\"aggs\":[],\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** Gerrit reviews.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed reviews divided by the number of open ones in a given period of time. Measures efficiency closing reviews.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a review. Shown in average.\"},\"title\":\"gerrit_efficiency_help\",\"type\":\"markdown\"}"
             }
         }
     ]

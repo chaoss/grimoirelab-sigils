@@ -10,7 +10,7 @@ layout: panel
 This panel offers a view of efficiency closing issues based on three metrics:
 * **BMI**: Backlog Management Index, defined as the number of closed issues divided
 by the number of open ones in a given period of time. Measures efficiency closing issues.
-* **Lead Time**: the time between the initiation and completion of a production
+* **Lead Time**: the time expressed in days between the initiation and completion of a production
 process, in this case, an issue. Shown in average in this panel.
 * **Time to Close**: time from issue creation to the moment in which it's closed.
 
@@ -31,7 +31,7 @@ for values from 7 to 30 days and red from 30 to 90 days. This means we are
 considering a week as a good time to close. This is just a visual reference and
 you can always rely on the number, ignoring this color scheme.
 
-Next to this gauge, **Lead Time** shows the average Time to Close together to its
+Next to this gauge, **Lead Time** shows the average Time to Close expressed in days together to its
 trend. This helps to identify peaks and visualize the global evolution of time
 spent in closing issues.
 
