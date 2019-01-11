@@ -3,7 +3,7 @@ title: Pull Requests Merged
 description: panel focused on the number of Pull Requests merged.
 author: Alberto Pérez García-Plaza
 created_at: 2018-12-05
-grimoirelab_version: 0.32.0
+grimoirelab_version: 0.2.2
 layout: panel
 ---
 
