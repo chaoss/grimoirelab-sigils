@@ -1,7 +1,7 @@
 ---
 title: Dashboard Customization
 description: customer access to Kibiter dashboards
-layout: panel
+layout: default
 ---
 
 ## Customer access to Kibiter dashboards

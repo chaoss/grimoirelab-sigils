@@ -1,5 +1,6 @@
-author: Bitergia
-title: Sigils Panels
+author: CHAOSS
+title: GrimoireLab Sigils
+description: Set of panel collections developed for Grimoirelab KiBiter
 
 # Build settings
 markdown: kramdown
