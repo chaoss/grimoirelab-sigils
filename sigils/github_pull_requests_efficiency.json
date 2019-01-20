@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "9663d5a0-e1dc-11e8-8aac-ef7fd4d8cbad",
+        "value": {
+            "description": "Efficiency panel for GitHub Pull Requests by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"1\",\"title\":\"Efficiency Closing GitHub Pull Requests\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":5,\"x\":3,\"y\":0},\"id\":\"f3ef79f0-e1b8-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"2\",\"title\":\"REI\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":5,\"x\":3,\"y\":3},\"id\":\"f89fa240-e1bd-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"3\",\"title\":\"Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"4\",\"w\":3,\"x\":0,\"y\":3},\"id\":\"1d333b20-e1bf-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"4\",\"title\":\"Time to Merge\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"5\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"a204e920-e1d3-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"5\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"6\",\"w\":12,\"x\":0,\"y\":6},\"id\":\"1808d6c0-e1db-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"6\",\"title\":\"Efficiency Closing GitHub Pull Requests\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-12-26T11:04:39.856747",
+            "timeRestore": false,
+            "title": "GitHub Pull Requests Efficiency",
+            "uiStateJSON": "{\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "github_orgs_projects_options",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_orgs_projects_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1541508831365\",\"indexPattern\":\"github_issues\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1541508809592\",\"indexPattern\":\"github_issues\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "f3ef79f0-e1b8-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "github_pull_requests_rei",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pull_requests_rei\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q='pull_request:true', timefield=closed_at).divide(.es(index=github_issues, q='pull_request:true', timefield=grimoire_creation_date)).label('REI').color(#99af5d),\\n \\n.es(index=github_issues, q='pull_request:true', timefield=closed_at).divide(.es(index=github_issues, q='pull_request:true', timefield=grimoire_creation_date)).movingaverage(8w, 'left').label('REI Moving Avg. (8 weeks)').color(#c83d32),\\n\\n.es(index=github_issues, q='pull_request:true', timefield=closed_at).divide(.es(index=github_issues, q='pull_request:true', timefield=grimoire_creation_date)).trend().label('REI trend'),\\n\\n.es(index=github_issues, q='pull_request:true', timefield=closed_at).divide(.es(index=github_issues, q='pull_request:true', timefield=grimoire_creation_date)).aggregate(avg).label('Avg. REI').color(#e6b740)\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "f89fa240-e1bd-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "github_pull_requests_lead_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pull_requests_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "1d333b20-e1bf-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Pull Requests\",\"type\":\"phrase\",\"key\":\"pull_request\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Closed\",\"type\":\"phrase\",\"key\":\"state\",\"value\":\"closed\",\"params\":{\"query\":\"closed\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"state\":{\"query\":\"closed\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "github_pull_requests_median_time_to_close_gauge",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pull_requests_median_time_to_close_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"percents\":[50],\"customLabel\":\"Median Time to Merge (Days)\"}}]}"
+            }
+        },
+        {
+            "id": "a204e920-e1d3-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Pull Requests\",\"type\":\"phrase\",\"key\":\"pull_request\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Closed\",\"type\":\"phrase\",\"key\":\"state\",\"value\":\"closed\",\"params\":{\"query\":\"closed\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"state\":{\"query\":\"closed\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "github_pull_requests_median_time_to_close_by_repo",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pull_requests_median_time_to_close_by_repo\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"percents\":[50],\"customLabel\":\"Median Time Open (days)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Repository\"}}]}"
+            }
+        },
+        {
+            "id": "1808d6c0-e1db-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "github_pull_requests_efficiency_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_pull_requests_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitHub pull requests.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed pull requests divided by the number of open ones in a given period of time. Measures efficiency closing pull requests.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a pull request. Shown in average.\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}

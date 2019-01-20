@@ -1,0 +1,87 @@
+{
+    "dashboard": {
+        "id": "Google-Hits",
+        "value": {
+            "description": "Google Hits panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\": [], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 7, \"w\": 12, \"h\": 8, \"i\": \"1\"}, \"id\": \"googlehits_avg_hits_evolutionary\", \"title\": \"Hits over time by keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 7, \"y\": 0, \"w\": 5, \"h\": 7, \"i\": \"3\"}, \"id\": \"googlehits_table_keywords\", \"title\": \"Hits by keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 7, \"h\": 2, \"i\": \"4\"}, \"id\": \"googlehits_main_numbers\", \"title\": \"Summary\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"6\", \"gridData\": {\"x\": 0, \"y\": 4, \"w\": 7, \"h\": 3, \"i\": \"6\"}, \"id\": \"googlehits_percentage_by_keyword_evolutionary\", \"title\": \"Hits by Keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"7\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 7, \"h\": 2, \"i\": \"7\"}, \"id\": \"googlehits_total_avg_hits_evolutionary\", \"title\": \"Total Hits Over Time\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+            "release_date": "2018-08-27T15:19:04.140177",
+            "timeRestore": false,
+            "title": "Google Hits",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Hits over time by keyword\"},\"P-3\":{\"title\":\"Hits by keyword\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"title\":\"Summary\"},\"P-6\":{\"title\":\"Hits by Keyword\"},\"P-7\":{\"title\":\"Total Hits Over Time\"}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "googlehits_avg_hits_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "googlehits_avg_hits_evolutionary",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"googlehits_avg_hits_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Hits (average)\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Hits (average)\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\"}],\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\",\"customLabel\":\"Hits (average)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"keywords\",\"size\":7,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"_\",\"row\":true}}]}"
+            }
+        },
+        {
+            "id": "googlehits_table_keywords",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "googlehits_table_keywords",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"googlehits_table_keywords\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\",\"customLabel\":\"Hits (average)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"keywords\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Terms\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "googlehits_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "googlehits_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"googlehits_main_numbers\",\"type\":\"metric\",\"params\":{\"metric\":{\"useRanges\":false,\"invertColors\":false,\"percentageMode\":false,\"labels\":{\"show\":true},\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"to\":10000,\"from\":0}],\"style\":{\"fontSize\":\"12\",\"bgColor\":false,\"bgFill\":\"#000\",\"labelColor\":false,\"subText\":\"\"},\"metricColorMode\":\"None\"},\"handleNoResults\":true,\"fontSize\":\"12\",\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"keywords\",\"customLabel\":\"# Keywords\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\",\"customLabel\":\"Max. Number of Hits to any Keyword\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\",\"customLabel\":\"Min. Number of Hits to any Keyword\"}}]}"
+            }
+        },
+        {
+            "id": "googlehits_percentage_by_keyword_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "googlehits_percentage_by_keyword_evolutionary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"googlehits_percentage_by_keyword_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"percentage\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"keywords\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Keywords\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "googlehits_total_avg_hits_evolutionary",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "googlehits_total_avg_hits_evolutionary",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"googlehits_sum_hits_evolutionary\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}

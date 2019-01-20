@@ -1,0 +1,137 @@
+{
+    "dashboard": {
+        "id": "KIP",
+        "value": {
+            "description": "KIP panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":3,\"i\":\"1\"},\"id\":\"KIP_metrics\",\"title\":\"KIP Messages Metrics\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":5,\"w\":6,\"h\":6,\"i\":\"3\"},\"id\":\"KIP_table\",\"title\":\"Details\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":3,\"w\":6,\"h\":2,\"i\":\"4\"},\"id\":\"KIP_ts\",\"title\":\"Messages\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":3,\"i\":\"7\"},\"id\":\"KPI_status\",\"title\":\"Status\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":6,\"y\":0,\"w\":3,\"h\":3,\"i\":\"8\"},\"id\":\"KIP_org\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":4,\"i\":\"10\"},\"id\":\"kip_organizations_table\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Messages\",\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":11,\"w\":12,\"h\":6,\"i\":\"11\"},\"id\":\"KIP_search\",\"type\":\"search\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":6,\"y\":7,\"w\":6,\"h\":4,\"i\":\"12\"},\"title\":\"Projects\",\"id\":\"c1f68160-ae04-11e8-8771-a349686d998a\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-09-06T09:04:19.809851",
+            "timeRestore": false,
+            "title": "KIP",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"KIP Messages Metrics\"},\"P-10\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-3\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Details\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"},\"config\":{\"searchKeyword\":\"\"}}}},\"P-4\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":true}},\"P-7\":{\"title\":\"Status\",\"vis\":{\"legendOpen\":true}},\"P-8\":{\"title\":\"Organizations\"},\"P-9\":{\"title\":\"Messages\"}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "KIP_search",
+            "value": {
+                "columns": [
+                    "kip_vote",
+                    "kip_binding",
+                    "author_name",
+                    "author_org_name",
+                    "Subject"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "metadata__updated_on",
+                    "desc"
+                ],
+                "title": "KIP_search",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "KIP_metrics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "KIP_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"KIP_metrics\", \"type\": \"metric\", \"params\": {\"fontSize\": \"14\", \"handleNoResults\": true, \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"14\"}}}, \"aggs\": [{\"id\": \"2\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_vote\", \"customLabel\": \"votes\"}}, {\"id\": \"3\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_discuss\", \"customLabel\": \"discussions\"}}, {\"id\": \"4\", \"enabled\": true, \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"kip\", \"customLabel\": \"kips\"}}, {\"id\": \"5\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_binding\", \"customLabel\": \"binding votes\"}}, {\"id\": \"6\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_first_discuss\", \"customLabel\": \"first discuss msgs\"}}, {\"id\": \"10\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_last_discuss\", \"customLabel\": \"last discuss msgs\"}}, {\"id\": \"7\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_first_vote\", \"customLabel\": \"first vote msgs\"}}, {\"id\": \"11\", \"enabled\": true, \"type\": \"sum\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_is_last_vote\", \"customLabel\": \"last vote msgs\"}}, {\"id\": \"8\", \"enabled\": true, \"type\": \"avg\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_voting_time_days\", \"customLabel\": \"voting days avg\"}}, {\"id\": \"9\", \"enabled\": true, \"type\": \"avg\", \"schema\": \"metric\", \"params\": {\"field\": \"kip_discuss_time_days\", \"customLabel\": \"discuss days avg\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "KIP_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "KIP_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"KIP_table\",\"type\":\"table\",\"params\":{\"perPage\":12,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_discuss_time_days\",\"customLabel\":\"Discuss days\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_voting_time_days\",\"customLabel\":\"Voting days\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"kip\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"KIP\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "KIP_ts",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "KIP_ts",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"KIP_ts\",\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"kip_type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "KPI_status",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "KPI_status",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"KPI_status\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"kip\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"kip_status\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "KIP_org",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"\\\"kip:*\\\"\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "KIP_org",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"KIP_org\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "kip_organizations_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "kip_organizations_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"kip_organizations_table\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_discuss_time_days\",\"percents\":[50],\"customLabel\":\"Discuss Days\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_voting_time_days\",\"percents\":[50],\"customLabel\":\"Voting days\"}}]}"
+            }
+        },
+        {
+            "id": "c1f68160-ae04-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "kip_projects_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"kip_projects_table\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_discuss_time_days\",\"percents\":[50],\"customLabel\":\"Discuss Days\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_voting_time_days\",\"percents\":[50],\"customLabel\":\"Voting days\"}}]}"
+            }
+        }
+    ]
+}

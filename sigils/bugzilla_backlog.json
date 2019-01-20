@@ -1,0 +1,154 @@
+{
+    "dashboard": {
+        "id": "Bugzilla-Backlog",
+        "value": {
+            "description": "Bugzilla Backlog panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":8,\"x\":0,\"y\":0},\"id\":\"bugzilla_openissues_statistics\",\"panelIndex\":\"1\",\"title\":\"Open Issues Statistics\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":7,\"i\":\"2\",\"w\":4,\"x\":4,\"y\":8},\"id\":\"bugzilla_openissues_per_project\",\"panelIndex\":\"2\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"3\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"bugzilla_openissues_backlog\",\"panelIndex\":\"3\",\"title\":\"Issues waiting to be closed\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"4\",\"w\":8,\"x\":0,\"y\":2},\"id\":\"bugzilla_backlog\",\"panelIndex\":\"4\",\"title\":\"Backlog\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"5\",\"w\":4,\"x\":8,\"y\":2},\"id\":\"bugzilla_openissues_backlog_accumulated_time\",\"panelIndex\":\"5\",\"title\":\"Accumulated Time (days): Issues waiting to be closed\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":7,\"i\":\"6\",\"w\":4,\"x\":0,\"y\":8},\"id\":\"bugzilla_openissues_submitters\",\"panelIndex\":\"6\",\"title\":\"Backlog Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"7\",\"w\":4,\"x\":8,\"y\":4},\"id\":\"bugzilla_openissues_assignee_orgs\",\"panelIndex\":\"7\",\"title\":\"Assignee Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":7,\"i\":\"8\",\"w\":4,\"x\":8,\"y\":8},\"id\":\"98475120-7e0f-11e8-a4e7-6b1c6a13c58d\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-07-02T19:03:38.969498",
+            "timeRestore": false,
+            "title": "Bugzilla Backlog",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Open Issues Statistics\"},\"P-2\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Issues waiting to be closed\"},\"P-4\":{\"title\":\"Backlog\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Accumulated Time (days): Issues waiting to be closed\",\"vis\":{\"legendOpen\":false}},\"P-6\":{\"title\":\"Backlog Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Assignee Organizations\"},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"status:NEW OR status:UNCONFIRMED OR status:ASSIGNED\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "bugzilla_openissues_statistics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_statistics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"params\": {\"fontSize\": \"12\", \"metric\": {\"metricColorMode\": \"None\", \"labels\": {\"show\": true}, \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"percentageMode\": false, \"style\": {\"fontSize\": \"12\", \"subText\": \"\", \"bgColor\": false, \"bgFill\": \"#000\", \"labelColor\": false}}}, \"type\": \"metric\", \"aggs\": [{\"schema\": \"metric\", \"id\": \"1\", \"params\": {\"customLabel\": \"Open Issues\"}, \"type\": \"count\"}, {\"schema\": \"metric\", \"id\": \"2\", \"params\": {\"customLabel\": \"Accumulated Open Days\", \"field\": \"timeopen_days\"}, \"type\": \"sum\"}, {\"schema\": \"metric\", \"id\": \"3\", \"params\": {\"customLabel\": \"Avg. Time Open Days per Issue\", \"field\": \"timeopen_days\"}, \"type\": \"avg\"}]}"
+            }
+        },
+        {
+            "id": "bugzilla_openissues_per_project",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_per_project",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"bugzilla_openissues_per_project\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Time Open (Days)\"}}]}"
+            }
+        },
+        {
+            "id": "bugzilla_openissues_backlog",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_backlog",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Time\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Status\",\"field\":\"status\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"group\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"title\":\"New Visualization\",\"type\":\"histogram\"}"
+            }
+        },
+        {
+            "id": "bugzilla_backlog",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_backlog",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"bugzilla_backlog\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"main_description\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Title\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"URL\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"comments\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Comments\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"changes\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Updates\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Open Date\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Days Open\"}}]}"
+            }
+        },
+        {
+            "id": "bugzilla_openissues_backlog_accumulated_time",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_backlog_accumulated_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"bugzilla_openissues_backlog\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Acc. Days Open\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "bugzilla_openissues_submitters",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_submitters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Issues\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Open Days\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "bugzilla_openissues_assignee_orgs",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_assignee_orgs",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"bugzilla_openissues_assignee_orgs\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Assignee\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "98475120-7e0f-11e8-a4e7-6b1c6a13c58d",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+                "title": "bugzilla_openissues_per_organization",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"bugzilla_openissues_per_organization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Avg. Time Open (Days)\"}}]}"
+            }
+        }
+    ]
+}

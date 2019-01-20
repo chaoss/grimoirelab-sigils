@@ -1,0 +1,154 @@
+{
+    "dashboard": {
+        "id": "Confluence",
+        "value": {
+            "description": "Confluence Overview panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"highlightAll\": true, \"filter\": [], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\", \"default_field\": \"*\"}}}, \"version\": true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"title\": \"Wiki\", \"panelIndex\": \"1\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"1\", \"x\": 0, \"y\": 0, \"h\": 2, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_main_numbers\"}, {\"title\": \"Activity\", \"panelIndex\": \"2\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"2\", \"x\": 0, \"y\": 2, \"h\": 2, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_editions\"}, {\"title\": \"Editors\", \"panelIndex\": \"3\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"3\", \"x\": 0, \"y\": 4, \"h\": 2, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_participants\"}, {\"title\": \"Top Edited Pages\", \"panelIndex\": \"4\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"4\", \"x\": 6, \"y\": 0, \"h\": 6, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_top_edited_pages\"}, {\"title\": \"Last Created Pages\", \"panelIndex\": \"5\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"5\", \"x\": 6, \"y\": 6, \"h\": 5, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_last_created_pages\"}, {\"title\": \"Top Editors\", \"panelIndex\": \"6\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"6\", \"x\": 0, \"y\": 6, \"h\": 5, \"w\": 6}, \"type\": \"visualization\", \"id\": \"confluence_top_editors\"}, {\"title\": \"Last Actions\", \"panelIndex\": \"7\", \"version\": \"6.1.0-3\", \"gridData\": {\"i\": \"7\", \"x\": 0, \"y\": 11, \"h\": 5, \"w\": 12}, \"type\": \"visualization\", \"id\": \"confluence_last_editions\"}]",
+            "release_date": "2018-09-24T15:09:21.164131",
+            "timeRestore": false,
+            "title": "Confluence",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Activity\"},\"P-3\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Top Edited Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Last Created Pages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Top Editors\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Last Actions\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "Confluence-Search:_type:page",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"type:page\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "date",
+                    "desc"
+                ],
+                "title": "Confluence Search:_type:page",
+                "version": 1
+            }
+        },
+        {
+            "id": "Confluence-Search:_type:new_page",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"type:new_page\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "date",
+                    "desc"
+                ],
+                "title": "Confluence Search:_type:new_page",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "confluence_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "confluence_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"listeners\": {}, \"type\": \"metric\", \"aggs\": [{\"type\": \"sum\", \"id\": \"1\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Pages\", \"field\": \"is_new_page\"}}, {\"type\": \"sum\", \"id\": \"2\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Comments\", \"field\": \"is_comment\"}}, {\"type\": \"cardinality\", \"id\": \"3\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Editors\", \"field\": \"author_uuid\"}}], \"title\": \"confluence_main_numbers\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"style\": {\"labelColor\": false, \"subText\": \"\", \"bgColor\": false, \"fontSize\": \"12\", \"bgFill\": \"#000\"}, \"invertColors\": false, \"colorSchema\": \"Green to Red\", \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "confluence_editions",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "confluence_editions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"confluence_editions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{},\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"setYExtents\":false,\"defaultYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"New Pages\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"data\":{\"id\":\"3\",\"label\":\"Page Edits\"},\"valueAxis\":\"ValueAxis-1\"},{\"show\":true,\"mode\":\"stacked\",\"type\":\"histogram\",\"data\":{\"id\":\"4\",\"label\":\"Blog Posts\"},\"valueAxis\":\"ValueAxis-1\"}],\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_new_page\",\"customLabel\":\"New Pages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_page\",\"customLabel\":\"Page Edits\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_blogpost\",\"customLabel\":\"Blog Posts\"}}]}"
+            }
+        },
+        {
+            "id": "confluence_participants",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "confluence_participants",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"confluence_participants\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "confluence_top_edited_pages",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Confluence-Search:_type:page",
+                "title": "confluence_top_edited_pages",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"confluence_top_edited_pages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Page\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"content_url\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Editors\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "confluence_last_created_pages",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Confluence-Search:_type:new_page",
+                "title": "confluence_last_created_pages",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"confluence_last_created_pages\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Creation Date\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Editions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"4\",\"customLabel\":\"Last Created Page\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"content_url\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "confluence_top_editors",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "confluence_top_editors",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"confluence_top_editors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Editor\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_page\",\"customLabel\":\"Page Edits\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_new_page\",\"customLabel\":\"New Pages\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_comment\",\"customLabel\":\"Comments\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_blogpost\",\"customLabel\":\"Blog Posts\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_attachment\",\"customLabel\":\"Attachments\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Last Action Date\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "confluence_last_editions",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "confluence_last_editions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Action Date\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Summary\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"type\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Action Type\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}

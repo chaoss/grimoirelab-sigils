@@ -1,0 +1,185 @@
+{
+    "dashboard": {
+        "id": "Gerrit-Backlog",
+        "value": {
+            "description": "Gerrit Backlog panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"version\":true,\"filter\":[],\"highlightAll\":true,\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"default_field\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"}}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":8,\"w\":4,\"h\":6,\"i\":\"2\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Changeset Submitters\",\"id\":\"gerrit_top_developers\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":8,\"y\":8,\"w\":4,\"h\":6,\"i\":\"8\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Projects\",\"id\":\"Review-projects__gerrit_enrich\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":2,\"i\":\"10\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Backlog: Accumulated Days waiting to be Closed\",\"id\":\"gerrit_accumulated_open_days\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":8,\"y\":2,\"w\":4,\"h\":2,\"i\":\"11\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Backlog: NEW Changesets waiting to be Closed\",\"id\":\"gerrit_evolutionary_changesets_status_new\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":0,\"w\":8,\"h\":2,\"i\":\"12\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"NEW Changesets Statistics\",\"id\":\"gerrit_main_numbers_new_changesets_statistics\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":0,\"y\":2,\"w\":8,\"h\":6,\"i\":\"13\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Backlog\",\"id\":\"gerrit_backlog_table\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":4,\"y\":8,\"w\":4,\"h\":6,\"i\":\"14\"},\"type\":\"visualization\",\"version\":\"6.1.0-3\",\"title\":\"Organizations\",\"id\":\"gerrit_organizations_new_changesets\"},{\"title\":\"Organizations\",\"panelIndex\":\"15\",\"gridData\":{\"x\":8,\"y\":4,\"w\":4,\"h\":4,\"i\":\"15\"},\"type\":\"visualization\",\"id\":\"gerrit_organizations\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-09-25T15:26:51.515532",
+            "timeRestore": false,
+            "title": "Gerrit Backlog",
+            "uiStateJSON": "{\"P-10\":{\"title\":\"Backlog: Accumulated Days waiting to be Closed\",\"vis\":{\"legendOpen\":false}},\"P-11\":{\"title\":\"Backlog: NEW Changesets waiting to be Closed\",\"vis\":{\"legendOpen\":false}},\"P-12\":{\"title\":\"NEW Changesets Statistics\"},\"P-2\":{\"title\":\"Changeset Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-8\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-13\":{\"title\":\"Backlog\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-14\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "SCR-Reviews__gerrit_enrich",
+            "value": {
+                "columns": [
+                    "bot",
+                    "branch",
+                    "closed",
+                    "dashboard",
+                    "githash",
+                    "name",
+                    "opened",
+                    "patchsets",
+                    "project",
+                    "review",
+                    "status",
+                    "summary",
+                    "timeopen",
+                    "url"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"gerrit\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"filter\": [], \"highlight\": {\"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "sort": [
+                    "_score",
+                    "desc"
+                ],
+                "title": "SCR Reviews scr gerrit_enrich",
+                "version": 1
+            }
+        },
+        {
+            "id": "Search:_gerrit_status:NEW",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"status:NEW\",\"analyze_wildcard\":true}}}"
+                },
+                "sort": [
+                    "opened",
+                    "desc"
+                ],
+                "title": "Search:_gerrit_status:NEW",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "gerrit_top_developers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_top_developers",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_top_developers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project\",\"customLabel\":\"# Projects\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"patchsets\",\"customLabel\":\"Avg Patchsets\"}}]}"
+            }
+        },
+        {
+            "id": "Review-projects__gerrit_enrich",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "Review-projects__gerrit_enrich",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"Review-projects__gerrit_enrich\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_accumulated_open_days",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_gerrit_status:NEW",
+                "title": "gerrit_accumulated_open_days",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_accumulated_open_days\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"customLabel\":\"Accumulated Open Days\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_evolutionary_changesets_status_new",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_gerrit_status:NEW",
+                "title": "gerrit_evolutionary_changesets_status_new",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_evolutionary_changesets_status_new\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# NEW Changesets\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_main_numbers_new_changesets_statistics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_gerrit_status:NEW",
+                "title": "gerrit_main_numbers_new_changesets_statistics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"title\": \"gerrit_main_numbers_new_changesets_statistics\", \"aggs\": [{\"type\": \"count\", \"schema\": \"metric\", \"id\": \"1\", \"params\": {\"customLabel\": \"# Changesets (Status: NEW)\"}}, {\"type\": \"sum\", \"schema\": \"metric\", \"id\": \"2\", \"params\": {\"field\": \"timeopen\", \"customLabel\": \"Accumulated Open TIme in Days (Status: NEW)\"}}, {\"type\": \"avg\", \"schema\": \"metric\", \"id\": \"3\", \"params\": {\"field\": \"timeopen\", \"customLabel\": \"Average Time Open in Days per Changeset (Status: NEW)\"}}], \"params\": {\"metric\": {\"style\": {\"fontSize\": \"12\", \"bgColor\": false, \"bgFill\": \"#000\", \"subText\": \"\", \"labelColor\": false}, \"percentageMode\": false, \"labels\": {\"show\": true}, \"useRanges\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"invertColors\": false, \"metricColorMode\": \"None\", \"colorSchema\": \"Green to Red\"}, \"fontSize\": \"12\"}, \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "gerrit_backlog_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_gerrit_status:NEW",
+                "title": "gerrit_backlog_table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_backlog_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"opened\",\"customLabel\":\"Open Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"summary\",\"size\":5000000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Summary\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":5000000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":5000000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"7\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"customLabel\":\"Days Open\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_organizations_new_changesets",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "Search:_gerrit_status:NEW",
+                "title": "gerrit_organizations_new_changesets",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fragment_size\":2147483647,\"fields\":{\"*\":{}},\"require_field_match\":false}}"
+                },
+                "title": "gerrit_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_organizations\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"shareYAxis\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}

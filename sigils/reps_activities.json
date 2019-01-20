@@ -1,0 +1,232 @@
+{
+    "dashboard": {
+        "id": "Reps-Activities",
+        "value": {
+            "description": "Reps Activities panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"10\",\"w\":3,\"x\":6,\"y\":2},\"id\":\"remo_activities_categories\",\"panelIndex\":\"10\",\"title\":\"Categories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"12\",\"w\":6,\"x\":0,\"y\":2},\"id\":\"remo_activities\",\"panelIndex\":\"12\",\"title\":\"Reports\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"13\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"remo_activities_main_numbers\",\"panelIndex\":\"13\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"14\",\"w\":3,\"x\":9,\"y\":2},\"id\":\"remo_activities_typeof\",\"panelIndex\":\"14\",\"title\":\"Activity\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"16\",\"w\":7,\"x\":0,\"y\":4},\"id\":\"remo_activities_map\",\"panelIndex\":\"16\",\"title\":\"Reports\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"17\",\"w\":3,\"x\":9,\"y\":0},\"id\":\"remo_activities_initiatives\",\"panelIndex\":\"17\",\"title\":\"Initiatives\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"18\",\"w\":5,\"x\":0,\"y\":10},\"id\":\"remo_activities_authors\",\"panelIndex\":\"18\",\"title\":\"Report Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"19\",\"w\":5,\"x\":7,\"y\":4},\"id\":\"remo_activities_mentors\",\"panelIndex\":\"19\",\"title\":\"Mentors\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"columns\":[\"activity\",\"activity_description\",\"functional_areas\",\"author_name\",\"mentor\",\"report_date\",\"location\",\"remo_url\",\"link\"],\"gridData\":{\"h\":7,\"i\":\"20\",\"w\":12,\"x\":0,\"y\":22},\"id\":\"remo-activities-Search:_author_mentor_activity_date_url_location\",\"panelIndex\":\"20\",\"sort\":[\"report_date\",\"desc\"],\"title\":\"Last Reports\",\"type\":\"search\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"21\",\"w\":3,\"x\":9,\"y\":10},\"id\":\"remo_activities_categories_list\",\"panelIndex\":\"21\",\"title\":\"Categories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"22\",\"w\":6,\"x\":0,\"y\":16},\"id\":\"remo_activities_typeof_list\",\"panelIndex\":\"22\",\"title\":\"Activities\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"23\",\"w\":4,\"x\":5,\"y\":10},\"id\":\"remo_activities_initiatives_list\",\"panelIndex\":\"23\",\"title\":\"Initiatives\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"24\",\"w\":3,\"x\":6,\"y\":0},\"id\":\"remo_activities_author_organizations\",\"panelIndex\":\"24\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"25\",\"w\":6,\"x\":6,\"y\":16},\"id\":\"remo_activities_organizations\",\"panelIndex\":\"25\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"26\",\"w\":6,\"x\":6,\"y\":19},\"id\":\"09a229a0-9bd2-11e8-8771-a349686d998a\",\"panelIndex\":\"26\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-08-09T13:01:03.100709",
+            "timeRestore": false,
+            "title": "Reps Activities",
+            "uiStateJSON": "{\"P-10\":{\"title\":\"Categories\",\"vis\":{\"legendOpen\":true}},\"P-12\":{\"title\":\"Reports\",\"vis\":{\"legendOpen\":false}},\"P-13\":{\"title\":\"Summary\"},\"P-14\":{\"title\":\"Activity\"},\"P-16\":{\"mapCenter\":[14.944784875088372,5.9765625],\"title\":\"Reports\"},\"P-17\":{\"title\":\"Initiatives\"},\"P-18\":{\"title\":\"Report Authors\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-19\":{\"title\":\"Mentors\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-20\":{\"title\":\"Last Reports\"},\"P-21\":{\"title\":\"Categories\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-22\":{\"title\":\"Activities\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-23\":{\"title\":\"Initiatives\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-24\":{\"title\":\"Organizations\"},\"P-25\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-26\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "remo-activities-Search:_author_mentor_activity_date_url_location",
+            "value": {
+                "columns": [
+                    "activity",
+                    "activity_description",
+                    "functional_areas",
+                    "author_name",
+                    "mentor",
+                    "report_date",
+                    "location",
+                    "remo_url",
+                    "link"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "report_date",
+                    "desc"
+                ],
+                "title": "remo-activities Search:_author_mentor_activity_date_url_location",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "remo_activities_categories",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_categories",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_categories\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"functional_areas.name\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"remo_activities_main_numbers\", \"type\": \"metric\", \"params\": {\"fontSize\": \"12\", \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": \"12\"}}}, \"aggs\": [{\"id\": \"4\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"remo_url\", \"customLabel\": \"# Events\"}}, {\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"# Reports\"}}, {\"id\": \"2\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"author_uuid\", \"customLabel\": \"# Authors\"}}, {\"id\": \"3\", \"type\": \"cardinality\", \"schema\": \"metric\", \"params\": {\"field\": \"mentor\", \"customLabel\": \"# Mentors\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "remo_activities_typeof",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_typeof",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_typeof\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"activity\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Reports\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_map",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_map",
+                "uiStateJSON": "{\"mapCenter\":[14.944784875088372,-0.17578125]}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_map\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Shaded Circle Markers\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":16,\"heatMinOpacity\":0.1,\"heatRadius\":25,\"heatBlur\":15,\"heatNormalizeData\":true,\"wms\":{\"enabled\":true,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}},\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[15,5]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"geolocation\",\"autoPrecision\":true,\"mapZoom\":2,\"mapCenter\":[22.917922936146045,40.869140625],\"precision\":2}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_initiatives",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_initiatives",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_initiatives\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"initiative\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Initiatives\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_authors",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_authors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_authors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"Mentors\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiative\"}},{\"id\":\"5\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_mentors",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_mentors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_mentors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Mentor\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"customLabel\":\"Mentored People\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiatives\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor_profile_url\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"6\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_categories_list",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_categories_list",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_categories_list\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"functional_areas.name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Category\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_typeof_list",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_typeof_list",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_typeof_list\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"activity\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Activity\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_initiatives_list",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "remo_activities_initiatives_list",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_initiatives_list\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"initiative\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Inititative\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_author_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "remo_activities_author_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_author_organizations\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Reports\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organizations\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "remo_activities_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "remo_activities_organizations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_organizations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"Mentors\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiative\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}]}"
+            }
+        },
+        {
+            "id": "09a229a0-9bd2-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "remo_activities_projects",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"remo_activities_projects\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"Mentors\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiative\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}]}"
+            }
+        }
+    ]
+}

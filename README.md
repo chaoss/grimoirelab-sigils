@@ -1,6 +1,14 @@
 Generic Dashboards for GrimoireLab
 ==================================
 
+This repository contains several set of panels collections to be used with [GrimoireLab KiBiter](https://github.com/chaoss/grimoirelab-kibiter) and additional tools to manage them.
+
+Available collections are:
+
+* `cauldron`: set of custom panels used by Bitergia in [Cauldron](https://cauldron.io) (*legacy*)
+* `sigils`: set of panels included by default in GrimoireLab deployment
+* `chaoss-gmd-code-dev`: set of panels for the metrics defined by [CHAOSS Growth-Maturity-Decline (GMD) Working Group (WG) for Code Development](https://github.com/chaoss/wg-gmd/blob/master/focus_areas/code_development.md)
+
 Each of the files found in this directory are a JSON file that contains all of the information related to a Kibana dashboard.
 This usually has information about the following artifacts:
 * Original indexes where the information come from.
@@ -8,9 +16,6 @@ This usually has information about the following artifacts:
 * Widgets either built on top of the original indexes or on top of the searches.
 * Final panels that are an aggregation of several widgets.
 
-There are Dashboards for Kibana 4 and Kibana 5 right now stored in:
-* `json`: current kibana 5 versions.
-* `kibana4-maintenance` branch: old kibana 4 versions.
 
 Panels
 ------

@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "8c515590-e1de-11e8-8aac-ef7fd4d8cbad",
+        "value": {
+            "description": "Efficiency panel for Gerrit by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":3},\"id\":\"9634ae20-e1c2-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"1\",\"title\":\"Time to Merge\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":5,\"x\":3,\"y\":3},\"id\":\"01d59a70-e1bb-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"2\",\"title\":\"Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":5,\"x\":3,\"y\":0},\"id\":\"087d0310-e1b9-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"3\",\"title\":\"Review Efficiency Index\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"4\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"c2cc2c30-e1de-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"4\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"5\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"94f0dd50-e1df-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"5\",\"title\":\"Efficiency Closing Gerrit Reviews\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"6\",\"w\":12,\"x\":0,\"y\":6},\"id\":\"fb622920-e277-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"6\",\"title\":\"Efficiency Closing Gerrit Reviews\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2018-12-27T10:21:25.472545",
+            "timeRestore": false,
+            "title": "Gerrit Efficiency",
+            "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "9634ae20-e1c2-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[{\"meta\":{\"index\":\"gerrit\",\"type\":\"phrases\",\"key\":\"status\",\"value\":\"MERGED, ABANDONED\",\"params\":[\"MERGED\",\"ABANDONED\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"status\":\"MERGED\"}},{\"match_phrase\":{\"status\":\"ABANDONED\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gerrit_median_time_open_gauge",
+                "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_median_time_open_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"percents\":[50],\"customLabel\":\"Median Time to Merge (days)\"}}]}"
+            }
+        },
+        {
+            "id": "01d59a70-e1bb-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gerrit_lead_time",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gerrit, q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).label('Avg. Lead Time (days)'), \\n\\n.es(index=gerrit , q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:timeopen).trend().label('Avg. Lead Time trend')\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "087d0310-e1b9-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gerrit_rei",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_rei\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gerrit, timefield=closed).divide(.es(index=gerrit, timefield=grimoire_creation_date)).label('REI').color(#99af5d),\\n \\n.es(index=gerrit, timefield=closed).divide(.es(index=gerrit, timefield=grimoire_creation_date)).movingaverage(8w, 'left').label('REI Moving Avg. (8 weeks)').color(#c83d32),\\n\\n.es(index=gerrit, timefield=closed).divide(.es(index=gerrit, timefield=grimoire_creation_date)).trend().label('REI trend'),\\n\\n.es(index=gerrit, timefield=closed).divide(.es(index=gerrit, timefield=grimoire_creation_date)).aggregate(avg).label('Avg. REI').color(#e6b740)\",\"interval\":\"1w\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "c2cc2c30-e1de-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gerrit_median_time_open_per_repo",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_median_time_open_per_repo\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen\",\"percents\":[50],\"customLabel\":\"Median Time Open (Days)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Repository\"}}]}"
+            }
+        },
+        {
+            "id": "94f0dd50-e1df-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gerrit_org_repo_filters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_org_repo_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1541521056617\",\"indexPattern\":\"gerrit\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1541521075121\",\"indexPattern\":\"gerrit\",\"fieldName\":\"repository\",\"label\":\"Repository\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "fb622920-e277-11e8-8aac-ef7fd4d8cbad",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gerrit_efficiency_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\":[],\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** Gerrit reviews.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed reviews divided by the number of open ones in a given period of time. Measures efficiency closing reviews.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a review. Shown in average.\"},\"title\":\"gerrit_efficiency_help\",\"type\":\"markdown\"}"
+            }
+        }
+    ]
+}

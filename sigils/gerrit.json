@@ -1,0 +1,203 @@
+{
+    "dashboard": {
+        "id": "Gerrit",
+        "value": {
+            "description": "Gerrit Overview panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true,\"filter\":[]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\":{\"h\":6,\"i\":\"17\",\"w\":5,\"x\":0,\"y\":10},\"id\":\"gerrit_top_developers\",\"panelIndex\":\"17\",\"title\":\"Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":5,\"i\":\"18\",\"w\":7,\"x\":5,\"y\":6},\"id\":\"gerrit_evolution_organizations\",\"panelIndex\":\"18\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"19\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"gerrit_repositories_table\",\"panelIndex\":\"19\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"20\",\"w\":5,\"x\":0,\"y\":0},\"id\":\"gerrit_main_numbers\",\"panelIndex\":\"20\",\"title\":\"Gerrit\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"21\",\"w\":3,\"x\":5,\"y\":3},\"id\":\"gerrit_changesets_status\",\"panelIndex\":\"21\",\"title\":\"Status\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"22\",\"w\":5,\"x\":0,\"y\":2},\"id\":\"gerrit_changesets\",\"panelIndex\":\"22\",\"title\":\"Changesets by Status\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"23\",\"w\":5,\"x\":0,\"y\":4},\"id\":\"gerrit_submitters\",\"panelIndex\":\"23\",\"title\":\"Changeset Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"24\",\"w\":3,\"x\":5,\"y\":0},\"id\":\"gerrit_organizations\",\"panelIndex\":\"24\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"25\",\"w\":5,\"x\":0,\"y\":6},\"id\":\"gerrit_time_per_review_numbers\",\"panelIndex\":\"25\",\"title\":\"Changesets Statistics (Open Time in Days)\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"26\",\"w\":5,\"x\":0,\"y\":8},\"id\":\"gerrit_patchset_statistics\",\"panelIndex\":\"26\",\"title\":\"Patchset Statistics per Changeset\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":5,\"i\":\"27\",\"w\":7,\"x\":5,\"y\":11},\"id\":\"gerrit_patchsets_per_changeset\",\"panelIndex\":\"27\",\"title\":\"Patchsets per Changeset\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+            "release_date": "2018-09-25T15:38:17.297511",
+            "timeRestore": false,
+            "title": "Gerrit",
+            "uiStateJSON": "{\"P-17\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-18\":{\"title\":\"Organizations\"},\"P-19\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-20\":{\"title\":\"Gerrit\"},\"P-21\":{\"title\":\"Status\"},\"P-22\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Changesets by Status\",\"vis\":{\"legendOpen\":true}},\"P-23\":{\"title\":\"Changeset Submitters\",\"vis\":{\"legendOpen\":false}},\"P-24\":{\"title\":\"Organizations\"},\"P-25\":{\"title\":\"Changesets Statistics (Open Time in Days)\"},\"P-26\":{\"title\":\"Patchset Statistics per Changeset\"},\"P-27\":{\"title\":\"Patchsets per Changeset\"}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "SCR-Reviews__gerrit_enrich",
+            "value": {
+                "columns": [
+                    "bot",
+                    "branch",
+                    "closed",
+                    "dashboard",
+                    "githash",
+                    "name",
+                    "opened",
+                    "patchsets",
+                    "project",
+                    "review",
+                    "status",
+                    "summary",
+                    "timeopen",
+                    "url"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\": \"gerrit\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"filter\": [], \"highlight\": {\"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+                },
+                "sort": [
+                    "_score",
+                    "desc"
+                ],
+                "title": "SCR Reviews scr gerrit_enrich",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "gerrit_top_developers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_top_developers",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_top_developers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project\",\"customLabel\":\"# Projects\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"patchsets\",\"customLabel\":\"Avg Patchsets\"}}]}"
+            }
+        },
+        {
+            "id": "gerrit_evolution_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "gerrit_evolution_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_evolution_organizations\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"author_org_name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_repositories_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "gerrit_repositories_table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_repositories_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repository\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_main_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"params\": {\"customLabel\": \"# Changesets\"}, \"id\": \"1\"}, {\"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Changeset Submitters\", \"field\": \"author_uuid\"}, \"id\": \"2\"}, {\"schema\": \"metric\", \"type\": \"cardinality\", \"params\": {\"customLabel\": \"# Repositories\", \"field\": \"repository\"}, \"id\": \"3\"}], \"listeners\": {}, \"type\": \"metric\", \"title\": \"New Visualization\", \"params\": {\"metric\": {\"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"labels\": {\"show\": true}, \"invertColors\": false, \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"style\": {\"fontSize\": \"12\", \"subText\": \"\", \"labelColor\": false, \"bgFill\": \"#000\", \"bgColor\": false}, \"colorSchema\": \"Green to Red\"}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets_status",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_changesets_status",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_changesets_status\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"status\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Status\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_changesets",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"gerrit\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "gerrit_changesets",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"legendOpen\": false\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_changesets\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"addLegend\": true,\n    \"addTimeMarker\": false,\n    \"addTooltip\": true,\n    \"defaultYExtents\": false,\n    \"mode\": \"stacked\",\n    \"scale\": \"linear\",\n    \"setYExtents\": false,\n    \"shareYAxis\": true,\n    \"times\": [],\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"# Reviews\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Date started\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"terms\",\n      \"schema\": \"group\",\n      \"params\": {\n        \"field\": \"status\",\n        \"size\": 4,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"customLabel\": \"Status\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "gerrit_submitters",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"gerrit\",\n  \"filter\": []\n}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_submitters",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_submitters\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"scale\": \"linear\",\n    \"mode\": \"stacked\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"defaultYExtents\": false,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Submitters\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}"
+            }
+        },
+        {
+            "id": "gerrit_organizations",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"index\":\"gerrit\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fragment_size\":2147483647,\"fields\":{\"*\":{}},\"require_field_match\":false}}"
+                },
+                "title": "gerrit_organizations",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_organizations\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"shareYAxis\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "gerrit_time_per_review_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_time_per_review_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"title\": \"Time-per-review__gerrit_enrich\", \"aggs\": [{\"type\": \"percentiles\", \"schema\": \"metric\", \"id\": \"1\", \"params\": {\"field\": \"timeopen\", \"percents\": [50, 75, 95]}}, {\"type\": \"percentile_ranks\", \"schema\": \"metric\", \"id\": \"2\", \"params\": {\"field\": \"timeopen\", \"values\": [4]}}], \"listeners\": {}, \"params\": {\"metric\": {\"style\": {\"fontSize\": \"12\", \"bgColor\": false, \"bgFill\": \"#000\", \"subText\": \"\", \"labelColor\": false}, \"percentageMode\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"useRanges\": false, \"invertColors\": false, \"metricColorMode\": \"None\", \"labels\": {\"show\": true}}, \"handleNoResults\": true, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "gerrit_patchset_statistics",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_patchset_statistics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\": \"metric\", \"title\": \"Patchsets-per-review__gerrit_enrich\", \"aggs\": [{\"type\": \"percentiles\", \"schema\": \"metric\", \"id\": \"1\", \"params\": {\"customLabel\": \"patchsets\", \"field\": \"patchsets\", \"percents\": [50, 75, 95]}}, {\"type\": \"percentile_ranks\", \"schema\": \"metric\", \"id\": \"2\", \"params\": {\"customLabel\": \"patchsets per review\", \"field\": \"patchsets\", \"values\": [10]}}], \"listeners\": {}, \"params\": {\"metric\": {\"style\": {\"fontSize\": \"12\", \"bgColor\": false, \"bgFill\": \"#000\", \"subText\": \"\", \"labelColor\": false}, \"percentageMode\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"useRanges\": false, \"invertColors\": false, \"metricColorMode\": \"None\", \"labels\": {\"show\": true}}, \"handleNoResults\": true, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "gerrit_patchsets_per_changeset",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+                },
+                "savedSearchId": "SCR-Reviews__gerrit_enrich",
+                "title": "gerrit_patchsets_per_changeset",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_patchsets_per_changeset\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"percentiles\",\"schema\":\"metric\",\"params\":{\"field\":\"patchsets\",\"percents\":[50,75,95],\"customLabel\":\"# Patchsets\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}

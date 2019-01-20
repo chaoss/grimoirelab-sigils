@@ -1,0 +1,432 @@
+{
+    "dashboard": {
+        "id": "Data-Status",
+        "value": {
+            "description": "Data Status panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":2,\"w\":12,\"h\":2,\"i\":\"1\"},\"id\":\"bugzilla_data_status_numbers\",\"title\":\"Bugzilla\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":8,\"w\":12,\"h\":2,\"i\":\"2\"},\"id\":\"confluence_data_status_numbers\",\"title\":\"Confluence\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":10,\"w\":12,\"h\":2,\"i\":\"3\"},\"id\":\"gerrit_data_status_numbers\",\"title\":\"Gerrit\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":2,\"i\":\"4\"},\"id\":\"git_data_status_numbers\",\"title\":\"Git\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":2,\"i\":\"5\"},\"id\":\"github_issues_data_status_numbers\",\"title\":\"Github\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":12,\"w\":12,\"h\":2,\"i\":\"6\"},\"id\":\"irc_data_status_numbers\",\"title\":\"IRC\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":16,\"w\":12,\"h\":2,\"i\":\"7\"},\"id\":\"jira_data_status_numbers\",\"title\":\"Jira\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":22,\"w\":12,\"h\":2,\"i\":\"9\"},\"id\":\"maniphest_data_status_numbers\",\"title\":\"Maniphest\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":6,\"w\":12,\"h\":2,\"i\":\"10\"},\"id\":\"mbox_data_status_numbers\",\"title\":\"Mbox\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":24,\"w\":12,\"h\":2,\"i\":\"12\"},\"id\":\"stackoverflow_data_status_numbers\",\"title\":\"StackOverflow\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":0,\"y\":50,\"w\":12,\"h\":2,\"i\":\"14\"},\"id\":\"twitter_data_status_numbers\",\"title\":\"Twitter\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":26,\"w\":12,\"h\":2,\"i\":\"16\"},\"id\":\"discourse_data_status_numbers\",\"title\":\"Discourse\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":0,\"y\":28,\"w\":12,\"h\":2,\"i\":\"17\"},\"id\":\"jenkins_data_status_numbers\",\"title\":\"Jenkins\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"21\",\"gridData\":{\"x\":0,\"y\":30,\"w\":12,\"h\":2,\"i\":\"21\"},\"id\":\"askbot_data_status_numbers\",\"title\":\"Askbot\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"22\",\"gridData\":{\"x\":0,\"y\":32,\"w\":12,\"h\":2,\"i\":\"22\"},\"id\":\"meetup_data_status_numbers\",\"title\":\"Meetup\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"23\",\"gridData\":{\"x\":0,\"y\":18,\"w\":12,\"h\":2,\"i\":\"23\"},\"id\":\"rss_data_status_numbers\",\"title\":\"RSS\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"24\",\"gridData\":{\"x\":0,\"y\":20,\"w\":12,\"h\":2,\"i\":\"24\"},\"id\":\"redmine_data_status_numbers\",\"title\":\"Redmine\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"28\",\"gridData\":{\"x\":0,\"y\":14,\"w\":12,\"h\":2,\"i\":\"28\"},\"id\":\"slack_data_status_numbers\",\"title\":\"Slack\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"29\",\"gridData\":{\"x\":0,\"y\":34,\"w\":12,\"h\":2,\"i\":\"29\"},\"id\":\"remo_data_status_numbers\",\"title\":\"Reps Events\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"30\",\"gridData\":{\"x\":0,\"y\":36,\"w\":12,\"h\":2,\"i\":\"30\"},\"id\":\"remo_activities_data_status_numbers\",\"title\":\"Reps Activities\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"31\",\"gridData\":{\"x\":0,\"y\":40,\"w\":12,\"h\":2,\"i\":\"31\"},\"id\":\"googlehits_data_status_numbers\",\"title\":\"Google Hits\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"32\",\"gridData\":{\"x\":0,\"y\":42,\"w\":12,\"h\":2,\"i\":\"32\"},\"id\":\"mediawiki_data_status_numbers\",\"title\":\"Mediawiki\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"33\",\"gridData\":{\"x\":0,\"y\":38,\"w\":12,\"h\":2,\"i\":\"33\"},\"id\":\"mozillaclub_data_status_numbers\",\"title\":\"Mozilla Club\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"34\",\"gridData\":{\"x\":0,\"y\":44,\"w\":12,\"h\":2,\"i\":\"34\"},\"id\":\"telegram_data_status_numbers\",\"title\":\"Telegram\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"35\",\"gridData\":{\"x\":0,\"y\":52,\"w\":12,\"h\":2,\"i\":\"35\"},\"id\":\"apache_data_status_numbers\",\"title\":\"Apache\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"36\",\"gridData\":{\"x\":0,\"y\":46,\"w\":12,\"h\":2,\"i\":\"36\"},\"id\":\"dockerhub_data_status_numbers\",\"title\":\"DockerHub\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"37\",\"gridData\":{\"x\":0,\"y\":48,\"w\":12,\"h\":2,\"i\":\"37\"},\"id\":\"functest_data_status_numbers\",\"title\":\"Functest\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"38\",\"gridData\":{\"x\":0,\"y\":54,\"w\":12,\"h\":2,\"i\":\"38\"},\"id\":\"crates_data_status_numbers\",\"title\":\"Crates\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"39\",\"gridData\":{\"x\":0,\"y\":56,\"w\":12,\"h\":2,\"i\":\"39\"},\"title\":\"Mattermost\",\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"e5e99b80-b029-11e8-8771-a349686d998a\"},{\"title\":\"GitLab Issues\",\"panelIndex\":\"40\",\"gridData\":{\"x\":0,\"y\":60,\"w\":12,\"h\":2,\"i\":\"40\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"gitlab-issues_status_numbers\"},{\"title\":\"GitLab Merge Request\",\"panelIndex\":\"41\",\"gridData\":{\"x\":0,\"y\":58,\"w\":12,\"h\":2,\"i\":\"41\"},\"version\":\"6.1.0-1\",\"type\":\"visualization\",\"id\":\"gitlab-merges_data_status\"}]",
+            "refreshInterval": {
+                "display": "Off",
+                "pause": false,
+                "value": 0
+            },
+            "release_date": "2018-12-10T17:15:00.000000",
+            "timeFrom": "now-10y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Data Status",
+            "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Bugzilla\"},\"P-10\":{\"title\":\"Mbox\"},\"P-12\":{\"title\":\"StackOverflow\"},\"P-14\":{\"title\":\"Twitter\"},\"P-16\":{\"title\":\"Discourse\"},\"P-17\":{\"title\":\"Jenkins\"},\"P-2\":{\"title\":\"Confluence\"},\"P-21\":{\"title\":\"Askbot\"},\"P-22\":{\"title\":\"Meetup\"},\"P-23\":{\"title\":\"RSS\"},\"P-24\":{\"title\":\"Redmine\"},\"P-28\":{\"title\":\"Slack\"},\"P-29\":{\"title\":\"Reps Events\"},\"P-3\":{\"title\":\"Gerrit\"},\"P-30\":{\"title\":\"Reps Activities\"},\"P-31\":{\"title\":\"Google Hits\"},\"P-32\":{\"title\":\"Mediawiki\"},\"P-33\":{\"title\":\"Mozilla Club\"},\"P-34\":{\"title\":\"Telegram\"},\"P-35\":{\"title\":\"Apache\"},\"P-36\":{\"title\":\"DockerHub\"},\"P-37\":{\"title\":\"Functest\"},\"P-38\":{\"title\":\"Crates\"},\"P-4\":{\"title\":\"Git\"},\"P-5\":{\"title\":\"Github\"},\"P-6\":{\"title\":\"IRC\"},\"P-7\":{\"title\":\"Jira\"},\"P-9\":{\"title\":\"Maniphest\"}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "bugzilla_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "bugzilla_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"bugzilla_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "confluence_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "confluence_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"confluence_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "gerrit_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "gerrit_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"gerrit_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "git_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "git_data_status_numbers",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\": \"git_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"3\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"6\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"2\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "github_issues_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "github_issues_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"github_issues_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "irc_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"irc\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "irc_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"irc_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "jira_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jira_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"jira_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Enriched\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "maniphest_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"maniphest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "maniphest_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"maniphest_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "mbox_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"mbox\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "mbox_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"mbox_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "stackoverflow_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"stackoverflow\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "stackoverflow_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"stackoverflow_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "twitter_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"twitter\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "twitter_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"twitter_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"Total Item Count\"}, \"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"enabled\": true}], \"type\": \"metric\", \"params\": {\"handleNoResults\": true, \"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "discourse_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "discourse_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"discourse_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "jenkins_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "jenkins_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "askbot_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"askbot\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "askbot_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "meetup_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"meetup\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "meetup_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "rss_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "rss_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "redmine_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"redmine\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "redmine_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "slack_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "slack_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "remo_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"remo-events_metadata__timestamp\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "remo_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"remo_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item (Scheduled Date)\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item  (Scheduled Date)\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "remo_activities_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"remo-activities_metadata__timestamp\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "remo_activities_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"remo_activities_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item (Scheduled Date)\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item  (Scheduled Date)\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "googlehits_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"google-hits\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "googlehits_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"googlehits_data_status_numbers\",\n  \"listeners\": {},\n  \"aggs\": [\n    {\n      \"schema\": \"metric\",\n      \"type\": \"count\",\n      \"id\": \"1\",\n      \"params\": {\n        \"customLabel\": \"Total Item Count\"\n      }\n    },\n    {\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"2\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"First Item\"\n      }\n    },\n    {\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"3\",\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"Last Item\"\n      }\n    },\n    {\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"4\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"First Retrieval\"\n      }\n    },\n    {\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"5\",\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"Last Retrieval\"\n      }\n    }\n  ],\n  \"type\": \"metric\",\n  \"params\": {\n    \"metric\": {\n      \"labels\": {\n        \"show\": true\n      },\n      \"invertColors\": false,\n      \"percentageMode\": false,\n      \"metricColorMode\": \"None\",\n      \"useRanges\": false,\n      \"colorSchema\": \"Green to Red\",\n      \"colorsRange\": [\n        {\n          \"to\": 10000,\n          \"from\": 0\n        }\n      ],\n      \"style\": {\n        \"bgFill\": \"#000\",\n        \"bgColor\": false,\n        \"fontSize\": \"12\",\n        \"labelColor\": false,\n        \"subText\": \"\"\n      }\n    },\n    \"fontSize\": \"12\"\n  }\n}"
+            }
+        },
+        {
+            "id": "mediawiki_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"mediawiki\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "mediawiki_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"mediawiki_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "mozillaclub_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"mozillaclub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "mozillaclub_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "telegram_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+                },
+                "title": "telegram_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"telegram_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"params\": {\"customLabel\": \"Total Item Count\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}}, {\"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}}, {\"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}}], \"type\": \"metric\", \"params\": {\"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "apache_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "apache_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"apache_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"Total Item Count\"}, \"schema\": \"metric\", \"type\": \"count\", \"id\": \"3\", \"enabled\": true}, {\"params\": {\"field\": \"@timestamp\", \"customLabel\": \"First Item\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"1\", \"enabled\": true}, {\"params\": {\"field\": \"@timestamp\", \"customLabel\": \"Last Item\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"2\", \"enabled\": true}], \"type\": \"metric\", \"params\": {\"handleNoResults\": true, \"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "dockerhub_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"8539ada0-9960-11e8-8771-a349686d998a\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+                },
+                "title": "dockerhub_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"dockerhub_data_status_numbers\",\n  \"listeners\": {},\n  \"aggs\": [\n    {\n      \"params\": {\n        \"customLabel\": \"Total Item Count\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"count\",\n      \"id\": \"1\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"First Item\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"2\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__updated_on\",\n        \"customLabel\": \"Last Item\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"3\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"First Retrieval\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"min\",\n      \"id\": \"4\",\n      \"enabled\": true\n    },\n    {\n      \"params\": {\n        \"field\": \"metadata__timestamp\",\n        \"customLabel\": \"Last Retrieval\"\n      },\n      \"schema\": \"metric\",\n      \"type\": \"max\",\n      \"id\": \"5\",\n      \"enabled\": true\n    }\n  ],\n  \"type\": \"metric\",\n  \"params\": {\n    \"handleNoResults\": true,\n    \"metric\": {\n      \"labels\": {\n        \"show\": true\n      },\n      \"invertColors\": false,\n      \"percentageMode\": false,\n      \"metricColorMode\": \"None\",\n      \"useRanges\": false,\n      \"colorSchema\": \"Green to Red\",\n      \"colorsRange\": [\n        {\n          \"to\": 10000,\n          \"from\": 0\n        }\n      ],\n      \"style\": {\n        \"bgFill\": \"#000\",\n        \"bgColor\": false,\n        \"fontSize\": \"12\",\n        \"labelColor\": false,\n        \"subText\": \"\"\n      }\n    },\n    \"fontSize\": \"12\"\n  }\n}"
+            }
+        },
+        {
+            "id": "functest_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"functest\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "functest_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"functest_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"Total Item Count\"}, \"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"enabled\": true}], \"type\": \"metric\", \"params\": {\"handleNoResults\": true, \"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "crates_data_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"crates-emergingtech\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "crates_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"crates_data_status_numbers\", \"listeners\": {}, \"aggs\": [{\"params\": {\"customLabel\": \"Total Item Count\"}, \"schema\": \"metric\", \"type\": \"count\", \"id\": \"1\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"First Item\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"2\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__updated_on\", \"customLabel\": \"Last Item\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"3\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"First Retrieval\"}, \"schema\": \"metric\", \"type\": \"min\", \"id\": \"4\", \"enabled\": true}, {\"params\": {\"field\": \"metadata__timestamp\", \"customLabel\": \"Last Retrieval\"}, \"schema\": \"metric\", \"type\": \"max\", \"id\": \"5\", \"enabled\": true}], \"type\": \"metric\", \"params\": {\"handleNoResults\": true, \"metric\": {\"labels\": {\"show\": true}, \"invertColors\": false, \"percentageMode\": false, \"metricColorMode\": \"None\", \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"to\": 10000, \"from\": 0}], \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"fontSize\": \"12\", \"labelColor\": false, \"subText\": \"\"}}, \"fontSize\": \"12\"}}"
+            }
+        },
+        {
+            "id": "e5e99b80-b029-11e8-8771-a349686d998a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"mattermost\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "mattermost_data_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"mattermost_data_status_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}]}"
+            }
+        },
+        {
+            "id": "gitlab-issues_status_numbers",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitlab-issues_status_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab-issues_status_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}]}"
+            }
+        },
+        {
+            "id": "gitlab-merges_data_status",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitlab-merges_data_status",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitlab-merges_data_status\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":12}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}]}"
+            }
+        }
+    ]
+}
