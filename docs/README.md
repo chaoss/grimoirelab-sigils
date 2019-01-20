@@ -1,13 +1,13 @@
 ---
 title: README
 description: quick start information.
-layout: panel
+layout: default
 ---
 ## Dashboard Panels
 
-[Please visit our FAM - Frequently Asked Metrics for a list of the usually
+Please visit our [FAM - Frequently Asked Metrics](fam.md) for a list of the usually
 requested metrics. This document provides links and images to how to calculate
-those : [Frequently Asked Metrics](fam.md)]
+those.
 
 When you come to Bitergias' dashboard you will find data from several data sources
 organized in several panels. Depending on the amount of information or on

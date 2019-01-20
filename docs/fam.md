@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Metrics (FAM)
 description: where can I find a given metric I'm interested in?
-layout: panel
+layout: default
 ---
 
 Welcome to our FAM! The goal of this document is to show you

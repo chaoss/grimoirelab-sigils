@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <span class="navbar-brand"><a href="{{ site.baseurl }}/">{{ site.title }}</a> <small class="text-light">by {{ site.author }}</small></span>
+    </nav>
+    
+    <div class="container-fluid">
+    {{ content }}
+    </div>
+    {% include js.html %}
+
+</body>
+</html>

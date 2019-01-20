@@ -1,7 +1,7 @@
 ---
 title: Metrics
 description: summary of most common metrics across panels.
-layout: panel
+layout: default
 ---
 
 This document covers the basic metrics shown in current Grimoire Lab dashboards and how the user can filter
