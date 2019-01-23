@@ -2,7 +2,7 @@
 title: Lines of Code Changed
 description: panel focused on the number of lines of code changed.
 author: Miguel-Ángel Fernández Sánchez
-created_at: 2018-01-16
+created_at: 2019-01-16
 grimoirelab_version: 0.2.3
 layout: panel
 ---
