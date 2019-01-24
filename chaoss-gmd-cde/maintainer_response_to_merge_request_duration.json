@@ -1,0 +1,109 @@
+{
+    "dashboard": {
+        "id": "206c9180-1d86-11e9-ba47-d5cbef43f8d3",
+        "value": {
+            "description": "CHAOSS GMD Panel: Maintainer Response to Merge Request Duration",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"1\"},\"id\":\"73ec6980-1d85-11e9-ba47-d5cbef43f8d3\",\"title\":\"Filter\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":2,\"y\":0,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"ef482790-1d85-11e9-ba47-d5cbef43f8d3\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":3,\"w\":8,\"h\":3,\"i\":\"3\"},\"title\":\"Average Time to First Response in Days over Time\",\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"cb1adfb0-1d86-11e9-ba47-d5cbef43f8d3\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":6,\"i\":\"4\"},\"title\":\"Repository Data\",\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"66a460f0-1d87-11e9-ba47-d5cbef43f8d3\"},{\"title\":\"Help\",\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":6,\"w\":12,\"h\":3,\"i\":\"5\"},\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"09311480-1d88-11e9-ba47-d5cbef43f8d3\"}]",
+            "release_date": "2019-01-23T15:08:24.651290",
+            "timeRestore": false,
+            "title": "Maintainer Response to Merge Request Duration",
+            "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "Search:_pull_request:true",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"pull_request:true\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "metadata__updated_on",
+                    "desc"
+                ],
+                "title": "Search:_pull_request:true",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "73ec6980-1d85-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_maintainer_response_to_merge_request_duration",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1543332151603\",\"indexPattern\":\"git\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1543332192643\",\"indexPattern\":\"git\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "ef482790-1d85-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_main_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_main_numbers\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":29}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_first_attention\",\"percents\":[50],\"customLabel\":\"Median Time to First Response (Days)\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_first_attention\",\"customLabel\":\"Average Time to First Response (Days)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Pull Requests\"}}]}"
+            }
+        },
+        {
+            "id": "cb1adfb0-1d86-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_over_time_and_trend",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\":\"timelion\",\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_over_time_and_trend\",\"params\":{\"expression\":\".es(index=github_issues, timefield=grimoire_creation_date, q=\\\"pull_request:true\\\", metric=avg:time_to_first_attention).bars().label(\\\"Maintainer First Response to Merge Request in Days\\\"),\\n.es(index=github_issues, timefield=grimoire_creation_date, q=\\\"pull_request:true\\\", metric=avg:time_to_first_attention).trend().label(\\\"Trend\\\")\",\"interval\":\"auto\"}}"
+            }
+        },
+        {
+            "id": "66a460f0-1d87-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "Search:_pull_request:true",
+                "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_repository_data",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_repository_data\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"4\",\"customLabel\":\"Repository\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_first_attention\",\"customLabel\":\"Average Time to First Attention (Days)\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_first_attention\",\"percents\":[50],\"customLabel\":\"Median Time to First Response (Days)\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Pull Requests\"}}]}"
+            }
+        },
+        {
+            "id": "09311480-1d88-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_doc",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on **any** GitHub Pull Request and measures its first time to attention.\\n\\nThe idea behind the panel is having a look on how community performs and evolves replying to pull requests. By using this panel we can identify trends and analyze certain behaviours of specific\\norganizations, projects or repositories.\\n\\n* **Summary**: This widget contains a summary of the information about the time to first response in average and in median.\\n* **Repository Data**: This table provides an overview of the same information but split by repository in GitHub.\\n* **Average Time to First Response in Days over Time**: This evolutionary chart displays the behaviour of the average metric over time.\\n\\nMore in depth documentation can be found at [the Maintainer Merge Request Duration Page](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/maintainer_merge_request_duration/)\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
