@@ -1,6 +1,10 @@
 ---
 title: GitHub Issues Timing
 description: metrics focused on how long issues remain open.
+author: Bitergia
+screenshot: sigils/github-issues-timing.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

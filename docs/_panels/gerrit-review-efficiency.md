@@ -1,6 +1,10 @@
 ---
 title: Gerrit Review Efficiency
 description: efficiency closing reviews in Gerrit.
+author: Bitergia
+screenshot: sigils/demographics.png
+created_at: 
+grimoirelab_version: 0.2.1
 layout: panel
 ---
 
@@ -10,9 +14,6 @@ This panel offers a view of efficiency closing reviews based on two metrics:
 * **Lead Time**: the time expressed in days between the initiation and completion of a production
   process, in this case, a review. Shown in average in this panel.
 * **Time to Merge**: time from review creation to the moment in which it's merged or abandoned.
-
-![GitHub Review Efficiency]({{ site.baseurl }}/assets/images/gerrit_review_efficiency.png)
-###### Figure 1.Gerrit Review Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

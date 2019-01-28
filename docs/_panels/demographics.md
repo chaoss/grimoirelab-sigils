@@ -1,14 +1,15 @@
 ---
 title: Demographics
 description: attraction and retention of contributors.
+author: Bitergia
+screenshot: sigils/demographics.png
+created_at: 
+grimoirelab_version: 0.2.2
 layout: panel
 ---
 
 This panel focuses on the attraction of contributors and those leaving the community.
 There are two main bar charts where you can filter the information.
-
-![Demographics]({{ site.baseurl }}/assets/images/demographics.png)
-###### Figure 1. Demographics Panel
 
 By default, Git is selected in `Data Source` widget. That means we are looking
 at Git data. By clicking on the drop down list you can select any other source

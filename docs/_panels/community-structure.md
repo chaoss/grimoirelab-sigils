@@ -1,6 +1,10 @@
 ---
 title: Community Structure
 description: find who are your core, regular and casual contributors.
+author: Bitergia
+screenshot: sigils/community-structure.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

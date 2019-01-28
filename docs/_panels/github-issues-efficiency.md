@@ -1,6 +1,10 @@
 ---
 title: GitHub Issues Efficiency
 description: efficiency closing issues on GitHub.
+author: Bitergia
+screenshot: sigils/github-issues-efficiency.png
+created_at: 
+grimoirelab_version: 0.2.1
 layout: panel
 ---
 
@@ -11,8 +15,6 @@ This panel offers a view of efficiency closing issues based on two metrics:
   process, in this case, an issue. Shown in average in this panel.
 * **Time to Close**: time from issue creation to the moment in which it's closed.
 
-![GitHub Issues Efficiency]({{ site.baseurl }}/assets/images/github_issues_efficiency.png)
-###### Figure 1.GitHub Issues Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

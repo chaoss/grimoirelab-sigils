@@ -2,6 +2,7 @@
 title: Lifecycle
 description: Level of activity in git repositories
 author: Manrique Lopez
+screenshot: sigils/lifecycle.png
 created_at: 2018-12-12
 grimoirelab_version: 0.2.0
 layout: panel

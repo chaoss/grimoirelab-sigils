@@ -1,6 +1,10 @@
 ---
 title: GitHub Pull Requests Efficiency
 description: efficiency closing Pull Requests.
+author: Bitergia
+screenshot: sigils/github-pullrequests-efficiency.png
+created_at: 
+grimoirelab_version: 0.2.1
 layout: panel
 ---
 
@@ -11,8 +15,6 @@ This panel offers a view of efficiency closing pull requests based on two metric
   process, in this case, a pull request. Shown in average in this panel.
 * **Time to Merge**: time from pull request creation to the moment in which it's closed.
 
-![GitHub Pull Requests Efficiency]({{ site.baseurl }}/assets/images/github_pullrequests_efficiency.png)
-###### Figure 1.GitHub Pull Requests Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

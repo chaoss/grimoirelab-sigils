@@ -2,6 +2,7 @@
 title: GitLab Issues Efficiency
 description: efficiency closing issues on GitLab.
 author: Miguel-Ángel Fernández
+screenshot: sigils/gitlab-issues-efficiency.png
 created_at: 2018-12-05
 grimoirelab_version: 0.2.1
 layout: panel
@@ -14,8 +15,6 @@ by the number of open ones in a given period of time. Measures efficiency closin
 process, in this case, an issue. Shown in average in this panel.
 * **Time to Close**: time from issue creation to the moment in which it's closed.
 
-![GitLab Issues Efficiency]({{ site.baseurl }}/assets/images/gitlab_issues_efficiency.png)
-###### Figure 1.GitLab Issues Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

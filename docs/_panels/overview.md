@@ -1,6 +1,10 @@
 ---
 title: Overview
 description: summary of basic metrics on all analyzed sources.
+author: Bitergia
+screenshot: sigils/overview.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

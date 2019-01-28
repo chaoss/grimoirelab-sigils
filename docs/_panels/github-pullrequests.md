@@ -1,6 +1,10 @@
 ---
 title: GitHub Pull Requests
 description: activity and community metrics focused on Pull Requests.
+author: Bitergia
+screenshot: sigils/github-pullrequests.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

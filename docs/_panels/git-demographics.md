@@ -1,6 +1,10 @@
 ---
 title: Git Demographics
 description: attraction and retention of developers specifically for Git.
+author: Bitergia
+screenshot: sigils/demographics.png
+created_at: 
+grimoirelab_version: 0.2.2
 layout: panel
 ---
 

@@ -1,13 +1,15 @@
 ---
 title: Mediawiki
 description: contains metrics focused on reviews, including editions, revisions and editors.
+author: Bitergia
+screenshot: sigils/mediawiki.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 
 This panel focuses on Mediawiki data source. It shows information about reviews, including  editions, revisions, editors, organizations and projects.
 
-![Mediawiki]({{ site.baseurl }}/assets/images/mediawiki_panel_1.png)
-###### Figure 1. First part of the panel
 
 The first visualization, on the left top corner, displays a summary of metrics such as the number of pages, editors and revisions.
 

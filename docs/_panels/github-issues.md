@@ -1,6 +1,10 @@
 ---
 title: GitHub Issues
 description: activity and community metrics focused on Issues.
+author: Bitergia
+screenshot: sigils/github-issues.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

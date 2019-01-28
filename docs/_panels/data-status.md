@@ -1,6 +1,10 @@
 ---
 title: Data Status
 description: data freshness information.
+author: Bitergia
+screenshot: sigils/data-status.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

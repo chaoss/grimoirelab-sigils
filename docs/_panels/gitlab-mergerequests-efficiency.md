@@ -2,6 +2,7 @@
 title: GitLab Merge Requests Efficiency
 description: efficiency solving (merging or closing) MRs on GitLab.
 author: Miguel-Ángel Fernández
+screenshot: sigils/gitlab-mergerequests-efficiency.png
 created_at: 2018-12-12
 grimoirelab_version: 0.2.1
 layout: panel
@@ -14,8 +15,6 @@ This panel offers a view of efficiency solving (merging or closing) merge reques
   process, in this case, a merge request. Shown in average in this panel.
 * **Time to Merge**: time from merge request creation to the moment in which it's solved.
 
-![GitLab Merge Requests Efficiency]({{ site.baseurl }}/assets/images/gitlab_mergerequests_efficiency.png)
-###### Figure 1.GitLab Merge Requests Efficiency Panel
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

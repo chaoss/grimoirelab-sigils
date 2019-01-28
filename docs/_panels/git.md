@@ -1,6 +1,10 @@
 ---
 title: Git
 description: metrics focused on Git commits.
+author: Bitergia
+screenshot: sigils/git.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 

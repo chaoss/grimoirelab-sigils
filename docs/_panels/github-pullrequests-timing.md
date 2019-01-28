@@ -1,6 +1,10 @@
 ---
 title: GitHub Pull Requests Timing
 description: metrics focused on how long pull requests remain open.
+author: Bitergia
+screenshot: sigils/github-pullrequests-timing.png
+created_at: 
+grimoirelab_version: 0.2.0
 layout: panel
 ---
 
