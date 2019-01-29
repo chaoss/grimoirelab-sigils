@@ -11,7 +11,7 @@ layout: panel
 This panel focuses on **Pull request merge duration**.
 
 
-This panel focuses on pull request merge duration, defined by the time between a code merge request and code commit. In this case, we focus on Github pull requests. When we measure Github, we cannot identify if a pull request has been merged, only if is open or closed. That's the reason why we will based our panel on pull request closing time
+This panel focuses on pull request merge duration, defined by the time between a code merge request and code commit. In this case, we focus on Github pull requests. When we measure Github, we cannot identify if a pull request has been merged, only if is open or closed. That's the reason why we will base our panel on pull request closing time
 
 The main idea behind this panel is to help us identify a project state (growth maturity or decline) by answering custom queries like:
 * **What is the duration of time between code merge request and code commit?**
