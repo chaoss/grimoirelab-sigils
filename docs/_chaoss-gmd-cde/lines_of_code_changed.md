@@ -5,6 +5,7 @@ author: Miguel-Ángel Fernández Sánchez
 created_at: 2019-01-16
 grimoirelab_version: 0.2.3
 layout: panel
+screenshot: chaoss-gmd-cde/lines_of_code_changed.png
 ---
 
 
@@ -32,11 +33,6 @@ If we are looking at a project in close to its final days, we expect the number 
 * **Number of removed lines**: Amount of deleted lines in all commits from a given time-frame.
 * **Evolution of lines added vs lines removed**: evolution of number of added/removed lines during the selected time range.
 * **Evolution of commits**: evolution of number of commits during the selected time range, per project.
-
-
-![Lines of Code Changed]({{ site.baseurl }}/assets/images/chaoss-gmd-cde/lines_of_code_changed.png)
-###### Figure 1. Lines of Code Changed Panel
-
 
 Filtering by Organization and Project is allowed by using the top left corner
 widget.

@@ -5,6 +5,7 @@ author: Alberto Pérez García-Plaza
 created_at: 2018-12-05
 grimoirelab_version: 0.2.2
 layout: panel
+screenshot: chaoss-gmd-cde/pull_requests_merged.png
 ---
 
 This panel is focused on metrics related to Pull Requests merged. As GitHub API does not
@@ -23,10 +24,10 @@ way to identify the merge (see [Sigils#297](https://github.com/chaoss/grimoirela
 For that reason we decided to build a panel relying directly on Git data, using some basic
 filters to identify merges. If merges follow an homogeneous pattern, it should be possible
 to identify them by filtering. This could be not 100% accurate, but it is reasonably flexible
-to be updated to specific communities or repositories. 
+to be updated to specific communities or repositories.
 
 #### How we identify a commit as a merge
- 
+
 A filter is applied within each visualization to get only those commits that we consider as
 "merges". We consider a commit as a "merge" if satisfies at least one of the following
 conditions:
@@ -41,15 +42,10 @@ selected.
 * **Evolution of Pull Requests merged**: evolution of number of commits during the selected
 time range.
 
-
-![Pull Requests Merged]({{ site.baseurl }}/assets/images/chaoss-gmd-cde/pull_requests_merged.png)
-###### Figure 1. Pull Requests Merged Panel
-
-
 Filtering by Organization and Project is allowed by using the top left corner
 widget.
 
-**Number of commits** and **number of authors** are shown next to filtering widget. 
+**Number of commits** and **number of authors** are shown next to filtering widget.
 These are global numbers to have an idea about the amount of data we are visualizing
 with current filters. These metrics are also shown at the right hand side, within
 repositories table. This provide a quick and comparable view of each repository.
@@ -69,5 +65,3 @@ combination of the different behaviours from different repositories.
 
 Finally, a short text is shown at the bottom to explain the basics needed to understand
 the panel.
-
-

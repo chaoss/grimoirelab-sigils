@@ -5,6 +5,7 @@ author: Ana Jimenez Santamaria
 created_at: 2019-01-23
 grimoirelab_version: 0.2.3
 layout: panel
+screenshot: chaoss-gmd-cde/pull_request_merge_duration.png
 ---
 
 
@@ -30,11 +31,6 @@ Moreover, you can filter pull request merge duration by author or organization t
 * **Organization list based on closed pull requests**: time to close pull requests filtered by organization name and number of authors involved on each organization.
 * **Number of pull requests**: Amount of pull requests over a period of time.
 * **Median time open days**: median time to close pull request during the selected time range.
-
-
-![Pull Request Merge Duration]({{ site.baseurl }}/assets/images/chaoss-gmd-cde/pull_request_merge_duration.png)
-###### Figure 1. Pull Request Merge Duration
-
 
 Filtering by Organization and Project is allowed by using the top left corner widget.
 
