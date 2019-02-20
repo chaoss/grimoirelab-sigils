@@ -1,0 +1,97 @@
+{
+    "dashboard": {
+        "id": "EmTech-Adoption",
+        "value": {
+            "description": "Emerging Tech Adoption Panel developed by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":2,\"i\":\"1\"},\"id\":\"rust_friends_title\",\"title\":\"-\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":2,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"C_rust_emergingtech_friends_table\",\"title\":\"Friends' Logos\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":2,\"w\":2,\"h\":3,\"i\":\"3\"},\"id\":\"C_rust_emergingtech_logos_added\",\"title\":\"Logos Added\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":2,\"y\":2,\"w\":4,\"h\":3,\"i\":\"4\"},\"id\":\"C_rust_emergingtech_logos_evolution\",\"title\":\"Logo Additions\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2019-02-20T10:50:21.526564",
+            "timeRestore": false,
+            "title": "Emerging Tech Adoption",
+            "uiStateJSON": "{\"P-1\":{\"title\":\"-\"},\"P-2\":{\"title\":\"Friends' Logos\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Logos Added\"},\"P-4\":{\"title\":\"Logo Additions\",\"vis\":{\"legendOpen\":false}},\"P-5\":{\"title\":\"-\"},\"P-6\":{\"title\":\"Crates\"},\"P-7\":{\"title\":\"Creation of New Crates\"},\"P-8\":{\"title\":\"The Most Downloaded Crates\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "C_rust_emergingtech_friends",
+            "value": {
+                "columns": [
+                    "title"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"github_issues\",\"key\":\"github_repo\",\"negate\":false,\"value\":\"rust-lang/rust-www\"},\"query\":{\"match\":{\"github_repo\":{\"query\":\"rust-lang/rust-www\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"github_issues\",\"key\":\"query\",\"negate\":false,\"value\":\"{\\\"wildcard\\\":{\\\"title\\\":\\\"*New Website Logo*\\\"}}\"},\"query\":{\"wildcard\":{\"title\":\"*New Website Logo*\"}}}],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "C_rust_emergingtech_friends",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "rust_friends_title",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                },
+                "title": "rust_friends_title",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"rust_friends_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### [Friends of Rust](https://www.rust-lang.org/en-US/friends.html)\"},\"aggs\":[],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_friends_table",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_friends_table",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Addition Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Friends' Logo\"}}],\"listeners\":{}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_logos_added",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_logos_added",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"New Visualization\", \"type\": \"metric\", \"params\": {\"fontSize\": 60, \"metric\": {\"percentageMode\": false, \"useRanges\": false, \"colorSchema\": \"Green to Red\", \"metricColorMode\": \"None\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"invertColors\": false, \"style\": {\"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\", \"fontSize\": 60}}}, \"aggs\": [{\"id\": \"1\", \"type\": \"count\", \"schema\": \"metric\", \"params\": {\"customLabel\": \"Logos added\"}}], \"listeners\": {}}"
+            }
+        },
+        {
+            "id": "C_rust_emergingtech_logos_evolution",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[]}"
+                },
+                "savedSearchId": "C_rust_emergingtech_friends",
+                "title": "C_rust_emergingtech_logos_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"New Visualization\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+            }
+        }
+    ]
+}
