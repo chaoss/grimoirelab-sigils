@@ -2,14 +2,14 @@
     "dashboard": {
         "id": "5c707260-2a0f-11e9-b1b8-f3720d7eacea",
         "value": {
-            "description": "",
+            "description": "Jenkins Job Categories panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
                 "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
             "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":2,\"y\":0,\"w\":4,\"h\":3,\"i\":\"1\"},\"id\":\"e0236790-bc12-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs Evolution\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"3\"},\"id\":\"52b76550-2a03-11e9-b1b8-f3720d7eacea\",\"title\":\"Big numbers\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Results per Category\",\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":3,\"w\":6,\"h\":7,\"i\":\"4\"},\"id\":\"dad9aa70-2a02-11e9-b1b8-f3720d7eacea\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":7,\"i\":\"5\"},\"id\":\"41021bc0-29fe-11e9-b1b8-f3720d7eacea\",\"title\":\"Categories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":10,\"w\":12,\"h\":7,\"i\":\"6\"},\"id\":\"a44d0f70-bbf7-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"7\"},\"id\":\"51009e10-344a-11e9-b1b8-f3720d7eacea\",\"title\":\"Help\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
-            "release_date": "2019-02-19T15:37:59.041137",
+            "release_date": "2019-02-22T13:03:43.458425",
             "timeRestore": false,
             "title": "Jenkins Job Categories",
             "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 5,000\":\"rgb(247,252,245)\",\"5,000 - 10,000\":\"rgb(199,233,192)\",\"10,000 - 15,000\":\"rgb(116,196,118)\",\"15,000 - 20,000\":\"rgb(35,139,69)\"}}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",

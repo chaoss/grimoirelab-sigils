@@ -37,6 +37,6 @@ From left to right and top to bottom, the metrics provided are:
 * **Results per Category**: heat map to visually identify categories with 
   more runs and their results.
 * **Categories**: aggregated numbers by category (actually by `installer` as
-  exlained [above](#filtering-by-job-category)).
-* **Jobs**: ggregated numbers by job name.
+  explained [above](#filtering-by-job-category)).
+* **Jobs**: aggregated numbers by job name.
 
