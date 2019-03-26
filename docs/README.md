@@ -23,8 +23,8 @@ different use case.
 The following is a list with the several panels available in the dashboard. All of them are either dependent from a data source or contains information from several data sources at the same time.
 
 * Data Source: **Any**
-  * [Overview](overview.md): summary of the available data sources about **activity** and **community**.
-  * [Data Status](data-status.md): summary of the data freshness available in the dashboard.
+  * [Overview](_panels/overview.md): summary of the available data sources about **activity** and **community**.
+  * [Data Status](_panels/data-status.md): summary of the data freshness available in the dashboard.
 * Data Source: **Apache**
 * Data Source: **Askbot**
 * Data Source: **Bugzilla**
@@ -38,14 +38,14 @@ The following is a list with the several panels available in the dashboard. All 
   * Gerrit Timing: **process** metrics such as engineering bottlenecks and time to code review estimations.
   * Gerrit Backlog: **process** metrics to help developers to focus on the open changesets/open backlog of the community in Gerrit.
 * Data Source: **Git**
-  * [Git Overview](git.md): general metrics about **activity** and **community** in Git repositories.
-  * [Git Demographics](git-demographics.md): newcomers (those attracted) and people leaving the **community** in the Git repositories.
+  * [Git Overview](_panels/git.md): general metrics about **activity** and **community** in Git repositories.
+  * [Git Demographics](_panels/git-demographics.md): newcomers (those attracted) and people leaving the **community** in the Git repositories.
 * Data Source: **GitHub**
-  * [GitHub Issues Overview](github-issues.md): general metrics about **activity** and **community** in GitHub issues repositories.
-  * [GitHub Pull Requests Overview](github-pullrequests.md): general metrics about **activity** and **community** in GitHub pull requests repositories.
-  * [GitHub Issues Timing](github-issues-timing.md): **process** metrics such as engineering bottlenecks and time to close issues estimations.
-  * [GitHub Pull Requests Timing](github-pullrequests-timing.md): **process** metrics such as engineering bottlenecks and time to code review estimations.
-  * [GitHub Backlog](github-backlog.md): **process** metrics to help developers to focus on the pull requests/issues/open backlog of the community in GitHub.
+  * [GitHub Issues Overview](_panels/github-issues.md): general metrics about **activity** and **community** in GitHub issues repositories.
+  * [GitHub Pull Requests Overview](_panels/github-pullrequests.md): general metrics about **activity** and **community** in GitHub pull requests repositories.
+  * [GitHub Issues Timing](_panels/github-issues-timing.md): **process** metrics such as engineering bottlenecks and time to close issues estimations.
+  * [GitHub Pull Requests Timing](_panels/github-pullrequests-timing.md): **process** metrics such as engineering bottlenecks and time to code review estimations.
+  * [GitHub Backlog](_panels/github-backlog.md): **process** metrics to help developers to focus on the pull requests/issues/open backlog of the community in GitHub.
 * Data Source: **Google Hits**
 * Data Source: **IRC**
 * Data Source: **Jenkins**
