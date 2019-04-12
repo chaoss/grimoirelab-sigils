@@ -3,7 +3,7 @@ title: Jira
 description: metrics focused on Jira issues.
 author: Bitergia
 screenshot: sigils/jira.png
-created_at: 
+created_at:
 grimoirelab_version: 0.2.0
 layout: panel
 ---
@@ -13,8 +13,12 @@ focused in the number of issues submitted, the people reporting
 them and how long takes issues remain opened or to close them.
 
 This panel gives also special attention to the organizations related
-to these issues, the projecs and the repositories where they were
+to these issues, the projects and the repositories where they were
 submitted.
+
+Note there is a blue filter on top for filtering in issues, so comments
+are excluded from panel calculations although they are also stored in the
+index. A field named `type` allows us to differentiate between them.
 
 
 ## Metrics
@@ -40,4 +44,4 @@ From left to right and top to bottom, the metrics provided are:
   where she collaborated or the average in days her tickets are/were
   remained open.
 * **Jira repositories**: table with the activity per repository and the
-  average time to close an issue. 
+  average time to close an issue.
