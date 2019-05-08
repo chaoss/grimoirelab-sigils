@@ -9,7 +9,7 @@
             },
             "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
             "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 7, \"h\": 2, \"i\": \"1\"}, \"id\": \"github_issues_openissues_statistics\", \"title\": \"Open Issues Statistics\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"18\", \"gridData\": {\"x\": 7, \"y\": 0, \"w\": 5, \"h\": 2, \"i\": \"18\"}, \"id\": \"github_issues_backlog_waiting_to_be_closed\", \"title\": \"Backlog\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"19\", \"gridData\": {\"x\": 0, \"y\": 8, \"w\": 4, \"h\": 7, \"i\": \"19\"}, \"id\": \"github_issues_backlog_submitters\", \"title\": \"Backlog Submitters\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"20\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 7, \"h\": 6, \"i\": \"20\"}, \"id\": \"github_issues_backlog\", \"title\": \"Backlog (Open Issues)\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"21\", \"gridData\": {\"x\": 7, \"y\": 2, \"w\": 5, \"h\": 2, \"i\": \"21\"}, \"id\": \"github_issues_backlog_waiting_to_be_closed_accumulated_time\", \"title\": \"Backlog: Issues (Accumulated Time)\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"22\", \"gridData\": {\"x\": 7, \"y\": 4, \"w\": 5, \"h\": 4, \"i\": \"22\"}, \"id\": \"github_issues_open_organizations\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"23\", \"gridData\": {\"x\": 4, \"y\": 8, \"w\": 4, \"h\": 7, \"i\": \"23\"}, \"id\": \"github_issues_organizations_backlog\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"24\", \"gridData\": {\"x\": 8, \"y\": 8, \"w\": 4, \"h\": 7, \"i\": \"24\"}, \"id\": \"github_issues_projects_backlog\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
-            "release_date": "2019-03-05T16:12:59.570180",
+            "release_date": "2019-05-08T12:09:52.942625",
             "timeRestore": false,
             "title": "GitHub Issues Backlog",
             "uiStateJSON": "{\"P-1\":{\"title\":\"Open Issues Statistics\"},\"P-18\":{\"title\":\"Backlog\",\"vis\":{\"legendOpen\":false}},\"P-19\":{\"title\":\"Backlog Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-20\":{\"title\":\"Backlog (Open Issues)\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-21\":{\"title\":\"Backlog: Issues (Accumulated Time)\"},\"P-22\":{\"title\":\"Organizations\"},\"P-23\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-24\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
@@ -26,10 +26,10 @@
                 "description": "",
                 "hits": 0,
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"state:open AND pull_request:false\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                    "searchSourceJSON": "{\n  \"index\": \"github_issues\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"state:open AND pull_request:false\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
                 },
                 "sort": [
-                    "metadata__updated_on",
+                    "grimoire_creation_date",
                     "desc"
                 ],
                 "title": "Search:_state:open_and_pull_request:false",
@@ -45,10 +45,10 @@
                 "description": "",
                 "hits": 0,
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"index\":\"github_issues\",\"query\":{\"query_string\":{\"query\":\"state:open\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+                    "searchSourceJSON": "{\n  \"index\": \"github_issues\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"state:open\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
                 },
                 "sort": [
-                    "metadata__updated_on",
+                    "grimoire_creation_date",
                     "desc"
                 ],
                 "title": "Search:_state:open",
