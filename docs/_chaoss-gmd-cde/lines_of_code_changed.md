@@ -47,3 +47,7 @@ repositories table.
 **Evolution of commits** is below the last graph, between the big numbers widget and repositories table. It shows bar chart where each bar represents the amount of commits in a given time (depending on the granularity of the graph it could be hours, days, weeks, months, etc.). Each bar is split by project.
 
 Finally, a short text is shown at the bottom to explain the basics needed to understand the panel and its filters.
+
+### How to import this panel into your GrimoireLab instance
+
+Please follow [instructions at the Contributing file in the Sigils repository](https://github.com/chaoss/grimoirelab-sigils/blob/master/CONTRIBUTING.md#importing-panels).
