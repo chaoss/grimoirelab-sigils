@@ -2,7 +2,7 @@
 title: Gerrit Review Efficiency
 description: efficiency closing reviews in Gerrit.
 author: Bitergia
-screenshot: sigils/demographics.png
+screenshot: sigils/gerrit_review_efficiency.png
 created_at: 
 grimoirelab_version: 0.2.1
 layout: panel
