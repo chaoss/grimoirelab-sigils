@@ -1,0 +1,146 @@
+{
+    "dashboard": {
+        "id": "07dadc50-9c19-11e9-82c4-37956b0c932a",
+        "value": {
+            "description": "Code License metrics via Graal",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [], \"highlightAll\": true, \"version\": true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"gridData\": {\"h\": 5, \"i\": \"1\", \"w\": 6, \"x\": 0, \"y\": 15}, \"id\": \"0cc416d0-9bee-11e9-82c4-37956b0c932a\", \"panelIndex\": \"1\", \"title\": \"License Definition\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"3\", \"w\": 4, \"x\": 0, \"y\": 0}, \"id\": \"f2a96eb0-9e60-11e9-82c4-37956b0c932a\", \"panelIndex\": \"3\", \"title\": \"Selector\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"4\", \"w\": 6, \"x\": 6, \"y\": 15}, \"id\": \"a1ea8b70-9e61-11e9-82c4-37956b0c932a\", \"panelIndex\": \"4\", \"title\": \"Copyright Definition\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"9\", \"w\": 12, \"x\": 0, \"y\": 20}, \"id\": \"588d0010-9e62-11e9-82c4-37956b0c932a\", \"panelIndex\": \"9\", \"title\": \"All Files: License & Copyright Definition\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"10\", \"w\": 6, \"x\": 6, \"y\": 5}, \"id\": \"14364660-a277-11e9-82c4-37956b0c932a\", \"panelIndex\": \"10\", \"title\": \"Copyrighted Files\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"11\", \"w\": 6, \"x\": 0, \"y\": 5}, \"id\": \"96573170-a279-11e9-82c4-37956b0c932a\", \"panelIndex\": \"11\", \"title\": \"Licensed Files\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"12\", \"w\": 12, \"x\": 0, \"y\": 10}, \"id\": \"7e58f0e0-ad14-11e9-82c4-37956b0c932a\", \"panelIndex\": \"12\", \"title\": \"Evolution: Licensed & Copyrighted Files\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 5, \"i\": \"13\", \"w\": 8, \"x\": 4, \"y\": 0}, \"id\": \"e036a710-ad39-11e9-82c4-37956b0c932a\", \"panelIndex\": \"13\", \"title\": \"Repositories\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"14\", \"w\": 12, \"x\": 0, \"y\": 26}, \"id\": \"9b28d8c0-c26d-11e9-82c4-37956b0c932a\", \"panelIndex\": \"14\", \"title\":\"Help\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}]",
+            "refreshInterval": {
+                "display": "Off",
+                "pause": false,
+                "value": 0
+            },
+            "release_date": "2019-08-20T20:40:15.058165",
+            "timeFrom": "now-5y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "CoLic Dashboard",
+            "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":true}},\"P-10\":{\"vis\":{\"colors\":{\"No copyright\":\"#EA6460\",\"With copyright\":\"#629E51\",\"false\":\"#EA6460\",\"true\":\"#9AC48A\"},\"legendOpen\":true}},\"P-11\":{\"vis\":{\"legendOpen\":true}},\"P-13\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}},\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"legendOpen\":true}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "0cc416d0-9bee-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "colic_all_licenses_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Files\",\"field\":\"file_path\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"License\",\"field\":\"license_name\",\"order\":\"desc\",\"orderAgg\":{\"enabled\":true,\"id\":\"2-orderAgg\",\"params\":{\"field\":\"file_path\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!median\",\"!std_dev\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\",\"!avg_bucket\",\"!max_bucket\",\"!min_bucket\",\"!sum_bucket\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"hideCustomLabel\":true,\"max\":null,\"min\":0,\"name\":\"orderAgg\",\"params\":[],\"title\":\"Order Agg\"},\"type\":\"cardinality\"},\"orderBy\":\"custom\",\"size\":15},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":40,\"values\":false},\"legendPosition\":\"right\",\"type\":\"pie\"},\"title\":\"colic_all_licenses_pie\",\"type\":\"pie\"}"
+            }
+        },
+        {
+            "id": "f2a96eb0-9e60-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "colic_repository_project_selector",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"colic_repository_project_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"fieldName\":\"project\",\"id\":\"1562247124311\",\"indexPattern\":\"colic\",\"label\":\"Project\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":5,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"origin\",\"id\":\"1562247146352\",\"indexPattern\":\"colic\",\"label\":\"Repository\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":10,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"modules\",\"id\":\"1562247187346\",\"indexPattern\":\"colic\",\"label\":\"Module Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"file_path\",\"id\":\"1562247166187\",\"indexPattern\":\"colic\",\"label\":\"File Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"id\":\"1566194096466\",\"indexPattern\":\"colic_study\",\"fieldName\":\"interval_months\",\"label\":\"Interval\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1562248398538\",\"indexPattern\":\"colic\",\"fieldName\":\"has_license\",\"label\":\"Has License\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1562248433403\",\"indexPattern\":\"colic\",\"fieldName\":\"has_copyright\",\"label\":\"Has Copyright\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "a1ea8b70-9e61-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "colic_all_copyright_definition_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Files\",\"field\":\"file_path\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Copyright\",\"field\":\"copyrights\",\"order\":\"desc\",\"orderAgg\":{\"enabled\":true,\"id\":\"2-orderAgg\",\"params\":{\"field\":\"file_path\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!median\",\"!std_dev\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\",\"!avg_bucket\",\"!max_bucket\",\"!min_bucket\",\"!sum_bucket\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"hideCustomLabel\":true,\"max\":null,\"min\":0,\"name\":\"orderAgg\",\"params\":[],\"title\":\"Order Agg\"},\"type\":\"cardinality\"},\"orderBy\":\"custom\",\"size\":15},\"schema\":\"segment\",\"type\":\"terms\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":40,\"values\":false},\"legendPosition\":\"right\",\"type\":\"pie\"},\"title\":\"colic_all_copyright_definition_pie\",\"type\":\"pie\"}"
+            }
+        },
+        {
+            "id": "588d0010-9e62-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "colic_file_wise_definition_all",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"3\",\"params\":{\"aggregate\":\"concat\",\"customLabel\":\"License\",\"field\":\"license_name\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\"},\"schema\":\"metric\",\"type\":\"top_hits\"},{\"enabled\":true,\"id\":\"1\",\"params\":{\"aggregate\":\"concat\",\"customLabel\":\"Copyright\",\"field\":\"copyrights\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\"},\"schema\":\"metric\",\"type\":\"top_hits\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customLabel\":\"Repository\",\"field\":\"origin\",\"order\":\"desc\",\"orderBy\":\"_term\",\"size\":5000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"File\",\"field\":\"file_path\",\"order\":\"desc\",\"orderAgg\":{\"enabled\":true,\"id\":\"2-orderAgg\",\"params\":{\"field\":\"commit_date\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!median\",\"!std_dev\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\",\"!avg_bucket\",\"!max_bucket\",\"!min_bucket\",\"!sum_bucket\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"hideCustomLabel\":true,\"max\":null,\"min\":0,\"name\":\"orderAgg\",\"params\":[],\"title\":\"Order Agg\"},\"type\":\"max\"},\"orderBy\":\"custom\",\"size\":10},\"schema\":\"bucket\",\"type\":\"terms\"}],\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"colic_file_wise_definition_all\",\"type\":\"table\"}"
+            }
+        },
+        {
+            "id": "14364660-a277-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "colic_main_numbers_copyright",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"false\":\"#EAB839\",\"true\":\"#1F78C1\"},\"legendOpen\":true},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"colic_main_numbers_copyright\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":false,\"show\":false,\"truncate\":100,\"values\":false},\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"file_path\",\"customLabel\":\"Number of Files\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"has_copyright:1\"},\"label\":\"With copyright\"},{\"input\":{\"query\":\"has_copyright:0\"},\"label\":\"No copyright\"}]}}]}"
+            }
+        },
+        {
+            "id": "96573170-a279-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "colic_main_numbers_license",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"true\":\"#1F78C1\",\"false\":\"#EAB839\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"colic_main_numbers_license\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":false,\"show\":false,\"truncate\":100,\"values\":false},\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"file_path\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"has_license:1\"},\"label\":\"With License\"},{\"input\":{\"query\":\"has_license:0\"},\"label\":\"No license\"}]}}]}"
+            }
+        },
+        {
+            "id": "7e58f0e0-ad14-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic_study\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "colic_study_license_copyright_evolution",
+                "uiStateJSON": "{\"vis\":{\"colors\":{\"Licensed Files\":\"#629E51\",\"Copyrighted Files\":\"#6ED0E0\",\"Total Files\":\"#EA6460\"}}}",
+                "version": 1,
+                "visState": "{\"title\":\"colic_study_license_copyright_evolution\",\"type\":\"line\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Licensed Files\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":4,\"mode\":\"normal\",\"show\":\"true\",\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"},{\"data\":{\"id\":\"3\",\"label\":\"Copyrighted Files\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":4,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"},{\"data\":{\"id\":\"4\",\"label\":\"Total Files\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":4,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"line\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"line\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Licensed, copyrighted, total files\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"licensed_files\",\"customLabel\":\"\"}},\"customLabel\":\"Licensed Files\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time intervals\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"3-bucket\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},\"customMetric\":{\"id\":\"3-metric\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"copyrighted_files\",\"customLabel\":\"\"}},\"customLabel\":\"Copyrighted Files\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"4-bucket\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},\"customMetric\":{\"id\":\"4-metric\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"total_files\",\"customLabel\":\"\"}},\"customLabel\":\"Total Files\"}}]}"
+            }
+        },
+        {
+            "id": "e036a710-ad39-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"colic_study\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "colic_study_metric_table_all",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Repository\",\"field\":\"origin\",\"order\":\"desc\",\"orderBy\":\"_term\",\"size\":5000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"4-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Total Files\",\"customMetric\":{\"enabled\":true,\"id\":\"4-metric\",\"params\":{\"field\":\"total_files\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"},{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Licensed Files\",\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"licensed_files\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"3-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Copyrighted Files\",\"customMetric\":{\"enabled\":true,\"id\":\"3-metric\",\"params\":{\"field\":\"copyrighted_files\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"}],\"params\":{\"perPage\":8,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"colic_study_metric_table_all\",\"type\":\"table\"}"
+            }
+        },
+        {
+            "id": "9b28d8c0-c26d-11e9-82c4-37956b0c932a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "colic_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"colic_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on the **Code License** metrics and their evolution\\n* **Selector** :\\n  * **Repository** helps results for a given repository\\n  * **Module Path** helps refine results for a given module\\n  * **interval_months** is the study interval (default: 1)\\n* **Repositories** gives an overview of all the repositories and the corresponding metrics\\n* **Licensed Files** shows the number of licensed v/s unlicensed files\\n* **Copyrighted Files** shows the number of copyrighted v/s uncopyrighted files.\\n* **Evolution: Licensed & Copyrighted Files** shows the evolution of the Licensed and Copyrighted files over the time period\\n* **License Definition** shows most frequent license definitions in the project\\n* **Copyright Definition** shows most frequent copyright definitions in the project\\n* **All Files: License & Copyright Definition** gives license and copyright definition corresponding to each file of the repository, which can be delegated via the Module Path Selector\\n\\n\\n[See complete panel documentation]()\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
