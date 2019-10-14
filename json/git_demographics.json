@@ -14,7 +14,7 @@
                 "pause": false,
                 "value": 0
             },
-            "release_date": "2019-10-08T07:35:57.686855",
+            "release_date": "2019-10-14T16:02:17.992641",
             "timeFrom": "now-10y",
             "timeRestore": true,
             "timeTo": "now",
@@ -74,7 +74,7 @@
                 "title": "git_demographics_people_leaving_community",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
                 "version": 1,
-                "visState": "{\"title\":\"git_demographics_people_leaving_community\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"demography_max_date\",\"customLabel\":\"Last Commit Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"bucket\",\"params\":{\"field\":\"demography_max_date\",\"ranges\":[{\"from\":\"now-12M\",\"to\":\"now-6M\"}],\"customLabel\":\"Period of becoming inactive (last commit 6 months ago)\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}]}"
+                "visState": "{\"title\":\"git_demographics_people_leaving_community\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"demography_max_date\",\"customLabel\":\"Last Commit Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"bucket\",\"params\":{\"field\":\"demography_max_date\",\"ranges\":[{\"from\":\"now-12M\",\"to\":\"now-6M\"}],\"customLabel\":\"Last contribution sent between (6 and 12 months ago)\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}]}"
             }
         },
         {
