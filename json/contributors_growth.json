@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "4434c9a0-18dd-11e9-ba47-d5cbef43f8d3",
+        "value": {
+            "description": "Contributors Growth Panel by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"negate\":true,\"disabled\":false,\"alias\":\"Bots\",\"type\":\"phrase\",\"key\":\"author_bot\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"1\"},\"id\":\"1d4de740-17f2-11e9-872f-e17019e68d6d\",\"title\":\"Filters\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":2,\"y\":0,\"w\":3,\"h\":3,\"i\":\"2\"},\"id\":\"403508c0-18dc-11e9-ba47-d5cbef43f8d3\",\"title\":\"Total Contributors\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":5,\"y\":0,\"w\":7,\"h\":4,\"i\":\"3\"},\"id\":\"19b8f840-18c4-11e9-872f-e17019e68d6d\",\"title\":\"Active Contributors over time and Growth Analysis\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Active Contributors over time and Difference with the Average\",\"panelIndex\":\"4\",\"gridData\":{\"x\":5,\"y\":4,\"w\":7,\"h\":4,\"i\":\"4\"},\"id\":\"8cfe1960-18de-11e9-ba47-d5cbef43f8d3\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Contributors Growth by Data Source\",\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":3,\"w\":5,\"h\":5,\"i\":\"5\"},\"id\":\"bac35d50-18df-11e9-ba47-d5cbef43f8d3\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Help\",\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":8,\"w\":12,\"h\":3,\"i\":\"6\"},\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"50f893c0-18eb-11e9-ba47-d5cbef43f8d3\"}]",
+            "release_date": "2019-10-30T13:15:35.939572",
+            "timeRestore": false,
+            "title": "Contributors Growth",
+            "uiStateJSON": "{\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "1d4de740-17f2-11e9-872f-e17019e68d6d",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "ocean_filters_datasource_organizations_projects",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"ocean_filters_datasource_organizations_projects\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1539605670712\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1547138487161\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1547138512073\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "403508c0-18dc-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "contributors_growth_total_number",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"contributors_growth_total_number\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Total Contributors\"}}]}"
+            }
+        },
+        {
+            "id": "19b8f840-18c4-11e9-872f-e17019e68d6d",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "contributors_growth_with_derivative_analysis",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\":\"timelion\",\"title\":\"contributors_growth_with_derivative_analysis\",\"params\":{\"expression\":\".es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).label(\\\"Contributors Active\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative().if(lt, 0,.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative(),null).label('Negative Contributors Active Balance (decrease with respect to previous slot)').color('#FFCC11').bars(), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative().if(gte, 0,.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative(),null).label('Positive Contributors Active Balance (increase with respect to previous slot)').color('#00FF00').bars()\",\"interval\":\"1w\"}}"
+            }
+        },
+        {
+            "id": "8cfe1960-18de-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "contributors_growth_with_average_and_distance_to_the_average",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"type\":\"timelion\",\"title\":\"contributors_growth_with_average_and_distance_to_the_average\",\"params\":{\"expression\":\".es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).label(\\\"Contributors Active\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).aggregate(avg).label(\\\"Contributors Active Average\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).subtract(.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).aggregate(avg)).bars().label(\\\"Distance to the Average\\\")\",\"interval\":\"1w\"}}"
+            }
+        },
+        {
+            "id": "bac35d50-18df-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "contributors_growth_by_data_source",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"contributors_growth_by_data_source\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Contributors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"data_source\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Data Source\"}}]}"
+            }
+        },
+        {
+            "id": "50f893c0-18eb-11e9-ba47-d5cbef43f8d3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "contributors_growth_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"contributors_growth_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Contributors Growth** in terms of **number of people contributing to the several data sources of the project**.\\n* **The big number** gives an overview of the total and unique contributors across all of the data sources in the selected time range (using timepicker located at the top right corner of the dashboard).\\n* **Top right evolutionary chart** shows the evolution of the active contributors over time (line) and the difference between a given slot of time and its predecessor. Periods of time where the growth has been positive are represented in green, while periods with negative growth are displayed in yellow.\\n* **Bottom right evolutionary chart** displays the number of contributors over time. Red line displays the average of the community in the timeframe of analysis. The bars represents how far that period of time is from the average. The value of each bar is the difference between the number of contributors in that slot of time and the average of contributors for that period of time.\\n* **Table** splits all of this information by data source. This gives the number contributors.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/contributors-growth/)\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
