@@ -5,11 +5,11 @@
             "description": "About panel by Bitergia",
             "hits": 0,
             "kibanaSavedObjectMeta": {
-                "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"highlightAll\":true,\"version\":true}"
+                "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
             },
             "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
-            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":5,\"i\":\"1\"},\"id\":\"Help-About\",\"title\":\"About\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":5,\"w\":6,\"h\":3,\"i\":\"2\"},\"id\":\"Help-Acknowledgments\",\"title\":\"Acknowledgments\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":8,\"i\":\"4\"},\"id\":\"Help-UI\",\"title\":\"User Interface\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
-            "release_date": "2018-08-28T11:17:53.518762",
+            "panelsJSON": "[{\"gridData\":{\"h\":5,\"i\":\"1\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"Help-About\",\"panelIndex\":\"1\",\"title\":\"About\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":6,\"x\":6,\"y\":5},\"id\":\"Help-Acknowledgments\",\"panelIndex\":\"2\",\"title\":\"Acknowledgments\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":8,\"i\":\"4\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"Help-UI\",\"panelIndex\":\"4\",\"title\":\"User Interface\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+            "release_date": "2019-11-28T17:39:55.498567",
             "timeRestore": false,
             "title": "About",
             "uiStateJSON": "{\"P-1\":{\"title\":\"About\"},\"P-2\":{\"title\":\"Acknowledgments\"},\"P-4\":{\"title\":\"User Interface\"}}",
@@ -36,12 +36,12 @@
             "value": {
                 "description": "",
                 "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+                    "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
                 },
                 "title": "Help Acknowledgments",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"Help Acknowledgments\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Acknowledgments\\n\\nThanks to all free, open source software developers, who have produced all the software that can be analyzed by this open analytics platform.\\n\\nIn particular, thanks to all of them (ranking in the tens of thousands) who have contributed to the pieces of software who make possible the platform itself.\"},\"aggs\":[],\"listeners\":{}}"
+                "visState": "{\"title\":\"Help Acknowledgments\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Acknowledgments\\n\\nThanks to all free, open source software developers, who have produced all the software that can be analyzed by this open analytics platform.\\n\\nIn particular, thanks to all of them (ranking in the tens of thousands) who have contributed to the pieces of software who make possible the platform itself.\\n\\nMetrics available in GrimoireLab are, in part, developed in the CHAOSS project. \\nMore information about the CHAOSS metrics can be found at:\\nhttps://chaoss.community/metrics/\",\"fontSize\":12},\"aggs\":[]}"
             }
         },
         {
