@@ -155,7 +155,7 @@ Kidash is part of [GrimoireELK](https://github.com/grimoirelab/GrimoireELK) tool
 and can be installed as a pypi package: `grimoire-kidash` [![PyPI version](https://badge.fury.io/py/grimoire-kidash.svg)](https://badge.fury.io/py/grimoire-kidash)
 We recommend you to install it in a Python Virtual Environment:
 ```
-$> python -m venv kidash-venv
+$> python3 -m venv kidash-venv
 $> . kidash-venv/bin/activate
 (kidash-venv)$> pip3 install kidash
 (kidash-venv)$> kidash
