@@ -187,6 +187,40 @@ And execute:
 bundle install
 ```
 
+If you see the following error:
+```
+Traceback (most recent call last):
+	2: from /usr/local/bin/bundle:23:in `<main>'
+	1: from /usr/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
+/usr/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)
+```
+
+Then you need to update your ruby gems:
+```
+sudo gem update --system '2.7.9'
+```
+
+At this point you need `g++`. If it is not installed you'll get the following error:
+```
+...
+current directory: /tmp/bundler20200113-21702-swo6greventmachine-1.2.7/gems/eventmachine-1.2.7/ext
+make "DESTDIR="
+compiling binder.cpp
+make: g++: Command not found
+Makefile:234: recipe for target 'binder.o' failed
+make: *** [binder.o] Error 127
+
+make failed, exit code 2
+...
+```
+
+In that case, just install it. For instance, in Ubuntu:
+```
+sudo apt-get install g++
+
+bundle install
+```
+
 If you had some dependency problems:
 ```
 Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
@@ -215,7 +249,10 @@ Then you need to install some things:
 sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
 
 sudo gem install commonmarker -v '0.17.13' --source 'https://rubygems.org/'
+```
 
+And then it should work:
+```
 bundle install
 ```
 
