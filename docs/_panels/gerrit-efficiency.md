@@ -2,7 +2,7 @@
 title: Gerrit Efficiency
 description: efficiency closing changesets in Gerrit.
 author: Bitergia
-screenshot: sigils/gerrit-review-efficiency.png
+screenshot: sigils/gerrit-efficiency.png
 created_at: 
 grimoirelab_version: 0.2.1
 layout: panel
