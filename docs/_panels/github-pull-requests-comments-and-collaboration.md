@@ -45,8 +45,8 @@ what could be considered as a side use case.
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of an alias that combines two separate physical indexes: [github_issues2] and
-[github_pull_requests2]. The latter one is filtered in the alias to show only issues corresponding to
+This dashboard is built on top of an alias that combines two separate physical indexes: [github2_issues] and
+[github2_pull_requests]. The latter one is filtered in the alias to show only issues corresponding to
 pull requests. This way we can combine issue comments and pull requests reviews in our visualizations.
 It is worth to mention that in GitHub everything are issues, even pull requests, and that's why we need
 to combine both indexes. To avoid counting twice the pull request, we filter out issues through a filter
@@ -61,5 +61,5 @@ The fields that can be used to aggregate both issues and pull requests are:
 * `issue_id_in_repo`: this works only at repo level as they are unique by repo. As pull requests are issues too
     they also contain this id.
 
-[github2 issues]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_issues.csv
-[github2 pull requests]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_pull_requests.csv
+[github2_issues]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_issues.csv
+[github2_pull_requests]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_pull_requests.csv
