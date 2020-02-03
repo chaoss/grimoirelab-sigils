@@ -45,21 +45,31 @@ what could be considered as a side use case.
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of an alias that combines two separate physical indexes: [github2_issues] and
-[github2_pull_requests]. The latter one is filtered in the alias to show only issues corresponding to
-pull requests. This way we can combine issue comments and pull requests reviews in our visualizations.
-It is worth to mention that in GitHub everything are issues, even pull requests, and that's why we need
-to combine both indexes. To avoid counting twice the pull request, we filter out issues through a filter
-named `Not Pull Requests` placed on top of the dashboard.
+This dashboard is built on top of an alias ([github2_pull_requests]) that combines two separate physical
+indexes that store GitHub Issues in one case and GitHub Pull Requests in the other. To better
+understand why this is needed, let's explain some details about how GitHub data looks like:
+ * Comments corresponding to pull requests in the **issues index** are regular comments in the pull requests
+   threads, while those coming from the **pull requests index** are reviews. We need to get both of them to
+   analyze all the activity around a given pull request.
+ * The [github2_pull_requests] index is actually a filtered alias to show data from issues corresponding to
+   pull requests and data from the pull requests themselves.
+ * In the GitHub API everything are issues, even pull requests. That means any pull request will appear once
+   in the **issues index** and another in the **pull requests index**.
+ * To avoid counting the pull requests twice, we filter out issues through a filter
+   named `Not Issues` placed on top of the dashboard. This way we include the comments from the issues, but
+   not the issues themselves, as their data are already included in the pull requests index.
 
-The fields that can be used to aggregate both issues and pull requests are:
-* `issue_url`: the URL of the issue is shared by issues and pull requests. 
-* `issue_title`: the title is propagated to allow to group issues and pull requests by a more meaningful field.
-    Of course if more than one issue had the same title, they will be aggregated together so using it as a
-    second level aggregation or by means of `Top Hits` metric could be a better approach.
+The result is getting data for pull requests, their reviews and their regular comments (those that are not
+reviews).
+
+The fields that can be used to aggregate data from both issues and pull requests are:
+* `issue_url`: the URL of the issue is shared by items coming from both issues and pull requests indexes. 
+* `issue_title`: the title is propagated to allow to group items related to given issues and pull requests
+   by a more meaningful field. Of course if more than one issue had the same title, they will be aggregated
+   together so using it as a second level aggregation or by means of `Top Hits` metric could be a better
+   approach to overcome this case.
 * `is_github_comment`: used to be able to sum comments and reviews all together.
-* `issue_id_in_repo`: this works only at repo level as they are unique by repo. As pull requests are issues too
-    they also contain this id.
+* `issue_id_in_repo`: this works only at repo level as they are unique by repo only. As pull requests are
+   issues too, they also contain this id.
 
-[github2_issues]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_issues.csv
 [github2_pull_requests]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_pull_requests.csv

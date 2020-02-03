@@ -42,9 +42,9 @@ what could be considered as a side use case.
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of  [github2_issues] index. It is worth to mention that in GitHub everything
+This dashboard is built on top of [github2_issues] index. It is worth to mention that in GitHub everything
 are issues, even pull requests, so issues corresponding to pull requests will appear in this index too.
 To avoid counting them as issues, we filter out pull requests by means of a filter
-named `Not Issues` placed on top of the dashboard.
+named `Not Pull Requests` placed on top of the dashboard.
 
 [github2_issues]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_issues.csv
