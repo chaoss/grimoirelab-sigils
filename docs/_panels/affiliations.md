@@ -21,9 +21,9 @@ From left to right and top to bottom, the widgets provided are:
     allows filtering in data sources by clicking on them. For selecting several at the same time, 
     please use `Data Source` widget instead (or add a filter manually on top).
 * **Authors**: table to search from the most active contributors. By correctly affiliating the most
-    active ones we quickly improve the results of the pie chart and by extension of our analysis in
-    all other dashboards. Column titled `Hatstall` provides direct links to the corresponding profile
-    page on Hatstall web app, where affiliations may be queried and modified.
+    active ones we will quickly improve the results of the pie chart and, by extension, of our analysis in
+    all other dashboards. The column titled `Profile` provides direct links to the corresponding
+    page on **Hatstall** web app, where affiliations may be queried and modified.
 * **Organizations**: table providing information at the level of organization. Offers more detail than
     the pie chart.
      
