@@ -174,7 +174,7 @@ ruby --version
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
 ```
 
-Then create `Gemfile` to make sure we're using same version as GH Pages and whitelisted plugins:
+Then create Gemfile (command `bundle init`) and add the following instructions in it to make sure we'are using the same version as GH Pages and whitelisted plugins:
 ```
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
