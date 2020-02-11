@@ -25,7 +25,4 @@ The table in the top right corner displays the top edited pages (which have a li
 
 Finally, the last table displays projects data and also the number of editors, revisions and new pages for each organization. Thus, it is useful to complent organizations information.
 
-![Mediawiki]({{ site.baseurl }}/assets/images/mediawiki_panel_2.png)
-###### Figure 2. Second part of the panel
-
 The tables at the bottom shows the latest events about the latest pages created and edited (e.g., creation date, amount of editions). They support filtering operations and allow to navigate to the corresponding mediawiki pages.
