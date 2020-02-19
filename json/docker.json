@@ -1,0 +1,159 @@
+{
+    "dashboard": {
+        "id": "1fe57070-4f11-11ea-ac47-d59b2800ffe6",
+        "value": {
+            "description": "Docker dependencies and smells obtained with Jadolint",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":6,\"w\":3,\"h\":5,\"i\":\"1\"},\"id\":\"f9bcd850-4f12-11ea-ac47-d59b2800ffe6\",\"title\":\"Dependencies per repository\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":7,\"y\":6,\"w\":5,\"h\":5,\"i\":\"4\"},\"id\":\"c31377a0-4f12-11ea-ac47-d59b2800ffe6\",\"title\":\"Dependencies graph\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":3,\"y\":6,\"w\":4,\"h\":5,\"i\":\"5\"},\"id\":\"231fa1f0-4f13-11ea-ac47-d59b2800ffe6\",\"title\":\"Dependencies shared by repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":3,\"i\":\"6\"},\"id\":\"daa3eb10-4f13-11ea-ac47-d59b2800ffe6\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":3,\"w\":2,\"h\":3,\"i\":\"7\"},\"id\":\"257a8c70-4f14-11ea-ac47-d59b2800ffe6\",\"title\":\"Dependency metrics\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":11,\"w\":3,\"h\":6,\"i\":\"8\"},\"id\":\"6778a9d0-4f15-11ea-ac47-d59b2800ffe6\",\"title\":\"Smells per repository\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":2,\"y\":3,\"w\":2,\"h\":3,\"i\":\"9\"},\"id\":\"384aea50-4f16-11ea-ac47-d59b2800ffe6\",\"title\":\"Smell metrics\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":7,\"y\":11,\"w\":5,\"h\":6,\"i\":\"10\"},\"id\":\"77398850-4f18-11ea-ac47-d59b2800ffe6\",\"title\":\"Smells graph\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":3,\"y\":11,\"w\":4,\"h\":6,\"i\":\"13\"},\"id\":\"5dbb6e60-55a9-11ea-b68b-31a1aa44b23a\",\"title\":\"Smells shared by repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":4,\"y\":0,\"w\":8,\"h\":6,\"i\":\"14\"},\"id\":\"26ba3440-55aa-11ea-b68b-31a1aa44b23a\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+            "refreshInterval": {
+                "display": "Off",
+                "pause": false,
+                "value": 0
+            },
+            "release_date": "2020-02-23T14:29:23.159509",
+            "timeFrom": "now-5y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Docker",
+            "uiStateJSON": "{\"P-12\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"P-13\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-3\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "f9bcd850-4f12-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_deps_per_origin",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_deps_per_origin\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dependency\",\"customLabel\":\"Dependencies\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"origin\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}}]}"
+            }
+        },
+        {
+            "id": "c31377a0-4f12-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_dependency_graph",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_dependency_graph\",\"type\":\"network\",\"params\":{\"showLabels\":true,\"showPopup\":true,\"showColorLegend\":true,\"nodePhysics\":true,\"firstNodeColor\":\"#d2895f\",\"secondNodeColor\":\"#6897e4\",\"canvasBackgroundColor\":\"#FFFFFF\",\"shapeFirstNode\":\"dot\",\"shapeSecondNode\":\"box\",\"displayArrow\":false,\"posArrow\":\"to\",\"shapeArrow\":\"arrow\",\"smoothType\":\"continuous\",\"scaleArrow\":1,\"maxCutMetricSizeNode\":5000,\"maxCutMetricSizeEdge\":5000,\"minCutMetricSizeNode\":0,\"maxNodeSize\":80,\"minNodeSize\":8,\"maxEdgeSize\":20,\"minEdgeSize\":0.1,\"springConstant\":0.001,\"gravitationalConstant\":-500000,\"labelColor\":\"#000000\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"size_node\",\"params\":{\"field\":\"dependency\",\"customLabel\":\"Dependency\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"origin\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"dependency\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+            }
+        },
+        {
+            "id": "231fa1f0-4f13-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_dependency_dep2repo_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_dependency_dep2repo_table\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"origin\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"dependency\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Dependencies\"}}]}"
+            }
+        },
+        {
+            "id": "daa3eb10-4f13-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "docker_selector",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1581675642868\",\"indexPattern\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"fieldName\":\"origin\",\"label\":\"Repository\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":100,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "257a8c70-4f14-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_deps_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_deps_metrics\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":20}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"origin\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"dependency\",\"customLabel\":\"Deps\"}}]}"
+            }
+        },
+        {
+            "id": "6778a9d0-4f15-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"52b91100-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_smells_pie",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_smells_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"smell\",\"customLabel\":\"Smells\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"origin\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repository\"}}]}"
+            }
+        },
+        {
+            "id": "384aea50-4f16-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"52b91100-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_smells_metrics",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_smells_metrics\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":20}}},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"origin\",\"customLabel\":\"Repositories\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"smell\",\"customLabel\":\"Smells\"}}]}"
+            }
+        },
+        {
+            "id": "77398850-4f18-11ea-ac47-d59b2800ffe6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"52b91100-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_smells_graph",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_smells_graph\",\"type\":\"network\",\"params\":{\"showLabels\":true,\"showPopup\":false,\"showColorLegend\":true,\"nodePhysics\":true,\"firstNodeColor\":\"#e5b186\",\"secondNodeColor\":\"#8197b3\",\"canvasBackgroundColor\":\"#FFFFFF\",\"shapeFirstNode\":\"dot\",\"shapeSecondNode\":\"box\",\"displayArrow\":false,\"posArrow\":\"to\",\"shapeArrow\":\"arrow\",\"smoothType\":\"continuous\",\"scaleArrow\":1,\"maxCutMetricSizeNode\":5000,\"maxCutMetricSizeEdge\":5000,\"minCutMetricSizeNode\":0,\"maxNodeSize\":30,\"minNodeSize\":8,\"maxEdgeSize\":5,\"minEdgeSize\":0.1,\"springConstant\":0.01,\"gravitationalConstant\":-500000,\"labelColor\":\"#000000\"},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"size_node\",\"params\":{\"field\":\"smell\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"origin\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_term\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"smell\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}"
+            }
+        },
+        {
+            "id": "5dbb6e60-55a9-11ea-b68b-31a1aa44b23a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"52b91100-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "docker_smells_smells2repo_table",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_smells_smells2repo_table\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"origin\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"smell\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Smells\"}}]}"
+            }
+        },
+        {
+            "id": "26ba3440-55aa-11ea-b68b-31a1aa44b23a",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "docker_help_text",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"docker_help_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on smells and dependencies extracted from Dockerfiles. The widgets in the dashboards are described below.\\n\\n* **Repository**: a selector useful to focus on one or more repositories.  \\n* **Dependency and smells metrics**: general numbers about the number of repositories, dependencies and smells found. \\n* **Dependencies per repository**: a pie chart that shows the proportion of dependencies per repository.\\n* **Dependencies shared by repositories**: a table that summarizes the number of repositories sharing a dependency.\\n* **Dependencies graph**: a graph that highlights the relationships between repositories (circles) and Docker dependencies (boxes). The repository node size is proportional to the number of dependencies found in that repository. An edge exists between a dependency and a repository if that dependency has been found in a Dockerfile of the repository.\\n* **Smells per repository**: a pie chart that shows the proportion of smells per repository.\\n* **Smells shared by repositories**: a table that summarizes the number of repositories sharing a smell.\\n* **Smells graph**: a graph that highlights the relationships between repositories (circles) and Docker smells (boxes). The repository node size is proportional to the number of smells found in that repository. An edge exists between a smell and a repository if that smell has been found in a Dockerfile of the repository.\\n\\n### Getting Dockerfiles smells and dependencies\\n\\nDockerfiles information data is obtained via [Jadolint](https://github.com/crossminer/crossJadolint), which is included in the [third-party](https://github.com/chaoss/grimoirelab/tree/master/third-party) image of GrimoireLab. \\n\\nDetails about how to execute with GrimoireLab are available in the [Sirmordred repository](https://github.com/chaoss/grimoirelab-sirmordred#supported-data-sources)\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/docker-smells-and-dependencies)\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
