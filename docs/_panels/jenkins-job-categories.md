@@ -32,7 +32,8 @@ contains the category name we are looking for.
 From left to right and top to bottom, the metrics provided are:
 
 * **Big Numbers**: total numbers about what we are 
-  visualizing in the panel. 
+  visualizing in the panel.
+* **Projects and Jobs**: a pie chart that shows the number of jobs per project.
 * **Jobs Evolution**: number of jobs through time.
 * **Results per Category**: heat map to visually identify categories with 
   more runs and their results.
