@@ -23,7 +23,7 @@ This dashboard focuses on smells (i.e., indicators that possibly point to proble
 
 Dockerfiles information data is obtained via [Jadolint](https://github.com/crossminer/crossJadolint), which is included in the [third-party](https://github.com/chaoss/grimoirelab/tree/master/third-party) image of GrimoireLab. 
 
-Details about how to execute with GrimoireLab are available in the [Sirmordred repository](https://github.com/chaoss/grimoirelab-sirmordred#supported-data-sources)
+Details about how to execute with GrimoireLab are available in the [Sirmordred repository](https://github.com/chaoss/grimoirelab-sirmordred)
 
 ### Building the Dashboard: details about Index and Fields
 
