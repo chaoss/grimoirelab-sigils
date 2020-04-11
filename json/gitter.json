@@ -1,0 +1,165 @@
+{
+    "dashboard": {
+        "id": "Gitter",
+        "value": {
+            "description": "Gitter overview panel",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":8,\"w\":6,\"h\":3,\"i\":\"3\"},\"id\":\"gitter_message_count\",\"title\":\"Daily message count\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":8,\"w\":6,\"h\":3,\"i\":\"4\"},\"id\":\"gitter_message_read\",\"title\":\"Users reading messages daily (avg)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":5,\"w\":4,\"h\":3,\"i\":\"7\"},\"id\":\"gitter_timezone\",\"title\":\"Messages sent per hour\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":8,\"y\":4,\"w\":4,\"h\":4,\"i\":\"8\"},\"id\":\"gitter_url_count\",\"title\":\"Top mentioned URLs\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":2,\"w\":4,\"h\":3,\"i\":\"9\"},\"id\":\"gitter_weekly_active_users\",\"title\":\"Weekly Active Users\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":4,\"y\":4,\"w\":4,\"h\":4,\"i\":\"10\"},\"id\":\"gitter_messages_sent_byuser\",\"title\":\"Top users\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":2,\"i\":\"11\"},\"id\":\"06082d40-7cb7-11ea-8198-431b2e2e2530\",\"title\":\"Stats\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":8,\"y\":11,\"w\":4,\"h\":6,\"i\":\"12\"},\"id\":\"3576a5b0-7e6b-11ea-a71d-e72abeccd1c6\",\"title\":\"Top mentioned users\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":0,\"y\":11,\"w\":4,\"h\":6,\"i\":\"13\"},\"id\":\"60b53430-7e6b-11ea-a71d-e72abeccd1c6\",\"title\":\"Top mentioned issues\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"14\",\"gridData\":{\"x\":4,\"y\":11,\"w\":4,\"h\":6,\"i\":\"14\"},\"id\":\"954b4540-7e6b-11ea-a71d-e72abeccd1c6\",\"title\":\"Top mentioned pull requests\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":4,\"y\":0,\"w\":8,\"h\":4,\"i\":\"15\"},\"id\":\"d25294f0-8147-11ea-b827-59a23a189a65\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+            "release_date": "2020-04-21T13:26:05.155683",
+            "timeRestore": false,
+            "title": "Gitter",
+            "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":2,\"direction\":null}}}},\"P-10\":{\"vis\":{\"colors\":{\"Alex Earl\":\"#E5A8E2\",\"Others\":\"#64B0C8\"}}},\"P-12\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-13\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-14\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-6\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"legendOpen\":false}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-9\":{\"vis\":{\"legendOpen\":false}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "gitter_message_count",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_message_count",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_message_count\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Messages\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Messages\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Count of messages\"}}]}"
+            }
+        },
+        {
+            "id": "gitter_message_read",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_message_read",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_message_read\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Read by (avg)\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Read by (avg)\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"readBy\",\"customLabel\":\"Read by (avg)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Date\"}}]}"
+            }
+        },
+        {
+            "id": "gitter_timezone",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_timezone",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_timezone\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Messages\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Messages\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"uuid\",\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tz\",\"interval\":1,\"min_doc_count\":false,\"extended_bounds\":{\"min\":-12,\"max\":12},\"customLabel\":\"Time of the day\"}}]}"
+            }
+        },
+        {
+            "id": "gitter_url_count",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_url_count",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_url_count\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"url_hostname\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL hostname\"}}]}"
+            }
+        },
+        {
+            "id": "gitter_weekly_active_users",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_weekly_active_users",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_weekly_active_users\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Users\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Users\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"fromUser_name\",\"customLabel\":\"Users\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"w\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Week\"}}]}"
+            }
+        },
+        {
+            "id": "gitter_messages_sent_byuser",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_messages_sent_byuser",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_messages_sent_byuser\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"fromUser_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Name\"}}]}"
+            }
+        },
+        {
+            "id": "06082d40-7cb7-11ea-8198-431b2e2e2530",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_basic_stats",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_basic_stats\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":20,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"uuid\",\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Users\"}}]}"
+            }
+        },
+        {
+            "id": "3576a5b0-7e6b-11ea-a71d-e72abeccd1c6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_mentioned_count",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_mentioned_count\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentioned.mentioned_username\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Mentioned users\"}}]}"
+            }
+        },
+        {
+            "id": "60b53430-7e6b-11ea-a71d-e72abeccd1c6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_issues_count",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_issues_count\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"issues.is_issue\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Issues\"}}]}"
+            }
+        },
+        {
+            "id": "954b4540-7e6b-11ea-a71d-e72abeccd1c6",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"gitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "gitter_pr_count",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_pr_count\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"issues.is_pull\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Pull Requests\"}}]}"
+            }
+        },
+        {
+            "id": "d25294f0-8147-11ea-b827-59a23a189a65",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "gitter_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gitter_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Gitter insights** in terms of **people sending messages with different content and links**.\\n* **Top users chart** shows the people most active in a room (messages sent), for the selected time range (using timepicker located at the top right corner of the dashboard).\\n* **Top mentioned URLs** gives an overview of the most common websites being linked in the room.\\n* **Weekly active users** displays the number of unique users active in the room per week.\\n* **Daily message count** displays the number of messages sent daily.\\n* **Users reading messages daily** shows the average number of users reading messages daily.\\n* **Top mentioned users/pull requests/issues** shows the respective most mentioned field in the messages over the selected time zone.\\n* **Messages sent per hour** shows the most active hours, when the most messages are sent in a day.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/gitter)\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
