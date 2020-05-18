@@ -57,8 +57,19 @@ setup(name="grimoirelab-panels",
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4'],
       keywords="development repositories analytics",
-      packages=['panels', 'panels.json'],
-      package_data={'panels.json' : ['*.json']},
+      packages=[
+          'panels',
+          'panels.json',
+          'panels.json.index-patterns',
+          'panels.json.searches',
+          'panels.json.visualizations'
+      ],
+      package_data={
+          'panels.json': ['*.json'],
+          'panels.json.index-patterns': ['*.json'],
+          'panels.json.searches': ['*.json'],
+          'panels.json.visualizations': ['*.json']
+      },
       scripts=[],
       install_requires=[],
       zip_safe=False
