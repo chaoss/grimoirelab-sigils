@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"meetup\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "meetup_events_status",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"meetup_events_status\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"event_url\",\"customLabel\":\"Events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"meetup_status\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Status\"}}],\"listeners\":{}}"
+    },
+    "id": "meetup_events_status",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYwMCwxXQ=="
+}

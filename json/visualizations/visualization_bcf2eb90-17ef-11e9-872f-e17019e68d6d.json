@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "organizational_diversity_active_organizations_by_data_source_by_contributions",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"organizational_diversity_active_organizations_by_data_source_by_contributions\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_unique_id\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"data_source\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Data Source\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Contributors\"}}]}"
+    },
+    "id": "bcf2eb90-17ef-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMyOSwxXQ=="
+}

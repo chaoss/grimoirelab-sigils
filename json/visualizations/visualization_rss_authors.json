@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"rss\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "rss_authors",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"# Posts\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Author\",\"field\":\"author_name\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":500},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customLabel\":\"First Post\",\"field\":\"publish_date\"},\"schema\":\"metric\",\"type\":\"min\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Last Post\",\"field\":\"publish_date\"},\"schema\":\"metric\",\"type\":\"max\"}],\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"rss_authors\",\"type\":\"table\"}"
+    },
+    "id": "rss_authors",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU5MCwxXQ=="
+}

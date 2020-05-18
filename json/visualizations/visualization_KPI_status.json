@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "KPI_status",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"KPI_status\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"kip\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"kip_status\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+    },
+    "id": "KPI_status",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk5NSwxXQ=="
+}

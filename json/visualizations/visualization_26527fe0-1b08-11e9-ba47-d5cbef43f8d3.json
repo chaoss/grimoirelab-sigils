@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "chaoss_gmd_pr_merge_duration_repositories",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_pr_merge_duration_repositories\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"customLabel\":\"time to close\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"authors\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}}]}"
+    },
+    "id": "26527fe0-1b08-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzM2NiwxXQ=="
+}

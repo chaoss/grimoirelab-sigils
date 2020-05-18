@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "demographics_data_source",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"demographics_data_source\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1539605670712\",\"indexPattern\":\"92dc55d0-d073-11e8-8aac-ef7fd4d8cbad\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "00cf9cf0-d074-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExODksMV0="
+}

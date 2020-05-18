@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "savedSearchId": "c1d33070-b4df-11e8-8aac-ef7fd4d8cbad",
+        "title": "gitlab-issues_openissues_backlog_table",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab-issues_openissues_backlog_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"URL\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Open Date\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"title\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Summary\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"milestone\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Milestone\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"time_open_days\",\"customLabel\":\"Days Open\"}}]}"
+    },
+    "id": "d0810bc0-b4f7-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg5NywxXQ=="
+}

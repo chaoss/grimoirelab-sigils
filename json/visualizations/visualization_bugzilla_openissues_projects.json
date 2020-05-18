@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "bugzilla_openissues_organizations",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Issues\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Organizations\",\"field\":\"author_org_name\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Submitters\",\"field\":\"author_uuid\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customLabel\":\"Assignees\",\"field\":\"assigned_to_uuid\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Avg. Time to close (days)\",\"field\":\"painless_time_to_now\"},\"schema\":\"metric\",\"type\":\"avg\"},{\"enabled\":true,\"id\":\"6\",\"params\":{\"customLabel\":\"Avg. Updates\",\"field\":\"changes\"},\"schema\":\"metric\",\"type\":\"avg\"}],\"params\":{\"perPage\":5,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"bugzilla_openissues_organizations\",\"type\":\"table\"}"
+    },
+    "id": "bugzilla_openissues_projects",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-04-15T13:34:36.322Z",
+    "version": "WzI4NiwxXQ=="
+}

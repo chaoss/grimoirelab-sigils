@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Search:_is_askbot_answer:1",
+        "title": "askbot_main_people_answering",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"askbot_main_people_answering\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Answers\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_accepted_answer\",\"customLabel\":\"Accepted\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Last Answer Date\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"author_reputation\",\"customLabel\":\"Min Reputation\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"author_reputation\",\"customLabel\":\"Max Reputation\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"9\",\"customLabel\":\"Answer Author\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_from_question\",\"percents\":[50],\"customLabel\":\"Time from Question (Median)\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_url\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Link\"}}],\"listeners\":{}}"
+    },
+    "id": "askbot_main_people_answering",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE2NSwxXQ=="
+}

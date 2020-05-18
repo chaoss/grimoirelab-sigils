@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Meetup-Search:_type_meetup",
+        "title": "meetup_groups",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"meetup_groups\",\"type\":\"table\",\"params\":{\"perPage\":8,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"7\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"event_url\",\"customLabel\":\"Meetings\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"num_rsvps\",\"percents\":[50],\"customLabel\":\"Median RSVPs\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"7\",\"customLabel\":\"Group\"}},{\"id\":\"8\",\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"First Meeting\"}},{\"id\":\"9\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Most Recent Meeting\"}}],\"listeners\":{}}"
+    },
+    "id": "meetup_groups",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNiwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"mattermost\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "mattermost_messages_project",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"mattermost_messages_project\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"is_mattermost_message\",\"customLabel\":\"Messages\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}]}"
+    },
+    "id": "9c4c7560-9afd-11e8-8771-a349686d998a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzIzNSwxXQ=="
+}

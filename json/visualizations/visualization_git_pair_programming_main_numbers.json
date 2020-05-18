@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "git_pair_programming_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"schema\":\"metric\",\"id\":\"1\",\"params\":{\"customLabel\":\"# Commits\",\"json\":\"\",\"field\":\"pair_programming_commit\"},\"type\":\"sum\"},{\"schema\":\"metric\",\"id\":\"2\",\"params\":{\"customLabel\":\"# Authors\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"field\":\"author_uuid\"},\"type\":\"cardinality\"},{\"schema\":\"metric\",\"id\":\"3\",\"params\":{\"customLabel\":\"# Repositories\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"field\":\"repo_name\"},\"type\":\"cardinality\"}],\"params\":{\"fontSize\":\"12\",\"metric\":{\"colorSchema\":\"Green to Red\",\"style\":{\"subText\":\"\",\"bgColor\":false,\"labelColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"12\"},\"labels\":{\"show\":true},\"percentageMode\":false,\"invertColors\":false,\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"useRanges\":false}},\"title\":\"git_pair_programming_main_numbers\",\"type\":\"metric\",\"listeners\":{}}"
+    },
+    "id": "git_pair_programming_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk2MCwxXQ=="
+}

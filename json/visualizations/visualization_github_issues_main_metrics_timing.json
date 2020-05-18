@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "savedSearchId": "Search:_pull_request:false",
+        "title": "github_issues_main_metrics_timing",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_issues_main_metrics_timing\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"12\"}},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_data_uuid\",\"customLabel\":\"# Assignees\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"percents\":[50],\"customLabel\":\"Median Time Open (Days)\"}}]}"
+    },
+    "id": "github_issues_main_metrics_timing",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkxOCwxXQ=="
+}

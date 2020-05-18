@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"state:opened\"},\"filter\":[]}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Search:_gitlab-issues_state_opened",
+        "version": 1
+    },
+    "id": "c1d33070-b4df-11e8-8aac-ef7fd4d8cbad",
+    "type": "search",
+    "version": "WzYzOSwxXQ=="
+}

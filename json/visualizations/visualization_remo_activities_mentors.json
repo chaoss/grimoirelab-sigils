@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "remo_activities_mentors",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"remo_activities_mentors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Mentor\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"customLabel\":\"Mentored People\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiatives\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"mentor_profile_url\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}},{\"id\":\"6\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+    },
+    "id": "remo_activities_mentors",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg2NSwxXQ=="
+}

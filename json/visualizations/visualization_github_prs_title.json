@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "github_prs_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_prs_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### GitHub Pull Requests\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "github_prs_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcxOSwxXQ=="
+}

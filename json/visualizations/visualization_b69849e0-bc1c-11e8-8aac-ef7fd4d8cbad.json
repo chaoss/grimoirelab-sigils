@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "gitlab-merges_states",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab-merges_states\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Merge Requests\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"state\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"State\"}}]}"
+    },
+    "id": "b69849e0-bc1c-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyMCwxXQ=="
+}

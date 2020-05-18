@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"slack\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "slack_messages_timezone",
+        "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+        "version": 1,
+        "visState": "{\"title\":\"slack_messages_timezone\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Messages\"}},{\"id\":\"2\",\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"tz\",\"interval\":1,\"min_doc_count\":true,\"extended_bounds\":{\"min\":-12,\"max\":12},\"customLabel\":\"Time zone (+/- UTC)\"}}],\"listeners\":{}}"
+    },
+    "id": "slack_messages_timezone",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExMTQsMV0="
+}

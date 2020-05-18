@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "demographics_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"demographics_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel shows **the history of contributors active in last 10 years** focused on the first and last contribution of each person.\\n\\n**WARNING**: Pre-computed data displayed. Dynamic filters like time picker won't work as expected.\\n\\nClick on bars at the bar charts to filter:\\n* If clicking on `Attracted Developers` you will get a view based on them that allows you to know where they made their last contribution.\\n* If clicking on `People Leaving` you will get a view based on them that allows you to know where they were attracted to the community.\\n\\nFor more information, please read [panel documentation page](https://chaoss.github.io/grimoirelab-sigils/panels/demographics/).\"},\"aggs\":[]}"
+    },
+    "id": "da08a9e0-1f01-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExOTAsMV0="
+}

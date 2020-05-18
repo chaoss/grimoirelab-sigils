@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "issues_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"type\":\"metric\",\"aggs\":[{\"type\":\"count\",\"id\":\"1\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"type\":\"cardinality\",\"id\":\"2\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Submitters\",\"field\":\"author_uuid\"}},{\"type\":\"cardinality\",\"id\":\"3\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Products\",\"field\":\"product\"}}],\"title\":\"issues_main_metrics\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\"}}"
+    },
+    "id": "issues_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzUxOSwxXQ=="
+}

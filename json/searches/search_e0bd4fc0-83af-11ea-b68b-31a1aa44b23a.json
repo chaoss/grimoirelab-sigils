@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"event_type\",\n        \"value\": \"ClosedEvent\",\n        \"params\": {\n          \"query\": \"ClosedEvent\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"event_type\": {\n            \"query\": \"ClosedEvent\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"closer_merged\",\n        \"value\": \"true\",\n        \"params\": {\n          \"query\": true,\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"closer_merged\": {\n            \"query\": true,\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    },\n    {\n      \"meta\": {\n        \"index\": \"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"closer_type\",\n        \"value\": \"PullRequest\",\n        \"params\": {\n          \"query\": \"PullRequest\",\n          \"type\": \"phrase\"\n        }\n      },\n      \"query\": {\n        \"match\": {\n          \"closer_type\": {\n            \"query\": \"PullRequest\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "github_closed_event_by_pulls",
+        "version": 1
+    },
+    "id": "e0bd4fc0-83af-11ea-b68b-31a1aa44b23a",
+    "type": "search",
+    "version": "WzEwNTAsMV0="
+}

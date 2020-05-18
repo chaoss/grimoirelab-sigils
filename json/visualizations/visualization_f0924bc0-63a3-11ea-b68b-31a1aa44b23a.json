@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "jenkins_overview_top_projects",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_overview_top_projects\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Builds\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}}]}"
+    },
+    "id": "f0924bc0-63a3-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-03-12T16:56:15.690Z",
+    "version": "WzUzMywxXQ=="
+}

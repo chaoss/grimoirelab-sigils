@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "cocom_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"cocom_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on the **Code Complexity** metrics and their evolution\\n* **Selector** :\\n  * **Repository** helps results for a given repository\\n  * **Module Path** helps refine results for a given module\\n  * **interval_months** is the study interval (default: 1)\\n* **Repositories** gives an overview of all the repositories and the corresponding metrics\\n* **Overall Complexity & Functions** gives the latest overall sum of Code Complexity and Functions of the repositories\\n* **Evolution: Code Complexity and Functions** shows the evolution of the Code Complexity and Functions over the time period\\n* **Overall LOC & Comments** gives the latest overall sum of Lines of Code and Comment of the repositories\\n* **Evolution: LOC & Comments** shows the evolution of the Lines of Code and Comments over the time period\\n* **All Files: Code complexity, LOC and ratios** gives metrics corresponding to each file of the repository, which can be delegated via the Module Path Selector\\n\\n\\n\\n[See complete panel documentation]()\"},\"aggs\":[]}"
+    },
+    "id": "4f69ac20-c26d-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwOTIsMV0="
+}

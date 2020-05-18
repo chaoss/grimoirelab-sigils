@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gerrit_org_repo_filters",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_org_repo_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1541521056617\",\"indexPattern\":\"gerrit\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1541521075121\",\"indexPattern\":\"gerrit\",\"fieldName\":\"repository\",\"label\":\"Repository\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "94f0dd50-e1df-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkyMywxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "Help UI",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Help UI\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Working with the dashboard\\n\\nThe Dashboard shows information in several panels. Each of these panels include several visualizations. Many elements in the visualizations are actionable. When the user interacts with them, the information in the whole panel (and in some cases in the whole dashboard) is reconfigured, usually by filtering in or out some data.\\n\\n## Date filter\\n\\nOn the top right corner you can find the date filter. It allows you to select the time period which is considered when visualizing the data. Only items in that time period will be shown. So, for example, the total count of commits, or the evolution of issues created over time, correspond only to commits authored (or committed, if specified), or to issues created (or closed, if specified) during that period.\\n\\nDate filters can be defined as well by clicking on bars on time-based charts, or by selecting (clicking and dragging) on a group of them.\\n\\n## Data filters\\n\\nClicking on almost any cell in tables, sector in pies, or bar in bar charts causes a filter to be applied. Filters appear as green boxes on the top left of the dashboard (right below the panels menu). For example, clicking on a developer name causes a filter with that name, which will cause the panel to show only activity of that developer.\\n\\nFilters can be removed (click on the trash icon in the filter itself), negated (click on the minus sign), or disabled (click on the left box within the filter). Filters can also be made \\\"sticky\\\", which means they will be applied all over the dashboard, even if moving to a new panel.\\n\\n## Sharing\\n\\nThe Dashboard, once configured with date filters and data filters, can be shared and bookmarked. Anyone using the shared link or the bookmark will have access to exactly the same view (filters included) that was shown when the link or bookmark was created. For producing the link to share or bookmark, click on the \\\"share\\\" icon, on the top right of the dashboard. Please notice that you an get either \\\"regular\\\" urls (which are long and a bit cumbersome to handle), and \\\"short\\\" urls, which encode the same information but are much easier to deal with.\\n\\n## Kibana and Kibiter\\n\\nThe dashboard is a customized Kibana dashboard named Kibiter. Therefore, some of the information about how to work with Kibana dashboards may be useful. See for example the [Kibana tutorial on dashboards](https://www.elastic.co/guide/en/kibana/4.5/dashboard.html).\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "Help-UI",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNjcsMV0="
+}

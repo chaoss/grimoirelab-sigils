@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_tickets_efficiency_timing_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_tickets_efficiency_timing_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on time to first attention and time to close tickets.\\n\\n**Bar chart** compares the difference in average between first attention and closing time of tickets created in a given time frame. Ideal case would be low values for both, which means contributors are attended soon and tickets are closed in a reasonable time. Worst case would be having long bars for both, which means customers have to wait a long time to get our first attention and also closing time is of course longer than desired.\\n\\n**Trends** in bar chart give an idea about where are we going to.\\n\\n**Gauges** show times in average and median to complement bar chart with a more general view.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/efficiency-timing-overview/)\"},\"aggs\":[]}"
+    },
+    "id": "d481cdf0-18d8-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMzMSwxXQ=="
+}

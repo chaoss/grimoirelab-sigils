@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"askbot\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "askbot_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"params\":{\"fontSize\":\"12\",\"handleNoResults\":true,\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"invertColors\":false,\"labels\":{\"show\":true},\"useRanges\":false,\"style\":{\"bgColor\":false,\"labelColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"12\",\"subText\":\"\"},\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"to\":10000,\"from\":0}]}},\"listeners\":{},\"title\":\"askbot_main_metrics\",\"aggs\":[{\"params\":{\"customLabel\":\"Questions\",\"field\":\"is_askbot_question\"},\"enabled\":true,\"id\":\"1\",\"type\":\"sum\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"Answers\",\"field\":\"is_askbot_answer\"},\"enabled\":true,\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"Accepted\",\"field\":\"is_accepted_answer\"},\"enabled\":true,\"id\":\"5\",\"type\":\"sum\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"Comments\",\"field\":\"is_askbot_comment\"},\"enabled\":true,\"id\":\"4\",\"type\":\"sum\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"People Involved\",\"field\":\"author_uuid\"},\"enabled\":true,\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\"}],\"type\":\"metric\"}"
+    },
+    "id": "askbot_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzI2NSwxXQ=="
+}

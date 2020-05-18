@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "rust_friends_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"rust_friends_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### [Friends of Rust](https://www.rust-lang.org/en-US/friends.html)\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "rust_friends_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQyOCwxXQ=="
+}

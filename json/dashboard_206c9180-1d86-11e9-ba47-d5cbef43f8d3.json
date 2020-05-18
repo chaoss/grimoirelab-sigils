@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "CHAOSS GMD Panel: Maintainer Response to Merge Request Duration",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"github_issues\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 2, \"h\": 3, \"i\": \"1\"}, \"id\": \"73ec6980-1d85-11e9-ba47-d5cbef43f8d3\", \"title\": \"Filter\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 2, \"y\": 0, \"w\": 6, \"h\": 3, \"i\": \"2\"}, \"id\": \"ef482790-1d85-11e9-ba47-d5cbef43f8d3\", \"title\": \"Summary\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 0, \"y\": 3, \"w\": 8, \"h\": 3, \"i\": \"3\"}, \"title\": \"Average Time to First Response in Days over Time\", \"version\": \"6.1.4-1\", \"type\": \"visualization\", \"id\": \"cb1adfb0-1d86-11e9-ba47-d5cbef43f8d3\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 8, \"y\": 0, \"w\": 4, \"h\": 6, \"i\": \"4\"}, \"title\": \"Repository Data\", \"version\": \"6.1.4-1\", \"type\": \"visualization\", \"id\": \"66a460f0-1d87-11e9-ba47-d5cbef43f8d3\"}, {\"title\": \"Help\", \"panelIndex\": \"5\", \"gridData\": {\"x\": 0, \"y\": 6, \"w\": 12, \"h\": 3, \"i\": \"5\"}, \"version\": \"6.1.4-1\", \"type\": \"visualization\", \"id\": \"09311480-1d88-11e9-ba47-d5cbef43f8d3\"}]",
+        "timeRestore": false,
+        "title": "Maintainer Response to Merge Request Duration",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+        "version": 1
+    },
+    "id": "206c9180-1d86-11e9-ba47-d5cbef43f8d3",
+    "type": "dashboard",
+    "version": "WzExOCwxXQ=="
+}

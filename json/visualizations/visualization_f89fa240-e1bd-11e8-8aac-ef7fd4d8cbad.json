@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_pull_requests_lead_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_pull_requests_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:painless_delay).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=github_issues, q='state:closed AND pull_request:true', timefield=closed_at, metric=avg:painless_delay).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "f89fa240-e1bd-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkwNywxXQ=="
+}

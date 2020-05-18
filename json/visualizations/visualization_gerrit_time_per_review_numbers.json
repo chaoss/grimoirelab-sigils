@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[]}"
+        },
+        "savedSearchId": "SCR-Reviews__gerrit_enrich",
+        "title": "gerrit_time_per_review_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"type\":\"metric\",\"title\":\"Time-per-review__gerrit_enrich\",\"aggs\":[{\"type\":\"percentiles\",\"schema\":\"metric\",\"id\":\"1\",\"params\":{\"field\":\"timeopen\",\"percents\":[50,75,95]}},{\"type\":\"percentile_ranks\",\"schema\":\"metric\",\"id\":\"2\",\"params\":{\"field\":\"timeopen\",\"values\":[4]}}],\"listeners\":{},\"params\":{\"metric\":{\"style\":{\"fontSize\":\"12\",\"bgColor\":false,\"bgFill\":\"#000\",\"subText\":\"\",\"labelColor\":false},\"percentageMode\":false,\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"to\":10000,\"from\":0}],\"useRanges\":false,\"invertColors\":false,\"metricColorMode\":\"None\",\"labels\":{\"show\":true}},\"handleNoResults\":true,\"fontSize\":\"12\"}}"
+    },
+    "id": "gerrit_time_per_review_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQwOSwxXQ=="
+}

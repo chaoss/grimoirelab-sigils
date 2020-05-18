@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"colic\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "colic_main_numbers_license",
+        "uiStateJSON": "{\"vis\":{\"colors\":{\"true\":\"#1F78C1\",\"false\":\"#EAB839\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"colic_main_numbers_license\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":false,\"show\":false,\"truncate\":100,\"values\":false},\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"file_path\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"has_license:1\"},\"label\":\"With License\"},{\"input\":{\"query\":\"has_license:0\"},\"label\":\"No license\"}]}}]}"
+    },
+    "id": "96573170-a279-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcxLDFd"
+}

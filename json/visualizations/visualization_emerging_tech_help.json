@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "emerging_tech_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"emerging_tech_help\",\"type\":\"markdown\",\"params\":{\"markdown\":\"**Do you miss a Meetup? Or would you like to see improvements in the current dashboard?** \\n\\nPlease contact us at the Open Innovation team. Either opening a [GitHub Issue](https://github.com/mozilla/participation-metrics-org/projects/1) or using the Slack channel shared with Bitergia.\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "emerging_tech_help",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ3MCwxXQ=="
+}

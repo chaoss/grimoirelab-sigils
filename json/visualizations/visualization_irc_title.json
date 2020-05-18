@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "irc_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"irc_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### IRC\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "irc_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ2NSwxXQ=="
+}

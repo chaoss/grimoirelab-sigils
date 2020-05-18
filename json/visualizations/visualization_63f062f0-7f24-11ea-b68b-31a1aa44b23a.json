@@ -1,0 +1,20 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "savedSearchId": "e0bd4fc0-83af-11ea-b68b-31a1aa44b23a",
+        "title": "issues_pull_requests_connection_text",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"issues_pull_requests_connection_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"#### Issues and Pull requests connections\\n\\n* **Summary** gives an idea of the number of issues fixed.\\n* **Selector** allows focusing on one or more repositories.\\n* **Projects** highlights statistics of the number of issues fixed on the different projects.\\n* **Pie charts** offer a view of the issues fixed by organizations and mergers.\\n* **Bar charts** show the evolution of the issues fixed by organizations and mergers.\\n* **Table** provides details about the issues, the pull requests and the user that close.\\n\\n[See complete dashboard documentation](https://chaoss.github.io/grimoirelab-sigils/panels/github-closed-events)\"},\"aggs\":[]}"
+    },
+    "id": "63f062f0-7f24-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-04-21T16:28:59.808Z",
+    "version": "WzEwMjQsMV0="
+}

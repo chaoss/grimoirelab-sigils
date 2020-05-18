@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":3,\"w\":6,\"h\":2,\"i\":\"1\"},\"id\":\"e0236790-bc12-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs Evolution\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":3,\"h\":3,\"i\":\"3\"},\"id\":\"52b76550-2a03-11e9-b1b8-f3720d7eacea\",\"title\":\"Big numbers\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":5,\"w\":6,\"h\":5,\"i\":\"4\"},\"id\":\"dad9aa70-2a02-11e9-b1b8-f3720d7eacea\",\"title\":\"Results per Category\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":7,\"i\":\"5\"},\"id\":\"41021bc0-29fe-11e9-b1b8-f3720d7eacea\",\"title\":\"Categories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":10,\"w\":12,\"h\":7,\"i\":\"6\"},\"id\":\"a44d0f70-bbf7-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"7\"},\"id\":\"51009e10-344a-11e9-b1b8-f3720d7eacea\",\"title\":\"Help\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Projects and Jobs\",\"panelIndex\":\"8\",\"gridData\":{\"x\":3,\"y\":0,\"w\":3,\"h\":3,\"i\":\"8\"},\"id\":\"9358ca90-6481-11ea-b68b-31a1aa44b23a\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Jenkins Job Categories",
+        "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 25,000\":\"rgb(247,252,245)\",\"25,000 - 50,000\":\"rgb(199,233,192)\",\"50,000 - 75,000\":\"rgb(116,196,118)\",\"75,000 - 100,000\":\"rgb(35,139,69)\"}}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "5c707260-2a0f-11e9-b1b8-f3720d7eacea",
+    "type": "dashboard",
+    "updated_at": "2020-03-12T17:27:21.295Z",
+    "version": "WzUzNSwxXQ=="
+}

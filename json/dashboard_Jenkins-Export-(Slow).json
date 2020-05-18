@@ -1,0 +1,25 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"query\": \"*\", \"analyze_wildcard\": true, \"default_field\": \"*\"}}, \"language\": \"lucene\"}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 12, \"h\": 9, \"i\": \"1\"}, \"id\": \"jenkins_backlog_export\", \"title\": \"Builds\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "refreshInterval": {
+            "display": "Off",
+            "pause": false,
+            "value": 0
+        },
+        "timeFrom": "now-3M",
+        "timeRestore": true,
+        "timeTo": "now",
+        "title": "Jenkins Export (Slow)",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Builds\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "Jenkins-Export-(Slow)",
+    "type": "dashboard",
+    "version": "Wzc1NywxXQ=="
+}

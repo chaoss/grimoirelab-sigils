@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"9ec951d0-dbb8-11e9-8bb5-a754934c91d5\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github_activity_author_prs_network",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_activity_author_prs_network\",\"type\":\"network\",\"params\":{\"showLabels\":true,\"showPopup\":true,\"showColorLegend\":true,\"nodePhysics\":true,\"firstNodeColor\":\"#FD7BC4\",\"secondNodeColor\":\"#00d1ff\",\"canvasBackgroundColor\":\"#FFFFFF\",\"shapeFirstNode\":\"dot\",\"shapeSecondNode\":\"box\",\"displayArrow\":false,\"posArrow\":\"to\",\"shapeArrow\":\"arrow\",\"smoothType\":\"continuous\",\"scaleArrow\":1,\"maxCutMetricSizeNode\":5000,\"maxCutMetricSizeEdge\":5000,\"minCutMetricSizeNode\":0,\"maxNodeSize\":80,\"minNodeSize\":8,\"maxEdgeSize\":20,\"minEdgeSize\":0.1,\"springConstant\":0.001,\"gravitationalConstant\":-35000,\"labelColor\":\"#000000\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"github_organization\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"4\",\"customLabel\":\"GitHub Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"size_node\",\"params\":{\"field\":\"prs_opened\",\"customLabel\":\"Pull Requests Opened\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"author_name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"size_edge\",\"params\":{\"field\":\"prs_opened\",\"customLabel\":\"Pull Request Opened\"}}]}"
+    },
+    "id": "27035bf0-dded-11e9-8b26-1d322ac94c6b",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU3NSwxXQ=="
+}

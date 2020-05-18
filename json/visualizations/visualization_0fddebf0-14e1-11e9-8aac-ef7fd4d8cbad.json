@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_contributions_evolution",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_contributions_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=all_enriched,timefield=grimoire_creation_date,metric=cardinality:painless_unique_id).bars().label(\\\"Contributions\\\").color(#94c3af),\\n\\n.es(index=all_enriched,timefield=grimoire_creation_date,metric=cardinality:painless_unique_id).movingaverage(8w, 'left').label('Moving Avg. (8 weeks)').color(#ffb745),\\n\\n.es(index=all_enriched,timefield=grimoire_creation_date,metric=cardinality:painless_unique_id).aggregate(avg).label('Avg.').color(#155a3c),\\n\\n.es(index=all_enriched,timefield=grimoire_creation_date,metric=cardinality:painless_unique_id).trend().label(\\\"Trend\\\").color(#bc7568)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "0fddebf0-14e1-11e9-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwODcsMV0="
+}

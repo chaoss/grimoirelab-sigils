@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_repositories_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_repositories_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel shows the **evolution of some popularity metrics** in GitHub repositories.\\n\\nThese metrics are the number of **forks**, **stars** and **subscribers** of each repository. Charts show their growth and variation from one period to another. By default, time frames are set to **1 month**.\"},\"aggs\":[]}"
+    },
+    "id": "89b045e0-45ec-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-03-14T12:54:44.102Z",
+    "version": "WzEyMDcsMV0="
+}

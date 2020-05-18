@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "Help About",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Help About\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# About the dashboard\\n\\nThe Bitergia Analytics dashboard  is based on information retrieved from publicly available data sources such as Git repositories or mailing lists archives among others.\\n\\nAll the software used to retrieve, store, analyze and visualize data from repositories is done with free, open source software. The key part of it is [GrimoireLab](https://github.com/grimoirelab), the software development analytics toolset. Although [Bitergia](https://www.bitergia.com/) is the lead developer of GrimoireLab, we intend the project to work as a community, and your contributions are welcome.\\n\\nOther key pieces used to produce dashboards are Python (most of the retrieval and analytics software we use is written in Python), ElasticSearch (for data storage) and Kibana (for visualization we use Kibiter, our own fork of Kibana, which we intend to contribute back upstream).\\n\\nWe take your privacy seriously. All the information provided in the dashboards is based on publicly available data. We have done our best, however, to avoid publishing privacy-related information, such as email addresses, even if publicly available. Please, contact us if you spot some data that could be subject to privacy issues. For more details on the matter, please consult our [Privacy Policy](https://bitergia.com/privacy/).\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "Help-About",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk5NywxXQ=="
+}

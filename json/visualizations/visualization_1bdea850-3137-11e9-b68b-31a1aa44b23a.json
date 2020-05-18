@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "overall_onion_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[],\"params\":{\"fontSize\":12,\"markdown\":\"This panel shows the **evolution of the community structure** based on **onion analysis**.\\n\\n* **Core**: those contributing **80% of the activity**.\\n* **Regular**: those contributing the next **15% of the activity**.\\n* **Casual**: those contributing  the **last 5% of the activity**\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/overall-community-structure)\"},\"title\":\"overall_onion_help\",\"type\":\"markdown\"}"
+    },
+    "id": "1bdea850-3137-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-02-27T17:57:58.533Z",
+    "version": "WzE3NSwxXQ=="
+}

@@ -1,0 +1,25 @@
+{
+    "attributes": {
+        "columns": [
+            "kip_vote",
+            "kip_binding",
+            "author_name",
+            "author_org_name",
+            "Subject"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "metadata__updated_on",
+            "desc"
+        ],
+        "title": "KIP_search",
+        "version": 1
+    },
+    "id": "KIP_search",
+    "type": "search",
+    "version": "WzIzMSwxXQ=="
+}

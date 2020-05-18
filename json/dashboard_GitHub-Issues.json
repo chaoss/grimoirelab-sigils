@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "GitHub Issues Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"github_issues\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":5,\"x\":0,\"y\":2},\"id\":\"github_issues_evolutionary\",\"panelIndex\":\"1\",\"title\":\"Issues by Status, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"2\",\"w\":5,\"x\":0,\"y\":4},\"id\":\"github_issues_evolutionary_submitters\",\"panelIndex\":\"2\",\"title\":\"Submitters, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"3\",\"w\":5,\"x\":0,\"y\":0},\"id\":\"github_issues_main_metrics\",\"panelIndex\":\"3\",\"title\":\"Issues\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":12},\"id\":\"github_issues_repositories\",\"panelIndex\":\"5\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"6\",\"w\":5,\"x\":0,\"y\":6},\"id\":\"github_issues_submitters\",\"panelIndex\":\"6\",\"title\":\"Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"8\",\"w\":3,\"x\":5,\"y\":0},\"id\":\"github_issues_organizations_author\",\"panelIndex\":\"8\",\"title\":\"Submitters by Organization\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"9\",\"w\":7,\"x\":5,\"y\":4},\"id\":\"github_issues_organizations_author_evolutionary\",\"panelIndex\":\"9\",\"title\":\"Issues by Organization, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"10\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"8527a530-6e26-11e7-a3d7-593a556c81b1\",\"panelIndex\":\"10\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":4,\"i\":\"11\",\"w\":7,\"x\":5,\"y\":8},\"id\":\"3317bb70-6e28-11e7-a3d7-593a556c81b1\",\"panelIndex\":\"11\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "GitHub Issues",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Issues by Status, over time\",\"vis\":{\"legendOpen\":true}},\"P-10\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-11\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-2\":{\"title\":\"Submitters, over time\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Issues\"},\"P-5\":{\"title\":\"Repositories\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Submitters by Organization\"},\"P-9\":{\"title\":\"Issues by Organization, over time\"}}",
+        "version": 1
+    },
+    "id": "GitHub-Issues",
+    "type": "dashboard",
+    "updated_at": "2019-11-28T17:14:15.728Z",
+    "version": "WzMyMywxXQ=="
+}

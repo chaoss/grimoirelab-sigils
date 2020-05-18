@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"confluence\",\"query\":{\"query_string\":{\"query\":\"type:new_page\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "date",
+            "desc"
+        ],
+        "title": "Confluence Search:_type:new_page",
+        "version": 1
+    },
+    "id": "Confluence-Search:_type:new_page",
+    "type": "search",
+    "version": "WzQxMiwxXQ=="
+}

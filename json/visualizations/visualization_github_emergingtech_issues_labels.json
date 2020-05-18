@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github-emergingtech\",\"query\":{\"query_string\":{\"query\":\"pull_request:false\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "github_emergingtech_issues_labels",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github_emergingtech_issues_labels\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"painless_labels\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Labels\"}}],\"listeners\":{}}"
+    },
+    "id": "github_emergingtech_issues_labels",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk4MSwxXQ=="
+}

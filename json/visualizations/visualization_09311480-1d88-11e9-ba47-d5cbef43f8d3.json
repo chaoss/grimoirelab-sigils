@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_doc",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on **any** GitHub Pull Request and measures its first time to attention.\\n\\nThe idea behind the panel is having a look on how community performs and evolves replying to pull requests. By using this panel we can identify trends and analyze certain behaviours of specific\\norganizations, projects or repositories.\\n\\n* **Summary**: This widget contains a summary of the information about the time to first response in average and in median.\\n* **Repository Data**: This table provides an overview of the same information but split by repository in GitHub.\\n* **Average Time to First Response in Days over Time**: This evolutionary chart displays the behaviour of the average metric over time.\\n\\nMore in depth documentation can be found at [the Maintainer Merge Request Duration Page](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/maintainer_merge_request_duration/)\"},\"aggs\":[]}"
+    },
+    "id": "09311480-1d88-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg4MiwxXQ=="
+}

@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "C_rust_emergingtech_friends",
+        "title": "C_rust_emergingtech_friends_table",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"New Visualization\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Addition Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":200,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Friends' Logo\"}}],\"listeners\":{}}"
+    },
+    "id": "C_rust_emergingtech_friends_table",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyMTEsMV0="
+}

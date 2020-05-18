@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"redmine\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "redmine_issues_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"redmine_issues_main_metrics\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\",\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assigned_to_uuid\",\"customLabel\":\"# Assigned\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"project_name\",\"customLabel\":\"# Products\"}}]}"
+    },
+    "id": "redmine_issues_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc3MSwxXQ=="
+}

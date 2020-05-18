@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Level of activity in git repositories, by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"git\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 6, \"h\": 2, \"i\": \"1\"}, \"id\": \"cf0714e0-f7b1-11e8-865a-85ff6467a442\", \"title\": \"Active git repositories\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 6, \"h\": 5, \"i\": \"2\"}, \"id\": \"7e6c62d0-f7af-11e8-865a-85ff6467a442\", \"title\": \"Top 25 repositories by commits\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 6, \"y\": 0, \"w\": 6, \"h\": 7, \"i\": \"3\"}, \"id\": \"bb734a80-f7b0-11e8-865a-85ff6467a442\", \"title\": \"Top 25 repositories by authors\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 0, \"y\": 7, \"w\": 12, \"h\": 4, \"i\": \"4\"}, \"version\": \"6.1.4-1\", \"type\": \"visualization\", \"id\": \"9ec5a2f0-f898-11e8-865a-85ff6467a442\", \"title\": \"Lifecycle\"}]",
+        "timeRestore": false,
+        "title": "Lifecycle",
+        "uiStateJSON": "{\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 8\":\"rgb(247,252,245)\",\"8 - 16\":\"rgb(233,247,228)\",\"16 - 24\":\"rgb(211,238,205)\",\"24 - 32\":\"rgb(184,227,177)\",\"32 - 40\":\"rgb(152,213,148)\",\"40 - 48\":\"rgb(116,196,118)\",\"48 - 56\":\"rgb(75,176,98)\",\"56 - 64\":\"rgb(47,152,79)\",\"64 - 72\":\"rgb(21,127,59)\",\"72 - 80\":\"rgb(0,100,40)\"}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 5\":\"rgb(247,252,245)\",\"5 - 9\":\"rgb(199,233,192)\",\"9 - 14\":\"rgb(116,196,118)\",\"14 - 18\":\"rgb(35,139,69)\"}}}}",
+        "version": 1
+    },
+    "id": "999ea330-f7b2-11e8-865a-85ff6467a442",
+    "type": "dashboard",
+    "version": "WzYyNSwxXQ=="
+}

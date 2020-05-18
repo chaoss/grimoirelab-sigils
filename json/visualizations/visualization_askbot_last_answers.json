@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Search:_is_askbot_answer:1",
+        "title": "askbot_last_answers",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"askbot_last_answers\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Answer Sent Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Question Title\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Answer Link\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"is_accepted_answer:1\",\"analyze_wildcard\":true}}},\"label\":\"Accepted\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"is_accepted_answer:0\",\"analyze_wildcard\":true}}},\"label\":\"-\"}],\"json\":\"\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_reputation\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Reputation\"}}],\"listeners\":{}}"
+    },
+    "id": "askbot_last_answers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY3NCwxXQ=="
+}

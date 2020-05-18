@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_issues_bmi",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_issues_bmi\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gitlab_issues, timefield=closed_at).divide(.es(index=gitlab_issues, timefield=grimoire_creation_date)).label('BMI').color(#99af5d),\\n .es(index=gitlab_issues, timefield=closed_at).divide(.es(index=gitlab_issues, timefield=grimoire_creation_date)).movingaverage(8w, 'left').label('BMI Moving Avg. (8 weeks)').color(#c83d32),\\n .es(index=gitlab_issues, timefield=closed_at).divide(.es(index=gitlab_issues, timefield=grimoire_creation_date)).trend().label('BMI trend'),\\n.es(index=gitlab_issues, timefield=closed_at).divide(.es(index=gitlab_issues, timefield=grimoire_creation_date)).aggregate(avg).label('Avg. BMI').color(\\t#e6b740)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "36b430d0-f6f1-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzM4OSwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "C_git_commits",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"C_git_commits\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date).label('Commits'), .es(index=git, timefield=grimoire_creation_date).trend().label('Commits trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "12f6e170-b299-11e8-bbe5-d99a6d067cbc",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ3NiwxXQ=="
+}

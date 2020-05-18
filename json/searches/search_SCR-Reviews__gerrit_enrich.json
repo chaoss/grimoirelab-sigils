@@ -1,0 +1,34 @@
+{
+    "attributes": {
+        "columns": [
+            "bot",
+            "branch",
+            "closed",
+            "dashboard",
+            "githash",
+            "name",
+            "opened",
+            "patchsets",
+            "project",
+            "review",
+            "status",
+            "summary",
+            "timeopen",
+            "url"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\": \"gerrit\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\"}}, \"filter\": [], \"highlight\": {\"pre_tags\": [\"@kibana-highlighted-field@\"], \"post_tags\": [\"@/kibana-highlighted-field@\"], \"fragment_size\": 2147483647, \"fields\": {\"*\": {}}, \"require_field_match\": false}}"
+        },
+        "sort": [
+            "_score",
+            "desc"
+        ],
+        "title": "SCR Reviews scr gerrit_enrich",
+        "version": 1
+    },
+    "id": "SCR-Reviews__gerrit_enrich",
+    "type": "search",
+    "version": "WzY1MiwxXQ=="
+}

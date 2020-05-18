@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_lines_of_code_changed_orgs_projects_options",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_lines_of_code_changed_orgs_projects_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1547570667667\",\"indexPattern\":\"git\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1547570757692\",\"indexPattern\":\"git\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "26c4cd40-18e5-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyMTYsMV0="
+}

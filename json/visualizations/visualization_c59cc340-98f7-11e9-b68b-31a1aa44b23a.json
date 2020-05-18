@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"filter\": [],\n  \"index\": \"gerrit\",\n  \"query\": {\n    \"query\": {\n      \"query_string\": {\n        \"analyze_wildcard\": true,\n        \"query\": \"*\",\n        \"default_field\": \"*\"\n      }\n    },\n    \"language\": \"lucene\"\n  },\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fragment_size\": 2147483647,\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false\n  }\n}"
+        },
+        "savedSearchId": "Search:_gerrit_status:NEW",
+        "title": "gerrit_backlog_organizations",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_backlog_organizations\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"shareYAxis\":true,\"legendPosition\":\"right\",\"type\":\"pie\",\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+    },
+    "id": "c59cc340-98f7-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE1MCwxXQ=="
+}

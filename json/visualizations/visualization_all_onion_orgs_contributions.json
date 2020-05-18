@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"Organizations View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"project\",\"negate\":false,\"value\":\"_Global_\"},\"query\":{\"match\":{\"project\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"all_onion\",\"key\":\"author_org_name\",\"value\":\"_Global_\",\"disabled\":false,\"negate\":true,\"alias\":null},\"query\":{\"match\":{\"author_org_name\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+        },
+        "title": "all_onion_orgs_contributions",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_orgs_contributions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"contributions\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"quarter\",\"size\":2000,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+    },
+    "id": "all_onion_orgs_contributions",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ1OSwxXQ=="
+}

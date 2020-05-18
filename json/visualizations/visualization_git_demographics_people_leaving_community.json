@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "git_demographics_people_leaving_community",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"git_demographics_people_leaving_community\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"demography_max_date\",\"customLabel\":\"Last Commit Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"bucket\",\"params\":{\"field\":\"demography_max_date\",\"ranges\":[{\"from\":\"now-12M\",\"to\":\"now-6M\"}],\"customLabel\":\"Last contribution sent between (6 and 12 months ago)\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Author\"}}]}"
+    },
+    "id": "git_demographics_people_leaving_community",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-10-14T15:26:55.704Z",
+    "version": "Wzc0LDFd"
+}

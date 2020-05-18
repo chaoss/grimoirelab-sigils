@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"Projects View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"author_org_name\",\"negate\":false,\"value\":\"_Global_\"},\"query\":{\"match\":{\"author_org_name\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"all_onion\",\"negate\":true,\"key\":\"project\",\"value\":\"_Global_\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"project\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+        },
+        "title": "all_onion_projects_by_contributions",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_projects_by_contributions\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"project\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+    },
+    "id": "all_onion_projects_by_contributions",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk3MiwxXQ=="
+}

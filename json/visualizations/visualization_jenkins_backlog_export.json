@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "jenkins_backlog_export",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_backlog_export\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"11\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_min\",\"customLabel\":\"Duration (min.)\"}},{\"id\":\"3\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"build_date\",\"customLabel\":\"Date\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"job_build\",\"size\":100000,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Build\"}},{\"id\":\"6\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"result\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Result\"}},{\"id\":\"7\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"builtOn\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"3\",\"customLabel\":\"Node\"}}],\"listeners\":{}}"
+    },
+    "id": "jenkins_backlog_export",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzI0MywxXQ=="
+}

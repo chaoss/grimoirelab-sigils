@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "jenkins_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"params\":{\"fontSize\":\"12\",\"metric\":{\"style\":{\"labelColor\":false,\"bgColor\":false,\"fontSize\":\"12\",\"subText\":\"\",\"bgFill\":\"#000\"},\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"metricColorMode\":\"None\",\"percentageMode\":false,\"invertColors\":false,\"useRanges\":false,\"labels\":{\"show\":true}}},\"aggs\":[{\"params\":{\"customLabel\":\"# Builds\"},\"type\":\"count\",\"id\":\"1\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"# Jobs\",\"field\":\"job_url\"},\"type\":\"cardinality\",\"id\":\"4\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"# Nodes\",\"field\":\"builtOn\"},\"type\":\"cardinality\",\"id\":\"2\",\"schema\":\"metric\"},{\"params\":{\"customLabel\":\"Build duration (avg, min.)\",\"field\":\"duration_min\"},\"type\":\"avg\",\"id\":\"3\",\"schema\":\"metric\"}],\"type\":\"metric\",\"title\":\"jenkins_main_numbers\",\"listeners\":{}}"
+    },
+    "id": "jenkins_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzI2NCwxXQ=="
+}

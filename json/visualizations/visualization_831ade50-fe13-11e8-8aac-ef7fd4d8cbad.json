@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_merge_requests_rei",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_merge_requests_rei\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gitlab_merge_requests, timefield=solved_at).divide(.es(index=gitlab_merge_requests, timefield=grimoire_creation_date)).label('REI').color(#99af5d),\\n \\n.es(index=gitlab_merge_requests, timefield=solved_at).divide(.es(index=gitlab_merge_requests, timefield=grimoire_creation_date)).movingaverage(8w, 'left').label('REI Moving Avg. (8 weeks)').color(#c83d32),\\n\\n.es(index=gitlab_merge_requests, timefield=solved_at).divide(.es(index=gitlab_merge_requests, timefield=grimoire_creation_date)).trend().label('REI trend'),\\n\\n.es(index=gitlab_merge_requests, timefield=solved_at).divide(.es(index=gitlab_merge_requests, timefield=grimoire_creation_date)).aggregate(avg).label('Avg. REI').color(#e6b740)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "831ade50-fe13-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNSwxXQ=="
+}

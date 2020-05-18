@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Efficiency panel for GitHub Issues by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"github_issues\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"2af284a0-e1bf-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"1\", \"title\": \"Time to Close\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"2\", \"w\": 5, \"x\": 3, \"y\": 0}, \"id\": \"dffdb110-e1b7-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"2\", \"title\": \"BMI\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 5, \"x\": 3, \"y\": 3}, \"id\": \"3581fce0-e1bd-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"3\", \"title\": \"Lead Time\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"4\", \"w\": 3, \"x\": 0, \"y\": 0}, \"id\": \"22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"4\", \"title\": \"Efficiency Closing GitHub Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"5\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"ae996e40-e1d3-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"5\", \"title\": \"Repositories\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 2, \"i\": \"6\", \"w\": 12, \"x\": 0, \"y\": 6}, \"id\": \"f5593260-e1d4-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"6\", \"title\": \"Efficiency Closing GitHub Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Issues Efficiency",
+        "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}}}",
+        "version": 1
+    },
+    "id": "c3da5c20-e1c3-11e8-8aac-ef7fd4d8cbad",
+    "type": "dashboard",
+    "version": "WzE1MywxXQ=="
+}

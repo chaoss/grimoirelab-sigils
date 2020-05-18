@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"mozillaclub\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "mozillaclub_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"mozillaclub_main_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"12\"}}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Meetings\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"Country\",\"customLabel\":\"# Countries\"}},{\"id\":\"3\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"Attendance\",\"customLabel\":\"# Attendees\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"Attendance\",\"percents\":[50],\"customLabel\":\"# People per Meeting in Median\"}}],\"listeners\":{}}"
+    },
+    "id": "mozillaclub_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzUxMCwxXQ=="
+}

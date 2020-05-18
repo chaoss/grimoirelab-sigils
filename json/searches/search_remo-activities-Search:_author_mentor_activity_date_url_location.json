@@ -1,0 +1,29 @@
+{
+    "attributes": {
+        "columns": [
+            "activity",
+            "activity_description",
+            "functional_areas",
+            "author_name",
+            "mentor",
+            "report_date",
+            "location",
+            "remo_url",
+            "link"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "report_date",
+            "desc"
+        ],
+        "title": "remo-activities Search:_author_mentor_activity_date_url_location",
+        "version": 1
+    },
+    "id": "remo-activities-Search:_author_mentor_activity_date_url_location",
+    "type": "search",
+    "version": "Wzk3LDFd"
+}

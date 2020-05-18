@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"kafka\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "KIP_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"KIP_metrics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"14\",\"handleNoResults\":true,\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"14\"}}},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_vote\",\"customLabel\":\"votes\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_discuss\",\"customLabel\":\"discussions\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"kip\",\"customLabel\":\"kips\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_binding\",\"customLabel\":\"binding votes\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_first_discuss\",\"customLabel\":\"first discuss msgs\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_last_discuss\",\"customLabel\":\"last discuss msgs\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_first_vote\",\"customLabel\":\"first vote msgs\"}},{\"id\":\"11\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_is_last_vote\",\"customLabel\":\"last vote msgs\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_voting_time_days\",\"customLabel\":\"voting days avg\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"kip_discuss_time_days\",\"customLabel\":\"discuss days avg\"}}],\"listeners\":{}}"
+    },
+    "id": "KIP_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzczNSwxXQ=="
+}

@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "savedSearchId": "Open-Redmine-Issues-Search:_-status_name:resolved_rejected_closed_wontfix_duplicate",
+        "title": "redmine_openissues_assignee_orgs",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"redmine_openissues_assignee_orgs\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}]}"
+    },
+    "id": "56e93a80-7ea1-11e8-a4e7-6b1c6a13c58d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExMjYsMV0="
+}

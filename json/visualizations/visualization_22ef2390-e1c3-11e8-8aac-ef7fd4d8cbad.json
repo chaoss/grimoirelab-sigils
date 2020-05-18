@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_orgs_projects_options",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_orgs_projects_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1541508831365\",\"indexPattern\":\"github_issues\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1541508809592\",\"indexPattern\":\"github_issues\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkwOCwxXQ=="
+}

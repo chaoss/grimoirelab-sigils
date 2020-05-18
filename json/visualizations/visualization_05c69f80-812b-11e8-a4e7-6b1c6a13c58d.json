@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"twitter\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "twitter_hashtags_cloud",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"twitter_hashtags_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":52},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"hashtags_analyzed\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Hashtags\"}}]}"
+    },
+    "id": "05c69f80-812b-11e8-a4e7-6b1c6a13c58d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU5MywxXQ=="
+}

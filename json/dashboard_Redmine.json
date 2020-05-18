@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Redmine Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"$state\": {\"store\": \"appState\"}, \"meta\": {\"alias\": \"Bots\", \"disabled\": false, \"index\": \"redmine\", \"key\": \"author_bot\", \"negate\": true, \"params\": {\"query\": true, \"type\": \"phrase\"}, \"type\": \"phrase\", \"value\": \"true\"}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}}], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"1\", \"w\": 5, \"x\": 0, \"y\": 4}, \"id\": \"redmine_issues_evolutionary_submitters\", \"panelIndex\": \"1\", \"title\": \"Submitters\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"2\", \"w\": 5, \"x\": 0, \"y\": 0}, \"id\": \"redmine_issues_main_metrics\", \"panelIndex\": \"2\", \"title\": \"Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 6, \"i\": \"3\", \"w\": 5, \"x\": 0, \"y\": 6}, \"id\": \"redmine_issues_submitters\", \"panelIndex\": \"3\", \"title\": \"Submitters\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"4\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"redmine_openissues_projects\", \"panelIndex\": \"4\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"7\", \"w\": 5, \"x\": 0, \"y\": 2}, \"id\": \"redmine_issues_evolutionary\", \"panelIndex\": \"7\", \"title\": \"Issues Open\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"8\", \"w\": 3, \"x\": 5, \"y\": 0}, \"id\": \"redmine_author_organizations\", \"panelIndex\": \"8\", \"title\": \"Submitters by Organization\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"9\", \"w\": 7, \"x\": 5, \"y\": 8}, \"id\": \"redmine_organizations\", \"panelIndex\": \"9\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"10\", \"w\": 7, \"x\": 5, \"y\": 4}, \"id\": \"5d22ff20-7e9d-11e8-a4e7-6b1c6a13c58d\", \"panelIndex\": \"10\", \"title\": \"Issues by Organization, over time\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Redmine",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-2\":{\"title\":\"Issues\"},\"P-3\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Projects\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Issues by Submitter\"},\"P-6\":{\"title\":\"Issues by Submitter\"},\"P-7\":{\"title\":\"Issues Open\"},\"P-8\":{\"title\":\"Organizations\"},\"P-9\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "Redmine",
+    "type": "dashboard",
+    "version": "WzExMjMsMV0="
+}

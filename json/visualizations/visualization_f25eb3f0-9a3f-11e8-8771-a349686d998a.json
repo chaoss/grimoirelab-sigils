@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "dockerhub_pull_evolution",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"dockerhub_pull_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=dockerhub, timefield=grimoire_creation_date, q=\\\"is_event:1\\\", split=origin:10, metric=max:pull_count).label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "f25eb3f0-9a3f-11e8-8771-a349686d998a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzI1NywxXQ=="
+}

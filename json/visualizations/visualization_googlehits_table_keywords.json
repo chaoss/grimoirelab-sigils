@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"google-hits\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "googlehits_table_keywords",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"googlehits_table_keywords\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"hits\",\"customLabel\":\"Hits (average)\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"keywords\",\"size\":20,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Terms\"}}],\"listeners\":{}}"
+    },
+    "id": "googlehits_table_keywords",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ4MSwxXQ=="
+}

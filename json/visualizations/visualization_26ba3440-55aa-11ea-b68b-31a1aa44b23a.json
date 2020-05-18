@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "docker_help_text",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"docker_help_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on smells and dependencies extracted from Dockerfiles. The widgets in the dashboards are described below.\\n\\n* **Repository**: a selector useful to focus on one or more repositories.  \\n* **Dependency and smells metrics**: general numbers about the number of repositories, dependencies and smells found. \\n* **Dependencies per repository**: a pie chart that shows the proportion of dependencies per repository.\\n* **Dependencies shared by repositories**: a table that summarizes the number of repositories sharing a dependency.\\n* **Dependencies graph**: a graph that highlights the relationships between repositories (circles) and Docker dependencies (boxes). The repository node size is proportional to the number of dependencies found in that repository. An edge exists between a dependency and a repository if that dependency has been found in a Dockerfile of the repository.\\n* **Smells per repository**: a pie chart that shows the proportion of smells per repository.\\n* **Smells shared by repositories**: a table that summarizes the number of repositories sharing a smell.\\n* **Smells graph**: a graph that highlights the relationships between repositories (circles) and Docker smells (boxes). The repository node size is proportional to the number of smells found in that repository. An edge exists between a smell and a repository if that smell has been found in a Dockerfile of the repository.\\n\\n### Getting Dockerfiles smells and dependencies\\n\\nDockerfiles information data is obtained via [Jadolint](https://github.com/crossminer/crossJadolint), which is included in the [third-party](https://github.com/chaoss/grimoirelab/tree/master/third-party) image of GrimoireLab. \\n\\nDetails about how to execute with GrimoireLab are available in the [Sirmordred repository](https://github.com/chaoss/grimoirelab-sirmordred#supported-data-sources)\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/docker-smells-and-dependencies)\"},\"aggs\":[]}"
+    },
+    "id": "26ba3440-55aa-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-02-23T12:45:07.592Z",
+    "version": "Wzc5OCwxXQ=="
+}

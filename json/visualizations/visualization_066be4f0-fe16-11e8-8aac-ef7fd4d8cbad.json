@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_merge_requests_lead_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_merge_requests_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gitlab_merge_requests, q='state:closed OR state:merged', timefield=solved_at, metric=avg:time_to_close_days).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=gitlab_merge_requests, q='state:closed OR state:merged', timefield=solved_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "066be4f0-fe16-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYyNywxXQ=="
+}

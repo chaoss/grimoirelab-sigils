@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "OPNFV Testing Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"$state\": {\"store\": \"appState\"}, \"meta\": {\"alias\": null, \"disabled\": false, \"index\": \"functest\", \"key\": \"version\", \"negate\": true, \"params\": {\"query\": \"master\", \"type\": \"phrase\"}, \"type\": \"phrase\", \"value\": \"master\"}, \"query\": {\"match\": {\"version\": {\"query\": \"master\", \"type\": \"phrase\"}}}}], \"version\": true, \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"2\", \"w\": 4, \"x\": 0, \"y\": 3}, \"id\": \"functest_criteria_evolutionary\", \"panelIndex\": \"2\", \"title\": \"Criteria\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"4\", \"w\": 3, \"x\": 7, \"y\": 3}, \"id\": \"functest_pod\", \"panelIndex\": \"4\", \"title\": \"pod\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"5\", \"w\": 3, \"x\": 4, \"y\": 3}, \"id\": \"functest_scenario\", \"panelIndex\": \"5\", \"title\": \"Scenario\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"7\", \"w\": 3, \"x\": 9, \"y\": 0}, \"id\": \"functest_version\", \"panelIndex\": \"7\", \"title\": \"Version\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"8\", \"w\": 3, \"x\": 3, \"y\": 0}, \"id\": \"functest_project\", \"panelIndex\": \"8\", \"title\": \"Project\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"10\", \"w\": 3, \"x\": 6, \"y\": 0}, \"id\": \"functest_installer\", \"panelIndex\": \"10\", \"title\": \"Installer\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"11\", \"w\": 2, \"x\": 10, \"y\": 3}, \"id\": \"bab00500-76b7-11e7-a254-153ba7257110\", \"panelIndex\": \"11\", \"title\": \"Case Name\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"13\", \"w\": 4, \"x\": 0, \"y\": 6}, \"id\": \"functest_criteria_cumsum_evolutionary\", \"panelIndex\": \"13\", \"title\": \"Criteria\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"14\", \"w\": 3, \"x\": 0, \"y\": 0}, \"id\": \"49ecf0a0-9a31-11e8-8771-a349686d998a\", \"panelIndex\": \"14\", \"title\": \"Summary\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "Testing",
+        "uiStateJSON": "{\"P-10\":{\"title\":\"Installer\"},\"P-11\":{\"title\":\"Case Name\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"title\":\"Summary\"},\"P-13\":{\"title\":\"Criteria\",\"vis\":{\"legendOpen\":true}},\"P-2\":{\"title\":\"Criteria\"},\"P-3\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Duration\"},\"P-4\":{\"title\":\"pod\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Scenario\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Version\",\"vis\":{\"legendOpen\":true}},\"P-8\":{\"title\":\"Project\"}}",
+        "version": 1
+    },
+    "id": "Testing",
+    "type": "dashboard",
+    "version": "WzQ4NiwxXQ=="
+}

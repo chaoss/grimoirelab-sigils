@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "stackoverflow_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"stackoverflow_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### StackOverflow\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "stackoverflow_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNDksMV0="
+}

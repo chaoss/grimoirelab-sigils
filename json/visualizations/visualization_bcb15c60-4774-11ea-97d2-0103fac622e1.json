@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[{\"meta\":{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"type\":\"phrases\",\"key\":\"data_source\",\"value\":\"git, jenkins\",\"params\":[\"git\",\"jenkins\"],\"negate\":true,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"script\":{\"script\":{\"inline\":\"boolean compare(Supplier s, def v) {return s.get() == v;}compare(() -> { if (doc['_index'].value.contains('-')) {\\n    doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"-\\\"))\\n\\n} else if (doc['_index'].value.contains('_')) {\\n    if (doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\")).equalsIgnoreCase(\\\"github\\\")) {\\n       if (doc['pull_request'].value) {\\n            \\\"github_pull_requests\\\"\\n        } else {\\n            \\\"github_issues\\\"\\n        }\\n\\n    } else {\\n        doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\"))\\n\\n    }\\n\\n} else {\\n    doc['_index'].value\\n} }, params.value);\",\"lang\":\"painless\",\"params\":{\"value\":\"git\"}}}},{\"script\":{\"script\":{\"inline\":\"boolean compare(Supplier s, def v) {return s.get() == v;}compare(() -> { if (doc['_index'].value.contains('-')) {\\n    doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"-\\\"))\\n\\n} else if (doc['_index'].value.contains('_')) {\\n    if (doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\")).equalsIgnoreCase(\\\"github\\\")) {\\n       if (doc['pull_request'].value) {\\n            \\\"github_pull_requests\\\"\\n        } else {\\n            \\\"github_issues\\\"\\n        }\\n\\n    } else {\\n        doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\"))\\n\\n    }\\n\\n} else {\\n    doc['_index'].value\\n} }, params.value);\",\"lang\":\"painless\",\"params\":{\"value\":\"jenkins\"}}}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "soft_activity_projects_table",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"soft_activity_projects_table\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_unique_id\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Project\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Authors\"}}]}"
+    },
+    "id": "bcb15c60-4774-11ea-97d2-0103fac622e1",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNzAsMV0="
+}

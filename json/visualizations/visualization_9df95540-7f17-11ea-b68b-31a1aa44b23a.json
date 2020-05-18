@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "savedSearchId": "e0bd4fc0-83af-11ea-b68b-31a1aa44b23a",
+        "title": "repository_selector",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"repository_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1586954951573\",\"indexPattern\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"fieldName\":\"github_repo\",\"label\":\"Repository\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "9df95540-7f17-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMwLDFd"
+}

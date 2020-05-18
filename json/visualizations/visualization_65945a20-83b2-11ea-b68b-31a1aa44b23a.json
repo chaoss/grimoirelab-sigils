@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "savedSearchId": "e0bd4fc0-83af-11ea-b68b-31a1aa44b23a",
+        "title": "github_closed_events_issues_fixed_by_users",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_closed_events_issues_fixed_by_users\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"actor_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}"
+    },
+    "id": "65945a20-83b2-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc4MiwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "github2_issues_collaboration_network",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github2_issues_collaboration_network\",\"type\":\"network\",\"params\":{\"canvasBackgroundColor\":\"#FFFFFF\",\"displayArrow\":false,\"firstNodeColor\":\"#f09345\",\"gravitationalConstant\":-35000,\"labelColor\":\"#000000\",\"maxCutMetricSizeEdge\":5000,\"maxCutMetricSizeNode\":5000,\"maxEdgeSize\":20,\"maxNodeSize\":80,\"minCutMetricSizeNode\":0,\"minEdgeSize\":0.1,\"minNodeSize\":8,\"nodePhysics\":true,\"posArrow\":\"to\",\"scaleArrow\":1,\"secondNodeColor\":\"#00d1ff\",\"shapeArrow\":\"arrow\",\"shapeFirstNode\":\"dot\",\"shapeSecondNode\":\"box\",\"showColorLegend\":true,\"showLabels\":true,\"showPopup\":true,\"smoothType\":\"continuous\",\"springConstant\":0.001},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"author_name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_term\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"second\",\"params\":{\"field\":\"issue_id\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"3\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"size_node\",\"params\":{\"field\":\"is_github_issue\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"size_edge\",\"params\":{\"field\":\"is_github_issue_comment\"}}]}"
+    },
+    "id": "ee8e8ba0-33c3-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNzgsMV0="
+}

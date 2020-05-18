@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"remo-events_metadata__timestamp\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"start_date:[now TO *]\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+        },
+        "title": "remo_events_upcoming_events",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"remo_events_upcoming_events\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"start_date\",\"customLabel\":\"Start Date\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title\",\"size\":30,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Event Title\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"country\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"owner\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Representative\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"remo_url\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}}],\"listeners\":{}}"
+    },
+    "id": "remo_events_upcoming_events",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg1NSwxXQ=="
+}

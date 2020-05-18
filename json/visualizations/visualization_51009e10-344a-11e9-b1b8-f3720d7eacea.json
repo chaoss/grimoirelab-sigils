@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "jenkins_categories_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_categories_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"In order to filter by **category**, please use the search box on top. Use the following query:\\n* `job_name:*<search_string>*`: `<search_string>` should be what you are looking for, e.g. `distribution-test`.\\n\\nWildcards allow to filter those job names that contains the category we are looking for.\\n\\n**IMPORTANT**: `Categories` in widgets are based on Jenkins `installer` field, so may be not accurate to represent what you could expect as categories.\\n\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/jenkins-job-categories)\"},\"aggs\":[]}"
+    },
+    "id": "51009e10-344a-11e9-b1b8-f3720d7eacea",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE3OCwxXQ=="
+}

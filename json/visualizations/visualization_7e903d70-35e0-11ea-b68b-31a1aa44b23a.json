@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_issues_comments_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_issues_comments_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"#### GitHub Issues Comments and Collaboration\\n\\n* **Number of issue comments** gives an idea of the activity at different levels, from Project to individuals.\\n* **Collaboration Network** shows people as nodes. Node size is the number of issues they created. Edges link people commenting on the same issue thread. Edge size represents the number of comments.\\n* **Tables** offer a view of the comments activity split by project, repository, and individual, allowing to compare among them.\\n\\n**Note**: ratios are calculated as specific count (`+1` or `all reactions`) divided by total count (`issues + comments`).\\n\\n[See complete dashboard documentation](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-comments-and-collaboration/)\"},\"aggs\":[]}"
+    },
+    "id": "7e903d70-35e0-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNzYsMV0="
+}

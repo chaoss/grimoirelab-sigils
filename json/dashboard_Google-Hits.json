@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Google Hits panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 7, \"w\": 12, \"h\": 8, \"i\": \"1\"}, \"id\": \"googlehits_avg_hits_evolutionary\", \"title\": \"Hits over time by keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 7, \"y\": 0, \"w\": 5, \"h\": 7, \"i\": \"3\"}, \"id\": \"googlehits_table_keywords\", \"title\": \"Hits by keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 7, \"h\": 2, \"i\": \"4\"}, \"id\": \"googlehits_main_numbers\", \"title\": \"Summary\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"6\", \"gridData\": {\"x\": 0, \"y\": 4, \"w\": 7, \"h\": 3, \"i\": \"6\"}, \"id\": \"googlehits_percentage_by_keyword_evolutionary\", \"title\": \"Hits by Keyword\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"7\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 7, \"h\": 2, \"i\": \"7\"}, \"id\": \"googlehits_total_avg_hits_evolutionary\", \"title\": \"Total Hits Over Time\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "Google Hits",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Hits over time by keyword\"},\"P-3\":{\"title\":\"Hits by keyword\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"title\":\"Summary\"},\"P-6\":{\"title\":\"Hits by Keyword\"},\"P-7\":{\"title\":\"Total Hits Over Time\"}}",
+        "version": 1
+    },
+    "id": "Google-Hits",
+    "type": "dashboard",
+    "version": "WzIzNiwxXQ=="
+}

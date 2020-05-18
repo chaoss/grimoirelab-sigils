@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Efficiency panel for GitLab Issues by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"7c2496c0-b013-11e8-8771-a349686d998a\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 3, \"x\": 0, \"y\": 0}, \"id\": \"8d2c9a40-f6ee-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"1\", \"title\": \"Efficiency Closing GitLab Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 2, \"i\": \"2\", \"w\": 12, \"x\": 0, \"y\": 6}, \"id\": \"c9277e40-f6f1-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"2\", \"title\": \"Efficiency Closing GitLab Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"cb969460-f6ef-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"3\", \"title\": \"Time to Close\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"4\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"850e2200-f6f0-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"4\", \"title\": \"Repositories\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"5\", \"w\": 5, \"x\": 3, \"y\": 0}, \"id\": \"36b430d0-f6f1-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"5\", \"title\": \"BMI\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"6\", \"w\": 5, \"x\": 3, \"y\": 3}, \"id\": \"91cd4420-f6f1-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"6\", \"title\": \"Lead Time\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "GitLab Issues Efficiency",
+        "uiStateJSON": "{\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "38fe7980-f6f2-11e8-8aac-ef7fd4d8cbad",
+    "type": "dashboard",
+    "version": "WzExNjksMV0="
+}

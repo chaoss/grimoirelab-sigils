@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"askbot\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "askbot_question_tags",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"askbot_question_tags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":52},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"question_tags\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Top 20 Question Tags\"}}],\"listeners\":{}}"
+    },
+    "id": "askbot_question_tags",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkzNiwxXQ=="
+}

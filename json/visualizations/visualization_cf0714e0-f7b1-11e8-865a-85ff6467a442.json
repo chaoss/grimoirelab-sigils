@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "git_active_repos",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"git_active_repos\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date, metric=cardinality:repo_name).bars(width=10).label('Active repos'), .es(index=git, timefield=grimoire_creation_date, metric=cardinality:repo_name).trend().label('Active repos trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "cf0714e0-f7b1-11e8-865a-85ff6467a442",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNTAsMV0="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "organizational_diversity_active_domains_by_data_source_by_contributors_pie_chart",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"organizational_diversity_active_domains_by_data_source_by_contributors_pie_chart\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Contributors\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_domain\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Domains\"}}]}"
+    },
+    "id": "acaa7340-17fc-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU3MCwxXQ=="
+}

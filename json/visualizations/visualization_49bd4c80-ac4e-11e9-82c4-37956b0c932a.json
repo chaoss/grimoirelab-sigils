@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"cocom\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "cocom_study_file_wise_metric_table_all",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"cocom_study_file_wise_metric_table_all\",\"type\":\"table\",\"params\":{\"perPage\":8,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"ccn\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Code Complexity\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"comments\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Comments\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"loc\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"LOC\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"num_funs\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Functions\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"comments_per_loc\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"# Comments per LOC\"}},{\"id\":\"11\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"blanks_per_loc\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"# Blanks per LOC\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"loc_per_function\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"# LOC per function\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"repo_url\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Repository\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"file_path\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"File\"}}]}"
+    },
+    "id": "49bd4c80-ac4e-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-01-14T15:43:15.042Z",
+    "version": "WzgxNSwxXQ=="
+}

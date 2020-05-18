@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"filter\": [],\n  \"index\": \"mediawiki\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "title": "mediawiki_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"type\":\"metric\",\"aggs\":[{\"type\":\"sum\",\"id\":\"1\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Pages\",\"field\":\"iscreated\"}},{\"type\":\"cardinality\",\"id\":\"3\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Editors\",\"field\":\"author_uuid\"}},{\"type\":\"sum\",\"id\":\"2\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Revisions\",\"field\":\"isrevision\"}}],\"title\":\"New Visualization\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\"}}"
+    },
+    "id": "mediawiki_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc2OSwxXQ=="
+}

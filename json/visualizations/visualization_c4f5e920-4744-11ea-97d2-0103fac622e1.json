@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[{\"meta\":{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"field\":\"data_source\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"data_source\",\"value\":\"jenkins\",\"params\":{\"value\":\"jenkins\"}},\"script\":{\"script\":{\"inline\":\"boolean compare(Supplier s, def v) {return s.get() == v;}compare(() -> { if (doc['_index'].value.contains('-')) {\\n    doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"-\\\"))\\n\\n} else if (doc['_index'].value.contains('_')) {\\n    if (doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\")).equalsIgnoreCase(\\\"github\\\")) {\\n       if (doc['pull_request'].value) {\\n            \\\"github_pull_requests\\\"\\n        } else {\\n            \\\"github_issues\\\"\\n        }\\n\\n    } else {\\n        doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\"))\\n\\n    }\\n\\n} else {\\n    doc['_index'].value\\n} }, params.value);\",\"lang\":\"painless\",\"params\":{\"value\":\"jenkins\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "hard_vs_soft_activity_contributors_by_organization",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"hard_vs_soft_activity_contributors_by_organization\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Contributors\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":\"is_git_commit:*\"},\"label\":\"Code Contributions\"},{\"input\":{\"query\":\"-is_git_commit\"},\"label\":\"Other Project Activity\"}],\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_org_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}}]}"
+    },
+    "id": "c4f5e920-4744-11ea-97d2-0103fac622e1",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMxMCwxXQ=="
+}

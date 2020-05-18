@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "feeling_emotions_pie",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"feeling_emotions_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"feeling_emotion:*love*\"},\"label\":\"Love\"},{\"input\":{\"query\":\"feeling_emotion:*joy*\"},\"label\":\"Joy\"},{\"input\":{\"query\":\"feeling_emotion:*surprise*\"},\"label\":\"Surprise\"},{\"input\":{\"query\":\"feeling_emotion:*sadness*\"},\"label\":\"Sadness\"},{\"input\":{\"query\":\"feeling_emotion:*anger*\"},\"label\":\"Anger\"},{\"input\":{\"query\":\"feeling_emotion:*fear*\"},\"label\":\"Fear\"},{\"input\":{\"query\":\"feeling_emotion:*unknown*\"},\"label\":\"Not classified\"}]}}]}"
+    },
+    "id": "022c4fc0-4ced-11ea-ac47-d59b2800ffe6",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ1LDFd"
+}

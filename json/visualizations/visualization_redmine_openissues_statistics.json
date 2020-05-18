@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Open-Redmine-Issues-Search:_-status_name:resolved_rejected_closed_wontfix_duplicate",
+        "title": "redmine_openissues_statistics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"redmine_openissues_statistics\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"12\"}}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Accumulated Open Days\"}},{\"id\":\"3\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"timeopen_days\",\"customLabel\":\"Average Time Open Days per Issue\"}}],\"listeners\":{}}"
+    },
+    "id": "redmine_openissues_statistics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYxNiwxXQ=="
+}

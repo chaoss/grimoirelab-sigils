@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github-emergingtech\",\"query\":{\"query_string\":{\"query\":\"pull_request:false\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "github_emergingtech_main_numbers_issues",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_emergingtech_main_numbers_pullrequests\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"12\"}}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"id\",\"json\":\"\",\"customLabel\":\"# Issues\"}},{\"id\":\"2\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"customLabel\":\"# Repositories\"}},{\"id\":\"4\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"percents\":[50],\"customLabel\":\"Median Time to Close in Days\"}}],\"listeners\":{}}"
+    },
+    "id": "github_emergingtech_main_numbers_issues",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNTEsMV0="
+}

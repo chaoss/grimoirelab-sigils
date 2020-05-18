@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "C_github_avg_lead_time",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Avg. Lead Time\",\"field\":\"time_to_close_days\"},\"schema\":\"metric\",\"type\":\"avg\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":false,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"days\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false},\"isDisplayWarning\":false,\"type\":\"gauge\"},\"title\":\"C_github_avg_lead_time\",\"type\":\"gauge\"}"
+    },
+    "id": "7cd03200-bb35-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-09-18T11:26:10.240Z",
+    "version": "Wzk4MywxXQ=="
+}

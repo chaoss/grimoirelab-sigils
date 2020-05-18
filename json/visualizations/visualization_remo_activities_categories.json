@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "remo_activities_categories",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"remo_activities_categories\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"functional_areas.name\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+    },
+    "id": "remo_activities_categories",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYxMSwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"52b91100-4f11-11ea-ac47-d59b2800ffe6\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "docker_smells_graph",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"docker_smells_graph\",\"type\":\"network\",\"params\":{\"showLabels\":true,\"showPopup\":false,\"showColorLegend\":true,\"nodePhysics\":true,\"firstNodeColor\":\"#e5b186\",\"secondNodeColor\":\"#8197b3\",\"canvasBackgroundColor\":\"#FFFFFF\",\"shapeFirstNode\":\"dot\",\"shapeSecondNode\":\"box\",\"displayArrow\":false,\"posArrow\":\"to\",\"shapeArrow\":\"arrow\",\"smoothType\":\"continuous\",\"scaleArrow\":1,\"maxCutMetricSizeNode\":5000,\"maxCutMetricSizeEdge\":5000,\"minCutMetricSizeNode\":0,\"maxNodeSize\":30,\"minNodeSize\":8,\"maxEdgeSize\":5,\"minEdgeSize\":0.1,\"springConstant\":0.01,\"gravitationalConstant\":-500000,\"labelColor\":\"#000000\"},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"size_node\",\"params\":{\"field\":\"smell\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"origin\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_term\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"first\",\"params\":{\"field\":\"smell\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}"
+    },
+    "id": "77398850-4f18-11ea-ac47-d59b2800ffe6",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMwNCwxXQ=="
+}

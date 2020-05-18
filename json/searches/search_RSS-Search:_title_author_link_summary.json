@@ -1,0 +1,24 @@
+{
+    "attributes": {
+        "columns": [
+            "author",
+            "title",
+            "link",
+            "summary"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"rss\",\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "RSS Search:_title_author_link_summary",
+        "version": 1
+    },
+    "id": "RSS-Search:_title_author_link_summary",
+    "type": "search",
+    "version": "WzkwLDFd"
+}

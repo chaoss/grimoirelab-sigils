@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Pull Requests\",\"type\":\"phrase\",\"key\":\"pull_request\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Closed\",\"type\":\"phrase\",\"key\":\"state\",\"value\":\"closed\",\"params\":{\"query\":\"closed\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"state\":{\"query\":\"closed\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github_pull_requests_median_time_to_close_by_repo",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github_pull_requests_median_time_to_close_by_repo\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"percents\":[50],\"customLabel\":\"Median Time Open (days)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"github_repo\",\"size\":50000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Repository\"}}]}"
+    },
+    "id": "a204e920-e1d3-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzM5NCwxXQ=="
+}

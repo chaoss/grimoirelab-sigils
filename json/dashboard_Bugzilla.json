@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Bugzilla Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"meta\": {\"index\": \"bugzilla\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"1\", \"w\": 5, \"x\": 0, \"y\": 0}, \"id\": \"issues_main_metrics\", \"panelIndex\": \"1\", \"title\": \"Issues\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"2\", \"w\": 5, \"x\": 0, \"y\": 2}, \"id\": \"issues_evolutionary\", \"panelIndex\": \"2\", \"title\": \"Issues by Status, over time\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"3\", \"w\": 5, \"x\": 0, \"y\": 4}, \"id\": \"issues_evolutionary_submitters\", \"panelIndex\": \"3\", \"title\": \"Submitters, over time\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"4\", \"w\": 3, \"x\": 5, \"y\": 0}, \"id\": \"bugzilla_issues_organizations_assignee\", \"panelIndex\": \"4\", \"title\": \"Submitters by Organization\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"5\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"bugzilla_openissues_projects\", \"panelIndex\": \"5\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 8, \"i\": \"6\", \"w\": 5, \"x\": 0, \"y\": 6}, \"id\": \"bugzilla_issues_submitters\", \"panelIndex\": \"6\", \"title\": \"Submitters\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"7\", \"w\": 7, \"x\": 5, \"y\": 5}, \"id\": \"bugzilla_assigned_issues_orgs\", \"panelIndex\": \"7\", \"title\": \"Issues by Organization, over time\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"8\", \"w\": 7, \"x\": 5, \"y\": 10}, \"id\": \"bugzilla_openissues_projects\", \"panelIndex\": \"8\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Bugzilla",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Issues\"},\"P-2\":{\"title\":\"Issues Open\"},\"P-3\":{\"title\":\"Submitters\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Assigned Organizations\"},\"P-5\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-6\":{\"title\":\"Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-7\":{\"title\":\"Assigned Organizations\"},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+        "version": 1
+    },
+    "id": "Bugzilla",
+    "type": "dashboard",
+    "version": "WzkzNCwxXQ=="
+}

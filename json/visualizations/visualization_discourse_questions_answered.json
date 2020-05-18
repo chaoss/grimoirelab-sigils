@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"meta\":{\"index\":\"discourse\",\"key\":\"type\",\"value\":\"question\",\"disabled\":false,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"type\":{\"query\":\"question\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+        },
+        "title": "discourse_questions_answered",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"discourse_questions_answered\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Questions & Answers\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"question_has_accepted_answer:1\",\"analyze_wildcard\":true}}},\"label\":\"Answered\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"question_has_accepted_answer:0\",\"analyze_wildcard\":true}}},\"label\":\"Unanswered\"}]}}],\"listeners\":{}}"
+    },
+    "id": "discourse_questions_answered",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE1NSwxXQ=="
+}

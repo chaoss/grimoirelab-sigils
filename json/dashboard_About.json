@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "About panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":5,\"i\":\"1\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"Help-About\",\"panelIndex\":\"1\",\"title\":\"About\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":6,\"x\":6,\"y\":5},\"id\":\"Help-Acknowledgments\",\"panelIndex\":\"2\",\"title\":\"Acknowledgments\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":8,\"i\":\"4\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"Help-UI\",\"panelIndex\":\"4\",\"title\":\"User Interface\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "About",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"About\"},\"P-2\":{\"title\":\"Acknowledgments\"},\"P-4\":{\"title\":\"User Interface\"}}",
+        "version": 1
+    },
+    "id": "About",
+    "type": "dashboard",
+    "updated_at": "2019-11-28T17:39:09.047Z",
+    "version": "WzEwOTEsMV0="
+}

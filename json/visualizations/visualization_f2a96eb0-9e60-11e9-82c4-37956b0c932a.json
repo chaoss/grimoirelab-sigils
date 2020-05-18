@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "colic_repository_project_selector",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"colic_repository_project_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"fieldName\":\"project\",\"id\":\"1562247124311\",\"indexPattern\":\"colic\",\"label\":\"Project\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":5,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"repo_url\",\"id\":\"1562247146352\",\"indexPattern\":\"colic\",\"label\":\"Repository\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":10,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"modules\",\"id\":\"1562247187346\",\"indexPattern\":\"colic\",\"label\":\"Module Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"file_path\",\"id\":\"1562247166187\",\"indexPattern\":\"colic\",\"label\":\"File Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"id\":\"1566194096466\",\"indexPattern\":\"colic_study\",\"fieldName\":\"interval_months\",\"label\":\"Interval\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1562248398538\",\"indexPattern\":\"colic\",\"fieldName\":\"has_license\",\"label\":\"Has License\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1562248433403\",\"indexPattern\":\"colic\",\"fieldName\":\"has_copyright\",\"label\":\"Has Copyright\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "f2a96eb0-9e60-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-01-14T15:46:36.144Z",
+    "version": "WzEwOTAsMV0="
+}

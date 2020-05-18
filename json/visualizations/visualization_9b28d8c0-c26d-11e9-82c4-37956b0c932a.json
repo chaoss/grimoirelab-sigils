@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "colic_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"colic_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on the **Code License** metrics and their evolution\\n* **Selector** :\\n  * **Repository** helps results for a given repository\\n  * **Module Path** helps refine results for a given module\\n  * **interval_months** is the study interval (default: 1)\\n* **Repositories** gives an overview of all the repositories and the corresponding metrics\\n* **Licensed Files** shows the number of licensed v/s unlicensed files\\n* **Copyrighted Files** shows the number of copyrighted v/s uncopyrighted files.\\n* **Evolution: Licensed & Copyrighted Files** shows the evolution of the Licensed and Copyrighted files over the time period\\n* **License Definition** shows most frequent license definitions in the project\\n* **Copyright Definition** shows most frequent copyright definitions in the project\\n* **All Files: License & Copyright Definition** gives license and copyright definition corresponding to each file of the repository, which can be delegated via the Module Path Selector\\n\\n\\n[See complete panel documentation]()\"},\"aggs\":[]}"
+    },
+    "id": "9b28d8c0-c26d-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU2OCwxXQ=="
+}

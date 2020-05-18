@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "onion_multi_select",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"onion_multi_select\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1538041633158\",\"indexPattern\":\"all_onion\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "77316e20-c23a-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcwNiwxXQ=="
+}

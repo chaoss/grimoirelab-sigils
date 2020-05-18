@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "jenkins_duration_trend",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_duration_trend\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q=*, index=jenkins, timefield=grimoire_creation_date, metric=avg:duration_min).label(\\\"Duration\\\"), .es(q=*, index=jenkins, timefield=grimoire_creation_date, metric=avg:duration_min).trend().label(\\\"Trend\\\")\",\"interval\":\"auto\"},\"aggs\":[]}"
+    },
+    "id": "f5a4cdb0-bcae-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-09-20T08:30:09.605Z",
+    "version": "WzIxNiwxXQ=="
+}

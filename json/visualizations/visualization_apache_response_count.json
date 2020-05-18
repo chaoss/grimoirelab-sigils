@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "apache_response_count",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"apache_response_count\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"json\":\"\",\"customLabel\":\"Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"response\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Response\"}}],\"listeners\":{}}"
+    },
+    "id": "apache_response_count",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNzMsMV0="
+}

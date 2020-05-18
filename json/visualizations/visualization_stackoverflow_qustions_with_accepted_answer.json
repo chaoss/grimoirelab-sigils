@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"stackoverflow\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"meta\":{\"index\":\"stackoverflow\",\"key\":\"type\",\"value\":\"question\",\"disabled\":false,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"type\":{\"query\":\"question\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+        },
+        "title": "stackoverflow_qustions_with_accepted_answer",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"stackoverflow_qustions_with_accepted_answer\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"shareYAxis\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"question_has_accepted_answer:1\",\"analyze_wildcard\":true}}},\"label\":\"Answered\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"question_has_accepted_answer:0\",\"analyze_wildcard\":true}}},\"label\":\"Unanswered\"}]}}],\"listeners\":{}}"
+    },
+    "id": "stackoverflow_qustions_with_accepted_answer",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg1OCwxXQ=="
+}

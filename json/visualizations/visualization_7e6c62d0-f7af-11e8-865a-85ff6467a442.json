@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "git_top_25_repos_activity_heatmap",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 400\":\"rgb(247,252,245)\",\"400 - 800\":\"rgb(233,247,228)\",\"800 - 1,200\":\"rgb(211,238,205)\",\"1,200 - 1,600\":\"rgb(184,227,177)\",\"1,600 - 2,000\":\"rgb(152,213,148)\",\"2,000 - 2,400\":\"rgb(116,196,118)\",\"2,400 - 2,800\":\"rgb(75,176,98)\",\"2,800 - 3,200\":\"rgb(47,152,79)\",\"3,200 - 3,600\":\"rgb(21,127,59)\",\"3,600 - 4,000\":\"rgb(0,100,40)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"git_top_25_repos_activity_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Commits\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"repo_name\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Date (month)\"}}]}"
+    },
+    "id": "7e6c62d0-f7af-11e8-865a-85ff6467a442",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg4MCwxXQ=="
+}

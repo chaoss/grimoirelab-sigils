@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_pull_requests_merged_filters",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_pull_requests_merged_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1543332151603\",\"indexPattern\":\"git\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1543332192643\",\"indexPattern\":\"git\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "73e7b910-f258-11e8-b20d-0598f2c48f21",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE5NCwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Organizational Diversity by Domains Panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 2, \"x\": 2, \"y\": 0}, \"id\": \"542a0c30-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"1\", \"title\": \"Active Domains\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"2\", \"w\": 12, \"x\": 0, \"y\": 7}, \"id\": \"e662e8b0-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"2\", \"title\": \"Help\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 8, \"x\": 4, \"y\": 0}, \"id\": \"3116dc50-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"3\", \"title\": \"Active Domains over Time by Data Source\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"4\", \"w\": 6, \"x\": 6, \"y\": 3}, \"id\": \"cae78a00-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"4\", \"title\": \"Data Sources by Domain, Contributions and Contributors\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"5\", \"w\": 3, \"x\": 3, \"y\": 3}, \"id\": \"acaa7340-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"5\", \"title\": \"People Contributing\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"6\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"8e897000-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"6\", \"title\": \"Number of Contributions\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"7\", \"w\": 2, \"x\": 0, \"y\": 0}, \"id\": \"724b0f70-17fc-11e9-872f-e17019e68d6d\", \"panelIndex\": \"7\", \"title\": \"Filters\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Organizational Diversity by Domains",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "6e0e2900-18c0-11e9-872f-e17019e68d6d",
+    "type": "dashboard",
+    "version": "WzU3MiwxXQ=="
+}

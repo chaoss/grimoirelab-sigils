@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Organizational Diversity Panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"Author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"Author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 2, \"x\": 2, \"y\": 0}, \"id\": \"91547c10-17ea-11e9-872f-e17019e68d6d\", \"panelIndex\": \"1\", \"title\": \"Active Organizations\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 8, \"x\": 4, \"y\": 0}, \"id\": \"e6bc0d90-17ee-11e9-872f-e17019e68d6d\", \"panelIndex\": \"3\", \"title\": \"Active Organizations over TIme by Data Source\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"4\", \"w\": 6, \"x\": 6, \"y\": 3}, \"id\": \"bcf2eb90-17ef-11e9-872f-e17019e68d6d\", \"panelIndex\": \"4\", \"title\": \"Data Sources by Organization, Contributions and Contributors\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"5\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"6d2ff480-17f0-11e9-872f-e17019e68d6d\", \"panelIndex\": \"5\", \"title\": \"Number of Contributions\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"6\", \"w\": 2, \"x\": 0, \"y\": 0}, \"id\": \"1d4de740-17f2-11e9-872f-e17019e68d6d\", \"panelIndex\": \"6\", \"title\": \"Filters\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"7\", \"w\": 3, \"x\": 3, \"y\": 3}, \"id\": \"c2cd4df0-17f2-11e9-872f-e17019e68d6d\", \"panelIndex\": \"7\", \"title\": \"People Contributing\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"8\", \"w\": 12, \"x\": 0, \"y\": 7}, \"id\": \"cb71b7b0-17f3-11e9-872f-e17019e68d6d\", \"panelIndex\": \"8\", \"title\": \"Help\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Organizational Diversity",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "ab68fe20-17f2-11e9-872f-e17019e68d6d",
+    "type": "dashboard",
+    "version": "WzgzMCwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"filter\":[{\"meta\":{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"exists\",\"key\":\"has_sentiment\",\"value\":\"exists\"},\"exists\":{\"field\":\"has_sentiment\"},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "feeling_sentiment_per_issues",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":\"asc\"},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"feeling_sentiment_per_issues\",\"type\":\"table\",\"params\":{\"perPage\":14,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Comments\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"origin\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"issue_title\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Issues\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"feeling_emoticon_sentiment\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Sentiment\"}}]}"
+    },
+    "id": "e90e65b0-4f34-11ea-ac47-d59b2800ffe6",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNzUsMV0="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"remo-activities\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "remo_activities_authors",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"remo_activities_authors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Activities\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"mentor\",\"customLabel\":\"Mentors\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"initiative\",\"customLabel\":\"Initiative\"}},{\"id\":\"5\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"functional_areas.name\",\"customLabel\":\"Categories\"}}],\"listeners\":{}}"
+    },
+    "id": "remo_activities_authors",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk2LDFd"
+}

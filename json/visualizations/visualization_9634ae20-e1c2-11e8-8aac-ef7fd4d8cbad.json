@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"gerrit\",\"filter\":[{\"meta\":{\"index\":\"gerrit\",\"type\":\"phrases\",\"key\":\"status\",\"value\":\"MERGED, ABANDONED\",\"params\":[\"MERGED\",\"ABANDONED\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"status\":\"MERGED\"}},{\"match_phrase\":{\"status\":\"ABANDONED\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "gerrit_median_time_open_gauge",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_median_time_open_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"percents\":[50],\"customLabel\":\"Median Time to Merge (days)\"}}]}"
+    },
+    "id": "9634ae20-e1c2-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY1NSwxXQ=="
+}

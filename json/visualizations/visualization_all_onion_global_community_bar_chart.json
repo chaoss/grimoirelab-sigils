@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"Global View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"query\",\"negate\":false,\"value\":\"{\\\"bool\\\":{\\\"must\\\":[{\\\"term\\\":{\\\"author_org_name\\\":\\\"_Global_\\\"}},{\\\"term\\\":{\\\"project\\\":\\\"_Global_\\\"}}]}}\"},\"query\":{\"bool\":{\"must\":[{\"term\":{\"author_org_name\":\"_Global_\"}},{\"term\":{\"project\":\"_Global_\"}}]}}}]}"
+        },
+        "title": "all_onion_global_community_bar_chart",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_global_community_bar_chart\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"grouped\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"quarter\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"onion_role\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+    },
+    "id": "all_onion_global_community_bar_chart",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcxMiwxXQ=="
+}

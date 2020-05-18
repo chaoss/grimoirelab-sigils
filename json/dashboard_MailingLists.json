@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Mailing Lists Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"meta\": {\"index\": \"mbox\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"version\": true, \"query\": {\"query\": {\"query_string\": {\"query\": \"*\", \"analyze_wildcard\": true, \"default_field\": \"*\"}}, \"language\": \"lucene\"}, \"highlightAll\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"id\": \"mbox_evolution_emails\", \"panelIndex\": \"1\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Emails\", \"gridData\": {\"h\": 2, \"w\": 3, \"x\": 2, \"y\": 0, \"i\": \"1\"}}, {\"id\": \"mbox_evolution_participants\", \"panelIndex\": \"2\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Email Senders\", \"gridData\": {\"h\": 2, \"w\": 3, \"x\": 2, \"y\": 2, \"i\": \"2\"}}, {\"id\": \"mbox_main_numbers\", \"panelIndex\": \"3\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"mbox\", \"gridData\": {\"h\": 4, \"w\": 2, \"x\": 0, \"y\": 0, \"i\": \"3\"}}, {\"id\": \"mbox_organizations\", \"panelIndex\": \"4\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Organizations\", \"gridData\": {\"h\": 4, \"w\": 3, \"x\": 5, \"y\": 0, \"i\": \"4\"}}, {\"id\": \"mbox_main_projects\", \"panelIndex\": \"5\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Projects\", \"gridData\": {\"h\": 4, \"w\": 4, \"x\": 8, \"y\": 0, \"i\": \"5\"}}, {\"id\": \"mbox_main_participants\", \"panelIndex\": \"6\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Email Senders\", \"gridData\": {\"h\": 4, \"w\": 5, \"x\": 0, \"y\": 4, \"i\": \"6\"}}, {\"id\": \"mbox_organizations_evolutionary\", \"panelIndex\": \"7\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Organizations\", \"gridData\": {\"h\": 4, \"w\": 7, \"x\": 5, \"y\": 4, \"i\": \"7\"}}, {\"id\": \"mbox_emails_timezone\", \"panelIndex\": \"8\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Emails by Time Zone\", \"gridData\": {\"h\": 3, \"w\": 5, \"x\": 0, \"y\": 8, \"i\": \"8\"}}, {\"id\": \"mbox_main_malinglists\", \"panelIndex\": \"9\", \"version\": \"6.1.0-3\", \"type\": \"visualization\", \"title\": \"Mailing Lists\", \"gridData\": {\"h\": 3, \"w\": 7, \"x\": 5, \"y\": 8, \"i\": \"9\"}}]",
+        "timeRestore": false,
+        "title": "Mailing Lists",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Emails\",\"vis\":{\"legendOpen\":false}},\"P-2\":{\"title\":\"Email Senders\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"mbox\"},\"P-4\":{\"title\":\"Organizations\",\"vis\":{\"legendOpen\":true}},\"P-5\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-6\":{\"title\":\"Email Senders\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-7\":{\"title\":\"Organizations\"},\"P-8\":{\"title\":\"Emails by Time Zone\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"title\":\"Mailing Lists\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+        "version": 1
+    },
+    "id": "MailingLists",
+    "type": "dashboard",
+    "version": "WzM3NiwxXQ=="
+}

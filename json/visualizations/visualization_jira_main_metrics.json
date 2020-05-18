@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "jira_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"params\":{\"metric\":{\"invertColors\":false,\"style\":{\"fontSize\":\"12\",\"subText\":\"\",\"bgColor\":false,\"bgFill\":\"#000\",\"labelColor\":false},\"colorSchema\":\"Green to Red\",\"percentageMode\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"metricColorMode\":\"None\",\"labels\":{\"show\":true},\"useRanges\":false},\"fontSize\":\"12\"},\"aggs\":[{\"params\":{\"customLabel\":\"# Issues\"},\"schema\":\"metric\",\"id\":\"1\",\"type\":\"count\"},{\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Submitters\"},\"schema\":\"metric\",\"id\":\"2\",\"type\":\"cardinality\"},{\"params\":{\"field\":\"project_name\",\"customLabel\":\"# Projects\"},\"schema\":\"metric\",\"id\":\"3\",\"type\":\"cardinality\"}],\"title\":\"jira_main_metrics\",\"type\":\"metric\"}"
+    },
+    "id": "jira_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwMzYsMV0="
+}

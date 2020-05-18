@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Efficiency panel for GitHub Pull Requests by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"github_issues\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 3, \"x\": 0, \"y\": 0}, \"id\": \"22ef2390-e1c3-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"1\", \"title\": \"Efficiency Closing GitHub Pull Requests\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"2\", \"w\": 5, \"x\": 3, \"y\": 0}, \"id\": \"f3ef79f0-e1b8-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"2\", \"title\": \"REI\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 5, \"x\": 3, \"y\": 3}, \"id\": \"f89fa240-e1bd-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"3\", \"title\": \"Lead Time\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"4\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"1d333b20-e1bf-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"4\", \"title\": \"Time to Merge\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"5\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"a204e920-e1d3-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"5\", \"title\": \"Repositories\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 2, \"i\": \"6\", \"w\": 12, \"x\": 0, \"y\": 6}, \"id\": \"1808d6c0-e1db-11e8-8aac-ef7fd4d8cbad\", \"panelIndex\": \"6\", \"title\": \"Efficiency Closing GitHub Pull Requests\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Pull Requests Efficiency",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}}}",
+        "version": 1
+    },
+    "id": "9663d5a0-e1dc-11e8-8aac-ef7fd4d8cbad",
+    "type": "dashboard",
+    "version": "WzM5NSwxXQ=="
+}

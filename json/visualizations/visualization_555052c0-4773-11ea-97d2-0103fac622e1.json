@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "hard_activity_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"hard_activity_main_numbers\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":26,\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\",\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"json\":\"{\\\"precision_threshold\\\": 10000}\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"Contributors\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"repo_name\",\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"Repositories\"}}]}"
+    },
+    "id": "555052c0-4773-11ea-97d2-0103fac622e1",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMwOSwxXQ=="
+}

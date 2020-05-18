@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "jenkins_jobs_categories_table",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Jobs\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Category\",\"field\":\"installer\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":5000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Sum of Builds\",\"field\":\"build\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"4-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"result:SUCCESS\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Success\",\"customMetric\":{\"enabled\":true,\"id\":\"4-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"5-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"result:FAILURE\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Failures\",\"customMetric\":{\"enabled\":true,\"id\":\"5-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"jenkins_jobs_categories_table\",\"type\":\"table\"}"
+    },
+    "id": "41021bc0-29fe-11e9-b1b8-f3720d7eacea",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk0OCwxXQ=="
+}

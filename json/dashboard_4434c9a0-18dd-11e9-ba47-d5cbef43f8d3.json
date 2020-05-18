@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Contributors Growth Panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"meta\": {\"index\": \"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 2, \"h\": 3, \"i\": \"1\"}, \"id\": \"1d4de740-17f2-11e9-872f-e17019e68d6d\", \"title\": \"Filters\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 2, \"y\": 0, \"w\": 3, \"h\": 3, \"i\": \"2\"}, \"id\": \"403508c0-18dc-11e9-ba47-d5cbef43f8d3\", \"title\": \"Total Contributors\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 5, \"y\": 0, \"w\": 7, \"h\": 4, \"i\": \"3\"}, \"id\": \"19b8f840-18c4-11e9-872f-e17019e68d6d\", \"title\": \"Active Contributors over time and Growth Analysis\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"title\": \"Active Contributors over time and Difference with the Average\", \"panelIndex\": \"4\", \"gridData\": {\"x\": 5, \"y\": 4, \"w\": 7, \"h\": 4, \"i\": \"4\"}, \"id\": \"8cfe1960-18de-11e9-ba47-d5cbef43f8d3\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"title\": \"Contributors Growth by Data Source\", \"panelIndex\": \"5\", \"gridData\": {\"x\": 0, \"y\": 3, \"w\": 5, \"h\": 5, \"i\": \"5\"}, \"id\": \"bac35d50-18df-11e9-ba47-d5cbef43f8d3\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"title\": \"Help\", \"panelIndex\": \"6\", \"gridData\": {\"x\": 0, \"y\": 8, \"w\": 12, \"h\": 3, \"i\": \"6\"}, \"version\": \"6.1.4-1\", \"type\": \"visualization\", \"id\": \"50f893c0-18eb-11e9-ba47-d5cbef43f8d3\"}]",
+        "timeRestore": false,
+        "title": "Contributors Growth",
+        "uiStateJSON": "{\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "4434c9a0-18dd-11e9-ba47-d5cbef43f8d3",
+    "type": "dashboard",
+    "version": "WzExMDAsMV0="
+}

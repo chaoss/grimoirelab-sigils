@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "git_demographics_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"git_demographics_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel shows **the history of contributors active in last 10 years** focused on the first and last contribution of each person.\\n\\n**WARNING**: Pre-computed data displayed. Dynamic filters like time picker won't work as expected.\\n\\nFor more information, please read [panel documentation page](https://chaoss.github.io/grimoirelab-sigils/panels/git-demographics/).\"},\"aggs\":[]}"
+    },
+    "id": "cfcbb3e0-1f02-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE0OCwxXQ=="
+}

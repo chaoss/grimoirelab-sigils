@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+        },
+        "title": "irc_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"type\":\"metric\",\"aggs\":[{\"type\":\"count\",\"id\":\"1\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Messages\"}},{\"type\":\"cardinality\",\"id\":\"2\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Participants\",\"field\":\"author_uuid\"}},{\"type\":\"cardinality\",\"id\":\"3\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Channels\",\"field\":\"channel\"}}],\"title\":\"irc_main_metrics\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\"}}"
+    },
+    "id": "irc_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc3NCwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "git_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"type\":\"metric\",\"aggs\":[{\"type\":\"cardinality\",\"id\":\"1\",\"schema\":\"metric\",\"params\":{\"json\":\"{\\\"precision_threshold\\\": 10000}\",\"customLabel\":\"# Commits\",\"field\":\"hash\"}},{\"type\":\"cardinality\",\"id\":\"2\",\"schema\":\"metric\",\"params\":{\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Authors\",\"field\":\"author_uuid\"}},{\"type\":\"cardinality\",\"id\":\"3\",\"schema\":\"metric\",\"params\":{\"json\":\"{\\\"precision_threshold\\\": 3000}\",\"customLabel\":\"# Repositories\",\"field\":\"repo_name\"}}],\"title\":\"git_main_numbers\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\"}}"
+    },
+    "id": "git_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzUyMywxXQ=="
+}

@@ -1,0 +1,20 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+        "title": "bugzilla_openissues_per_project",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Open Issues\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Project\",\"field\":\"project\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Avg. Time Open (Days)\",\"field\":\"painless_time_to_now\"},\"schema\":\"metric\",\"type\":\"avg\"}],\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"bugzilla_openissues_per_project\",\"type\":\"table\"}"
+    },
+    "id": "bugzilla_openissues_per_project",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-04-15T13:39:09.692Z",
+    "version": "WzEwNDUsMV0="
+}

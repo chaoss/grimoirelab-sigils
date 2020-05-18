@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Meetup-Search:_type_meetup",
+        "title": "meetup_groups_large",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"meetup_groups_large\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"7\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"event_url\",\"customLabel\":\"Meetings\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"num_rsvps\",\"percents\":[50],\"customLabel\":\"Median RSVPs\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"7\",\"customLabel\":\"Group\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"time_date\",\"customLabel\":\"First Meeting\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"time_date\",\"customLabel\":\"Most Recent Meeting\"}}],\"listeners\":{}}"
+    },
+    "id": "meetup_groups_large",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNDEsMV0="
+}

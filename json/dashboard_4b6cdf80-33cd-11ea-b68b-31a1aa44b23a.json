@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "Dashboard focused on understanding collaboration on GitHub Issues, by Bitergia.",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Pull Requests\",\"disabled\":false,\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"key\":\"issue_pull_request\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"issue_pull_request\":{\"query\":true,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":6,\"i\":\"1\",\"w\":7,\"x\":5,\"y\":3},\"id\":\"ee8e8ba0-33c3-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"1\",\"title\":\"Collaboration Network\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":6,\"i\":\"2\",\"w\":5,\"x\":0,\"y\":3},\"id\":\"6f4b9230-33cc-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"2\",\"title\":\"People\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":6,\"i\":\"3\",\"w\":6,\"x\":6,\"y\":9},\"id\":\"d0b37bf0-33cc-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"3\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":6,\"i\":\"4\",\"w\":6,\"x\":0,\"y\":9},\"id\":\"07050f60-35e0-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"4\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":3,\"i\":\"5\",\"w\":9,\"x\":3,\"y\":0},\"id\":\"7e903d70-35e0-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"5\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"gridData\":{\"h\":3,\"i\":\"6\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"db1f7600-35e0-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"6\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Issues Comments and Collaboration",
+        "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"P-3\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}}}",
+        "version": 1
+    },
+    "id": "4b6cdf80-33cd-11ea-b68b-31a1aa44b23a",
+    "type": "dashboard",
+    "updated_at": "2020-01-20T14:28:07.383Z",
+    "version": "WzU0LDFd"
+}

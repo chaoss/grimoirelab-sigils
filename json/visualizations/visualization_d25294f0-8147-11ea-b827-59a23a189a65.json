@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitter_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitter_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Gitter insights** in terms of **people sending messages with different content and links**.\\n* **Top users chart** shows the people most active in a room (messages sent), for the selected time range (using timepicker located at the top right corner of the dashboard).\\n* **Top mentioned URLs** gives an overview of the most common websites being linked in the room.\\n* **Weekly active users** displays the number of unique users active in the room per week.\\n* **Daily message count** displays the number of messages sent daily.\\n* **Users reading messages daily** shows the average number of users reading messages daily.\\n* **Top mentioned users/pull requests/issues** shows the respective most mentioned field in the messages over the selected time zone.\\n* **Messages sent per hour** shows the most active hours, when the most messages are sent in a day.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/gitter)\"},\"aggs\":[]}"
+    },
+    "id": "d25294f0-8147-11ea-b827-59a23a189a65",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzUzMCwxXQ=="
+}

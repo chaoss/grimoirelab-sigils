@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"9ec951d0-dbb8-11e9-8bb5-a754934c91d5\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github_activity_issues_opened_to_external_organizations_pie",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_activity_issues_opened_to_external_organizations_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"issues_opened\",\"customLabel\":\"Issues Opened\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"github_organization\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"GitHub Organization\"}}]}"
+    },
+    "id": "71494580-dbbd-11e9-8bb5-a754934c91d5",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMzNSwxXQ=="
+}

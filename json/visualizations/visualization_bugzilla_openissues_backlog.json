@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+        "title": "bugzilla_openissues_backlog",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"id\":\"2\",\"params\":{\"customInterval\":\"2h\",\"customLabel\":\"Time\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":\"segment\",\"type\":\"date_histogram\"},{\"id\":\"3\",\"params\":{\"customLabel\":\"Status\",\"field\":\"status\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"group\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"title\":\"New Visualization\",\"type\":\"histogram\"}"
+    },
+    "id": "bugzilla_openissues_backlog",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkzMywxXQ=="
+}

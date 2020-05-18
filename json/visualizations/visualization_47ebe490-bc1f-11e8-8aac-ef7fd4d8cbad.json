@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "gitlab-merges_timing_oldest_merge_requests",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab-merges_timing_oldest_merge_requests\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"Created On\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"title\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Summary\"}},{\"id\":\"9\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Submitter\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"milestone\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Milestone\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"repository\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Repository\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"url\",\"size\":100,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"URL\"}}]}"
+    },
+    "id": "47ebe490-bc1f-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNTMsMV0="
+}

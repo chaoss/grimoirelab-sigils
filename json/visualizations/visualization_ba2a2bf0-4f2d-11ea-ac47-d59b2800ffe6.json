@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "feeling_sentiment_pie",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"feeling_sentiment_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"feeling_sentiment:*positive*\"},\"label\":\"Positive\"},{\"input\":{\"query\":\"feeling_sentiment:*neutral*\"},\"label\":\"Neutral\"},{\"input\":{\"query\":\"feeling_sentiment:*negative*\"},\"label\":\"Negative\"},{\"input\":{\"query\":\"feeling_emotion:*unknown*\"},\"label\":\"Not classified\"}]}}]}"
+    },
+    "id": "ba2a2bf0-4f2d-11ea-ac47-d59b2800ffe6",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMwMCwxXQ=="
+}

@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "cocom_study_repository_project_selector",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"cocom_study_repository_project_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"fieldName\":\"project\",\"id\":\"1561710084481\",\"indexPattern\":\"cocom\",\"label\":\"Project\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":5,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"repo_url\",\"id\":\"1561710005733\",\"indexPattern\":\"cocom\",\"label\":\"Repository\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":10,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"modules\",\"id\":\"1562176624514\",\"indexPattern\":\"cocom\",\"label\":\"Module Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"fieldName\":\"file_path\",\"id\":\"1562005193477\",\"indexPattern\":\"cocom\",\"label\":\"File Path\",\"options\":{\"multiselect\":true,\"order\":\"desc\",\"size\":1000,\"type\":\"terms\"},\"type\":\"list\"},{\"id\":\"1566193997756\",\"indexPattern\":\"cocom_study\",\"fieldName\":\"interval_months\",\"label\":\"Interval\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"fieldName\":\"ccn\",\"id\":\"1562045529193\",\"indexPattern\":\"cocom\",\"label\":\"Code Complexity\",\"options\":{\"decimalPlaces\":0,\"step\":1},\"type\":\"range\"},{\"fieldName\":\"loc\",\"id\":\"1562045783019\",\"indexPattern\":\"cocom\",\"label\":\"Lines of Code\",\"options\":{\"decimalPlaces\":0,\"step\":1},\"type\":\"range\"}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "37391e50-997e-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-01-14T15:47:02.144Z",
+    "version": "WzYxLDFd"
+}

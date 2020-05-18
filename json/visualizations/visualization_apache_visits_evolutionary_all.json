@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "apache_visits_evolutionary_all",
+        "uiStateJSON": "{\"vis\":{\"legendOpen\":false},\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"apache_visits_evolutionary_all\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"\",\"customLabel\":\"# IPs\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"json\":\"\",\"customLabel\":\"Time (days)\"}}],\"listeners\":{}}"
+    },
+    "id": "apache_visits_evolutionary_all",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzgsMV0="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "git_lifecycle_markdown",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"git_lifecycle_markdown\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel provides a quick view of the lifecycle of the top 25 git repositories by activity and authors for a given period of time.\\n\\n## Definition\\n\\n**Active**: at least 1 commit per month\\n\\n## Charts\\n\\n* Evolution of the number of active repositories during selected period of time, and its trend\\n* Top 25 git repositories by number of commits for selected period of time, showing level of activity by month\\n* Top 25 git repositories by number of *active* authors for selected period of time, showing level of active authors by month\"},\"aggs\":[]}"
+    },
+    "id": "9ec5a2f0-f898-11e8-865a-85ff6467a442",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYyNCwxXQ=="
+}

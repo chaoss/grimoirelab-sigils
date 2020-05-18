@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Telegram panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"analyze_wildcard\": true, \"query\": \"*\", \"default_field\": \"*\"}}, \"language\": \"lucene\"}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 5, \"h\": 2, \"i\": \"1\"}, \"id\": \"telegram_main_metrics\", \"title\": \"Intro\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 5, \"h\": 2, \"i\": \"2\"}, \"id\": \"telegram_messages_evolutionary\", \"title\": \"Messages\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 0, \"y\": 4, \"w\": 5, \"h\": 2, \"i\": \"3\"}, \"id\": \"telegram_participants_evolutionary\", \"title\": \"Participants\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 9, \"y\": 0, \"w\": 3, \"h\": 6, \"i\": \"4\"}, \"id\": \"telegram_main_channels\", \"title\": \"Channels\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"6\", \"gridData\": {\"x\": 5, \"y\": 6, \"w\": 7, \"h\": 6, \"i\": \"6\"}, \"id\": \"telegram_last_messages\", \"title\": \"Last Messages\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"7\", \"gridData\": {\"x\": 0, \"y\": 6, \"w\": 5, \"h\": 6, \"i\": \"7\"}, \"id\": \"telegram_main_participants\", \"title\": \"Top Participants\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"8\", \"gridData\": {\"x\": 5, \"y\": 0, \"w\": 4, \"h\": 6, \"i\": \"8\"}, \"type\": \"visualization\", \"id\": \"telegram_terms_cloud\", \"title\": \"Top 20 terms\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Telegram",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Intro\"},\"P-2\":{\"title\":\"Messages\",\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Participants\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Channels\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Last Messages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Top Participants\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Top 20 terms\"}}",
+        "version": 1
+    },
+    "id": "Telegram",
+    "type": "dashboard",
+    "version": "Wzc0NSwxXQ=="
+}

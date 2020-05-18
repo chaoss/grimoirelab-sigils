@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_git_pull_requests_merged_evolution",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_evolution\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, q=\\\"title:Merge* OR files:0\\\", timefield=grimoire_creation_date).bars().color(#94c3af).label(\\\"Pull Requests Merged\\\"),\\n\\n.es(index=git, q=\\\"title:Merge* OR files:0\\\", timefield=grimoire_creation_date).trend().color(#ffb745).label(\\\"Trend\\\")\",\"interval\":\"auto\"},\"aggs\":[]}"
+    },
+    "id": "ac92c2b0-f243-11e8-b20d-0598f2c48f21",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyMjIsMV0="
+}

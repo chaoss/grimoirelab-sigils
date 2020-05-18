@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gerrit_lead_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gerrit, q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:painless_delay).label('Avg. Lead Time (days)'), \\n\\n.es(index=gerrit , q='status:MERGED OR ABANDONED', timefield=closed, metric=avg:painless_delay).trend().label('Avg. Lead Time trend')\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "01d59a70-e1bb-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE1NCwxXQ=="
+}

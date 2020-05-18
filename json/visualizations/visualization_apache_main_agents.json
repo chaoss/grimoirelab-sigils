@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "apache_main_agents",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"apache_main_agents\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Visits\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"agent\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"json\":\"{\\\"execution_hint\\\": \\\"global_ordinals_low_cardinality\\\"}\",\"customLabel\":\"Agent\"}},{\"id\":\"3\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"clientip\",\"json\":\"\",\"customLabel\":\"IPs\"}}],\"listeners\":{}}"
+    },
+    "id": "apache_main_agents",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc1MCwxXQ=="
+}

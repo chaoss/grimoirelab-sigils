@@ -1,0 +1,26 @@
+{
+    "attributes": {
+        "description": "Overall Community Structure panel by Bitergia (aka Onion Analysis)",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"controlledBy\":\"1538041633158\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"data_source\",\"negate\":false,\"params\":{\"query\":\"git\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"git\"},\"query\":{\"match\":{\"data_source\":{\"query\":\"git\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"16\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":4,\"i\":\"16\"},\"id\":\"all_onion_global_community_bar_chart\",\"title\":\"Community Structure\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"17\",\"gridData\":{\"x\":6,\"y\":4,\"w\":6,\"h\":4,\"i\":\"17\"},\"id\":\"all_onion_global_contributions\",\"title\":\"Contributions\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"18\",\"gridData\":{\"x\":0,\"y\":8,\"w\":6,\"h\":3,\"i\":\"18\"},\"id\":\"all_onion_global_roles\",\"title\":\"Roles\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"19\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":6,\"i\":\"19\"},\"id\":\"all_onion_global_developers_active_quarters_by_project\",\"title\":\"Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"20\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"20\"},\"id\":\"77316e20-c23a-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Data Source\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Overall Community Structure\",\"panelIndex\":\"21\",\"gridData\":{\"x\":6,\"y\":8,\"w\":6,\"h\":3,\"i\":\"21\"},\"id\":\"1bdea850-3137-11e9-b68b-31a1aa44b23a\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "refreshInterval": {
+            "display": "Off",
+            "pause": false,
+            "value": 0
+        },
+        "timeFrom": "now-5y",
+        "timeRestore": true,
+        "timeTo": "now",
+        "title": "Overall Community Structure",
+        "uiStateJSON": "{\"P-16\":{\"title\":\"Community Structure\"},\"P-17\":{\"title\":\"Contributions\",\"vis\":{\"legendOpen\":false}},\"P-18\":{\"title\":\"Roles\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-19\":{\"title\":\"Authors\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "Overall-Community-Structure",
+    "type": "dashboard",
+    "updated_at": "2019-02-15T15:38:39.084Z",
+    "version": "WzQzMCwxXQ=="
+}

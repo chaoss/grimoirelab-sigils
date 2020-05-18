@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"a04a4150-18bc-11e9-872f-e17019e68d6d\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "ocean_tickets_stats_average_time_to_first_attention",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(0,104,55)\",\"1 - 3\":\"rgb(255,255,190)\",\"3 - 7\":\"rgb(165,0,38)\"}},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_tickets_stats_average_time_to_first_attention\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":1},{\"from\":1,\"to\":3},{\"from\":3,\"to\":7}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"days\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_first_attention\",\"customLabel\":\"Avg. time to first attention\"}}]}"
+    },
+    "id": "2c8b3140-18ce-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY4LDFd"
+}

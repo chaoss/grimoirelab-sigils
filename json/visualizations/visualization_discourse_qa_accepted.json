@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "discourse_qa_accepted",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"discourse_qa_accepted\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Questions & Answers\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"answer_status\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organizations\"}}],\"listeners\":{}}"
+    },
+    "id": "discourse_qa_accepted",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY1NywxXQ=="
+}

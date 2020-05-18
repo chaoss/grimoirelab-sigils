@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "Quick overview of some basic activity, community and efficiency metrics for Github (commits, issues and pull requests)",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"GitHub Issues\",\"disabled\":true,\"index\":\"github_issues\",\"key\":\"pull_request\",\"negate\":false,\"params\":{\"query\":false,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"false\"},\"query\":{\"match\":{\"pull_request\":{\"query\":false,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"GitHub Pull Req.\",\"disabled\":true,\"index\":\"github_issues\",\"key\":\"pull_request\",\"negate\":false,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":3,\"i\":\"1\"},\"id\":\"12f6e170-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Commits\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":2,\"y\":6,\"w\":5,\"h\":3,\"i\":\"2\"},\"id\":\"87d65070-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Avg. Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":7,\"y\":6,\"w\":5,\"h\":3,\"i\":\"3\"},\"id\":\"5e6f8f30-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"Avg. 1st Response_Rate\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":3,\"w\":6,\"h\":3,\"i\":\"4\"},\"id\":\"4006ad80-b299-11e8-bbe5-d99a6d067cbc\",\"title\":\"BMI (closed / opened)\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":0,\"w\":2,\"h\":3,\"i\":\"5\"},\"id\":\"git_main_numbers\",\"title\":\"Git Main Numbers\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":3,\"w\":2,\"h\":3,\"i\":\"6\"},\"id\":\"81a6e020-b4ce-11e8-bbe5-d99a6d067cbc\",\"title\":\"Issues & PR's Main Numbers\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":6,\"w\":2,\"h\":3,\"i\":\"7\"},\"id\":\"7cd03200-bb35-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Avg. Lead Time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":2,\"y\":0,\"w\":4,\"h\":3,\"i\":\"8\"},\"id\":\"2c144b30-bc16-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":2,\"y\":3,\"w\":4,\"h\":3,\"i\":\"9\"},\"id\":\"472f1350-bc16-11e8-8aac-ef7fd4d8cbad\",\"title\":\"GitHub Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Github Development Activity Overview\",\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":9,\"w\":12,\"h\":3,\"i\":\"10\"},\"id\":\"fb067e10-fe22-11e8-8aac-ef7fd4d8cbad\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Development Activity Overview",
+        "uiStateJSON": "{\"P-7\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"},\"legendOpen\":false}}}",
+        "version": 1
+    },
+    "id": "3f4bf390-b29a-11e8-bbe5-d99a6d067cbc",
+    "type": "dashboard",
+    "updated_at": "2018-12-12T15:35:13.784Z",
+    "version": "WzEyMjMsMV0="
+}

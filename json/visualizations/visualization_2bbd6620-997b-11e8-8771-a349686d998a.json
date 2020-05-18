@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"8539ada0-9960-11e8-8771-a349686d998a\",\"filter\":[],\"query\":{\"query\":\"is_docker_image:1\",\"language\":\"lucene\"}}"
+        },
+        "title": "dockerhub_images",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"dockerhub_images\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"origin\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Docker Image\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"star_count\",\"customLabel\":\"Stars\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"pull_count\",\"customLabel\":\"Pulls\"}}]}"
+    },
+    "id": "2bbd6620-997b-11e8-8771-a349686d998a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNjUsMV0="
+}

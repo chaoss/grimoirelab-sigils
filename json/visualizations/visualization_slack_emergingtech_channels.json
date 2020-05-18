@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"slack-emergingtech\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "slack_emergingtech_channels",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Messages\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"channel_name\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":25},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Authors\",\"field\":\"author_uuid\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customLabel\":\"Replies\",\"field\":\"reply_count\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Reactions\",\"field\":\"reaction_count\"},\"schema\":\"metric\",\"type\":\"sum\"}],\"listeners\":{},\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"slack_emergingtech_channels\",\"type\":\"table\"}"
+    },
+    "id": "slack_emergingtech_channels",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcyNCwxXQ=="
+}

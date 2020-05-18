@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"apache\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "apache_main_metrics",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"stats\",\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"params\":{\"fontSize\":\"12\",\"metric\":{\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"12\"},\"useRanges\":false,\"labels\":{\"show\":true},\"percentageMode\":false,\"metricColorMode\":\"None\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"to\":10000,\"from\":0}],\"invertColors\":false}},\"aggs\":[{\"params\":{\"customLabel\":\"Visits\"},\"type\":\"count\",\"id\":\"1\",\"schema\":\"metric\"},{\"params\":{\"field\":\"request\",\"customLabel\":\"Unique URLs\"},\"type\":\"cardinality\",\"id\":\"2\",\"schema\":\"metric\"}],\"type\":\"metric\",\"title\":\"apache_main_metrics\",\"listeners\":{}}"
+    },
+    "id": "apache_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzUxMiwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_merge_requests_orgs_projects_options",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_merge_requests_orgs_projects_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1544006325277\",\"indexPattern\":\"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1544006377537\",\"indexPattern\":\"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "33f2aa40-f87a-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNDcsMV0="
+}

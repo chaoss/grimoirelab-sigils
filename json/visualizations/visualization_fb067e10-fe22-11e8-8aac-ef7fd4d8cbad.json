@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "C_github_development_activity_overview_doc",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"C_github_development_activity_overview_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel provides a quick overview of some Github activity parameters.\\n\\nThere are a set of deactivated filters that can be applied:\\n- Github Issues: to see metrics for just GitHub Issues\\n- Github Pull-Requests: to see metrics for just GitHub Pull-Requests\\n\\nCommits\\n------------\\n**Git Main Numbers**. For the selected period of time:\\n* Number of commits\\n* Number of active commit authors\\n* Number of active repositories\\n\\n**Authors**: active git commits authors by month and trend\\n\\n**Commits**: commits by month and trend\\n\\nIssues & Pull-Requests\\n------------------------------\\n**Issues & Pull-Requests Main Numbers**. For the selected period of time:\\n* Number of issues & pull requests (items)\\n* Number of active submitters\\n* Number of active repositories\\n\\n**Submitters**: active issues & pull requests submitters\\n\\n**BMI (closed / open)**: ratio between closed items and opened items by month and trend\\n\\n**Avg. Lead Time** (gauge): average time (days) to close items. The following thresholds are considered:\\n* 0 - 7 days: green\\n* 7 - 30 days: yellow\\n* 30 - 90 days: red\\n\\n**Avg. Lead Time** (line chart): average time (days) to close items by month and trend\\n\\n**Avg. 1st Response Time**: average time (days) to get the 1st response (comment) to an item from some different than the submitter, by month and trend\"},\"aggs\":[]}"
+    },
+    "id": "fb067e10-fe22-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-12-12T15:31:22.864Z",
+    "version": "WzY5NiwxXQ=="
+}

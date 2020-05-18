@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"discourse\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "discourse_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"metric\":{\"percentageMode\":false,\"labels\":{\"show\":true},\"style\":{\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"colorsRange\":[{\"to\":10000,\"from\":0}],\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"useRanges\":false,\"invertColors\":false},\"fontSize\":\"12\"},\"listeners\":{},\"aggs\":[{\"type\":\"sum\",\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Questions\",\"field\":\"is_discourse_question\"},\"schema\":\"metric\"},{\"type\":\"sum\",\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Answers\",\"field\":\"is_discourse_answer\"},\"schema\":\"metric\"},{\"type\":\"sum\",\"enabled\":true,\"id\":\"4\",\"params\":{\"customLabel\":\"Accepted\",\"field\":\"is_accepted_answer\"},\"schema\":\"metric\"},{\"type\":\"cardinality\",\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"People Involved\",\"field\":\"author_uuid\"},\"schema\":\"metric\"}],\"title\":\"discourse_main_metrics\"}"
+    },
+    "id": "discourse_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwMzIsMV0="
+}

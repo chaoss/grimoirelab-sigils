@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"github_issues\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"state:open AND pull_request:true\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Search:_state:open_and_pull_request:true",
+        "version": 1
+    },
+    "id": "Search:_state:open_and_pull_request:true",
+    "type": "search",
+    "version": "WzM5MywxXQ=="
+}

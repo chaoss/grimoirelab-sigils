@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "contributors_growth_with_derivative_analysis",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"type\":\"timelion\",\"title\":\"contributors_growth_with_derivative_analysis\",\"params\":{\"expression\":\".es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).label(\\\"Contributors Active\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative().if(lt, 0,.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative(),null).label('Negative Contributors Active Balance (decrease with respect to previous slot)').color('#FFCC11').bars(), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative().if(gte, 0,.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).derivative(),null).label('Positive Contributors Active Balance (increase with respect to previous slot)').color('#00FF00').bars()\",\"interval\":\"1w\"}}"
+    },
+    "id": "19b8f840-18c4-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMyNywxXQ=="
+}

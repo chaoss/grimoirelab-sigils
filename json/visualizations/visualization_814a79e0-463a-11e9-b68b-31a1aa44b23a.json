@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_repositories_forks_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_repositories_forks_title\",\"type\":\"markdown\",\"params\":{\"fontSize\":9,\"markdown\":\"# Forks\"},\"aggs\":[]}"
+    },
+    "id": "814a79e0-463a-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-03-15T00:32:53.593Z",
+    "version": "WzY3OCwxXQ=="
+}

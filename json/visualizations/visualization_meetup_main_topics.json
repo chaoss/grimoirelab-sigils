@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Meetup-Search:_type_meetup",
+        "title": "meetup_main_topics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"meetup_main_topics\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"group_topics\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Topic\"}},{\"id\":\"3\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"num_rsvps\",\"percents\":[50],\"customLabel\":\"Median RSVPS\"}}],\"listeners\":{}}"
+    },
+    "id": "meetup_main_topics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg2OSwxXQ=="
+}

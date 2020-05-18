@@ -1,0 +1,26 @@
+{
+    "attributes": {
+        "description": "Community Structure by Organization panel by Bitergia (aka Onion Analysis by Organization)",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"controlledBy\":\"1538041633158\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"data_source\",\"negate\":false,\"params\":{\"query\":\"git\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"git\"},\"query\":{\"match\":{\"data_source\":{\"query\":\"git\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"8\",\"w\":3,\"x\":3,\"y\":0},\"id\":\"all_onion_organizations_by_contributions\",\"panelIndex\":\"8\",\"title\":\"Contributions by Organization\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":5,\"i\":\"14\",\"w\":6,\"x\":6,\"y\":6},\"id\":\"all_onion_organizations\",\"panelIndex\":\"14\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"15\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"all_onion_orgs_community_bar_chart\",\"panelIndex\":\"15\",\"title\":\"Community Structure\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":3,\"i\":\"16\",\"w\":6,\"x\":6,\"y\":3},\"id\":\"all_onion_orgs_contributions\",\"panelIndex\":\"16\",\"title\":\"All Contributions Organizations Aggregated\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":6,\"i\":\"17\",\"w\":6,\"x\":0,\"y\":2},\"id\":\"all_onion_orgs_developers_active_quarters\",\"panelIndex\":\"17\",\"title\":\"Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"gridData\":{\"h\":2,\"i\":\"18\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"77316e20-c23a-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"18\",\"title\":\"Data Source\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"19\",\"w\":6,\"x\":0,\"y\":8},\"id\":\"8ea07860-3140-11e9-b68b-31a1aa44b23a\",\"panelIndex\":\"19\",\"title\":\"Community Structure by Organization\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "refreshInterval": {
+            "display": "Off",
+            "pause": false,
+            "value": 0
+        },
+        "timeFrom": "now-5y",
+        "timeRestore": true,
+        "timeTo": "now",
+        "title": "Community Structure by Organization",
+        "uiStateJSON": "{\"P-14\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"title\":\"Community Structure\"},\"P-16\":{\"vis\":{\"legendOpen\":false}},\"P-17\":{\"title\":\"Authors\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":5,\"direction\":\"desc\"}}}},\"P-8\":{\"title\":\"Contributions by Organization\",\"vis\":{\"legendOpen\":true}}}",
+        "version": 1
+    },
+    "id": "Community-Structure-by-Organization",
+    "type": "dashboard",
+    "updated_at": "2019-02-18T15:33:08.639Z",
+    "version": "WzQzMSwxXQ=="
+}

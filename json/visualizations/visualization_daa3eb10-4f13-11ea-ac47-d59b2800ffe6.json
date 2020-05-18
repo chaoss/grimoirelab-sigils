@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "docker_selector",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"docker_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1581675642868\",\"indexPattern\":\"44b62ed0-4f11-11ea-ac47-d59b2800ffe6\",\"fieldName\":\"origin\",\"label\":\"Repository\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":100,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "daa3eb10-4f13-11ea-ac47-d59b2800ffe6",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ3LDFd"
+}

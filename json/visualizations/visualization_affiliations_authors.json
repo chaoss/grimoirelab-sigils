@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"affiliations\",\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"filter\":[]}"
+        },
+        "title": "affiliations_authors",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"affiliations_authors\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"9\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_uuid\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"7\",\"customLabel\":\"Profile\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Name\"}},{\"id\":\"12\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Current Organization\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"customLabel\":\"Orgs\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Contributions\"}}]}"
+    },
+    "id": "affiliations_authors",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-02-04T13:21:41.691Z",
+    "version": "WzMwNSwxXQ=="
+}

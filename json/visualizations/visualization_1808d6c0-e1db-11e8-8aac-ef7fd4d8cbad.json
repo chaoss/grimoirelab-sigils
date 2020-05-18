@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_pull_requests_efficiency_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_pull_requests_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitHub pull requests.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed pull requests divided by the number of open ones in a given period of time. Measures efficiency closing pull requests.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a pull request. Shown in average.\"},\"aggs\":[]}"
+    },
+    "id": "1808d6c0-e1db-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzkwNiwxXQ=="
+}

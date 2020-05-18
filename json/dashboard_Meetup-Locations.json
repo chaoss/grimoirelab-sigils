@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Meetup Locations panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"meta\": {\"index\": \"meetup\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"version\": true, \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 5, \"i\": \"3\", \"w\": 5, \"x\": 0, \"y\": 0}, \"id\": \"meetup_groups_map\", \"panelIndex\": \"3\", \"title\": \"Groups\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 6, \"i\": \"6\", \"w\": 5, \"x\": 0, \"y\": 5}, \"id\": \"meetup_organizers\", \"panelIndex\": \"6\", \"title\": \"Organizers\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 6, \"i\": \"7\", \"w\": 7, \"x\": 5, \"y\": 5}, \"id\": \"meetup_groups_large\", \"panelIndex\": \"7\", \"title\": \"Meetup Groups\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"8\", \"w\": 4, \"x\": 5, \"y\": 0}, \"id\": \"meetup_organizations\", \"panelIndex\": \"8\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"9\", \"w\": 3, \"x\": 9, \"y\": 0}, \"id\": \"meetup_projects\", \"panelIndex\": \"9\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Meetup Locations",
+        "uiStateJSON": "{\"P-3\":{\"mapCenter\":[11.178401873711785,0],\"mapZoom\":1,\"title\":\"Groups\"},\"P-6\":{\"title\":\"Organizers\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Meetup Groups\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "Meetup-Locations",
+    "type": "dashboard",
+    "version": "Wzg3MSwxXQ=="
+}

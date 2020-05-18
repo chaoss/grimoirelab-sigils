@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "organization_tracking_help_text",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"organization_tracking_help_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on tracking organizations activity through all the available data sources. The activity is split between code\\ncontributions and the rest of the contributions.\\n\\n\\n * **Organization drop down list** on top allows to easily filter data by a set of organizations.\\n* **Contributions big numbers** right below offers a quick idea of the volume of activity. \\n* **Evolution charts** provide a more specific view of the activity and when it happened so we can look\\n    for peaks or valleys.\\n* **Author tables** allow to sorting them by number of contributions and accessing their Hatstall profiles\\n    in order to edit their associated data and fix their affiliations if needed.\\n* **Projects tables** split numbers by project.\\n* **Contributions and Contributors pie charts** offers a more visual approach to compare organizations\\n    weight on the selected projects (if any);\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/organization-tracking-overview)\"},\"aggs\":[]}"
+    },
+    "id": "00a285a0-53f7-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-02-20T17:16:34.747Z",
+    "version": "WzEwNjgsMV0="
+}

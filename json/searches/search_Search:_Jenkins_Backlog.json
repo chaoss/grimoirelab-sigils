@@ -1,0 +1,26 @@
+{
+    "attributes": {
+        "columns": [
+            "job_build",
+            "url",
+            "job_url",
+            "result",
+            "builtOn",
+            "duration"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "metadata__updated_on",
+            "desc"
+        ],
+        "title": "Search:_Jenkins_Backlog",
+        "version": 1
+    },
+    "id": "Search:_Jenkins_Backlog",
+    "type": "search",
+    "version": "WzI0NSwxXQ=="
+}

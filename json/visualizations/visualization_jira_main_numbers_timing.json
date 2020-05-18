@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jira\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "jira_main_numbers_timing",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"New Visualization\",\"type\":\"metric\",\"aggs\":[{\"type\":\"count\",\"params\":{\"customLabel\":\"# Issues\"},\"schema\":\"metric\",\"id\":\"1\"},{\"type\":\"cardinality\",\"params\":{\"customLabel\":\"# Submitters\",\"field\":\"author_uuid\"},\"schema\":\"metric\",\"id\":\"2\"},{\"type\":\"cardinality\",\"params\":{\"customLabel\":\"# Assigned\",\"field\":\"assignee_uuid\"},\"schema\":\"metric\",\"id\":\"3\"},{\"type\":\"median\",\"params\":{\"customLabel\":\"Median Open Days\",\"percents\":[50],\"field\":\"time_to_close_days\"},\"schema\":\"metric\",\"id\":\"4\"},{\"type\":\"avg\",\"params\":{\"customLabel\":\"Avg. Open Days\",\"field\":\"time_to_close_days\"},\"schema\":\"metric\",\"id\":\"5\"}],\"listeners\":{},\"params\":{\"fontSize\":\"12\",\"metric\":{\"useRanges\":false,\"metricColorMode\":\"None\",\"labels\":{\"show\":true},\"colorSchema\":\"Green to Red\",\"percentageMode\":false,\"colorsRange\":[{\"to\":10000,\"from\":0}],\"invertColors\":false,\"style\":{\"fontSize\":\"12\",\"bgFill\":\"#000\",\"subText\":\"\",\"labelColor\":false,\"bgColor\":false}}}}"
+    },
+    "id": "jira_main_numbers_timing",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzM0MywxXQ=="
+}

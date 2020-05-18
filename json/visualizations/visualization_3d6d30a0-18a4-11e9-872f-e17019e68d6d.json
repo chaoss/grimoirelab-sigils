@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_tickets_issues_timing",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_tickets_issues_timing\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=all_enriched_tickets, timefield=grimoire_creation_date, metric=avg:time_to_close_days).bars(8).label('Avg. Time to Close (days)').color(#155a3c),\\n\\n.es(index=all_enriched_tickets, timefield=grimoire_creation_date, metric=avg:time_to_close_days).trend().label('Avg. Time to Close trend').color(#94c3af),\\n\\n.es(index=all_enriched_tickets, timefield=grimoire_creation_date, metric=avg:time_to_first_attention).bars(stack=false,width=4).label('Avg. Time to First Attention days)').color(#ffb745),\\n\\n.es(index=all_enriched_tickets, timefield=grimoire_creation_date, metric=avg:time_to_first_attention).trend().label('Avg. Time to First Attention trend').color(#d8bd49)\",\"interval\":\"auto\"},\"aggs\":[]}"
+    },
+    "id": "3d6d30a0-18a4-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMzMywxXQ=="
+}

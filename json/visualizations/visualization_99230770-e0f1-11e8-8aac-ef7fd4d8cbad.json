@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "affiliations_data_source_options",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"affiliations_data_source_options\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1541418807381\",\"indexPattern\":\"affiliations\",\"fieldName\":\"index_name\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true},\"aggs\":[]}"
+    },
+    "id": "99230770-e0f1-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQxMywxXQ=="
+}

@@ -1,0 +1,25 @@
+{
+    "attributes": {
+        "columns": [
+            "page_title",
+            "author_name",
+            "revision_comment",
+            "revision_user",
+            "url"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"mediawiki\",\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Mediawiki Search:_pagetitle_authorname_revisioncomment_revisionuser_url",
+        "version": 1
+    },
+    "id": "Mediawiki-Search:_pagetitle_authorname_revisioncomment_revisionuser_url",
+    "type": "search",
+    "version": "WzExNDUsMV0="
+}

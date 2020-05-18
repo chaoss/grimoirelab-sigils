@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"redmine\",\"query\":{\"query_string\":{\"query\":\"-status_name:(\\\"Resolved\\\" \\\"Rejected\\\" \\\"Closed\\\" \\\"Won\\\\'t Fix\\\" \\\"Duplicate\\\")\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Open Redmine Issues Search:_-status_name:resolved_rejected_closed_wontfix_duplicate",
+        "version": 1
+    },
+    "id": "Open-Redmine-Issues-Search:_-status_name:resolved_rejected_closed_wontfix_duplicate",
+    "type": "search",
+    "version": "Wzg3NywxXQ=="
+}

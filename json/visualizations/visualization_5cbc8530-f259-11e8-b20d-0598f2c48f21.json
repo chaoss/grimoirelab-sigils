@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_git_pull_requests_merged_doc",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_git_pull_requests_merged_doc\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on **merged** GitHub Pull Requests.  As GitHub API does not\\nalways identifies merges, we based the panel directly on Git data.\\n\\nThe idea behind the panel is having a look on how community performs and evolved merging Pull\\nRequests. By using this panel we can identify trends and analyze behaviours of specific\\norganizations, projects or repositories.\\n\\n**Commits**: a filter is applied within visualizations to get only those that we consider as \\\"merges\\\". We consider a commit as a \\\"merge\\\" if satisfies at least one of the following conditions:\\n* Number of files is 0.\\n* Commit message starts with \\\"Merge\\\"\"},\"aggs\":[]}"
+    },
+    "id": "5cbc8530-f259-11e8-b20d-0598f2c48f21",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzE5MywxXQ=="
+}

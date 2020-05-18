@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "A dashboard based on GitHub ClosedEvents",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"4\", \"w\": 12, \"x\": 0, \"y\": 4}, \"id\": \"9df95540-7f17-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"4\", \"title\": \"Selector\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"9\", \"w\": 5, \"x\": 7, \"y\": 0}, \"id\": \"63f062f0-7f24-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"9\", \"title\": \"\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"10\", \"w\": 9, \"x\": 3, \"y\": 9}, \"id\": \"7f9267a0-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"10\", \"title\": \"Fixed issues by Mergers, over time\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"11\", \"w\": 12, \"x\": 0, \"y\": 12}, \"id\": \"c1498660-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"11\", \"title\": \"Issues fixed via Pull requests\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"12\", \"w\": 3, \"x\": 0, \"y\": 6}, \"id\": \"4a83cb30-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"12\", \"title\": \"Issues fixed by Organizations\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"13\", \"w\": 9, \"x\": 3, \"y\": 6}, \"id\": \"58b8b9e0-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"13\", \"title\": \"Issues fixed by Organizations, over time\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"14\", \"w\": 5, \"x\": 2, \"y\": 0}, \"id\": \"36371ba0-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"14\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"15\", \"w\": 3, \"x\": 0, \"y\": 9}, \"id\": \"65945a20-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"15\", \"title\": \"Issues fixed by Mergers\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"16\", \"w\": 2, \"x\": 0, \"y\": 0}, \"id\": \"2629c370-83b2-11ea-b68b-31a1aa44b23a\", \"panelIndex\": \"16\", \"title\": \"Summary\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Events - ClosedEvent",
+        "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}},\"P-11\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"P-14\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}},\"P-3\":{\"vis\":{\"legendOpen\":true}},\"P-7\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}}}",
+        "version": 1
+    },
+    "id": "b702de50-83b1-11ea-b68b-31a1aa44b23a",
+    "type": "dashboard",
+    "version": "WzMxLDFd"
+}

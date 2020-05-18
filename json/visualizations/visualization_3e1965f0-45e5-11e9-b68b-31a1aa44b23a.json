@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_repositories_stars_evolution_derivative",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_repositories_stars_evolution_derivative\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_repositories, timefield=grimoire_creation_date, split=origin:10, metric=max:stargazers_count).derivative().label(\\\"$1\\\", \\\"^.* > origin:(\\\\S+) > .*\\\")\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "3e1965f0-45e5-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-03-13T23:10:50.319Z",
+    "version": "WzY3OSwxXQ=="
+}

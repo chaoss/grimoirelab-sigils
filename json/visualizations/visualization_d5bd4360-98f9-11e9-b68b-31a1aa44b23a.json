@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"gerrit\",\n  \"filter\": [],\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  }\n}"
+        },
+        "savedSearchId": "Search:_gerrit_status:NEW",
+        "title": "gerrit_backlog_projects_table",
+        "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": null,\n        \"direction\": null\n      },\n      \"config\": {\n        \"searchKeyword\": \"\"\n      }\n    }\n  }\n}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_backlog_projects_table\",\"type\":\"table\",\"params\":{\"perPage\":25,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Projects\"}}]}"
+    },
+    "id": "d5bd4360-98f9-11e9-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQwMCwxXQ=="
+}

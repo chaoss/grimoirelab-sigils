@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "jenkins_export_builds_link",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_export_builds_link\",\"type\":\"markdown\",\"params\":{\"markdown\":\"**[Open Jenkins Builds panel for exporting results](/app/kibana#/dashboard/Jenkins-Export-(Slow))**\",\"fontSize\":12},\"aggs\":[]}"
+    },
+    "id": "jenkins_export_builds_link",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNzcsMV0="
+}

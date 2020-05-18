@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "github_issues_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_issues_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### GitHub Issues\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "github_issues_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk4NCwxXQ=="
+}

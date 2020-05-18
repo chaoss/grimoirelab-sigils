@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "twitter_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"twitter_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Twitter\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "twitter_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ3MSwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"9ec951d0-dbb8-11e9-8bb5-a754934c91d5\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "github_activity_prs_by_organizations_and_authors",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 88\":\"rgb(247,252,245)\",\"88 - 175\":\"rgb(199,233,192)\",\"175 - 263\":\"rgb(116,196,118)\",\"263 - 350\":\"rgb(35,139,69)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github_activity_prs_by_organizations_and_authors\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"prs_opened\",\"customLabel\":\"PRs Opened\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"github_organization\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organizations\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"author_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Repositories\"}}]}"
+    },
+    "id": "159c6bc0-dbbf-11e9-8b26-1d322ac94c6b",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU3NywxXQ=="
+}

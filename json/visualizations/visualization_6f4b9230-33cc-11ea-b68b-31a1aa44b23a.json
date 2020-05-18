@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"481e9650-33b6-11ea-b68b-31a1aa44b23a\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github2_issues_author_comments_activity",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Author\",\"field\":\"author_name\",\"order\":\"desc\",\"orderBy\":\"12\",\"size\":500},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"10\",\"params\":{\"customLabel\":\"Issues\",\"field\":\"is_github_issue\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"11\",\"params\":{\"customLabel\":\"Comments\",\"field\":\"is_github_issue_comment\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":false,\"id\":\"12\",\"params\":{\"customLabel\":\"Total\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"9\",\"params\":{\"customLabel\":\"+1\",\"field\":\"reaction_thumb_up\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"13\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"13-bucket\",\"params\":{\"field\":\"id\",\"order\":\"desc\",\"orderBy\":\"12\",\"size\":5000},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"terms\"},\"customLabel\":\"+1 Ratio\",\"customMetric\":{\"enabled\":true,\"id\":\"13-metric\",\"params\":{\"field\":\"reaction_thumb_up\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"},{\"enabled\":true,\"id\":\"14\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"14-bucket\",\"params\":{\"field\":\"id\",\"order\":\"desc\",\"orderBy\":\"12\",\"size\":5000},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"terms\"},\"customLabel\":\"Reactions Ratio\",\"customMetric\":{\"enabled\":true,\"id\":\"14-metric\",\"params\":{\"field\":\"reaction_total_count\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"avg_bucket\"}],\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"github2_issues_author_comments_activity\",\"type\":\"table\"}"
+    },
+    "id": "6f4b9230-33cc-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwNzcsMV0="
+}

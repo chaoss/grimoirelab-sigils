@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Confluence Overview panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\": true, \"filter\": [{\"meta\": {\"index\": \"confluence\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"1\", \"w\": 6, \"x\": 0, \"y\": 0}, \"id\": \"confluence_main_numbers\", \"panelIndex\": \"1\", \"title\": \"Wiki\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"2\", \"w\": 6, \"x\": 0, \"y\": 2}, \"id\": \"confluence_editions\", \"panelIndex\": \"2\", \"title\": \"Activity\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"3\", \"w\": 6, \"x\": 0, \"y\": 4}, \"id\": \"confluence_participants\", \"panelIndex\": \"3\", \"title\": \"Editors\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 6, \"i\": \"4\", \"w\": 6, \"x\": 6, \"y\": 0}, \"id\": \"confluence_top_edited_pages\", \"panelIndex\": \"4\", \"title\": \"Top Edited Pages\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"5\", \"w\": 6, \"x\": 6, \"y\": 6}, \"id\": \"confluence_last_created_pages\", \"panelIndex\": \"5\", \"title\": \"Last Created Pages\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"6\", \"w\": 6, \"x\": 0, \"y\": 6}, \"id\": \"confluence_top_editors\", \"panelIndex\": \"6\", \"title\": \"Top Editors\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 5, \"i\": \"7\", \"w\": 12, \"x\": 0, \"y\": 11}, \"id\": \"confluence_last_editions\", \"panelIndex\": \"7\", \"title\": \"Last Actions\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Confluence",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Wiki\"},\"P-2\":{\"title\":\"Activity\"},\"P-3\":{\"title\":\"Editors\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Top Edited Pages\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Last Created Pages\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Top Editors\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"title\":\"Last Actions\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "Confluence",
+    "type": "dashboard",
+    "version": "WzExOTIsMV0="
+}

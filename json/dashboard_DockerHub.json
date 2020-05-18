@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "DockerHub panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"version\": true, \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"1\", \"w\": 6, \"x\": 0, \"y\": 0}, \"id\": \"bcfa4be0-997a-11e8-8771-a349686d998a\", \"panelIndex\": \"1\", \"title\": \"DockerHub\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"6\", \"w\": 6, \"x\": 0, \"y\": 2}, \"id\": \"2bbd6620-997b-11e8-8771-a349686d998a\", \"panelIndex\": \"6\", \"title\": \"Images\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"7\", \"w\": 6, \"x\": 6, \"y\": 0}, \"id\": \"f25eb3f0-9a3f-11e8-8771-a349686d998a\", \"panelIndex\": \"7\", \"title\": \"Pulls over time (top 10)\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"8\", \"w\": 6, \"x\": 0, \"y\": 8}, \"id\": \"021c8c90-9a40-11e8-8771-a349686d998a\", \"panelIndex\": \"8\", \"title\": \"Stars over time (top 10)\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"9\", \"w\": 6, \"x\": 6, \"y\": 4}, \"id\": \"8396ccd0-9a41-11e8-8771-a349686d998a\", \"panelIndex\": \"9\", \"title\": \"Pulls: Growth Deltas over time (top 10)\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"gridData\": {\"h\": 4, \"i\": \"10\", \"w\": 6, \"x\": 6, \"y\": 8}, \"id\": \"6803a060-9a41-11e8-8771-a349686d998a\", \"panelIndex\": \"10\", \"title\": \"Stars: Growth Deltas over time (top 10)\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "DockerHub",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"DockerHub\"},\"P-2\":{\"title\":\"Stars over time (top 5 images)\"},\"P-3\":{\"title\":\"Pulls over time (top 5)\"},\"P-4\":{\"title\":\"Images\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "DockerHub",
+    "type": "dashboard",
+    "version": "Wzk5NCwxXQ=="
+}

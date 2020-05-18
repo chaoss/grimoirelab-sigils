@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "C_github_issues_avg_response_rate",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"C_github_issues_avg_response_rate\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=updated_at, metric=avg:time_to_first_attention).label('Avg. Response Rate'), .es(index=github_issues, timefield=updated_at, metric=avg:time_to_first_attention).trend().label('Avg. Response Rate trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "5e6f8f30-b299-11e8-bbe5-d99a6d067cbc",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-10-09T08:44:16.316Z",
+    "version": "WzIxMSwxXQ=="
+}

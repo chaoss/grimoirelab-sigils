@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "affiliations_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"affiliations_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel shows information about identities and the organizations they are affiliated. The main purpose of this panel is to determine which identities do not have any affiliation. These identities are set to **Unknown**.\\n\\nBy default, the panel shows aggregated data of the different data sources available. Data can be filtered by data source using the tag cloud or the selector box.\\n\\n**Authors** table is **limited** to **1000** entries due to memory and transmission performance.\"},\"aggs\":[]}"
+    },
+    "id": "8d619890-136c-11e9-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY2NCwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\",\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Global View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"query\",\"negate\":false,\"value\":\"{\\\"bool\\\":{\\\"must\\\":[{\\\"term\\\":{\\\"author_org_name\\\":\\\"_Global_\\\"}},{\\\"term\\\":{\\\"project\\\":\\\"_Global_\\\"}}]}}\",\"type\":\"custom\"},\"query\":{\"bool\":{\"must\":[{\"term\":{\"author_org_name\":\"_Global_\"}},{\"term\":{\"project\":\"_Global_\"}}]}}}]}"
+        },
+        "title": "all_onion_global_roles",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_global_roles\",\"type\":\"table\",\"params\":{\"perPage\":3,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"timeframe\",\"customLabel\":\"First Quarter\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timeframe\",\"customLabel\":\"Last Quarter\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"contributions\",\"customLabel\":\"Contributions\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"onion_role\",\"size\":5000,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Role\"}}]}"
+    },
+    "id": "all_onion_global_roles",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcxMSwxXQ=="
+}

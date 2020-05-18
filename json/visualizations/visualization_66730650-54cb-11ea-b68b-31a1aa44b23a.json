@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "github_issues_comments_feelings_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[],\"params\":{\"fontSize\":12,\"markdown\":\"#### GitHub Issues Comments and Collaboration (with feelings)\\n\\n* **Number of issue comments** gives an idea of the activity at different levels, from Project to individuals.\\n* **Collaboration Network** shows people as nodes. Node size is the number of issues they created. Edges link people commenting on the same issue thread. Edge size represents the number of comments.\\n* **Tables issues/comments** offer a view of the comments activity split by project, repository, and individual, allowing to compare among them.\\n* **Emotions pie chart/tables** provide an overview of the emotions in the project (e.g., anger, fear, joy) plus details at repository and issue levels.\\n* **Sentiment pie chart/tables** provide an overview of the sentiment in the project (e.g., positive, negative) plus details at repository and issue levels.\\n\\n**Note**: \\n\\n Ratios are calculated as specific count (`+1` or `all reactions`) divided by total count (`issues + comments`).\\n\\n Sentiment and emotions data is calculated using the [CROSS-NLP-REST-API](https://github.com/chaoss/grimoirelab/tree/master/third-party#docker-image-cross-nlp-rest-api)\\n\\n[See complete dashboard documentation](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-comments-feelings)\"},\"title\":\"github_issues_comments_feelings_help\",\"type\":\"markdown\"}"
+    },
+    "id": "66730650-54cb-11ea-b68b-31a1aa44b23a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-02-21T16:58:36.213Z",
+    "version": "WzEwNjksMV0="
+}

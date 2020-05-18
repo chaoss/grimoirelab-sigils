@@ -1,0 +1,23 @@
+{
+    "attributes": {
+        "columns": [
+            "original_time_estimation_hours",
+            "time_estimation_hours",
+            "time_spent_hours"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"jira\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"time_estimation_hours:* OR time_spent_hours:* OR original_time_estimation_hours:*\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Jira Search:_time_estimated_time_spent_time_remaining",
+        "version": 1
+    },
+    "id": "Jira-Search:_time_estimated_time_spent_time_remaining",
+    "type": "search",
+    "version": "Wzg3LDFd"
+}

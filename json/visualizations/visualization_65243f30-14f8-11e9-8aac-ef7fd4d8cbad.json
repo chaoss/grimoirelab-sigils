@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_contributions_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_contributions_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Engagement** in terms of **number of contributions**.\\n* **Heat map** allows to find most active organizations and which projects they are targeting their contributions to.\\n* **Bar charts** show evolution of contributions in total and stacked by data source and allows to identify the general trend and local trends based on moving averages.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/engagement-contributions-overview/)\"},\"aggs\":[]}"
+    },
+    "id": "65243f30-14f8-11e9-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMyMSwxXQ=="
+}

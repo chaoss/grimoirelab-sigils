@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "gerrit_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"schema\":\"metric\",\"type\":\"count\",\"params\":{\"customLabel\":\"# Changesets\"},\"id\":\"1\"},{\"schema\":\"metric\",\"type\":\"cardinality\",\"params\":{\"customLabel\":\"# Changeset Submitters\",\"field\":\"author_uuid\"},\"id\":\"2\"},{\"schema\":\"metric\",\"type\":\"cardinality\",\"params\":{\"customLabel\":\"# Repositories\",\"field\":\"repository\"},\"id\":\"3\"}],\"listeners\":{},\"type\":\"metric\",\"title\":\"New Visualization\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"useRanges\":false,\"labels\":{\"show\":true},\"invertColors\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"style\":{\"fontSize\":\"12\",\"subText\":\"\",\"labelColor\":false,\"bgFill\":\"#000\",\"bgColor\":false},\"colorSchema\":\"Green to Red\"},\"fontSize\":\"12\"}}"
+    },
+    "id": "gerrit_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzc3OSwxXQ=="
+}

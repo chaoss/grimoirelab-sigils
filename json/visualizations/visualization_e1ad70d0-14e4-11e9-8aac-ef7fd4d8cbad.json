@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_contributions_evolution_stacked",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_contributions_evolution_stacked\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=all_enriched,timefield=grimoire_creation_date,metric=cardinality:painless_unique_id, split=data_source:50).bars().label(\\\"$1\\\",  \\\"^.* > data_source:(\\\\S+) > .*\\\").legend(columns=5)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "e1ad70d0-14e4-11e9-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU5LDFd"
+}

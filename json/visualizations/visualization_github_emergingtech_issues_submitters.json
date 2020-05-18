@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github-emergingtech\",\"query\":{\"query_string\":{\"query\":\"pull_request:false\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "github_emergingtech_issues_submitters",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"github_emergingtech_pullrequests_submitters\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Request\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Submitter\"}},{\"id\":\"3\",\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"time_to_close_days\",\"percents\":[50],\"customLabel\":\"Time to close (days)\"}},{\"id\":\"4\",\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"assignee_name\",\"customLabel\":\"# Assignees\"}}],\"listeners\":{}}"
+    },
+    "id": "github_emergingtech_issues_submitters",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzcyNiwxXQ=="
+}

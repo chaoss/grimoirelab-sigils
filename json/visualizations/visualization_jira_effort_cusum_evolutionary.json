@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "jira_effort_cusum_evolutionary",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jira_effort_cusum_evolutionary\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index='jira', q='*', timefield='grimoire_creation_date', metric='sum:original_time_estimation_hours').cusum().label('Time Estimated'), .es(index='jira', q='*', timefield='grimoire_creation_date', metric='sum:time_estimation_hours').cusum().label('Time Remaining'), .es(index='jira', q='*', timefield='grimoire_creation_date', metric='sum:time_spent_hours').cusum().label('Time Logged')\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "jira_effort_cusum_evolutionary",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg0MiwxXQ=="
+}

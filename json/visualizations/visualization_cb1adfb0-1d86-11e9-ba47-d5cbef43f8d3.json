@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_maintainer_response_to_merge_request_duration_over_time_and_trend",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"type\":\"timelion\",\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration_over_time_and_trend\",\"params\":{\"expression\":\".es(index=github_issues, timefield=grimoire_creation_date, q=\\\"pull_request:true\\\", metric=avg:time_to_first_attention).bars().label(\\\"Maintainer First Response to Merge Request in Days\\\"),\\n.es(index=github_issues, timefield=grimoire_creation_date, q=\\\"pull_request:true\\\", metric=avg:time_to_first_attention).trend().label(\\\"Trend\\\")\",\"interval\":\"auto\"}}"
+    },
+    "id": "cb1adfb0-1d86-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzg4NCwxXQ=="
+}

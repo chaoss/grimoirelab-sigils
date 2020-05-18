@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Lines of Code Changed Panel from CHAOSS GMD collection",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"meta\": {\"alias\": \"Bots\", \"disabled\": false, \"index\": \"git\", \"key\": \"author_bot\", \"negate\": true, \"params\": {\"query\": true, \"type\": \"phrase\"}, \"type\": \"phrase\", \"value\": \"true\"}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}}, {\"query\": {\"match\": {\"files\": {\"query\": \"0\", \"type\": \"phrase\"}}}, \"meta\": {\"negate\": true, \"index\": \"git\", \"disabled\": false, \"alias\": \"Merges\", \"type\": \"phrase\", \"key\": \"files\", \"value\": \"0\", \"params\": {\"query\": \"0\", \"type\": \"phrase\"}}, \"$state\": {\"store\": \"appState\"}}], \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 3, \"i\": \"1\", \"w\": 5, \"x\": 3, \"y\": 0}, \"id\": \"8e02b3f0-18e5-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"1\", \"title\": \"Lines Added vs. Lines Removed Evolution\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"2\", \"w\": 3, \"x\": 0, \"y\": 3}, \"id\": \"48726f20-18e4-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"2\", \"title\": \"Big Numbers\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"3\", \"w\": 3, \"x\": 0, \"y\": 0}, \"id\": \"26c4cd40-18e5-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"3\", \"title\": \"Lines of Code Changed\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 6, \"i\": \"4\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"c1148b70-18e4-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"4\", \"title\": \"Repositories\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"5\", \"w\": 12, \"x\": 0, \"y\": 6}, \"id\": \"fd8b9650-1981-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"5\", \"title\": \"Lines of Code Changed\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}, {\"gridData\": {\"h\": 3, \"i\": \"6\", \"w\": 5, \"x\": 3, \"y\": 3}, \"id\": \"311c0c50-1984-11e9-ba47-d5cbef43f8d3\", \"panelIndex\": \"6\", \"title\": \"Commits Evolution\", \"type\": \"visualization\", \"version\": \"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Lines of Code Changed",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "f13af0e0-18e5-11e9-ba47-d5cbef43f8d3",
+    "type": "dashboard",
+    "version": "WzQzMiwxXQ=="
+}

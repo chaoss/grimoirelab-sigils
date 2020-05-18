@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "organizational_diversity_domains_by_data_source_over_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"organizational_diversity_domains_by_data_source_over_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=all_enriched, timefield=grimoire_creation_date, metric=\\\"cardinality:author_domain\\\",split=data_source:50).bars().label(\\\"$1\\\",  \\\"^.* > data_source:(\\\\S.+) > .*\\\").legend(columns=5)\",\"interval\":\"auto\"},\"aggs\":[]}"
+    },
+    "id": "3116dc50-17fc-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzgyMSwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"Global View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"query\",\"negate\":false,\"value\":\"{\\\"bool\\\":{\\\"must\\\":[{\\\"term\\\":{\\\"author_org_name\\\":\\\"_Global_\\\"}},{\\\"term\\\":{\\\"project\\\":\\\"_Global_\\\"}}]}}\"},\"query\":{\"bool\":{\"must\":[{\"term\":{\"author_org_name\":\"_Global_\"}},{\"term\":{\"project\":\"_Global_\"}}]}}}]}"
+        },
+        "title": "all_onion_global_contributions",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_global_contributions\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"contributions\",\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"quarter\",\"size\":2000,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Time\"}}],\"listeners\":{}}"
+    },
+    "id": "all_onion_global_contributions",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk3MywxXQ=="
+}

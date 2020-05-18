@@ -1,0 +1,23 @@
+{
+    "attributes": {
+        "columns": [
+            "body",
+            "author_name",
+            "channel"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"irc\",\n  \"query\": {\n    \"query_string\": {\n      \"analyze_wildcard\": true,\n      \"query\": \"*\"\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "sent_date",
+            "desc"
+        ],
+        "title": "IRC Search:_body_authorname_channel",
+        "version": 1
+    },
+    "id": "IRC-Search:_body_authorname_channel",
+    "type": "search",
+    "version": "WzkwMCwxXQ=="
+}

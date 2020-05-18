@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Pull Requests\",\"type\":\"phrase\",\"key\":\"pull_request\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":\"Closed\",\"type\":\"phrase\",\"key\":\"state\",\"value\":\"closed\",\"params\":{\"query\":\"closed\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"state\":{\"query\":\"closed\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github_pull_requests_median_time_to_close_gauge",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(0,104,55)\",\"7 - 30\":\"rgb(255,255,190)\",\"30 - 90\":\"rgb(165,0,38)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github_pull_requests_median_time_to_close_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":30},{\"from\":30,\"to\":90}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"percents\":[50],\"customLabel\":\"Median Time to Merge (Days)\"}}]}"
+    },
+    "id": "1d333b20-e1bf-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNjEsMV0="
+}

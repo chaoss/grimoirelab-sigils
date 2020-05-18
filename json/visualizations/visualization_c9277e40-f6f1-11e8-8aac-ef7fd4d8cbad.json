@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_issues_efficiency_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_issues_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** GitLab issues.\\n\\n**BMI**: Backlog Management Index, defined as the number of closed issues divided by the number of open ones in a given period of time. Measures efficiency closing issues.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, an issue. Shown in average.\"},\"aggs\":[]}"
+    },
+    "id": "c9277e40-f6f1-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNjcsMV0="
+}

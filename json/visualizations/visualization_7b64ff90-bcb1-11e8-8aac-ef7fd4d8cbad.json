@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "jenkins_nodes",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"# Builds\"},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Node\",\"field\":\"builtOn\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Builds duration (median, min.)\",\"field\":\"duration_min\",\"percents\":[50]},\"schema\":\"metric\",\"type\":\"median\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"Builds duration (total, min.)\",\"field\":\"duration_min\"},\"schema\":\"metric\",\"type\":\"sum\"},{\"enabled\":true,\"id\":\"6\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"6-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"result:SUCCESS\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Success\",\"customMetric\":{\"enabled\":true,\"id\":\"6-metric\",\"params\":{\"customLabel\":\"Success\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"7\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"7-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"-result:SUCCESS\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Failures\",\"customMetric\":{\"enabled\":true,\"id\":\"7-metric\",\"params\":{\"customLabel\":\"Failures\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"perPage\":15,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"jenkins_nodes\",\"type\":\"table\"}"
+    },
+    "id": "7b64ff90-bcb1-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-09-20T08:45:10.024Z",
+    "version": "WzIxNywxXQ=="
+}

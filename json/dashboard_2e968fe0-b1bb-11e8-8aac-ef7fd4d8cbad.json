@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "GitLab Issues panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"7c2496c0-b013-11e8-8771-a349686d998a\",\"negate\":true,\"disabled\":false,\"alias\":\"Bots\",\"type\":\"phrase\",\"key\":\"author_bot\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":2,\"i\":\"1\",\"w\":5,\"x\":0,\"y\":0},\"id\":\"b11827a0-b1b4-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"1\",\"title\":\"Issues\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"2\",\"w\":7,\"x\":5,\"y\":4},\"id\":\"a7536ee0-b1b5-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"2\",\"title\":\"Issues by Organization, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"3\",\"w\":5,\"x\":0,\"y\":2},\"id\":\"9fa86e60-b1b6-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"3\",\"title\":\"Issues by Status, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"4\",\"w\":5,\"x\":0,\"y\":4},\"id\":\"ca653f30-b1b5-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"4\",\"title\":\"Submitters, over time\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"5\",\"w\":7,\"x\":5,\"y\":8},\"id\":\"888c4e50-b1ba-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"5\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"6\",\"w\":6,\"x\":0,\"y\":12},\"id\":\"d5bbfae0-b1ba-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"6\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"7\",\"w\":4,\"x\":8,\"y\":0},\"id\":\"590f9dc0-b1b6-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"7\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"8\",\"w\":5,\"x\":0,\"y\":6},\"id\":\"f17b95e0-b1b7-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"8\",\"title\":\"Submitters\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":4,\"i\":\"9\",\"w\":3,\"x\":5,\"y\":0},\"id\":\"0b84fff0-b1b6-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"9\",\"title\":\"Submitters by Organization\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":6,\"i\":\"10\",\"w\":6,\"x\":6,\"y\":12},\"id\":\"99f038f0-caec-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"10\",\"title\":\"Milestones\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "GitLab Issues",
+        "uiStateJSON": "{\"P-10\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "2e968fe0-b1bb-11e8-8aac-ef7fd4d8cbad",
+    "type": "dashboard",
+    "updated_at": "2019-11-28T17:14:23.403Z",
+    "version": "WzMyMiwxXQ=="
+}

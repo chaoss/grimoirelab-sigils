@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "C_git_authors",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"C_git_authors\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=git, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).label('Authors'), .es(index=git, timefield=grimoire_creation_date, q=*, metric=cardinality:author_uuid).trend().label('Authors trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "2c144b30-bc16-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-09-19T14:13:24.963Z",
+    "version": "WzEyNDQsMV0="
+}

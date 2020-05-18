@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Maniphest Backlog panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [{\"meta\": {\"index\": \"maniphest\", \"negate\": true, \"disabled\": false, \"alias\": \"Bots\", \"type\": \"phrase\", \"key\": \"author_bot\", \"value\": \"true\", \"params\": {\"query\": true, \"type\": \"phrase\"}}, \"query\": {\"match\": {\"author_bot\": {\"query\": true, \"type\": \"phrase\"}}}, \"$state\": {\"store\": \"appState\"}}], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"h\": 2, \"i\": \"1\", \"w\": 8, \"x\": 0, \"y\": 0}, \"id\": \"maniphest_openissues_statistics\", \"panelIndex\": \"1\", \"title\": \"Open Issues Statistics\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 7, \"i\": \"2\", \"w\": 4, \"x\": 8, \"y\": 8}, \"id\": \"maniphest_openissues_per_project\", \"panelIndex\": \"2\", \"title\": \"Projects\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"3\", \"w\": 4, \"x\": 8, \"y\": 0}, \"id\": \"maniphest_openissues_backlog\", \"panelIndex\": \"3\", \"title\": \"Backlog\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 6, \"i\": \"4\", \"w\": 8, \"x\": 0, \"y\": 2}, \"id\": \"maniphest_backlog\", \"panelIndex\": \"4\", \"title\": \"Backlog (Open Issues)\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 2, \"i\": \"5\", \"w\": 4, \"x\": 8, \"y\": 2}, \"id\": \"maniphest_openissues_backlog_accumulated_time\", \"panelIndex\": \"5\", \"title\": \"Backlog: Issues (Accumulated Time)\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 7, \"i\": \"6\", \"w\": 4, \"x\": 0, \"y\": 8}, \"id\": \"maniphest_openissues_submitters\", \"panelIndex\": \"6\", \"title\": \"Backlog Submitters\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 4, \"i\": \"7\", \"w\": 4, \"x\": 8, \"y\": 4}, \"id\": \"maniphest_openissues_assignee_orgs\", \"panelIndex\": \"7\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}, {\"gridData\": {\"h\": 7, \"i\": \"8\", \"w\": 4, \"x\": 4, \"y\": 8}, \"id\": \"maniphest_openissues_per_organization\", \"panelIndex\": \"8\", \"title\": \"Organizations\", \"type\": \"visualization\", \"version\": \"6.1.0-3\"}]",
+        "timeRestore": false,
+        "title": "Maniphest Backlog",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"Open Issues Statistics\"},\"P-2\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-3\":{\"title\":\"Backlog\",\"vis\":{\"legendOpen\":false}},\"P-4\":{\"title\":\"Backlog (Open Issues)\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-5\":{\"title\":\"Backlog: Issues (Accumulated Time)\",\"vis\":{\"legendOpen\":false}},\"P-6\":{\"title\":\"Backlog Submitters\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}},\"P-7\":{\"title\":\"Organizations\"},\"P-8\":{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}},\"title\":\"Organizations\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}}",
+        "version": 1
+    },
+    "id": "Maniphest-Backlog",
+    "type": "dashboard",
+    "version": "WzM3NCwxXQ=="
+}

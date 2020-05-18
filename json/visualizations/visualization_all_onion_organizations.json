@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"all_onion\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"Organizations View\",\"disabled\":false,\"index\":\"all_onion\",\"key\":\"project\",\"negate\":false,\"value\":\"_Global_\"},\"query\":{\"match\":{\"project\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"all_onion\",\"key\":\"author_org_name\",\"value\":\"_Global_\",\"disabled\":false,\"negate\":true,\"alias\":null},\"query\":{\"match\":{\"author_org_name\":{\"query\":\"_Global_\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"globalState\"}}]}"
+        },
+        "title": "all_onion_organizations",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"all_onion_organizations\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"timeframe\",\"customLabel\":\"First Quarter\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_org_name\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"_term\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"timeframe\",\"customLabel\":\"Last Quarter\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"People\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"contributions\",\"customLabel\":\"Contributions\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"onion_role\",\"size\":5000,\"order\":\"asc\",\"orderBy\":\"_term\",\"customLabel\":\"Role\"}}],\"listeners\":{}}"
+    },
+    "id": "all_onion_organizations",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEyNDAsMV0="
+}

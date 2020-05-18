@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"field\":\"data_source\",\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"key\":\"data_source\",\"negate\":false,\"params\":{\"value\":\"git\"},\"type\":\"phrase\",\"value\":\"git\"},\"script\":{\"script\":{\"inline\":\"boolean compare(Supplier s, def v) {return s.get() == v;}compare(() -> { if (doc['_index'].value.contains('-')) {\\n    doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"-\\\"))\\n\\n} else if (doc['_index'].value.contains('_')) {\\n    if (doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\")).equalsIgnoreCase(\\\"github\\\")) {\\n       if (doc['pull_request'].value) {\\n            \\\"github_pull_requests\\\"\\n        } else {\\n            \\\"github_issues\\\"\\n        }\\n\\n    } else {\\n        doc['_index'].value.substring(0, doc['_index'].value.indexOf(\\\"_\\\"))\\n\\n    }\\n\\n} else {\\n    doc['_index'].value\\n} }, params.value);\",\"lang\":\"painless\",\"params\":{\"value\":\"git\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "hard_activity_contributors_table",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"hard_activity_contributors_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Author\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_uuid\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"5\",\"customLabel\":\"Profile\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"customLabel\":\"Orgs\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"customLabel\":\"Commits\"}}]}"
+    },
+    "id": "9ddc3640-4772-11ea-97d2-0103fac622e1",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU1MCwxXQ=="
+}

@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"9ec951d0-dbb8-11e9-8bb5-a754934c91d5\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "title": "github_activity_prs_and_issues_by_organization",
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+        "version": 1,
+        "visState": "{\"title\":\"github_activity_prs_and_issues_by_organization\",\"type\":\"dotplot\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"caseSensitive\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"x-axis\",\"params\":{\"field\":\"issues_opened\",\"customLabel\":\"Issues Opened\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"y-axis\",\"params\":{\"field\":\"prs_opened\",\"customLabel\":\"PRs Opened\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"field\",\"params\":{\"field\":\"github_organization\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Organization\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"dotsize\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Contributors\"}}]}"
+    },
+    "id": "adb99d10-dbbf-11e9-8b26-1d322ac94c6b",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwOTcsMV0="
+}

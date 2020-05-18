@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"redmine\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "redmine_data_status_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"New Visualization\",\"listeners\":{},\"aggs\":[{\"schema\":\"metric\",\"type\":\"count\",\"id\":\"1\",\"params\":{\"customLabel\":\"Total Item Count\"}},{\"schema\":\"metric\",\"type\":\"min\",\"id\":\"2\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"First Item\"}},{\"schema\":\"metric\",\"type\":\"max\",\"id\":\"3\",\"params\":{\"field\":\"metadata__updated_on\",\"customLabel\":\"Last Item\"}},{\"schema\":\"metric\",\"type\":\"min\",\"id\":\"4\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"First Retrieval\"}},{\"schema\":\"metric\",\"type\":\"max\",\"id\":\"5\",\"params\":{\"field\":\"metadata__timestamp\",\"customLabel\":\"Last Retrieval\"}}],\"type\":\"metric\",\"params\":{\"metric\":{\"labels\":{\"show\":true},\"invertColors\":false,\"percentageMode\":false,\"metricColorMode\":\"None\",\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"to\":10000,\"from\":0}],\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"fontSize\":\"12\",\"labelColor\":false,\"subText\":\"\"}},\"fontSize\":\"12\"}}"
+    },
+    "id": "redmine_data_status_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzQ1NCwxXQ=="
+}

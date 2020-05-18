@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"jira\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"status:Open OR status:\\\"In Progress\\\"\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": [],\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  }\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Open Jira Issues Search:_status:open_or_status:in_progress",
+        "version": 1
+    },
+    "id": "Open-Jira-Issues-Search:_status:open_or_status:in_progress",
+    "type": "search",
+    "version": "WzU4MSwxXQ=="
+}

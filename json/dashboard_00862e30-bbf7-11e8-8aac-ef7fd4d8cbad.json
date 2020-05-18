@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "Jenkins Jobs panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"version\":true,\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"3\",\"gridData\":{\"x\":6,\"y\":0,\"w\":3,\"h\":4,\"i\":\"3\"},\"id\":\"JenkinsResults\",\"title\":\"Results\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"8\"},\"id\":\"jenkins_main_numbers\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.0-3\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":7,\"w\":12,\"h\":7,\"i\":\"11\"},\"id\":\"a44d0f70-bbf7-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"13\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":2,\"i\":\"13\"},\"id\":\"e0236790-bc12-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Jobs\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"15\",\"gridData\":{\"x\":7,\"y\":4,\"w\":5,\"h\":3,\"i\":\"15\"},\"id\":\"bedd3e00-bcab-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Success/Failures in percentage\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":4,\"w\":7,\"h\":3,\"i\":\"16\"},\"id\":\"f5a4cdb0-bcae-11e8-8aac-ef7fd4d8cbad\",\"title\":\"Duration Trend\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"title\":\"Projects and Jobs\",\"panelIndex\":\"17\",\"gridData\":{\"x\":9,\"y\":0,\"w\":3,\"h\":4,\"i\":\"17\"},\"id\":\"9358ca90-6481-11ea-b68b-31a1aa44b23a\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Jenkins Jobs",
+        "uiStateJSON": "{\"P-10\":{\"title\":\"Buids\"},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Export Builds\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"legendOpen\":false}},\"P-13\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"title\":\"Results\"},\"P-4\":{\"title\":\"Nodes\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"title\":\"Builds over time\",\"vis\":{\"legendOpen\":false}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Summary\"},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Active nodes over time\",\"vis\":{\"legendOpen\":false}}}",
+        "version": 1
+    },
+    "id": "00862e30-bbf7-11e8-8aac-ef7fd4d8cbad",
+    "type": "dashboard",
+    "updated_at": "2020-03-12T17:27:11.430Z",
+    "version": "WzgwMSwxXQ=="
+}

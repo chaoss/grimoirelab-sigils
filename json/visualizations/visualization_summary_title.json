@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+        },
+        "title": "summary_title",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"summary_title\",\"type\":\"markdown\",\"params\":{\"markdown\":\"### Summary\"},\"aggs\":[],\"listeners\":{}}"
+    },
+    "id": "summary_title",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzIyNCwxXQ=="
+}

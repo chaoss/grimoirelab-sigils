@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "savedSearchId": "Search:_gerrit_status:NEW",
+        "title": "gerrit_main_numbers_new_changesets_statistics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_main_numbers_new_changesets_statistics\",\"type\":\"metric\",\"params\":{\"metric\":{\"style\":{\"fontSize\":\"12\",\"bgColor\":false,\"bgFill\":\"#000\",\"subText\":\"\",\"labelColor\":false},\"percentageMode\":false,\"labels\":{\"show\":true},\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"metricColorMode\":\"None\",\"colorSchema\":\"Green to Red\"},\"fontSize\":\"12\",\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Changesets (Status: NEW)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"customLabel\":\"Accumulated Open TIme in Days (Status: NEW)\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_delay\",\"customLabel\":\"Average Time Open in Days per Changeset (Status: NEW)\"}}]}"
+    },
+    "id": "gerrit_main_numbers_new_changesets_statistics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY2MiwxXQ=="
+}

@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "GitHub repositories panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":6,\"h\":2,\"i\":\"1\"},\"id\":\"096986d0-44de-11e9-b68b-31a1aa44b23a\",\"title\":\"GitHub Repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":6,\"y\":0,\"w\":6,\"h\":4,\"i\":\"2\"},\"id\":\"27c99030-45e1-11e9-b68b-31a1aa44b23a\",\"title\":\"Repositories\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":13,\"w\":6,\"h\":5,\"i\":\"3\"},\"id\":\"9db510a0-45e4-11e9-b68b-31a1aa44b23a\",\"title\":\"Stars over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":6,\"w\":6,\"h\":5,\"i\":\"4\"},\"id\":\"1dc5e7c0-45e4-11e9-b68b-31a1aa44b23a\",\"title\":\"Forks over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":6,\"y\":6,\"w\":6,\"h\":5,\"i\":\"5\"},\"id\":\"4a782a80-45e4-11e9-b68b-31a1aa44b23a\",\"title\":\"Forks: Growth Deltas over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":20,\"w\":6,\"h\":5,\"i\":\"6\"},\"id\":\"ba68ef50-45e4-11e9-b68b-31a1aa44b23a\",\"title\":\"Subscribers over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":6,\"y\":20,\"w\":6,\"h\":5,\"i\":\"7\"},\"id\":\"6f920a60-45e5-11e9-b68b-31a1aa44b23a\",\"title\":\"Subscribers: Growth Deltas over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":6,\"y\":13,\"w\":6,\"h\":5,\"i\":\"8\"},\"id\":\"3e1965f0-45e5-11e9-b68b-31a1aa44b23a\",\"title\":\"Stars: Growth Deltas over time (top 10)\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":2,\"i\":\"9\"},\"id\":\"89b045e0-45ec-11e9-b68b-31a1aa44b23a\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":11,\"w\":12,\"h\":2,\"i\":\"10\"},\"id\":\"89ab8e80-463a-11e9-b68b-31a1aa44b23a\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":18,\"w\":12,\"h\":2,\"i\":\"11\"},\"id\":\"9c41b470-463a-11e9-b68b-31a1aa44b23a\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"12\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":2,\"i\":\"12\"},\"id\":\"814a79e0-463a-11e9-b68b-31a1aa44b23a\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "GitHub Repositories",
+        "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "8035e0c0-45e6-11e9-b68b-31a1aa44b23a",
+    "type": "dashboard",
+    "updated_at": "2019-03-20T12:39:12.444Z",
+    "version": "WzY4MiwxXQ=="
+}

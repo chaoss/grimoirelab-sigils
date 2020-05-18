@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Jira-Search:_time_estimated_time_spent_time_remaining",
+        "title": "jira_effort_main_numbers",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jira_effort_main_numbers\",\"aggs\":[{\"id\":\"1\",\"schema\":\"metric\",\"type\":\"count\",\"params\":{\"customLabel\":\"# Items\"}},{\"id\":\"2\",\"schema\":\"metric\",\"type\":\"cardinality\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"# Authors\"}},{\"id\":\"3\",\"schema\":\"metric\",\"type\":\"cardinality\",\"params\":{\"field\":\"assignee_uuid\",\"customLabel\":\"# Assignees\"}},{\"id\":\"4\",\"schema\":\"metric\",\"type\":\"sum\",\"params\":{\"field\":\"original_time_estimation_hours\",\"customLabel\":\"Total Hours Estimated\"}},{\"id\":\"5\",\"schema\":\"metric\",\"type\":\"sum\",\"params\":{\"field\":\"time_estimation_hours\",\"customLabel\":\"Total Hours Remaining\"}},{\"id\":\"6\",\"schema\":\"metric\",\"type\":\"sum\",\"params\":{\"field\":\"time_spent_hours\",\"customLabel\":\"Total Hours Logged\"}}],\"listeners\":{},\"type\":\"metric\",\"params\":{\"metric\":{\"colorsRange\":[{\"to\":10000,\"from\":0}],\"labels\":{\"show\":true},\"invertColors\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"percentageMode\":false,\"style\":{\"subText\":\"\",\"fontSize\":\"12\",\"labelColor\":false,\"bgColor\":false,\"bgFill\":\"#000\"},\"metricColorMode\":\"None\"},\"fontSize\":\"12\"}}"
+    },
+    "id": "jira_effort_main_numbers",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU4NiwxXQ=="
+}

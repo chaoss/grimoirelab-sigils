@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        },
+        "savedSearchId": "Open-Jira-Issues-Search:_status:open_or_status:in_progress",
+        "title": "jira_openissues_statistics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jira_openissues_statistics\",\"type\":\"metric\",\"params\":{\"metric\":{\"metricColorMode\":\"None\",\"percentageMode\":false,\"colorsRange\":[{\"to\":10000,\"from\":0}],\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"labels\":{\"show\":true},\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":\"12\"},\"invertColors\":false},\"fontSize\":\"12\",\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Open Issues\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_time_to_now\",\"customLabel\":\"Accumulated Open Days\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_time_to_now\",\"customLabel\":\"Average Time Open Days per Issue\"}}]}"
+    },
+    "id": "jira_openissues_statistics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExMDUsMV0="
+}

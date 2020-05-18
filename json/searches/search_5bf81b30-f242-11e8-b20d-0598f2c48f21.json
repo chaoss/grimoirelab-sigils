@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"git\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"title:Merge* OR files:0\",\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "git_merges_search",
+        "version": 1
+    },
+    "id": "5bf81b30-f242-11e8-b20d-0598f2c48f21",
+    "type": "search",
+    "version": "WzY5NSwxXQ=="
+}

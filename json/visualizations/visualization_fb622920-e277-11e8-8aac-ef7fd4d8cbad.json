@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gerrit_efficiency_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gerrit_efficiency_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"This panel focuses on **closed** Gerrit changesets.\\n\\n**REI**: Review Efficiency Index, defined as the number of closed changesets divided by the number of open ones in a given period of time. Measures efficiency closing changesets.\\n\\n**Lead time**: the time expressed in days between the initiation and completion of a production process, in this case, a changeset. Shown in average.\"},\"aggs\":[]}"
+    },
+    "id": "fb622920-e277-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-01-27T09:58:00.640Z",
+    "version": "WzEwNzksMV0="
+}

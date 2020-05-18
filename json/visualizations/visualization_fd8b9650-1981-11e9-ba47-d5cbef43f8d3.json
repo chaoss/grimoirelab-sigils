@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_lines_of_code_changed_markdown",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_lines_of_code_changed_markdown\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This panel focuses on **Number of lines of code changed**. We based the panel on Git data.\\n\\nThe idea behind the panel is having a look on how community contributes to the repositories by having a look at the magnitude of those changes with several metrics related with Git commits, specially modified lines and the amount of affected files. By using this panel we can identify and analyze behaviors of specific organizations, projects or repositories.\\n\\nThere are some filters added by default:\\n* `NOT Merges`: It ignores those commits whose number of modified files is 0 (this is, commits from merges).\\n* `NOT Bots`: It ignores those commits whose author is marked as a Bot.\\n\\nHere is the [link to the full documentation](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/lines_of_code_changed/) for this panel.\"},\"aggs\":[]}"
+    },
+    "id": "fd8b9650-1981-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "Wzk1MCwxXQ=="
+}

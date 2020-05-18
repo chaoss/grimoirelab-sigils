@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_filters_datasource_domains_projects",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_filters_datasource_domains_projects\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1539605670712\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1547138487161\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"author_domain\",\"label\":\"Domains\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1547138512073\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true},\"aggs\":[]}"
+    },
+    "id": "724b0f70-17fc-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzU2OSwxXQ=="
+}

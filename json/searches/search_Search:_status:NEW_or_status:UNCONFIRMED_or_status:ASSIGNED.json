@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"bugzilla\",\"query\":{\"query_string\":{\"query\":\"status:NEW OR status:UNCONFIRMED OR status:ASSIGNED\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+        "version": 1
+    },
+    "id": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+    "type": "search",
+    "version": "WzEyMDQsMV0="
+}

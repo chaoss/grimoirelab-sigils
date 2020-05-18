@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "ocean_tickets_filters",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"ocean_tickets_filters\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1547563906584\",\"indexPattern\":\"a04a4150-18bc-11e9-872f-e17019e68d6d\",\"fieldName\":\"data_source\",\"label\":\"Data Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1547563929584\",\"indexPattern\":\"a04a4150-18bc-11e9-872f-e17019e68d6d\",\"fieldName\":\"author_org_name\",\"label\":\"Organizations\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1547563962615\",\"indexPattern\":\"a04a4150-18bc-11e9-872f-e17019e68d6d\",\"fieldName\":\"project\",\"label\":\"Projects\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true},\"aggs\":[]}"
+    },
+    "id": "57679e60-18d5-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMzMiwxXQ=="
+}

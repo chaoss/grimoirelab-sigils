@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "contributors_growth_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"contributors_growth_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Contributors Growth** in terms of **number of people contributing to the several data sources of the project**.\\n* **The big number** gives an overview of the total and unique contributors across all of the data sources in the selected time range (using timepicker located at the top right corner of the dashboard).\\n* **Top right evolutionary chart** shows the evolution of the active contributors over time (line) and the difference between a given slot of time and its predecessor. Periods of time where the growth has been positive are represented in green, while periods with negative growth are displayed in yellow.\\n* **Bottom right evolutionary chart** displays the number of contributors over time. Red line displays the average of the community in the timeframe of analysis. The bars represents how far that period of time is from the average. The value of each bar is the difference between the number of contributors in that slot of time and the average of contributors for that period of time.\\n* **Table** splits all of this information by data source. This gives the number contributors.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/contributors-growth/)\"},\"aggs\":[]}"
+    },
+    "id": "50f893c0-18eb-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzgzMSwxXQ=="
+}

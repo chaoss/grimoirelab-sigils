@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "gitlab_issues_lead_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"gitlab_issues_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=gitlab_issues, q='state:closed', timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time (days)').color(#99af5d), \\n\\n.es(index=gitlab_issues, q='state:closed', timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend').color(#c83d32)\",\"interval\":\"1w\"},\"aggs\":[]}"
+    },
+    "id": "91cd4420-f6f1-11e8-8aac-ef7fd4d8cbad",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzYyNiwxXQ=="
+}

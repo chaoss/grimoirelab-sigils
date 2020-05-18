@@ -1,0 +1,25 @@
+{
+    "attributes": {
+        "description": "Apache panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": {\"query_string\": {\"default_field\": \"*\", \"analyze_wildcard\": true, \"query\": \"*\"}}, \"language\": \"lucene\"}, \"version\": true, \"highlightAll\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"type\": \"visualization\", \"id\": \"apache_main_metrics\", \"title\": \"Summary\", \"gridData\": {\"w\": 4, \"i\": \"1\", \"y\": 0, \"h\": 2, \"x\": 0}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"7\", \"type\": \"visualization\", \"id\": \"apache_main_agents\", \"title\": \"Most Common User-Agents\", \"gridData\": {\"w\": 6, \"i\": \"7\", \"y\": 4, \"h\": 6, \"x\": 0}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"8\", \"type\": \"visualization\", \"id\": \"apache_agents_evolutionary\", \"title\": \"Unique User-Agents\", \"gridData\": {\"w\": 4, \"i\": \"8\", \"y\": 2, \"h\": 2, \"x\": 4}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"9\", \"type\": \"visualization\", \"id\": \"apache_requests_evolutionary\", \"title\": \"Requests by type\", \"gridData\": {\"w\": 4, \"i\": \"9\", \"y\": 0, \"h\": 2, \"x\": 8}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"11\", \"type\": \"visualization\", \"id\": \"apache_packages_evolutionary_all\", \"title\": \"Package Downloads\", \"gridData\": {\"w\": 4, \"i\": \"11\", \"y\": 2, \"h\": 2, \"x\": 0}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"12\", \"type\": \"visualization\", \"id\": \"apache_visits_evolutionary_all\", \"title\": \"Visits\", \"gridData\": {\"w\": 4, \"i\": \"12\", \"y\": 0, \"h\": 2, \"x\": 4}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"13\", \"type\": \"visualization\", \"id\": \"apache_main_packages_all\", \"title\": \"Popular Packages\", \"gridData\": {\"w\": 6, \"i\": \"13\", \"y\": 4, \"h\": 6, \"x\": 6}, \"version\": \"6.1.0-3\"}, {\"panelIndex\": \"14\", \"type\": \"visualization\", \"id\": \"apache_response_count\", \"title\": \"Server Responses\", \"gridData\": {\"w\": 4, \"i\": \"14\", \"y\": 2, \"h\": 2, \"x\": 8}, \"version\": \"6.1.0-3\"}]",
+        "refreshInterval": {
+            "display": "Off",
+            "pause": false,
+            "value": 0
+        },
+        "timeFrom": "now-5y",
+        "timeRestore": true,
+        "timeTo": "now",
+        "title": "Apache",
+        "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Summary\"},\"P-11\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Package Downloads\"},\"P-12\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Visits\"},\"P-13\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Popular Packages\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Server Responses\"},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Most Common User-Agents\",\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Unique User-Agents\",\"vis\":{\"legendOpen\":false}},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"title\":\"Requests by type\"}}",
+        "version": 1
+    },
+    "id": "Apache",
+    "type": "dashboard",
+    "version": "Wzc1MSwxXQ=="
+}

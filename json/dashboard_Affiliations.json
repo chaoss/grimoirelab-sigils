@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "Affiliations panel by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"git\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"affiliations\",\"key\":\"author_uuid\",\"negate\":true,\"params\":{\"query\":\"\\\"\\\"\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"\\\"\\\"\"},\"query\":{\"match\":{\"author_uuid\":{\"query\":\"\\\"\\\"\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Unassigned\",\"disabled\":false,\"index\":\"affiliations\",\"key\":\"author_uuid\",\"negate\":true,\"params\":{\"query\":\"\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"\"},\"query\":{\"match\":{\"author_uuid\":{\"query\":\"\",\"type\":\"phrase\"}}}}]}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\":{\"h\":9,\"i\":\"5\",\"w\":5,\"x\":7,\"y\":5},\"id\":\"affiliations_organizations_table\",\"panelIndex\":\"5\",\"title\":\"Organizations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":5,\"i\":\"6\",\"w\":5,\"x\":5,\"y\":0},\"id\":\"affiliations_authors_organizations\",\"panelIndex\":\"6\",\"title\":\"Authors by Organization\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":9,\"i\":\"8\",\"w\":7,\"x\":0,\"y\":5},\"id\":\"affiliations_authors\",\"panelIndex\":\"8\",\"title\":\"Authors\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":3,\"i\":\"9\",\"w\":5,\"x\":0,\"y\":2},\"id\":\"affiliations_data_sources\",\"panelIndex\":\"9\",\"title\":\"Data Sources\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"10\",\"w\":5,\"x\":0,\"y\":0},\"id\":\"99230770-e0f1-11e8-8aac-ef7fd4d8cbad\",\"panelIndex\":\"10\",\"title\":\"Data Source\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":2,\"i\":\"11\",\"w\":12,\"x\":0,\"y\":14},\"id\":\"8d619890-136c-11e9-8aac-ef7fd4d8cbad\",\"panelIndex\":\"11\",\"title\":\"Affiliations\",\"type\":\"visualization\",\"version\":\"6.1.0-1\"},{\"gridData\":{\"h\":5,\"i\":\"12\",\"w\":2,\"x\":10,\"y\":0},\"id\":\"7b65a1d0-394b-11ea-b68b-31a1aa44b23a\",\"panelIndex\":\"12\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"}]",
+        "timeRestore": false,
+        "title": "Affiliations",
+        "uiStateJSON": "{\"P-5\":{\"title\":\"Organizations\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"title\":\"Authors by Organization\",\"vis\":{\"legendOpen\":true}},\"P-7\":{\"title\":\"Projects\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"title\":\"Authors\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"title\":\"Data Sources\"}}",
+        "version": 1
+    },
+    "id": "Affiliations",
+    "type": "dashboard",
+    "updated_at": "2020-01-17T17:07:18.928Z",
+    "version": "WzEwODQsMV0="
+}

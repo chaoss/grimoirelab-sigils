@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"telegram\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "telegram_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"params\":{\"fontSize\":\"12\",\"metric\":{\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"percentageMode\":false,\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"subText\":\"\",\"labelColor\":false,\"fontSize\":\"12\"}}},\"type\":\"metric\",\"listeners\":{},\"aggs\":[{\"params\":{\"customLabel\":\"# Messages\"},\"id\":\"1\",\"schema\":\"metric\",\"type\":\"count\"},{\"params\":{\"field\":\"author\",\"customLabel\":\"# Participants\"},\"id\":\"2\",\"schema\":\"metric\",\"type\":\"cardinality\"},{\"params\":{\"field\":\"chat_title\",\"customLabel\":\"# Channels\"},\"id\":\"3\",\"schema\":\"metric\",\"type\":\"cardinality\"}],\"title\":\"telegram_main_metrics\"}"
+    },
+    "id": "telegram_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzI2MSwxXQ=="
+}

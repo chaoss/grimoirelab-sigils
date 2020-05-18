@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "chaoss_gmd_maintainer_response_to_merge_request_duration",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"chaoss_gmd_maintainer_response_to_merge_request_duration\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1543332151603\",\"indexPattern\":\"git\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}},{\"id\":\"1543332192643\",\"indexPattern\":\"git\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "73ec6980-1d85-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzExNDMsMV0="
+}

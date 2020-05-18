@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "Help Acknowledgments",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Help Acknowledgments\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Acknowledgments\\n\\nThanks to all free, open source software developers, who have produced all the software that can be analyzed by this open analytics platform.\\n\\nIn particular, thanks to all of them (ranking in the tens of thousands) who have contributed to the pieces of software who make possible the platform itself.\\n\\nMetrics available in GrimoireLab are, in part, developed in the CHAOSS project. \\nMore information about the CHAOSS metrics can be found at:\\nhttps://chaoss.community/metrics/\",\"fontSize\":12},\"aggs\":[]}"
+    },
+    "id": "Help-Acknowledgments",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2019-11-28T17:39:02.319Z",
+    "version": "WzEwOTYsMV0="
+}

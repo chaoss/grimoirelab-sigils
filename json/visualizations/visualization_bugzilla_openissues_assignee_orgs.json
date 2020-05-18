@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[]}"
+        },
+        "savedSearchId": "Search:_status:NEW_or_status:UNCONFIRMED_or_status:ASSIGNED",
+        "title": "bugzilla_openissues_assignee_orgs",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"bugzilla_openissues_assignee_orgs\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":true,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"assigned_to_org_name\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Assignee\"}}],\"listeners\":{}}"
+    },
+    "id": "bugzilla_openissues_assignee_orgs",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzY3MCwxXQ=="
+}

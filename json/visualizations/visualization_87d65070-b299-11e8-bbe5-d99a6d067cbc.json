@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "C_github_issues_avg_lead_time",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"C_github_issues_avg_lead_time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, timefield=closed_at, metric=avg:time_to_close_days).label('Avg. Lead Time'), .es(index=github_issues, timefield=closed_at, metric=avg:time_to_close_days).trend().label('Avg. Lead Time trend')\",\"interval\":\"1M\"},\"aggs\":[]}"
+    },
+    "id": "87d65070-b299-11e8-bbe5-d99a6d067cbc",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2018-10-09T08:42:43.363Z",
+    "version": "WzIxMCwxXQ=="
+}

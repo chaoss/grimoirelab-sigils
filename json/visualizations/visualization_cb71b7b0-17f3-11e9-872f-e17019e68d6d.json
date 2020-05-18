@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "organizational_diversity_help",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"organizational_diversity_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"* This panel focuses on **Organizational Diversity** in terms of **number of contributions and contributors**.\\n* **The big number** gives an overview of the active organizations in the selected timepicker located at the top right section of the dashboard.\\n* **Pie Charts** show the distribution of the organizations in terms of contributions and the number of people contributing.\\n* **Bar Chart** displays the number of active organizations by data source over time for the selected timeframe of analysis.\\n* **Table** splits all of this information by data source and by organization. This gives the number of contributions and contributors.\\n\\n[See complete panel documentation](https://chaoss.github.io/grimoirelab-sigils/panels/organizational-diversity/)\"},\"aggs\":[]}"
+    },
+    "id": "cb71b7b0-17f3-11e9-872f-e17019e68d6d",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzgyNCwxXQ=="
+}

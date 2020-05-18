@@ -1,0 +1,21 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\n  \"index\": \"4381a740-bc0c-11e8-8aac-ef7fd4d8cbad\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"state:locked OR state:opened\"\n  },\n  \"filter\": []\n}"
+        },
+        "sort": [
+            "grimoire_creation_date",
+            "desc"
+        ],
+        "title": "Search:_gitlab-merge_requests_state_opened",
+        "version": 1
+    },
+    "id": "677d5790-bcaa-11e8-8aac-ef7fd4d8cbad",
+    "type": "search",
+    "version": "WzM4NiwxXQ=="
+}

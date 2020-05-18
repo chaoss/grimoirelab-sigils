@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "Emerging Tech Adoption Panel developed by Bitergia",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\": [], \"query\": {\"language\": \"lucene\", \"query\": {\"query_string\": {\"analyze_wildcard\": true, \"default_field\": \"*\", \"query\": \"*\"}}}, \"highlightAll\": true, \"version\": true}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"panelIndex\": \"1\", \"gridData\": {\"x\": 0, \"y\": 0, \"w\": 12, \"h\": 2, \"i\": \"1\"}, \"id\": \"rust_friends_title\", \"title\": \"-\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"2\", \"gridData\": {\"x\": 6, \"y\": 2, \"w\": 6, \"h\": 3, \"i\": \"2\"}, \"id\": \"C_rust_emergingtech_friends_table\", \"title\": \"Friends' Logos\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"3\", \"gridData\": {\"x\": 0, \"y\": 2, \"w\": 2, \"h\": 3, \"i\": \"3\"}, \"id\": \"C_rust_emergingtech_logos_added\", \"title\": \"Logos Added\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}, {\"panelIndex\": \"4\", \"gridData\": {\"x\": 2, \"y\": 2, \"w\": 4, \"h\": 3, \"i\": \"4\"}, \"id\": \"C_rust_emergingtech_logos_evolution\", \"title\": \"Logo Additions\", \"type\": \"visualization\", \"version\": \"6.1.0-1\"}]",
+        "timeRestore": false,
+        "title": "Emerging Tech Adoption",
+        "uiStateJSON": "{\"P-1\":{\"title\":\"-\"},\"P-2\":{\"title\":\"Friends' Logos\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"title\":\"Logos Added\"},\"P-4\":{\"title\":\"Logo Additions\",\"vis\":{\"legendOpen\":false}},\"P-5\":{\"title\":\"-\"},\"P-6\":{\"title\":\"Crates\"},\"P-7\":{\"title\":\"Creation of New Crates\"},\"P-8\":{\"title\":\"The Most Downloaded Crates\",\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "EmTech-Adoption",
+    "type": "dashboard",
+    "version": "WzEyMTMsMV0="
+}

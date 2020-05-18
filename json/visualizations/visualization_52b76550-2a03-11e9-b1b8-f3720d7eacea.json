@@ -1,0 +1,19 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"jenkins\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        },
+        "title": "jenkins_main_numbers_categories",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"jenkins_main_numbers_categories\",\"type\":\"metric\",\"params\":{\"fontSize\":\"12\",\"metric\":{\"style\":{\"labelColor\":false,\"bgColor\":false,\"fontSize\":32,\"subText\":\"\",\"bgFill\":\"#000\"},\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"metricColorMode\":\"None\",\"percentageMode\":false,\"invertColors\":false,\"useRanges\":false,\"labels\":{\"show\":true}},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# Builds\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"job_url\",\"customLabel\":\"# Jobs\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"builtOn\",\"customLabel\":\"# Nodes\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"installer\",\"customLabel\":\"# Categories\"}}]}"
+    },
+    "id": "52b76550-2a03-11e9-b1b8-f3720d7eacea",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "updated_at": "2020-03-11T15:07:37.937Z",
+    "version": "WzU0MSwxXQ=="
+}

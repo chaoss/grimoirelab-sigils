@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"stackoverflow\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        },
+        "title": "stackoverflow_main_metrics",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"listeners\":{},\"type\":\"metric\",\"aggs\":[{\"type\":\"sum\",\"id\":\"1\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Questions\",\"field\":\"is_stackexchange_question\"}},{\"type\":\"sum\",\"id\":\"2\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Answers\",\"field\":\"is_stackexchange_answer\"}},{\"type\":\"cardinality\",\"id\":\"3\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"People Involved\",\"field\":\"author_uuid\"}}],\"title\":\"New Visualization\",\"params\":{\"metric\":{\"percentageMode\":false,\"metricColorMode\":\"None\",\"style\":{\"labelColor\":false,\"subText\":\"\",\"bgColor\":false,\"fontSize\":\"12\",\"bgFill\":\"#000\"},\"invertColors\":false,\"colorSchema\":\"Green to Red\",\"useRanges\":false,\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true}},\"fontSize\":\"12\"}}"
+    },
+    "id": "stackoverflow_main_metrics",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwMzksMV0="
+}

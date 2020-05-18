@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "contributors_growth_with_average_and_distance_to_the_average",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"type\":\"timelion\",\"title\":\"contributors_growth_with_average_and_distance_to_the_average\",\"params\":{\"expression\":\".es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).label(\\\"Contributors Active\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).aggregate(avg).label(\\\"Contributors Active Average\\\"), .es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).subtract(.es(index=all_enriched, timefield=grimoire_creation_date, metric=cardinality:author_uuid).aggregate(avg)).bars().label(\\\"Distance to the Average\\\")\",\"interval\":\"1w\"}}"
+    },
+    "id": "8cfe1960-18de-11e9-ba47-d5cbef43f8d3",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwOTksMV0="
+}

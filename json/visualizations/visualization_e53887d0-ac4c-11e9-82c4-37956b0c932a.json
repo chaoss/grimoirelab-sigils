@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"cocom_study\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        },
+        "title": "cocom_study_main_metrics_loc_comments",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"2\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"2-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"LOC\",\"customMetric\":{\"enabled\":true,\"id\":\"2-metric\",\"params\":{\"field\":\"total_loc\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"3-bucket\",\"params\":{\"customInterval\":\"2h\",\"extended_bounds\":{},\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"min_doc_count\":1},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"date_histogram\"},\"customLabel\":\"Comments\",\"customMetric\":{\"enabled\":true,\"id\":\"3-metric\",\"params\":{\"field\":\"total_comments\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"sum\"}},\"schema\":\"metric\",\"type\":\"max_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":30,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"cocom_study_main_metrics_loc_comments\",\"type\":\"metric\"}"
+    },
+    "id": "e53887d0-ac4c-11e9-82c4-37956b0c932a",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzEwOTMsMV0="
+}

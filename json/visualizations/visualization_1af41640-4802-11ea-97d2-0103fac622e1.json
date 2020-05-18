@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        },
+        "title": "all_enriched_organization_selector",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"all_enriched_organization_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1580898415962\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"author_org_name\",\"label\":\"Organization\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+    },
+    "id": "1af41640-4802-11ea-97d2-0103fac622e1",
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    },
+    "type": "visualization",
+    "version": "WzMwMywxXQ=="
+}

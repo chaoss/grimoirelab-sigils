@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"version\": true, \"filter\": [{\"meta\": {\"value\": \"true\", \"type\": \"phrase\", \"key\": \"author_bot\", \"negate\": true, \"params\": {\"type\": \"phrase\", \"query\": true}, \"alias\": \"author bot\", \"disabled\": false, \"index\": \"git\"}, \"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"author_bot\": {\"type\": \"phrase\", \"query\": true}}}}], \"highlightAll\": true, \"query\": {\"language\": \"lucene\", \"query\": \"*\"}}"
+        },
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"gridData\": {\"i\": \"2\", \"x\": 3, \"w\": 1, \"h\": 3, \"y\": 0}, \"type\": \"visualization\", \"id\": \"9b596310-f242-11e8-b20d-0598f2c48f21\", \"panelIndex\": \"2\", \"version\": \"6.1.4-1\", \"title\": \"Big Numbers\"}, {\"gridData\": {\"i\": \"3\", \"x\": 4, \"w\": 5, \"h\": 3, \"y\": 0}, \"type\": \"visualization\", \"id\": \"ac92c2b0-f243-11e8-b20d-0598f2c48f21\", \"panelIndex\": \"3\", \"version\": \"6.1.4-1\", \"title\": \"Evolution\"}, {\"gridData\": {\"i\": \"4\", \"x\": 9, \"w\": 3, \"h\": 6, \"y\": 0}, \"type\": \"visualization\", \"id\": \"a202a900-f257-11e8-b20d-0598f2c48f21\", \"panelIndex\": \"4\", \"version\": \"6.1.4-1\", \"title\": \"Repositories\"}, {\"gridData\": {\"i\": \"5\", \"x\": 0, \"w\": 3, \"h\": 3, \"y\": 0}, \"type\": \"visualization\", \"id\": \"73e7b910-f258-11e8-b20d-0598f2c48f21\", \"panelIndex\": \"5\", \"version\": \"6.1.4-1\", \"title\": \"GitHub Pull Requests Merged\"}, {\"gridData\": {\"i\": \"6\", \"x\": 0, \"w\": 9, \"h\": 3, \"y\": 3}, \"type\": \"visualization\", \"id\": \"5cbc8530-f259-11e8-b20d-0598f2c48f21\", \"panelIndex\": \"6\", \"version\": \"6.1.4-1\", \"title\": \"GitHub Pull Requests Merged\"}]",
+        "timeRestore": false,
+        "title": "Pull Requests Merged",
+        "uiStateJSON": "{\"P-4\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+        "version": 1
+    },
+    "id": "a7b3fd70-ef16-11e8-9be6-c962f0cee9ae",
+    "type": "dashboard",
+    "version": "WzQ0MSwxXQ=="
+}
