@@ -1,0 +1,61 @@
+{
+    "dashboard": {
+        "id": "46fd80d0-5d35-11ea-b68f-8f236bdb08c3",
+        "value": {
+            "description": "Discourse dashboard focused on DevRel metrics by Bitergia.",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"discourse\",\"negate\":true,\"disabled\":false,\"alias\":\"Bots\",\"type\":\"phrase\",\"key\":\"author_bot\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":4,\"i\":\"1\"},\"id\":\"2d55c130-5ca7-11ea-b68f-8f236bdb08c3\",\"title\":\"Posts Created\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":7,\"i\":\"2\"},\"title\":\"Posts (Questions and Answers): Top 30 Contributors\",\"id\":\"c1b8e9f0-5d66-11ea-b68f-8f236bdb08c3\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"title\":\"Discourse Activity, Active Authors, and Posts\",\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":11,\"w\":12,\"h\":3,\"i\":\"3\"},\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"d155a8f0-7402-11ea-b946-215d904bd0aa\"}]",
+            "release_date": "2020-06-02T13:42:14.776020",
+            "timeRestore": false,
+            "title": "Discourse DevRel",
+            "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "2d55c130-5ca7-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_discourse_posts_rolling_average",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_discourse_posts_rolling_average\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=discourse, timefield=grimoire_creation_date).label('Posts / day (Questions and Answers)'),\\n\\n.es(index=discourse, timefield=grimoire_creation_date).mvavg(window='30d').label('Posts: 30d Rolling Avg.'),\\n\\n.es(index=discourse, timefield=grimoire_creation_date).mvavg(window='60d').label('Posts: 60d Rolling Avg.'),\\n\\n.es(index=discourse, timefield=grimoire_creation_date).mvavg(window='90d').label('Posts: 90d Rolling Avg.')\",\"interval\":\"1d\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "c1b8e9f0-5d66-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"discourse\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "devrel_discourse_top_30_contributors",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_discourse_top_30_contributors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Organization\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Posts\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"split\",\"params\":{\"field\":\"grimoire_creation_date\",\"ranges\":[{\"from\":\"now-30d\",\"to\":\"now\"},{\"from\":\"now-60d\",\"to\":\"now\"},{\"from\":\"now-90d\",\"to\":\"now\"}],\"json\":\"{ \\\"format\\\" : \\\"- MMM dd  YYYY -\\\" }\",\"customLabel\":\"Top 30 Contributors\",\"row\":false}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_uuid\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Profile\"}}]}"
+            }
+        },
+        {
+            "id": "d155a8f0-7402-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_discourse_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_discourse_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on Discourse activity, and active authors in different timeslots\\n\\n**Posts Created**: Number of new posts by month 30/60/90 day rolling avg posts/day. This calculates the numbers per day, as rolling averages are per day too. Metric says posts: a post is either a question or an answer (this can be easily modified to count only one of them or to count them separately).\\n\\n**Posts**: Top 30 contributors in the last 30/60/90 days (excluding any automated tooling).\\n* To filter bots there is a filter on top of the dashboard.\\n* Links to Hatstall are provided within the tables to allow to editing profiles in case there are unmerged profiles or bots that are not marked as such.\\n* There are 3 tables, one per each time interval.\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
