@@ -1,0 +1,122 @@
+{
+    "dashboard": {
+        "id": "d55aae00-5edb-11ea-b68f-8f236bdb08c3",
+        "value": {
+            "description": "Slack dashboard based on DevRel metrics by Bitergia.",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"slack\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":8,\"i\":\"1\"},\"id\":\"aadd1f70-5e34-11ea-b68f-8f236bdb08c3\",\"title\":\"General Numbers (server activity excluded)\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":28,\"w\":24,\"h\":20,\"i\":\"2\"},\"id\":\"7323d420-5ede-11ea-b68f-8f236bdb08c3\",\"title\":\"Channel Members (excluding server activity)\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":48,\"w\":48,\"h\":20,\"i\":\"4\"},\"id\":\"2521c1a0-7401-11ea-b946-215d904bd0aa\",\"title\":\"Active Users, Channel Members, and Active Members\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":24,\"y\":28,\"w\":24,\"h\":20,\"i\":\"5\"},\"id\":\"d81e5bf0-8569-11ea-b946-215d904bd0aa\",\"title\":\"Active channels per day (excluding server activity)\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":8,\"w\":24,\"h\":20,\"i\":\"6\"},\"id\":\"89562880-857e-11ea-b946-215d904bd0aa\",\"title\":\"New users\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":24,\"y\":8,\"w\":24,\"h\":20,\"i\":\"7\"},\"id\":\"44462fe0-8580-11ea-b946-215d904bd0aa\",\"title\":\"Active users per day (server activity excluded)\",\"type\":\"visualization\",\"version\":\"6.8.6\"}]",
+            "release_date": "2020-06-08T15:39:42.024702",
+            "timeRestore": false,
+            "title": "Slack Devrel",
+            "version": 1
+        }
+    },
+    "searches": [
+        {
+            "id": "2c31b4d0-857e-11ea-b946-215d904bd0aa",
+            "value": {
+                "columns": [
+                    "author_bot",
+                    "author_name",
+                    "channel_name"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"slack\",\"type\":\"phrases\",\"key\":\"channel_name\",\"value\":\"announcements, devrel, community-meetings\",\"params\":[\"announcements\",\"devrel\",\"community-meetings\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"channel_name\":\"announcements\"}},{\"match_phrase\":{\"channel_name\":\"devrel\"}},{\"match_phrase\":{\"channel_name\":\"community-meetings\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"slack\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"subtype\",\"value\":\"channel_join\",\"params\":{\"query\":\"channel_join\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"subtype\":{\"query\":\"channel_join\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"slack\",\"negate\":true,\"disabled\":false,\"alias\":\"Bots\",\"type\":\"phrase\",\"key\":\"author_bot\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "slack_join_messages_to_main_channels",
+                "version": 1
+            }
+        }
+    ],
+    "visualizations": [
+        {
+            "id": "aadd1f70-5e34-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"filter\":[{\"query\":{\"bool\":{\"should\":[{\"term\":{\"subtype\":\"channel_join\"}},{\"term\":{\"subtype\":\"bot_message\"}},{\"term\":{\"subtype\":\"bot_add\"}}]}},\"meta\":{\"index\":\"slack\",\"disabled\":false,\"alias\":\"Server Activity\",\"type\":\"custom\",\"key\":\"query\",\"value\":\"{\\\"bool\\\":{\\\"should\\\":[{\\\"term\\\":{\\\"subtype\\\":\\\"channel_join\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_message\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_add\\\"}}]}}\",\"negate\":true},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "devrel_slack_general_numbers",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_slack_general_numbers\",\"type\":\"metric\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":39,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Active Users\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"4-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"bucketAgg\",\"params\":{\"filters\":[{\"input\":{\"query\":\"grimoire_creation_date:>now-30d\"},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"4-metric\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"\"}},\"customLabel\":\"Active channels last 30 days\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_id\",\"customLabel\":\"Active Channels (selected time frame)\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Messages\"}}]}"
+            }
+        },
+        {
+            "id": "7323d420-5ede-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"slack\",\"filter\":[{\"query\":{\"bool\":{\"should\":[{\"term\":{\"subtype\":\"channel_join\"}},{\"term\":{\"subtype\":\"bot_message\"}},{\"term\":{\"subtype\":\"bot_add\"}}]}},\"meta\":{\"index\":\"slack\",\"disabled\":false,\"alias\":\"Server Activity\",\"type\":\"custom\",\"key\":\"query\",\"value\":\"{\\\"bool\\\":{\\\"should\\\":[{\\\"term\\\":{\\\"subtype\\\":\\\"channel_join\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_message\\\"}},{\\\"term\\\":{\\\"subtype\\\":\\\"bot_add\\\"}}]}}\",\"negate\":true},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "devrel_slack_members_by_channel_excluding_server_activity",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_slack_members_by_channel_excluding_server_activity\",\"type\":\"enhanced-table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"computedColumns\":[{\"label\":\"Active Members\",\"formula\":\"col2\",\"format\":\"number\",\"pattern\":\"0,0\",\"datePattern\":\"MMMM Do YYYY, HH:mm:ss.SSS\",\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"template\":\"{{value}}\",\"enabled\":true},{\"label\":\"Inactive Members\",\"formula\":\"col1 - col2\",\"format\":\"number\",\"pattern\":\"0,0\",\"datePattern\":\"MMMM Do YYYY, HH:mm:ss.SSS\",\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"template\":\"{{value}}\",\"enabled\":true}],\"computedColsPerSplitCol\":false,\"hideExportLinks\":false,\"showFilterBar\":false,\"filterCaseSensitive\":false,\"filterBarHideable\":false,\"filterAsYouType\":false,\"filterTermsSeparately\":false,\"filterHighlightResults\":false,\"filterBarWidth\":\"25%\",\"totalLabel\":\"Total\",\"hiddenColumns\":\"2\",\"showMetricsAtAllLevels\":false,\"stripedRows\":false},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"channel_name\",\"size\":5000,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Channel\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"channel_member_count\",\"aggregate\":\"max\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Channel Members\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Active Members\"}}]}"
+            }
+        },
+        {
+            "id": "2521c1a0-7401-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_slack_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_slack_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on Slack activity, active users, and channel members. \\n\\n**Filter on top** excludes bots.\\n\\n**General Numbers** widget displays aggregated numbers for the timeslot of analysis.\\n\\n**New Users** counts number of users joining one of the following channels: #announcements, #community-meetings, or #devrel. Note that if a given user would join two of them at different dates we could count them twice as we can only count unique users joining those channels between the dates specified on each bar. \\n\\n**Active Users**  gives an aggregated number of all people that have sent at least one message to any Slack channel. \\n\\nAll of these channels with messages in the period of analysis are the **Active Channels**.\\n\\n**Members** are used to indicate those people that are registered and/or participating in any of the channels. A member is different from an **Active User** as a member belongs to a certain Slack channel and may or may not be active in the period of analysis. An **Active User** has been active for sure.\\n\\n**Channel Members**, **Active Members**, and **Inactive Members** show those members by each of the channels. The Channel Member value is given by Slack and not calculated by the tool. This is why the total number of **Channel Members** or **Active Members** is higher than the number of **Active Users**.\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "d81e5bf0-8569-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_slack_active_channels_per_day_rolling_averages_excluding_server_activity",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_slack_active_channels_per_day_rolling_averages_excluding_server_activity\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=slack, timefield=grimoire_creation_date, metric=cardinality:channel_id, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').bars().color(color=#d1d4d1) .label('Active channels per day'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:channel_id, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=30d) .label('30 days rolling average'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:channel_id, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=60d) .label('60 days rolling average'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:channel_id, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=90d) .label('90 days rolling average')\",\"interval\":\"1d\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "89562880-857e-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "savedSearchId": "2c31b4d0-857e-11ea-b946-215d904bd0aa",
+                "title": "slack_new_users_over_time",
+                "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+                "version": 1,
+                "visState": "{\"title\":\"slack_new_users_over_time\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"New Users\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"New Users\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"New Users\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}]}"
+            }
+        },
+        {
+            "id": "44462fe0-8580-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_slack_active_users_per_day_rolling_averages_filtering_server_messages",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_slack_active_users_per_day_rolling_averages_filtering_server_messages\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=slack, timefield=grimoire_creation_date, metric=cardinality:author_uuid, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').bars().color(color=#d1d4d1) .label('Active users per day'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:author_uuid, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=30d) .label('30 days rolling average'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:author_uuid, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=60d) .label('60 days rolling average'),\\n\\n.es(index=slack, timefield=grimoire_creation_date, metric=cardinality:author_uuid, q='-subtype:\\\"channel_join\\\" AND -subtype:\\\"bot_message\\\" AND -subtype:\\\"bot_add\\\"').mvavg(window=90d) .label('90 days rolling average')\",\"interval\":\"1d\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
