@@ -1,0 +1,100 @@
+{
+    "dashboard": {
+        "id": "8a271680-58af-11ea-b68f-8f236bdb08c3",
+        "value": {
+            "description": "GitHub dashboard based on DevRel metrics by Bitergia.",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Bots\",\"disabled\":false,\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"key\":\"author_bot\",\"negate\":true,\"params\":{\"query\":true,\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"true\"},\"query\":{\"match\":{\"author_bot\":{\"query\":true,\"type\":\"phrase\"}}}}],\"highlightAll\":true,\"version\":true}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":4,\"y\":0,\"w\":8,\"h\":2,\"i\":\"1\"},\"id\":\"c9803d80-58ae-11ea-b68f-8f236bdb08c3\",\"title\":\"Commits & Pull Requests General Numbers\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":2,\"w\":12,\"h\":7,\"i\":\"2\"},\"id\":\"5d01ea40-594a-11ea-b68f-8f236bdb08c3\",\"title\":\"Commits: Top 30 Contributors\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":9,\"w\":12,\"h\":7,\"i\":\"3\"},\"id\":\"619fadf0-594d-11ea-b68f-8f236bdb08c3\",\"title\":\"Pull Requests: Top 30 Contributors\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":0,\"y\":16,\"w\":12,\"h\":6,\"i\":\"4\"},\"id\":\"0591e520-5973-11ea-b68f-8f236bdb08c3\",\"title\":\"Pull Requests Created\",\"type\":\"visualization\",\"version\":\"6.1.4-1\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":2,\"i\":\"5\"},\"title\":\"\",\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"b9caf380-5976-11ea-b68f-8f236bdb08c3\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":22,\"w\":12,\"h\":4,\"i\":\"6\"},\"version\":\"6.1.4-1\",\"type\":\"visualization\",\"id\":\"a2e7ab70-740d-11ea-b946-215d904bd0aa\"}]",
+            "release_date": "2020-06-04T15:00:26.266925",
+            "timeRestore": false,
+            "title": "GitHub DevRel",
+            "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "c9803d80-58ae-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+                },
+                "title": "devrel_git_github_author_and_orgs_numbers",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"1-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"hash:*\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Commit Authors\",\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{\"field\":\"author_uuid\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"2-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"pull_request:true\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Pull Request Authors\",\"customMetric\":{\"enabled\":true,\"id\":\"2-metric\",\"params\":{\"field\":\"author_uuid\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"3-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"hash:*\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Organizations sending Commits\",\"customMetric\":{\"enabled\":true,\"id\":\"3-metric\",\"params\":{\"field\":\"author_org_name\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"4-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"pull_request:true\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Organizations sending Pull Requests\",\"customMetric\":{\"enabled\":true,\"id\":\"4-metric\",\"params\":{\"field\":\"author_org_name\"},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"cardinality\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"addLegend\":false,\"addTooltip\":true,\"metric\":{\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"invertColors\":false,\"labels\":{\"show\":true},\"metricColorMode\":\"None\",\"percentageMode\":false,\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":36,\"labelColor\":false,\"subText\":\"\"},\"useRanges\":false},\"type\":\"metric\"},\"title\":\"devrel_git_github_author_and_orgs_numbers\",\"type\":\"metric\"}"
+            }
+        },
+        {
+            "id": "5d01ea40-594a-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"git\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "devrel_git_top_30_contributors",
+                "uiStateJSON": "{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_git_top_30_contributors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"split\",\"params\":{\"field\":\"grimoire_creation_date\",\"ranges\":[{\"from\":\"now-30d\",\"to\":\"now\"},{\"from\":\"now-60d\",\"to\":\"now\"},{\"from\":\"now-90d\",\"to\":\"now\"}],\"json\":\"{ \\\"format\\\" : \\\"- MMM dd  YYYY -\\\" }\",\"customLabel\":\"Top 30 Contributors\",\"row\":false}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_uuid\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Profile\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Organization\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"hash\",\"customLabel\":\"Commits\"}}]}"
+            }
+        },
+        {
+            "id": "619fadf0-594d-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"github_issues\",\"filter\":[{\"meta\":{\"index\":\"github_issues\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"pull_request\",\"value\":\"true\",\"params\":{\"query\":true,\"type\":\"phrase\"}},\"query\":{\"match\":{\"pull_request\":{\"query\":true,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+                },
+                "title": "devrel_github_top_30_contributors",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":null,\"direction\":null}}},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_github_top_30_contributors\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"split\",\"params\":{\"field\":\"grimoire_creation_date\",\"ranges\":[{\"from\":\"now-30d\",\"to\":\"now\"},{\"from\":\"now-60d\",\"to\":\"now\"},{\"from\":\"now-90d\",\"to\":\"now\"}],\"json\":\"{ \\\"format\\\" : \\\"- MMM dd  YYYY -\\\" }\",\"customLabel\":\"Top 30 Contributors\",\"row\":false}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_name\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"author_uuid\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Profile\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"author_org_name\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Organization\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Pull Requests\"}}]}"
+            }
+        },
+        {
+            "id": "0591e520-5973-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_github_pull_requests_rolling averages",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_github_pull_requests_rolling averages\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=github_issues, q=pull_request:true, timefield=grimoire_creation_date).label('Pull Requests'),\\n\\n.es(index=github_issues, q=pull_request:true, timefield=grimoire_creation_date).mvavg(30d).label('30d Rolling Avg.'),\\n\\n.es(index=github_issues, q=pull_request:true, timefield=grimoire_creation_date).mvavg(60d).label('60d Rolling Avg.'),\\n\\n.es(index=github_issues, q=pull_request:true, timefield=grimoire_creation_date).mvavg(90d).label('90d Rolling Avg.')\",\"interval\":\"1d\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "b9caf380-5976-11ea-b68f-8f236bdb08c3",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_project_selector",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_project_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1582817510913\",\"indexPattern\":\"0211efb0-14ca-11e9-8aac-ef7fd4d8cbad\",\"fieldName\":\"project\",\"label\":\"Project\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "a2e7ab70-740d-11ea-b946-215d904bd0aa",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "devrel_github_help",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"devrel_github_help\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"This dashboard focuses on GitHub activity, commits and pull requests, and top contributors.\\n\\n**Project Filter**: GitHub all projects, or by project. This is a selector to filter projects. \\n\\n**Commits & Pull Requests General Numbers**: number of authors and organizations for commits and pull requests. An author of a pull request is the person who submitted the first version of this (not any further iterations).\\n\\n**Top 30 contributors** in the last 30/60/90 days (excluding any automated tooling for commits and pull requests)\\n* To filter bots there is a filter on top of the dashboard.\\n* Links to Hatstall are provided within the tables to allow to edit profiles.\\n* There are 3 tables for each visualization, one per each time interval.\\n\\n**Pull Request created**: Number of pull requests / day 30/60/90 day rolling avg pull requests / day.\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
