@@ -60,3 +60,15 @@ corresponding to the following subtypes:
  * `channel_join`
  * `bot_message`
  * `bot_add`
+ 
+ ### Acknowledgments
+
+We would like to thank Frances Chao-Gay and 
+[Benny Vasquez](https://github.com/bennyvasquez) from [chef.io](https://www.chef.io/) 
+project for their collaboration. This dashboard hadn't been
+possible without them. It is based on their ideas and they were the actual reviewers of
+the work done.
+
+We had also the opportunity of discussing the use case with Benny during one of our
+bi-weekly CHAOSS-GrimoireLab calls, 
+[publicly available on YouTube](https://www.youtube.com/watch?v=sWyHzCVz8e0). 
