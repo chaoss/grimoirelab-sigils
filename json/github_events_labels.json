@@ -8,12 +8,12 @@
                 "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
             },
             "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
-            "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"gridData\":{\"h\":29,\"i\":\"5\",\"w\":48,\"x\":0,\"y\":41},\"id\":\"d85c2550-a965-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"5\",\"title\":\"Activity on issues\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"h\":13,\"i\":\"6\",\"w\":48,\"x\":0,\"y\":15},\"id\":\"d36a7dd0-a979-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"6\",\"title\":\"Labeling/unlabeling actions\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"7\",\"w\":16,\"x\":0,\"y\":0},\"id\":\"184df2f0-a99e-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"7\",\"title\":\"Projects\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"8\",\"w\":12,\"x\":24,\"y\":28},\"id\":\"db2edd70-a99e-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"8\",\"title\":\"Labelers\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"9\",\"w\":12,\"x\":12,\"y\":28},\"id\":\"00f14ed0-a99f-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"9\",\"title\":\"Unlabelers by Organization\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"10\",\"w\":20,\"x\":28,\"y\":0},\"id\":\"6840a530-a9a0-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"10\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"11\",\"w\":12,\"x\":16,\"y\":0},\"id\":\"36844b90-a9a1-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"11\",\"title\":\"Labels\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"12\",\"w\":12,\"x\":0,\"y\":28},\"id\":\"d1b0c340-a9a2-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"12\",\"title\":\"Labelers by Organization\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"13\",\"w\":12,\"x\":36,\"y\":28},\"id\":\"2d038430-a9a3-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"13\",\"title\":\"Unlabelers\",\"type\":\"visualization\",\"version\":\"6.8.6\"}]",
+            "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"h\":13,\"i\":\"6\",\"w\":48,\"x\":0,\"y\":39},\"id\":\"d36a7dd0-a979-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"6\",\"title\":\"Labeling/unlabeling actions\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"7\",\"w\":26,\"x\":22,\"y\":24},\"id\":\"184df2f0-a99e-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"7\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"8\",\"w\":12,\"x\":24,\"y\":52},\"id\":\"db2edd70-a99e-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"8\",\"title\":\"Labelers\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"9\",\"w\":12,\"x\":12,\"y\":52},\"id\":\"00f14ed0-a99f-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"9\",\"title\":\"Unlabelers by Organization\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":24,\"i\":\"10\",\"w\":20,\"x\":28,\"y\":0},\"id\":\"6840a530-a9a0-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"10\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"12\",\"w\":12,\"x\":0,\"y\":52},\"id\":\"d1b0c340-a9a2-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"12\",\"title\":\"Labelers by Organization\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"13\",\"w\":12,\"x\":36,\"y\":52},\"id\":\"2d038430-a9a3-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"13\",\"title\":\"Unlabelers\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"15\",\"w\":12,\"x\":0,\"y\":9},\"id\":\"ebb619c0-b163-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"15\",\"title\":\"Labels duration (in days)\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":15,\"i\":\"16\",\"w\":22,\"x\":0,\"y\":24},\"id\":\"e7599c70-b16e-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"16\",\"title\":\"Labels duration (in days) evolution\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":1,\"direction\":\"desc\"}}}},\"gridData\":{\"h\":24,\"i\":\"17\",\"w\":16,\"x\":12,\"y\":0},\"id\":\"92878010-c756-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"17\",\"title\":\"Current labels (ONLY FOR BROWSING)\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":9,\"i\":\"18\",\"w\":12,\"x\":0,\"y\":0},\"id\":\"741cb7b0-c758-11ea-b2a9-cfa8a0efe987\",\"panelIndex\":\"18\",\"title\":\"Selector\",\"type\":\"visualization\",\"version\":\"6.8.6\"}]",
             "refreshInterval": {
                 "pause": true,
                 "value": 0
             },
-            "release_date": "2020-06-11T08:32:58.106992",
+            "release_date": "2020-07-20T12:44:37.967449",
             "timeFrom": "now-1y",
             "timeRestore": true,
             "timeTo": "now",
@@ -59,23 +59,28 @@
                 "title": "github_closed_event_by_pulls",
                 "version": 1
             }
+        },
+        {
+            "id": "2a497d00-a721-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"type\":\"phrases\",\"key\":\"event_type\",\"value\":\"LabeledEvent, UnlabeledEvent\",\"params\":[\"LabeledEvent\",\"UnlabeledEvent\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"event_type\":\"LabeledEvent\"}},{\"match_phrase\":{\"event_type\":\"UnlabeledEvent\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+                },
+                "sort": [
+                    "grimoire_creation_date",
+                    "desc"
+                ],
+                "title": "github_label_unlabel_events",
+                "version": 1
+            }
         }
     ],
     "visualizations": [
-        {
-            "id": "d85c2550-a965-11ea-b2a9-cfa8a0efe987",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
-                },
-                "savedSearchId": "1025e3c0-a95e-11ea-b2a9-cfa8a0efe987",
-                "title": "github_labels_issue_time_enhanced",
-                "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}}",
-                "version": 1,
-                "visState": "{\"title\":\"github_labels_issue_time_enhanced\",\"type\":\"enhanced-table\",\"params\":{\"computedColsPerSplitCol\":false,\"computedColumns\":[{\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"datePattern\":\"MM DD HH:mm:ss.SSS\",\"enabled\":true,\"format\":\"number\",\"formula\":\"(col3 > 0 and col4 > 0) ? (col4 - col3)/(1000*60*60*24) : \\\"\\\"\",\"label\":\"Time to triage (days)\",\"pattern\":\"'0.00'\",\"template\":\"{{value}}\"},{\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"datePattern\":\"MMMM Do YYYY, HH:mm:ss.SSS\",\"enabled\":true,\"format\":\"number\",\"formula\":\"(col4 > 0 and col5 > 0) ? (col5 - col4)/(1000*60*60*24) : \\\"\\\"\",\"label\":\"Time to untriage (days)\",\"pattern\":\"'0.00'\",\"template\":\"{{value}}\"},{\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"datePattern\":\"MMMM Do YYYY, HH:mm:ss.SSS\",\"enabled\":true,\"format\":\"number\",\"formula\":\"(col4 > 0 and col6 > 0) ? (col6 - col4)/(1000*60*60*24) : \\\"\\\"\",\"label\":\"Time to process (days)\",\"pattern\":\"'0.00'\",\"template\":\"{{value}}\"},{\"alignment\":\"left\",\"applyAlignmentOnTitle\":true,\"applyAlignmentOnTotal\":true,\"applyTemplate\":false,\"applyTemplateOnTotal\":true,\"datePattern\":\"MMMM Do YYYY, HH:mm:ss.SSS\",\"enabled\":true,\"format\":\"number\",\"formula\":\"(col3 > 0 and col6 > 0) ? (col6 - col3)/(1000*60*60*24) : \\\"\\\"\",\"label\":\"Time to close (days)\",\"pattern\":\"'0.00'\",\"template\":\"{{value}}\"}],\"filterAsYouType\":true,\"filterBarHideable\":false,\"filterBarWidth\":\"25%\",\"filterCaseSensitive\":false,\"filterHighlightResults\":false,\"filterTermsSeparately\":false,\"hideExportLinks\":false,\"perPage\":10,\"showFilterBar\":true,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":8,\"direction\":\"desc\"},\"stripedRows\":false,\"totalFunc\":\"avg\"},\"aggs\":[{\"id\":\"9\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"painless_issue_url\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"6\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Issue\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"label\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"_key\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Label\"}},{\"id\":\"10\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"painless_custom_string\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"grimoire_creation_date\",\"sortOrder\":\"desc\",\"customLabel\":\"Issue Title\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"issue_created_at\",\"customLabel\":\"Opened\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"min_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"bucketAgg\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"LabeledEvent\\\"\"},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"grimoire_creation_date\"}},\"customLabel\":\"Triaged for first time\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"3-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"bucketAgg\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"UnlabeledEvent\\\"\"},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"3-metric\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"grimoire_creation_date\"}},\"customLabel\":\"Untriaged for last time\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"max_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"4-bucket\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"bucketAgg\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"ClosedEvent\\\"\"},\"label\":\"\"}]}},\"customMetric\":{\"id\":\"4-metric\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"grimoire_creation_date\",\"customLabel\":\"\"}},\"customLabel\":\"Closed\"}}]}"
-            }
-        },
         {
             "id": "d36a7dd0-a979-11ea-b2a9-cfa8a0efe987",
             "value": {
@@ -101,7 +106,7 @@
                 "title": "github_labels_projects",
                 "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null},\"config\":{\"searchKeyword\":\"\"}}}}",
                 "version": 1,
-                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Repositories\",\"field\":\"origin\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Issues\",\"field\":\"issue_url_id\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"3-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"LabeledEvent\\\"\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Labels added\",\"customMetric\":{\"enabled\":true,\"id\":\"3-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Projects\",\"field\":\"project\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"4-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"UnlabeledEvent\\\"\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Labels removed\",\"customMetric\":{\"enabled\":true,\"id\":\"4-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"}],\"params\":{\"perPage\":5,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"github_labels_projects\",\"type\":\"table\"}"
+                "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"5\",\"params\":{\"customLabel\":\"Repositories\",\"field\":\"origin\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"Total issues\",\"field\":\"issue_url_id\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"3-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"LabeledEvent\\\"\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Labels added\",\"customMetric\":{\"enabled\":true,\"id\":\"3-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"Projects\",\"field\":\"project\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":1000},\"schema\":\"bucket\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"4\",\"params\":{\"customBucket\":{\"enabled\":true,\"id\":\"4-bucket\",\"params\":{\"filters\":[{\"input\":{\"query\":\"event_type:\\\"UnlabeledEvent\\\"\"},\"label\":\"\"}]},\"schema\":{\"aggFilter\":[],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"bucketAgg\",\"params\":[],\"title\":\"Bucket Agg\"},\"type\":\"filters\"},\"customLabel\":\"Labels removed\",\"customMetric\":{\"enabled\":true,\"id\":\"4-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!sum_bucket\",\"!avg_bucket\",\"!min_bucket\",\"!max_bucket\",\"!derivative\",\"!moving_avg\",\"!serial_diff\",\"!cumulative_sum\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"}},\"schema\":\"metric\",\"type\":\"sum_bucket\"},{\"enabled\":true,\"id\":\"6\",\"params\":{\"customLabel\":\"Reporters\",\"field\":\"reporter_uuid\"},\"schema\":\"metric\",\"type\":\"cardinality\"},{\"enabled\":true,\"id\":\"7\",\"params\":{\"customLabel\":\"Labelers/Unlabelers\",\"field\":\"author_uuid\"},\"schema\":\"metric\",\"type\":\"cardinality\"}],\"params\":{\"perPage\":5,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"title\":\"github_labels_projects\",\"type\":\"table\"}"
             }
         },
         {
@@ -143,21 +148,7 @@
                 "title": "github_labels_text",
                 "uiStateJSON": "{}",
                 "version": 1,
-                "visState": "{\"title\":\"github_labels_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"#### Activity on labels\\n* **Projects** highlights statistics of the labels used on the different projects and repositories.\\n* **Pie charts** focus on the labels used and on the organizations and users adding and removing them.\\n* **Bar chart** shows the evolution of labeling and unlabeling actions.\\n* **Table** provides details about the activity on issues such as:\\n  - time to triage: from the issue creation until the first time a given label was added.\\n  - time to untriage: from the first time a label was added until the last time it was removed.\\n  - time to process: from the first time a label was added until the issue was closed.\\n  - time to close: from the creation of the issue until it was closed.\\n\\n[See complete dashboard documentation](https://chaoss.github.io/grimoirelab-sigils/panels/github-label-events)\",\"openLinksInNewTab\":false},\"aggs\":[]}"
-            }
-        },
-        {
-            "id": "36844b90-a9a1-11ea-b2a9-cfa8a0efe987",
-            "value": {
-                "description": "",
-                "kibanaSavedObjectMeta": {
-                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"event_type\",\"value\":\"LabeledEvent\",\"params\":{\"query\":\"LabeledEvent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"event_type\":{\"query\":\"LabeledEvent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
-                },
-                "savedSearchId": "1025e3c0-a95e-11ea-b2a9-cfa8a0efe987",
-                "title": "github_labels_pie",
-                "uiStateJSON": "{}",
-                "version": 1,
-                "visState": "{\"title\":\"github_labels_pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"label\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Others\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Labels\"}}]}"
+                "visState": "{\"title\":\"github_labels_text\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"#### Activity on labels\\n* **Selector** allows to focus on one or more labels.\\n* **Current labels** show the labels currently used in the project issues. It shouldn't be used for filtering labels.\\n* **Labels duration** shows the average time (in days) a label has been assigned to issues. It is worth noting that:\\n  - Closing events are not taken into account to compute the label durations. Thus, if a label is assigned to an issue and the issue is closed, there won't be any duration for that issue.\\n  - Partial times aren't taken into account. Thus, if a label is assigned and never unassigned to an issue, there won't be any duration for that issue.\\n  - When several labeling events occur one after another, with no unlabeling event among them, and then an unlabeling event occurs, the duration will be calculated from the unlabeling event to the most recent labeling one.\\n* **Summary** highlights statistics of the labels used on the different projects and repositories.\\n* **Labels duration evolution** shows the avg. time of the label duration on issues on monthly basis.\\n* **Labeling/unlabeling actions** shows the evolution of labeling and unlabeling actions.\\n* **Labelers/unlabelers charts** focus on the users/organizations adding and removing labels.\\n\\n[See complete dashboard documentation](https://chaoss.github.io/grimoirelab-sigils/panels/github-label-events)\",\"openLinksInNewTab\":false},\"aggs\":[]}"
             }
         },
         {
@@ -186,6 +177,61 @@
                 "uiStateJSON": "{}",
                 "version": 1,
                 "visState": "{\"title\":\"github_unlabels_users\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"actor_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Others\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Organizations\"}}]}"
+            }
+        },
+        {
+            "id": "ebb619c0-b163-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"event_type\",\"value\":\"ClosedEvent\",\"params\":{\"query\":\"ClosedEvent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"event_type\":{\"query\":\"ClosedEvent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+                },
+                "savedSearchId": "1025e3c0-a95e-11ea-b2a9-cfa8a0efe987",
+                "title": "github_labels_durations",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_labels_durations\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"label\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_key\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Labels\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_from_previous_event\",\"customLabel\":\"Avg. duration\"}}]}"
+            }
+        },
+        {
+            "id": "e7599c70-b16e-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "savedSearchId": "2a497d00-a721-11ea-b2a9-cfa8a0efe987",
+                "title": "github_labels_durations_evolution",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_labels_durations_evolution\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Avg. duration\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Avg. duration\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"duration_from_previous_event\",\"customLabel\":\"Avg. duration\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"useNormalizedEsInterval\":true,\"interval\":\"M\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}]}"
+            }
+        },
+        {
+            "id": "92878010-c756-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+                },
+                "savedSearchId": "1025e3c0-a95e-11ea-b2a9-cfa8a0efe987",
+                "title": "github_labels_in_use",
+                "uiStateJSON": "{\"vis\":{\"params\":{\"config\":{\"searchKeyword\":\"\"},\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}",
+                "version": 1,
+                "visState": "{\"title\":\"github_labels_in_use\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMetricsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"issue_labels\",\"size\":500,\"order\":\"desc\",\"orderBy\":\"_key\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Labels\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"issue_url_id\",\"customLabel\":\"Current issues\"}}]}"
+            }
+        },
+        {
+            "id": "741cb7b0-c758-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "github_label_selector",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"github_label_selector\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1594899281094\",\"indexPattern\":\"02ace270-7e66-11ea-b68b-31a1aa44b23a\",\"fieldName\":\"label\",\"parent\":\"\",\"label\":\"Labels\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}"
             }
         }
     ]
