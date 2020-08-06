@@ -45,3 +45,21 @@ From left to right and top to bottom, the metrics provided are:
   remained open.
 * **Jira repositories**: table with the activity per repository and the
   average time to close an issue.
+
+## Known Limitations
+
+To be able to properly calculate the time a given ticket has been in `open` state we need to relay on a painless
+scripted field called `painless_delay`. The idea behind the field is:
+
+* If the ticket is still open, `painless_delay` will be the time from its creation to now.
+* If it is already closed, `painless_delay` will be the time from its creation to the moment it was closed
+(`resolution_date`).
+
+Unfortunately, we found corner cases in which Jira doesn't provide all the information we need. The actual cases
+covered by `painless_delay` scripted field are:
+
+* `diff(grimoire_creation_date, resolution_date)`: If the issue is already closed, `resolution_date` exists,
+and `status` is `Close` or `Done`.
+* `time_to_close_days` (pre-computed field storing the time closed issues were open): If the issue is closed,
+`resolution_date` doesn't exist or status is not `Close` or `Done`.
+* `diff(grimoire_creation_date, now)`: If the issue is still open.
