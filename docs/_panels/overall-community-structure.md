@@ -53,3 +53,31 @@ to select the desired data source in the drop down list and click on
 `Apply changes`. **Data is meaningful only if one and only one data source** 
 is selected for filtering.
 
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`all_onion` index][onion-schema] is available on your GrimoireLab instance
+(see [how to configure grimoirelab-elk studies][elk-studies] and
+[grimoirelab-sirmordred documentation][sirmordred] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import all_onion-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import onion_overall.json
+```
+
+[onion-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/onion.csv
+[elk-studies]: https://github.com/chaoss/grimoirelab-elk/blob/master/doc/studies.md#running-studies-from-mordred 
+[sirmordred]: https://github.com/chaoss/grimoirelab-sirmordred#sirmordred-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/onion_overall.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/all_onion-index-pattern.json
