@@ -35,3 +35,30 @@ the average time the issue has been open (days), and the average the issue has b
 status, ticket/bug URL, and date of the creation.
 * **Oldest Issues**: a table separated by the summary of the tickets/bugs that details the projects, submitter,
 status, ticket/bug URL, date of the creation, and the time the ticket/bug stay open (days).
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`maniphest` index][maniphest-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-maniphest] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import maniphest-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import maniphest_timing.json
+```
+
+[maniphest-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/maniphest.csv
+[sirmordred-maniphest]: https://github.com/chaoss/grimoirelab-sirmordred#phabricator-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/maniphest-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/maniphest_timing.json
