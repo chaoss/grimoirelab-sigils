@@ -35,3 +35,30 @@ spent in closing changesets.
 
 Finally, a table on the right splits **Median Time to Merge** by repository,
 giving an insight on the differences among them.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`gerrit` index][gerrit-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-gerrit] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import gerrit-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import gerrit_efficiency.json
+```
+
+[gerrit-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/gerrit.csv
+[sirmordred-gerrit]: https://github.com/chaoss/grimoirelab-sirmordred#gerrit-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gerrit_efficiency.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gerrit-index-pattern.json
