@@ -40,3 +40,30 @@ and the average time the issue has been open (days).
 bug URL, bug id, and date of the creation.
 * **Oldest Issues**: a table separated by the title of the issues that details the product, submitter,
 bug URL, bug id, and date of the creation.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`bugzilla` index][bugzilla-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-bugzilla] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the 
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import bugzilla-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import bugzilla_timing.json
+```
+
+[bugzilla-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/bugzilla.csv
+[sirmordred-bugzilla]: https://github.com/chaoss/grimoirelab-sirmordred#bugzilla-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/bugzilla_timing.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/bugzilla-index-pattern.json
