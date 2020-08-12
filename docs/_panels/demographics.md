@@ -71,3 +71,31 @@ provokes that the information for such developer for her first commit took
 place in 1970, and this is clearly wrong. Those contributions should be ignored or
 updated to a real timeframe of activity at some point. If you see this behaviour
 in the dashboard, please report this as a bug.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check `demographics` index is available on your GrimoireLab instance
+([grimoirelab-elk][elk-studies] automatically creates this alias for you when the corresponding study is set
+to active in [grimoirelab-sirmordred][sirmordred-studies]).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import demographics-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import demographics.json
+```
+
+[elk-studies]: https://github.com/chaoss/grimoirelab-elk/blob/master/doc/studies.md#running-studies-from-mordred
+[sirmordred-studies]: https://github.com/chaoss/grimoirelab-sirmordred#backend-nametag-tag-is-optional
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/demographics.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/demographics-index-pattern.json
