@@ -28,7 +28,7 @@ The new widgets are described below.
 ### Getting sentiment and emotion data
 
 Sentiment and emotion data is obtained via the CROSS-NLP-REST-API tool. Details about how to execute it in combination with
-GrimoireLab are available in the [GrimoireLab repository](https://github.com/chaoss/grimoirelab/tree/master/third-party#docker-image-cross-nlp-rest-api).
+GrimoireLab are available in the [GrimoireLab repository][sentiment].
 
 The fields that can be used to aggregate sentiment and emotion data are the followings:
 
@@ -36,3 +36,32 @@ The fields that can be used to aggregate sentiment and emotion data are the foll
 * **has_sentiment**: 0 if the sentiment has been extracted yet from the comment, 1 otherwise
 * **feeling_emotion**: Label of the emotion
 * **feeling_sentiment**: Label of the sentiment
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`github2_issues` index][github2_issues-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-github2_issues] and [how to configure
+third party stuff to add sentiment and emotion][sentiment] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import github2_issues-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import github2_issues_comments_feelings.json
+```
+
+[sentiment]: https://github.com/chaoss/grimoirelab/tree/master/third-party#docker-image-cross-nlp-rest-api
+[github2_issues-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github2_issues.csv
+[sirmordred-github2_issues]: https://github.com/chaoss/grimoirelab-sirmordred#github2-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_issues-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_issues_comments_feelings.json

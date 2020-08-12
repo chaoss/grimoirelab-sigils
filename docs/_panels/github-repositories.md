@@ -50,3 +50,30 @@ a different type of items (events) where these values will be available.
 indicator because more than that, will make the visualization illegible.
 
 * Evolution visualizations set periods of **1 month** for one value to another.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`github_repositories` index][github_repositories-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-github_repositories] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import github_repositories-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import github_repositories.json
+```
+
+[github_repositories-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github_repos.csv
+[sirmordred-github_repositories]: https://github.com/chaoss/grimoirelab-sirmordred#repo
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_repositories-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_repositories.json
