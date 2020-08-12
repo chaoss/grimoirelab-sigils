@@ -61,7 +61,7 @@ corresponding to the following subtypes:
  * `bot_message`
  * `bot_add`
  
- ### Acknowledgments
+### Acknowledgments
 
 We would like to thank Frances Chao-Gay and 
 [Benny Vasquez](https://github.com/bennyvasquez) from [chef.io](https://www.chef.io/) 
@@ -72,3 +72,30 @@ the work done.
 We had also the opportunity of discussing the use case with Benny during one of our
 bi-weekly CHAOSS-GrimoireLab calls, 
 [publicly available on YouTube](https://www.youtube.com/watch?v=sWyHzCVz8e0). 
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`slack` index][slack-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-slack] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import slack-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import slack_devrel.json
+```
+
+[slack-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/slack.csv
+[sirmordred-slack]: https://github.com/chaoss/grimoirelab-sirmordred#slack-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/slack-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/slack_devrel.json
