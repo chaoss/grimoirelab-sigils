@@ -28,3 +28,30 @@ the for selected time range.
 * **Users reading messages daily** shows the average number of users reading messages daily.
 * **Top mentioned users/pull requests/issues** shows the respective most mentioned field in the messages over the selected time zone.
 * **Messages sent per hour** shows the most active hours, when the most messages are sent in a day.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`gitter` index][gitter-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-gitter] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import gitter-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import gitter.json
+```
+
+[gitter-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/gitter.csv
+[sirmordred-gitter]: https://github.com/chaoss/grimoirelab-sirmordred#gitter-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gitter-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gitter.json
