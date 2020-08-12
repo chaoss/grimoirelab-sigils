@@ -35,6 +35,29 @@ We had also the opportunity of discussing the use case with Benny during one of 
 bi-weekly CHAOSS-GrimoireLab calls, 
 [publicly available on YouTube](https://www.youtube.com/watch?v=sWyHzCVz8e0). 
 
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`discourse` index][discourse-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-discourse] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
 
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
 
+<br />
 
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import discourse-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import discourse.json
+```
+
+[discourse-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/discourse.csv
+[sirmordred-discourse]: https://github.com/chaoss/grimoirelab-sirmordred#discourse-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/discourse.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/discourse-index-pattern.json
