@@ -33,7 +33,7 @@ the collaboration is**.
     * +1: number of `+1` reactions received by pull requests or comments created by that person.
     * +1 Ratio: result of dividing the previous value by the total count of pull requests and comments
      created by that person.
-    * Reactions Ratio: same as `1 Ratio` but for all kind of reactions. Useful to compare to `+1 Ratio`
+    * Reactions Ratio: same as `+1 Ratio` but for all kind of reactions. Useful to compare to `+1 Ratio`
         and thus analyze the impact of people's contributions. 
 * **Repositories**: same as **People** table but split by repository.
 * **Projects**:  same as **People** table but split by project.
@@ -45,13 +45,13 @@ what could be considered as a side use case.
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of an alias ([github2_pull_requests]) that combines two separate physical
+This dashboard is built on top of an alias ([github2_pull_requests][github2_pull_requests-schema]) that combines two separate physical
 indexes that store GitHub Issues in one case and GitHub Pull Requests in the other. To better
 understand why this is needed, let's explain some details about how GitHub data looks like:
  * Comments corresponding to pull requests in the **issues index** are regular comments in the pull requests
    threads, while those coming from the **pull requests index** are reviews. We need to get both of them to
    analyze all the activity around a given pull request.
- * The [github2_pull_requests] index is actually a filtered alias to show data from issues corresponding to
+ * The [github2_pull_requests][github2_pull_requests-schema] index is actually a filtered alias to show data from issues corresponding to
    pull requests and data from the pull requests themselves.
  * In the GitHub API everything are issues, even pull requests. That means any pull request will appear once
    in the **issues index** and another in the **pull requests index**.
@@ -72,4 +72,29 @@ The fields that can be used to aggregate data from both issues and pull requests
 * `issue_id_in_repo`: this works only at repo level as they are unique by repo only. As pull requests are
    issues too, they also contain this id.
 
-[github2_pull_requests]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_pull_requests.csv
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`github2_pull_requests` index][github2_pull_requests-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-github2_pull_requests] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import github2_pull_requests-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import github2_pull_requests_comments_and_collaboration.json
+```
+
+[github2_pull_requests-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github2_pull_requests.csv
+[sirmordred-github2_pull_requests]: https://github.com/chaoss/grimoirelab-sirmordred#github2-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_pull_requests-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_pull_requests_comments_and_collaboration.json

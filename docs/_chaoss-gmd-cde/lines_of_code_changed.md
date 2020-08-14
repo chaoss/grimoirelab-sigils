@@ -51,3 +51,30 @@ Finally, a short text is shown at the bottom to explain the basics needed to und
 ### How to import this panel into your GrimoireLab instance
 
 Please follow [instructions at the Contributing file in the Sigils repository](https://github.com/chaoss/grimoirelab-sigils/blob/master/CONTRIBUTING.md#importing-panels).
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`git` index][git-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-git] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import git-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import lines_of_code_changed.json
+```
+
+[git-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/git.csv
+[sirmordred-git]: https://github.com/chaoss/grimoirelab-sirmordred#git-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/chaoss-gmd-cde/git-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/chaoss-gmd-cde/lines_of_code_changed.json

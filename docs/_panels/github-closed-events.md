@@ -20,7 +20,7 @@ are derived from the close events returned by the GitHub API. The widgets in the
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of a search on [github_events] index which includes the closing events by pull 
+This dashboard is built on top of a search on [`github_events`][github_events-schema] index which includes the closing events by pull 
 requests. The generation of such events is described below. 
 
 When a pull request references a keyword (e.g., fixes, closes, resolves) and issue number, GitHub creates an 
@@ -31,4 +31,29 @@ By default, the closed event includes the author that triggered the action (e.g.
 During the enrichment process, the issue reporter and pull request submitter are also added to the enriched 
 items (attributes `reporter_*` and `submitter_*`).   
 
-[github_events]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github_events.csv
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`github_events` index][github_events-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-github_events] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import github_events-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import github_events_closed.json
+```
+
+[github_events-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github_events.csv
+[sirmordred-github_events]: https://github.com/chaoss/grimoirelab-sirmordred#githubql-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_events_closed.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_events-index-pattern.json

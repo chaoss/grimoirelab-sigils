@@ -36,3 +36,30 @@ spent in solving merge requests.
 
 Finally, a table on the right splits **Median Time to Solve** by repository,
 giving an insight on the differences among them.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`gitlab_merge_requests` index][gitlab_merge_requests-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-gitlab_merge_requests] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import gitlab_merge_requests-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import gitlab_merge_requests_efficiency.json
+```
+
+[gitlab_merge_requests-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/gitlab_merges.csv
+[sirmordred-gitlab_merge_requests]: https://github.com/chaoss/grimoirelab-sirmordred#gitlab-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gitlab_merge_requests-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gitlab_merge_requests_efficiency.json

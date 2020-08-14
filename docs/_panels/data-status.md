@@ -37,3 +37,31 @@ Brief description of what used fields should contain:
 
 Example:
 An item that was created in git on 2014-10-21 and it is recovered and indexed today in our system will have 2014-10-21 stored in `metadata__updated_on` and today's date in `metadata__timestamp`. Here we show simplified dates, as you can see in Data Status Panel we are storing dates with milliseconds precision.
+
+### Files
+This is a special dashboard that contains visualizations for all the different data sources available
+in GrimoireLab. **[Grimoirelab-sirmordred][sirmordred] uploads it by default and removes all the
+visualizations corresponding to the data sources that aren't active**.
+
+**In case you want to upload it manually**, you'll need to remove those visualizations afterwards.
+ 
+Just Import the following JSON file using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/)
+and make sure the index patterns for the data sources you are interested in are in place on Kibana.
+
+| [![Dashboard][dash-icon]][dashboard] |
+| :-------------: |
+| **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import data_status.json
+```
+
+[sirmordred]: https://github.com/chaoss/grimoirelab-sirmordred#sirmordred-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/data_status.json

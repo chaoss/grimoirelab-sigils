@@ -1,22 +1,24 @@
 ---
-title: GitHub Pull Requests
-description: activity and community metrics focused on Pull Requests.
+title: GitHub Pull Requests Backlog
+description: focused on pending (open) tasks.
 author: Bitergia
-screenshot: sigils/github-pullrequests.png
+screenshot: sigils/github-pullrequests-backlog.png
 created_at: 
 grimoirelab_version: 0.2.0
 layout: panel
 ---
 
-GitHub Pull Requests panels show information related to how community evolves in terms
-of submitters, domains and activity.
+This panel focuses on pending tasks, that is, those Pull Requests
+that remain open. Of course this depends on when we retrieved the
+data. [Grimoirelab-sirmordred documentation][sirmordred-github_pullrequests]
+provides information on how to configure data retrieval.
 
-These panels show activity by domains and repositories. Each pull request has a creation
-date and closing date, and of course a state (open or closed). We measure
-activity based on the amount of tickets created over time and their states.
+It is possible to filter data in the same way as in other GitHub panels
+(by submitter, repository and domain).
 
-This way, we can filter to get activity information related to a given submitter,
-domain or/and repository.
+A list with the oldest Pull Requests is also shown, providing direct
+links to them and some basic information as their titles, how long they have
+been open, and when they were created.
 
 ### Files
 To use this dashboard with your own GrimoireLab deployment you need to:
@@ -35,12 +37,12 @@ Once you have the data in place, if you need to manually upload the dashboard ex
 following commands:
 ```
 kidash -e https://user:pass@localhost:443/data --import github_issues-index-pattern.json
-kidash -e https://user:pass@localhost:443/data --import github_pull_requests.json
+kidash -e https://user:pass@localhost:443/data --import github_pull_requests_backlog.json
 ```
 
 [github_issues-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github_issues.csv
 [sirmordred-github_pullrequests]: https://github.com/chaoss/grimoirelab-sirmordred#pull-request
 [dash-icon]: ../assets/images/icons/dashboard.png
 [ip-icon]: ../assets/images/icons/file-ruled.png
-[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_pull_requests.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_pull_requests_backlog.json
 [index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github_issues-index-pattern.json

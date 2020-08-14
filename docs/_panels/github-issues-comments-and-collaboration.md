@@ -42,9 +42,34 @@ what could be considered as a side use case.
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of [github2_issues] index. It is worth to mention that in GitHub everything
+This dashboard is built on top of [github2_issues][github2_issues-schema] index. It is worth to mention that in GitHub everything
 are issues, even pull requests, so issues corresponding to pull requests will appear in this index too.
 To avoid counting them as issues, we filter out pull requests by means of a filter
 named `Not Pull Requests` placed on top of the dashboard.
 
-[github2_issues]: https://github.com/chaoss/grimoirelab-elk/tree/master/schema/github2_issues.csv
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`github2_issues` index][github2_issues-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-github2_issues] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import github2_issues-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import github2_issues_comments_and_collaboration.json
+```
+
+[github2_issues-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/github2_issues.csv
+[sirmordred-github2_issues]: https://github.com/chaoss/grimoirelab-sirmordred#github2-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_issues-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/github2_issues_comments_and_collaboration.json

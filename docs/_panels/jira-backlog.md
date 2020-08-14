@@ -1,5 +1,5 @@
 ---
-title: Bugzilla Backlog
+title: Jira Backlog
 description: focused on pending (open) issues.
 author: Bitergia
 screenshot: sigils/jira-backlog.png
@@ -55,3 +55,30 @@ and `status` is `Close` or `Done`.
 * `time_to_close_days` (pre-computed field storing the time closed issues were open): If the issue is closed,
 `resolution_date` doesn't exist or status is not `Close` or `Done`.
 * `diff(grimoire_creation_date, now)`: If the issue is still open.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`jira` index][jira-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-jira] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import jira-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import jira_backlog.json
+```
+
+[jira-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/jira.csv
+[sirmordred-jira]: https://github.com/chaoss/grimoirelab-sirmordred#jira-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/jira-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/jira_backlog.json

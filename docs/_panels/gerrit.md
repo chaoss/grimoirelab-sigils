@@ -21,3 +21,30 @@ This dashboard focuses on metrics derived from Gerrit changesets, thus it shows 
 * **Organizations**: a bar chart that shows the evolution of the number of changesets per organizations.
 * **Submitters**: a table that reports the number of changesets, projects and average number of patchsets per submitter.
 * **Patchsets per Changeset**: a bar chart that shows the evolution of the number of patchsets included in changesets.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`gerrit` index][gerrit-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-gerrit] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Pattern** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import gerrit-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import gerrit.json
+```
+
+[gerrit-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/gerrit.csv
+[sirmordred-gerrit]: https://github.com/chaoss/grimoirelab-sirmordred#gerrit-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gerrit.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/gerrit-index-pattern.json

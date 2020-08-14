@@ -27,4 +27,36 @@ Details about how to execute with GrimoireLab are available in the [Sirmordred r
 
 ### Building the Dashboard: details about Index and Fields
 
-This dashboard is built on top of the [docker_deps](https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_deps.csv) and [docker_smells](https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_smells.csv) indexes.
+This dashboard is built on top of the [dockerdeps](https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_deps.csv) and [dockersmells](https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_smells.csv) indexes.
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`dockerdeps` index][dockerdeps-schema] and [`dockersmells` index][dockersmells-schema] are available
+on your GrimoireLab instance (see [grimoirelab-sirmordred dockerdeps][sirmordred-dockerdeps] and
+[grimoirelab-sirmordred dockersmells][sirmordred-dockersmells] for details on how to deploy it).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern] [![Index Pattern][ip-icon]][index-pattern-2] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Patterns** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import docker_deps-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import docker_smells-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import docker.json
+```
+
+[dockerdeps-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_deps.csv
+[dockersmells-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/docker_smells.csv
+[sirmordred-dockerdeps]: https://github.com/chaoss/grimoirelab-sirmordred#dockerdeps-
+[sirmordred-dockersmells]: https://github.com/chaoss/grimoirelab-sirmordred#dockersmells-
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/docker.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/docker_deps-index-pattern.json
+[index-pattern-2]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/docker_smells-index-pattern.json

@@ -57,3 +57,36 @@ and `status` is `Close` or `Done`.
 * `time_to_close_days` (pre-computed field storing the time closed issues were open): If the issue is closed,
 `resolution_date` doesn't exist or status is not `Close` or `Done`.
 * `diff(grimoire_creation_date, now)`: If the issue is still open.
+
+
+### Files
+To use this dashboard with your own GrimoireLab deployment you need to:
+* Check [`jira` index][jira-schema] is available on your GrimoireLab instance
+(see [grimoirelab-sirmordred documentation][sirmordred-jira] for details on how to deploy it).
+* Check `jira_resolution_date-index-pattern` index is available on your GrimoireLab instance
+([grimoirelab-sirmordred][sirmordred-general] automatically creates this alias for you).
+* Import the following JSON files using [Kidash tool](https://github.com/chaoss/grimoirelab-kidash/).
+
+| [![Index Pattern][ip-icon]][index-pattern-1][![Index Pattern][ip-icon]][index-pattern-2] | | [![Dashboard][dash-icon]][dashboard] |
+| :---------: | ---------- | :-------------: |
+| **Index Patterns** | ----- | **Dashboard** |
+
+<br />
+
+#### Command line instructions
+Once you have the data in place, if you need to manually upload the dashboard execute the
+following commands:
+```
+kidash -e https://user:pass@localhost:443/data --import jira-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import jira_resolution_date-index-pattern.json
+kidash -e https://user:pass@localhost:443/data --import jira_timing.json
+```
+
+[jira-schema]: https://github.com/chaoss/grimoirelab-elk/blob/master/schema/jira.csv
+[sirmordred-jira]: https://github.com/chaoss/grimoirelab-sirmordred#jira-
+[sirmordred-general]: https://github.com/chaoss/grimoirelab-sirmordred#general
+[dash-icon]: ../assets/images/icons/dashboard.png
+[ip-icon]: ../assets/images/icons/file-ruled.png
+[index-pattern-1]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/jira-index-pattern.json
+[index-pattern-2]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/jira_resolution_date-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/jira_timing.json
