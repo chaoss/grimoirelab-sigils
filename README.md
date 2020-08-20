@@ -183,12 +183,15 @@ More information at the [Schema](https://github.com/chaoss/grimoirelab-elk/tree/
 How this info was retrieved
 ---------------------------
 
-These json files were retrieved taking advantage of the toolchain provided in the grimoirelab project in GitHub. Specifically the script GrimoireELK/utils/kidash.py.
+These json files were retrieved using [Kidash](https://github.com/chaoss/grimoirelab-kidash).
 
 Example of how to run this:
 
 ```
+$ kidash -g -e <elasticsearch-url> --dashboard <dashboard-id>* --export <local-file-path> --split-index-patterns
 
- $ ./kidash.py -e https://<user>:<password>@<domain>:443/<path>/ --dashboard <dashboard_name> --export <export_path>/<file_name>.json
-
+example: 
+$ kidash -g -e https://admin:admin@localhost:9200 --dashboard overview --export overview.json --split-index-patterns
 ```
+
+More information: [Kidash - Usage](https://github.com/chaoss/grimoirelab-kidash#usage).
