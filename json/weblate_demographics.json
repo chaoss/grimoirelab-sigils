@@ -1,0 +1,144 @@
+{
+    "dashboard": {
+        "id": "662f75f0-0a2b-11eb-b2a9-cfa8a0efe987",
+        "value": {
+            "description": "Weblate Demographics dashboard by Bitergia",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+            },
+            "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+            "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":10,\"h\":8,\"i\":\"1\"},\"id\":\"d4680040-0a27-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"1\",\"title\":\"Summary\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":8,\"w\":20,\"h\":14,\"i\":\"3\"},\"id\":\"5ca53580-0a29-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"title\":\"People Leaving\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":20,\"y\":8,\"w\":28,\"h\":14,\"i\":\"4\"},\"id\":\"7cc68020-0a2a-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"title\":\"Contributors getting inactive\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":22,\"w\":20,\"h\":14,\"i\":\"5\"},\"id\":\"b50d0b80-0a29-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"title\":\"Attracted contributors\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":20,\"y\":22,\"w\":28,\"h\":14,\"i\":\"6\"},\"id\":\"c0900420-0a2a-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"title\":\"Last attracted contributors\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":36,\"w\":48,\"h\":14,\"i\":\"7\"},\"id\":\"d2d29dc0-0a28-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.6\",\"title\":\"Projects\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":50,\"w\":48,\"h\":11,\"i\":\"8\"},\"id\":\"4931eca0-0a42-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"8\",\"title\":\"Demographics\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":10,\"y\":0,\"w\":16,\"h\":8,\"i\":\"9\"},\"id\":\"2a47ad90-09a0-11eb-b2a9-cfa8a0efe987\",\"panelIndex\":\"9\",\"title\":\"Projects and components\",\"type\":\"visualization\",\"version\":\"6.8.6\"},{\"gridData\":{\"x\":26,\"y\":0,\"w\":22,\"h\":8,\"i\":\"10\"},\"version\":\"6.8.6\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"id\":\"c077fe90-0a46-11eb-b2a9-cfa8a0efe987\",\"embeddableConfig\":{},\"title\":\"Contributions\"}]",
+            "refreshInterval": {
+                "pause": true,
+                "value": 0
+            },
+            "release_date": "2020-10-09T15:51:43.792749",
+            "timeFrom": "now-10y",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Weblate Demographics",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "d4680040-0a27-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_summary",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_summary\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"addTooltip\": true,\n    \"addLegend\": false,\n    \"type\": \"metric\",\n    \"metric\": {\n      \"percentageMode\": false,\n      \"useRanges\": false,\n      \"colorSchema\": \"Green to Red\",\n      \"metricColorMode\": \"None\",\n      \"colorsRange\": [\n        {\n          \"from\": 0,\n          \"to\": 10000\n        }\n      ],\n      \"labels\": {\n        \"show\": true\n      },\n      \"invertColors\": false,\n      \"style\": {\n        \"bgFill\": \"#000\",\n        \"bgColor\": false,\n        \"labelColor\": false,\n        \"subText\": \"\",\n        \"fontSize\": 15\n      }\n    }\n  },\n  \"aggs\": [\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Authors\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"unit_api_url\",\n        \"customLabel\": \"# Units\"\n      }\n    },\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"# Total contributions\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "5ca53580-0a29-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_histogram_contributors_getting_inactive",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_histogram_contributors_getting_inactive\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"type\": \"histogram\",\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"truncate\": 100\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"normal\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"Contributors Getting Inactive\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": \"true\",\n        \"type\": \"histogram\",\n        \"mode\": \"stacked\",\n        \"data\": {\n          \"label\": \"Contributors Getting Inactive\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"Contributors Getting Inactive\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"demography_max_date\",\n        \"useNormalizedEsInterval\": true,\n        \"interval\": \"M\",\n        \"drop_partials\": false,\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "7cc68020-0a2a-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_people_leaving_community",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": null,\n        \"direction\": null\n      },\n      \"config\": {\n        \"searchKeyword\": \"\"\n      }\n    }\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_people_leaving_community\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 5,\n    \"showPartialRows\": false,\n    \"showMetricsAtAllLevels\": false,\n    \"sort\": {\n      \"columnIndex\": null,\n      \"direction\": null\n    },\n    \"showTotal\": false,\n    \"totalFunc\": \"sum\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"demography_max_date\",\n        \"customLabel\": \"Last contribution date\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Contributions\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"date_range\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"demography_max_date\",\n        \"ranges\": [\n          {\n            \"from\": \"now-6M\",\n            \"to\": \"now-3M\"\n          }\n        ],\n        \"customLabel\": \"Period of getting inactive (last contrib 3 months ago)\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_name\",\n        \"size\": 30,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Author\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "b50d0b80-0a29-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_histogram_attracted_contributors",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_histogram_attracted_contributors\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"type\": \"histogram\",\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"truncate\": 100\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"normal\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"Attracted Contributors\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": \"true\",\n        \"type\": \"histogram\",\n        \"mode\": \"stacked\",\n        \"data\": {\n          \"label\": \"Attracted Contributors\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"Attracted Contributors\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"demography_min_date\",\n        \"useNormalizedEsInterval\": true,\n        \"interval\": \"M\",\n        \"drop_partials\": false,\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {},\n        \"customLabel\": \"Time\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "c0900420-0a2a-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_table_newcomers",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": 1,\n        \"direction\": \"desc\"\n      },\n      \"config\": {\n        \"searchKeyword\": \"\"\n      }\n    }\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_table_newcomers\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 5,\n    \"showPartialRows\": false,\n    \"showMetricsAtAllLevels\": false,\n    \"sort\": {\n      \"columnIndex\": 1,\n      \"direction\": \"desc\"\n    },\n    \"showTotal\": false,\n    \"totalFunc\": \"sum\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"demography_min_date\",\n        \"customLabel\": \"First contribution date\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Contributions\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_name\",\n        \"size\": 30,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Author\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "d2d29dc0-0a28-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "weblate_demographics_table_contributors_per_project",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": null,\n        \"direction\": null\n      },\n      \"config\": {\n        \"searchKeyword\": \"\"\n      }\n    }\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"weblate_demographics_table_contributors_per_project\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 5,\n    \"showPartialRows\": false,\n    \"showMetricsAtAllLevels\": false,\n    \"sort\": {\n      \"columnIndex\": null,\n      \"direction\": null\n    },\n    \"showTotal\": false,\n    \"totalFunc\": \"sum\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"project_name\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Project name\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"component_name\",\n        \"customLabel\": \"# Components\"\n      }\n    },\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"# Contributors\"\n      }\n    },\n    {\n      \"id\": \"6\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"# Contributions\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"enabled\": true,\n      \"type\": \"min\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"customLabel\": \"First contribution\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"enabled\": true,\n      \"type\": \"max\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"grimoire_creation_date\",\n        \"customLabel\": \"Last contribution\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "4931eca0-0a42-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "weblate_demographics_markdown",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"weblate_demographics_markdown\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"This panel shows **the history of contributors active in last 10 years** focused on the first and last contribution of each person.\\n\\n**WARNING**: Pre-computed data displayed. Dynamic filters like time picker won't work as expected.\\n\\nClick on bars at the bar charts to filter:\\n* If clicking on `Attracted Contributors` you will get a view based on them that allows you to know where they made their last contribution.\\n* If clicking on `People Leaving` you will get a view based on them that allows you to know where they were attracted to the community.\\n\\nFor more information, please read [panel documentation page](https://chaoss.github.io/grimoirelab-sigils/panels/weblate-demographics/).\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "2a47ad90-09a0-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "weblate_controls_project_component",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"weblate_controls_project_component\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1602186813869\",\"indexPattern\":\"d35b9b60-094d-11eb-b2a9-cfa8a0efe987\",\"fieldName\":\"project_name\",\"parent\":\"\",\"label\":\"Project name\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"dynamicOptions\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1602186845120\",\"indexPattern\":\"d35b9b60-094d-11eb-b2a9-cfa8a0efe987\",\"fieldName\":\"component_name\",\"parent\":\"1602186813869\",\"label\":\"Component name\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"dynamicOptions\":false,\"size\":10000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "c077fe90-0a46-11eb-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"4c2b92b0-0a44-11eb-b2a9-cfa8a0efe987\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "weblate_demographics_histogram_contributions",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"weblate_demographics_histogram_contributions\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Contributions\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Contributions\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Contributions\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"grimoire_creation_date\",\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}]}"
+            }
+        }
+    ]
+}
