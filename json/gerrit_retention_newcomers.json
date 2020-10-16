@@ -1,0 +1,144 @@
+{
+    "dashboard": {
+        "id": "7663a1e0-e16c-11ea-b2a9-cfa8a0efe987",
+        "value": {
+            "description": "This dashboard shows information about Gerrit contributors (newcomers) and their activity.",
+            "hits": 0,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": \"Bots\",\n        \"disabled\": false,\n        \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n        \"key\": \"author_bot\",\n        \"negate\": true,\n        \"params\": {\n          \"query\": true,\n          \"type\": \"phrase\"\n        },\n        \"type\": \"phrase\",\n        \"value\": \"true\"\n      },\n      \"query\": {\n        \"match\": {\n          \"author_bot\": {\n            \"query\": true,\n            \"type\": \"phrase\"\n          }\n        }\n      }\n    },\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": \"Active newcomers only\",\n        \"disabled\": true,\n        \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n        \"key\": \"query\",\n        \"negate\": false,\n        \"type\": \"query_string\",\n        \"value\": \"demography_max_date:>now-90d\"\n      },\n      \"query\": {\n        \"query_string\": {\n          \"analyze_wildcard\": true,\n          \"default_field\": \"*\",\n          \"query\": \"demography_max_date:>now-90d\"\n        }\n      }\n    },\n    {\n      \"$state\": {\n        \"store\": \"appState\"\n      },\n      \"meta\": {\n        \"alias\": \"Leaving newcomers only\",\n        \"disabled\": true,\n        \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n        \"key\": \"query\",\n        \"negate\": false,\n        \"type\": \"query_string\",\n        \"value\": \"demography_max_date:<=now-90d\"\n      },\n      \"query\": {\n        \"query_string\": {\n          \"analyze_wildcard\": true,\n          \"default_field\": \"*\",\n          \"query\": \"demography_max_date:<=now-90d\"\n        }\n      }\n    }\n  ]\n}"
+            },
+            "optionsJSON": "{\n  \"darkTheme\": false,\n  \"hidePanelTitles\": false,\n  \"useMargins\": true\n}",
+            "panelsJSON": "[\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 18,\n      \"i\": \"1\",\n      \"w\": 17,\n      \"x\": 0,\n      \"y\": 11\n    },\n    \"id\": \"34beb2f0-e169-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"1\",\n    \"title\": \"Type of Gerrit contribution\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 11,\n      \"i\": \"2\",\n      \"w\": 17,\n      \"x\": 0,\n      \"y\": 0\n    },\n    \"id\": \"49d4a5c0-e144-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"2\",\n    \"title\": \"Retention rate for newcomers (number of contributors)\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {\n      \"vis\": {\n        \"params\": {\n          \"sort\": {\n            \"columnIndex\": 3,\n            \"direction\": \"desc\"\n          }\n        }\n      }\n    },\n    \"gridData\": {\n      \"h\": 20,\n      \"i\": \"3\",\n      \"w\": 31,\n      \"x\": 17,\n      \"y\": 9\n    },\n    \"id\": \"a5323920-e165-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"3\",\n    \"title\": \"Contributions per author\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 9,\n      \"i\": \"7\",\n      \"w\": 16,\n      \"x\": 32,\n      \"y\": 0\n    },\n    \"id\": \"3b1bb060-e1fc-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"7\",\n    \"title\": \"Number of contributions per Organization\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 9,\n      \"i\": \"8\",\n      \"w\": 15,\n      \"x\": 17,\n      \"y\": 0\n    },\n    \"id\": \"c84be020-e1fe-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"8\",\n    \"title\": \"Retention rate for newcomers per Organization\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 16,\n      \"i\": \"10\",\n      \"w\": 15,\n      \"x\": 0,\n      \"y\": 32\n    },\n    \"id\": \"680d7d70-e25a-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"10\",\n    \"title\": \"\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 16,\n      \"i\": \"11\",\n      \"w\": 16,\n      \"x\": 15,\n      \"y\": 32\n    },\n    \"id\": \"0769ffb0-e25b-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"11\",\n    \"title\": \"\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 16,\n      \"i\": \"12\",\n      \"w\": 17,\n      \"x\": 31,\n      \"y\": 32\n    },\n    \"id\": \"71f2f2b0-e25b-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"12\",\n    \"title\": \"\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  },\n  {\n    \"embeddableConfig\": {},\n    \"gridData\": {\n      \"h\": 3,\n      \"i\": \"13\",\n      \"w\": 48,\n      \"x\": 0,\n      \"y\": 29\n    },\n    \"id\": \"5e67d050-e259-11ea-b2a9-cfa8a0efe987\",\n    \"panelIndex\": \"13\",\n    \"title\": \"\",\n    \"type\": \"visualization\",\n    \"version\": \"6.8.6\"\n  }\n]",
+            "refreshInterval": {
+                "pause": true,
+                "value": 0
+            },
+            "release_date": "2020-10-15T22:38:09.325661",
+            "timeFrom": "now-9M",
+            "timeRestore": true,
+            "timeTo": "now",
+            "title": "Gerrit Retention of Newcomers",
+            "version": 1
+        }
+    },
+    "searches": [],
+    "visualizations": [
+        {
+            "id": "34beb2f0-e169-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "gerrit_newcomers_radar_contribution_type",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_newcomers_radar_contribution_type\",\n  \"type\": \"radar\",\n  \"params\": {\n    \"normalize\": false,\n    \"vertexScale\": {\n      \"from\": 0,\n      \"to\": 5\n    }\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"sum\",\n      \"schema\": \"vertex\",\n      \"params\": {\n        \"field\": \"is_gerrit_approval\",\n        \"customLabel\": \"# Approvals\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"filters\",\n      \"schema\": \"field\",\n      \"params\": {\n        \"filters\": [\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:>now-90d\"\n            },\n            \"label\": \"Last 90 days\"\n          },\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:<=now-90d AND grimoire_creation_date:>=now-180d\"\n            },\n            \"label\": \"Between 90 to 180 days ago\"\n          },\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:<=now-180d AND grimoire_creation_date:>=now-270d\"\n            },\n            \"label\": \"Between 180 to 270 days ago\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"sum\",\n      \"schema\": \"vertex\",\n      \"params\": {\n        \"field\": \"is_gerrit_changeset\",\n        \"customLabel\": \"# Changesets\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"enabled\": true,\n      \"type\": \"sum\",\n      \"schema\": \"vertex\",\n      \"params\": {\n        \"field\": \"is_gerrit_comment\",\n        \"customLabel\": \"# Comments\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"enabled\": true,\n      \"type\": \"sum\",\n      \"schema\": \"vertex\",\n      \"params\": {\n        \"field\": \"is_gerrit_patchset\",\n        \"customLabel\": \"# Patchsets\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "49d4a5c0-e144-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"index\":\"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "gerrit_newcomers_pie_retention_rate",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_newcomers_pie_retention_rate\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"top\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author_uuid\",\"customLabel\":\"Number of users\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":\"demography_max_date:>now-90d\"},\"label\":\"Active (90 days)\"},{\"input\":{\"query\":\"demography_max_date:<=now-90d\"},\"label\":\"Leaving (90 days)\"}]}}]}"
+            }
+        },
+        {
+            "id": "a5323920-e165-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "gerrit_newcomers_table_contributions_per_author",
+                "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": 1,\n        \"direction\": \"desc\"\n      }\n    }\n  }\n}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_newcomers_table_contributions_per_author\",\n  \"type\": \"enhanced-table\",\n  \"params\": {\n    \"perPage\": 10,\n    \"showPartialRows\": false,\n    \"showMetricsAtAllLevels\": false,\n    \"sort\": {\n      \"columnIndex\": 1,\n      \"direction\": \"desc\"\n    },\n    \"showTotal\": false,\n    \"totalFunc\": \"sum\",\n    \"computedColumns\": [\n      {\n        \"label\": \"Participation\",\n        \"formula\": \"col2 > 0 ? \\\"Active\\\" : \\\"Leaving\\\"\",\n        \"format\": \"string\",\n        \"pattern\": \"0,0\",\n        \"datePattern\": \"MMMM Do YYYY, HH:mm:ss.SSS\",\n        \"alignment\": \"left\",\n        \"applyAlignmentOnTitle\": true,\n        \"applyAlignmentOnTotal\": true,\n        \"applyTemplate\": false,\n        \"applyTemplateOnTotal\": true,\n        \"template\": \"{{value}}\",\n        \"enabled\": true\n      }\n    ],\n    \"computedColsPerSplitCol\": false,\n    \"hideExportLinks\": false,\n    \"stripedRows\": false,\n    \"showFilterBar\": true,\n    \"filterCaseSensitive\": false,\n    \"filterBarHideable\": false,\n    \"filterAsYouType\": false,\n    \"filterTermsSeparately\": false,\n    \"filterHighlightResults\": false,\n    \"filterBarWidth\": \"25%\",\n    \"linesComputedFilter\": \"\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_name\",\n        \"size\": 100,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Author name\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"author_org_name\",\n        \"size\": 1000,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Organization\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"filters\",\n      \"schema\": \"splitcols\",\n      \"params\": {\n        \"filters\": [\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:>now-90d\"\n            },\n            \"label\": \"Contributions last 90 days\"\n          },\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:<=now-90d\"\n            },\n            \"label\": \"Previous contributions\"\n          },\n          {\n            \"input\": {\n              \"query\": \"*\"\n            },\n            \"label\": \"Total contributions\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"\"\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "3b1bb060-e1fc-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "gerrit_newcomers_barchart_contributions_organization_recent_previous",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_newcomers_barchart_contributions_organization_recent_previous\",\n  \"type\": \"horizontal_bar\",\n  \"params\": {\n    \"type\": \"histogram\",\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 200\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"normal\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 75,\n          \"filter\": true,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"Number of contributions\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": true,\n        \"type\": \"histogram\",\n        \"mode\": \"normal\",\n        \"data\": {\n          \"label\": \"Number of contributions\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false,\n    \"orderBucketsBySum\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"customLabel\": \"Number of contributions\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"author_org_name\",\n        \"size\": 3,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": true,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": true,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Organization\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"filters\",\n      \"schema\": \"group\",\n      \"params\": {\n        \"filters\": [\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:>now-90d\"\n            },\n            \"label\": \"Recent contributions (last 90 days)\"\n          },\n          {\n            \"input\": {\n              \"query\": \"grimoire_creation_date:<=now-90d\"\n            },\n            \"label\": \"Previous contributions (before last 90 days)\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "c84be020-e1fe-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\n  \"index\": \"8e488ac0-f330-11ea-b2a9-cfa8a0efe987\",\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"lucene\"\n  },\n  \"filter\": []\n}"
+                },
+                "title": "gerrit_newcomers_barchart_retention_rate_organization",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\n  \"title\": \"gerrit_newcomers_barchart_retention_rate_organization\",\n  \"type\": \"horizontal_bar\",\n  \"params\": {\n    \"type\": \"histogram\",\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 200\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"percentage\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 75,\n          \"filter\": true,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"Number of newcomers\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": true,\n        \"type\": \"histogram\",\n        \"mode\": \"stacked\",\n        \"data\": {\n          \"label\": \"Number of newcomers\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"cardinality\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"author_uuid\",\n        \"customLabel\": \"Number of newcomers\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"author_org_name\",\n        \"size\": 3,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"otherBucket\": true,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"customLabel\": \"Organization\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"filters\",\n      \"schema\": \"group\",\n      \"params\": {\n        \"filters\": [\n          {\n            \"input\": {\n              \"query\": \"demography_max_date:>now-90d\"\n            },\n            \"label\": \"Active newcomers\"\n          },\n          {\n            \"input\": {\n              \"query\": \"demography_max_date:<=now-90d\"\n            },\n            \"label\": \"Leaving newcomers\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+            }
+        },
+        {
+            "id": "680d7d70-e25a-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "gerrit_newcomers_markdown_definition_newcomer",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_newcomers_markdown_definition_newcomer\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"## What's a newcomer?\\n\\nWe consider as **newcomer** every Gerrit user whose **first patchset** was made within a date range defined by a certain date and the current date.\\n\\nThe period of time for considering users as **newcomers** is defined with the *time-picker* (top-right corner). \\nThis means the dashboard will show the activity from people whose first patchset was made during the selected date range.\\n\\n### Important:\\nThe **end date** from the selected date range must be the **current date** (`Now`).\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "0769ffb0-e25b-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "gerrit_newcomers_markdown_leaving",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_newcomers_markdown_leaving\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"## How we consider a newcomer is leaving?\\n\\nWe can say a **newcomer** is leaving when its last contribution was made before a defined time period, taking the current date as the end of this range.\\n\\nBy default, we are taking **90 days** as threshold, which means:\\n* Any newcomer whose last contribution was more than 90 days ago will be considered as a **leaving** newcomer. \\n* Otherwise, it will be an **active** newcomer.\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "71f2f2b0-e25b-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "gerrit_newcomers_markdown_date_fields",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_newcomers_markdown_date_fields\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"## Which date fields are used?\\n\\n* `patchset_min_date`: the date of the **first patchset** for a given Gerrit contributor. The **time-picker** filter is using this field to select the date range when contributors are considered as **newcomers**.\\n\\n* `demography_max_date`: the date of the **last contribution** (of any type) for a given Gerrit contributor. If this date is greater than a given period of time (by default, 90 days), we can say if that contributor is **active** or is **leaving**.\\n\\n* `grimoire_creation_date`: the date when the contribution was made on Gerrit. If this date is contained in the defined period of time (by default, 90 days), the contribution is marked as **Recent**. If it is older, it will be marked as **Previous** contribution.\"},\"aggs\":[]}"
+            }
+        },
+        {
+            "id": "5e67d050-e259-11ea-b2a9-cfa8a0efe987",
+            "value": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+                },
+                "title": "gerrit_newcomers_markdown_title",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\":\"gerrit_newcomers_markdown_title\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":false,\"markdown\":\"## Gerrit Newcomers Retention Dashboard\"},\"aggs\":[]}"
+            }
+        }
+    ]
+}
