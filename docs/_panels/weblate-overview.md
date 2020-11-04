@@ -1,10 +1,10 @@
 ---
 title: Weblate Overview
-description: Weblate overview panel focused on contributors-
+description: Weblate overview panel focused on contributors
 author: Bitergia
 screenshot: sigils/weblate-overview.png
 created_at: 
-grimoirelab_version: 0.2.48
+grimoirelab_version: 0.2.50
 layout: panel
 ---
 
@@ -15,13 +15,18 @@ Most of the visualizations found in it can be explored in more detail in
 the panels corresponding to the different analysis: Unit actions and languages,
 number of contributions per project, units per author and a list of units.
 
+To avoid translation units to be counted more than once, the visualizations
+use the field `unit_id`, instead of the unit URL.
+
 ## Metrics
 
 From left to right and top to bottom, the metrics provided are:
 
-* **Overview**: total numbers of contributors, languages and translations (units).
 * **Unit languages**: pie chart showing the different unit languages.
 * **Unit actions**: pie chart with the different unit actions.
+* **Overview**: total numbers of contributors, languages and translations (units).
+* **Projects and components**: selector to filter by projects and components.
+* **Submitters by Organization**: a pie chart that highlights the number of submitters performing changes grouped by organizations.
 * **Top 10 number of contributions per project**: horizontal bar chart with the amount
   of contributions per project, split by the contributions are approved or not.
 * **Units per author**: table with stats with the number of units, projects,
