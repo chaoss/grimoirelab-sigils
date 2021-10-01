@@ -20,11 +20,11 @@ the collaboration is**.
 
 * **Summary**: general numbers to give an idea about the amount of data taken into account given the
     current dashboard filters and time frame.
-* **Collaboration Network**: shows people as nodes. 
+* **Top 50 Collaboration Network**: shows people as nodes (first 50).
     * Node size is the number of issues they created. 
     * Edges link people commenting on the same issue thread. 
     * Edge size represents the number of comments.
-* **People**: this table split data by persons. Each row consists of:
+* **Top 10 People**: this table split data by persons (first 10). Each row consists of:
     * Issues: number of issues created by that person.
     * Comments: number of comments created by that person.
     * +1: number of `+1` reactions received by issues or comments created by that person.
@@ -32,8 +32,8 @@ the collaboration is**.
         that person.
     * Reactions Ratio: same as `1 Ratio` but for all kind of reactions. Useful to compare to `+1 Ratio`
         and thus analyze the impact of people's contributions. 
-* **Repositories**: same as **People** table but split by repository.
-* **Projects**:  same as **People** table but split by project.
+* **Top 10 Repositories**: same as **People** table but split by repository (first 10).
+* **Top 10 Projects**:  same as **People** table but split by project (first 10).
 
 Tables are here to allow to drill down on people's contributions and understand their actual impact on the
 different repositories and projects. Nevertheless, these tables provide
