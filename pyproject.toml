@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "grimoirelab-panels"
+version = "0.0.64"
+description = "Panels and visualizations for GrimoireLab dashboards"
+authors = [
+    "GrimoireLab Developers"
+]
+license = "GPL-3.0+"
+
+readme = "README.md"
+
+homepage = "https://chaoss.github.io/grimoirelab/"
+repository = "https://github.com/chaoss/grimoirelab-sigils"
+
+keywords = [
+    "development",
+    "grimoirelab"
+]
+
+packages = [
+    { include = "panels" }
+]
+
+include = [
+    "panels/json/**/*.json"
+]
+
+classifiers = [
+   "Development Status :: 5 - Production/Stable",
+   "Intended Audience :: Developers",
+   "Topic :: Software Development",
+   "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+   "Programming Language :: Python :: 3"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/chaoss/grimoirelab-sigils/issues"
+
+[tool.poetry.dependencies]
+python = "3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
