@@ -1,0 +1,38 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+      - '*.*.*-*'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build package using Poetry and store result
+        uses: chaoss/grimoirelab-github-actions/build@master
+        with:
+          artifact-name: sigils-dist
+          artifact-path: dist
+
+  release:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a new release on the repository
+        uses: chaoss/grimoirelab-github-actions/release@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish the package on PyPI
+        uses: chaoss/grimoirelab-github-actions/publish@master
+        with:
+          artifact-name: sigils-dist
+          artifact-path: dist
+          pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
