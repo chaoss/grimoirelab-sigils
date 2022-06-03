@@ -1,0 +1,11 @@
+# Releases
+
+## sigils 0.1.0 - (2022-06-03)
+
+**Feature removals:**
+
+ * Drop Python 3.6 support\
+   Python 3.6 reached the end of life at the end of 2021. This means it
+   won't receive new updates or patches to fix security issues.
+   Therefore, this package will only work with Python >= 3.7 from now on.
+
