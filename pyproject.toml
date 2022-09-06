@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "grimoirelab-panels"
-version = "0.1.0"
+version = "0.1.1-rc.1"
 description = "Panels and visualizations for GrimoireLab dashboards"
 authors = [
     "GrimoireLab Developers"
