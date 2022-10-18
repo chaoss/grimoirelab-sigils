@@ -8,9 +8,7 @@ This usually has information about the following artifacts:
 * Widgets either built on top of the original indexes or on top of the searches.
 * Final panels that are an aggregation of several widgets.
 
-There are Dashboards for Kibana 4 and Kibana 5 right now stored in:
-* `json`: current kibana 5 versions.
-* `kibana4-maintenance` branch: old kibana 4 versions.
+There are Dashboards for Kibana 6 right now stored in `panels/json`
 
 Panels
 ------
@@ -47,7 +45,7 @@ To give some examples, below there is a list of some panels that can be found in
 * about.json: provides some widgets detailing this information and how to interact with the panels.
 * overview.json: provides a generic view of the dataset with some widgets that help to drill down the information from the whole list of data sources.
 
-All panels will provide widgets for filtering informartion by project, domain, organization, etc. depending on the availability of that information in the corresponding index. 
+All panels will provide widgets for filtering information by project, domain, organization, etc. depending on the availability of that information in the corresponding index.
 
 Widgets Naming
 --------------
