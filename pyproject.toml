@@ -22,7 +22,7 @@ packages = [
 ]
 
 include = [
-    "panels/json/**/*.json",
+    { path = "panels/json/**/*.json" },
     { path = "AUTHORS", format = "sdist" },
     { path = "NEWS", format = "sdist" },
     { path = "README.md", format = "sdist" },
