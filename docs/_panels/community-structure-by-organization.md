@@ -101,5 +101,5 @@ kidash -e https://user:pass@localhost:443/data --import onion_organizations.json
 [sirmordred]: https://github.com/chaoss/grimoirelab-sirmordred#sirmordred-
 [dash-icon]: ../assets/images/icons/dashboard.png
 [ip-icon]: ../assets/images/icons/file-ruled.png
-[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/onion_organizations.json
-[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/json/all_onion-index-pattern.json
+[dashboard]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/panels/json/onion_organizations.json
+[index-pattern]: https://raw.githubusercontent.com/chaoss/grimoirelab-sigils/master/panels/json/all_onion-index-pattern.json
