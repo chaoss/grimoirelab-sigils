@@ -40,7 +40,7 @@ classifiers = [
 "Bug Tracker" = "https://github.com/chaoss/grimoirelab-sigils/issues"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 
