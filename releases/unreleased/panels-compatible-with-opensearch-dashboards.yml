@@ -1,0 +1,8 @@
+---
+title: Panels compatible with Opensearch Dashboards
+category: added
+author: Quan Zhou <quan@bitergia.com>
+issue: null
+notes: >
+  Include panels compatible with Opensearch Dashboards
+  version >= 1.3.2.
