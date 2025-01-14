@@ -175,7 +175,7 @@ Data model
 Each of the indexes are based on a previous definition. This
 is declared in CSV format with two columns: name and type.
 
-More information at the [Schema](https://github.com/chaoss/grimoirelab-elk/tree/master/schema) directory.
+More information at the [Schema](https://github.com/chaoss/grimoirelab-elk/tree/main/schema) directory.
 
 
 How this info was retrieved
