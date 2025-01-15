@@ -1,5 +1,9 @@
 # Releases
 
+  ## grimoirelab-panels 1.1.2 - (2025-01-15)
+  
+  * Update Poetry's package dependencies
+
 ## grimoirelab-panels 1.1.1 - (2024-09-23)
 
 **Dependencies updateds:**
