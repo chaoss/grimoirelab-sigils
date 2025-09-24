@@ -40,7 +40,7 @@ From left to right and top to bottom, the metrics provided are:
   data source in order to ease finding those sources that may be interesting to analyze individually.
   It also allows to identify which sources are biasing results in case we want to filter them in or out.
 
-In addition to Kibana filters and search box ont top, filtering by `Data Source`, `Organization`,
+In addition to Kibana filters and search box on top, filtering by `Data Source`, `Organization`,
 `Project` and/or `Contributor` is allowed by using the top left corner widget. Notice the red
 filter on top used for **excluding bots**.
 
